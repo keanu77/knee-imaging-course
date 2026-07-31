@@ -11,6 +11,10 @@ permissions:
 jobs:
   check:
     runs-on: ubuntu-latest
+    # 課程研究與驗證日期依 frozen brief 的 Asia/Taipei 工作時區記錄；
+    # GitHub runner 預設 UTC，午夜後會把當地今日誤判成「未來一天」。
+    env:
+      TZ: Asia/Taipei
     steps:
       - uses: actions/checkout@v4
       - uses: astral-sh/setup-uv@v6
