@@ -212,4 +212,12 @@
   .Landing__h2 {
     font-size: 17px;
   }
+
+  /* CTA 與區塊按鈕預設 32px 高，低於觸控下限。 */
+  .Landing__ctaBtns .btn,
+  .Landing__section > .btn {
+    min-width: 44px;
+    min-height: 44px;
+    justify-content: center;
+  }
 }
