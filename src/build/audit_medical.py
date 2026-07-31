@@ -2,7 +2,7 @@
 """區域肌肉骨骼超音波課程的醫療內容閘門。
 
 這個稽核不判斷醫療內容是否正確；它確認每個單元都具備可供醫師審閱的
-教學目標、標準切面、陷阱、評量與來源，並防止第一階段混入介入操作。
+教學目標、標準切面、陷阱、評量與來源，並防止未框限的介入內容混入診斷課程。
 """
 
 from __future__ import annotations
@@ -20,6 +20,19 @@ COURSE = Path(os.environ.get("COURSE") or ROOT / "course").resolve()
 
 def load(path: Path) -> dict:
     return json.loads(path.read_text(encoding="utf-8"))
+
+
+def parse_clock(value: object) -> int | None:
+    """將 MM:SS 或 HH:MM:SS 轉為秒；不接受超出 59 的秒／小時格式分鐘。"""
+    parts = str(value or "").split(":")
+    if len(parts) not in {2, 3} or not all(part.isdigit() for part in parts):
+        return None
+    numbers = [int(part) for part in parts]
+    if len(numbers) == 2:
+        minutes, seconds = numbers
+        return minutes * 60 + seconds if seconds < 60 else None
+    hours, minutes, seconds = numbers
+    return hours * 3600 + minutes * 60 + seconds if minutes < 60 and seconds < 60 else None
 
 
 def main() -> int:
@@ -184,6 +197,63 @@ def main() -> int:
                 except (TypeError, ValueError):
                     err(video_where, f"last_verified_at 日期格式錯誤：{verified!r}")
 
+                if "contains_intervention" not in video:
+                    err(video_where, "缺少 contains_intervention 布林欄位")
+                elif not isinstance(video.get("contains_intervention"), bool):
+                    err(video_where, "contains_intervention 必須是 true 或 false")
+
+                if video.get("contains_intervention") is True:
+                    intervention_start = parse_clock(video.get("intervention_start_timestamp"))
+                    if intervention_start is None:
+                        err(
+                            video_where,
+                            "含介入內容時 intervention_start_timestamp 必須是合法 MM:SS 或 HH:MM:SS",
+                        )
+
+                    range_text = str(video.get("diagnostic_segment_range") or "").strip()
+                    range_match = re.fullmatch(
+                        r"((?:\d{1,2}:)?\d{1,2}:\d{2})\s*[–-]\s*((?:\d{1,2}:)?\d{1,2}:\d{2})",
+                        range_text,
+                    )
+                    range_start = parse_clock(range_match.group(1)) if range_match else None
+                    range_end = parse_clock(range_match.group(2)) if range_match else None
+                    if range_start is None or range_end is None or range_start >= range_end:
+                        err(
+                            video_where,
+                            "含介入內容時 diagnostic_segment_range 必須是遞增的合法時間範圍",
+                        )
+                    elif intervention_start is not None and range_end >= intervention_start:
+                        err(video_where, "診斷段落必須在介入起點前結束")
+
+                    duration = parse_clock(video.get("duration"))
+                    if duration is None:
+                        err(video_where, "含介入內容時必須提供合法 duration")
+                    elif intervention_start is not None and intervention_start >= duration:
+                        err(video_where, "介入起點必須早於影片結束")
+
+                    if not video.get("presenter"):
+                        err(video_where, "含介入內容的影片必須標示 presenter")
+                    if not video.get("qualification_evidence_url"):
+                        err(video_where, "含介入內容的影片必須提供 qualification_evidence_url")
+
+                intervention_markers = (
+                    "inject",
+                    "needle",
+                    "aspiration",
+                    "intervention",
+                    "介入",
+                    "穿刺",
+                    "抽吸",
+                )
+                title = f"{video.get('name', '')} {video.get('title', '')}".lower()
+                if medical.get("scope") == "diagnostic-only" and any(
+                    marker in title for marker in intervention_markers
+                ) and video.get("contains_intervention") is not True:
+                    err(
+                        video_where,
+                        "片名疑似含介入內容，必須標記 contains_intervention=true 並框限診斷段落",
+                    )
+
                 content_date = original_date or upload_date
                 if not content_date:
                     if status != "pending-date-verification":
@@ -198,13 +268,6 @@ def main() -> int:
                         "classic_exception_reason"
                     ):
                         err(video_where, "經典例外缺少 classic_exception_reason")
-
-                intervention_markers = ("injection", "needle", "介入注射", "導引注射")
-                title = f"{video.get('name', '')} {video.get('title', '')}".lower()
-                if medical.get("scope") == "diagnostic-only" and any(
-                    marker in title for marker in intervention_markers
-                ):
-                    err(video_where, "診斷階段選片疑似含介入操作")
 
     if medical.get("primaryAudience") != "physicians":
         errors.append("設定檔：primaryAudience 必須是 physicians")

@@ -18,7 +18,7 @@
 2. course brief、責任與發布邊界凍結。
 3. scaffold 初始化及跨部位殘留檢查。
 4. 以 AIUM／EFSUMB／ESSR／ACR 等正式來源先定義四區掃描、限制及升級條件。
-5. 近期影片、經典教師及排除候選逐支查核；只收錄兩支 ESSR 官方核心影片。
+5. 近期影片、經典教師及排除候選逐支查核；收錄兩支 ESSR 官方 core，並依 2026-08-01 規則重評後加入兩支具介入範圍提示的 AMSSM extension。
 6. 八單元課程、來源 catalog、評量、影片資料契約與文件撰寫。
 7. 臨床工作站 UI、窄螢幕 44px 觸控目標、可及性及快取檢查。
 8. 本機 `make build`、`make check`、`make verify`。

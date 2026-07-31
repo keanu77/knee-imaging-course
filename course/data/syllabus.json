@@ -352,6 +352,9 @@
               "last_verified_at": "2026-08-01",
               "why": "ESSR Ultrasound Subcommittee 官方原始教材，以一支連續示範建立前、內、外側的病人姿勢、探頭路徑、正常解剖與壓力／各向異性控制，是本課最小核心影片之一。",
               "scope_note": "只作正常解剖與掃描技術示範；病理效能、完整半月板與十字韌帶評估、報告及升級決策仍以本課現行指引為準。",
+              "contains_intervention": false,
+              "intervention_start_timestamp": null,
+              "diagnostic_segment_range": null,
               "upload_date": "2023-03-15",
               "original_content_date": null,
               "date_note": "YouTube 說明只標示為 ESSR Ultrasound Subcommittee 2021 educational video，未公開精確錄製日；無法判定相對於 2021-08-01 cutoff 的位置，因此不虛填日期並保留 pending-date-verification。",
@@ -365,6 +368,35 @@
               "disclosure": "ESSR e-learning listing與 YouTube 說明未載商業揭露；不據此推定沒有利益關係。",
               "classic_exception": false,
               "target": "前、內、外側正常解剖與掃描路徑"
+            },
+            {
+              "name": "AMSSM 髕腱病例：前側 protocol 與腱內囊腫",
+              "title": "Patellar Tendinopathy with Dr. Derek Stokes | AMSSM Sports Ultrasound Case Presentation",
+              "url": "https://www.youtube.com/watch?v=9oADQrcj_qQ",
+              "kind": "pathology-demo",
+              "learning_tier": "extension",
+              "source_authority": "professional-society-original",
+              "curation_status": "provisional",
+              "last_verified_at": "2026-08-01",
+              "why": "AMSSM 官方病例以完整前膝 protocol 串聯髕腱病灶、腱內囊腫鑑別與診斷報告；屬病例型延伸內容，不擴張最小核心集合。",
+              "scope_note": "只學 02:03–21:45 的前膝掃描、病灶判讀與鑑別；21:46 起的 aspiration 內容不在本課範圍。",
+              "target": "前膝 protocol、髕腱病灶與腱內囊腫鑑別",
+              "dose": "診斷段 02:03–21:45",
+              "contains_intervention": true,
+              "intervention_start_timestamp": "21:46",
+              "diagnostic_segment_range": "02:03–21:45",
+              "presenter": "Derek Stokes, MD",
+              "presenter_qualification": "University of Colorado School of Medicine 助理教授；PM&R 住院醫師訓練、運動醫學 fellowship，具 Sports Medicine 專科認證。",
+              "qualification_evidence_url": "https://som.cuanschutz.edu/Profiles/Faculty/Profile/39568",
+              "duration": "30:46",
+              "channel": "The AMSSM",
+              "upload_date": "2024-03-01",
+              "original_content_date": null,
+              "date_note": "YouTube 與 AMSSM 頁面未另載原始錄製日期；不以 2024-03-01 上架日代替錄製日。",
+              "playback_status": "public; yt-dlp playback rechecked 2026-08-01",
+              "embed_status": "playable_in_embed=true; YouTube oEmbed 200 rechecked 2026-08-01",
+              "disclosure": "講者於 02:12 聲明 no disclosures。",
+              "classic_exception": false
             }
           ]
         }
@@ -463,7 +495,37 @@
             "REF-TAMBORRINI-KNEE-2025",
             "REF-WU-PLC-2024"
           ],
-          "drills": []
+          "drills": [
+            {
+              "name": "AMSSM 外側半月板旁囊腫病例",
+              "title": "Lateral Parameniscal Cyst with Dr. Steven Jow | AMSSM Sports Ultrasound Case Presentation",
+              "url": "https://www.youtube.com/watch?v=EPdbvE39xmQ",
+              "kind": "pathology-demo",
+              "learning_tier": "extension",
+              "source_authority": "professional-society-original",
+              "curation_status": "provisional",
+              "last_verified_at": "2026-08-01",
+              "why": "AMSSM 官方病例依序呈現外側膝 protocol、半月板旁囊腫超音波、診斷報告與 MRI 對照；作為外側病理延伸，不取代 ESSR 核心路徑。",
+              "scope_note": "只學 02:29–15:36 的外側膝 protocol、病例判讀、報告與 MRI 對照；15:37 起的 aspiration 內容不在本課範圍。",
+              "target": "外側膝 protocol、半月板旁囊腫與半月板周邊判讀",
+              "dose": "診斷段 02:29–15:36",
+              "contains_intervention": true,
+              "intervention_start_timestamp": "15:37",
+              "diagnostic_segment_range": "02:29–15:36",
+              "presenter": "Steven Jow, MD",
+              "presenter_qualification": "PM&R 與 Sports Medicine 專科醫師；完成 MedStar Georgetown PM&R residency 與 Hospital for Special Surgery fellowship。",
+              "qualification_evidence_url": "https://www.pennmedicine.org/providers/profile/steven-jow",
+              "duration": "25:55",
+              "channel": "The AMSSM",
+              "upload_date": "2024-02-02",
+              "original_content_date": null,
+              "date_note": "YouTube 與 AMSSM 頁面未另載原始錄製日期；不以 2024-02-02 上架日代替錄製日。",
+              "playback_status": "public; yt-dlp playback rechecked 2026-08-01",
+              "embed_status": "playable_in_embed=true; YouTube oEmbed 200 rechecked 2026-08-01",
+              "disclosure": "影片頁與可取得字幕未見明確商業揭露；不據此推定沒有利益關係。",
+              "classic_exception": false
+            }
+          ]
         }
       ]
     },
@@ -524,6 +586,9 @@
               "last_verified_at": "2026-08-01",
               "why": "ESSR Ultrasound Subcommittee 官方原始教材，以後內、後外及中央膕窩三段 live scan 補足前半部，形成完整且最小的四區核心影片組。",
               "scope_note": "只作正常解剖與掃描技術示範；後聲窗只顯示 PCL 可及部分，辨認膕窩血管不等於正式靜脈 duplex，也不能用來排除 DVT。",
+              "contains_intervention": false,
+              "intervention_start_timestamp": null,
+              "diagnostic_segment_range": null,
               "upload_date": "2023-03-15",
               "original_content_date": null,
               "date_note": "YouTube 說明只標示為 ESSR Ultrasound Subcommittee 2021 educational video，未公開精確錄製日；無法判定相對於 2021-08-01 cutoff 的位置，因此不虛填日期並保留 pending-date-verification。",
