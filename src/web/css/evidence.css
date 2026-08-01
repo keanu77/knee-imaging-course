@@ -130,18 +130,6 @@
   border-radius: var(--borderRadius-full);
 }
 
-.Drill__marker--release {
-  background-color: var(--fgColor-accent);
-}
-
-.Drill__marker--stretch {
-  background-color: var(--fgColor-success);
-}
-
-.Drill__marker--train {
-  background-color: var(--fgColor-danger);
-}
-
 .Drill__main {
   flex: 1;
   min-width: 0;
@@ -272,6 +260,15 @@
   .Evidence__row {
     grid-template-columns: minmax(0, 1fr);
     gap: 2px;
+  }
+
+  /* 觸控目標下限 44px；桌面密度不動 */
+  .Evidence__header {
+    min-height: 44px;
+  }
+
+  .DrillEvCat > summary {
+    min-height: 44px;
   }
 }
 

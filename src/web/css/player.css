@@ -114,15 +114,6 @@ body.is-resizing iframe {
   pointer-events: none;
 }
 
-.Player__crumb {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: var(--base-size-8);
-  font-size: 12px;
-  color: var(--fgColor-muted);
-}
-
 .Player__title {
   margin-top: var(--base-size-4);
   font-size: 18px;
@@ -271,20 +262,6 @@ body.is-resizing iframe {
   height: 7px;
   flex-shrink: 0;
   border-radius: var(--borderRadius-full);
-}
-
-.PlaylistItem__dot--lesson {
-  background-color: var(--fgColor-accent);
-}
-.PlaylistItem__dot--release {
-  background-color: var(--fgColor-accent);
-  opacity: 0.55;
-}
-.PlaylistItem__dot--stretch {
-  background-color: var(--fgColor-success);
-}
-.PlaylistItem__dot--train {
-  background-color: var(--fgColor-danger);
 }
 
 .PlaylistItem__main {
@@ -459,6 +436,18 @@ body[data-tab="player"] {
 
   .Player__bar .Player__title {
     white-space: normal;
+  }
+
+  /* 觸控目標下限 44px；桌面密度不動 */
+  .Player__more > summary {
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+  }
+
+  .KeySheet__head .btn-icon {
+    min-width: 44px;
+    min-height: 44px;
   }
 }
 

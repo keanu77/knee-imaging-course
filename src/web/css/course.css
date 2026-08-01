@@ -303,6 +303,15 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
+
+  /* 觸控目標下限 44px；桌面密度不動 */
+  .LessonBox__lang {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    min-height: 44px;
+  }
 }
 
 @media print {

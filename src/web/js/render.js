@@ -13,7 +13,7 @@ export const esc = (s) =>
    用可變物件而非重新指派，import 過的模組才拿得到更新後的內容。 */
 export const KIND = {};
 export const TIER = {};
-export const GRADE = {};
+const GRADE = {};
 export const UI = {};
 let CFG = {};
 
@@ -446,7 +446,7 @@ function muscles(tight, weak) {
 
 /* --- 單元 ---------------------------------------------------------------- */
 
-export function renderUnit(u, done) {
+function renderUnit(u, done) {
   const total = (u.drills || []).length;
   const review = REVIEW[u.review_status] || REVIEW.draft;
 
