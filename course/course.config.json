@@ -131,12 +131,12 @@
   "chapters": [
     { "code": "CH0", "title": "課程定位、臨床問題與安全", "icon": "shield-check", "source": "syllabus", "units": 1, "drills": 0 },
     { "code": "CH1", "title": "探頭、最佳化與方向標示", "icon": "activity", "source": "syllabus", "units": 1, "drills": 0 },
-    { "code": "CH2", "title": "前側：伸膝機轉與前隱窩", "icon": "scan-line", "source": "syllabus", "units": 1, "drills": 2 },
-    { "code": "CH3", "title": "內側：MCL、鵝足與半月板周邊", "icon": "target", "source": "syllabus", "units": 1, "drills": 0 },
+    { "code": "CH2", "title": "前側：伸膝機轉與前隱窩", "icon": "scan-line", "source": "syllabus", "units": 1, "drills": 3 },
+    { "code": "CH3", "title": "內側：MCL、鵝足與半月板周邊", "icon": "target", "source": "syllabus", "units": 1, "drills": 1 },
     { "code": "CH4", "title": "外側與後外側：韌帶、肌腱與腓總神經", "icon": "layers", "source": "syllabus", "units": 1, "drills": 1 },
-    { "code": "CH5", "title": "後側、囊腫與動態安全", "icon": "move-diagonal", "source": "syllabus", "units": 1, "drills": 1 },
+    { "code": "CH5", "title": "後側、囊腫與動態安全", "icon": "move-diagonal", "source": "syllabus", "units": 1, "drills": 2 },
     { "code": "CH6", "title": "常見病理與證據邊界", "icon": "microscope", "source": "syllabus", "units": 1, "drills": 0 },
-    { "code": "CH7", "title": "完整掃描、報告與品質回饋", "icon": "clipboard-list", "source": "syllabus", "units": 1, "drills": 0 }
+    { "code": "CH7", "title": "完整掃描、報告與品質回饋", "icon": "clipboard-list", "source": "syllabus", "units": 1, "drills": 1 }
   ],
   "audit": {
     "duration": {

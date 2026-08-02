@@ -397,6 +397,36 @@
               "embed_status": "playable_in_embed=true; YouTube oEmbed 200 rechecked 2026-08-01",
               "disclosure": "講者於 02:12 聲明 no disclosures。",
               "classic_exception": false
+            },
+            {
+              "name": "Martinoli 經典病例：髕上隱窩脂肪、滑膜與樹枝狀脂肪瘤",
+              "title": "Carlo Martinoli scans the suprapatellar recess",
+              "url": "https://www.youtube.com/watch?v=K7uPFs7s_LY",
+              "kind": "pathology-demo",
+              "learning_tier": "extension",
+              "source_authority": "expert-owned-original",
+              "curation_status": "provisional",
+              "last_verified_at": "2026-08-02",
+              "why": "由具名肌骨放射科專家以三個短病例對照髕上隱窩的正常脂肪、樹枝狀脂肪瘤與滑膜，並用屈伸及壓迫呈現液體移動；補足 ESSR 正常路徑未深入的髕上隱窩判讀細節。",
+              "scope_note": "4 分鐘的經典病例 pearl，不是完整前膝 protocol；病灶命名、Doppler、報告與升級決策仍以本課現行指引為準。",
+              "target": "髕上隱窩脂肪、滑膜、樹枝狀脂肪瘤與液體動態",
+              "contains_intervention": false,
+              "intervention_start_timestamp": null,
+              "diagnostic_segment_range": null,
+              "presenter": "Carlo Martinoli, MD",
+              "presenter_qualification": "University of Genoa 放射診斷學 full professor 與專科學校主任；長期從事肌骨與周邊神經超音波教育。",
+              "qualification_evidence_url": "https://dissal.unige.it/carlo.martinoli%40unige.it",
+              "duration": "04:01",
+              "channel": "Martinoli Ultrasound",
+              "upload_date": "2018-09-15",
+              "original_content_date": null,
+              "date_note": "影片頁未公開原始錄製日期；不以 2018-09-15 上架日代替錄製日。",
+              "playback_status": "public; availability=public; yt-dlp playback rechecked 2026-08-02",
+              "embed_status": "playable_in_embed=true; YouTube oEmbed HTTP 200 rechecked 2026-08-02",
+              "disclosure": "影片說明推廣 Martinoli 付費課程；未載本片特定利益揭露，不據此推定沒有利益關係。",
+              "classic_exception": true,
+              "classic_exception_reason": "雖早於 2021-08-01 cutoff，但三病例並列呈現正常脂肪、樹枝狀脂肪瘤與滑膜的獨特比較，並示範屈伸／壓迫下液體移動；近期替代只涵蓋一般積液或滑膜炎，未提供同等比較。",
+              "recent_alternative_search": "2026-08-02 ytsearch15:knee ultrasound suprapatellar recess；查得 Clarius 2023 一般 effusion/synovitis 短片，但未涵蓋本片三病例比較。"
             }
           ]
         }
@@ -447,7 +477,37 @@
             "REF-TAMBORRINI-KNEE-2025",
             "REF-PANDYA-KNEE-2023"
           ],
-          "drills": []
+          "drills": [
+            {
+              "name": "AMSSM 鵝足滑囊炎病例：內側掃描與動態應力",
+              "title": "Pes Anserine Bursitis with Dr. Mitchell Daugherty | Sports Ultrasound Case Presentation Series",
+              "url": "https://www.youtube.com/watch?v=NF2eDqFLMzo",
+              "kind": "pathology-demo",
+              "learning_tier": "extension",
+              "source_authority": "professional-society-original",
+              "curation_status": "provisional",
+              "last_verified_at": "2026-08-02",
+              "why": "AMSSM 官方近期病例由另一位講者深入示範內側關節線、MCL 長短軸、外翻動態應力、鵝足肌腱、各向異性、Doppler 與可壓性，為 ESSR 正常總覽增加病例判讀與技術陷阱觀點。",
+              "scope_note": "只學 02:33–19:08 的內側掃描、動態應力與技術陷阱；自動字幕於 19:09 起進入 aspiration／injection 等介入討論，後段不在本課範圍。",
+              "target": "內側關節線、MCL、鵝足肌腱、動態應力與技術陷阱",
+              "dose": "診斷段 02:33–19:08",
+              "contains_intervention": true,
+              "intervention_start_timestamp": "19:09",
+              "diagnostic_segment_range": "02:33–19:08",
+              "presenter": "Mitchell Daugherty, MD",
+              "presenter_qualification": "Beacon Health System Sports Medicine 醫師；完成 family medicine residency 與 primary care sports medicine fellowship。",
+              "qualification_evidence_url": "https://providers.beaconhealthsystem.org/1417481540/mitchell-daugherty-md",
+              "duration": "35:57",
+              "channel": "The AMSSM",
+              "upload_date": "2025-07-25",
+              "original_content_date": null,
+              "date_note": "YouTube 與 AMSSM 頁面未另載原始錄製日期；不以 2025-07-25 上架日代替錄製日。",
+              "playback_status": "public; availability=public; yt-dlp playback rechecked 2026-08-02",
+              "embed_status": "playable_in_embed=true; YouTube oEmbed HTTP 200 rechecked 2026-08-02",
+              "disclosure": "講者於 00:56 聲明 nothing to disclose。",
+              "classic_exception": false
+            }
+          ]
         }
       ]
     },
@@ -602,6 +662,35 @@
               "disclosure": "ESSR e-learning listing與 YouTube 說明未載商業揭露；不據此推定沒有利益關係。",
               "classic_exception": false,
               "target": "後內、後外、膕窩正常解剖與安全路徑"
+            },
+            {
+              "name": "AMSSM 非典型 Baker cyst 病例：後膝判讀與鑑別",
+              "title": "Atypical Baker's Cyst with Dr. Andrew Getzin | AMSSM Sports Ultrasound Case Presentation",
+              "url": "https://www.youtube.com/watch?v=W-fEp1KPANs",
+              "kind": "pathology-demo",
+              "learning_tier": "extension",
+              "source_authority": "professional-society-original",
+              "curation_status": "provisional",
+              "last_verified_at": "2026-08-02",
+              "why": "AMSSM 官方病例深入呈現後膝定位、Baker cyst 頸部與非典型內容物、破裂與 DVT 鑑別、膕窩神經血管及結構化報告，為 ESSR Part 2 的正常路徑增加病理判讀觀點。",
+              "scope_note": "只學 12:53–34:13 的後膝掃描、鑑別與報告；06:33 的穿刺計畫及 09:11 起的 injection 解剖討論亦排除，34:18 起實際回到病例穿刺／抽吸內容，均不在本課範圍。DVT 內容不能取代正式 venous duplex。",
+              "target": "Baker cyst 頸部、非典型後膝病灶、DVT 鑑別與結構化報告",
+              "dose": "診斷段 12:53–34:13",
+              "contains_intervention": true,
+              "intervention_start_timestamp": "34:18",
+              "diagnostic_segment_range": "12:53–34:13",
+              "presenter": "Andrew Getzin, MD",
+              "presenter_qualification": "Cayuga Sports Medicine 醫師；Ithaca College Athletics Head Team Physician 與 Athletic Training Program Medical Director。",
+              "qualification_evidence_url": "https://cayugahealth.org/hospital/cayuga-center-for-sports-medicine-and-athletic-performance/",
+              "duration": "40:31",
+              "channel": "The AMSSM",
+              "upload_date": "2021-12-10",
+              "original_content_date": null,
+              "date_note": "影片稱為 prerecorded，但 YouTube 與 AMSSM 頁面未載原始錄製日期；不以 2021-12-10 上架日代替錄製日。",
+              "playback_status": "public; availability=public; yt-dlp playback rechecked 2026-08-02",
+              "embed_status": "playable_in_embed=true; YouTube oEmbed HTTP 200 rechecked 2026-08-02",
+              "disclosure": "講者於 02:34 聲明 no financial disclosures。",
+              "classic_exception": false
             }
           ]
         }
@@ -700,7 +789,36 @@
             "REF-ESSR-KNEE-2010",
             "REF-ACR-CHRONIC-KNEE-2026"
           ],
-          "drills": []
+          "drills": [
+            {
+              "name": "IU 四區快速 survey：建立全膝 pre-scan mental map",
+              "title": "Knee Ultrasound",
+              "url": "https://www.youtube.com/watch?v=bx0rT5U5ZU0",
+              "kind": "scan-demo",
+              "learning_tier": "extension",
+              "source_authority": "university-medical-school",
+              "curation_status": "provisional",
+              "last_verified_at": "2026-08-02",
+              "why": "Indiana University School of Medicine 的具名運動醫學／POCUS 教師在 4:54 內快速串起前、內、外、後四區，可在完整 ESSR 影片後作為不同講者與不同節奏的全膝路徑複習。",
+              "scope_note": "快速 survey 不能取代完整 protocol、病理判讀或結構化報告；學員仍須依本課 required views 完成各結構正交影像、動態與限制紀錄。",
+              "target": "前、內、外、後四區快速複習與完整掃描前 mental map",
+              "contains_intervention": false,
+              "intervention_start_timestamp": null,
+              "diagnostic_segment_range": null,
+              "presenter": "James G. Wilcox, MD, FAAFP, RMSK",
+              "presenter_qualification": "Family Medicine 與 Sports Medicine 醫師；IU School of Medicine Adjunct Clinical Assistant Professor，具 POCUS／MSK ultrasound 教學與 ABFM Sports Medicine 認證。",
+              "qualification_evidence_url": "https://medicine.iu.edu/faculty/16988/wilcox-james",
+              "duration": "04:54",
+              "channel": "Indiana University School of Medicine POCUS",
+              "upload_date": "2022-12-12",
+              "original_content_date": null,
+              "date_note": "YouTube 與 IU 頁面未另載原始錄製日期；不以 2022-12-12 上架日代替錄製日。",
+              "playback_status": "public; availability=public; yt-dlp playback rechecked 2026-08-02",
+              "embed_status": "playable_in_embed=true; YouTube oEmbed HTTP 200 rechecked 2026-08-02",
+              "disclosure": "影片頁未載商業揭露；不據此推定沒有利益關係。",
+              "classic_exception": false
+            }
+          ]
         }
       ]
     }
