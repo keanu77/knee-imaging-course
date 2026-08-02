@@ -35,7 +35,11 @@ def parse_clock(value: object) -> int | None:
     return hours * 3600 + minutes * 60 + seconds if minutes < 60 and seconds < 60 else None
 
 
-SEGMENT_SPLIT_RE = re.compile(r"[、;,]")
+# 半形與全形都收。各站資料實際用的分隔符不同——髖/膝/肩用 、，肘用全形 ；，
+# 踝足用半形 ;——而各站 parser 原本只認自己那一種，任何一站的 parser 搬到另一站
+# 都會把對方合法的多段範圍判成格式錯誤（2026-08-03 六站盤點）。全形逗號目前
+# 沒有資料在用，一併收進來是因為它跟 ； 屬於同一類漂移，擋掉的成本是零。
+SEGMENT_SPLIT_RE = re.compile(r"[、，；;,]")
 SEGMENT_RE = re.compile(
     r"((?:\d{1,2}:)?\d{1,2}:\d{2})\s*[–-]\s*((?:\d{1,2}:)?\d{1,2}:\d{2})"
 )
@@ -70,6 +74,44 @@ def parse_segment_ranges(text: str) -> list[tuple[int, int]] | None:
             return None
         segments.append((start, end))
     return segments
+
+
+def check_segment_framing(
+    segments: list[tuple[int, int]],
+    intervention_start: int | None,
+    duration: int | None,
+) -> list[str]:
+    """在區間本身已解析成功之後，檢查它是否真的框住了介入內容。
+
+    回傳錯誤訊息清單（空清單代表通過）。抽成獨立函式是為了讓
+    tests/test_segment_ranges.py 直接呼叫到**稽核真正跑的那份邏輯**，
+    而不是在測試裡複製一份規則——複製的那份不會因為 main() 忘了呼叫而失敗。
+    """
+    messages: list[str] = []
+
+    if intervention_start is not None:
+        for seg_start, seg_end in segments:
+            if seg_start <= intervention_start <= seg_end:
+                messages.append(
+                    "診斷段落不得涵蓋介入起點："
+                    f"{format_clock(seg_start)}–{format_clock(seg_end)}"
+                    f" 含 {format_clock(intervention_start)}"
+                )
+                break
+
+    # 終點打錯（例如多一位數）會把觀看範圍延伸到影片結束之後，
+    # 實務上等於沒有框限。
+    if duration is not None and any(seg_end > duration for _, seg_end in segments):
+        messages.append("診斷段落不得超出影片長度")
+
+    # 這裡刻意「不」要求至少一段在介入起點前結束。肘部的稽核有這條，但
+    # 2026-08-03 拿肩部真實資料一驗就是誤報：有兩支影片的介入落在最開頭
+    # （02:12、04:56），診斷段落從其後開始（02:30、05:06）——播放器從第一段
+    # 起點播，學員根本不會經過介入畫面，框限是正確的。那條規則只在「介入落在
+    # 中段空隙」這種形狀下恆真，而肘部唯一一支介入影片正好是那個形狀。
+    # 要加回來之前，先確認它在六站的資料上都不誤報。
+
+    return messages
 
 
 def main() -> int:
@@ -249,24 +291,19 @@ def main() -> int:
 
                     range_text = str(video.get("diagnostic_segment_range") or "").strip()
                     segments = parse_segment_ranges(range_text)
+                    duration = parse_clock(video.get("duration"))
                     if segments is None:
                         err(
                             video_where,
                             "含介入內容時 diagnostic_segment_range 必須是遞增的合法時間範圍"
-                            "（多段以 、 或 ; 分隔，段間不得重疊）",
+                            "（多段以 、；; 或 , 分隔，段間不得重疊）",
                         )
-                    elif intervention_start is not None:
-                        for seg_start, seg_end in segments:
-                            if seg_start <= intervention_start <= seg_end:
-                                err(
-                                    video_where,
-                                    "診斷段落不得涵蓋介入起點："
-                                    f"{format_clock(seg_start)}–{format_clock(seg_end)}"
-                                    f" 含 {video.get('intervention_start_timestamp')}",
-                                )
-                                break
+                    else:
+                        for message in check_segment_framing(
+                            segments, intervention_start, duration
+                        ):
+                            err(video_where, message)
 
-                    duration = parse_clock(video.get("duration"))
                     if duration is None:
                         err(video_where, "含介入內容時必須提供合法 duration")
                     elif intervention_start is not None and intervention_start >= duration:
@@ -276,6 +313,21 @@ def main() -> int:
                         err(video_where, "含介入內容的影片必須標示 presenter")
                     if not video.get("qualification_evidence_url"):
                         err(video_where, "含介入內容的影片必須提供 qualification_evidence_url")
+                elif video.get("contains_intervention") is False:
+                    # 沒有介入卻留著介入時間戳，是殘留髒資料：它會讓人以為這支
+                    # 影片已經框限過，稽核卻因為 contains_intervention=false 而
+                    # 完全不看那個值。
+                    #
+                    # 但 diagnostic_segment_range 不在此列。診斷影片用
+                    # 00:00–<完整片長> 記錄「整支都是診斷內容」是既有慣例
+                    # （肩部 9 支這樣寫，每一支的終點都精確等於 duration）。
+                    # 肘部的稽核要求兩個欄位都為 null，照搬過來會逼人刪掉有意義
+                    # 的資料——2026-08-03 實測確認。
+                    if str(video.get("intervention_start_timestamp") or "").strip():
+                        err(
+                            video_where,
+                            "不含介入內容時 intervention_start_timestamp 必須為 null 或留白",
+                        )
 
                 intervention_markers = (
                     "inject",
