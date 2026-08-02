@@ -35,6 +35,43 @@ def parse_clock(value: object) -> int | None:
     return hours * 3600 + minutes * 60 + seconds if minutes < 60 and seconds < 60 else None
 
 
+SEGMENT_SPLIT_RE = re.compile(r"[、;,]")
+SEGMENT_RE = re.compile(
+    r"((?:\d{1,2}:)?\d{1,2}:\d{2})\s*[–-]\s*((?:\d{1,2}:)?\d{1,2}:\d{2})"
+)
+
+
+def format_clock(seconds: int) -> str:
+    """秒轉回 MM:SS 或 H:MM:SS，只用於錯誤訊息。"""
+    hours, rest = divmod(seconds, 3600)
+    minutes, secs = divmod(rest, 60)
+    return f"{hours}:{minutes:02d}:{secs:02d}" if hours else f"{minutes}:{secs:02d}"
+
+
+def parse_segment_ranges(text: str) -> list[tuple[int, int]] | None:
+    """解析一或多段診斷區間；格式錯、單段非遞增、或段間重疊時回 None。
+
+    多段以 、 ; , 分隔。允許段與段之間留空隙——介入內容就落在空隙裡——
+    但要求整體嚴格遞增且不重疊，避免打錯字造成錯誤框定。
+    """
+    parts = [part.strip() for part in SEGMENT_SPLIT_RE.split(text) if part.strip()]
+    if not parts:
+        return None
+    segments: list[tuple[int, int]] = []
+    for part in parts:
+        match = SEGMENT_RE.fullmatch(part)
+        if match is None:
+            return None
+        start = parse_clock(match.group(1))
+        end = parse_clock(match.group(2))
+        if start is None or end is None or start >= end:
+            return None
+        if segments and start <= segments[-1][1]:
+            return None
+        segments.append((start, end))
+    return segments
+
+
 def main() -> int:
     cfg = load(COURSE / "course.config.json")
     brief = load(COURSE / "brief.json")
@@ -211,19 +248,23 @@ def main() -> int:
                         )
 
                     range_text = str(video.get("diagnostic_segment_range") or "").strip()
-                    range_match = re.fullmatch(
-                        r"((?:\d{1,2}:)?\d{1,2}:\d{2})\s*[–-]\s*((?:\d{1,2}:)?\d{1,2}:\d{2})",
-                        range_text,
-                    )
-                    range_start = parse_clock(range_match.group(1)) if range_match else None
-                    range_end = parse_clock(range_match.group(2)) if range_match else None
-                    if range_start is None or range_end is None or range_start >= range_end:
+                    segments = parse_segment_ranges(range_text)
+                    if segments is None:
                         err(
                             video_where,
-                            "含介入內容時 diagnostic_segment_range 必須是遞增的合法時間範圍",
+                            "含介入內容時 diagnostic_segment_range 必須是遞增的合法時間範圍"
+                            "（多段以 、 或 ; 分隔，段間不得重疊）",
                         )
-                    elif intervention_start is not None and range_end >= intervention_start:
-                        err(video_where, "診斷段落必須在介入起點前結束")
+                    elif intervention_start is not None:
+                        for seg_start, seg_end in segments:
+                            if seg_start <= intervention_start <= seg_end:
+                                err(
+                                    video_where,
+                                    "診斷段落不得涵蓋介入起點："
+                                    f"{format_clock(seg_start)}–{format_clock(seg_end)}"
+                                    f" 含 {video.get('intervention_start_timestamp')}",
+                                )
+                                break
 
                     duration = parse_clock(video.get("duration"))
                     if duration is None:
