@@ -219,7 +219,7 @@
           "name": "診斷範圍、能力邊界與升級決策",
           "type": "orientation",
           "level": "foundation",
-          "review_status": "draft",
+          "review_status": "approved",
           "summary": "界定膝部診斷性超音波的適用範圍、完整與聚焦檢查差異，以及急慢性膝痛、紅旗與深部關節內問題需要其他影像或正式轉介的情境。",
           "objectives": [
             "區分完整四區掃描、臨床問題導向聚焦掃描與本課排除的介入操作。",
@@ -246,7 +246,11 @@
             "REF-ACR-CHRONIC-KNEE-2026",
             "REF-NICE-VTE-NG158"
           ],
-          "drills": []
+          "drills": [],
+          "reviewed_by": "吳易澄",
+          "reviewer_role": "復健科專科醫師",
+          "reviewed_at": "2026-08-16",
+          "reviewed_commit": "43b138ccb6358b75d766657ab020207e64756483"
         }
       ]
     },
@@ -259,7 +263,7 @@
           "name": "高解析探頭、假影控制與影像最佳化",
           "type": "foundation",
           "level": "foundation",
-          "review_status": "draft",
+          "review_status": "approved",
           "summary": "依目標深度選擇線性探頭與頻率，建立深度、焦點、增益、動態範圍、Doppler、探頭壓力及方向標示的固定流程，並優先排除各向異性。",
           "objectives": [
             "依表淺肌腱、後窩深部結構與體型選擇適當探頭及頻率。",
@@ -292,7 +296,11 @@
             "REF-TAMBORRINI-KNEE-2025",
             "REF-AIUM-DOC-2026"
           ],
-          "drills": []
+          "drills": [],
+          "reviewed_by": "吳易澄",
+          "reviewer_role": "復健科專科醫師",
+          "reviewed_at": "2026-08-16",
+          "reviewed_commit": "43b138ccb6358b75d766657ab020207e64756483"
         }
       ]
     },
@@ -305,7 +313,7 @@
           "name": "股四頭肌腱、髕上隱窩、滑車軟骨與髕腱",
           "type": "anatomy",
           "level": "foundation",
-          "review_status": "draft",
+          "review_status": "approved",
           "summary": "以仰臥、20–30 度屈膝與最大屈膝聲窗完成前側系統掃描，辨認伸膝機轉、關節前隱窩、髕骨支持帶、前側滑囊及可見的股骨滑車軟骨。",
           "objectives": [
             "在兩個正交平面追蹤股四頭肌腱與髕腱的全長、附著點和纖維連續性。",
@@ -428,7 +436,11 @@
               "classic_exception_reason": "雖早於 2021-08-01 cutoff，但三病例並列呈現正常脂肪、樹枝狀脂肪瘤與滑膜的獨特比較，並示範屈伸／壓迫下液體移動；近期替代只涵蓋一般積液或滑膜炎，未提供同等比較。",
               "recent_alternative_search": "2026-08-02 ytsearch15:knee ultrasound suprapatellar recess；查得 Clarius 2023 一般 effusion/synovitis 短片，但未涵蓋本片三病例比較。"
             }
-          ]
+          ],
+          "reviewed_by": "吳易澄",
+          "reviewer_role": "復健科專科醫師",
+          "reviewed_at": "2026-08-16",
+          "reviewed_commit": "43b138ccb6358b75d766657ab020207e64756483"
         }
       ]
     },
@@ -441,7 +453,7 @@
           "name": "內側支持帶、MCL、鵝足與標準化外翻應力",
           "type": "anatomy",
           "level": "intermediate",
-          "review_status": "draft",
+          "review_status": "approved",
           "summary": "以內側股骨髁、關節線與脛骨為地標，分層追蹤淺深 MCL、內側半月板周邊、鵝足與半膜肌相關結構，並建立可重複的外翻動態紀錄。",
           "objectives": [
             "在長短軸辨認淺層與深層 MCL、內側關節線及可見的內側半月板周邊。",
@@ -507,7 +519,11 @@
               "disclosure": "講者於 00:56 聲明 nothing to disclose。",
               "classic_exception": false
             }
-          ]
+          ],
+          "reviewed_by": "吳易澄",
+          "reviewer_role": "復健科專科醫師",
+          "reviewed_at": "2026-08-16",
+          "reviewed_commit": "43b138ccb6358b75d766657ab020207e64756483"
         }
       ]
     },
@@ -520,7 +536,7 @@
           "name": "IT band、LCL、膕肌、近端脛腓關節與腓總神經",
           "type": "anatomy",
           "level": "intermediate",
-          "review_status": "draft",
+          "review_status": "approved",
           "summary": "以外側股骨上髁、腓骨頭及近端脛腓關節建立外側與後外側路徑，追蹤髂脛束、LCL、股二頭肌腱、膕肌腱與腓總神經。",
           "objectives": [
             "在長短軸分辨髂脛束、LCL、股二頭肌腱、膕肌腱及外側半月板周邊。",
@@ -585,7 +601,11 @@
               "disclosure": "影片頁與可取得字幕未見明確商業揭露；不據此推定沒有利益關係。",
               "classic_exception": false
             }
-          ]
+          ],
+          "reviewed_by": "吳易澄",
+          "reviewer_role": "復健科專科醫師",
+          "reviewed_at": "2026-08-16",
+          "reviewed_commit": "43b138ccb6358b75d766657ab020207e64756483"
         }
       ]
     },
@@ -598,7 +618,7 @@
           "name": "Baker cyst 聲窗、膕窩神經血管與後側限制",
           "type": "dynamic",
           "level": "intermediate",
-          "review_status": "draft",
+          "review_status": "approved",
           "summary": "以俯臥伸膝為主完成後內、後外與中央膕窩掃描，辨認半膜肌—內側腓腸肌滑囊、Baker cyst 典型頸部、膕窩神經血管與可見的 PCL 部分。",
           "objectives": [
             "在後內側辨認半膜肌腱、內側腓腸肌頭及兩者間滑囊交通頸。",
@@ -692,7 +712,11 @@
               "disclosure": "講者於 02:34 聲明 no financial disclosures。",
               "classic_exception": false
             }
-          ]
+          ],
+          "reviewed_by": "吳易澄",
+          "reviewer_role": "復健科專科醫師",
+          "reviewed_at": "2026-08-16",
+          "reviewed_commit": "43b138ccb6358b75d766657ab020207e64756483"
         }
       ]
     },
@@ -705,7 +729,7 @@
           "name": "多平面病理判讀、鑑別與升級框架",
           "type": "pathology",
           "level": "advanced",
-          "review_status": "draft",
+          "review_status": "approved",
           "summary": "以多平面形態、動態、Doppler 與臨床問題整合肌腱與韌帶病變、積液與滑膜炎、滑囊與囊腫、OA 徵象及半月板周邊所見，並明確呈現不確定性。",
           "objectives": [
             "描述肌腱、韌帶、滑囊、囊腫、積液與滑膜肥厚在多平面下的直接與間接徵象。",
@@ -742,7 +766,11 @@
             "REF-PANDYA-KNEE-2023",
             "REF-ACR-CHRONIC-KNEE-2026"
           ],
-          "drills": []
+          "drills": [],
+          "reviewed_by": "吳易澄",
+          "reviewer_role": "復健科專科醫師",
+          "reviewed_at": "2026-08-16",
+          "reviewed_commit": "43b138ccb6358b75d766657ab020207e64756483"
         }
       ]
     },
@@ -755,7 +783,7 @@
           "name": "四區整合、最低影像集與結構化報告",
           "type": "reporting",
           "level": "advanced",
-          "review_status": "draft",
+          "review_status": "approved",
           "summary": "把前、內、外、後四區整合成可重複流程，建立最低永久影像集、結構化報告、技術限制、升級建議與督導回饋紀錄。",
           "objectives": [
             "依固定四區順序完成完整檢查，或清楚標示臨床問題導向聚焦檢查的實際範圍。",
@@ -818,7 +846,11 @@
               "disclosure": "影片頁未載商業揭露；不據此推定沒有利益關係。",
               "classic_exception": false
             }
-          ]
+          ],
+          "reviewed_by": "吳易澄",
+          "reviewer_role": "復健科專科醫師",
+          "reviewed_at": "2026-08-16",
+          "reviewed_commit": "43b138ccb6358b75d766657ab020207e64756483"
         }
       ]
     }
