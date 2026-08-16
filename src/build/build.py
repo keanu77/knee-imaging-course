@@ -87,6 +87,27 @@ def collect_alt_lessons() -> dict:
     return out
 
 
+def collect_segments() -> tuple[dict, int]:
+    """url -> 已簽核的逐段筆記；回傳（對照表、被擋下的未簽核影片數）。
+
+    只有 review_status == approved 的影片會進 course.json。逐段筆記是新的教學內容，
+    未經醫師簽核就不該出現在上線站，開放搜尋索引之後更是如此。
+    """
+    blob = load_json(DATA / "segments.json")
+    if not blob:
+        return {}, 0
+    approved, held = {}, 0
+    for entry in blob.get("videos", []):
+        url = entry.get("url") or entry.get("video_url")
+        if not url or not entry.get("segments"):
+            continue
+        if entry.get("review_status") == "approved":
+            approved[url] = entry["segments"]
+        else:
+            held += 1
+    return approved, held
+
+
 def collect_drill_evidence() -> dict:
     """合併各 agent 產出的動作類別文獻。"""
     out = {}
@@ -226,6 +247,8 @@ def main() -> int:
     within_unit = Counter()  # (unit_id, url) -> 次數，同單元重複才是真問題
 
     vmeta = load_json(DATA / "video-meta.json") or {}
+    segments_by_url, segments_held = collect_segments()
+    segment_urls: set[str] = set()
     drill_ev = collect_drill_evidence()
     alt_lessons = collect_alt_lessons()
     multilang = [0]
@@ -316,6 +339,10 @@ def main() -> int:
                     bad_urls.append(f"{u['id']}: {url}")
                 seen_urls[url] += 1
                 within_unit[(u["id"], url)] += 1
+
+                if url in segments_by_url:
+                    v["segments"] = segments_by_url[url]
+                    segment_urls.add(url)
 
                 # 時長與頻道以 YouTube 實際 metadata 為準，策展資料僅作後備
                 info = vmeta.get(video_id(url) or "")
@@ -424,6 +451,10 @@ def main() -> int:
                 if u.get("type") == (CFG.get("ui", {}).get("problemType") or "posture")
             ),
             "evidence_checked": len(evidence),
+            # 逐段筆記：只計已簽核的；未簽核的不進產物，但數量要看得見
+            "segment_videos": len(segment_urls),
+            "segment_count": sum(len(segments_by_url[u]) for u in segment_urls),
+            "segment_videos_held": segments_held,
         },
         "chapters": chapters,
     }
@@ -459,6 +490,12 @@ def main() -> int:
         f" · 肌群索引 {len(muscle_index)} 項"
         f" · 動作類別 {len(cat_counts)} 類（文獻 {len(drill_ev)} 類）"
     )
+    if segment_urls or segments_held:
+        print(
+            f"   逐段筆記 {len(segment_urls)} 支影片 · "
+            f"{sum(len(segments_by_url[u]) for u in segment_urls)} 段已簽核並輸出"
+            + (f" · {segments_held} 支未簽核未輸出" if segments_held else "")
+        )
     if uncategorised:
         print(
             f"   ⚠ 未分類動作 {len(uncategorised)}：{'、'.join(x for x in uncategorised[:5] if x)}"

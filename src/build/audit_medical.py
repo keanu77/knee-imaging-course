@@ -114,6 +114,102 @@ def check_segment_framing(
     return messages
 
 
+def check_segments(video: dict, entry: dict, allowed_status: set[str]) -> list[str]:
+    """檢查一支影片的逐段筆記。回傳錯誤訊息清單，空清單代表通過。
+
+    逐段筆記會在播放器上變成一鍵跳播的入口，所以最重要的一條是：只要影片有框限
+    診斷範圍，每一段都必須完整落在框限內。否則學員按下時間碼就會被直接送進注射
+    示範——那正是 contains_intervention 這套機制要擋的事。
+    """
+    errors: list[str] = []
+
+    status = entry.get("review_status")
+    if status not in allowed_status:
+        errors.append(f"review_status 不在允許清單：{status!r}")
+
+    segments = entry.get("segments")
+    if not isinstance(segments, list) or not segments:
+        errors.append("segments 必須是非空陣列")
+        return errors
+
+    duration = parse_clock(video.get("duration"))
+    # 膝部的 parser 要求呼叫端先正規化（main() 同樣寫法）；模板那份是自己吞 None 的版本。
+    range_text = str(video.get("diagnostic_segment_range") or "").strip()
+    diagnostic_ranges = parse_segment_ranges(range_text) if range_text else None
+    if video.get("contains_intervention") is True and diagnostic_ranges is None:
+        errors.append("含介入影片缺少可解析的 diagnostic_segment_range，無法框限逐段筆記")
+
+    previous_end: int | None = None
+    for index, segment in enumerate(segments, start=1):
+        where = f"第 {index} 段"
+        start = parse_clock(segment.get("start"))
+        end = parse_clock(segment.get("end"))
+        if start is None or end is None:
+            errors.append(f"{where}：start／end 必須是合法 MM:SS 或 HH:MM:SS")
+            continue
+        if start >= end:
+            errors.append(f"{where}：start 必須早於 end")
+            continue
+        if previous_end is not None and start <= previous_end:
+            errors.append(f"{where}：段落必須嚴格遞增且不重疊")
+        previous_end = end
+
+        if duration is not None and end > duration:
+            errors.append(f"{where}：段落結束時間超出影片長度")
+
+        if diagnostic_ranges is not None and not any(
+            r_start <= start and end <= r_end for r_start, r_end in diagnostic_ranges
+        ):
+            errors.append(f"{where}：段落未完整落在診斷段落範圍內，不得作為跳播入口")
+
+        for field, minimum in (("title", 4), ("summary", 10)):
+            if len(str(segment.get(field, "")).strip()) < minimum:
+                errors.append(f"{where}：{field} 太短或缺漏")
+        detail = segment.get("detail")
+        if not isinstance(detail, list) or not detail:
+            errors.append(f"{where}：detail 必須是非空陣列")
+
+    return errors
+
+
+def audit_segments(
+    path: Path, videos_by_url: dict[str, dict], allowed_status: set[str]
+) -> tuple[list[str], int, dict[str, int]]:
+    """稽核整份 segments.json，回傳（錯誤清單、段落總數、各審閱狀態計數）。"""
+    errors: list[str] = []
+    counts: dict[str, int] = {}
+    total = 0
+    if not path.exists():
+        return errors, total, counts
+
+    blob = load(path)
+    seen_urls: set[str] = set()
+    for entry in blob.get("videos", []):
+        url = entry.get("video_url")
+        where = f"segments/{url or '?'}"
+        if not url:
+            errors.append(f"{where}: 缺少 video_url")
+            continue
+        if url in seen_urls:
+            errors.append(f"{where}: video_url 重複")
+            continue
+        seen_urls.add(url)
+
+        video = videos_by_url.get(url)
+        if video is None:
+            errors.append(f"{where}: video_url 不對應課程中任何一支影片")
+            continue
+
+        for message in check_segments(video, entry, allowed_status):
+            errors.append(f"{where}: {message}")
+
+        status = entry.get("review_status")
+        counts[status] = counts.get(status, 0) + 1
+        total += len(entry.get("segments") or [])
+
+    return errors, total, counts
+
+
 def main() -> int:
     cfg = load(COURSE / "course.config.json")
     brief = load(COURSE / "brief.json")
@@ -140,6 +236,7 @@ def main() -> int:
     warnings: list[str] = []
     unit_ids: set[str] = set()
     video_ids: set[str] = set()
+    videos_by_url: dict[str, dict] = {}
     classic_count = 0
     review_counts: dict[str, int] = {}
 
@@ -206,6 +303,11 @@ def main() -> int:
 
             if medical.get("scope") == "diagnostic-only" and unit.get("type") == "intervention":
                 err(where, "第一階段不得包含 intervention 類型")
+
+            lesson = unit.get("lesson")
+            for video in [*([lesson] if lesson else []), *unit.get("drills", [])]:
+                if video.get("url"):
+                    videos_by_url[video["url"]] = video
 
             for video in unit.get("drills", []):
                 video_where = f"{where}/{video.get('name', '?')}"
@@ -362,6 +464,11 @@ def main() -> int:
                     ):
                         err(video_where, "經典例外缺少 classic_exception_reason")
 
+    segment_errors, segment_total, segment_counts = audit_segments(
+        COURSE / "data" / "segments.json", videos_by_url, allowed_status
+    )
+    errors.extend(segment_errors)
+
     if medical.get("primaryAudience") != "physicians":
         errors.append("設定檔：primaryAudience 必須是 physicians")
     if not medical.get("interventionalContentDeferred"):
@@ -377,6 +484,12 @@ def main() -> int:
         + " · ".join(f"{status} {review_counts.get(status, 0)}" for status in status_order)
         + (" · 可索引" if medical.get("allowIndexing") else " · noindex")
     )
+    if segment_counts:
+        print(
+            f"  ✓ 逐段筆記：{sum(segment_counts.values())} 支影片 · {segment_total} 段 · "
+            + " · ".join(f"{status} {count}" for status, count in sorted(segment_counts.items()))
+            + "（只有 approved 會進入 course.json）"
+        )
     if warnings:
         print(f"  ⚠ {len(warnings)} 項非阻斷警告（目前主要為內容或上架日期待確認）")
         for warning in warnings:

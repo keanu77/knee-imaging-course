@@ -1,0 +1,24 @@
+{
+  "_doc": [
+    "逐段筆記：把影片切成可直接跳播的教學段落。與 syllabus.json 平行，以 video_url 關聯。",
+    "每支影片自帶 review_status（沿用 medical.reviewStatuses）；build.py 只把 approved 的段落",
+    "寫進 course.json，未簽核的內容不會出現在線上站，因此新增筆記不會使既有的單元簽核失效。",
+    "段落內容一律以影片實際字幕為依據（yt-dlp 實抓核對），自動字幕的解剖名詞訛誤要在 note 記錄",
+    "並改採標準命名；不得自行擴充字幕未提及的內容。",
+    "含介入的影片，每一段都必須完整落在 diagnostic_segment_range 內——逐段筆記在播放器上是",
+    "一鍵跳播的入口，允許段落落在框限外等於讓學員一鍵跳進注射示範。",
+    "此規則由 audit_medical.check_segments() 強制，tests/test_segments.py 鎖住。",
+    "",
+    "每支影片的結構：",
+    "  video_url                 必須對應 syllabus 中既有的影片",
+    "  review_status             draft / medical-review / approved",
+    "  transcript_verified_at    字幕實查日期",
+    "  transcript_source         字幕來源",
+    "  note                      字幕訛誤與採用的標準命名",
+    "  segments[]                start / end / title / summary / detail[]",
+    "",
+    "簽核用 approve_segments.py，會寫入 reviewed_by / reviewer_role /",
+    "reviewed_at / reviewed_commit 追溯欄位。"
+  ],
+  "videos": []
+}
