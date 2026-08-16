@@ -1,0 +1,35 @@
+{
+  "project": "knee-ultrasound-course",
+  "repository": "keanu77/knee-ultrasound-course",
+  "site_url": "https://knee-ultrasound.sportsmedicine.tw",
+  "body_region": {
+    "zh": "膝部",
+    "en": "knee",
+    "joint_zh": "膝關節"
+  },
+  "audience": "physicians",
+  "locale": "zh-Hant-TW",
+  "prerequisite_knowledge": "具醫師資格並熟悉膝部臨床解剖與基本理學檢查；建議具備基礎超音波物理、探頭方向與儀器操作概念。線上課程不取代實機訓練、合格督導或機構 credentialing。",
+  "scope": "diagnostic-only",
+  "recent_content_cutoff": "2021-08-01",
+  "classic_teacher_leads": [],
+  "repository_settings": {
+    "visibility": "private",
+    "default_branch": "main"
+  },
+  "cloudflare": {
+    "account_confirmed": false,
+    "zone_confirmed": true,
+    "pages_project_exists": null,
+    "pages_project_name": "knee-ultrasound-course"
+  },
+  "status": "draft",
+  "indexing": false,
+  "content_owner": "吳易澄",
+  "medical_reviewer": {
+    "name": "吳易澄",
+    "qualification": "復健科專科醫師",
+    "scope": "膝部診斷性肌肉骨骼超音波課程內容逐單元審查；本次僅登錄審查責任，不代表已簽核或 approved。"
+  },
+  "notes": "Course brief 已凍結。依現行專業指引建立課程骨架，再驗證 2021-08-01 之後的近期影片與經典候選。正式網域與 Cloudflare zone 僅記錄；本次不建立 Pages、不修改 DNS、不 merge、不開放 indexing。"
+}

@@ -1,0 +1,858 @@
+{
+  "reference_catalog": {
+    "REF-AIUM-MSK-2023": {
+      "title": "The AIUM Practice Parameter for the Performance of the Musculoskeletal Ultrasound Examination",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37130137/",
+      "organization": "American Institute of Ultrasound in Medicine",
+      "journal": "Journal of Ultrasound in Medicine",
+      "year": 2023,
+      "type": "practice guideline",
+      "last_verified": "2026-08-01"
+    },
+    "REF-EFSUMB-MSK-I-2022": {
+      "title": "The EFSUMB Guidelines and Recommendations for Musculoskeletal Ultrasound - Part I: Extraarticular Pathologies",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34479372/",
+      "organization": "European Federation of Societies for Ultrasound in Medicine and Biology",
+      "journal": "Ultraschall in der Medizin",
+      "year": 2022,
+      "type": "GRADE and Delphi guideline",
+      "last_verified": "2026-08-01"
+    },
+    "REF-EFSUMB-MSK-II-2022": {
+      "title": "The EFSUMB Guidelines and Recommendations for Musculoskeletal Ultrasound - Part II: Joint Pathologies, Pediatric Applications, and Guided Procedures",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34734404/",
+      "organization": "European Federation of Societies for Ultrasound in Medicine and Biology",
+      "journal": "Ultraschall in der Medizin",
+      "year": 2022,
+      "type": "GRADE and Delphi guideline; diagnostic sections only",
+      "last_verified": "2026-08-01",
+      "note": "原文亦涵蓋導引處置；本課只引用關節診斷內容，不收錄介入技術。"
+    },
+    "REF-ESSR-KNEE-2010": {
+      "title": "Musculoskeletal Ultrasound Technical Guidelines V: Knee",
+      "url": "https://essr.org/content-essr/uploads/2016/10/knee.pdf",
+      "organization": "European Society of Musculoskeletal Radiology",
+      "journal": "ESSR",
+      "year": 2010,
+      "type": "official technical guideline; current classic standard",
+      "last_verified": "2026-08-01",
+      "note": "早於 recent-content cutoff；仍由 ESSR 官方列載，以 2022–2025 現行來源校正。"
+    },
+    "REF-EULAR-PROCEDURES-2017": {
+      "title": "The 2017 EULAR standardised procedures for ultrasound imaging in rheumatology",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28814430/",
+      "organization": "European Alliance of Associations for Rheumatology",
+      "journal": "Annals of the Rheumatic Diseases",
+      "year": 2017,
+      "type": "systematic review, Delphi and consensus procedure",
+      "last_verified": "2026-08-01",
+      "note": "早於 cutoff 且偏風濕科情境；用於可追溯的病人姿勢與探頭放置程序。"
+    },
+    "REF-TAMBORRINI-KNEE-2025": {
+      "title": "Enhancing knee imaging via histology and anatomy-driven high-resolution musculoskeletal ultrasound",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40226156/",
+      "journal": "Journal of Ultrasonography",
+      "year": 2025,
+      "type": "peer-reviewed pictorial review",
+      "last_verified": "2026-08-01"
+    },
+    "REF-WU-PLC-2024": {
+      "title": "Ultrasound imaging of the posterior lateral corner of the knee: a pictorial review of anatomy and pathologies",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38334861/",
+      "journal": "Skeletal Radiology",
+      "year": 2024,
+      "type": "peer-reviewed pictorial review",
+      "last_verified": "2026-08-01"
+    },
+    "REF-EULAR-OMERACT-2017": {
+      "title": "Scoring ultrasound synovitis in rheumatoid arthritis: a EULAR-OMERACT ultrasound taskforce-Part 1: definition and development of a standardised, consensus-based scoring system",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28948983/",
+      "organization": "EULAR-OMERACT",
+      "journal": "RMD Open",
+      "year": 2017,
+      "type": "consensus study",
+      "last_verified": "2026-08-01",
+      "note": "原始情境為類風濕性關節炎；僅支援滑膜炎術語與取得一致性，不外推為所有膝痛的診斷規則。"
+    },
+    "REF-EFTEKHARSADAT-OA-2024": {
+      "title": "Diagnostic value of ultrasonography in knee osteoarthritis: A systematic review",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39239080/",
+      "journal": "Journal of Clinical Ultrasound",
+      "year": 2024,
+      "type": "systematic review",
+      "last_verified": "2026-08-01",
+      "note": "僅納入兩項研究；不可把超音波當作早期膝 OA 的獨立排除工具。"
+    },
+    "REF-PANDYA-KNEE-2023": {
+      "title": "Evaluation of the knee joint with ultrasound and magnetic resonance imaging",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38020509/",
+      "journal": "Journal of Ultrasonography",
+      "year": 2023,
+      "type": "peer-reviewed multimodality review",
+      "last_verified": "2026-08-01"
+    },
+    "REF-ACR-CHRONIC-KNEE-2026": {
+      "title": "ACR Appropriateness Criteria Chronic Knee Pain: 2026 Update",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42340275/",
+      "organization": "American College of Radiology",
+      "journal": "Journal of the American College of Radiology",
+      "year": 2026,
+      "type": "appropriateness guideline",
+      "last_verified": "2026-08-01"
+    },
+    "REF-ACR-ACUTE-KNEE-2020": {
+      "title": "ACR Appropriateness Criteria Acute Trauma to the Knee",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32370956/",
+      "organization": "American College of Radiology",
+      "journal": "Journal of the American College of Radiology",
+      "year": 2020,
+      "type": "appropriateness guideline",
+      "last_verified": "2026-08-01",
+      "note": "早於 cutoff；用於急性創傷的初始影像與升級決策，不用來定義超音波切面。"
+    },
+    "REF-NICE-VTE-NG158": {
+      "title": "Venous thromboembolic diseases: diagnosis, management and thrombophilia testing",
+      "url": "https://www.nice.org.uk/guidance/ng158",
+      "organization": "National Institute for Health and Care Excellence",
+      "journal": "NICE guideline NG158",
+      "year": 2026,
+      "type": "clinical guideline; reviewed 2026",
+      "last_verified": "2026-08-01"
+    },
+    "REF-AIUM-DOC-2026": {
+      "title": "AIUM Practice Parameter for Documentation of an Ultrasound Examination, 2025 Revision",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41518118/",
+      "organization": "American Institute of Ultrasound in Medicine",
+      "journal": "Journal of Ultrasound in Medicine",
+      "year": 2026,
+      "type": "documentation practice parameter",
+      "last_verified": "2026-08-01"
+    }
+  },
+  "stance": [
+    {
+      "unit": "concept-scope",
+      "name": "診斷範圍與能力邊界",
+      "evidence_grade": "guideline",
+      "summary": "本課只建立膝部診斷掃描、判讀、紀錄與升級決策；線上完成不等於可獨立執行、出具正式報告或取得 credentialing。",
+      "key_findings": [
+        "完整四區檢查與臨床問題導向的聚焦檢查都可使用，但報告必須忠實描述實際範圍。",
+        "急性明顯創傷、深部關節內問題或骨髓病變不能由陰性局部超音波排除。",
+        "穿刺、注射及其他導引治療均延後，不屬於本版課程。"
+      ],
+      "caveats": "所在地法規、機構 credentialing、影像科報告規範與督導要求優先於本課教材。",
+      "citations": [
+        {
+          "title": "AIUM MSK Ultrasound Practice Parameter",
+          "journal": "J Ultrasound Med",
+          "year": 2023,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37130137/"
+        },
+        {
+          "title": "ACR Chronic Knee Pain: 2026 Update",
+          "journal": "J Am Coll Radiol",
+          "year": 2026,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42340275/"
+        }
+      ]
+    },
+    {
+      "unit": "concept-standard",
+      "name": "四區路徑、正交確認與動態脈絡",
+      "evidence_grade": "guideline",
+      "summary": "以前、內、外、後四區建立可重複的基準路徑；相關結構沿全長追蹤，可疑異常以兩個正交平面確認，再按臨床問題追加動態與 Doppler。",
+      "key_findings": [
+        "固定四區路徑可降低只掃痛點造成的系統性遺漏。",
+        "病人姿勢、探頭方向、骨性地標、側別、壓力與動態方法應可回溯。",
+        "對側比較只提供脈絡；對側相同不自動等於正常。"
+      ],
+      "caveats": "標準路徑不保證每位病人都有完整聲窗；疼痛、活動受限或體型導致的未完成區域必須記錄。",
+      "citations": [
+        {
+          "title": "AIUM MSK Ultrasound Practice Parameter",
+          "journal": "J Ultrasound Med",
+          "year": 2023,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37130137/"
+        },
+        {
+          "title": "High-resolution knee ultrasound anatomy review",
+          "journal": "J Ultrason",
+          "year": 2025,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40226156/"
+        }
+      ]
+    },
+    {
+      "unit": "concept-limits",
+      "name": "不確定性、紅旗與升級影像",
+      "evidence_grade": "review",
+      "summary": "超音波擅長表淺肌腱、韌帶、滑囊、囊腫、周邊神經與即時動態，但不能完整排除十字韌帶、深部軟骨、骨髓或複雜半月板病變。",
+      "key_findings": [
+        "肌腱形態、積液、滑膜肥厚、Power Doppler 或半月板突出都不能脫離症狀與臨床脈絡單獨確診。",
+        "疑骨折、感染、腫瘤、鎖膝、伸膝機轉中斷或神經血管缺損時應按情境升級。",
+        "後膝或小腿腫痛疑似 DVT 時，局部 MSK 掃描不能取代正式 VTE 臨床路徑與靜脈超音波。"
+      ],
+      "caveats": "陰性聚焦檢查只能回答已實際顯示的結構；不能寫成整個膝部或靜脈系統正常。",
+      "citations": [
+        {
+          "title": "Evaluation of the knee joint with ultrasound and MRI",
+          "journal": "J Ultrason",
+          "year": 2023,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38020509/"
+        },
+        {
+          "title": "NICE venous thromboembolic diseases guideline NG158",
+          "journal": "NICE",
+          "year": 2026,
+          "url": "https://www.nice.org.uk/guidance/ng158"
+        }
+      ]
+    }
+  ],
+  "chapters": [
+    {
+      "chapter": "CH0",
+      "title": "課程定位、臨床問題與安全",
+      "units": [
+        {
+          "id": "ch0-u1",
+          "name": "診斷範圍、能力邊界與升級決策",
+          "type": "orientation",
+          "level": "foundation",
+          "review_status": "approved",
+          "summary": "界定膝部診斷性超音波的適用範圍、完整與聚焦檢查差異，以及急慢性膝痛、紅旗與深部關節內問題需要其他影像或正式轉介的情境。",
+          "objectives": [
+            "區分完整四區掃描、臨床問題導向聚焦掃描與本課排除的介入操作。",
+            "依創傷機轉、紅旗、既有影像與臨床問題選擇超音波、放射線、MRI 或其他正式檢查路徑。",
+            "說明線上課程、督導下實作、機構 credentialing 與獨立判讀資格之間的差異。"
+          ],
+          "required_views": [],
+          "key_points": [
+            "本課只涵蓋診斷掃描、判讀、紀錄與升級決策，不涵蓋穿刺、注射或其他治療。",
+            "聚焦檢查可以回答明確臨床問題，但報告須明載實際範圍，不能暗示已完成全膝評估。",
+            "急性創傷疑似骨折通常先做放射線；鎖膝或疑十字韌帶、深部軟骨、骨髓與複雜半月板病變常需 MRI。",
+            "熱、紅、腫、全身症狀、腫塊、神經血管缺損或疑 DVT 時，不以局部陰性掃描延遲正式處置。"
+          ],
+          "pitfalls": [
+            "把超音波當成明顯急性骨傷或關節脫位的唯一首項檢查。",
+            "把局部掃描陰性誤寫成整個膝關節或深部結構正常。",
+            "把後膝局部掃描當成完整靜脈壓縮檢查並宣稱沒有 DVT。",
+            "把觀看影片或通過自我測驗誤當成可獨立執行與判讀的能力證明。"
+          ],
+          "assessment": "題目：一名扭傷後無法負重且膝部明顯腫脹的病人，與一名無創傷、局部髕腱疼痛的病人，影像策略有何不同？參考答案：前者先依急性膝部創傷規則與臨床檢查安排放射線，疑深部內部紊亂再升級 MRI；超音波可補充表淺結構但不能作全面排除。後者可在明確臨床問題下聚焦掃描髕腱及相鄰結構，仍須明載範圍、限制與必要的後續評估。",
+          "reference_ids": [
+            "REF-AIUM-MSK-2023",
+            "REF-ACR-ACUTE-KNEE-2020",
+            "REF-ACR-CHRONIC-KNEE-2026",
+            "REF-NICE-VTE-NG158"
+          ],
+          "drills": [],
+          "reviewed_by": "吳易澄",
+          "reviewer_role": "復健科專科醫師",
+          "reviewed_at": "2026-08-16",
+          "reviewed_commit": "43b138ccb6358b75d766657ab020207e64756483"
+        }
+      ]
+    },
+    {
+      "chapter": "CH1",
+      "title": "探頭、最佳化與方向標示",
+      "units": [
+        {
+          "id": "ch1-u1",
+          "name": "高解析探頭、假影控制與影像最佳化",
+          "type": "foundation",
+          "level": "foundation",
+          "review_status": "approved",
+          "summary": "依目標深度選擇線性探頭與頻率，建立深度、焦點、增益、動態範圍、Doppler、探頭壓力及方向標示的固定流程，並優先排除各向異性。",
+          "objectives": [
+            "依表淺肌腱、後窩深部結構與體型選擇適當探頭及頻率。",
+            "以固定順序調整深度、焦點、增益與動態範圍，保留骨性地標和目標結構。",
+            "以 heel-toe、微傾、旋轉與第二平面區分各向異性和真正纖維異常。",
+            "設定低流速 Doppler 並保存具有側別、方向、姿勢與必要測量的可追溯影像。"
+          ],
+          "required_views": [
+            "股四頭肌腱或髕腱長軸與短軸最佳化影像，包含相鄰骨性地標。",
+            "同一肌腱在傾斜前後的對照影像，示範各向異性的出現與消失。",
+            "髕上隱窩或滑膜的輕壓 B-mode 與低流速 Power Doppler 影像。",
+            "後膝較深結構的深度、焦點與頻率調整示範，保留膕窩神經血管方向。"
+          ],
+          "key_points": [
+            "先以髕骨、股骨髁、脛骨平台或腓骨頭等骨性地標建立方向，再最佳化軟組織。",
+            "可疑低回音須在角度修正後持續存在，並以第二正交平面及連續掃描確認。",
+            "檢查滑囊、淺層積液與低流速血流時使用足量凝膠和輕壓，避免把所見壓掉。",
+            "Doppler 增益調至雜訊臨界點以下，並記錄 PRF、wall filter 或其他會影響可重現性的設定。"
+          ],
+          "pitfalls": [
+            "把股四頭肌腱、髕腱或韌帶的各向異性誤判為撕裂。",
+            "探頭壓力壓掉滑囊液、髕上積液、表淺靜脈或低流速 Doppler 訊號。",
+            "過高 Doppler 增益、探頭移動或病人動作造成 flash artifact。",
+            "對側比較時改變深度、壓力、姿勢或設定，造成不可解釋的假差異。"
+          ],
+          "assessment": "題目：髕腱在單一長軸呈局部低回音，但 heel-toe 後纖維紋恢復、短軸沒有中斷，應如何判讀與保存？參考答案：優先考慮各向異性而非撕裂；重新取得真正長軸與短軸、連續追蹤近端至遠端，保存傾斜前後對照及一致的機器設定。只有持續存在的形態或纖維異常，並與臨床相符時才支持病灶。",
+          "reference_ids": [
+            "REF-AIUM-MSK-2023",
+            "REF-EFSUMB-MSK-I-2022",
+            "REF-TAMBORRINI-KNEE-2025",
+            "REF-AIUM-DOC-2026"
+          ],
+          "drills": [],
+          "reviewed_by": "吳易澄",
+          "reviewer_role": "復健科專科醫師",
+          "reviewed_at": "2026-08-16",
+          "reviewed_commit": "43b138ccb6358b75d766657ab020207e64756483"
+        }
+      ]
+    },
+    {
+      "chapter": "CH2",
+      "title": "前側：伸膝機轉與前隱窩",
+      "units": [
+        {
+          "id": "ch2-u1",
+          "name": "股四頭肌腱、髕上隱窩、滑車軟骨與髕腱",
+          "type": "anatomy",
+          "level": "foundation",
+          "review_status": "approved",
+          "summary": "以仰臥、20–30 度屈膝與最大屈膝聲窗完成前側系統掃描，辨認伸膝機轉、關節前隱窩、髕骨支持帶、前側滑囊及可見的股骨滑車軟骨。",
+          "objectives": [
+            "在兩個正交平面追蹤股四頭肌腱與髕腱的全長、附著點和纖維連續性。",
+            "辨認髕上與內外側髕旁隱窩、Hoffa 脂肪墊、髕骨支持帶及前側滑囊。",
+            "以最大屈膝取得可見的股骨滑車軟骨，並說明超音波對整體關節軟骨的限制。",
+            "需要時以主動或被動屈伸觀察伸膝機轉，並把動態所見放回靜態與臨床脈絡。"
+          ],
+          "required_views": [
+            "仰臥、膝屈約 20–30 度之股四頭肌腱長軸與短軸，包含肌腱層次、髕骨上極與髕上隱窩。",
+            "髕上、內側與外側髕旁隱窩，以輕壓評估積液、滑膜肥厚及 Power Doppler。",
+            "最大可耐受屈膝之股骨滑車軟骨橫切面，標示內外側滑車。",
+            "髕骨支持帶內外側長短軸與相鄰關節線。",
+            "髕腱由髕骨下極至脛骨粗隆之長軸與短軸，包含 Hoffa 脂肪墊。",
+            "髕前、淺髕下與深髕下滑囊區的輕壓掃描。"
+          ],
+          "key_points": [
+            "20–30 度屈膝可放鬆伸膝機轉並改善肌腱與髕上隱窩顯示；滑車軟骨則需較大屈曲聲窗。",
+            "股四頭肌腱與髕腱應沿全長掃描並以正交平面確認，不能只在最痛點截圖。",
+            "少量關節液的位置會隨姿勢改變；評估時同時掃描髕上及髕旁隱窩。",
+            "肌腱厚度、低回音或 Doppler 不是疼痛來源的單一證明，需結合症狀、功能與其他所見。"
+          ],
+          "pitfalls": [
+            "在伸膝或探頭不垂直時把髕腱各向異性誤判為腱病或部分撕裂。",
+            "過度壓迫髕上隱窩或滑囊而低估液體與低流速血流。",
+            "把 Hoffa 脂肪墊或正常肌腱層次誤認為病灶。",
+            "由單一可見滑車軟骨切面外推整個膝關節軟骨均正常。"
+          ],
+          "assessment": "題目：請在健康受試者上依序保存股四頭肌腱、髕上隱窩、滑車軟骨、髕骨支持帶、髕腱與三個前側滑囊區的影像。合格標準：所有肌腱具長短軸、骨性地標與方向標示；說明 20–30 度及最大屈膝的目的，並現場示範如何用角度修正排除一次各向異性。",
+          "reference_ids": [
+            "REF-AIUM-MSK-2023",
+            "REF-ESSR-KNEE-2010",
+            "REF-EULAR-PROCEDURES-2017",
+            "REF-TAMBORRINI-KNEE-2025"
+          ],
+          "drills": [
+            {
+              "name": "ESSR 膝部掃描 Part 1：前、內、外側",
+              "title": "„How to scan the Joints“ - Lower Limb: Knee Part 1, Saulius Rutkauskas",
+              "url": "https://www.youtube.com/watch?v=dJwz_McEelo",
+              "kind": "scan-demo",
+              "learning_tier": "core",
+              "source_authority": "professional-society-original",
+              "curation_status": "pending-date-verification",
+              "last_verified_at": "2026-08-01",
+              "why": "ESSR Ultrasound Subcommittee 官方原始教材，以一支連續示範建立前、內、外側的病人姿勢、探頭路徑、正常解剖與壓力／各向異性控制，是本課最小核心影片之一。",
+              "scope_note": "只作正常解剖與掃描技術示範；病理效能、完整半月板與十字韌帶評估、報告及升級決策仍以本課現行指引為準。",
+              "contains_intervention": false,
+              "intervention_start_timestamp": null,
+              "diagnostic_segment_range": null,
+              "upload_date": "2023-03-15",
+              "original_content_date": null,
+              "date_note": "YouTube 說明只標示為 ESSR Ultrasound Subcommittee 2021 educational video，未公開精確錄製日；無法判定相對於 2021-08-01 cutoff 的位置，因此不虛填日期並保留 pending-date-verification。",
+              "presenter": "Saulius Rutkauskas, MD, PhD",
+              "presenter_qualification": "放射科醫師；ESSR Ultrasound Subcommittee 現任副主席，LSMU Doctor of Science。",
+              "qualification_evidence_url": "https://www.essr.org/workinggroups/",
+              "duration": "28:47",
+              "channel": "ESSR Office",
+              "playback_status": "unlisted; directly linked by ESSR e-learning; yt-dlp public playback confirmed",
+              "embed_status": "playable_in_embed=true; YouTube oEmbed 200",
+              "disclosure": "ESSR e-learning listing與 YouTube 說明未載商業揭露；不據此推定沒有利益關係。",
+              "classic_exception": false,
+              "target": "前、內、外側正常解剖與掃描路徑"
+            },
+            {
+              "name": "AMSSM 髕腱病例：前側 protocol 與腱內囊腫",
+              "title": "Patellar Tendinopathy with Dr. Derek Stokes | AMSSM Sports Ultrasound Case Presentation",
+              "url": "https://www.youtube.com/watch?v=9oADQrcj_qQ",
+              "kind": "pathology-demo",
+              "learning_tier": "extension",
+              "source_authority": "professional-society-original",
+              "curation_status": "provisional",
+              "last_verified_at": "2026-08-01",
+              "why": "AMSSM 官方病例以完整前膝 protocol 串聯髕腱病灶、腱內囊腫鑑別與診斷報告；屬病例型延伸內容，不擴張最小核心集合。",
+              "scope_note": "只學 02:03–21:45 的前膝掃描、病灶判讀與鑑別；21:46 起的 aspiration 內容不在本課範圍。",
+              "target": "前膝 protocol、髕腱病灶與腱內囊腫鑑別",
+              "dose": "診斷段 02:03–21:45",
+              "contains_intervention": true,
+              "intervention_start_timestamp": "21:46",
+              "diagnostic_segment_range": "02:03–21:45",
+              "presenter": "Derek Stokes, MD",
+              "presenter_qualification": "University of Colorado School of Medicine 助理教授；PM&R 住院醫師訓練、運動醫學 fellowship，具 Sports Medicine 專科認證。",
+              "qualification_evidence_url": "https://som.cuanschutz.edu/Profiles/Faculty/Profile/39568",
+              "duration": "30:46",
+              "channel": "The AMSSM",
+              "upload_date": "2024-03-01",
+              "original_content_date": null,
+              "date_note": "YouTube 與 AMSSM 頁面未另載原始錄製日期；不以 2024-03-01 上架日代替錄製日。",
+              "playback_status": "public; yt-dlp playback rechecked 2026-08-01",
+              "embed_status": "playable_in_embed=true; YouTube oEmbed 200 rechecked 2026-08-01",
+              "disclosure": "講者於 02:12 聲明 no disclosures。",
+              "classic_exception": false
+            },
+            {
+              "name": "Martinoli 經典病例：髕上隱窩脂肪、滑膜與樹枝狀脂肪瘤",
+              "title": "Carlo Martinoli scans the suprapatellar recess",
+              "url": "https://www.youtube.com/watch?v=K7uPFs7s_LY",
+              "kind": "pathology-demo",
+              "learning_tier": "extension",
+              "source_authority": "expert-owned-original",
+              "curation_status": "provisional",
+              "last_verified_at": "2026-08-02",
+              "why": "由具名肌骨放射科專家以三個短病例對照髕上隱窩的正常脂肪、樹枝狀脂肪瘤與滑膜，並用屈伸及壓迫呈現液體移動；補足 ESSR 正常路徑未深入的髕上隱窩判讀細節。",
+              "scope_note": "4 分鐘的經典病例 pearl，不是完整前膝 protocol；病灶命名、Doppler、報告與升級決策仍以本課現行指引為準。",
+              "target": "髕上隱窩脂肪、滑膜、樹枝狀脂肪瘤與液體動態",
+              "contains_intervention": false,
+              "intervention_start_timestamp": null,
+              "diagnostic_segment_range": null,
+              "presenter": "Carlo Martinoli, MD",
+              "presenter_qualification": "University of Genoa 放射診斷學 full professor 與專科學校主任；長期從事肌骨與周邊神經超音波教育。",
+              "qualification_evidence_url": "https://dissal.unige.it/carlo.martinoli%40unige.it",
+              "duration": "04:01",
+              "channel": "Martinoli Ultrasound",
+              "upload_date": "2018-09-15",
+              "original_content_date": null,
+              "date_note": "影片頁未公開原始錄製日期；不以 2018-09-15 上架日代替錄製日。",
+              "playback_status": "public; availability=public; yt-dlp playback rechecked 2026-08-02",
+              "embed_status": "playable_in_embed=true; YouTube oEmbed HTTP 200 rechecked 2026-08-02",
+              "disclosure": "影片說明推廣 Martinoli 付費課程；未載本片特定利益揭露，不據此推定沒有利益關係。",
+              "classic_exception": true,
+              "classic_exception_reason": "雖早於 2021-08-01 cutoff，但三病例並列呈現正常脂肪、樹枝狀脂肪瘤與滑膜的獨特比較，並示範屈伸／壓迫下液體移動；近期替代只涵蓋一般積液或滑膜炎，未提供同等比較。",
+              "recent_alternative_search": "2026-08-02 ytsearch15:knee ultrasound suprapatellar recess；查得 Clarius 2023 一般 effusion/synovitis 短片，但未涵蓋本片三病例比較。"
+            }
+          ],
+          "reviewed_by": "吳易澄",
+          "reviewer_role": "復健科專科醫師",
+          "reviewed_at": "2026-08-16",
+          "reviewed_commit": "43b138ccb6358b75d766657ab020207e64756483"
+        }
+      ]
+    },
+    {
+      "chapter": "CH3",
+      "title": "內側：MCL、鵝足與半月板周邊",
+      "units": [
+        {
+          "id": "ch3-u1",
+          "name": "內側支持帶、MCL、鵝足與標準化外翻應力",
+          "type": "anatomy",
+          "level": "intermediate",
+          "review_status": "approved",
+          "summary": "以內側股骨髁、關節線與脛骨為地標，分層追蹤淺深 MCL、內側半月板周邊、鵝足與半膜肌相關結構，並建立可重複的外翻動態紀錄。",
+          "objectives": [
+            "在長短軸辨認淺層與深層 MCL、內側關節線及可見的內側半月板周邊。",
+            "追蹤縫匠肌、股薄肌與半腱肌構成的鵝足及其相鄰滑囊區。",
+            "以固定膝屈角度、探頭位置與外力方式執行外翻應力觀察。",
+            "說明半月板突出、關節間隙改變與對側比較的姿勢依賴及證據限制。"
+          ],
+          "required_views": [
+            "仰臥、髖外轉且膝微屈之內側關節線長軸，包含內側股骨髁、脛骨平台與半月板周邊。",
+            "淺層 MCL 自股骨起點至脛骨遠端附著的長軸連續影像及代表性短軸。",
+            "深層 MCL、內側支持帶與半月板周邊的分層切面。",
+            "鵝足三肌腱及鵝足滑囊區的長短軸，必要時向近端追蹤以協助區分。",
+            "半膜肌腱與內側腓腸肌頭相鄰的後內側延伸視圖。",
+            "固定姿勢下之外翻應力前後短片；如作對側比較，兩側設定與施力方式一致。"
+          ],
+          "key_points": [
+            "先找內側關節線與骨性地標，再分層辨認 MCL、半月板周邊與鵝足。",
+            "MCL 必須沿全長連續追蹤；局部低回音先排除彎曲走向造成的各向異性。",
+            "動態應力應記錄膝屈角度、施力方向、影像平面與症狀，避免只保存最大張開的一張圖。",
+            "半月板突出會受負重、膝屈與退化影響；超音波只顯示周邊，不能排除完整半月板撕裂。"
+          ],
+          "pitfalls": [
+            "把深層 MCL、關節囊或半月板周邊混成單一結構。",
+            "以不一致的屈膝角度或手動力量比較兩側關節間隙。",
+            "把對側相似直接當作正常，忽略雙側退化或系統性疾病。",
+            "由周邊半月板外觀正常宣稱已排除半月板撕裂。"
+          ],
+          "assessment": "題目：完成內側膝部掃描並保存 MCL 全長、鵝足、半月板周邊與外翻應力循環。合格標準：能指出淺深 MCL 和三條鵝足肌腱，固定屈膝角度與探頭位置，保存完整施力與放鬆循環；報告若提及間隙或突出，須同時寫明姿勢、測量位置及不能排除深部半月板病變的限制。",
+          "reference_ids": [
+            "REF-AIUM-MSK-2023",
+            "REF-ESSR-KNEE-2010",
+            "REF-EULAR-PROCEDURES-2017",
+            "REF-TAMBORRINI-KNEE-2025",
+            "REF-PANDYA-KNEE-2023"
+          ],
+          "drills": [
+            {
+              "name": "AMSSM 鵝足滑囊炎病例：內側掃描與動態應力",
+              "title": "Pes Anserine Bursitis with Dr. Mitchell Daugherty | Sports Ultrasound Case Presentation Series",
+              "url": "https://www.youtube.com/watch?v=NF2eDqFLMzo",
+              "kind": "pathology-demo",
+              "learning_tier": "extension",
+              "source_authority": "professional-society-original",
+              "curation_status": "provisional",
+              "last_verified_at": "2026-08-02",
+              "why": "AMSSM 官方近期病例由另一位講者深入示範內側關節線、MCL 長短軸、外翻動態應力、鵝足肌腱、各向異性、Doppler 與可壓性，為 ESSR 正常總覽增加病例判讀與技術陷阱觀點。",
+              "scope_note": "只學 02:33–19:08 與 19:20–35:54 的診斷段：內側掃描、動態應力、技術陷阱，以及前膝軟骨與 osteochondral defect 判讀。19:09–19:19 有一句 aspiration／injection 的順帶提及，不在本課範圍；全片無注射示範。",
+              "target": "內側關節線、MCL、鵝足肌腱、動態應力與技術陷阱",
+              "dose": "診斷段 02:33–19:08、19:20–35:54",
+              "contains_intervention": true,
+              "intervention_start_timestamp": "19:09",
+              "diagnostic_segment_range": "02:33–19:08、19:20–35:54",
+              "presenter": "Mitchell Daugherty, MD",
+              "presenter_qualification": "Beacon Health System Sports Medicine 醫師；完成 family medicine residency 與 primary care sports medicine fellowship。",
+              "qualification_evidence_url": "https://providers.beaconhealthsystem.org/1417481540/mitchell-daugherty-md",
+              "duration": "35:57",
+              "channel": "The AMSSM",
+              "upload_date": "2025-07-25",
+              "original_content_date": null,
+              "date_note": "YouTube 與 AMSSM 頁面未另載原始錄製日期；不以 2025-07-25 上架日代替錄製日。",
+              "playback_status": "public; availability=public; yt-dlp playback rechecked 2026-08-02",
+              "embed_status": "playable_in_embed=true; YouTube oEmbed HTTP 200 rechecked 2026-08-02",
+              "disclosure": "講者於 00:56 聲明 nothing to disclose。",
+              "classic_exception": false
+            }
+          ],
+          "reviewed_by": "吳易澄",
+          "reviewer_role": "復健科專科醫師",
+          "reviewed_at": "2026-08-16",
+          "reviewed_commit": "43b138ccb6358b75d766657ab020207e64756483"
+        }
+      ]
+    },
+    {
+      "chapter": "CH4",
+      "title": "外側與後外側：韌帶、肌腱與腓總神經",
+      "units": [
+        {
+          "id": "ch4-u1",
+          "name": "IT band、LCL、膕肌、近端脛腓關節與腓總神經",
+          "type": "anatomy",
+          "level": "intermediate",
+          "review_status": "approved",
+          "summary": "以外側股骨上髁、腓骨頭及近端脛腓關節建立外側與後外側路徑，追蹤髂脛束、LCL、股二頭肌腱、膕肌腱與腓總神經。",
+          "objectives": [
+            "在長短軸分辨髂脛束、LCL、股二頭肌腱、膕肌腱及外側半月板周邊。",
+            "由腓骨頸向近遠端連續追蹤腓總神經並辨認其與股二頭肌腱的關係。",
+            "取得近端脛腓關節與後外側角的代表性標準視圖。",
+            "說明外翻／內翻、屈伸或探頭壓力對外側動態所見的影響和限制。"
+          ],
+          "required_views": [
+            "外側股骨上髁與 Gerdy 結節間的髂脛束長短軸，必要時屈伸觀察相對移動。",
+            "LCL 自外側股骨上髁至腓骨頭之長軸全程與代表性短軸。",
+            "股二頭肌腱插入腓骨頭的長短軸，顯示與 LCL 的分層關係。",
+            "外側關節線、外側半月板周邊與膕肌腱的斜長軸或短軸視圖。",
+            "近端脛腓關節長短軸。",
+            "腓總神經由膕窩外側至繞行腓骨頸的短軸連續 cine，異常處追加長軸。"
+          ],
+          "key_points": [
+            "腓骨頭是 LCL、股二頭肌腱與腓總神經的共同導航地標，但三者須分開連續追蹤。",
+            "膕肌腱呈斜行，需配合探頭旋轉與 heel-toe，避免以固定正矢狀面造成假性低回音。",
+            "周邊神經評估以全段形態、回音束、粗細變化和壓痛為主；單點大小不能脫離臨床確診。",
+            "複雜後外側角與深層韌帶損傷常超過超音波聲窗，需依臨床疑慮升級 MRI。"
+          ],
+          "pitfalls": [
+            "把股二頭肌腱、LCL 與相鄰筋膜誤認為同一條纖維帶。",
+            "在腓骨頸過度壓迫腓總神經或只看單一截面。",
+            "將膕肌腱的各向異性誤判為撕裂。",
+            "由表淺 LCL 外觀正常排除整個後外側角損傷。"
+          ],
+          "assessment": "題目：從外側股骨上髁開始，依序示範髂脛束、LCL、股二頭肌腱、膕肌腱、近端脛腓關節與腓總神經。合格標準：每一結構至少有一個含骨性地標的標準平面，LCL 與腓總神經需連續追蹤；學員能用探頭角度排除膕肌腱假影，並清楚說明陰性表淺掃描不能排除複雜後外側角損傷。",
+          "reference_ids": [
+            "REF-AIUM-MSK-2023",
+            "REF-ESSR-KNEE-2010",
+            "REF-TAMBORRINI-KNEE-2025",
+            "REF-WU-PLC-2024"
+          ],
+          "drills": [
+            {
+              "name": "AMSSM 外側半月板旁囊腫病例",
+              "title": "Lateral Parameniscal Cyst with Dr. Steven Jow | AMSSM Sports Ultrasound Case Presentation",
+              "url": "https://www.youtube.com/watch?v=EPdbvE39xmQ",
+              "kind": "pathology-demo",
+              "learning_tier": "extension",
+              "source_authority": "professional-society-original",
+              "curation_status": "provisional",
+              "last_verified_at": "2026-08-01",
+              "why": "AMSSM 官方病例依序呈現外側膝 protocol、半月板旁囊腫超音波、診斷報告與 MRI 對照；作為外側病理延伸，不取代 ESSR 核心路徑。",
+              "scope_note": "只學 02:29–15:36 的外側膝 protocol、病例判讀、報告與 MRI 對照；15:37 起的 aspiration 內容不在本課範圍。",
+              "target": "外側膝 protocol、半月板旁囊腫與半月板周邊判讀",
+              "dose": "診斷段 02:29–15:36",
+              "contains_intervention": true,
+              "intervention_start_timestamp": "15:37",
+              "diagnostic_segment_range": "02:29–15:36",
+              "presenter": "Steven Jow, MD",
+              "presenter_qualification": "PM&R 與 Sports Medicine 專科醫師；完成 MedStar Georgetown PM&R residency 與 Hospital for Special Surgery fellowship。",
+              "qualification_evidence_url": "https://www.pennmedicine.org/providers/profile/steven-jow",
+              "duration": "25:55",
+              "channel": "The AMSSM",
+              "upload_date": "2024-02-02",
+              "original_content_date": null,
+              "date_note": "YouTube 與 AMSSM 頁面未另載原始錄製日期；不以 2024-02-02 上架日代替錄製日。",
+              "playback_status": "public; yt-dlp playback rechecked 2026-08-01",
+              "embed_status": "playable_in_embed=true; YouTube oEmbed 200 rechecked 2026-08-01",
+              "disclosure": "影片頁與可取得字幕未見明確商業揭露；不據此推定沒有利益關係。",
+              "classic_exception": false
+            }
+          ],
+          "reviewed_by": "吳易澄",
+          "reviewer_role": "復健科專科醫師",
+          "reviewed_at": "2026-08-16",
+          "reviewed_commit": "43b138ccb6358b75d766657ab020207e64756483"
+        }
+      ]
+    },
+    {
+      "chapter": "CH5",
+      "title": "後側、囊腫與動態安全",
+      "units": [
+        {
+          "id": "ch5-u1",
+          "name": "Baker cyst 聲窗、膕窩神經血管與後側限制",
+          "type": "dynamic",
+          "level": "intermediate",
+          "review_status": "approved",
+          "summary": "以俯臥伸膝為主完成後內、後外與中央膕窩掃描，辨認半膜肌—內側腓腸肌滑囊、Baker cyst 典型頸部、膕窩神經血管與可見的 PCL 部分。",
+          "objectives": [
+            "在後內側辨認半膜肌腱、內側腓腸肌頭及兩者間滑囊交通頸。",
+            "以多平面與低壓力評估典型與非典型後膝液性或實質性病灶。",
+            "辨認膕動脈、膕靜脈與脛神經的相對位置，避免把血管病變誤作囊腫。",
+            "說明局部 MSK 後膝掃描、正式 DVT 檢查及深部關節內影像的能力邊界。"
+          ],
+          "required_views": [
+            "俯臥伸膝之後內側半膜肌腱與內側腓腸肌頭橫切面，顯示兩者間滑囊／典型 Baker cyst 頸部。",
+            "任何後膝病灶的兩個正交平面、內部回音、可壓性與 Power／color Doppler 紀錄。",
+            "中央膕窩橫切面，標示膕動脈、膕靜脈與脛神經；使用足以辨識但不過度的壓力。",
+            "後外側腓腸肌、股二頭肌、腓總神經與膕肌區的連續影像。",
+            "後聲窗可見之 PCL 部分與後關節隱窩，並在紀錄中標示只顯示可及區段。",
+            "必要時在可耐受範圍內屈伸膝關節，保存囊腫、肌腱或神經相對移動的完整循環。"
+          ],
+          "key_points": [
+            "典型 Baker cyst 的關鍵是半膜肌腱與內側腓腸肌頭間的解剖位置與交通頸，而不只是後膝有液體。",
+            "所有後膝腫塊先確認是否有血流及與血管連續，非典型實質或複雜病灶不勉強命名。",
+            "探頭壓力會改變囊腫、靜脈與表淺組織外觀；動態與可壓性必須在安全且可重複的壓力下記錄。",
+            "局部 MSK 掃描看見膕靜脈不等於完成正式 proximal leg vein ultrasound，也不能報告沒有 DVT。"
+          ],
+          "pitfalls": [
+            "把膕動脈瘤、靜脈、血腫或實質性腫塊誤認為 Baker cyst。",
+            "因探頭過度壓迫而漏掉小型滑囊液或使靜脈塌陷。",
+            "只看到後聲窗的一小段 PCL 就宣稱完整 PCL 正常。",
+            "在疑 DVT 或神經血管缺損時，以局部掃描取代正式臨床路徑。"
+          ],
+          "assessment": "題目：病人有後膝腫塊與小腿脹痛，超音波見液性結構。合格答案須先以正交平面、Doppler、可壓性及與半膜肌—內側腓腸肌間交通頸確認是否符合典型 Baker cyst；同時辨識神經血管。若臨床疑 DVT、病灶有血流、位置非典型或呈實質成分，不能以局部 MSK 掃描結案，應啟動正式血管或進一步影像評估。",
+          "reference_ids": [
+            "REF-AIUM-MSK-2023",
+            "REF-ESSR-KNEE-2010",
+            "REF-TAMBORRINI-KNEE-2025",
+            "REF-WU-PLC-2024",
+            "REF-NICE-VTE-NG158"
+          ],
+          "drills": [
+            {
+              "name": "ESSR 膝部掃描 Part 2：後側與膕窩",
+              "title": "„How to scan the Joints“ - Lower Limb: Knee Part 2, Saulius Rutkauskas,",
+              "url": "https://www.youtube.com/watch?v=_vOOjwdWNEY",
+              "kind": "scan-demo",
+              "learning_tier": "core",
+              "source_authority": "professional-society-original",
+              "curation_status": "pending-date-verification",
+              "last_verified_at": "2026-08-01",
+              "why": "ESSR Ultrasound Subcommittee 官方原始教材，以後內、後外及中央膕窩三段 live scan 補足前半部，形成完整且最小的四區核心影片組。",
+              "scope_note": "只作正常解剖與掃描技術示範；後聲窗只顯示 PCL 可及部分，辨認膕窩血管不等於正式靜脈 duplex，也不能用來排除 DVT。",
+              "contains_intervention": false,
+              "intervention_start_timestamp": null,
+              "diagnostic_segment_range": null,
+              "upload_date": "2023-03-15",
+              "original_content_date": null,
+              "date_note": "YouTube 說明只標示為 ESSR Ultrasound Subcommittee 2021 educational video，未公開精確錄製日；無法判定相對於 2021-08-01 cutoff 的位置，因此不虛填日期並保留 pending-date-verification。",
+              "presenter": "Saulius Rutkauskas, MD, PhD",
+              "presenter_qualification": "放射科醫師；ESSR Ultrasound Subcommittee 現任副主席，LSMU Doctor of Science。",
+              "qualification_evidence_url": "https://www.essr.org/workinggroups/",
+              "duration": "23:00",
+              "channel": "ESSR Office",
+              "playback_status": "unlisted; directly linked by ESSR e-learning; yt-dlp public playback confirmed",
+              "embed_status": "playable_in_embed=true; YouTube oEmbed 200",
+              "disclosure": "ESSR e-learning listing與 YouTube 說明未載商業揭露；不據此推定沒有利益關係。",
+              "classic_exception": false,
+              "target": "後內、後外、膕窩正常解剖與安全路徑"
+            },
+            {
+              "name": "AMSSM 非典型 Baker cyst 病例：後膝判讀與鑑別",
+              "title": "Atypical Baker's Cyst with Dr. Andrew Getzin | AMSSM Sports Ultrasound Case Presentation",
+              "url": "https://www.youtube.com/watch?v=W-fEp1KPANs",
+              "kind": "pathology-demo",
+              "learning_tier": "extension",
+              "source_authority": "professional-society-original",
+              "curation_status": "provisional",
+              "last_verified_at": "2026-08-02",
+              "why": "AMSSM 官方病例深入呈現後膝定位、Baker cyst 頸部與非典型內容物、破裂與 DVT 鑑別、膕窩神經血管及結構化報告，為 ESSR Part 2 的正常路徑增加病理判讀觀點。",
+              "scope_note": "只學 12:53–34:13 的後膝掃描、鑑別與報告；06:33 的穿刺計畫及 09:11 起的 injection 解剖討論亦排除，34:18 起實際回到病例穿刺／抽吸內容，均不在本課範圍。DVT 內容不能取代正式 venous duplex。",
+              "target": "Baker cyst 頸部、非典型後膝病灶、DVT 鑑別與結構化報告",
+              "dose": "診斷段 12:53–34:13",
+              "contains_intervention": true,
+              "intervention_start_timestamp": "34:18",
+              "diagnostic_segment_range": "12:53–34:13",
+              "presenter": "Andrew Getzin, MD",
+              "presenter_qualification": "Cayuga Sports Medicine 醫師；Ithaca College Athletics Head Team Physician 與 Athletic Training Program Medical Director。",
+              "qualification_evidence_url": "https://cayugahealth.org/hospital/cayuga-center-for-sports-medicine-and-athletic-performance/",
+              "duration": "40:31",
+              "channel": "The AMSSM",
+              "upload_date": "2021-12-10",
+              "original_content_date": null,
+              "date_note": "影片稱為 prerecorded，但 YouTube 與 AMSSM 頁面未載原始錄製日期；不以 2021-12-10 上架日代替錄製日。",
+              "playback_status": "public; availability=public; yt-dlp playback rechecked 2026-08-02",
+              "embed_status": "playable_in_embed=true; YouTube oEmbed HTTP 200 rechecked 2026-08-02",
+              "disclosure": "講者於 02:34 聲明 no financial disclosures。",
+              "classic_exception": false
+            }
+          ],
+          "reviewed_by": "吳易澄",
+          "reviewer_role": "復健科專科醫師",
+          "reviewed_at": "2026-08-16",
+          "reviewed_commit": "43b138ccb6358b75d766657ab020207e64756483"
+        }
+      ]
+    },
+    {
+      "chapter": "CH6",
+      "title": "常見病理與證據邊界",
+      "units": [
+        {
+          "id": "ch6-u1",
+          "name": "多平面病理判讀、鑑別與升級框架",
+          "type": "pathology",
+          "level": "advanced",
+          "review_status": "approved",
+          "summary": "以多平面形態、動態、Doppler 與臨床問題整合肌腱與韌帶病變、積液與滑膜炎、滑囊與囊腫、OA 徵象及半月板周邊所見，並明確呈現不確定性。",
+          "objectives": [
+            "描述肌腱、韌帶、滑囊、囊腫、積液與滑膜肥厚在多平面下的直接與間接徵象。",
+            "區分各向異性、壓力效應、Doppler 假影、正常變異與真正病理。",
+            "把 OA、半月板周邊突出或滑膜炎所見放回症狀、負重姿勢與其他影像脈絡。",
+            "辨認超音波不能回答或可能延遲處置的問題，選擇放射線、MRI、正式血管檢查或專科轉介。"
+          ],
+          "required_views": [
+            "可疑肌腱或韌帶病灶的長軸、短軸、全長連續追蹤及必要動態片段。",
+            "積液或滑膜病灶的髕上與髕旁隱窩 B-mode、輕壓可壓性及低流速 Doppler。",
+            "滑囊或囊腫的兩個正交平面、內部回音、與關節或肌腱的關係及血流評估。",
+            "內外側關節線的固定姿勢影像；如量測半月板突出，記錄負重狀態、膝屈角度及測量位置。",
+            "OA 相關骨贅、皮質輪廓、積液或滑膜所見；同時記錄超音波未完整顯示的深部軟骨與骨髓。",
+            "需要升級的案例至少保存一張能說明技術限制或未確定病灶的代表影像。"
+          ],
+          "key_points": [
+            "撕裂診斷需有在角度修正後仍存在的纖維中斷或形態改變，並於第二平面確認。",
+            "積液是非特異性所見；滑膜肥厚及 Doppler 活性仍須結合感染、發炎、退化、創傷與術後脈絡。",
+            "半月板周邊突出和 OA 徵象可提供資訊，但超音波不能完整分級所有軟骨、骨髓與半月板內部病變。",
+            "結論的確定程度不得超過影像品質、已顯示範圍與現有證據。"
+          ],
+          "pitfalls": [
+            "把單一低回音、增厚、Doppler 或壓痛直接等同症狀來源。",
+            "以超音波外觀區分感染性與非感染性積液而忽略正式診斷流程。",
+            "由周邊半月板或可見軟骨正常排除深部關節內病變。",
+            "在熱紅腫、腫塊、夜間痛、鎖膝、伸膝中斷或神經血管缺損時延遲升級。"
+          ],
+          "assessment": "案例組：一例各向異性、一例髕腱纖維病變、一例髕上積液伴滑膜肥厚、一例典型 Baker cyst，以及一例持續鎖膝但表淺掃描陰性。學員須逐案列出支持與反對病理的影像證據、假影排除方式、信心水準和限制；最後一例必須指出超音波不能排除深部半月板或其他關節內病變，建議依臨床路徑升級 MRI／專科評估。",
+          "reference_ids": [
+            "REF-EFSUMB-MSK-I-2022",
+            "REF-EFSUMB-MSK-II-2022",
+            "REF-EULAR-OMERACT-2017",
+            "REF-EFTEKHARSADAT-OA-2024",
+            "REF-PANDYA-KNEE-2023",
+            "REF-ACR-CHRONIC-KNEE-2026"
+          ],
+          "drills": [],
+          "reviewed_by": "吳易澄",
+          "reviewer_role": "復健科專科醫師",
+          "reviewed_at": "2026-08-16",
+          "reviewed_commit": "43b138ccb6358b75d766657ab020207e64756483"
+        }
+      ]
+    },
+    {
+      "chapter": "CH7",
+      "title": "完整掃描、報告與品質回饋",
+      "units": [
+        {
+          "id": "ch7-u1",
+          "name": "四區整合、最低影像集與結構化報告",
+          "type": "reporting",
+          "level": "advanced",
+          "review_status": "approved",
+          "summary": "把前、內、外、後四區整合成可重複流程，建立最低永久影像集、結構化報告、技術限制、升級建議與督導回饋紀錄。",
+          "objectives": [
+            "依固定四區順序完成完整檢查，或清楚標示臨床問題導向聚焦檢查的實際範圍。",
+            "保存側別、方向、姿勢、骨性地標、異常測量、Doppler 與動態片段。",
+            "撰寫臨床問題、技術、所見、結論、限制和後續建議一致的結構化報告。",
+            "以保存影像、督導回饋與後續影像結果進行個人品質改善。"
+          ],
+          "required_views": [
+            "前側：股四頭肌腱、髕上／髕旁隱窩、滑車軟骨、髕腱及前側滑囊的代表性正交影像。",
+            "內側：MCL 全長、內側關節線與半月板周邊、鵝足及必要外翻動態。",
+            "外側：髂脛束、LCL、股二頭肌腱、膕肌腱、近端脛腓關節與腓總神經。",
+            "後側：半膜肌—內側腓腸肌間滑囊區、中央神經血管與臨床問題相關結構。",
+            "所有異常的兩個正交平面、尺寸與必要 Doppler／動態；任何未顯示區域的限制影像或文字紀錄。"
+          ],
+          "key_points": [
+            "最低影像集不是僵化張數，而是能證明檢查範圍、方向、關鍵正常結構與所有異常的可追溯紀錄。",
+            "報告依序寫臨床問題、範圍與技術、分區所見、整合結論、限制及後續建議。",
+            "使用『未完整顯示』或『本檢查不能排除』等精確限制語句，不把不確定性隱藏在結論之外。",
+            "CI、課程完成或網站上線都不是醫療核准；單元維持 draft 直到具資格醫師逐項簽核。"
+          ],
+          "pitfalls": [
+            "報告結論超過已保存影像、實際掃描範圍或超音波能力。",
+            "異常沒有正交影像、測量位置、Doppler 設定或動態循環可供複核。",
+            "未記錄疼痛限制、未顯示結構、聚焦範圍或需要其他影像的原因。",
+            "把對側比較、技術成功或自動 gate 通過寫成醫療內容已核准。"
+          ],
+          "assessment": "整合考核：在限定時間內完成一側膝部前、內、外、後四區掃描，提交最低影像集與結構化報告。合格標準：影像有側別、方向及骨性地標；所有異常具正交平面與必要測量／動態；報告與影像一致，明載未完成範圍、不確定性及升級條件。合格督導另以漏掃、假影控制、病人安全與溝通逐項回饋；本項通過仍不等於獨立 credentialing。",
+          "reference_ids": [
+            "REF-AIUM-MSK-2023",
+            "REF-AIUM-DOC-2026",
+            "REF-ESSR-KNEE-2010",
+            "REF-ACR-CHRONIC-KNEE-2026"
+          ],
+          "drills": [
+            {
+              "name": "IU 四區快速 survey：建立全膝 pre-scan mental map",
+              "title": "Knee Ultrasound",
+              "url": "https://www.youtube.com/watch?v=bx0rT5U5ZU0",
+              "kind": "scan-demo",
+              "learning_tier": "extension",
+              "source_authority": "university-medical-school",
+              "curation_status": "provisional",
+              "last_verified_at": "2026-08-02",
+              "why": "Indiana University School of Medicine 的具名運動醫學／POCUS 教師在 4:54 內快速串起前、內、外、後四區，可在完整 ESSR 影片後作為不同講者與不同節奏的全膝路徑複習。",
+              "scope_note": "快速 survey 不能取代完整 protocol、病理判讀或結構化報告；學員仍須依本課 required views 完成各結構正交影像、動態與限制紀錄。",
+              "target": "前、內、外、後四區快速複習與完整掃描前 mental map",
+              "contains_intervention": false,
+              "intervention_start_timestamp": null,
+              "diagnostic_segment_range": null,
+              "presenter": "James G. Wilcox, MD, FAAFP, RMSK",
+              "presenter_qualification": "Family Medicine 與 Sports Medicine 醫師；IU School of Medicine Adjunct Clinical Assistant Professor，具 POCUS／MSK ultrasound 教學與 ABFM Sports Medicine 認證。",
+              "qualification_evidence_url": "https://medicine.iu.edu/faculty/16988/wilcox-james",
+              "duration": "04:54",
+              "channel": "Indiana University School of Medicine POCUS",
+              "upload_date": "2022-12-12",
+              "original_content_date": null,
+              "date_note": "YouTube 與 IU 頁面未另載原始錄製日期；不以 2022-12-12 上架日代替錄製日。",
+              "playback_status": "public; availability=public; yt-dlp playback rechecked 2026-08-02",
+              "embed_status": "playable_in_embed=true; YouTube oEmbed HTTP 200 rechecked 2026-08-02",
+              "disclosure": "影片頁未載商業揭露；不據此推定沒有利益關係。",
+              "classic_exception": false
+            }
+          ],
+          "reviewed_by": "吳易澄",
+          "reviewer_role": "復健科專科醫師",
+          "reviewed_at": "2026-08-16",
+          "reviewed_commit": "43b138ccb6358b75d766657ab020207e64756483"
+        }
+      ]
+    }
+  ]
+}
