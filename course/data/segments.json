@@ -23,7 +23,7 @@
   "videos": [
     {
       "video_url": "https://www.youtube.com/watch?v=dJwz_McEelo",
-      "review_status": "draft",
+      "review_status": "approved",
       "transcript_verified_at": "2026-08-16",
       "transcript_source": "yt-dlp 自動字幕（en, VTT）2026-08-16 實抓，逐段對照時間戳核對",
       "note": "本片自動字幕品質差，解剖名詞大量訛誤，段落內容一律改採標準命名。已更正者：Jordan tubercle→Gerdy 結節（**解剖專名等級的錯誤，最需複查**）；the needle→the knee；perceived aspect→posterior aspect；codiceps／quality substander／crozipsa standard／aqua Ellipsis→股四頭肌腱；director's femoris→rectus femoris（股直肌）；profemoral fat pad→prefemoral（股骨前）脂肪墊；person serinos／pisan serranus／peasants Uranus／best answer rhinos／passenger→pes anserinus（鵝足）；grazellis／grazulus→gracilis（股薄肌）；cement tendonosis／semi-tender nozzles→semitendinosus（半腱肌）；eutable／eliotiable／elutable／iut build／ilutyl／eludible→iliotibial band（髂脛束）；populatios／popularity of tendon→popliteus（膕肌）；canicular artery→genicular artery（膝動脈）；enteral lateral／anteroletal→anterolateral（前外側）；intercontal／intercodial→intercondylar（髁間）；Burza／Bruiser／bruisa→bursa（滑囊）；same membranosus／semi-vibernosus→semimembranosus（半膜肌）；Deep crucial fascia→deep crural fascia（深層小腿筋膜）；patellar original color／written icon／protonacolum→patellar retinaculum（髕骨支持帶）；mild diffusion→mild effusion（少量積液）；Sesame bone→sesamoid（種子骨）；tight→thigh；cowardly→caudally；distillate→distally；materially／middlely→medially；Christian shape→crescent shape（新月狀）；unequoia→anechoic；antesopotic／antisopathic→enthesopathic（附著點病變）；isotropy→anisotropy（各向異性）；half of fat pads→Hoffa 脂肪墊；femoral trunk layer／truck layer→femoral trochlea（股骨滑車）；febrile head→fibular head（腓骨頭）。講者姓名字幕作 Solis rodkowskas／Solus rutkowskas，正確為 Saulius Rutkauskas。側別在本片全程正確（內側 MCL／鵝足／內側半月板 與 外側 髂脛束／LCL／股二頭肌／膕肌 未見混淆）。",
@@ -228,11 +228,15 @@
             "片末重申後側評估屬第二部內容。"
           ]
         }
-      ]
+      ],
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "復健科專科醫師",
+      "reviewed_at": "2026-08-16",
+      "reviewed_commit": "94c4e65e5fafd48c2b6a804922ea5538869b994a"
     },
     {
       "video_url": "https://www.youtube.com/watch?v=_vOOjwdWNEY",
-      "review_status": "draft",
+      "review_status": "approved",
       "transcript_verified_at": "2026-08-16",
       "transcript_source": "yt-dlp 自動字幕（en, VTT）2026-08-16 實抓，逐段對照時間戳核對",
       "note": "⚠ 最重要的一項：07:15 字幕作「Superficial **lateral** collateral ligament」，但該處講的是**後內側角**的三層概念（第一層深層小腿筋膜、第二層淺層副韌帶、第三層關節囊與深層副韌帶），依 Warren & Marshall 的內側三層概念，第二層必為淺層**內側**副韌帶（MCL），寫成 LCL 解剖上不可能。原始 VTT 逐字標記在 00:07:15.240 確實是 lateral，因此**無法判定是自動字幕聽錯還是講者口誤**——本檔一律採 MCL，但請重點確認此處與第三層「deep medial collateral ligament」（字幕作 d-lateral）的側別。其餘已更正的字幕訛誤：the bigger cyst→Baker 囊腫；ecl／iskeel／is healed tuberosity→ischial tuberosity（坐骨粗隆）；a doctor Magnus→adductor magnus（內收大肌）；cement and the noses／semit in the noses／semi-tender nozzles→semitendinosus（半腱肌）；decimalibranosus／semimepernos／semi-member nozzles→semimembranosus（半膜肌）；Solace→soleus（比目魚肌）；triceps Surya→triceps surae（小腿三頭肌）；the manual head／middle head→medial head（內側頭）；gastric name use／construct nemes→gastrocnemius（腓腸肌）；the oblique of little ligament→oblique popliteal ligament（斜膕韌帶）；Arquette ligament→arcuate ligament（弓狀韌帶）；fabella fibular ligament→fabellofibular ligament；popularityofibular→popliteofibular ligament（膕腓韌帶）；papletostio／populatives／poplitios／oblitius／propitious→popliteus（膕肌）；lateral patellar original column→lateral patellar retinaculum（外側髕骨支持帶）；sizamide→sesamoid（種子骨）；several Birds→several bursae；the popular artery／public vein→popliteal artery／vein（膕動脈／靜脈）；unisotropy→anisotropy（各向異性）；clontaris→plantaris（蹠肌）；popular smile tenderness Junction→popliteus myotendinous junction。講者姓名字幕作 solisutkowskas，正確為 Saulius Rutkauskas。",
@@ -428,11 +432,15 @@
             "兩者的差異屬教學立場層次，非影像技術問題，留待醫師簽核時定調。"
           ]
         }
-      ]
+      ],
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "復健科專科醫師",
+      "reviewed_at": "2026-08-16",
+      "reviewed_commit": "94c4e65e5fafd48c2b6a804922ea5538869b994a"
     },
     {
       "video_url": "https://www.youtube.com/watch?v=bx0rT5U5ZU0",
-      "review_status": "draft",
+      "review_status": "approved",
       "transcript_verified_at": "2026-08-16",
       "transcript_source": "yt-dlp 自動字幕（en, VTT）2026-08-16 實抓，逐段對照時間戳核對",
       "note": "本片是 4:54 的快速 survey，節奏極快、單一結構停留時間短，段落因此比其他影片粗。字幕訛誤已更正：super patellar Fusion→suprapatellar effusion（髕上積液）；Pez answerine→pes anserine（鵝足）；poplidius→popliteus（膕肌）；bigger cyst→Baker 囊腫；the stock→the stalk（囊腫莖部）；musculosco→musculoskeletal。00:35 的「have your tail appropriately positioned」語意不完整，依前後文（緊接 anisotropy）判斷為探頭傾斜手法（heel-toe），本檔只寫「調整探頭角度避免各向異性」，不擴充字幕未明講的細節。開場 00:10 的「the MCL Terran arthroses」「the LCL joint arthroses」字幕破碎無法還原原話，因此段落內容一律以影片後段實際示範的結構為準，不據破碎字幕臆測。側別在本片正確（內側 MCL／鵝足、外側 LCL／髂脛束／股二頭肌未見混淆）。",
@@ -506,7 +514,11 @@
             "最後看腓骨頭處外側腿後肌（股二頭肌）的附著，短軸與長軸都要看，找撕裂、中斷或肌腱病變。"
           ]
         }
-      ]
+      ],
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "復健科專科醫師",
+      "reviewed_at": "2026-08-16",
+      "reviewed_commit": "94c4e65e5fafd48c2b6a804922ea5538869b994a"
     }
   ]
 }
