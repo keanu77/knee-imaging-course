@@ -522,7 +522,7 @@
     },
     {
       "video_url": "https://www.youtube.com/watch?v=K7uPFs7s_LY",
-      "review_status": "draft",
+      "review_status": "approved",
       "transcript_verified_at": "2026-08-16",
       "transcript_source": "yt-dlp 自動字幕（en, VTT）2026-08-16 實抓，逐段對照時間戳核對",
       "note": "本片為 Martinoli 教學實境對話（含向學員提問），自動字幕品質差且句子成對重複，解剖與病理名詞大量訛誤，段落內容一律改採標準命名。已更正者：sign of um／sign ovum／sign of you→synovium（滑膜）；son of itis／Vitus→synovitis（滑膜炎）；I prefer genic→hyperechoic（高回音）；Palmer versions→villous projections（絨毛狀突起）；Dame in→distension（擴張）；unequoia→anechoic。**全片從未說出任何病名**：講者只用「leaves（葉片狀）」描述前一位病人的高回音突起外觀，並與本例滑膜對比；單元名稱裡的「樹枝狀脂肪瘤（lipoma arborescens）」是策展端的判讀，字幕無佐證，因此段落內容一律只描述影像特徵、不寫病名。片長 04:01，全片為診斷示範，無介入內容。",
@@ -615,11 +615,15 @@
             "方法上的要求：任何時候檢查軟骨表面與滑車面，都要把外側與內側拿來對比，單側看厚薄容易失準。"
           ]
         }
-      ]
+      ],
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "復健科專科醫師",
+      "reviewed_at": "2026-08-17",
+      "reviewed_commit": "45171d92030b0ee203a3080adab864e68402166c"
     },
     {
       "video_url": "https://www.youtube.com/watch?v=EPdbvE39xmQ",
-      "review_status": "draft",
+      "review_status": "approved",
       "transcript_verified_at": "2026-08-16",
       "transcript_source": "yt-dlp 自動字幕（en, VTT）2026-08-16 實抓，逐段對照時間戳核對",
       "note": "本片為 AMSSM 病例報告（講者 Steven Jow, MD），自動字幕解剖名詞訛誤密集，段落內容一律改採標準命名。已更正者：paramal assist／param minuscal／parisal cyst／paramal cyst→parameniscal cyst（半月板旁囊腫）；miniscus／minuscal→meniscus（半月板）；gerti's tubal／gerti's tubic／G's Tule→Gerdy 結節；lateral Catal ligament→lateral collateral ligament（LCL，外側副韌帶）；lateral FAL condal／lateral fmal condal→lateral femoral condyle（股骨外髁）；fibler head／fabler head／FI head／fiar head→fibular head（腓骨頭）；BPS femoris／bicep femoris／biceps fous／biceps forus／fibs→biceps femoris（股二頭肌）；pus／petus／theoplus／plal groove→popliteus（膕肌）／popliteal groove（膕肌溝）；tibio fal／tiop fibular／TI fibular→tibiofibular（脛腓）；common fi nerve／fibler nerve→common fibular nerve（腓總神經）；btis→bursitis；thle→Thessaly test；it ban distl friction syndrome→ITB distal friction syndrome；hypo Co／hypo aoic／hypoc／unequoia→hypoechoic／anechoic；intasc architecture→fascicular architecture（神經束狀結構）；pinr residency→PM&R（復健科）住院醫師；Dr Steven Jiao→Dr Steven Jow。⚠️ **兩處側別／方向存疑，列為重點複查**：(1) 08:26 講者說膝關節本身的「slight vus angulation」造成 LCL 波浪狀外觀，字幕全片只出現 vus／vars／various、從未出現 valgus，無法直接判讀；本段依其矯正手法（雙腿夾枕使症狀側膝呈內翻）反推原句應為「輕度外翻對位」，此為推論非字幕原文。(2) 02:52 理學檢查的「negative fa stress test」方向無法判讀，段落內容只寫「應力測試陰性」不指定內翻或外翻。片長 25:55，介入（診斷／治療性抽吸）自 15:37 起（字幕 aspiration 一詞實測落在 00:15:38.199，15:33 起為 bonus 影像的引言），本層段落全部落在 02:29–15:36 診斷框限內。",
@@ -789,11 +793,15 @@
             "MRI 對照確認大型囊腫貫穿前角、體部與後角，外側腔室軟骨保留；軸切面顯示囊腫沿周邊、冠狀面質子密度像同時顯示囊腫與水平裂隙。"
           ]
         }
-      ]
+      ],
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "復健科專科醫師",
+      "reviewed_at": "2026-08-17",
+      "reviewed_commit": "45171d92030b0ee203a3080adab864e68402166c"
     },
     {
       "video_url": "https://www.youtube.com/watch?v=9oADQrcj_qQ",
-      "review_status": "draft",
+      "review_status": "approved",
       "transcript_verified_at": "2026-08-16",
       "transcript_source": "yt-dlp 自動字幕（en, VTT）2026-08-16 實抓，逐段對照時間戳核對",
       "note": "本片為 AMSSM 病例報告（講者 Derek Stokes, MD），自動字幕解剖與病理名詞訛誤密集，段落內容一律改採標準命名。已更正者：Patell tendonopathy／Patell tenant opathy／pendant apathy／patellar tonopen nois→patellar tendinopathy／tendinosis（髕腱病變）；injur tenant assist／endent assist／intendent assist／inter tendon assist→intratendinous cyst（腱內囊腫）；Piller Tenon／Bellar Tenon／Bellic tendon／pellar tendon／Pella／Bella→patellar tendon／patella（髕腱／髕骨）；tener to popti→tender to palpation（觸診壓痛）；Fusion／diffusion→effusion（積液）；super ptil recess→suprapatellar recess（髕上隱窩）；bcts→bisects；hofus／hos／office fat pad→Hoffa fat pad（Hoffa 脂肪墊）；metor retinaculum→medial retinaculum（內側支持帶）；mo fell→MPFL（內側髕股韌帶）；minisi／Min sky→menisci（半月板）；trar cartilage／trolear groove／trar groove→trochlear cartilage／trochlear groove（滑車軟骨／滑車溝）；Highland cartilage→hyaline cartilage（透明軟骨）；tibio Tule→tibial tubercle（脛骨粗隆）；corol irregularity→cortical irregularity（皮質不規則）；distopic calcification→dystrophic calcification（營養不良性鈣化）；anaco／Unico／anico／anagenic City→anechoic（無回音）；hypo aoic／hypoc coic／hypogenic→hypoechoic（低回音）；cffs→clefts（裂隙）；saffos nerve→saphenous nerve（隱神經）；plee→plica（皺襞）；vasus lateral L→vastus lateralis（股外側肌）；Ina→NSAIDs。⚠️ 05:00 講者稱「超音波在髕腱病變的進一步特徵描述上至少與 MRI 相當、甚至更好」，字幕作 at least equivocal（應為 equivalent），本片未列出處，段落已標明屬講者引述。片長 30:46，介入（診斷／治療性抽吸）自 21:46 起（字幕 aspirating 一詞實測落在 00:21:50.200，21:45 起為 not to get into the treatment 的轉折引言），本層段落全部落在 02:03–21:45 診斷框限內，最後一段收在 21:40。因此片尾的抽吸結果（抽出膠狀液體、證實為腱鞘囊腫）與總結頁均在框限外，本層不收錄。",
@@ -996,11 +1004,15 @@
             "文獻對照（引自 Jacobson 團隊的出版品）：部分厚度層間撕裂表現為局部低回音或無回音的缺損或裂隙，多半形狀不規則且被肌腱病變變化包圍；本例則界線清楚、細長、加壓維持形狀、不向周邊組織延伸——形態學上不同。"
           ]
         }
-      ]
+      ],
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "復健科專科醫師",
+      "reviewed_at": "2026-08-17",
+      "reviewed_commit": "45171d92030b0ee203a3080adab864e68402166c"
     },
     {
       "video_url": "https://www.youtube.com/watch?v=W-fEp1KPANs",
-      "review_status": "draft",
+      "review_status": "approved",
       "transcript_verified_at": "2026-08-16",
       "transcript_source": "yt-dlp 自動字幕（en, VTT）2026-08-16 實抓，逐段對照時間戳核對",
       "note": "本片為 AMSSM 病例報告（非典型 Baker 囊腫，後膝完整 protocol）。自動字幕解剖名詞與人名訛誤密集，段落內容一律改採標準命名。已更正者：meathead gas rock／meter have the gastroc／needle have the gastroc／medial head the gut→medial head of the gastrocnemius（內側腓腸肌頭）；semi-membranosis／seminal venous／semimosis／some membranos／symmetriosis→semimembranosus（半膜肌）；semi tendinosis→semitendinosus（半腱肌）；palpation vessels／palpation vein／papatil vein／papa teal vein／papadum／popularity→popliteal vessels／vein／artery（膕血管／膕靜脈／膕動脈）；perimeniscular cyst→parameniscal cyst（半月板旁囊腫）；adductor heidis→adductor hiatus（內收肌裂孔）；perineus longus→peroneus longus（腓骨長肌）；hypoalcohol clefts／hypoacroic／hypothesis in the axial plane→hypoechoic（低回音）；nether→Netter；lindgram／lingam→Lindgren；actor radiology→Acta Radiologica；paper system→Baker cysts；postman→posterior knee。⚠️ **三處需醫師複查**：(1) 21:32 字幕稱膕靜脈由「common femoral vein、posterior tibial、anterior tibial」匯合而成——股總靜脈是其下游而非上游，段落改採「由前脛與後脛靜脈匯合而成」。(2) 22:20 起的 Bernardi 兩點加壓隨機試驗，字幕作 2018，但符合該描述（2,465 人、義大利 14 家急診、兩點加壓＋D-dimer vs 全腿加壓）的原始研究為 JAMA 2008;300(14):1653–59，**年份存疑待複查**。(3) 33:27 的報告印象為「符合化膿性關節炎」，但片尾 34:15 起（框限外）的抽吸與培養其實未證實感染；本層段落止於該報告印象，最後一段已在內文標明這是當下的報告印象、後續結果不在本課範圍，**單元層是否需要補一句說明由醫師裁決**。⚠️ 本片含 DVT 加壓超音波教學，依課程 scope_note：此內容不能取代正式的靜脈都卜勒（venous duplex）檢查，段落已寫入該界線。片長 40:31，診斷框限為 12:53–34:13（06:33 的穿刺計畫與 09:11 起的注射解剖討論已在框限外排除），介入自 34:18 起（字幕 needle 一詞實測落在 00:34:18.399）。",
@@ -1225,11 +1237,15 @@
             "印象：綜合所見（尤其是膕窩囊腫內的氣體）符合化膿性關節炎。⚠️ 這是**當下的報告印象**；本片後續的病例結果落在本課診斷框限之外，不在此層收錄。"
           ]
         }
-      ]
+      ],
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "復健科專科醫師",
+      "reviewed_at": "2026-08-17",
+      "reviewed_commit": "45171d92030b0ee203a3080adab864e68402166c"
     },
     {
       "video_url": "https://www.youtube.com/watch?v=NF2eDqFLMzo",
-      "review_status": "draft",
+      "review_status": "approved",
       "transcript_verified_at": "2026-08-16",
       "transcript_source": "yt-dlp 自動字幕（en, VTT）2026-08-16 實抓，逐段對照時間戳核對",
       "note": "本片為 AMSSM 病例報告（講者 Mitchell Daugherty, MD）＋與談討論，自動字幕解剖與病理名詞訛誤密集，段落內容一律改採標準命名。已更正者：pez answering／pezanserinus／pisanserinus／pens and serinus／pest answering／PEZ→pes anserinus（鵝足）；graasilus→gracilis（股薄肌）；semi tendinosis／semiendinosis→semitendinosus（半腱肌）；semimebinosis／semimebrosis→semimembranosus（半膜肌）；meogastro／metogastro／medastmas→medial gastrocnemius（內側腓腸肌）；VGUS／VGA／vGA stress→valgus stress（外翻應力）；highland cartilage→hyaline cartilage（透明軟骨）；troleia／trolear／tlear→trochlear（滑車）；prehemoral fat pad→prefemoral fat pad（股骨前脂肪墊）；adductor tubacle→adductor tubercle（內收肌結節）；meniscopal→meniscofemoral（半月板股骨韌帶）；meniscotial／meniscal tibial→meniscotibial（半月板脛骨韌帶）；peligrainy sta lesions→Pellegrini-Stieda lesions；parramiscal cyst／perry minuscal cyst→parameniscal cyst（半月板旁囊腫）；fusion／eusion→effusion（積液）；anacoic／hypocoic／hypoechenic／hyperaccoic→anechoic／hypoechoic／hyperechoic；anesotropy／anosotropy→anisotropy（各向異性）；senovial hypertrophy→synovial hypertrophy（滑膜增生）；bersa／bcitis／berscitis／bristal／bal dension→bursa／bursitis／bursal distension（滑囊／滑囊炎／滑囊脹大）；infropatella→infrapatellar（髕下）；tibial tubacle→tibial tubercle（脛骨粗隆）；intermedularary rod→intramedullary rod（髓內釘）；ganglen cyst→ganglion cyst（腱鞘囊腫）；neoarthtolasty／neoarthoplasty→knee arthroplasty（膝關節置換）；osteoarthosis→osteoarthritis（退化性關節炎）；Ellers's Danlos→Ehlers-Danlos；atapost tissue→adipose tissue（脂肪組織）；vasis mediialis／vastis medialis／intermedi／femmeris→vastus medialis／vastus intermedius／rectus femoris；inferior medial geniculate neurovvascular bundle→inferior medial genicular neurovascular bundle（膝下內側神經血管束）；paplidio fossa→popliteal fossa（膕窩）；sonop palpation→sonopalpation（聲觸診）。片長 35:57，診斷框限為 02:33–19:08 與 19:20–35:54 兩段；被排除的 19:09–19:19 是一句順帶提及抽吸／注射的話（字幕 intervention 一詞實測落在 00:19:11.600），本層段落嚴格避開該空隙、無任何段落跨越。⚠️ **一處待醫師裁決**：33:38 起與談者提到「即使影像上看不到明顯滑囊脹大，仍會做診斷性注射以排除」，屬臨床決策的順帶陳述、非注射技術教學，該段落已如實記錄；是否保留由醫師決定。⚠️ **一處記錄為未定論**：31:52 起與談者指出有文獻稱鵝足病變在退化性關節炎族群被低估，但其個人經驗相反，本片未列出處也未收斂結論，段落已標明為未定論。",
@@ -1531,7 +1547,11 @@
             "**皮下脂肪肥厚**是值得記住的偽陽性：皮下脂肪層比對側厚，影像上是正常的皮下脂肪組織只是變厚，好發於內側肘、前臂、內側膝與內側踝，鵝足上方確實見過數例。"
           ]
         }
-      ]
+      ],
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "復健科專科醫師",
+      "reviewed_at": "2026-08-17",
+      "reviewed_commit": "45171d92030b0ee203a3080adab864e68402166c"
     }
   ]
 }
