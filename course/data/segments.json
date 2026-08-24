@@ -1629,7 +1629,7 @@
       "review_status": "draft",
       "transcript_verified_at": "2026-08-25",
       "transcript_source": "yt-dlp 自動字幕（en, VTT）2026-08-25 實抓；初稿由協作 agent 依逐字稿產生，主編逐段對照原文核對",
-      "note": "自動字幕訛誤已於筆記改採標準命名：Kendra mam→McCamey；Steve albera→Albrechta；KNE／NE→knee；seone／Sone fracture→Segond fracture（**專名等級錯誤，最需複查**）；lockman→Lachman；evulsion→avulsion；bleed→bow-legged（弓形腿，講者以此解釋 varus）；vus deviation→valgus deviation；patellar Toe→patellar tilt；Moder diffusion→moderate effusion；affusion／infusion→effusion；minuscal→meniscal；muscular skeletal→musculoskeletal；CTIC→cystic；pation→palpation；Bala／pelop femoral→patella／patellofemoral；condil／cond→condyle。7:09–7:24 與 9:05–9:19 為治療選項口頭列舉（無操作示範），照實記錄於段落。",
+      "note": "自動字幕訛誤已於筆記改採標準命名：Kendra mam→McCamey；Steve albera→Albrechta；KNE／NE→knee；seone／Sone fracture→Segond fracture（**專名等級錯誤，最需複查**）；lockman→Lachman；evulsion→avulsion；bleed→bow-legged（弓形腿，講者以此解釋 varus）；vus deviation→valgus deviation；patellar Toe→patellar tilt；Moder diffusion→moderate effusion；affusion／infusion→effusion；minuscal→meniscal；muscular skeletal→musculoskeletal；CTIC→cystic；pation→palpation；Bala／pelop femoral→patella／patellofemoral；condil／cond→condyle；SE tear→ACL tear（10:29 處，經 qwen 本地掃描交叉比對確認）。7:09–7:24 與 9:05–9:19 為治療選項口頭列舉（無操作示範），照實記錄於段落。",
       "segments": [
         {
           "start": "00:02",
@@ -1745,7 +1745,7 @@
       "review_status": "draft",
       "transcript_verified_at": "2026-08-25",
       "transcript_source": "yt-dlp 自動字幕（en, VTT）2026-08-25 實抓；初稿由協作 agent 依逐字稿產生，主編逐段對照原文核對",
-      "note": "自動字幕訛誤已於筆記改採標準命名：e Fusion／infusion／ifusion／affusion→effusion；lioh orthosis→lipohemarthrosis；crossable lateral→cross-table lateral；radaph／rating grass／radi graphs→radiographs；subtronic→subtrochanteric；tiia→tibia。本片 2:50–33:12 為髖關節內容、46:05–55:20 為髖 bonus case 與 Q&A（皆不在本課範圍，未做段落）；僅收 33:22 起的膝部段落與 55:21 起與膝相關的 Q&A。",
+      "note": "自動字幕訛誤已於筆記改採標準命名：e Fusion／infusion／ifusion／affusion→effusion；lioh orthosis→lipohemarthrosis；crossable lateral→cross-table lateral；radaph／rating grass／radi graphs→radiographs；subtronic→subtrochanteric；tiia→tibia；Blen sat's／Bloom and SATs→Blumensaat's line（經 qwen 本地掃描交叉比對確認）。本片 2:50–33:12 為髖關節內容、46:05–55:20 為髖 bonus case 與 Q&A（皆不在本課範圍，未做段落）；僅收 33:22 起的膝部段落與 55:21 起與膝相關的 Q&A。",
       "segments": [
         {
           "start": "33:22",
