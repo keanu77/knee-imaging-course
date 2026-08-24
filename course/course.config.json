@@ -2,26 +2,29 @@
   "$schema": "../src/build/course.schema.json",
   "site": {
     "project": "knee-ultrasound-course",
-    "name": "膝部超音波診斷課程",
-    "url": "https://knee-ultrasound.sportsmedicine.tw",
+    "name": "膝部影像診斷課程",
+    "url": "https://knee-imaging.sportsmedicine.tw",
     "locale": "zh-Hant-TW",
     "ogLocale": "zh_TW",
     "brandIcon": "scan-line",
-    "title": "膝部超音波診斷課程｜醫師的系統化掃描與判讀路徑",
-    "description": "以醫師為主要學員的膝部肌肉骨骼超音波自學課程，依最新專業指引建立標準掃描、正常解剖、常見病理與報告品質的學習路徑。",
-    "ogDescription": "醫師導向的膝部超音波診斷課程：標準掃描視圖、操作重點、常見陷阱與經驗證的專家影片。",
+    "title": "膝部影像診斷課程｜超音波、X 光與 MRI 的系統化判讀路徑",
+    "description": "以醫師為主要學員的膝部影像自學課程，涵蓋肌肉骨骼超音波、X 光與 MRI 三種模態，依最新專業指引建立標準掃描與照射位、序列判讀、常見病理與報告品質的學習路徑。",
+    "ogDescription": "醫師導向的膝部影像診斷課程：超音波標準掃描、X 光照射位、MRI 序列判讀、常見陷阱與經驗證的專家影片。",
     "keywords": [
       "膝部超音波",
-      "肌肉骨骼超音波",
+      "膝部X光",
+      "膝部MRI",
+      "肌肉骨骼影像",
       "膝關節",
-      "診斷超音波",
+      "影像判讀",
       "醫師教育"
     ],
     "audience": "醫師、住院醫師及在合格督導下接受肌肉骨骼超音波訓練的醫療專業人員",
     "about": [
       "膝部肌肉骨骼超音波",
-      "標準化掃描",
-      "動態超音波",
+      "膝部 X 光判讀",
+      "膝部 MRI 判讀",
+      "標準化掃描與照射位",
       "影像判讀"
     ],
     "learningResourceType": [
@@ -46,11 +49,11 @@
   },
   "hero": {
     "eyebrow": "醫師專業自學課程・診斷階段",
-    "heading": "把膝部超音波掃描變成可重複的臨床流程",
-    "lede": "全課規劃 {units} 個單元，從影像最佳化、標準視圖與動態檢查，到常見病理與報告品質。每個單元都列出<strong>必備視圖、操作重點、常見陷阱、文獻依據與內容審閱狀態</strong>。"
+    "heading": "把膝部影像判讀變成可重複的臨床流程",
+    "lede": "全課規劃 {units} 個單元，涵蓋超音波、X 光與 MRI 三種影像模態：從影像最佳化、標準視圖與動態檢查，到照射位與序列判讀、常見病理與報告品質。每個單元都列出<strong>必備視圖、操作重點、常見陷阱、文獻依據與內容審閱狀態</strong>。超音波單元已完成醫師簽核；X 光與 MRI 單元將依相同審閱流程陸續加入。"
   },
   "ui": {
-    "searchPlaceholder": "搜尋結構、病灶、掃描視圖或專家…",
+    "searchPlaceholder": "搜尋結構、病灶、視圖、序列或專家…",
     "tabs": {
       "course": "課程內容",
       "player": "影片學習",
@@ -65,10 +68,26 @@
     "drillEvidenceLabel": "影片與參考資料的實證背景",
     "unitEvidenceLabel": "證據與指引",
     "stats": [
-      { "icon": "layers", "field": "lesson_units", "label": "個教學單元" },
-      { "icon": "play", "field": "video_unique", "label": "支精選影片" },
-      { "icon": "clock", "field": "duration", "label": "影片總長" },
-      { "icon": "shield-check", "field": "problem_units", "label": "個診斷判讀單元" }
+      {
+        "icon": "layers",
+        "field": "lesson_units",
+        "label": "個教學單元"
+      },
+      {
+        "icon": "play",
+        "field": "video_unique",
+        "label": "支精選影片"
+      },
+      {
+        "icon": "clock",
+        "field": "duration",
+        "label": "影片總長"
+      },
+      {
+        "icon": "shield-check",
+        "field": "problem_units",
+        "label": "個診斷判讀單元"
+      }
     ],
     "unitTypes": {
       "orientation": "課程與安全",
@@ -82,16 +101,29 @@
     },
     "problemType": "pathology",
     "evidenceRows": [
-      { "field": "summary", "label": "實證摘要" },
-      { "field": "limitations", "label": "限制" },
-      { "field": "clinical_application", "label": "臨床應用" },
-      { "field": "red_flags", "label": "需升級評估", "type": "flags" }
+      {
+        "field": "summary",
+        "label": "實證摘要"
+      },
+      {
+        "field": "limitations",
+        "label": "限制"
+      },
+      {
+        "field": "clinical_application",
+        "label": "臨床應用"
+      },
+      {
+        "field": "red_flags",
+        "label": "需升級評估",
+        "type": "flags"
+      }
     ],
     "facetClear": "清除解剖篩選",
     "facetPrefix": "解剖區域",
     "emptyTitle": "找不到符合的內容",
     "emptyHint": "換個關鍵字或清除篩選條件再試一次。",
-    "playlistSearch": "搜尋影片、講者或結構…",
+    "playlistSearch": "搜尋影片、講者、結構或模態…",
     "prevLabel": "上一部影片",
     "nextLabel": "下一部影片",
     "doneLabel": "完成",
@@ -104,49 +136,174 @@
     "drillNoun": "支精選影片"
   },
   "kinds": [
-    { "id": "overview", "label": "總覽", "tone": "accent" },
-    { "id": "scan-demo", "label": "掃描示範", "tone": "success" },
-    { "id": "pathology-demo", "label": "病理判讀", "tone": "danger" },
-    { "id": "classic", "label": "經典大師", "tone": "attention" }
+    {
+      "id": "overview",
+      "label": "總覽",
+      "tone": "accent"
+    },
+    {
+      "id": "scan-demo",
+      "label": "掃描示範",
+      "tone": "success"
+    },
+    {
+      "id": "pathology-demo",
+      "label": "病理判讀",
+      "tone": "danger"
+    },
+    {
+      "id": "classic",
+      "label": "經典大師",
+      "tone": "attention"
+    }
   ],
   "learningTiers": [
-    { "id": "core", "label": "核心必看", "tone": "accent" },
-    { "id": "extension", "label": "延伸學習", "tone": "neutral" }
+    {
+      "id": "core",
+      "label": "核心必看",
+      "tone": "accent"
+    },
+    {
+      "id": "extension",
+      "label": "延伸學習",
+      "tone": "neutral"
+    }
   ],
   "grades": [
-    { "id": "guideline", "label": "指引／共識", "tone": "success" },
-    { "id": "review", "label": "綜論支持", "tone": "accent" },
-    { "id": "expert", "label": "專家示範", "tone": "attention" },
-    { "id": "developing", "label": "持續更新", "tone": "neutral" }
+    {
+      "id": "guideline",
+      "label": "指引／共識",
+      "tone": "success"
+    },
+    {
+      "id": "review",
+      "label": "綜論支持",
+      "tone": "accent"
+    },
+    {
+      "id": "expert",
+      "label": "專家示範",
+      "tone": "attention"
+    },
+    {
+      "id": "developing",
+      "label": "持續更新",
+      "tone": "neutral"
+    }
   ],
   "languages": {
     "zh": "繁中",
     "en": "English"
   },
   "nav": [
-    { "title": "定位與技術", "chapters": ["CH0", "CH1"] },
-    { "title": "四區掃描", "chapters": ["CH2", "CH3", "CH4", "CH5"] },
-    { "title": "判讀與品質", "chapters": ["CH6", "CH7"] }
+    {
+      "title": "超音波・定位與技術",
+      "chapters": [
+        "CH0",
+        "CH1"
+      ]
+    },
+    {
+      "title": "超音波・四區掃描",
+      "chapters": [
+        "CH2",
+        "CH3",
+        "CH4",
+        "CH5"
+      ]
+    },
+    {
+      "title": "超音波・判讀與品質",
+      "chapters": [
+        "CH6",
+        "CH7"
+      ]
+    }
   ],
   "chapters": [
-    { "code": "CH0", "title": "課程定位、臨床問題與安全", "icon": "shield-check", "source": "syllabus", "units": 1, "drills": 0 },
-    { "code": "CH1", "title": "探頭、最佳化與方向標示", "icon": "activity", "source": "syllabus", "units": 1, "drills": 0 },
-    { "code": "CH2", "title": "前側：伸膝機轉與前隱窩", "icon": "scan-line", "source": "syllabus", "units": 1, "drills": 3 },
-    { "code": "CH3", "title": "內側：MCL、鵝足與半月板周邊", "icon": "target", "source": "syllabus", "units": 1, "drills": 1 },
-    { "code": "CH4", "title": "外側與後外側：韌帶、肌腱與腓總神經", "icon": "layers", "source": "syllabus", "units": 1, "drills": 1 },
-    { "code": "CH5", "title": "後側、囊腫與動態安全", "icon": "move-diagonal", "source": "syllabus", "units": 1, "drills": 2 },
-    { "code": "CH6", "title": "常見病理與證據邊界", "icon": "microscope", "source": "syllabus", "units": 1, "drills": 0 },
-    { "code": "CH7", "title": "完整掃描、報告與品質回饋", "icon": "clipboard-list", "source": "syllabus", "units": 1, "drills": 1 }
+    {
+      "code": "CH0",
+      "title": "課程定位、臨床問題與安全",
+      "icon": "shield-check",
+      "source": "syllabus",
+      "units": 1,
+      "drills": 0
+    },
+    {
+      "code": "CH1",
+      "title": "探頭、最佳化與方向標示",
+      "icon": "activity",
+      "source": "syllabus",
+      "units": 1,
+      "drills": 0
+    },
+    {
+      "code": "CH2",
+      "title": "前側：伸膝機轉與前隱窩",
+      "icon": "scan-line",
+      "source": "syllabus",
+      "units": 1,
+      "drills": 3
+    },
+    {
+      "code": "CH3",
+      "title": "內側：MCL、鵝足與半月板周邊",
+      "icon": "target",
+      "source": "syllabus",
+      "units": 1,
+      "drills": 1
+    },
+    {
+      "code": "CH4",
+      "title": "外側與後外側：韌帶、肌腱與腓總神經",
+      "icon": "layers",
+      "source": "syllabus",
+      "units": 1,
+      "drills": 1
+    },
+    {
+      "code": "CH5",
+      "title": "後側、囊腫與動態安全",
+      "icon": "move-diagonal",
+      "source": "syllabus",
+      "units": 1,
+      "drills": 2
+    },
+    {
+      "code": "CH6",
+      "title": "常見病理與證據邊界",
+      "icon": "microscope",
+      "source": "syllabus",
+      "units": 1,
+      "drills": 0
+    },
+    {
+      "code": "CH7",
+      "title": "完整掃描、報告與品質回饋",
+      "icon": "clipboard-list",
+      "source": "syllabus",
+      "units": 1,
+      "drills": 1
+    }
   ],
   "audit": {
     "duration": {
-      "lesson": { "min": "1:00", "max": "90:00" },
-      "drill": { "min": "1:00", "max": "70:00" }
+      "lesson": {
+        "min": "1:00",
+        "max": "90:00"
+      },
+      "drill": {
+        "min": "1:00",
+        "max": "70:00"
+      }
     },
     "driftSeconds": 10,
     "minViews": 0,
     "metaCoverage": 1.0,
-    "drillsPerUnit": { "min": 1, "max": 4 },
+    "drillsPerUnit": {
+      "min": 1,
+      "max": 4
+    },
     "maxSharedVideos": 2,
     "requireAssessment": [
       "orientation",
@@ -164,32 +321,44 @@
   },
   "stance": {
     "title": "課程標準與限制",
-    "intro": "膝部超音波高度依賴操作者。完成線上課程不等於具備獨立執行或出具診斷的資格；能力建立仍需實機練習、合格督導、病例回饋與機構規範。",
+    "intro": "膝部影像判讀——尤其超音波——高度依賴操作者與判讀者。完成線上課程不等於具備獨立執行或出具診斷的資格；能力建立仍需實機練習、系統性判讀訓練、合格督導、病例回饋與機構規範。",
     "verdicts": {},
     "outroTitle": "診斷階段的範圍",
-    "outro": "本版只涵蓋診斷掃描與影像判讀。任何超音波導引注射、穿刺或其他介入操作均不在此階段課程範圍內。"
+    "outro": "本版只涵蓋診斷影像的取得與判讀。任何影像導引注射、穿刺或其他介入操作均不在此階段課程範圍內。"
   },
   "landing": {
     "howTitle": "建議學習方式",
     "steps": [
-      { "icon": "book-open", "title": "先理解標準視圖", "body": "每次只學一個區域，先確認病人姿勢、探頭方向、長短軸與必須辨認的地標。" },
-      { "icon": "scan-line", "title": "再進行實機掃描", "body": "以課內 required views 當作檢核表，在健康受試者反覆取得可重複的標準影像。" },
-      { "icon": "shield-check", "title": "最後接受督導回饋", "body": "將保存影像與初步判讀交由合格督導檢視；不要只靠線上影片建立診斷信心。" }
+      {
+        "icon": "book-open",
+        "title": "先理解標準視圖",
+        "body": "每次只學一個區域，先確認病人姿勢、探頭方向、長短軸與必須辨認的地標。"
+      },
+      {
+        "icon": "scan-line",
+        "title": "再進行實機與判讀練習",
+        "body": "超音波以課內 required views 當檢核表實機掃描；X 光與 MRI 以系統性判讀順序在真實病例影像上反覆練習。"
+      },
+      {
+        "icon": "shield-check",
+        "title": "最後接受督導回饋",
+        "body": "將保存影像與初步判讀交由合格督導檢視；不要只靠線上影片建立診斷信心。"
+      }
     ],
     "stanceTitle": "開始前先知道",
     "stanceLede": "這是一門醫師專業教育課程，不是認證、credentialing 或個別病人的醫療建議。",
-    "chaptersTitle": "八個章節，從標準化到臨床整合",
+    "chaptersTitle": "從標準化到臨床整合的章節地圖",
     "ctaTitle": "從課程定位開始",
     "ctaLede": "目前共有 {units} 個草稿單元與 {videos} 個已建檔影片；完成來源查核與醫療審閱前維持 noindex。"
   },
   "footer": {
-    "disclaimer": "<strong>專業教育聲明。</strong>本課程以醫師為主要學員，僅供教育用途，不取代實體 hands-on training、合格督導、機構 credentialing、完整病史理學檢查或正式影像判讀。診斷階段不提供注射、穿刺或其他介入操作指引。",
+    "disclaimer": "<strong>專業教育聲明。</strong>本課程以醫師為主要學員，僅供教育用途，不取代實體 hands-on training、合格督導、機構 credentialing、完整病史理學檢查或正式影像判讀報告。診斷階段不提供注射、穿刺或其他影像導引介入操作指引。",
     "credits": "第三方影片的著作權屬原頻道，本站僅使用 YouTube 官方播放器嵌入並提供策展、課程脈絡與來源連結。"
   },
   "llms": {
-    "summary": "醫師導向的膝部肌肉骨骼超音波診斷課程，共 {units} 個單元，涵蓋標準掃描視圖、正常解剖、動態檢查、常見病理、報告與品質控管。",
+    "summary": "醫師導向的膝部影像診斷課程，涵蓋超音波、X 光與 MRI，共 {units} 個單元，包含標準掃描視圖與照射位、序列判讀、正常解剖、動態檢查、常見病理、報告與品質控管。",
     "stanceIntro": "課程內容應依最新專業指引、綜論與經驗豐富講者的示範交叉整理。",
-    "stanceConclusion": "完成線上課程不代表可獨立執行或出具超音波診斷；仍需實機訓練與合格督導。",
-    "disclaimer": "本課程僅供醫師專業教育，診斷階段不涵蓋超音波導引介入操作。"
+    "stanceConclusion": "完成線上課程不代表可獨立執行或出具影像診斷；仍需實機訓練、判讀督導與機構規範。",
+    "disclaimer": "本課程僅供醫師專業教育，診斷階段不涵蓋影像導引介入操作。"
   }
 }

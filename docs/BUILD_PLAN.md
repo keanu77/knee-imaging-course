@@ -6,7 +6,7 @@
 - 受眾與語言：醫師；zh-TW 繁體中文
 - 範圍：診斷掃描與判讀；介入操作延後
 - recent-content cutoff：2021-08-01
-- 網站記錄：`https://knee-ultrasound.sportsmedicine.tw`
+- 網站記錄：`https://knee-imaging.sportsmedicine.tw`
 - GitHub：`keanu77/knee-ultrasound-course`，private，預設分支 `main`
 - 工作分支：`feat/knee-course-v1`
 - 內容負責人與預定審閱者：吳易澄（復健科專科醫師）

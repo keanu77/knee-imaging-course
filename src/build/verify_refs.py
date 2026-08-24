@@ -25,7 +25,7 @@ ROOT = Path(__file__).resolve().parents[2]
 DATA = Path(os.environ.get("COURSE") or ROOT / "course").resolve() / "data"
 ESUMMARY = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi"
 BATCH = 180
-USER_AGENT = "knee-ultrasound-course/1.0 (+https://knee-ultrasound.sportsmedicine.tw)"
+USER_AGENT = "knee-ultrasound-course/1.0 (+https://knee-imaging.sportsmedicine.tw)"
 
 
 def norm(s: str) -> str:

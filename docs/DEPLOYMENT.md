@@ -17,7 +17,7 @@
 - root directory：repo 根目錄
 - build command：`uv run python src/build/build.py`
 - build output：`dist`
-- 正式網域：`https://knee-ultrasound.sportsmedicine.tw`
+- 正式網域：`https://knee-imaging.sportsmedicine.tw`
 - Cloudflare zone：`sportsmedicine.tw`
 
 這些值只是 frozen brief。此次不建立 Cloudflare Pages、不連接 GitHub、不建立 preview、不修改 DNS、不加入 custom domain，也不執行 production smoke。
