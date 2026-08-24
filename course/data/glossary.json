@@ -1,0 +1,1854 @@
+{
+  "_doc": [
+    "雙語名詞表。terms 由課程內容抽取（初稿由協作 agent 產生、主編抽驗醫療正確性）。",
+    "review_status 治理與 segments/questions 相同：approved 才進 course.json 與搜尋索引。",
+    "definition 只能出自課程文本敘述範圍；aliases 供搜尋同義詞比對。"
+  ],
+  "review_status": "draft",
+  "terms": [
+    {
+      "id": "quadriceps-tendon",
+      "en": "Quadriceps tendon",
+      "zh": "股四頭肌腱",
+      "aliases": [],
+      "category": "anatomy",
+      "definition": "由股四頭肌匯成的多層肌腱，附著於髕骨上極並屬於伸膝機轉。",
+      "unit_ids": [
+        "ch1-u1",
+        "ch2-u1",
+        "ch3-u1",
+        "ch7-u1",
+        "ch9-u1",
+        "ch10-u1"
+      ]
+    },
+    {
+      "id": "patellar-tendon",
+      "en": "Patellar tendon",
+      "zh": "髕腱",
+      "aliases": [
+        "patellar ligament"
+      ],
+      "category": "anatomy",
+      "definition": "自髕骨下極延伸至脛骨粗隆的纖維結構，掃描時需沿全長取得長短軸影像。",
+      "unit_ids": [
+        "ch0-u1",
+        "ch1-u1",
+        "ch2-u1",
+        "ch3-u1",
+        "ch4-u1",
+        "ch6-u1",
+        "ch7-u1",
+        "ch9-u1",
+        "ch10-u1"
+      ]
+    },
+    {
+      "id": "extensor-mechanism",
+      "en": "Extensor mechanism",
+      "zh": "伸膝機轉",
+      "aliases": [
+        "extensor apparatus"
+      ],
+      "category": "anatomy",
+      "definition": "課程所稱由股四頭肌腱、髕骨與髕腱等構造形成的伸膝系統。",
+      "unit_ids": [
+        "ch2-u1",
+        "ch3-u1",
+        "ch8-u1",
+        "ch10-u1"
+      ]
+    },
+    {
+      "id": "patella",
+      "en": "Patella",
+      "zh": "髕骨",
+      "aliases": [
+        "kneecap"
+      ],
+      "category": "anatomy",
+      "definition": "位於膝前方的種子骨，上接股四頭肌腱、下接髕腱。",
+      "unit_ids": [
+        "ch1-u1",
+        "ch2-u1",
+        "ch3-u1",
+        "ch4-u1",
+        "ch5-u1",
+        "ch7-u1",
+        "ch8-u1",
+        "ch9-u1",
+        "ch10-u1"
+      ]
+    },
+    {
+      "id": "suprapatellar-recess",
+      "en": "Suprapatellar recess",
+      "zh": "髕上隱窩",
+      "aliases": [
+        "suprapatellar pouch",
+        "suprapatellar bursa"
+      ],
+      "category": "anatomy",
+      "definition": "位於股四頭肌腱深面、髕上脂肪墊與股骨前脂肪墊之間且與關節腔相通的隱窩。",
+      "unit_ids": [
+        "ch1-u1",
+        "ch2-u1",
+        "ch3-u1",
+        "ch4-u1",
+        "ch5-u1",
+        "ch6-u1",
+        "ch7-u1",
+        "ch8-u1",
+        "ch9-u1"
+      ]
+    },
+    {
+      "id": "parapatellar-recess",
+      "en": "Parapatellar recess",
+      "zh": "髕旁隱窩",
+      "aliases": [
+        "medial parapatellar recess",
+        "lateral parapatellar recess"
+      ],
+      "category": "anatomy",
+      "definition": "髕骨內外側的關節隱窩，少量關節液可能較中線更容易積聚於此。",
+      "unit_ids": [
+        "ch2-u1",
+        "ch6-u1",
+        "ch7-u1"
+      ]
+    },
+    {
+      "id": "femoral-trochlear-cartilage",
+      "en": "Femoral trochlear cartilage",
+      "zh": "股骨滑車軟骨",
+      "aliases": [
+        "trochlear cartilage"
+      ],
+      "category": "anatomy",
+      "definition": "覆蓋股骨滑車的關節軟骨，超音波通常在較大屈膝角度下以橫切面評估。",
+      "unit_ids": [
+        "ch2-u1",
+        "ch3-u1",
+        "ch7-u1",
+        "ch10-u1"
+      ]
+    },
+    {
+      "id": "medial-patellar-retinaculum",
+      "en": "Medial patellar retinaculum",
+      "zh": "內側髕骨支持帶",
+      "aliases": [
+        "medial retinaculum"
+      ],
+      "category": "anatomy",
+      "definition": "髕骨內側的多層支持結構，課程要求沿髕骨內緣辨認與追蹤。",
+      "unit_ids": [
+        "ch2-u1",
+        "ch3-u1",
+        "ch10-u1"
+      ]
+    },
+    {
+      "id": "lateral-patellar-retinaculum",
+      "en": "Lateral patellar retinaculum",
+      "zh": "外側髕骨支持帶",
+      "aliases": [
+        "lateral retinaculum"
+      ],
+      "category": "anatomy",
+      "definition": "髕骨外側的支持結構，課程指出其超音波顯示通常不如內側清楚。",
+      "unit_ids": [
+        "ch2-u1",
+        "ch4-u1",
+        "ch5-u1",
+        "ch10-u1"
+      ]
+    },
+    {
+      "id": "medial-patellofemoral-ligament",
+      "en": "Medial patellofemoral ligament",
+      "zh": "內側髕股韌帶",
+      "aliases": [
+        "MPFL"
+      ],
+      "category": "anatomy",
+      "definition": "內側髕骨支持複合體中的重要韌帶，可由髕骨內緣沿其走行追蹤。",
+      "unit_ids": [
+        "ch2-u1",
+        "ch3-u1",
+        "ch10-u1"
+      ]
+    },
+    {
+      "id": "hoffa-fat-pad",
+      "en": "Hoffa fat pad",
+      "zh": "Hoffa 脂肪墊",
+      "aliases": [
+        "infrapatellar fat pad",
+        "髕下脂肪墊"
+      ],
+      "category": "anatomy",
+      "definition": "位於髕腱深面的脂肪墊，其正常外觀與血流需避免誤認為病灶。",
+      "unit_ids": [
+        "ch2-u1",
+        "ch3-u1",
+        "ch10-u1"
+      ]
+    },
+    {
+      "id": "prefemoral-fat-pad",
+      "en": "Prefemoral fat pad",
+      "zh": "股骨前脂肪墊",
+      "aliases": [],
+      "category": "anatomy",
+      "definition": "位於股骨前方且在髕上隱窩深面的脂肪墊。",
+      "unit_ids": [
+        "ch2-u1",
+        "ch3-u1",
+        "ch10-u1"
+      ]
+    },
+    {
+      "id": "quadriceps-fat-pad",
+      "en": "Quadriceps fat pad",
+      "zh": "髕上脂肪墊",
+      "aliases": [
+        "suprapatellar fat pad"
+      ],
+      "category": "anatomy",
+      "definition": "位於股四頭肌腱深面、髕上隱窩淺面的前膝脂肪墊。",
+      "unit_ids": [
+        "ch2-u1",
+        "ch10-u1"
+      ]
+    },
+    {
+      "id": "prepatellar-bursa",
+      "en": "Prepatellar bursa",
+      "zh": "髕前滑囊",
+      "aliases": [],
+      "category": "anatomy",
+      "definition": "位於皮膚與髕骨之間的滑囊，掃描時需使用足量凝膠並避免過度加壓。",
+      "unit_ids": [
+        "ch2-u1",
+        "ch3-u1"
+      ]
+    },
+    {
+      "id": "superficial-infrapatellar-bursa",
+      "en": "Superficial infrapatellar bursa",
+      "zh": "淺層髕下滑囊",
+      "aliases": [],
+      "category": "anatomy",
+      "definition": "位於皮膚與脛骨粗隆之間的滑囊，課程指出正常時不應顯影。",
+      "unit_ids": [
+        "ch2-u1"
+      ]
+    },
+    {
+      "id": "deep-infrapatellar-bursa",
+      "en": "Deep infrapatellar bursa",
+      "zh": "深層髕下滑囊",
+      "aliases": [],
+      "category": "anatomy",
+      "definition": "位於髕腱與脛骨前緣之間的滑囊，可見生理性微量液體。",
+      "unit_ids": [
+        "ch2-u1",
+        "ch3-u1"
+      ]
+    },
+    {
+      "id": "medial-collateral-ligament",
+      "en": "Medial collateral ligament",
+      "zh": "內側副韌帶",
+      "aliases": [
+        "MCL",
+        "tibial collateral ligament"
+      ],
+      "category": "anatomy",
+      "definition": "由淺深層構成的內側穩定結構，需自股骨端至脛骨端沿全長追蹤。",
+      "unit_ids": [
+        "ch2-u1",
+        "ch3-u1",
+        "ch5-u1",
+        "ch7-u1",
+        "ch9-u1",
+        "ch10-u1",
+        "ch11-u1"
+      ]
+    },
+    {
+      "id": "lateral-collateral-ligament",
+      "en": "Lateral collateral ligament",
+      "zh": "外側副韌帶",
+      "aliases": [
+        "LCL",
+        "fibular collateral ligament",
+        "FCL"
+      ],
+      "category": "anatomy",
+      "definition": "自股骨外上髁走向腓骨頭的索狀外側穩定結構。",
+      "unit_ids": [
+        "ch2-u1",
+        "ch4-u1",
+        "ch5-u1",
+        "ch7-u1",
+        "ch10-u1",
+        "ch11-u1"
+      ]
+    },
+    {
+      "id": "pes-anserinus",
+      "en": "Pes anserinus",
+      "zh": "鵝足",
+      "aliases": [
+        "pes anserine tendons",
+        "鵝足肌腱"
+      ],
+      "category": "anatomy",
+      "definition": "由縫匠肌、股薄肌與半腱肌三條肌腱在近端脛骨形成的聯合附著。",
+      "unit_ids": [
+        "ch2-u1",
+        "ch3-u1",
+        "ch5-u1",
+        "ch7-u1",
+        "ch10-u1"
+      ]
+    },
+    {
+      "id": "sartorius",
+      "en": "Sartorius",
+      "zh": "縫匠肌",
+      "aliases": [],
+      "category": "anatomy",
+      "definition": "構成鵝足的三條肌腱之一。",
+      "unit_ids": [
+        "ch2-u1",
+        "ch3-u1",
+        "ch5-u1",
+        "ch10-u1"
+      ]
+    },
+    {
+      "id": "gracilis",
+      "en": "Gracilis",
+      "zh": "股薄肌",
+      "aliases": [],
+      "category": "anatomy",
+      "definition": "構成鵝足的三條肌腱之一。",
+      "unit_ids": [
+        "ch2-u1",
+        "ch3-u1",
+        "ch5-u1",
+        "ch10-u1"
+      ]
+    },
+    {
+      "id": "semitendinosus",
+      "en": "Semitendinosus",
+      "zh": "半腱肌",
+      "aliases": [],
+      "category": "anatomy",
+      "definition": "構成鵝足的三條肌腱之一，位於半膜肌淺面。",
+      "unit_ids": [
+        "ch2-u1",
+        "ch3-u1",
+        "ch5-u1",
+        "ch10-u1"
+      ]
+    },
+    {
+      "id": "pes-anserine-bursa",
+      "en": "Pes anserine bursa",
+      "zh": "鵝足滑囊",
+      "aliases": [],
+      "category": "anatomy",
+      "definition": "位於鵝足肌腱與遠端淺層 MCL 之間、且不與膝關節腔相通的滑囊。",
+      "unit_ids": [
+        "ch2-u1",
+        "ch3-u1"
+      ]
+    },
+    {
+      "id": "semimembranosus-tendon",
+      "en": "Semimembranosus tendon",
+      "zh": "半膜肌腱",
+      "aliases": [],
+      "category": "anatomy",
+      "definition": "後內側肌腱，遠端具有多條附著分臂並參與 Baker 囊腫聲窗定位。",
+      "unit_ids": [
+        "ch2-u1",
+        "ch3-u1",
+        "ch5-u1",
+        "ch7-u1",
+        "ch10-u1"
+      ]
+    },
+    {
+      "id": "semimembranosus-medial-gastrocnemius-bursa",
+      "en": "Semimembranosus–medial gastrocnemius bursa",
+      "zh": "半膜肌—內側腓腸肌滑囊",
+      "aliases": [
+        "gastrocnemius-semimembranosus bursa"
+      ],
+      "category": "anatomy",
+      "definition": "位於半膜肌腱與內側腓腸肌頭之間、形成典型 Baker 囊腫頸部的滑囊。",
+      "unit_ids": [
+        "ch3-u1",
+        "ch5-u1",
+        "ch7-u1",
+        "ch10-u1"
+      ]
+    },
+    {
+      "id": "medial-head-of-gastrocnemius",
+      "en": "Medial head of gastrocnemius",
+      "zh": "腓腸肌內側頭",
+      "aliases": [
+        "medial gastrocnemius"
+      ],
+      "category": "anatomy",
+      "definition": "構成膕窩下內側緣並與半膜肌腱形成 Baker 囊腫定位聲窗的肌肉。",
+      "unit_ids": [
+        "ch3-u1",
+        "ch5-u1",
+        "ch7-u1",
+        "ch10-u1"
+      ]
+    },
+    {
+      "id": "medial-meniscus",
+      "en": "Medial meniscus",
+      "zh": "內側半月板",
+      "aliases": [],
+      "category": "anatomy",
+      "definition": "位於內側股骨髁與脛骨平台間的 C 形纖維軟骨盤。",
+      "unit_ids": [
+        "ch2-u1",
+        "ch3-u1",
+        "ch5-u1",
+        "ch9-u1",
+        "ch10-u1",
+        "ch11-u1"
+      ]
+    },
+    {
+      "id": "lateral-meniscus",
+      "en": "Lateral meniscus",
+      "zh": "外側半月板",
+      "aliases": [],
+      "category": "anatomy",
+      "definition": "位於外側關節間隙、形態較接近環形且較具活動度的纖維軟骨盤。",
+      "unit_ids": [
+        "ch2-u1",
+        "ch4-u1",
+        "ch5-u1",
+        "ch10-u1",
+        "ch11-u1"
+      ]
+    },
+    {
+      "id": "meniscal-root",
+      "en": "Meniscal root",
+      "zh": "半月板根部",
+      "aliases": [
+        "meniscus root"
+      ],
+      "category": "anatomy",
+      "definition": "半月板前後端的附著區，MRI 判讀需由前根一路追蹤至後根。",
+      "unit_ids": [
+        "ch10-u1",
+        "ch11-u1"
+      ]
+    },
+    {
+      "id": "meniscofemoral-ligament",
+      "en": "Meniscofemoral ligament",
+      "zh": "半月板股骨韌帶",
+      "aliases": [],
+      "category": "anatomy",
+      "definition": "課程所述深層 MCL 的組成之一。",
+      "unit_ids": [
+        "ch2-u1",
+        "ch3-u1",
+        "ch10-u1"
+      ]
+    },
+    {
+      "id": "meniscotibial-ligament",
+      "en": "Meniscotibial ligament",
+      "zh": "半月板脛骨韌帶",
+      "aliases": [
+        "coronary ligament"
+      ],
+      "category": "anatomy",
+      "definition": "課程所述深層 MCL 的組成之一。",
+      "unit_ids": [
+        "ch2-u1",
+        "ch3-u1",
+        "ch10-u1"
+      ]
+    },
+    {
+      "id": "transverse-meniscal-ligament",
+      "en": "Transverse meniscal ligament",
+      "zh": "半月板橫韌帶",
+      "aliases": [
+        "anterior transverse ligament"
+      ],
+      "category": "anatomy",
+      "definition": "連結半月板前方的結構，其鄰近裂隙在 MRI 上可能模擬半月板撕裂。",
+      "unit_ids": [
+        "ch2-u1",
+        "ch10-u1",
+        "ch11-u1"
+      ]
+    },
+    {
+      "id": "iliotibial-band",
+      "en": "Iliotibial band",
+      "zh": "髂脛束",
+      "aliases": [
+        "IT band",
+        "ITB"
+      ],
+      "category": "anatomy",
+      "definition": "位於外側膝前方並以主要纖維附著於 Gerdy 結節的纖維帶。",
+      "unit_ids": [
+        "ch2-u1",
+        "ch4-u1",
+        "ch5-u1",
+        "ch7-u1",
+        "ch10-u1"
+      ]
+    },
+    {
+      "id": "gerdy-tubercle",
+      "en": "Gerdy tubercle",
+      "zh": "Gerdy 結節",
+      "aliases": [
+        "Gerdy's tubercle"
+      ],
+      "category": "anatomy",
+      "definition": "近端脛骨前外側的骨性地標，也是髂脛束的主要附著點。",
+      "unit_ids": [
+        "ch2-u1",
+        "ch4-u1",
+        "ch10-u1"
+      ]
+    },
+    {
+      "id": "biceps-femoris-tendon",
+      "en": "Biceps femoris tendon",
+      "zh": "股二頭肌腱",
+      "aliases": [],
+      "category": "anatomy",
+      "definition": "走向腓骨頭的後外側肌腱，其附著分支與 LCL 需分層辨認。",
+      "unit_ids": [
+        "ch2-u1",
+        "ch4-u1",
+        "ch5-u1",
+        "ch7-u1",
+        "ch10-u1"
+      ]
+    },
+    {
+      "id": "popliteus-tendon",
+      "en": "Popliteus tendon",
+      "zh": "膕肌腱",
+      "aliases": [],
+      "category": "anatomy",
+      "definition": "彎行於外側股骨髁附近的深層肌腱，需配合探頭旋轉與角度修正。",
+      "unit_ids": [
+        "ch2-u1",
+        "ch4-u1",
+        "ch5-u1",
+        "ch7-u1",
+        "ch10-u1"
+      ]
+    },
+    {
+      "id": "anterolateral-ligament",
+      "en": "Anterolateral ligament",
+      "zh": "前外側韌帶",
+      "aliases": [
+        "ALL"
+      ],
+      "category": "anatomy",
+      "definition": "課程影片描述的外側穩定結構，位於髂脛束與 LCL 之間。",
+      "unit_ids": [
+        "ch2-u1"
+      ]
+    },
+    {
+      "id": "proximal-tibiofibular-joint",
+      "en": "Proximal tibiofibular joint",
+      "zh": "近端脛腓關節",
+      "aliases": [
+        "proximal TFJ"
+      ],
+      "category": "anatomy",
+      "definition": "脛骨與腓骨近端形成的關節，是外側膝標準掃描項目之一。",
+      "unit_ids": [
+        "ch4-u1",
+        "ch7-u1",
+        "ch10-u1"
+      ]
+    },
+    {
+      "id": "common-fibular-nerve",
+      "en": "Common fibular nerve",
+      "zh": "腓總神經",
+      "aliases": [
+        "common peroneal nerve",
+        "CPN"
+      ],
+      "category": "anatomy",
+      "definition": "自膕窩外側沿股二頭肌走向腓骨頸、位置逐漸表淺的神經。",
+      "unit_ids": [
+        "ch4-u1",
+        "ch5-u1",
+        "ch7-u1",
+        "ch10-u1"
+      ]
+    },
+    {
+      "id": "tibial-nerve",
+      "en": "Tibial nerve",
+      "zh": "脛神經",
+      "aliases": [],
+      "category": "anatomy",
+      "definition": "膕窩內較表淺、往遠端沿膕血管深行的神經。",
+      "unit_ids": [
+        "ch5-u1",
+        "ch10-u1"
+      ]
+    },
+    {
+      "id": "popliteal-artery",
+      "en": "Popliteal artery",
+      "zh": "膕動脈",
+      "aliases": [],
+      "category": "anatomy",
+      "definition": "膕窩神經血管束中位置最深的動脈。",
+      "unit_ids": [
+        "ch5-u1",
+        "ch7-u1",
+        "ch10-u1"
+      ]
+    },
+    {
+      "id": "popliteal-vein",
+      "en": "Popliteal vein",
+      "zh": "膕靜脈",
+      "aliases": [],
+      "category": "anatomy",
+      "definition": "位於膕動脈淺面的靜脈，其可壓性需在合適壓力下評估。",
+      "unit_ids": [
+        "ch5-u1",
+        "ch7-u1",
+        "ch10-u1"
+      ]
+    },
+    {
+      "id": "anterior-cruciate-ligament",
+      "en": "Anterior cruciate ligament",
+      "zh": "前十字韌帶",
+      "aliases": [
+        "ACL"
+      ],
+      "category": "anatomy",
+      "definition": "由脛骨前方走向股骨後上方的交叉韌帶，MRI 應在多平面追蹤其纖維。",
+      "unit_ids": [
+        "ch0-u1",
+        "ch2-u1",
+        "ch8-u1",
+        "ch9-u1",
+        "ch10-u1",
+        "ch11-u1"
+      ]
+    },
+    {
+      "id": "posterior-cruciate-ligament",
+      "en": "Posterior cruciate ligament",
+      "zh": "後十字韌帶",
+      "aliases": [
+        "PCL"
+      ],
+      "category": "anatomy",
+      "definition": "由脛骨後方弓形走向股骨的交叉韌帶，後方超音波只能顯示其可及區段。",
+      "unit_ids": [
+        "ch0-u1",
+        "ch2-u1",
+        "ch5-u1",
+        "ch10-u1",
+        "ch11-u1"
+      ]
+    },
+    {
+      "id": "articular-cartilage",
+      "en": "Articular cartilage",
+      "zh": "關節軟骨",
+      "aliases": [
+        "hyaline cartilage",
+        "透明軟骨"
+      ],
+      "category": "anatomy",
+      "definition": "覆蓋關節面的軟骨，課程要求依可見範圍與腔室描述，不能由局部影像外推整體正常。",
+      "unit_ids": [
+        "ch0-u1",
+        "ch2-u1",
+        "ch3-u1",
+        "ch6-u1",
+        "ch8-u1",
+        "ch9-u1",
+        "ch10-u1",
+        "ch11-u1"
+      ]
+    },
+    {
+      "id": "posterolateral-corner",
+      "en": "Posterolateral corner",
+      "zh": "後外側角",
+      "aliases": [
+        "PLC"
+      ],
+      "category": "anatomy",
+      "definition": "包含 LCL、膕肌腱、膕腓韌帶等結構的後外側穩定複合體。",
+      "unit_ids": [
+        "ch4-u1",
+        "ch5-u1",
+        "ch10-u1",
+        "ch11-u1"
+      ]
+    },
+    {
+      "id": "posteromedial-corner",
+      "en": "Posteromedial corner",
+      "zh": "後內側角",
+      "aliases": [
+        "PMC"
+      ],
+      "category": "anatomy",
+      "definition": "由半膜肌相關結構、後斜韌帶、關節囊及深層 MCL 等構成的後內側複合體。",
+      "unit_ids": [
+        "ch5-u1",
+        "ch10-u1",
+        "ch11-u1"
+      ]
+    },
+    {
+      "id": "fabella",
+      "en": "Fabella",
+      "zh": "腓腸豆",
+      "aliases": [
+        "fabella sesamoid"
+      ],
+      "category": "anatomy",
+      "definition": "常位於腓腸肌外側頭內的種子骨，需避免誤判為關節內游離體。",
+      "unit_ids": [
+        "ch5-u1",
+        "ch9-u1"
+      ]
+    },
+    {
+      "id": "blumensaat-line",
+      "en": "Blumensaat line",
+      "zh": "Blumensaat 線",
+      "aliases": [
+        "Blumensaat's line"
+      ],
+      "category": "anatomy",
+      "definition": "影像上用來對照 ACL 正常走向與張力的髁間窩頂線。",
+      "unit_ids": [
+        "ch9-u1",
+        "ch10-u1"
+      ]
+    },
+    {
+      "id": "diagnostic-ultrasound",
+      "en": "Diagnostic ultrasound",
+      "zh": "診斷性超音波",
+      "aliases": [
+        "US",
+        "MSK ultrasound"
+      ],
+      "category": "technique",
+      "definition": "本課用於膝部表淺結構、液體、動態與血流評估的影像方法。",
+      "unit_ids": [
+        "ch0-u1",
+        "ch1-u1",
+        "ch2-u1",
+        "ch3-u1",
+        "ch4-u1",
+        "ch5-u1",
+        "ch6-u1",
+        "ch7-u1",
+        "ch8-u1",
+        "ch9-u1"
+      ]
+    },
+    {
+      "id": "magnetic-resonance-imaging",
+      "en": "Magnetic resonance imaging",
+      "zh": "磁振造影",
+      "aliases": [
+        "MRI",
+        "MR"
+      ],
+      "category": "technique",
+      "definition": "課程用於深部關節內、半月板、韌帶、軟骨與骨髓病變評估的影像方法。",
+      "unit_ids": [
+        "ch0-u1",
+        "ch2-u1",
+        "ch4-u1",
+        "ch6-u1",
+        "ch8-u1",
+        "ch9-u1",
+        "ch10-u1",
+        "ch11-u1"
+      ]
+    },
+    {
+      "id": "radiography",
+      "en": "Radiography",
+      "zh": "放射線攝影",
+      "aliases": [
+        "X-ray",
+        "plain film"
+      ],
+      "category": "technique",
+      "definition": "急性骨傷與退化性膝關節評估的基本影像方法，需依臨床問題選擇照射位。",
+      "unit_ids": [
+        "ch0-u1",
+        "ch6-u1",
+        "ch8-u1",
+        "ch9-u1"
+      ]
+    },
+    {
+      "id": "computed-tomography",
+      "en": "Computed tomography",
+      "zh": "電腦斷層",
+      "aliases": [
+        "CT"
+      ],
+      "category": "technique",
+      "definition": "當 X 光未顯示但仍疑有關節內或脛骨平台骨折時使用的進階影像。",
+      "unit_ids": [
+        "ch8-u1",
+        "ch9-u1"
+      ]
+    },
+    {
+      "id": "linear-transducer",
+      "en": "Linear transducer",
+      "zh": "線性探頭",
+      "aliases": [
+        "linear-array transducer"
+      ],
+      "category": "technique",
+      "definition": "課程用於大多數膝部表淺結構掃描的高頻探頭。",
+      "unit_ids": [
+        "ch1-u1",
+        "ch2-u1",
+        "ch3-u1",
+        "ch4-u1",
+        "ch5-u1"
+      ]
+    },
+    {
+      "id": "curvilinear-transducer",
+      "en": "Curvilinear transducer",
+      "zh": "凸陣探頭",
+      "aliases": [
+        "convex transducer"
+      ],
+      "category": "technique",
+      "definition": "體型較大或需觀察較深後膝構造時可改用的探頭。",
+      "unit_ids": [
+        "ch3-u1",
+        "ch5-u1"
+      ]
+    },
+    {
+      "id": "b-mode-ultrasound",
+      "en": "B-mode ultrasound",
+      "zh": "B-mode 超音波",
+      "aliases": [
+        "brightness mode"
+      ],
+      "category": "technique",
+      "definition": "用於顯示結構形態、回音、積液與滑膜所見的灰階超音波模式。",
+      "unit_ids": [
+        "ch1-u1",
+        "ch6-u1"
+      ]
+    },
+    {
+      "id": "color-doppler",
+      "en": "Color Doppler",
+      "zh": "彩色都卜勒",
+      "aliases": [
+        "color flow Doppler"
+      ],
+      "category": "technique",
+      "definition": "用來確認病灶內外血流及其與血管關係的都卜勒模式。",
+      "unit_ids": [
+        "ch2-u1",
+        "ch5-u1"
+      ]
+    },
+    {
+      "id": "power-doppler",
+      "en": "Power Doppler",
+      "zh": "能量都卜勒",
+      "aliases": [
+        "PDUS"
+      ],
+      "category": "technique",
+      "definition": "課程用於低流速血流、滑膜活動與病灶血管化評估的都卜勒模式。",
+      "unit_ids": [
+        "ch1-u1",
+        "ch2-u1",
+        "ch5-u1",
+        "ch6-u1",
+        "ch7-u1"
+      ]
+    },
+    {
+      "id": "anisotropy",
+      "en": "Anisotropy",
+      "zh": "各向異性",
+      "aliases": [
+        "anisotropy artifact"
+      ],
+      "category": "technique",
+      "definition": "纖維結構因探頭角度不垂直而呈假性低回音的常見超音波假影。",
+      "unit_ids": [
+        "ch1-u1",
+        "ch2-u1",
+        "ch3-u1",
+        "ch4-u1",
+        "ch5-u1",
+        "ch6-u1",
+        "ch7-u1",
+        "ch10-u1"
+      ]
+    },
+    {
+      "id": "heel-toe-maneuver",
+      "en": "Heel-toe maneuver",
+      "zh": "heel-toe 角度修正",
+      "aliases": [
+        "rocking maneuver"
+      ],
+      "category": "technique",
+      "definition": "以探頭兩端微調入射角、用來排除各向異性的操作。",
+      "unit_ids": [
+        "ch1-u1",
+        "ch4-u1"
+      ]
+    },
+    {
+      "id": "flash-artifact",
+      "en": "Flash artifact",
+      "zh": "閃動假影",
+      "aliases": [],
+      "category": "technique",
+      "definition": "探頭或病人移動配合過高都卜勒增益所造成的假性彩色訊號。",
+      "unit_ids": [
+        "ch1-u1"
+      ]
+    },
+    {
+      "id": "long-axis-scan",
+      "en": "Long-axis scan",
+      "zh": "長軸掃描",
+      "aliases": [
+        "longitudinal scan"
+      ],
+      "category": "technique",
+      "definition": "沿結構長軸取得影像以評估其全長、走向與纖維連續性。",
+      "unit_ids": [
+        "ch1-u1",
+        "ch2-u1",
+        "ch3-u1",
+        "ch4-u1",
+        "ch5-u1",
+        "ch6-u1",
+        "ch7-u1"
+      ]
+    },
+    {
+      "id": "short-axis-scan",
+      "en": "Short-axis scan",
+      "zh": "短軸掃描",
+      "aliases": [
+        "transverse scan"
+      ],
+      "category": "technique",
+      "definition": "垂直於結構長軸取得影像以評估寬度、分層及周邊關係。",
+      "unit_ids": [
+        "ch1-u1",
+        "ch2-u1",
+        "ch3-u1",
+        "ch4-u1",
+        "ch5-u1",
+        "ch6-u1",
+        "ch7-u1"
+      ]
+    },
+    {
+      "id": "orthogonal-plane-confirmation",
+      "en": "Orthogonal-plane confirmation",
+      "zh": "正交平面確認",
+      "aliases": [
+        "two-plane confirmation"
+      ],
+      "category": "technique",
+      "definition": "以彼此垂直的兩個平面確認異常，避免由單一切面誤判。",
+      "unit_ids": [
+        "ch1-u1",
+        "ch2-u1",
+        "ch3-u1",
+        "ch4-u1",
+        "ch5-u1",
+        "ch6-u1",
+        "ch7-u1",
+        "ch10-u1",
+        "ch11-u1"
+      ]
+    },
+    {
+      "id": "dynamic-stress-ultrasound",
+      "en": "Dynamic stress ultrasound",
+      "zh": "動態應力超音波",
+      "aliases": [
+        "stress ultrasound"
+      ],
+      "category": "technique",
+      "definition": "在固定姿勢、探頭位置與施力方式下觀察關節間隙或韌帶動態變化。",
+      "unit_ids": [
+        "ch2-u1",
+        "ch3-u1",
+        "ch4-u1",
+        "ch6-u1",
+        "ch7-u1"
+      ]
+    },
+    {
+      "id": "compression-ultrasound",
+      "en": "Compression ultrasound",
+      "zh": "加壓超音波",
+      "aliases": [
+        "compression sonography"
+      ],
+      "category": "technique",
+      "definition": "逐段壓迫靜脈並觀察管腔是否完全閉合的檢查方法。",
+      "unit_ids": [
+        "ch0-u1",
+        "ch5-u1",
+        "ch7-u1"
+      ]
+    },
+    {
+      "id": "weight-bearing-ap-view",
+      "en": "Weight-bearing AP view",
+      "zh": "承重前後位",
+      "aliases": [
+        "standing AP",
+        "WB AP"
+      ],
+      "category": "technique",
+      "definition": "站立承重拍攝的前後位影像，用於評估力線與內外側關節間隙。",
+      "unit_ids": [
+        "ch8-u1",
+        "ch9-u1"
+      ]
+    },
+    {
+      "id": "lateral-view",
+      "en": "Lateral view",
+      "zh": "側位",
+      "aliases": [
+        "lateral radiograph"
+      ],
+      "category": "technique",
+      "definition": "膝屈約三十度的側位影像，可評估髕股構造、髕上積液與脂肪液平。",
+      "unit_ids": [
+        "ch8-u1",
+        "ch9-u1"
+      ]
+    },
+    {
+      "id": "merchant-view",
+      "en": "Merchant view",
+      "zh": "Merchant 位",
+      "aliases": [
+        "skyline view",
+        "sunrise view"
+      ],
+      "category": "technique",
+      "definition": "屈膝下顯示髕股關節間隙、髕骨傾斜與半脫位的軸向照射位。",
+      "unit_ids": [
+        "ch8-u1",
+        "ch9-u1"
+      ]
+    },
+    {
+      "id": "rosenberg-view",
+      "en": "Rosenberg view",
+      "zh": "Rosenberg 位",
+      "aliases": [
+        "PA 45-degree flexion weight-bearing view"
+      ],
+      "category": "technique",
+      "definition": "屈膝四十五度承重的後前位影像，用於顯示股骨後髁承重區的關節間隙。",
+      "unit_ids": [
+        "ch8-u1",
+        "ch9-u1"
+      ]
+    },
+    {
+      "id": "tunnel-view",
+      "en": "Tunnel view",
+      "zh": "隧道位",
+      "aliases": [
+        "notch view",
+        "intercondylar view"
+      ],
+      "category": "technique",
+      "definition": "用於觀察髁間窩游離體與離斷性骨軟骨炎好發區的照射位。",
+      "unit_ids": [
+        "ch8-u1"
+      ]
+    },
+    {
+      "id": "proton-density-sequence",
+      "en": "Proton density sequence",
+      "zh": "質子密度序列",
+      "aliases": [
+        "PD"
+      ],
+      "category": "technique",
+      "definition": "膝部 MRI 常用序列，可顯示解剖並在脂肪抑制後凸顯液體與水腫。",
+      "unit_ids": [
+        "ch10-u1",
+        "ch11-u1"
+      ]
+    },
+    {
+      "id": "fat-suppressed-fluid-sensitive-sequence",
+      "en": "Fat-suppressed fluid-sensitive sequence",
+      "zh": "脂肪抑制流體敏感序列",
+      "aliases": [
+        "PD fat-sat",
+        "T2 fat-sat",
+        "FS PD",
+        "FS T2"
+      ],
+      "category": "technique",
+      "definition": "抑制脂肪訊號以凸顯水腫、積液及骨髓病灶的 MRI 序列。",
+      "unit_ids": [
+        "ch10-u1",
+        "ch11-u1"
+      ]
+    },
+    {
+      "id": "t1-weighted-sequence",
+      "en": "T1-weighted sequence",
+      "zh": "T1 加權序列",
+      "aliases": [
+        "T1WI",
+        "T1"
+      ],
+      "category": "technique",
+      "definition": "用於對照骨髓脂肪訊號、解剖輪廓與慢性變化的 MRI 序列。",
+      "unit_ids": [
+        "ch10-u1",
+        "ch11-u1"
+      ]
+    },
+    {
+      "id": "t2-weighted-sequence",
+      "en": "T2-weighted sequence",
+      "zh": "T2 加權序列",
+      "aliases": [
+        "T2WI",
+        "T2"
+      ],
+      "category": "technique",
+      "definition": "課程用於液體敏感評估並協助確認短 TE 序列假性高訊號的 MRI 序列。",
+      "unit_ids": [
+        "ch10-u1",
+        "ch11-u1"
+      ]
+    },
+    {
+      "id": "short-tau-inversion-recovery",
+      "en": "Short tau inversion recovery",
+      "zh": "短反轉時間反轉回復序列",
+      "aliases": [
+        "STIR"
+      ],
+      "category": "technique",
+      "definition": "對金屬偽影較不敏感但空間解析度較低的脂肪抑制 MRI 序列。",
+      "unit_ids": [
+        "ch10-u1"
+      ]
+    },
+    {
+      "id": "magic-angle-artifact",
+      "en": "Magic angle artifact",
+      "zh": "魔術角假影",
+      "aliases": [
+        "magic angle effect"
+      ],
+      "category": "technique",
+      "definition": "膠原結構與主磁場約成五十五度時，在短 TE 序列出現的假性高訊號。",
+      "unit_ids": [
+        "ch10-u1"
+      ]
+    },
+    {
+      "id": "truncation-artifact",
+      "en": "Truncation artifact",
+      "zh": "截斷假影",
+      "aliases": [
+        "Gibbs artifact"
+      ],
+      "category": "technique",
+      "definition": "課程列為膝部 MRI 判讀時需辨認、避免誤判病灶的常見假影。",
+      "unit_ids": [
+        "ch10-u1"
+      ]
+    },
+    {
+      "id": "partial-volume-averaging",
+      "en": "Partial volume averaging",
+      "zh": "部分容積平均效應",
+      "aliases": [
+        "partial volume artifact"
+      ],
+      "category": "technique",
+      "definition": "單一體素混合不同組織而產生模糊或假性異常訊號的效應。",
+      "unit_ids": [
+        "ch10-u1"
+      ]
+    },
+    {
+      "id": "ottawa-knee-rule",
+      "en": "Ottawa knee rule",
+      "zh": "Ottawa 膝規則",
+      "aliases": [
+        "OKR"
+      ],
+      "category": "classification",
+      "definition": "以年齡、髕骨或腓骨頭壓痛、屈膝能力及負重能力決定急性膝傷是否需照 X 光的規則。",
+      "unit_ids": [
+        "ch8-u1"
+      ]
+    },
+    {
+      "id": "kellgren-lawrence-classification",
+      "en": "Kellgren–Lawrence classification",
+      "zh": "Kellgren–Lawrence 分級",
+      "aliases": [
+        "K-L",
+        "KL grade",
+        "Kellgren-Lawrence grading"
+      ],
+      "category": "classification",
+      "definition": "依骨刺、關節間隙狹窄、軟骨下硬化與變形將膝部退化分為零至四級。",
+      "unit_ids": [
+        "ch9-u1"
+      ]
+    },
+    {
+      "id": "mcl-injury-grading",
+      "en": "MCL injury grading",
+      "zh": "MCL 損傷分級",
+      "aliases": [
+        "MCL grade I-III"
+      ],
+      "category": "classification",
+      "definition": "課程病例依纖維連續性、周邊液體及外翻應力下的間隙增寬將 MCL 損傷分為三級。",
+      "unit_ids": [
+        "ch3-u1",
+        "ch10-u1",
+        "ch11-u1"
+      ]
+    },
+    {
+      "id": "joint-effusion",
+      "en": "Joint effusion",
+      "zh": "關節積液",
+      "aliases": [
+        "effusion"
+      ],
+      "category": "pathology",
+      "definition": "關節隱窩內的液體所見，其位置受姿勢與探頭壓力影響且本身不具特異性。",
+      "unit_ids": [
+        "ch1-u1",
+        "ch2-u1",
+        "ch3-u1",
+        "ch4-u1",
+        "ch5-u1",
+        "ch6-u1",
+        "ch7-u1",
+        "ch8-u1",
+        "ch9-u1",
+        "ch10-u1"
+      ]
+    },
+    {
+      "id": "synovial-hypertrophy",
+      "en": "Synovial hypertrophy",
+      "zh": "滑膜肥厚",
+      "aliases": [
+        "synovial thickening"
+      ],
+      "category": "pathology",
+      "definition": "滑膜增厚或絨毛狀膨大的影像所見，需配合都卜勒與臨床脈絡判讀。",
+      "unit_ids": [
+        "ch2-u1",
+        "ch6-u1",
+        "ch10-u1"
+      ]
+    },
+    {
+      "id": "synovitis",
+      "en": "Synovitis",
+      "zh": "滑膜炎",
+      "aliases": [],
+      "category": "pathology",
+      "definition": "滑膜發炎性所見，可伴積液、滑膜肥厚或都卜勒活性，但不能單靠外觀判定病因。",
+      "unit_ids": [
+        "ch2-u1",
+        "ch3-u1",
+        "ch5-u1",
+        "ch6-u1",
+        "ch10-u1"
+      ]
+    },
+    {
+      "id": "bursitis",
+      "en": "Bursitis",
+      "zh": "滑囊炎",
+      "aliases": [],
+      "category": "pathology",
+      "definition": "滑囊出現異常液體或發炎所見，需依固定解剖位置與相鄰結構命名。",
+      "unit_ids": [
+        "ch2-u1",
+        "ch3-u1",
+        "ch5-u1",
+        "ch6-u1"
+      ]
+    },
+    {
+      "id": "patellar-tendinopathy",
+      "en": "Patellar tendinopathy",
+      "zh": "髕腱病變",
+      "aliases": [
+        "patellar tendinosis",
+        "jumper's knee"
+      ],
+      "category": "pathology",
+      "definition": "髕腱可見持續的增厚、低回音、鈣化或血管化等改變，須結合症狀與多平面影像。",
+      "unit_ids": [
+        "ch1-u1",
+        "ch2-u1",
+        "ch10-u1"
+      ]
+    },
+    {
+      "id": "enthesopathy",
+      "en": "Enthesopathy",
+      "zh": "附著點病變",
+      "aliases": [
+        "enthesopathic change"
+      ],
+      "category": "pathology",
+      "definition": "肌腱或韌帶附著處的骨緣或纖維異常，課程要求避免由單一切面判定。",
+      "unit_ids": [
+        "ch2-u1"
+      ]
+    },
+    {
+      "id": "neovascularization",
+      "en": "Neovascularization",
+      "zh": "新生血管化",
+      "aliases": [
+        "neovascularity"
+      ],
+      "category": "sign",
+      "definition": "都卜勒顯示病變肌腱內新增血流訊號的所見。",
+      "unit_ids": [
+        "ch2-u1"
+      ]
+    },
+    {
+      "id": "intratendinous-cyst",
+      "en": "Intratendinous cyst",
+      "zh": "腱內囊腫",
+      "aliases": [
+        "intratendinous ganglion cyst"
+      ],
+      "category": "pathology",
+      "definition": "位於肌腱內、界線清楚且含液性內容物的囊性構造，可與層間撕裂鑑別。",
+      "unit_ids": [
+        "ch2-u1"
+      ]
+    },
+    {
+      "id": "parameniscal-cyst",
+      "en": "Parameniscal cyst",
+      "zh": "半月板旁囊腫",
+      "aliases": [
+        "meniscal cyst"
+      ],
+      "category": "pathology",
+      "definition": "緊鄰半月板並常與撕裂相連的液性病灶，可呈多房性並延伸至周邊。",
+      "unit_ids": [
+        "ch3-u1",
+        "ch4-u1",
+        "ch5-u1",
+        "ch10-u1"
+      ]
+    },
+    {
+      "id": "baker-cyst",
+      "en": "Baker cyst",
+      "zh": "Baker 囊腫",
+      "aliases": [
+        "Baker's cyst",
+        "popliteal cyst",
+        "膕窩囊腫"
+      ],
+      "category": "pathology",
+      "definition": "起自半膜肌腱與內側腓腸肌頭間滑囊、具有典型交通頸的後膝囊腫。",
+      "unit_ids": [
+        "ch3-u1",
+        "ch5-u1",
+        "ch6-u1",
+        "ch7-u1",
+        "ch10-u1"
+      ]
+    },
+    {
+      "id": "ruptured-baker-cyst",
+      "en": "Ruptured Baker cyst",
+      "zh": "破裂性 Baker 囊腫",
+      "aliases": [],
+      "category": "pathology",
+      "definition": "Baker 囊腫內液體越出原有邊界並向後或小腿延伸的狀態。",
+      "unit_ids": [
+        "ch5-u1",
+        "ch10-u1"
+      ]
+    },
+    {
+      "id": "deep-vein-thrombosis",
+      "en": "Deep vein thrombosis",
+      "zh": "深部靜脈栓塞",
+      "aliases": [
+        "DVT"
+      ],
+      "category": "pathology",
+      "definition": "深部靜脈內血栓病變，課程強調局部後膝掃描不能取代正式靜脈檢查。",
+      "unit_ids": [
+        "ch0-u1",
+        "ch5-u1"
+      ]
+    },
+    {
+      "id": "popliteal-artery-aneurysm",
+      "en": "Popliteal artery aneurysm",
+      "zh": "膕動脈瘤",
+      "aliases": [],
+      "category": "pathology",
+      "definition": "膕動脈管徑擴大且需以長短軸及都卜勒確認的血管病變。",
+      "unit_ids": [
+        "ch5-u1"
+      ]
+    },
+    {
+      "id": "osteoarthritis",
+      "en": "Osteoarthritis",
+      "zh": "骨關節炎",
+      "aliases": [
+        "OA",
+        "degenerative joint disease"
+      ],
+      "category": "pathology",
+      "definition": "可呈骨刺、關節間隙狹窄、軟骨下硬化與骨端變形的退化性關節病變。",
+      "unit_ids": [
+        "ch3-u1",
+        "ch4-u1",
+        "ch5-u1",
+        "ch6-u1",
+        "ch8-u1",
+        "ch9-u1",
+        "ch11-u1"
+      ]
+    },
+    {
+      "id": "osteophyte",
+      "en": "Osteophyte",
+      "zh": "骨刺",
+      "aliases": [
+        "marginal osteophyte"
+      ],
+      "category": "sign",
+      "definition": "關節邊緣的骨性增生，是 OA 判讀與 K-L 分級所用的影像徵象。",
+      "unit_ids": [
+        "ch4-u1",
+        "ch6-u1",
+        "ch8-u1",
+        "ch9-u1"
+      ]
+    },
+    {
+      "id": "joint-space-narrowing",
+      "en": "Joint space narrowing",
+      "zh": "關節間隙狹窄",
+      "aliases": [
+        "JSN"
+      ],
+      "category": "sign",
+      "definition": "承重影像上關節間隙變窄的所見，非承重片可能低估其程度。",
+      "unit_ids": [
+        "ch3-u1",
+        "ch6-u1",
+        "ch8-u1",
+        "ch9-u1"
+      ]
+    },
+    {
+      "id": "subchondral-sclerosis",
+      "en": "Subchondral sclerosis",
+      "zh": "軟骨下硬化",
+      "aliases": [],
+      "category": "sign",
+      "definition": "關節面下方骨質硬化的影像所見，是較進階 OA 分級的依據之一。",
+      "unit_ids": [
+        "ch8-u1",
+        "ch9-u1"
+      ]
+    },
+    {
+      "id": "lipohemarthrosis",
+      "en": "Lipohemarthrosis",
+      "zh": "脂血關節積液",
+      "aliases": [
+        "fat-fluid level",
+        "fat-blood level"
+      ],
+      "category": "sign",
+      "definition": "水平束側位片上的脂肪與血液分層，指向關節內骨折。",
+      "unit_ids": [
+        "ch8-u1",
+        "ch9-u1"
+      ]
+    },
+    {
+      "id": "tibial-plateau-fracture",
+      "en": "Tibial plateau fracture",
+      "zh": "脛骨平台骨折",
+      "aliases": [
+        "plateau fracture"
+      ],
+      "category": "pathology",
+      "definition": "脛骨平台關節面的骨折，初次 X 光可能隱匿而需由積液或脂血分層提示。",
+      "unit_ids": [
+        "ch8-u1",
+        "ch9-u1"
+      ]
+    },
+    {
+      "id": "segond-fracture",
+      "en": "Segond fracture",
+      "zh": "Segond 骨折",
+      "aliases": [],
+      "category": "pathology",
+      "definition": "外側脛骨平台邊緣的小片撕脫骨折，與 ACL 撕裂高度相關。",
+      "unit_ids": [
+        "ch8-u1",
+        "ch9-u1",
+        "ch11-u1"
+      ]
+    },
+    {
+      "id": "stress-fracture",
+      "en": "Stress fracture",
+      "zh": "應力性骨折",
+      "aliases": [],
+      "category": "pathology",
+      "definition": "可能在初次 X 光陰性或骨髓水腫背景下出現、需進階影像評估的骨折。",
+      "unit_ids": [
+        "ch8-u1",
+        "ch9-u1",
+        "ch11-u1"
+      ]
+    },
+    {
+      "id": "osteochondritis-dissecans",
+      "en": "Osteochondritis dissecans",
+      "zh": "離斷性骨軟骨炎",
+      "aliases": [
+        "OCD"
+      ],
+      "category": "pathology",
+      "definition": "位於股骨髁好發區的骨軟骨病灶，MRI 以介面液體、囊腫及軟骨下骨板完整性評估穩定度。",
+      "unit_ids": [
+        "ch8-u1",
+        "ch9-u1"
+      ]
+    },
+    {
+      "id": "bipartite-patella",
+      "en": "Bipartite patella",
+      "zh": "二分髕骨",
+      "aliases": [
+        "multipartite patella",
+        "分裂髕骨"
+      ],
+      "category": "anatomy",
+      "definition": "髕骨骨化中心未融合形成的正常變異，常見於上外側且邊緣圓鈍有皮質。",
+      "unit_ids": [
+        "ch3-u1",
+        "ch9-u1"
+      ]
+    },
+    {
+      "id": "bone-marrow-edema",
+      "en": "Bone marrow edema",
+      "zh": "骨髓水腫",
+      "aliases": [
+        "BME",
+        "bone marrow edema-like signal"
+      ],
+      "category": "sign",
+      "definition": "流體敏感 MRI 上的骨髓高訊號，需依分布與臨床情境考慮創傷、應力或其他病因。",
+      "unit_ids": [
+        "ch0-u1",
+        "ch6-u1",
+        "ch10-u1",
+        "ch11-u1"
+      ]
+    },
+    {
+      "id": "pivot-shift-bone-bruise-pattern",
+      "en": "Pivot-shift bone bruise pattern",
+      "zh": "pivot-shift 型骨挫傷分布",
+      "aliases": [
+        "pivot-shift contusion pattern"
+      ],
+      "category": "sign",
+      "definition": "外側股骨髁與後外側脛骨平台的對吻性骨挫傷，是 ACL 撕裂的高特異度間接徵象。",
+      "unit_ids": [
+        "ch10-u1",
+        "ch11-u1"
+      ]
+    },
+    {
+      "id": "meniscal-tear",
+      "en": "Meniscal tear",
+      "zh": "半月板撕裂",
+      "aliases": [
+        "meniscus tear"
+      ],
+      "category": "pathology",
+      "definition": "MRI 上半月板異常訊號明確延伸至關節面的病變，需描述型態、位置與範圍。",
+      "unit_ids": [
+        "ch0-u1",
+        "ch2-u1",
+        "ch3-u1",
+        "ch4-u1",
+        "ch5-u1",
+        "ch6-u1",
+        "ch8-u1",
+        "ch9-u1",
+        "ch10-u1",
+        "ch11-u1"
+      ]
+    },
+    {
+      "id": "horizontal-meniscal-tear",
+      "en": "Horizontal meniscal tear",
+      "zh": "水平半月板撕裂",
+      "aliases": [
+        "horizontal cleavage tear"
+      ],
+      "category": "pathology",
+      "definition": "沿半月板平面延伸並接觸關節面的撕裂，常可伴半月板旁囊腫。",
+      "unit_ids": [
+        "ch4-u1",
+        "ch10-u1",
+        "ch11-u1"
+      ]
+    },
+    {
+      "id": "vertical-meniscal-tear",
+      "en": "Vertical meniscal tear",
+      "zh": "垂直縱向半月板撕裂",
+      "aliases": [
+        "longitudinal tear",
+        "vertical longitudinal tear"
+      ],
+      "category": "pathology",
+      "definition": "沿半月板縱向走行的撕裂，課程指出常與創傷及 ACL 撕裂相關。",
+      "unit_ids": [
+        "ch10-u1",
+        "ch11-u1"
+      ]
+    },
+    {
+      "id": "radial-meniscal-tear",
+      "en": "Radial meniscal tear",
+      "zh": "放射狀半月板撕裂",
+      "aliases": [
+        "radial tear"
+      ],
+      "category": "pathology",
+      "definition": "橫切半月板纖維走向的撕裂，可伴半月板突出與 ghost sign。",
+      "unit_ids": [
+        "ch10-u1",
+        "ch11-u1"
+      ]
+    },
+    {
+      "id": "complex-meniscal-tear",
+      "en": "Complex meniscal tear",
+      "zh": "複雜型半月板撕裂",
+      "aliases": [
+        "complex tear"
+      ],
+      "category": "pathology",
+      "definition": "具有多個方向或型態成分、需以標準命名描述範圍的半月板撕裂。",
+      "unit_ids": [
+        "ch10-u1",
+        "ch11-u1"
+      ]
+    },
+    {
+      "id": "bucket-handle-tear",
+      "en": "Bucket-handle tear",
+      "zh": "桶柄狀半月板撕裂",
+      "aliases": [
+        "bucket-handle meniscal tear"
+      ],
+      "category": "pathology",
+      "definition": "廣泛縱向撕裂使大片半月板碎片向中央翻轉移位的型態。",
+      "unit_ids": [
+        "ch10-u1",
+        "ch11-u1"
+      ]
+    },
+    {
+      "id": "meniscal-root-tear",
+      "en": "Meniscal root tear",
+      "zh": "半月板根部撕裂",
+      "aliases": [
+        "root tear"
+      ],
+      "category": "pathology",
+      "definition": "發生於半月板前根或後根附著區的撕裂，需在多平面完整追蹤以免漏診。",
+      "unit_ids": [
+        "ch10-u1",
+        "ch11-u1"
+      ]
+    },
+    {
+      "id": "ghost-sign",
+      "en": "Ghost sign",
+      "zh": "幽靈徵象",
+      "aliases": [],
+      "category": "sign",
+      "definition": "半月板在連續 MRI 切面突然消失後再次出現，是放射狀撕裂的重要線索。",
+      "unit_ids": [
+        "ch10-u1"
+      ]
+    },
+    {
+      "id": "double-pcl-sign",
+      "en": "Double PCL sign",
+      "zh": "雙 PCL 徵象",
+      "aliases": [],
+      "category": "sign",
+      "definition": "移位的桶柄狀半月板碎片在 PCL 前方形成第二條低訊號帶的徵象。",
+      "unit_ids": [
+        "ch10-u1"
+      ]
+    },
+    {
+      "id": "meniscal-extrusion",
+      "en": "Meniscal extrusion",
+      "zh": "半月板突出",
+      "aliases": [
+        "meniscal displacement"
+      ],
+      "category": "sign",
+      "definition": "半月板周邊超出關節緣的所見，其程度會受負重、屈膝與退化影響。",
+      "unit_ids": [
+        "ch3-u1",
+        "ch4-u1",
+        "ch6-u1",
+        "ch10-u1"
+      ]
+    },
+    {
+      "id": "cartilage-defect",
+      "en": "Cartilage defect",
+      "zh": "軟骨缺損",
+      "aliases": [
+        "chondral defect"
+      ],
+      "category": "pathology",
+      "definition": "關節軟骨出現裂隙、局部缺損或全層缺損的影像病變，應描述深度與位置。",
+      "unit_ids": [
+        "ch3-u1",
+        "ch6-u1",
+        "ch8-u1",
+        "ch9-u1",
+        "ch10-u1",
+        "ch11-u1"
+      ]
+    },
+    {
+      "id": "acl-tear",
+      "en": "ACL tear",
+      "zh": "前十字韌帶撕裂",
+      "aliases": [
+        "ACL rupture",
+        "anterior cruciate ligament tear"
+      ],
+      "category": "pathology",
+      "definition": "ACL 出現纖維中斷、走向異常、張力喪失或完整低訊號纖維消失的病變。",
+      "unit_ids": [
+        "ch8-u1",
+        "ch9-u1",
+        "ch10-u1",
+        "ch11-u1"
+      ]
+    },
+    {
+      "id": "pcl-tear",
+      "en": "PCL tear",
+      "zh": "後十字韌帶撕裂",
+      "aliases": [
+        "PCL rupture",
+        "posterior cruciate ligament tear"
+      ],
+      "category": "pathology",
+      "definition": "PCL 出現纖維中斷、增寬、回音或訊號不均及正常走向喪失的病變。",
+      "unit_ids": [
+        "ch5-u1",
+        "ch10-u1",
+        "ch11-u1"
+      ]
+    }
+  ]
+}
