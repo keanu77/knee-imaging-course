@@ -1552,6 +1552,538 @@
       "reviewer_role": "復健科專科醫師",
       "reviewed_at": "2026-08-17",
       "reviewed_commit": "45171d92030b0ee203a3080adab864e68402166c"
+    },
+    {
+      "video_url": "https://www.youtube.com/watch?v=ytR9BLrdml8",
+      "review_status": "draft",
+      "transcript_verified_at": "2026-08-25",
+      "transcript_source": "yt-dlp 自動字幕（en, VTT）2026-08-25 實抓，逐段對照時間戳核對",
+      "note": "自動字幕訛誤已於筆記改採標準命名：otavani／otawani rule→Ottawa knee rule；petala→patella；Dr cutter Stalin→Dr Kathir Stalin（講者藝名，本名 Kathir Azhagan，已以醫院頁核對）；aged to 55→aged 55。",
+      "segments": [
+        {
+          "start": "00:00",
+          "end": "00:17",
+          "title": "工具定位：為什麼需要 Ottawa knee rule",
+          "summary": "講者說明 Ottawa knee rule 是實證的臨床決策工具，目的是簡化照護流程、減少急診不必要的膝部 X 光。",
+          "detail": [
+            "定位為 evidence-based clinical decision-making tool，不是診斷工具。",
+            "目標場景是急診的急性膝傷，處理的是「要不要照」而非「怎麼讀」。"
+          ]
+        },
+        {
+          "start": "00:18",
+          "end": "01:05",
+          "title": "五項判準與診斷效能",
+          "summary": "急性膝傷只有符合以下任一判準才照 X 光：受傷當下與急診皆無法負重走四步（跛行不拘）、無法屈膝至 90 度、孤立髕骨壓痛、腓骨頭壓痛、年齡 55 歲以上；敏感度略低於 99%，特異度 49%。",
+          "detail": [
+            "負重判準要求「受傷當下」與「急診評估時」兩個時點都無法走四步，跛著走完仍算可負重。",
+            "壓痛判準限「孤立」的髕骨或腓骨頭壓痛，合併其他膝部骨性壓痛時不適用此條。",
+            "敏感度接近 99%——五項全陰性可安全不照；特異度 49%——陽性不等於骨折，只是需要影像。"
+          ]
+        }
+      ]
+    },
+    {
+      "video_url": "https://www.youtube.com/watch?v=PTpG34ccTso",
+      "review_status": "draft",
+      "transcript_verified_at": "2026-08-25",
+      "transcript_source": "yt-dlp 自動字幕（en, VTT）2026-08-25 實抓，逐段對照時間戳核對",
+      "note": "自動字幕訛誤已於筆記改採標準命名：acidification centers→ossification centers（骨化中心）；subrolateal／subaru lateral／supralateral pole（混用）→superolateral pole（上外側極，標準命名）；infused→unfused（未融合）；retinoculum→retinaculum。診斷框限 0:00–2:29：2:22 起講者進入治療討論、3:10 起為手術動畫，逐段筆記止於 2:21。",
+      "segments": [
+        {
+          "start": "00:04",
+          "end": "00:30",
+          "title": "定義與三種分型",
+          "summary": "Bipartite patella 是髕骨骨化中心未融合；常見三型：下極、外側緣、上外側極。",
+          "detail": [
+            "本質是發育性的骨化中心融合失敗，不是骨折後遺症。",
+            "三個好發位置：inferior pole、lateral margin、superolateral pole。"
+          ]
+        },
+        {
+          "start": "00:31",
+          "end": "01:20",
+          "title": "X 光辨識與骨折鑑別",
+          "summary": "以上外側型為例：副骨化中心未融合形成兩部分，較小的碎片圓鈍、通常位於外上側，易被誤判為骨折；上外側型約占 75%，且約半數為雙側，建議照對側膝對照。",
+          "detail": [
+            "鑑別核心是形態：圓鈍、有皮質邊緣的分離片指向 bipartite；銳利無皮質緣才指向急性骨折。",
+            "Superolateral 型約 75%，是最常見分型。",
+            "約 50% 為雙側——照對側膝是便宜且直接的鑑別手段。"
+          ]
+        },
+        {
+          "start": "01:21",
+          "end": "02:21",
+          "title": "Skyline 承重像與臨床表現",
+          "summary": "蹲踞承重位的 skyline view 可顯示碎片移位與分離增寬；bipartite 通常無症狀、為偶然發現，但輕微創傷可使兩段間的纖維組織發炎，於分離處（多為上外側）出現局部壓痛，活動或運動後疼痛。",
+          "detail": [
+            "Skyline＋蹲踞承重是功能性激發：分離增寬提示纖維連結受牽拉。",
+            "無症狀偶見於 X 光時不需進一步處理；症狀化的典型是分離處局部壓痛＋活動後痛。",
+            "症狀可以模仿骨折——回到形態鑑別與雙側對照，避免把變異當急性傷。"
+          ]
+        }
+      ]
+    },
+    {
+      "video_url": "https://www.youtube.com/watch?v=di63ofJq7XU",
+      "review_status": "draft",
+      "transcript_verified_at": "2026-08-25",
+      "transcript_source": "yt-dlp 自動字幕（en, VTT）2026-08-25 實抓；初稿由協作 agent 依逐字稿產生，主編逐段對照原文核對",
+      "note": "自動字幕訛誤已於筆記改採標準命名：Kendra mam→McCamey；Steve albera→Albrechta；KNE／NE→knee；seone／Sone fracture→Segond fracture（**專名等級錯誤，最需複查**）；lockman→Lachman；evulsion→avulsion；bleed→bow-legged（弓形腿，講者以此解釋 varus）；vus deviation→valgus deviation；patellar Toe→patellar tilt；Moder diffusion→moderate effusion；affusion／infusion→effusion；minuscal→meniscal；muscular skeletal→musculoskeletal；CTIC→cystic；pation→palpation；Bala／pelop femoral→patella／patellofemoral；condil／cond→condyle。7:09–7:24 與 9:05–9:19 為治療選項口頭列舉（無操作示範），照實記錄於段落。",
+      "segments": [
+        {
+          "start": "00:02",
+          "end": "01:06",
+          "title": "課程目標與膝部 X 光基本投照",
+          "summary": "介紹系統性判讀膝部 X 光的課程目標，並說明負重影像及三種常用投照的重要性。",
+          "detail": [
+            "課程將複習膝部肌肉骨骼 X 光的系統性判讀方法、三種成人常見發現及其臨床關聯。",
+            "患者能負重時應指定拍攝負重影像，以評估自然解剖位置、排列與關節間隙變窄。",
+            "常用影像包括雙側負重 AP view、負重 lateral view 與 sunrise view。"
+          ]
+        },
+        {
+          "start": "01:07",
+          "end": "02:20",
+          "title": "負重 AP view 的系統性判讀",
+          "summary": "依序從整體排列、骨性輪廓、關節間隙到軟組織判讀負重 AP view。",
+          "detail": [
+            "先評估膝部整體排列，再沿 femur、tibia、fibula 與 patella 的骨皮質輪廓尋找不規則處。",
+            "骨皮質異常可能包括骨折或退化性關節病變中的 osteophytes，並應記錄骨內部的異常。",
+            "評估 patella 是否位於 femur 中央，以及是否偏向外側或內側。",
+            "檢查內外側關節間隙有無變窄、sclerosis 或 cystic changes，最後查看軟組織；示例顯示雙側輕度內側關節間隙變窄與 sclerosis。"
+          ]
+        },
+        {
+          "start": "02:21",
+          "end": "03:30",
+          "title": "負重 lateral view 的判讀",
+          "summary": "說明膝屈曲約 30 度的 lateral view 如何評估骨骼、patellofemoral joint 與軟組織異常。",
+          "detail": [
+            "標準 lateral view 約在膝屈曲 30 度時拍攝，但仍須特別指定為負重影像。",
+            "依序檢查排列、femur、tibia、fibula 與 patella 的骨性輪廓、骨皮質中斷及退化性變化。",
+            "評估 patellofemoral joint space；內外側關節間隙在此投照中重疊，較難完整判讀。",
+            "示例可見 patellofemoral joint 的 sclerosis 與退化性變化、後方關節內 loose bodies 及 effusion。"
+          ]
+        },
+        {
+          "start": "03:31",
+          "end": "04:24",
+          "title": "Sunrise view 與成人常見膝部病況",
+          "summary": "介紹 sunrise view 對 patellofemoral joint 的判讀順序，並列出後續案例涵蓋的三種常見病況。",
+          "detail": [
+            "先評估 patella 相對於 femoral condyles 的排列，再檢查 patella 與 femur 的骨皮質及骨內部。",
+            "接著查看 patellofemoral joint space；此投照能看到的軟組織較少。",
+            "示例顯示 patella 排列正常、右膝外側 patellofemoral joint space 輕度變窄，且雙側 patella 有 osteophytes。",
+            "後續成人案例包括膝 osteoarthritis、ACL tear 與 patellofemoral pain syndrome。"
+          ]
+        },
+        {
+          "start": "04:25",
+          "end": "05:32",
+          "title": "膝 Osteoarthritis 案例與 AP view",
+          "summary": "以活動後內側膝痛、晨間僵硬及腫脹的患者，示範 osteoarthritis 的臨床與負重 AP 影像表現。",
+          "detail": [
+            "60 歲男性有雙側內側膝痛，活動增加時惡化，伴隨晨間僵硬、日間漸增的腫脹及天氣變化時疼痛。",
+            "理學檢查顯示肥胖、雙膝 varus alignment、活動時 crepitus 與疼痛、內側關節線壓痛及中度 effusion。",
+            "負重 AP view 顯示雙側 varus alignment、嚴重內側關節間隙變窄及內側關節線 sclerosis。",
+            "雙側內外側關節線可見 osteophytes，整體表現符合膝 osteoarthritis。"
+          ]
+        },
+        {
+          "start": "05:33",
+          "end": "07:24",
+          "title": "Osteoarthritis 的其他投照、影像選擇與治療",
+          "summary": "利用 lateral 與 sunrise views 補充 osteoarthritis 表現，並說明 MRI、超音波與治療選項。",
+          "detail": [
+            "Lateral view 可見 patellofemoral joint space 變窄、sclerosis、cystic changes、osteophytes、內側關節線 sclerosis 及 loose bodies。",
+            "Sunrise view 顯示雙側 patella 輕度偏外、lateral patellar tilt、外側關節間隙變窄及雙側 osteophytes。",
+            "診斷通常依靠臨床病史與 X 光，不需 MRI 或肌肉骨骼超音波；超音波可用於引導注射。",
+            "治療選項包括減重、物理治療、護具、口服與外用藥物、關節內注射及關節置換。"
+          ]
+        },
+        {
+          "start": "07:25",
+          "end": "09:20",
+          "title": "Patellofemoral Pain Syndrome 案例",
+          "summary": "以前膝痛患者示範 patellofemoral pain syndrome 的症狀、檢查、影像表現與治療方式。",
+          "detail": [
+            "42 歲女性前膝痛在上下樓梯、久坐及由坐姿起身時加劇，恢復健身活動後症狀惡化。",
+            "檢查顯示 lateral patellar facet 壓痛、活動時 crepitus、patellar inhibition 陽性、J sign 陽性及單腳深蹲時 valgus deviation。",
+            "Lateral view 顯示 patella 排列正常、上極有少量 osteophytes 且 patellofemoral joint space 變窄；sunrise view 顯示雙側 lateral patellar tilt 與輕度外側關節間隙變窄。",
+            "X 光與 MRI 經常正常；治療包括物理治療、膝部護具、活動調整、口服與外用藥物、關節內注射，以及可能使用矯具或調整鞋款。"
+          ]
+        },
+        {
+          "start": "09:21",
+          "end": "10:46",
+          "title": "ACL Tear 與 Segond Fracture",
+          "summary": "以足球員急性非接觸性膝傷案例說明 Segond fracture 對 ACL tear 的提示及後續評估與治療。",
+          "detail": [
+            "21 歲足球員變向時感到爆裂聲與立即疼痛，隨後出現負重困難、明顯腫脹、不穩及屈伸受限。",
+            "檢查顯示顯著 effusion、活動範圍減少、anterior drawer test 陽性及 Lachman test 陽性。",
+            "負重 AP view 排列正常，但 lateral tibial plateau 附近有小型撕脫骨片，稱為 Segond fracture，出現時應假設有 ACL tear。",
+            "MRI 可評估 ACL、其他韌帶、meniscus 與骨髓水腫；治療包括護具、物理治療、抽吸或藥物控制 effusion，以及韌帶重建手術。"
+          ]
+        },
+        {
+          "start": "10:47",
+          "end": "11:25",
+          "title": "膝部 X 光判讀總結",
+          "summary": "總結負重投照的重要性，以及 osteoarthritis、patellofemoral pain syndrome 與 ACL tear 的關鍵影像線索。",
+          "detail": [
+            "患者情況允許時應取得負重影像，以真實評估解剖排列與關節間隙變窄。",
+            "Osteoarthritis 常見關節間隙變窄、sclerosis、osteophytes，有時伴隨骨性 cystic changes。",
+            "Patellofemoral pain syndrome 的膝部 X 光常為正常，但也可能看到 patellofemoral joint 退化性變化與 patellar malalignment。",
+            "Segond fracture 是 ACL tear 的特徵性影像表現。"
+          ]
+        }
+      ]
+    },
+    {
+      "video_url": "https://www.youtube.com/watch?v=G3hvxA45mTo",
+      "review_status": "draft",
+      "transcript_verified_at": "2026-08-25",
+      "transcript_source": "yt-dlp 自動字幕（en, VTT）2026-08-25 實抓；初稿由協作 agent 依逐字稿產生，主編逐段對照原文核對",
+      "note": "自動字幕訛誤已於筆記改採標準命名：e Fusion／infusion／ifusion／affusion→effusion；lioh orthosis→lipohemarthrosis；crossable lateral→cross-table lateral；radaph／rating grass／radi graphs→radiographs；subtronic→subtrochanteric；tiia→tibia。本片 2:50–33:12 為髖關節內容、46:05–55:20 為髖 bonus case 與 Q&A（皆不在本課範圍，未做段落）；僅收 33:22 起的膝部段落與 55:21 起與膝相關的 Q&A。",
+      "segments": [
+        {
+          "start": "33:22",
+          "end": "34:58",
+          "title": "膝關節積液與脂肪血液關節積液",
+          "summary": "側位膝部 X 光可藉由 suprapatellar recess 膨隆及脂肪液面辨識關節積液與 lipohemarthrosis。",
+          "detail": [
+            "suprapatellar recess 內軟組織密度厚度超過 1 公分表示關節積液，5 至 10 mm 則可能有積液。",
+            "在 cross-table lateral view 上，脂肪會浮在血性關節積液之上，形成可見的脂肪液面。",
+            "發現 lipohemarthrosis 時，應優先懷疑骨折，直到證明不是骨折為止。"
+          ]
+        },
+        {
+          "start": "34:59",
+          "end": "35:53",
+          "title": "MRI 辨識正常與完全撕裂的 ACL",
+          "summary": "ACL 的張力、連續性及其相對於 Blumensaat's line 的走向可用來區分正常韌帶與完全撕裂。",
+          "detail": [
+            "正常 ACL 緊繃且訊號正常，走向與 Blumensaat's line 平行或比其更陡。",
+            "ACL 撕裂時可見近端殘端異常，並出現韌帶纖維不連續。",
+            "遠端殘端會變得鬆弛且較水平，相較於 Blumensaat's line 的斜率更為平坦。"
+          ]
+        },
+        {
+          "start": "35:54",
+          "end": "38:56",
+          "title": "隱匿性脛骨平台壓陷骨折",
+          "summary": "外翻受傷後若出現 lipohemarthrosis，即使 X 光骨折線不明顯，也應考慮脛骨平台壓陷骨折及進階影像。",
+          "detail": [
+            "軸位 patellofemoral view 可能帶到部分 tibial plateau，並顯示與 CT 對應的細微骨折線。",
+            "外翻傷害除可能造成 MCL 損傷，也可使 lateral femoral condyle 向下撞擊，形成細微硬化與壓陷骨折。",
+            "持續有症狀且存在 lipohemarthrosis 時，可使用 CT 評估骨折；MRI 也能顯示骨折壓陷與 bone marrow edema。",
+            "MRI 還可同時評估 MCL、ACL 等內部結構損傷；骨撞擊通常有明顯水腫，但撕脫傷未必伴隨水腫。"
+          ]
+        },
+        {
+          "start": "38:57",
+          "end": "40:49",
+          "title": "Segond fracture 與 ACL 撕裂",
+          "summary": "扭轉傷合併大量關節積液時，應仔細尋找細小的 Segond fracture，因其高度提示 ACL 撕裂。",
+          "detail": [
+            "Segond fracture 的骨片很小，位於特徵性位置，在 X 光及 MRI 上都可能被漏診。",
+            "部分病例可見骨髓及覆蓋軟組織水腫，但撕脫傷有時不會產生大量水腫。",
+            "Segond fracture 被視為幾乎可指向 ACL tear，但只有少數 ACL rupture 病人會出現此骨折。",
+            "依許多專家的看法，此骨折可視為 anterolateral ligament avulsion。"
+          ]
+        },
+        {
+          "start": "40:50",
+          "end": "42:31",
+          "title": "ACL 近端撕裂、殘端鬆弛與機械症狀",
+          "summary": "ACL 撕裂後鬆弛纖維可向前彎入 intercondylar notch，造成伸直受限等機械症狀。",
+          "detail": [
+            "急性期可能難以完成可靠的 Lachman test 或 pivot shift examination。",
+            "ACL 前方纖維向 intercondylar notch 內彎曲，外觀可類似術後 ACL reconstruction 所見的 cyclops lesion 或 arthrofibrosis。",
+            "影像可見 ACL 不連續、鬆弛纖維及近端殘端，常見斷裂位置在近端三分之一。",
+            "殘端間隙過大時可能無法癒合；未移位撕裂則有機會形成瘢痕，但殘餘鬆弛度與穩定性不一。"
+          ]
+        },
+        {
+          "start": "42:32",
+          "end": "44:09",
+          "title": "青少年 osteochondritis dissecans 的發現與癒合",
+          "summary": "青少年雙側膝痛可能源於 osteochondritis dissecans，而 PA standing view 可使病灶比一般 AP view 更清楚。",
+          "detail": [
+            "病例中的雙側 osteochondral lesions 起初在 X 光上被漏診。",
+            "PA standing view 比一般 AP view 更能顯示 osteochondritis dissecans 病灶。",
+            "juvenile 型發生於 physis 尚未閉合的年輕病人，穩定病灶在適當非負重治療下多可癒合。",
+            "四年後影像顯示 bone marrow edema 與線狀低訊號消失，病灶癒合良好且上覆 cartilage 外觀正常。"
+          ]
+        },
+        {
+          "start": "44:10",
+          "end": "45:00",
+          "title": "穩定型 osteochondritis dissecans 的 MRI 特徵",
+          "summary": "病灶與宿主骨之間沒有液體訊號、大囊腫或 subchondral bone plate 中斷時，支持穩定型病灶。",
+          "detail": [
+            "典型位置位於 femoral condyle 的內側負重區。",
+            "MRI 未見病灶與 host bone 介面間的異常液體訊號。",
+            "介面沒有大型囊腫，subchondral bone plate 也沒有中斷。",
+            "此穩定且無症狀的病灶採非手術治療後結果良好。"
+          ]
+        },
+        {
+          "start": "45:01",
+          "end": "46:05",
+          "title": "成人不穩定型 osteochondritis dissecans",
+          "summary": "成人 osteochondral lesion 若有介面液體、subchondral bone plate 中斷及碎裂不平整，表示病灶不穩定。",
+          "detail": [
+            "MRI 顯示病灶與 host bone 介面存在液體訊號。",
+            "可見 subchondral bone plate 中斷，以及 osteochondral lesion 表面不平整與碎裂。",
+            "手術確認該骨軟骨碎片確實不穩定。",
+            "病人接受 ACI procedure 後兩年，medial femoral condyle 影像外觀與臨床結果均良好。"
+          ]
+        },
+        {
+          "start": "55:21",
+          "end": "56:49",
+          "title": "膝周壓力性骨折與內側半月板功能失常",
+          "summary": "講者未確認 bisphosphonate 會造成膝周同型骨折，但指出 medial meniscus 功能失常可導致 medial tibial plateau 壓力性骨折。",
+          "detail": [
+            "典型 atypical femoral fracture 定義為發生於 subtrochanteric 或更遠端 femur，並具有 lateral cortex beaking。",
+            "講者表示不確定 bisphosphonate 相關骨折是否會發生於 tibia。",
+            "medial meniscus extrusion 或 posterior horn root tear 可造成內側間室生物力學過度負荷。",
+            "medial tibial plateau 壓力性骨折可在 X 光上呈現水平走向的硬化帶。"
+          ]
+        }
+      ]
+    },
+    {
+      "video_url": "https://www.youtube.com/watch?v=-AxgSwjn1q0",
+      "review_status": "draft",
+      "transcript_verified_at": "2026-08-25",
+      "transcript_source": "yt-dlp 自動字幕（en, VTT）2026-08-25 實抓；初稿由協作 agent 依逐字稿產生，主編逐段對照原文核對",
+      "note": "自動字幕訛誤已於筆記改採標準命名：rated gasps→radiographs；answered posterior→anteroposterior；murk of view→Merchant view；PA rows in Greenfield→PA Rosenberg view；thermal tubular joint→femorotibial joint；visual head→fibular head；off the earth right／all shows rights→osteoarthritis；way brains view／weak bank→weight-bearing view；profitable→proximal tibia（依上下文推定）；patellofemoral truth lies→patellofemoral arthritis（依前文 Merchant 段列舉推定，**待確認**）。",
+      "segments": [
+        {
+          "start": "00:00",
+          "end": "00:25",
+          "title": "課程目標與六種常見膝部 X 光",
+          "summary": "本短講面向基層醫師，複習可開立的六種常見膝部 X 光 view。",
+          "detail": [
+            "對象為 primary care physician，主題是如何開立膝部 radiographs",
+            "目標是複習基層醫師可開立的六種膝部 X 光",
+            "六種常見 view：AP（anteroposterior）、weight-bearing AP、lateral、oblique、PA Rosenberg view、Merchant view"
+          ]
+        },
+        {
+          "start": "00:26",
+          "end": "00:53",
+          "title": "AP view：最基本的膝部 X 光",
+          "summary": "AP view 是最基本的膝部 X 光，光束由前向後，可顯示股骨遠端、脛骨近端與腓骨近端等結構。",
+          "detail": [
+            "AP 是最基本的膝部 X 光 view，beam 由前向後（front to back）",
+            "可見 distal femur、proximal tibia、proximal fibula，以及位於 femur 前方或後方的 patella",
+            "可觀察 tibiofemoral joint space、fibular head 與 proximal tibia",
+            "可用來辨識 fractures 與 arthritis"
+          ]
+        },
+        {
+          "start": "00:54",
+          "end": "01:24",
+          "title": "Weight-bearing AP：診斷骨關節炎最重要的 view",
+          "summary": "站立拍攝的 weight-bearing AP 可顯現非負重片看不出的關節間隙變窄，是診斷 osteoarthritis 極重要的 view。",
+          "detail": [
+            "講者認為 weight-bearing AP 或許是最重要的 view，由患者站立拍攝",
+            "對照示範：非負重時 medial 與 lateral compartment 關節間隙仍足夠",
+            "同一膝於站立負重下間隙變窄，因而可診斷 osteoarthritis",
+            "此診斷在 non-weight-bearing view 不會被偵測到"
+          ]
+        },
+        {
+          "start": "01:25",
+          "end": "01:59",
+          "title": "Lateral 與 oblique views",
+          "summary": "Lateral view 有助觀察 patellofemoral joint 與髁部輪廓；oblique views 相對最不實用，依內旋或外旋分別凸顯近端脛腓關節或內側間室。",
+          "detail": [
+            "Lateral view 可看 patellofemoral joint、distal femur、proximal tibia，並辨識 fractures",
+            "Lateral 亦可見各 condyle 輪廓，以及 tibia 與 patella",
+            "Oblique views 被認為可能是最不實用的 view，於膝部 medial 或 lateral rotation 時拍攝",
+            "Medial rotation 可清楚看 proximal tibiofibular joint；lateral rotation 可清楚看 medial compartment"
+          ]
+        },
+        {
+          "start": "02:00",
+          "end": "02:45",
+          "title": "Merchant view：最常被漏開的 patellofemoral 影像",
+          "summary": "Merchant view 最能清楚顯示 patellofemoral joint，卻常因只開 AP 與 lateral 而被遺忘。",
+          "detail": [
+            "被視為最重要卻最少被開立、最常被遺忘的 view，因多數醫師只開 AP 與 lateral",
+            "拍攝時膝彎 45 度，beam 由上向下，以孤立顯示 patellofemoral joint，patella 呈 profile",
+            "特別適合評估 patellar dislocation、patella subluxation 或 patellofemoral arthritis"
+          ]
+        },
+        {
+          "start": "02:46",
+          "end": "03:24",
+          "title": "PA Rosenberg view：觀察後髁與脛骨接觸",
+          "summary": "PA Rosenberg 常被忽略；膝彎 45 度、beam 向下傾斜 10 度，有助觀察 posterior femoral condyle 與 tibia 的接觸。",
+          "detail": [
+            "常被忽略，因許多人不大理解此 view",
+            "拍攝方式：膝彎 45 度，X 光 beam 向下 angled 10 degrees，用以顯示膝關節 condyles",
+            "對照：standard AP 僅見部分 medial compartment narrowing；Rosenberg 可見 posterior femoral condyle 接觸 tibia",
+            "此 view 適合看 condyle 後方，並使後髁與 tibia 接觸"
+          ]
+        },
+        {
+          "start": "03:25",
+          "end": "04:09",
+          "title": "何時開立哪些 view",
+          "summary": "標準組合為 AP、lateral、Merchant（四 view 再加 oblique）；AP 必須負重以評估 OA，patellofemoral 問題用 Merchant，髁部軟骨病灶用 PA Rosenberg。",
+          "detail": [
+            "標準三 view：AP、lateral、Merchant；標準四 view：AP、lateral、oblique、Merchant",
+            "AP 必須是 weight-bearing 才能評估 osteoarthritis；最常見錯誤是只帶來 non-weight-bearing AP 而需重拍",
+            "60 歲以上最常見診斷為 osteoarthritis，必須有 weight-bearing view",
+            "看 patellofemoral joint（patellar dislocation、patellofemoral arthritis、patellofemoral syndrome）需 Merchant view；看 condyle 的 cartilage lesion 需 PA Rosenberg view"
+          ]
+        }
+      ]
+    },
+    {
+      "video_url": "https://www.youtube.com/watch?v=WiZoV8PJ_tQ",
+      "review_status": "draft",
+      "transcript_verified_at": "2026-08-25",
+      "transcript_source": "yt-dlp 自動字幕（en, VTT）2026-08-25 實抓，逐段對照時間戳核對",
+      "note": "自動字幕訛誤已於筆記改採標準命名：kelgrin and Lauren system→Kellgren–Lawrence system；Dr Jeff Pang→Dr Jeff Peng。2:48–3:00 與 4:16 起為治療選項概述與下一支治療影片導流（無操作示範），4:16 後未做段落。",
+      "segments": [
+        {
+          "start": "00:00",
+          "end": "00:26",
+          "title": "K-L 分級系統定位",
+          "summary": "醫師以 Kellgren–Lawrence（K-L）系統評估膝關節炎嚴重度：0 到 4 級，0 為無退化性變化、4 為 bone-on-bone。",
+          "detail": [
+            "K-L 是 X 光的 OA 嚴重度分級，不是症狀分級。",
+            "級距 0–4：0＝無 OA 徵象；4＝骨對骨。"
+          ]
+        },
+        {
+          "start": "00:27",
+          "end": "01:26",
+          "title": "Grade 0 與 Grade 1 實例",
+          "summary": "Grade 0：無任何 OA 變化——骨輪廓正常、內外側與髕股腔室間隙保留、無骨刺無硬化。Grade 1：可疑的間隙狹窄與可能的小骨刺；骨刺因軟骨流失後骨承受應力增加而生成。",
+          "detail": [
+            "判讀基準：骨輪廓（contours）、三腔室間隙、骨刺、硬化四件事。",
+            "Grade 1 的關鍵字是「doubtful／possible」——間隙可疑變窄、骨緣略尖的小骨刺。",
+            "骨刺隨退化進展變大；此期間隙可保留但軟骨已開始弱化。"
+          ]
+        },
+        {
+          "start": "01:27",
+          "end": "02:08",
+          "title": "Grade 2 與 mild OA 的臨床意涵",
+          "summary": "Grade 2：明確骨刺＋早期關節間隙狹窄。Grade 1–2 合稱 mild OA，但關節內環境已開始釋放發炎介質與蛋白酶，持續損害健康軟骨——OA 因此是慢性進行性疾病。",
+          "detail": [
+            "「明確骨刺」是 grade 2 的門檻徵象。",
+            "講者強調多數 OA 治療研究集中在 grade 1–2，因為這是介入、延緩惡化的最佳時機。"
+          ]
+        },
+        {
+          "start": "02:09",
+          "end": "02:59",
+          "title": "Grade 3 與 Grade 4 實例",
+          "summary": "Grade 3（moderate）：軟骨侵蝕造成間隙狹窄加重、多發骨刺、軟骨下硬化與骨端變形。Grade 4（severe）：巨大骨刺、間隙顯著或完全塌陷、明顯硬化與變形；此期治療選項以症狀控制為主。",
+          "detail": [
+            "3→4 的進展軸線：間隙狹窄程度＋骨刺數量大小＋硬化與變形。",
+            "講者提及 grade 4 的處理偏向緩解性質、疼痛無法控制時可能需關節置換（口頭敘述，照實記錄）。"
+          ]
+        },
+        {
+          "start": "03:00",
+          "end": "03:28",
+          "title": "三腔室分開評級與分佈",
+          "summary": "K-L 評級應對內側、外側與髕股三個腔室分別給分；引用研究：約 50% 膝 OA 僅單一腔室（內側最常見）、33% 兩腔室、17% 三腔室。",
+          "detail": [
+            "逐腔室評級才能反映病灶分佈，單一總分會失真。",
+            "內側腔室是最常見的單腔室 OA 位置。"
+          ]
+        },
+        {
+          "start": "03:29",
+          "end": "04:15",
+          "title": "最重要的訊息：治療病人而非治療 X 光",
+          "summary": "影像嚴重度與症狀不必然相關：grade 3 病人可能還在跑半馬，grade 1 病人可能腫痛到無法負重。不應等到 grade 3–4 才開始處置，grade 3 也不代表只能等待置換。",
+          "detail": [
+            "「Treat the patient, not the X-ray」是本片核心結論。",
+            "K-L 分級是溝通與研究工具，治療決策必須回到症狀與功能。",
+            "此觀點與課程單元「影像所見不等於疼痛來源」的證據邊界一致。"
+          ]
+        }
+      ]
+    },
+    {
+      "video_url": "https://www.youtube.com/watch?v=OBypdK9PT_w",
+      "review_status": "draft",
+      "transcript_verified_at": "2026-08-25",
+      "transcript_source": "yt-dlp 自動字幕（en, VTT）2026-08-25 實抓；初稿由協作 agent 依逐字稿產生，主編逐段對照原文核對",
+      "note": "自動字幕訛誤已於筆記改採標準命名：evulsion→avulsion；joint of fusion／infusion→joint effusion；lipo hemo arthrosis→lipohemarthrosis；bipar type patella→bipartite patella；femal condil→femoral condyle；infr patellar→infrapatellar；tabula→trabeculae；cronal／chronal→coronal；idiology→etiology；片尾自稱 strog rmd→Sarel Gaur MD（依頻道核對）。全片為診斷判讀與 CT 印證，無介入內容。",
+      "segments": [
+        {
+          "start": "00:08",
+          "end": "00:55",
+          "title": "膝部 X 光基本搜尋策略：放大與 tibial plateau",
+          "summary": "看膝部 X 光時先放大以看清解剖，重點搜尋他人容易漏掉的 subtle tibial plateau fracture。",
+          "detail": [
+            "第一步一定 zoom in，以獲得較好的空間解析度並真正理解解剖。",
+            "目標不是顯而易見的大骨折，而是他人不易看出的 subtle fractures。",
+            "仔細檢視 tibial plateau：subtle break、crack、articular surface 凹陷，以及 marrow bone 內的 sclerosis，後者可能是骨折早期徵象。"
+          ]
+        },
+        {
+          "start": "00:56",
+          "end": "01:31",
+          "title": "檢視 fibular head、lateral joint line 與 patella",
+          "summary": "同樣檢視 fibular head 與 lateral joint line 的 avulsion，並在 frontal view 評估 patella，勿把 bipartite patella 誤認為骨折。",
+          "detail": [
+            "以同樣方式檢視 fibular head。",
+            "lateral joint line 是常見 avulsion fracture 區域，可能只見 thin fleck of bone；看似輕微，但可能代表明顯內部與 soft tissue 損傷。",
+            "frontal view 上 patella 與 femur overlapping，仍可充分評估。",
+            "正常變異 bipartite patella 不可誤認為骨折。"
+          ]
+        },
+        {
+          "start": "01:32",
+          "end": "02:41",
+          "title": "Oblique 與 lateral view：effusion、平台範圍與伸膝機制",
+          "summary": "Oblique 可補足 frontal 漏看的異常；lateral 是膝部 plain film 極重要的投照，用來找 joint effusion、檢視 tibial plateau 前後範圍與伸膝肌腱。",
+          "detail": [
+            "Oblique 提供略不同角度，frontal 未見的異常可能在 oblique 顯現，同樣要仔細檢視；patella 也會較明顯旋轉出來。",
+            "Lateral view 對膝部 plain films 非常重要：先找 joint effusion；若有 effusion，病因可為退化，也可表示 subtle tibial plateau fracture 使 marrow fat 與 hemorrhage 漏入 joint space。",
+            "Lateral 可看 tibial plateau 的 AP 範圍、fibular head、joint 的 posterior aspect，以及 femoral condyles。",
+            "即使在 plain film 也可評估 extensor mechanism：quadriceps tendon 與 infrapatellar tendon。"
+          ]
+        },
+        {
+          "start": "02:42",
+          "end": "03:33",
+          "title": "案例：suprapatellar joint effusion 與 lipohemarthrosis",
+          "summary": "以搜尋策略檢視案例膝部時，lateral 見明顯增大的 suprapatellar joint effusion 與 fluid-fluid level，高度懷疑 radiographically occult 的 tibial plateau fracture。",
+          "detail": [
+            "先仔細檢視 tibial plateau 區域，尋找 subtle fractures。",
+            "Lateral 見很大的 suprapatellar joint effusion：正常約 5 mm，此例為 2 cm。",
+            "關節液內有 fluid-fluid level 與 attenuation 差異（較低密度與較高密度液體），符合 lipohemarthrosis（關節內 fat 與 hemorrhage 積液）。",
+            "因此高度懷疑 tibial plateau fracture 在 X 光上為 radiographically occult（X 光上看不到）。"
+          ]
+        },
+        {
+          "start": "03:34",
+          "end": "04:28",
+          "title": "CT 證實 subtle lateral tibial plateau fracture",
+          "summary": "因懷疑 tibial plateau fracture 安排膝部 CT，coronal 與 sagittal 證實 subtle lateral tibial plateau fracture，患者得以接受適當治療。",
+          "detail": [
+            "因懷疑 tibial plateau fracture 而做膝部 CT，含 coronal 與 sagittal。",
+            "Coronal 可見 central tibial plateau 的 crack，以及 trabeculae compression（很 subtle 的骨折徵象）。",
+            "Sagittal 較容易看出 step-off：cortex 連續後出現 subtle break，為確定骨折證據。",
+            "診斷為 subtle lateral tibial plateau fracture，患者得以接受 appropriate treatment；這類 subtle 膝傷正是放射科醫師要找的。"
+          ]
+        }
+      ]
     }
   ]
 }
