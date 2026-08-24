@@ -626,7 +626,7 @@
       "review_status": "approved",
       "transcript_verified_at": "2026-08-16",
       "transcript_source": "yt-dlp 自動字幕（en, VTT）2026-08-16 實抓，逐段對照時間戳核對",
-      "note": "本片為 AMSSM 病例報告（講者 Steven Jow, MD），自動字幕解剖名詞訛誤密集，段落內容一律改採標準命名。已更正者：paramal assist／param minuscal／parisal cyst／paramal cyst→parameniscal cyst（半月板旁囊腫）；miniscus／minuscal→meniscus（半月板）；gerti's tubal／gerti's tubic／G's Tule→Gerdy 結節；lateral Catal ligament→lateral collateral ligament（LCL，外側副韌帶）；lateral FAL condal／lateral fmal condal→lateral femoral condyle（股骨外髁）；fibler head／fabler head／FI head／fiar head→fibular head（腓骨頭）；BPS femoris／bicep femoris／biceps fous／biceps forus／fibs→biceps femoris（股二頭肌）；pus／petus／theoplus／plal groove→popliteus（膕肌）／popliteal groove（膕肌溝）；tibio fal／tiop fibular／TI fibular→tibiofibular（脛腓）；common fi nerve／fibler nerve→common fibular nerve（腓總神經）；btis→bursitis；thle→Thessaly test；it ban distl friction syndrome→ITB distal friction syndrome；hypo Co／hypo aoic／hypoc／unequoia→hypoechoic／anechoic；intasc architecture→fascicular architecture（神經束狀結構）；pinr residency→PM&R（復健科）住院醫師；Dr Steven Jiao→Dr Steven Jow。⚠️ **兩處側別／方向存疑，列為重點複查**：(1) 08:26 講者說膝關節本身的「slight vus angulation」造成 LCL 波浪狀外觀，字幕全片只出現 vus／vars／various、從未出現 valgus，無法直接判讀；本段依其矯正手法（雙腿夾枕使症狀側膝呈內翻）反推原句應為「輕度外翻對位」，此為推論非字幕原文。(2) 02:52 理學檢查的「negative fa stress test」方向無法判讀，段落內容只寫「應力測試陰性」不指定內翻或外翻。片長 25:55，介入（診斷／治療性抽吸）自 15:37 起（字幕 aspiration 一詞實測落在 00:15:38.199，15:33 起為 bonus 影像的引言），本層段落全部落在 02:29–15:36 診斷框限內。",
+      "note": "本片為 AMSSM 病例報告（講者 Steven Jow, MD），自動字幕解剖名詞訛誤密集，段落內容一律改採標準命名。已更正者：paramal assist／param minuscal／parisal cyst／paramal cyst→parameniscal cyst（半月板旁囊腫）；miniscus／minuscal→meniscus（半月板）；gerti's tubal／gerti's tubic／G's Tule→Gerdy 結節；lateral Catal ligament→lateral collateral ligament（LCL，外側副韌帶）；lateral FAL condal／lateral fmal condal→lateral femoral condyle（股骨外髁）；fibler head／fabler head／FI head／fiar head→fibular head（腓骨頭）；BPS femoris／bicep femoris／biceps fous／biceps forus／fibs→biceps femoris（股二頭肌）；pus／petus／theoplus／plal groove→popliteus（膕肌）／popliteal groove（膕肌溝）；tibio fal／tiop fibular／TI fibular→tibiofibular（脛腓）；common fi nerve／fibler nerve→common fibular nerve（腓總神經）；btis→bursitis；thle→Thessaly test；it ban distl friction syndrome→ITB distal friction syndrome；hypo Co／hypo aoic／hypoc／unequoia→hypoechoic／anechoic；intasc architecture→fascicular architecture（神經束狀結構）；pinr residency→PM&R（復健科）住院醫師；Dr Steven Jiao→Dr Steven Jow。✅ 兩處側別／方向原列為存疑，2026-08-22 以 mlx-whisper large-v3 重轉錄原片後解除：(1) 08:26 原文為「the slight valgus angulation of our knee joints causes a slightly wavy appearance and possible anisotropy」，「輕度外翻對位」由推論升級為字幕原文；(2) 02:52 原文為「negative varus stress test」，應力測試方向為內翻。片長 25:55，介入（診斷／治療性抽吸）自 15:37 起（字幕 aspiration 一詞實測落在 00:15:38.199，15:33 起為 bonus 影像的引言），本層段落全部落在 02:29–15:36 診斷框限內。",
       "segments": [
         {
           "start": "02:29",
@@ -636,7 +636,7 @@
           "detail": [
             "病史的關鍵是負荷變化而非外傷：新年開始跟教練訓練、參加多種團體課程後才出現隱襲性疼痛。",
             "誘發動作集中在跳箱與深蹲、尤其落地時——高衝擊軸向負荷指向關節內結構而非單純肌腱。",
-            "理學檢查：屈曲可到 120 度且終端有痛、外側關節線壓痛、McMurray 與 Thessaly 皆陽性，應力測試陰性（字幕未能判讀測試方向）。"
+            "理學檢查：屈曲可到 120 度且終端有痛、外側關節線壓痛、McMurray 與 Thessaly 皆陽性，內翻應力測試陰性（large-v3 重轉錄證實為 negative varus stress test）。"
           ]
         },
         {
@@ -722,7 +722,7 @@
           "title": "LCL 的波浪狀外觀、內翻應力測試與膕肌地標",
           "summary": "膝關節本身的對位會讓 LCL 呈現波浪狀並產生各向異性，這正是夾枕製造內翻的理由；可加做內翻應力測試看斷裂與鬆弛，並以膕肌作為辨識 LCL 的地標。",
           "detail": [
-            "LCL 呈波浪狀時容易誤判：纖維不平直會產生各向異性，看起來像低回音病灶。（⚠️ 字幕在此處的方向詞無法判讀，「輕度外翻對位」是依其矯正手法為內翻反推，需複查原片）",
+            "LCL 呈波浪狀時容易誤判：膝關節本身的輕度外翻對位讓纖維不平直而產生各向異性，看起來像低回音病灶。（large-v3 重轉錄證實原文為 slight valgus angulation）",
             "解法回到擺位：雙腿之間夾枕讓膝處於內翻，把韌帶拉直再判讀。",
             "內翻應力測試可動態評估 LCL 是否斷裂或鬆弛增加；近端 LCL 起於股骨外髁、膕肌就在其深面，兩者互為地標。"
           ]
