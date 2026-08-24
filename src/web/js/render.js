@@ -616,8 +616,18 @@ export function renderChapter(ch, doneSet) {
 
 /* --- 首頁 ---------------------------------------------------------------- */
 
-export function renderHome(course) {
+export function renderHome(course, { doneSet = new Set(), lastUnit = null } = {}) {
   const { meta, chapters, stance } = course;
+
+  const units = chapters.flatMap((chapter) =>
+    chapter.units.map((unit) => ({ chapter, unit })),
+  );
+  const last = units.find(({ unit }) => unit.id === lastUnit?.id);
+  const first = units[0];
+  const resume = last || first;
+  const total = units.length;
+  const done = units.filter(({ unit }) => doneSet.has(unit.id)).length;
+  const progress = total ? Math.round((done / total) * 100) : 0;
 
   const L = CFG.landing || {};
   const steps = (L.steps || []).map(
@@ -657,6 +667,31 @@ export function renderHome(course) {
   }).join("");
 
   return `
+    <section class="ContinueCard" aria-labelledby="continueTitle">
+      <div class="ContinueCard__main">
+        <span class="ContinueCard__eyebrow">${icon("book-open", 14)} LEARNING PROGRESS</span>
+        <h2 class="ContinueCard__title" id="continueTitle">
+          ${last
+            ? `上次學到：${esc(last.chapter.title)}／${esc(last.unit.name)}`
+            : "從第一章開始"}
+        </h2>
+        <div class="ContinueCard__progressHead">
+          <span>整體進度</span>
+          <strong>${done} / ${total} · ${progress}%</strong>
+        </div>
+        <div class="ProgressBar" role="progressbar" aria-label="整體進度"
+             aria-valuemin="0" aria-valuemax="100" aria-valuenow="${progress}">
+          <div class="ProgressBar__fill" style="width:${progress}%"></div>
+        </div>
+      </div>
+      ${resume
+        ? `<button class="btn btn-primary ContinueCard__action" type="button"
+                   data-continue-unit="${esc(resume.unit.id)}">
+             ${last ? "繼續" : "從第一章開始"} ${icon("chevron-right", 14)}
+           </button>`
+        : ""}
+    </section>
+
     <section class="Landing__section">
       <h2 class="Landing__h2">${icon("book-open", 20)} ${esc(L.howTitle || "")}</h2>
       <div class="Steps">${steps}</div>

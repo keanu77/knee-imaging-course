@@ -210,6 +210,53 @@ def audit_segments(
     return errors, total, counts
 
 
+def check_questions(catalog_ids: set[str], allowed_status: set[str]) -> list[str]:
+    """知識檢核題組的結構稽核：題數、選項解析、正解數、引用存在性、id 穩定性。"""
+    path = ROOT / "course" / "data" / "questions.json"
+    if not path.exists():
+        return []
+    blob = json.loads(path.read_text())
+    errors: list[str] = []
+    seen_ids: set[str] = set()
+    for uid, entry in (blob.get("units") or {}).items():
+        where = f"questions/{uid}"
+        if entry.get("review_status") not in allowed_status:
+            errors.append(f"{where}: review_status 不在允許清單：{entry.get('review_status')!r}")
+        qs = entry.get("questions") or []
+        if not 3 <= len(qs) <= 5:
+            errors.append(f"{where}: 題數 {len(qs)}，應為 3–5")
+        for q in qs:
+            qid = q.get("id") or ""
+            qwhere = f"{where}/{qid or '(no id)'}"
+            if not qid.startswith(uid + "-q"):
+                errors.append(f"{qwhere}: id 必須以 {uid}-q 開頭")
+            if qid in seen_ids:
+                errors.append(f"{qwhere}: id 重複")
+            seen_ids.add(qid)
+            if q.get("type") not in {"single", "multi"}:
+                errors.append(f"{qwhere}: type 必須是 single|multi")
+            if not (q.get("stem") or "").strip():
+                errors.append(f"{qwhere}: 缺 stem")
+            opts = q.get("options") or []
+            if len(opts) < 3:
+                errors.append(f"{qwhere}: 選項至少 3 個")
+            correct = [o for o in opts if o.get("correct")]
+            if q.get("type") == "single" and len(correct) != 1:
+                errors.append(f"{qwhere}: single 題必須恰好 1 個正解")
+            if q.get("type") == "multi" and len(correct) < 1:
+                errors.append(f"{qwhere}: multi 題至少 1 個正解")
+            for i, o in enumerate(opts):
+                if not (o.get("rationale") or "").strip():
+                    errors.append(f"{qwhere}: 選項 {i+1} 缺 rationale（不論對錯都要有解析）")
+            refs = q.get("reference_ids") or []
+            if not refs:
+                errors.append(f"{qwhere}: 缺 reference_ids")
+            for r in refs:
+                if r not in catalog_ids:
+                    errors.append(f"{qwhere}: 引用 {r} 不存在於 reference_catalog")
+    return errors
+
+
 def main() -> int:
     cfg = load(COURSE / "course.config.json")
     brief = load(COURSE / "brief.json")
@@ -494,6 +541,16 @@ def main() -> int:
         print(f"  ⚠ {len(warnings)} 項非阻斷警告（目前主要為內容或上架日期待確認）")
         for warning in warnings:
             print(f"      · {warning}")
+    q_errors = check_questions(set(references), allowed_status)
+    errors.extend(q_errors)
+    qpath = ROOT / "course" / "data" / "questions.json"
+    if qpath.exists():
+        qblob = json.loads(qpath.read_text())
+        qunits = qblob.get("units") or {}
+        qa = sum(1 for e in qunits.values() if e.get("review_status") == "approved")
+        qtotal = sum(len(e.get("questions") or []) for e in qunits.values())
+        print(f"  {'✓' if not q_errors else '✗'} 知識檢核：{len(qunits)} 個題組 · {qtotal} 題 · approved {qa}（只有 approved 會進入 course.json）")
+
     if errors:
         print(f"  ✗ {len(errors)} 項錯誤")
         for error in errors:

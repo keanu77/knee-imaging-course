@@ -23,6 +23,7 @@ const STORE = {
   open: "knee-ultrasound-course:open",
   tab: "knee-ultrasound-course:tab",
   playing: "knee-ultrasound-course:playing",
+  lastUnit: "knee-ultrasound-course:lastUnit",
   wide: "knee-ultrasound-course:wide",
   listW: "knee-ultrasound-course:listW",
 };
@@ -40,6 +41,7 @@ const state = {
   tab: "course",
   playlist: [],
   playing: -1,
+  lastUnit: null,
   playlistQuery: "",
   onlyTodo: false,
 };
@@ -240,9 +242,27 @@ function renderProgress() {
   $("#progressFill").style.width = total ? `${(done / total) * 100}%` : "0%";
 }
 
+function renderLanding() {
+  if (!state.course) return;
+  $("#landingBody").innerHTML = renderHome(state.course, {
+    doneSet: state.done,
+    lastUnit: state.lastUnit,
+  });
+}
+
+function rememberUnit(unitId) {
+  if (!state.course.chapters.some((ch) => ch.units.some((unit) => unit.id === unitId))) {
+    return;
+  }
+  state.lastUnit = { id: unitId, timestamp: Date.now() };
+  save(STORE.lastUnit, state.lastUnit);
+  renderLanding();
+}
+
 function toggleDone(unitId) {
   state.done.has(unitId) ? state.done.delete(unitId) : state.done.add(unitId);
   save(STORE.done, [...state.done]);
+  rememberUnit(unitId);
 
   const el = $(`[data-unit="${CSS.escape(unitId)}"]`);
   if (el) {
@@ -361,15 +381,20 @@ function alignPlayingToVisible() {
     playAt(next);
   } else {
     state.playing = next;
-    save(STORE.playing, next);
+    savePlaying();
     refreshPlaylist();
   }
+}
+
+function savePlaying() {
+  const id = state.playlist[state.playing]?.vid;
+  if (id) save(STORE.playing, id);
 }
 
 function playAt(i) {
   if (i < 0 || i >= state.playlist.length) return;
   state.playing = i;
-  save(STORE.playing, i);
+  savePlaying();
   play(state.playlist[i], { total: state.playlist.length });
   setTimeout(ytListen, 900); // iframe 載入後才收得到 infoDelivery
   if (load(STORE.wide, false)) {
@@ -390,6 +415,47 @@ function stepPlaylist(delta) {
       return;
     }
   }
+}
+
+function goToUnit(unitId, updateHash = true) {
+  const el = $(`[data-unit="${CSS.escape(unitId)}"]`);
+  if (!el) return;
+  setTab("course");
+  el.classList.add("is-open");
+  el.closest(".Chapter")?.classList.add("is-open");
+  rememberUnit(unitId);
+  if (updateHash && location.hash !== `#${unitId}`) location.hash = unitId;
+  el.scrollIntoView({ block: "center" });
+}
+
+function stepChapter(delta) {
+  if (state.tab !== "course") setTab("course");
+  const headings = $$(".Chapter__header");
+  if (!headings.length) return;
+
+  const headerHeight = parseFloat(
+    getComputedStyle(document.documentElement).getPropertyValue("--header-height"),
+  ) || 56;
+  const line = headerHeight + 16;
+  let current = -1;
+  headings.forEach((heading, i) => {
+    if (heading.getBoundingClientRect().top <= line) current = i;
+  });
+  const aligned =
+    current >= 0 && Math.abs(headings[current].getBoundingClientRect().top - line) < 40;
+  const wanted = delta > 0 ? current + 1 : aligned ? current - 1 : current;
+  headings[Math.max(0, Math.min(headings.length - 1, wanted))]
+    ?.scrollIntoView({ block: "start" });
+}
+
+function videoIdFromHash() {
+  let hashValue = "";
+  try {
+    hashValue = decodeURIComponent(location.hash.slice(1));
+  } catch {
+    hashValue = location.hash.slice(1);
+  }
+  return { hashValue, videoId: /^play=([\w-]{11})$/.exec(hashValue)?.[1] || null };
 }
 
 /* --- 事件 ---------------------------------------------------------------- */
@@ -413,7 +479,10 @@ function bindEvents() {
       const el = $(`[data-chapter="${CSS.escape(goCh.dataset.gotoChapter)}"]`);
       el?.classList.add("is-open");
       el?.scrollIntoView({ block: "start" });
+      return;
     }
+    const resume = e.target.closest("[data-continue-unit]");
+    if (resume) goToUnit(resume.dataset.continueUnit);
   });
 
   // 肌群篩選：側欄 chip 與動作內的標籤共用同一組 data-muscle
@@ -479,14 +548,7 @@ function bindEvents() {
     }
 
     const goto = e.target.closest("[data-goto-unit]");
-    if (goto) {
-      e.preventDefault();
-      setTab("course");
-      const el = $(`[data-unit="${CSS.escape(goto.dataset.gotoUnit)}"]`);
-      el?.classList.add("is-open");
-      el?.closest(".Chapter")?.classList.add("is-open");
-      el?.scrollIntoView({ block: "center" });
-    }
+    if (goto) return e.preventDefault(), goToUnit(goto.dataset.gotoUnit);
   });
 
   let plDebounce;
@@ -555,7 +617,9 @@ function bindEvents() {
         : kind === "unit"
           ? toggle.closest(".Unit")
           : toggle.closest(".Evidence"); // evidence 與 drillev 共用 .Evidence 外框
+    const opening = !host.classList.contains("is-open");
     host.classList.toggle("is-open");
+    if (kind === "unit" && opening) rememberUnit(host.dataset.unit);
   });
 
   // 完成標記的鍵盤操作
@@ -584,17 +648,6 @@ function bindEvents() {
     $("#searchBox").classList.remove("has-value");
     applyFilters();
     searchInput.focus();
-  });
-
-  // "/" 聚焦搜尋
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "/" && !/^(INPUT|TEXTAREA)$/.test(document.activeElement.tagName)) {
-      e.preventDefault();
-      searchInput.focus();
-    }
-    if (e.key === "Escape" && document.activeElement === searchInput) {
-      searchInput.blur();
-    }
   });
 
   // 類型篩選
@@ -627,6 +680,7 @@ function bindEvents() {
     renderProgress();
     renderNav();
     updateChapterMeta();
+    renderLanding();
   });
 
   // 主題
@@ -704,6 +758,7 @@ async function init() {
 
   state.course = data;
   state.done = new Set(load(STORE.done, []));
+  state.lastUnit = load(STORE.lastUnit, null);
 
   setConfig(data.config);
   setLanguages(data.config?.languages);
@@ -729,9 +784,16 @@ async function init() {
 
   state.playlist = buildPlaylist(data);
   state.playlist.forEach((it, i) => urlIndex.set(it.url, i));
-  state.playing = load(STORE.playing, -1);
+  const storedPlaying = load(STORE.playing, -1);
+  if (typeof storedPlaying === "number") {
+    state.playing = state.playlist[storedPlaying] ? storedPlaying : -1;
+    // 舊版存的是 index；成功還原一次後立刻遷移成穩定的 YouTube id。
+    if (state.playing >= 0) savePlaying();
+  } else {
+    state.playing = state.playlist.findIndex((item) => item.vid === storedPlaying);
+  }
 
-  $("#landingBody").innerHTML = renderHome(data);
+  renderLanding();
   renderStats();
   renderNav();
   renderMusclePanel(data);
@@ -749,21 +811,31 @@ async function init() {
       stepPlaylist(-1);
     },
     isPlayerTab: () => state.tab === "player",
+    nextChapter: () => stepChapter(1),
+    prevChapter: () => stepChapter(-1),
   });
   applyFilters();
   syncTierControls();
 
-  // ?tab=player&play=12 可直接開到指定分頁與影片，也方便分享連結
+  // 舊的 ?tab=player&play=12 仍可用；新的 #play=<ytid> 不受清單排序影響。
   const params = new URLSearchParams(location.search);
   const wanted = params.get("tab");
+  const { hashValue, videoId: hashPlay } = videoIdFromHash();
+  const hashPlayIndex = hashPlay
+    ? state.playlist.findIndex((item) => item.vid === hashPlay)
+    : -1;
   setTab(
-    ["home", "course", "player", "stance"].includes(wanted)
+    hashPlayIndex >= 0
+      ? "player"
+      : ["home", "course", "player", "stance"].includes(wanted)
       ? wanted
       : load(STORE.tab, "home"),
   );
 
-  const deepPlay = Number(params.get("play"));
-  if (state.tab === "player" && Number.isInteger(deepPlay) && state.playlist[deepPlay]) {
+  const deepPlay = params.has("play") ? Number(params.get("play")) : NaN;
+  if (hashPlayIndex >= 0) {
+    state.playing = hashPlayIndex;
+  } else if (state.tab === "player" && Number.isInteger(deepPlay) && state.playlist[deepPlay]) {
     state.playing = deepPlay;
   }
   // 還原上次看到哪，但不自動播放，回來時先看到資訊就好
@@ -777,8 +849,8 @@ async function init() {
   }
 
   // 深連結：#ch5-u1 直接展開該單元
-  if (location.hash) {
-    const target = $(CSS.escape(location.hash.slice(1)) ? location.hash : "");
+  if (hashValue && !hashPlay) {
+    const target = document.getElementById(hashValue);
     if (target?.classList.contains("Unit")) {
       target.classList.add("is-open");
       target.closest(".Chapter")?.classList.add("is-open");
@@ -787,6 +859,15 @@ async function init() {
       target.classList.add("is-open");
     }
   }
+
+  addEventListener("hashchange", () => {
+    const { videoId } = videoIdFromHash();
+    const i = state.playlist.findIndex((item) => item.vid === videoId);
+    if (videoId && i >= 0) {
+      setTab("player");
+      playAt(i);
+    }
+  });
 }
 
 init();

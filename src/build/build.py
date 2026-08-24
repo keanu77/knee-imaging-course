@@ -108,6 +108,25 @@ def collect_segments() -> tuple[dict, int]:
     return approved, held
 
 
+def collect_questions() -> tuple[dict, int]:
+    """unit id -> 已簽核的知識檢核題組；回傳（對照表、被擋下的未簽核題組數）。
+
+    與 collect_segments 同一治理：只有 review_status == approved 的題組進 course.json。
+    """
+    blob = load_json(DATA / "questions.json")
+    if not blob:
+        return {}, 0
+    approved, held = {}, 0
+    for uid, entry in (blob.get("units") or {}).items():
+        if not entry.get("questions"):
+            continue
+        if entry.get("review_status") == "approved":
+            approved[uid] = entry["questions"]
+        else:
+            held += 1
+    return approved, held
+
+
 def collect_drill_evidence() -> dict:
     """合併各 agent 產出的動作類別文獻。"""
     out = {}
@@ -248,6 +267,7 @@ def main() -> int:
 
     vmeta = load_json(DATA / "video-meta.json") or {}
     segments_by_url, segments_held = collect_segments()
+    questions_by_unit, questions_held = collect_questions()
     segment_urls: set[str] = set()
     drill_ev = collect_drill_evidence()
     alt_lessons = collect_alt_lessons()
@@ -303,6 +323,8 @@ def main() -> int:
             u.setdefault("id", f"{code.lower()}-u{units.index(u) + 1}")
             ref_ids = u.get("reference_ids") or []
             u["references"] = [reference_catalog[r] for r in ref_ids if r in reference_catalog]
+            if u["id"] in questions_by_unit:
+                u["questions"] = questions_by_unit[u["id"]]
             ev_key = EVIDENCE_ALIAS.get(u["id"], u["id"])
             if ev_key in evidence:
                 u["evidence"] = evidence[ev_key]
@@ -455,6 +477,9 @@ def main() -> int:
             "segment_videos": len(segment_urls),
             "segment_count": sum(len(segments_by_url[u]) for u in segment_urls),
             "segment_videos_held": segments_held,
+            "question_units": len(questions_by_unit),
+            "question_count": sum(len(v) for v in questions_by_unit.values()),
+            "question_units_held": questions_held,
         },
         "chapters": chapters,
     }
@@ -462,6 +487,9 @@ def main() -> int:
     sync_web()
     OUT.write_text(json.dumps(course, ensure_ascii=False, indent=1))
     version_web_assets()
+
+    import checklist as _checklist
+    _checklist.generate(DIST)
 
     try:
         out_label = OUT.relative_to(ROOT)
@@ -490,6 +518,12 @@ def main() -> int:
         f" · 肌群索引 {len(muscle_index)} 項"
         f" · 動作類別 {len(cat_counts)} 類（文獻 {len(drill_ev)} 類）"
     )
+    if questions_by_unit or questions_held:
+        print(
+            f"   知識檢核 {len(questions_by_unit)} 個單元題組 · "
+            f"{sum(len(v) for v in questions_by_unit.values())} 題已簽核並輸出"
+            + (f" · {questions_held} 組未簽核未輸出" if questions_held else "")
+        )
     if segment_urls or segments_held:
         print(
             f"   逐段筆記 {len(segment_urls)} 支影片 · "
