@@ -4,27 +4,27 @@
    ========================================================================== */
 
 :root {
-  --clinical-ink: #061a29;
-  --clinical-navy: #08283d;
-  --clinical-navy-2: #0c3850;
-  --clinical-heading: #08283d;
-  --clinical-teal: #08a6a6;
-  --clinical-teal-bright: #35e0d0;
-  --clinical-blue: #397f9e;
-  --clinical-teal-muted: #e3f8f5;
-  --clinical-cyan-muted: #eaf5fa;
-  --clinical-amber-muted: #fff5d9;
-  --clinical-red: #d94a55;
-  --clinical-red-muted: #fff0f1;
-  --clinical-panel: #ffffff;
-  --clinical-canvas: #eef4f6;
-  --clinical-grid: rgb(53 224 208 / 8%);
-  --clinical-glow: 0 0 0 1px rgb(53 224 208 / 8%), 0 18px 50px rgb(3 30 45 / 15%);
-  --clinical-card-shadow: 0 10px 28px rgb(8 40 61 / 8%);
+  --clinical-ink: #0c0e12;
+  --clinical-navy: #141920;
+  --clinical-navy-2: #1e252e;
+  --clinical-heading: #1a2330;
+  --clinical-teal: #1b6b73;
+  --clinical-teal-bright: #6fbfc6;
+  --clinical-blue: #56808f;
+  --clinical-teal-muted: #e6eeec;
+  --clinical-cyan-muted: #edf1ef;
+  --clinical-amber-muted: #f5edd2;
+  --clinical-red: #b42318;
+  --clinical-red-muted: #f7e9e4;
+  --clinical-panel: #faf8f2;
+  --clinical-canvas: #f2efe6;
+  --clinical-grid: transparent;
+  --clinical-glow: 0 0 0 1px rgb(26 35 48 / 6%), 0 12px 30px rgb(26 35 48 / 8%);
+  --clinical-card-shadow: 0 6px 18px rgb(26 35 48 / 6%);
 
-  --fgColor-accent: #087f86;
-  --bgColor-accent-muted: #e2f5f3;
-  --borderColor-accent-emphasis: #07969a;
+  --fgColor-accent: #1b6b73;
+  --bgColor-accent-muted: #e2ecea;
+  --borderColor-accent-emphasis: #1b6b73;
   --header-height: 68px;
   --sidebar-width: 300px;
   --borderRadius-medium: 10px;
@@ -32,62 +32,58 @@
 }
 
 :root[data-theme="dark"] {
-  --clinical-ink: #020b12;
-  --clinical-navy: #071d2c;
-  --clinical-navy-2: #0b3448;
-  --clinical-heading: #d8edf4;
-  --clinical-teal: #35d3c9;
-  --clinical-teal-bright: #6ff3e3;
-  --clinical-blue: #76c3dd;
-  --clinical-teal-muted: #0b3839;
-  --clinical-cyan-muted: #102b38;
-  --clinical-amber-muted: #3a2d0f;
-  --clinical-red: #ff7b83;
-  --clinical-red-muted: #3b1e22;
-  --clinical-panel: #0f1c25;
-  --clinical-canvas: #09141c;
-  --clinical-grid: rgb(111 243 227 / 7%);
-  --clinical-glow: 0 0 0 1px rgb(111 243 227 / 9%), 0 18px 50px rgb(0 0 0 / 30%);
+  --clinical-ink: #0c0e12;
+  --clinical-navy: #12181e;
+  --clinical-navy-2: #1b232b;
+  --clinical-heading: #e7ecef;
+  --clinical-teal: #4fa8b0;
+  --clinical-teal-bright: #74c7cd;
+  --clinical-blue: #7fa8b5;
+  --clinical-teal-muted: #12333a;
+  --clinical-cyan-muted: #14262b;
+  --clinical-amber-muted: #33290e;
+  --clinical-red: #e5534b;
+  --clinical-red-muted: #33201d;
+  --clinical-panel: #12181e;
+  --clinical-canvas: #0e1319;
+  --clinical-grid: transparent;
+  --clinical-glow: 0 0 0 1px rgb(0 0 0 / 25%), 0 12px 30px rgb(0 0 0 / 30%);
   --clinical-card-shadow: 0 10px 30px rgb(0 0 0 / 22%);
 
-  --fgColor-accent: #55ddd4;
-  --bgColor-accent-muted: #0b3839;
-  --borderColor-accent-emphasis: #35d3c9;
+  --fgColor-accent: #4fa8b0;
+  --bgColor-accent-muted: #12333a;
+  --borderColor-accent-emphasis: #4fa8b0;
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --clinical-ink: #020b12;
-    --clinical-navy: #071d2c;
-    --clinical-navy-2: #0b3448;
-    --clinical-heading: #d8edf4;
-    --clinical-teal: #35d3c9;
-    --clinical-teal-bright: #6ff3e3;
-    --clinical-blue: #76c3dd;
-    --clinical-teal-muted: #0b3839;
-    --clinical-cyan-muted: #102b38;
-    --clinical-amber-muted: #3a2d0f;
-    --clinical-red: #ff7b83;
-    --clinical-red-muted: #3b1e22;
-    --clinical-panel: #0f1c25;
-    --clinical-canvas: #09141c;
-    --clinical-grid: rgb(111 243 227 / 7%);
-    --clinical-glow: 0 0 0 1px rgb(111 243 227 / 9%), 0 18px 50px rgb(0 0 0 / 30%);
+    --clinical-ink: #0c0e12;
+    --clinical-navy: #12181e;
+    --clinical-navy-2: #1b232b;
+    --clinical-heading: #e7ecef;
+    --clinical-teal: #4fa8b0;
+    --clinical-teal-bright: #74c7cd;
+    --clinical-blue: #7fa8b5;
+    --clinical-teal-muted: #12333a;
+    --clinical-cyan-muted: #14262b;
+    --clinical-amber-muted: #33290e;
+    --clinical-red: #e5534b;
+    --clinical-red-muted: #33201d;
+    --clinical-panel: #12181e;
+    --clinical-canvas: #0e1319;
+    --clinical-grid: transparent;
+    --clinical-glow: 0 0 0 1px rgb(0 0 0 / 25%), 0 12px 30px rgb(0 0 0 / 30%);
     --clinical-card-shadow: 0 10px 30px rgb(0 0 0 / 22%);
 
-    --fgColor-accent: #55ddd4;
-    --bgColor-accent-muted: #0b3839;
-    --borderColor-accent-emphasis: #35d3c9;
+    --fgColor-accent: #4fa8b0;
+    --bgColor-accent-muted: #12333a;
+    --borderColor-accent-emphasis: #4fa8b0;
   }
 }
 
 body {
   overflow-x: hidden;
   background-color: var(--clinical-canvas);
-  background-image:
-    linear-gradient(var(--clinical-grid) 1px, transparent 1px),
-    linear-gradient(90deg, var(--clinical-grid) 1px, transparent 1px);
-  background-size: 32px 32px;
 }
 
 .container,
@@ -264,7 +260,6 @@ body {
   z-index: -1;
   background: linear-gradient(105deg, transparent 46%, rgb(53 224 208 / 7%) 46.2%, transparent 46.6%);
   transform: translateX(-56%);
-  animation: heroScan 8s linear infinite;
 }
 
 .Hero__grid {
@@ -483,7 +478,6 @@ body {
   inset: 0;
   background: linear-gradient(to bottom, transparent 36%, rgb(77 255 233 / 22%) 50%, transparent 63%);
   transform: translateY(-75%);
-  animation: scanSweep 3.8s ease-in-out infinite;
 }
 
 .HeroScan__focus,
@@ -565,7 +559,6 @@ body {
   width: 200%;
   height: 100%;
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='24' viewBox='0 0 240 24'%3E%3Cpath d='M0 13h28l5-3 5 6 7-13 8 18 6-8h24l5-3 4 6 7-10 8 14 6-7h28l5-3 5 6 7-13 8 18 6-8h26l5-3 4 6 7-10 8 14 6-7h20' fill='none' stroke='%2335e0d0' stroke-opacity='.65'/%3E%3C/svg%3E") repeat-x center / 240px 24px;
-  animation: waveMove 7s linear infinite;
 }
 
 /* --- Course workstation shell ------------------------------------------ */
