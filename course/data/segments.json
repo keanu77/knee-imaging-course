@@ -2963,6 +2963,158 @@
           ]
         }
       ]
+    },
+    {
+      "video_url": "https://www.youtube.com/watch?v=RiHjA9Z-7Kw",
+      "review_status": "draft",
+      "transcript_verified_at": "2026-08-25",
+      "transcript_source": "yt-dlp 自動字幕（en, VTT）2026-08-25 實抓；初稿由協作 agent 依逐字稿產生，主編抽驗段界與臨床內容對照原文",
+      "note": "自動字幕訛誤已於筆記改採標準命名：vulgar stress／vial distress／various stress→valgus stress（03:34–04:03 一帶，多處）。核心教學點已逐字核對：撕裂三類型（interstitial／partial／full-thickness）、high/low grade 以 50% 纖維為界、臨床 grade 1–3 = 外翻應力內側間隙張開 <5／5–10／>10 mm、MRI 為臥位無應力不可直接套用臨床分級（04:03–04:12）。全片為診斷判讀與病例，無介入內容。",
+      "segments": [
+        {
+          "start": "00:01",
+          "end": "01:01",
+          "title": "開場：MCL 複合體 MRI 判讀與切面選擇",
+          "summary": "NYU 的 Ian Fritz 回顧 medial collateral ligament complex 的 MRI 判讀，並指出標準軸位與冠狀切面最有用。",
+          "detail": [
+            "本集主題為 medial collateral ligament complex 的 MRI 判讀；利益衝突揭露與本講無直接相關。",
+            "因屬簡短回顧，建議另讀急性膝傷系統性 MRI 評估與報告文獻，內含更完整的內側副韌帶複合體解剖與損傷型態。",
+            "多數 MRI protocol 包含 coronal、sagittal 與 axial 脈衝序列。",
+            "判讀 medial collateral ligament 時，標準 axial 與標準 coronal 最有用。"
+          ]
+        },
+        {
+          "start": "01:02",
+          "end": "02:53",
+          "title": "MRI 撕裂三類型：間質、部分厚度、全層",
+          "summary": "韌帶撕裂在 MRI 上分為 interstitial、partial thickness 與 full thickness，MCL 多數屬前兩類，全層撕裂少見。",
+          "detail": [
+            "Interstitial tear：韌帶實質內 T2 訊號增高或水腫，屬低階損傷；MRI 通常看不到明確纖維斷裂，多為縱向纖維之間的連結受損，縱向纖維本身未直接中斷。",
+            "Partial thickness tear：同時可見斷裂與完整纖維；須仍有完整纖維才算部分厚度。",
+            "Low-grade 與 high-grade 定義並不嚴謹，多數把低分級視為少於 50% 纖維斷裂、高分級為超過 50%。",
+            "Full thickness tear：所有纖維皆斷，無法沿股骨到脛骨附著追蹤到完整纖維；在 MCL 屬少見，多數撕裂落在 interstitial injury 與 partial thickness tear。"
+          ]
+        },
+        {
+          "start": "02:54",
+          "end": "04:33",
+          "title": "臨床 sprain 分級與 MRI 應作結構性描述",
+          "summary": "Grade 1–3 是依 valgus stress 下內側關節間隙張開的臨床功能分級，臥位 MRI 無法評估功能，報告應描述纖維結構而非套用臨床 grade。",
+          "detail": [
+            "Sprain classification 與 grade 1／2／3 屬臨床分類，依 MCL 功能測試，通常為 valgus stress。",
+            "臨床例子：valgus stress 下內側關節間隙張開 <5 mm 為 grade 1、5 至 <10 mm 為 grade 2、>10 mm 為 grade 3。",
+            "MRI 是臥位、非負重、未施加 valgus stress，通常無法評論韌帶功能能力。",
+            "MRI 宜保持描述性：報告纖維完整性、撕裂種類與斷裂纖維多寡，避免使用與功能測試重疊的 grading 用語。"
+          ]
+        },
+        {
+          "start": "04:34",
+          "end": "06:08",
+          "title": "解剖：淺層 MCL、POL 與深層 coronary ligaments",
+          "summary": "依 LaPrade 圖示，MCL 複合體含跨越股骨至脛骨的淺層、後方的 posterior oblique ligament，以及連結半月板的深層 coronary ligaments。",
+          "detail": [
+            "淺層與深層兩部分：superficial MCL 由股骨跨越至脛骨，MRI 上通常清楚可見。",
+            "Posterior oblique ligament（POL）連接淺層 MCL 的後緣。",
+            "Coronary attachments 有時稱為 deep medial collateral ligaments，連結半月板至股骨與脛骨，可分別稱為 coronary meniscotibial 與 meniscofemoral ligaments。",
+            "冠狀圖示中 coronary ligaments 位於淺層深面，連結半月板至淺層，並部分連到 medial femoral condyle 與脛骨。"
+          ]
+        },
+        {
+          "start": "06:09",
+          "end": "07:06",
+          "title": "POL 軸位關係與附著點（撕裂好發處）",
+          "summary": "軸位可見 POL 繞過後內側股骨髁；撕裂常發生在附著點，深層 coronary ligaments 的附著較淺層更靠近關節。",
+          "detail": [
+            "軸位可見 superficial MCL，以及 POL 在髁與半月板層面繞過 posteromedial femoral condyle。",
+            "了解各韌帶附著點很重要，因為撕裂通常發生於此。",
+            "Superficial MCL 附著於股骨與遠端脛骨，另有一處較近端的附著。",
+            "Deep coronary ligaments 的股骨附著低於淺層的股骨附著，脛骨附著則較淺層脛骨附著更近端。"
+          ]
+        },
+        {
+          "start": "07:07",
+          "end": "08:32",
+          "title": "正常 MCL 複合體的 MRI 表現",
+          "summary": "正常淺層 MCL 在軸位呈連續卵圓結構，冠狀可追蹤股骨至脛骨附著及 coronary ligaments，並見 POL 繞過內側股骨髁連接淺層後緣。",
+          "detail": [
+            "軸位脂肪抑制、液體敏感序列：近端股骨處 superficial MCL 呈卵圓結構，沿內側關節線向下至脛骨，纖維連續、無斷裂。",
+            "冠狀 proton density 與液體敏感脂肪抑制影像：可見淺層股骨附著向下追蹤至脛骨附著。",
+            "Coronary ligaments：半月板上緣連至淺層與 femoral condyle；脛骨側 coronary ligament 連至淺層與脛骨。",
+            "可見 POL 繞過 medial femoral condyle，連接完整淺層 MCL 的後緣。"
+          ]
+        },
+        {
+          "start": "08:33",
+          "end": "09:30",
+          "title": "案例：股骨附著處淺層 MCL 間質撕裂",
+          "summary": "股骨水腫提示外傷，近端淺層 MCL 有實質內訊號與間質水腫，但無明確纖維斷裂，符合 interstitial tear。",
+          "detail": [
+            "三個序列對看；已可由股骨水腫判斷有外傷。",
+            "近端 superficial MCL 可見 intrasubstance signal，冠狀切面在淺層表面與股骨附著內部有小範圍 interstitial edema。",
+            "無法清楚分辨 frank fiber disruption，但內部結構已受損，構成 interstitial tear。"
+          ]
+        },
+        {
+          "start": "09:31",
+          "end": "10:55",
+          "title": "案例：淺層 MCL 前側部分厚度撕裂",
+          "summary": "股骨髁水腫的急性傷，淺層 MCL 後側完整、前側纖維斷裂，且此型常向前延伸至 medial patellofemoral retinaculum。",
+          "detail": [
+            "股骨髁水腫可假設近期損傷；軸位辨識淺層 MCL 後可向後連續追蹤，但前方纖維中斷，淺層本應更向前延伸卻沒有。",
+            "典型型態：superficial portion 常從前側撕裂，且撕裂常延伸至 medial patellofemoral retinaculum。",
+            "冠狀後側切面：股骨附著、纖維連續性與脛骨附著均完整。",
+            "更向前捲動則見纖維中斷，前側股骨附著部分撕裂，構成 partial thickness tear。"
+          ]
+        },
+        {
+          "start": "10:56",
+          "end": "12:26",
+          "title": "案例：高分級部分厚度撕裂（淺層與深層）",
+          "summary": "脛骨水腫的急性傷，近端 MCL（最常見撕裂位置）前後多數纖維中斷並累及 meniscofemoral coronary ligament，仍有部分連續纖維，屬 high-grade partial thickness tear。",
+          "detail": [
+            "此次水腫在脛骨；近端 MCL 周圍水腫較多，講者稱此為最常見撕裂型態。",
+            "軸位前側與後側纖維皆有斷裂，仍有部分連續纖維，但斷裂多於前一案例；依前後方向估計至少約 50% 纖維受累。",
+            "冠狀可見部分附著完整，但前側股骨附著為全層撕裂，更後方亦有全層斜向撕裂，涉及股骨附著與中段。",
+            "撕裂延伸至 coronary meniscofemoral ligament；因仍有連續纖維，判定為累及淺層與深層的 high-grade partial thickness MCL tear。"
+          ]
+        },
+        {
+          "start": "12:27",
+          "end": "13:12",
+          "title": "案例：股骨側 coronary ligament 斷裂",
+          "summary": "創傷程度可能較低：淺層 MCL 完整、常伴隨半月板撕裂；脛骨側 coronary ligament 完整，但 meniscofemoral coronary ligament 中斷。",
+          "detail": [
+            "此例創傷程度可能低於前面案例；superficial MCL 連續完整。",
+            "Meniscus tear 常與 coronary ligament tears 伴隨。",
+            "Tibial coronary ligament 完整，但 femoral meniscofemoral coronary ligament 中斷。",
+            "可見部分殘留，但與淺層韌帶或 femoral condyle 無連接。"
+          ]
+        },
+        {
+          "start": "13:13",
+          "end": "14:26",
+          "title": "案例：淺層 MCL 完整但 POL 接合處撕裂",
+          "summary": "股骨髁水腫下淺層 MCL 完整，meniscofemoral coronary ligament 部分撕裂，軸位顯示淺層後緣與 POL 的接合及 POL 本身部分撕裂。",
+          "detail": [
+            "冠狀見 femoral condyle 水腫；superficial MCL 完整；meniscofemoral coronary ligament 部分撕裂，有水腫與邊界不清。",
+            "軸位在淺層 MCL 後緣與 posterior oblique ligament 的連接處另有部分撕裂。",
+            "向下捲動可見 POL 部分撕裂：沿 notch 內後內側仍連續，但某一段幾乎完全中斷。",
+            "本例為 superficial MCL 完整，但接合處與部分 POL 撕裂。"
+          ]
+        },
+        {
+          "start": "14:27",
+          "end": "15:58",
+          "title": "案例：股骨附著處全層撕裂與結語",
+          "summary": "少見的全層 MCL 撕裂以股骨附著處液體裂隙、纖維回縮與鬆弛為徵，並可同時累及深層 meniscofemoral coronary ligament。",
+          "detail": [
+            "MCL 周圍水腫明顯；自脛骨附著可追蹤淺層，近股骨處腫大、邊界不清，股骨髁與輕度回縮的韌帶之間有 fluid cleft，為全層剝離。",
+            "軸位同樣見液體裂隙貫穿股骨附著、無完整纖維；纖維回縮與淺層 redundancy 亦支持全層撕裂。",
+            "全層撕裂少見，典型發生於股骨附著，也可較遠端；本例同時有深層 coronary meniscofemoral ligament 全層撕裂。",
+            "講者以此結束 MCL 複合體回顧並致謝。"
+          ]
+        }
+      ]
     }
   ]
 }
