@@ -2084,6 +2084,441 @@
           ]
         }
       ]
+    },
+    {
+      "video_url": "https://www.youtube.com/watch?v=Wdi9WVbjI5Q",
+      "review_status": "draft",
+      "transcript_verified_at": "2026-08-25",
+      "transcript_source": "yt-dlp 自動字幕（en, VTT）2026-08-25 實抓，逐段對照時間戳核對",
+      "note": "自動字幕訛誤已於筆記改採標準命名：mle／medle→medial；miniscus→meniscus；bone meadema／Bona／bone merema→bone marrow edema；fees→physis（生長板）；medat ligament→medial collateral ligament；Pine tendons→pes anserinus tendons（依內側脈絡推定）；tacular infractions→trabecular infractions；ctil／Cottage／cotage→cartilage；public tendon→popliteus tendon；col ligament→collateral ligament；proximal T joint→proximal tibiofibular joint；cortical tesmo→cortical desmoid（distal femoral cortical irregularity 的同義病名）；Patel of emerald→patellofemoral；joint diffusion→joint effusion；tend nois→tendinosis；H of fet pet→Hoffa fat pad；cial lining→synovial lining；squl→sequelae；zoval Pica／M zoval PCL fold→PCL 旁滑膜皺襞（自動字幕嚴重失真，**名稱待確認**，教學重點「突入關節但非病態」不受影響）。",
+      "segments": [
+        {
+          "start": "00:00",
+          "end": "00:31",
+          "title": "病例背景與讀片策略",
+          "summary": "慢性／復發性膝痛、無特定創傷史的病例；講者聲明固定策略：永遠從內側間室開始。",
+          "detail": [
+            "臨床資訊有限（僅慢性膝痛）時，固定的間室順序就是防漏的機制。",
+            "講者將分享自己在報告決策上的內心討論，示範「報告以外的思考」。"
+          ]
+        },
+        {
+          "start": "00:32",
+          "end": "01:49",
+          "title": "內側間室：局灶骨髓水腫的推理",
+          "summary": "半月板以冠狀＋矢狀雙平面確認正常（root 清晰）；脛骨內側緣見局灶骨髓水腫、僅限骨骺且生長板正常；MCL、軟組織、鵝足肌腱正常、無 Baker 囊腫。T1 疑有 trabecular infraction——鑑別為過度使用的應力反應或病人未察覺的創傷。",
+          "detail": [
+            "半月板「兩平面確認」在真實讀片中的實作示範。",
+            "局灶 BME 的定位（骨骺內、physis 正常）縮小了鑑別範圍。",
+            "細微的皮下水腫因太小而不寫進報告——報告的取捨本身是教學重點。"
+          ]
+        },
+        {
+          "start": "01:50",
+          "end": "02:59",
+          "title": "外側間室：call 或不 call 的邊界",
+          "summary": "外側半月板、軟骨、膕肌腱、外側副韌帶、近端脛腓關節、髂脛束皆正常；一處細微水腫在再三考慮後以「potentially mild edema」寫入，但強調非局灶病灶；活動量大的人可接受為正常變異。",
+          "detail": [
+            "「第一眼沒 call、第二眼補上但降級措辭」示範不確定所見的報告語言。",
+            "對側無對應訊號是判斷正常變異的參考。",
+            "缺乏臨床資訊（是否運動員）會限制判讀的信心，講者照實說明。"
+          ]
+        },
+        {
+          "start": "03:00",
+          "end": "03:24",
+          "title": "內側 do-not-touch lesion：cortical desmoid",
+          "summary": "股骨遠端後內側皮質不規則（cortical desmoid）為典型 do-not-touch 病灶，無臨床意義但偶可疼痛；報告提及的理由是對應可能的疼痛定位。",
+          "detail": [
+            "認得 do-not-touch 病灶避免不必要的進一步檢查。",
+            "「可能疼痛但不需擔心」的報告措辭示範。"
+          ]
+        },
+        {
+          "start": "03:25",
+          "end": "04:13",
+          "title": "中央間室：ACL 訊號偏高的解讀",
+          "summary": "ACL 訊號較年輕病人預期為高，推測過去亞急性／慢性扭傷但無其他後遺變化；PCL 正常；PCL 旁滑膜皺襞突入關節屬非病態；輕微滑膜增厚／早期纖維化不主動報告，除非伴隨軟骨缺損。",
+          "detail": [
+            "訊號異常要放回年齡與病史脈絡，不直接等於現行病灶。",
+            "滑膜皺襞突入關節常見且多非病態。",
+            "「不報告的判斷」與「報告的判斷」同等重要。"
+          ]
+        },
+        {
+          "start": "04:14",
+          "end": "05:25",
+          "title": "髕股關節與收尾",
+          "summary": "無軟骨缺損、無關節積液、支持帶與伸肌腱正常；一處模糊訊號判讀為部分容積平均效應而不予 call；年輕病人不輕易下 tendinosis 診斷；Hoffa 脂肪墊正常；髕下皺襞常見且多無症狀、附著處無撕裂。",
+          "detail": [
+            "模糊訊號的第一鑑別是技術性（averaging），不是病理。",
+            "診斷標籤（tendinosis）對年輕病人有長期意涵，下標籤前的門檻應更高。",
+            "全片示範：系統性順序＋報告取捨＋臨床脈絡三者缺一不可。"
+          ]
+        }
+      ]
+    },
+    {
+      "video_url": "https://www.youtube.com/watch?v=Juo8rEYhlP0",
+      "review_status": "draft",
+      "transcript_verified_at": "2026-08-25",
+      "transcript_source": "yt-dlp 自動字幕（en, VTT）2026-08-25 實抓，逐段對照時間戳核對",
+      "note": "自動字幕大致乾淨：Dr. Jeff Ping→Dr. Jeff Peng。重要範圍註記：影片量化數據為脊椎椎間盤（37%→96%、膨出 30%→84%）與 rotator cuff 例，非膝部特定；膝部無症狀盛行率證據由單元文字與 Englund 2008 補。04:56 起為下一支營養影片導流，不做段落。",
+      "segments": [
+        {
+          "start": "00:00",
+          "end": "00:49",
+          "title": "影片定位：MRI 可能不是全貌",
+          "summary": "MRI 結果可能不是疼痛的真正原因；只依 MRI 決定治療可能走錯方向。講者為舊金山灣區運動醫學醫師。",
+          "detail": [
+            "核心命題：影像所見與疼痛經驗不總是一致。",
+            "錯誤歸因會導向錯誤治療——這是臨床決策問題，不只是影像問題。"
+          ]
+        },
+        {
+          "start": "00:50",
+          "end": "01:38",
+          "title": "Asymptomatic pathology 概念",
+          "summary": "MRI 能清楚顯示結構問題（撕裂、關節炎），但那些所見不必然造成疼痛；顯著的結構變化可以完全無症狀。",
+          "detail": [
+            "「有異常」與「是病因」是兩件事。",
+            "半月板撕裂、軟骨磨損都可能是無症狀所見。"
+          ]
+        },
+        {
+          "start": "01:39",
+          "end": "02:37",
+          "title": "年齡相關盛行率：無症狀者的影像異常",
+          "summary": "以脊椎為例：無症狀者椎間盤退化盛行率從 20 歲 37% 升至 80 歲 96%、椎間盤膨出從 30% 升至 84%——多數年齡相關結構變化屬 age-appropriate wear and tear。",
+          "detail": [
+            "盛行率隨年齡近乎線性上升，說明「影像老化」是常態不是病。",
+            "此邏輯同樣適用於膝部（課程以 Englund 2008 的半月板數據對應）。"
+          ]
+        },
+        {
+          "start": "02:38",
+          "end": "03:24",
+          "title": "疼痛是多因子經驗",
+          "summary": "疼痛不只是組織損傷的反應：情緒、心理與社會因素顯著影響疼痛經驗；創傷史或慢性疼痛者可對特定動作敏感化，而這些 MRI 都照不出來。",
+          "detail": [
+            "神經系統、壓力與心理健康都會改變疼痛詮釋。",
+            "MRI 的盲區不只在解析度，而在疼痛本質的多因子性。"
+          ]
+        },
+        {
+          "start": "03:25",
+          "end": "04:07",
+          "title": "MRI 不反映功能",
+          "summary": "MRI 顯示結構卻無法測量活動能力、肌力與功能限制；同樣的 rotator cuff 小撕裂在不同人身上可以無痛或劇痛。",
+          "detail": [
+            "功能評估（動作、肌力）是影像之外的必要拼圖。",
+            "不讓 MRI 單獨決定治療方向。"
+          ]
+        },
+        {
+          "start": "04:08",
+          "end": "04:55",
+          "title": "臨床整合：判斷 symptomatic 或 incidental",
+          "summary": "全人評估（肌肉失衡、姿勢、動作模式、疼痛因應）搭配專家臨床評估，才能判斷 MRI 所見是症狀來源還是偶然所見。",
+          "detail": [
+            "「expert clinical assessment」是把影像放回脈絡的關鍵步驟。",
+            "與本課立場一致：報告所見、對照臨床、決定意義。"
+          ]
+        }
+      ]
+    },
+    {
+      "video_url": "https://www.youtube.com/watch?v=70qKrMMsC5M",
+      "review_status": "draft",
+      "transcript_verified_at": "2026-08-25",
+      "transcript_source": "yt-dlp 自動字幕（en, VTT）2026-08-25 實抓；初稿由協作 agent 依逐字稿產生，主編抽驗段界與臨床內容對照原文",
+      "note": "自動字幕訛誤已於筆記改採標準命名：crucet→cruciate；condile→condyle；feur→femur；premal／prehemeral fat pad→prefemoral fat pad；hoffers→Hoffa；infraatella→infrapatellar；supra patatella→suprapatellar；gastro nemis popus→gastrocnemius／popliteus；antilateral→anterolateral。01:02–02:17 為付費課程宣傳，未做段落。",
+      "segments": [
+        {
+          "start": "00:00",
+          "end": "01:01",
+          "title": "膝部 MRI 判讀導論",
+          "summary": "本片將以結構化流程介紹膝部 MRI 的常規序列、正常解剖與各結構的判讀重點。",
+          "detail": [
+            "初學者常將正常表現誤判為異常，或遺漏常見病變。",
+            "menisci、韌帶與 posterolateral corner 的解剖具有細微差異。",
+            "課程將先介紹常規序列，再逐步檢視正常解剖及各結構的觀察要點。"
+          ]
+        },
+        {
+          "start": "02:20",
+          "end": "06:45",
+          "title": "常規 MRI 序列與訊號判讀",
+          "summary": "比較 PD、T2、STIR 與 T1 序列的正常訊號、用途及 magic angle artifact。",
+          "detail": [
+            "常規檢查包含 axial、sagittal 與 coronal 平面，講者使用脂肪抑制 PD、脂肪抑制 T2 及非脂肪抑制 PD 序列。",
+            "PD 序列中液體呈高訊號；脂肪抑制後，骨髓與皮下脂肪訊號被壓低，使水腫及關節液更明顯。",
+            "magic angle artifact 可使約以 54.7 度排列的膠原結構在 PD 或 T1 等短 TE 序列呈假性高訊號，可用 T2 序列協助確認。",
+            "STIR 對金屬偽影較不敏感但空間解析度較低；T1 則呈現明亮脂肪骨髓與低訊號關節液。"
+          ]
+        },
+        {
+          "start": "06:53",
+          "end": "09:36",
+          "title": "系統化流程與 meniscus 基礎",
+          "summary": "建立由內而外的膝部 MRI 檢查順序，並辨識 meniscus 的正常形態、訊號及撕裂判準。",
+          "detail": [
+            "判讀順序依次為 menisci、韌帶、extensor mechanism、骨與軟骨、關節液與 synovium，以及其餘軟組織。",
+            "medial meniscus 較大且呈開放 C 形，posterior horn 大於 anterior horn；lateral meniscus 較接近不完整環形，前後角大小相近。",
+            "正常 meniscus 由緊密排列的縱向與放射狀膠原纖維構成，因此所有序列均呈低訊號。",
+            "周邊未接觸關節面的細線狀中等訊號可來自小血管；撕裂則通常呈延伸至 articular surface 的液體高訊號，且須見於至少兩個影像或序列。"
+          ]
+        },
+        {
+          "start": "09:40",
+          "end": "13:23",
+          "title": "Meniscal tear 類型與完整追蹤",
+          "summary": "依方向分類 meniscal tear，並示範如何從前根至後根於三個平面完整檢查。",
+          "detail": [
+            "撕裂可分為 longitudinal、vertical、horizontal 與 radial tear；radial tear 可表現為內緣鈍化並向周邊延伸。",
+            "每個 meniscus 都應從 anterior root 追蹤至 posterior root，避免漏掉 root tear 或 bucket-handle tear。",
+            "axial 影像的周邊至少兩個連續切面應顯示完整 meniscal contour，否則須懷疑移位的 meniscal tissue。",
+            "anterior transverse meniscal ligament 與 meniscofemoral ligaments 形成的裂隙可能模擬撕裂，判讀時需辨識這些正常變異。"
+          ]
+        },
+        {
+          "start": "13:26",
+          "end": "18:00",
+          "title": "ACL 與 PCL 判讀",
+          "summary": "說明 cruciate ligaments 的正常束狀解剖、跨平面追蹤方法及撕裂表現。",
+          "detail": [
+            "ACL 包含 anteromedial 與 posterolateral bundles，正常可因纖維間脂肪呈條紋狀中等訊號，不應誤認為撕裂。",
+            "ACL tear 可見纖維間液體高訊號、增厚、張力喪失或完全不連續，並應在 sagittal、coronal 與 axial 平面追蹤。",
+            "PCL 由緊密膠原纖維構成，正常應均勻低訊號，但近端彎曲處可能出現 magic angle artifact。",
+            "PCL 內出現液體訊號或增厚，即使輪廓仍連續也可判為撕裂；其前後方可見正常的 ligaments of Humphrey and Wrisberg。"
+          ]
+        },
+        {
+          "start": "18:03",
+          "end": "21:36",
+          "title": "MCL 與 posteromedial corner",
+          "summary": "辨識 MCL 各層、損傷分級，以及 posteromedial corner 的主要肌腱與 Baker cyst 定位。",
+          "detail": [
+            "deep MCL 包含 meniscofemoral 與 meniscotibial components，superficial MCL 則由 medial femoral condyle 延伸至 proximal tibial diaphysis。",
+            "MCL 低度損傷為周圍水腫，中度損傷為韌帶增厚或訊號異常但仍連續，高度撕裂則有纖維中斷與張力喪失。",
+            "semimembranosus tendon 具有寬廣扇形附著及交錯脂肪，屬正常外觀；其與 medial gastrocnemius 之間的液體囊即為 Baker cyst。",
+            "pes anserine tendons 依序包含 sartorius、gracilis 與 semitendinosus，講者以「Say Grace Before Tea」協助記憶。"
+          ]
+        },
+        {
+          "start": "21:39",
+          "end": "24:27",
+          "title": "Posterolateral corner：LCL 與 biceps femoris",
+          "summary": "利用三個影像平面追蹤 fibular collateral ligament 與 distal biceps femoris tendon 的正常解剖及損傷表現。",
+          "detail": [
+            "posterolateral corner 的主要結構包括 distal biceps femoris tendon、fibular collateral ligament（LCL）與 popliteus tendon。",
+            "LCL 由 lateral femoral condyle 延伸至 fibular head，biceps femoris tendon 位於其後方並可呈分叉附著。",
+            "LCL 常附著於 biceps femoris tendon 兩個分支之間，形成正常的 V 形 conjoint tendon 外觀。",
+            "低度損傷可見周圍水腫，部分撕裂可見增厚或內部液體訊號，完全撕裂則呈結構中斷。"
+          ]
+        },
+        {
+          "start": "24:30",
+          "end": "28:16",
+          "title": "Popliteus tendon 與 iliotibial band",
+          "summary": "追蹤 popliteus tendon 與 iliotibial band，並避免將彎曲肌腱的 magic angle artifact 誤判為撕裂。",
+          "detail": [
+            "popliteus tendon 從 proximal tibia 的肌腹向外側彎曲，最後附著於 lateral femoral condyle。",
+            "因 popliteus tendon 在三個平面皆呈彎曲走向，常出現 magic angle artifact，不能只依高訊號診斷撕裂。",
+            "診斷 popliteus tendon tear 前，應尋找延伸至肌腹的水腫、肌腱不規則或波浪狀外觀。",
+            "iliotibial band 附著於 Gerdy's tubercle；其與 lateral femoral condyle 摩擦可引起水腫，常見於跑者。"
+          ]
+        },
+        {
+          "start": "28:19",
+          "end": "31:39",
+          "title": "Extensor mechanism 與髕骨穩定結構",
+          "summary": "檢視 quadriceps tendon、patellar tendon、MPFL 與 medial retinaculum 的正常形態及病變徵象。",
+          "detail": [
+            "extensor mechanism 由 quadriceps tendon 與 patellar tendon 組成，分別連接 patella 上極及 tibial tuberosity。",
+            "quadriceps tendon 的分層及交錯脂肪形成正常條紋外觀；撕裂可見液體高訊號、輪廓或走向喪失及張力改變。",
+            "patellar tendon 近附著處的高訊號可能是 magic angle artifact；若伴隨增厚、輪廓異常或周圍水腫才較支持病變。",
+            "MPFL 與 medial retinacular structures 在 lateral patellar dislocation 時常撕裂，應例行評估。"
+          ]
+        },
+        {
+          "start": "31:41",
+          "end": "36:01",
+          "title": "關節軟骨的全面評估",
+          "summary": "說明軟骨的正常訊號、各平面的檢查範圍，以及軟骨缺損的影像表現。",
+          "detail": [
+            "軟骨含水量高，在 T2 或 PD 影像呈中等訊號；PD 序列的組織對比通常較佳。",
+            "axial 影像適合由上至下檢查 patellar facets 與 femoral trochlear cartilage，sagittal 影像可兼顧 patellofemoral 與 tibiofemoral compartments。",
+            "軟骨病變可呈 fissure、缺損或內部液體高訊號，並可分為輕度、中度與全層缺損。",
+            "全層缺損可伴鄰近 subchondral bone 的 edema-like marrow signal alteration；較慢性的病變可能形成界線清楚的小囊腫。"
+          ]
+        },
+        {
+          "start": "36:04",
+          "end": "40:49",
+          "title": "骨、關節液與 synovium",
+          "summary": "依骨髓與皮質訊號檢查挫傷、骨折和骨病灶，並系統評估關節積液及 synovium。",
+          "detail": [
+            "正常脂肪骨髓在非脂肪抑制序列呈高訊號、脂肪抑制序列呈低訊號；cortex 在所有序列均為低訊號。",
+            "骨挫傷可造成正常骨髓訊號喪失及輪廓改變，骨折則還須尋找 cortex 中斷或線狀異常。",
+            "所有序列均呈低訊號且未伴其他異常的 lateral femoral condyle 病灶，在示例中被判為正常變異 bone island。",
+            "少量單純 suprapatellar effusion 可屬正常；應檢查各 joint recesses，尋找 synovial thickening、frond-like hypertrophy 或 intra-articular bodies。"
+          ]
+        },
+        {
+          "start": "40:53",
+          "end": "44:24",
+          "title": "Popliteal fossa、神經血管與肌肉",
+          "summary": "辨識膕窩內的囊腫、神經血管、淋巴結與肌肉，並了解其異常訊號。",
+          "detail": [
+            "Baker cyst 位於 semimembranosus tendon 與 medial gastrocnemius 之間；popliteus hiatus 及 gastrocnemius 附著處也可見其他小囊腫。",
+            "popliteal artery、popliteal vein 與呈蜂巢狀的 sciatic nerve 位於膕窩，向下可追蹤 tibial nerve 與 common fibular nerve。",
+            "神經病變可呈液體樣高訊號、增厚、周圍水腫或纖維完全中斷；common fibular nerve 因位置表淺而容易在外側膝傷中受損。",
+            "正常肌肉在脂肪抑制與非脂肪抑制影像皆呈低訊號；水腫、肌肉體積減少、脂肪增多或腫塊屬異常。"
+          ]
+        },
+        {
+          "start": "44:27",
+          "end": "46:18",
+          "title": "Fat pads 與皮下軟組織",
+          "summary": "完成三個膝部 fat pads 及皮下脂肪、滑囊與血管的末段檢查。",
+          "detail": [
+            "三個主要 fat pads 為 quadriceps fat pad、prefemoral fat pad 與 Hoffa's fat pad，後者也稱 infrapatellar fat pad。",
+            "fat pad 病變可表現為水腫、膨大或內部腫塊。",
+            "皮下脂肪在脂肪抑制影像應均勻低訊號；訊號改變可能是水腫，也可能源自不完整的脂肪抑制偽影。",
+            "皮下脂肪內還應檢查 lipoma、其他腫瘤、充滿液體的 bursae，以及可能形成症狀性靜脈曲張的擴張血管。"
+          ]
+        }
+      ]
+    },
+    {
+      "video_url": "https://www.youtube.com/watch?v=p3pI_TJ5PSo",
+      "review_status": "draft",
+      "transcript_verified_at": "2026-08-25",
+      "transcript_source": "yt-dlp 自動字幕（en, VTT）2026-08-25 實抓；初稿由協作 agent 依逐字稿產生，主編抽驗段界與臨床內容對照原文",
+      "note": "自動字幕訛誤已於筆記改採標準命名：parameiscal→parameniscal；miniscal／miniscus→meniscal／meniscus；subcondrial→subchondral；tibmoral→tibiofemoral。全片為診斷判讀，無介入內容。",
+      "segments": [
+        {
+          "start": "00:00",
+          "end": "02:37",
+          "title": "膝部 MRI 序列與骨髓水腫判讀",
+          "summary": "介紹以 PD 與 PD fat-saturated 影像辨識膝部解剖、液體及急性損傷模式的方法。",
+          "detail": [
+            "PD 影像可清楚區分骨、hyaline cartilage、液體、韌帶、肌腱與低訊號的 fibrocartilaginous meniscus。",
+            "PD fat-saturated 影像可凸顯水腫與液體，協助定位活動性病變。",
+            "外側股骨髁與外側脛骨平台後方的對吻性骨髓挫傷提示 pivot-shift injury。",
+            "辨識 pivot-shift injury 後，應特別檢查 meniscal tears 與 cruciate ligament tears。"
+          ]
+        },
+        {
+          "start": "02:38",
+          "end": "06:23",
+          "title": "Cruciate ligaments 解剖與 ACL 完全斷裂",
+          "summary": "說明 ACL、PCL 的正常多平面表現，並以 pivot-shift injury 病例示範 ACL 完全斷裂。",
+          "detail": [
+            "ACL 由脛骨前方走向股骨後上方，其纖維應大致平行 Blumensaat's line。",
+            "ACL 包含 anteromedial 與 posterolateral bundles，束間訊號可使 sagittal 影像略呈灰色，不應誤判為部分撕裂。",
+            "PCL 正常呈曲棍球桿狀，由脛骨後方弓形走向股骨前內側。",
+            "ACL 正常低訊號纖維消失、僅見不連續灰色組織，且各平面均無完整纖維時，代表 ACL 完全斷裂。"
+          ]
+        },
+        {
+          "start": "06:24",
+          "end": "08:11",
+          "title": "ACL mucoid degeneration 與 PCL 撕裂",
+          "summary": "比較 ACL mucoid degeneration 與韌帶撕裂，並以 hyperextension injury 示範 PCL 完全撕裂。",
+          "detail": [
+            "ACL mucoid degeneration 時韌帶仍完整存在，但內部充滿高訊號物質，且常伴隨 ganglion cyst。",
+            "外側股骨髁與外側脛骨平台前方的對撞性水腫提示 hyperextension injury，而低訊號線可代表 subchondral fracture。",
+            "後膝關節囊大量水腫與液體可伴隨 hyperextension injury。",
+            "PCL 未呈完整曲棍球桿狀且纖維完全中斷時，代表 PCL 撕裂。"
+          ]
+        },
+        {
+          "start": "08:12",
+          "end": "12:33",
+          "title": "外側副韌帶複合體與 posterolateral corner 損傷",
+          "summary": "介紹外側穩定結構的正常走向，並示範 fibular collateral ligament 與 posterolateral corner 的不同撕裂型態。",
+          "detail": [
+            "iliotibial band 位於外側前方並附著於 Gerdy's tubercle，不可誤認為 fibular collateral ligament。",
+            "fibular collateral ligament 呈索狀並附著於 fibular head，常與 biceps femoris tendon 匯合，應搭配 axial 影像追蹤。",
+            "韌帶周圍高訊號液體、遠端纖維消失且未附著 fibular head，代表 distal complete tear。",
+            "proximal partial tear 可伴隨 biceps femoris tendon、arcuate ligament complex 等 posterolateral corner structures 斷裂。"
+          ]
+        },
+        {
+          "start": "12:34",
+          "end": "14:43",
+          "title": "Medial collateral ligament 撕裂型態",
+          "summary": "示範 MCL 近端部分撕裂、直接撞擊傷與遠端完全撕裂的 MRI 表現。",
+          "detail": [
+            "MCL 在 axial 影像呈帶狀；增厚且深、淺面均有液體時，提示部分撕裂或扭傷。",
+            "局部骨凹陷及骨髓挫傷伴隨 MCL 纖維部分中斷，可反映直接撞擊造成的近端部分撕裂。",
+            "遠端完全撕裂時，MCL 走向波浪狀且無法附著於 tibia。",
+            "sartorius、gracilis 與 semitendinosus 等 pes anserine tendons 可嵌入斷裂處，形成 Stener-like lesion 並妨礙癒合。"
+          ]
+        },
+        {
+          "start": "14:44",
+          "end": "18:40",
+          "title": "Meniscus 解剖、正常形態與血管分布",
+          "summary": "建立 meniscus 各部位、表面命名、正常多平面外觀及血管區域的判讀基礎。",
+          "detail": [
+            "每側 meniscus 依序分為 anterior root、anterior horn、body、posterior horn 與 posterior root，撕裂描述應指出涉及的 articular surface、free edge 或 periphery。",
+            "medial meniscus 在 sagittal 影像通常可見約三個連續切面的 bow-tie appearance，且 posterior horn 正常大於 anterior horn。",
+            "lateral meniscus 較小，前後角大小相近，其 anterior root 可呈條紋狀並與 ACL 纖維相接。",
+            "外側三分之一為有血管的 red zone，可能自行癒合或接受修補；無血管的 white zone 撕裂通常無法縫合癒合。"
+          ]
+        },
+        {
+          "start": "18:41",
+          "end": "21:43",
+          "title": "Horizontal meniscal tears 與移位 flap tear",
+          "summary": "說明水平撕裂的典型走向、退化性特徵、parameniscal cyst 及移位碎片的重要性。",
+          "detail": [
+            "horizontal tear 沿 meniscus 平面延伸，訊號由周邊進入並接觸 tibial surface；discoid meniscus 較大且容易撕裂。",
+            "與 anterior horn 相連的大型 parameniscal cyst 提示撕裂具有慢性特徵。",
+            "退化性水平撕裂常位於 medial meniscus posterior horn 與 body 交界，並可伴隨 meniscocapsular inflammation。",
+            "horizontal flap tear 可移位至 tibial 或 femoral recess，MRI 報告應指出位置，以便關節鏡檢查及清創。"
+          ]
+        },
+        {
+          "start": "21:44",
+          "end": "25:22",
+          "title": "Vertical tears 與 bucket-handle tear",
+          "summary": "介紹創傷性垂直撕裂、可修補的周邊撕裂，以及 bucket-handle fragment 的典型徵象。",
+          "detail": [
+            "vertical tears 幾乎均屬創傷性，與 ACL tear 高度相關，且常位於可能癒合的外側三分之一。",
+            "lateral meniscus posterior horn 撕裂若延續至 PCL 後方的 Wrisberg ligament，稱為 Wrisberg rip。",
+            "廣泛垂直撕裂可使大片 meniscal fragment 向中央翻轉，形成 bucket-handle tear。",
+            "meniscus 體積減少、posterior horn 異常變小、double PCL sign 及 fragment-in-the-notch sign 均提示移位的 bucket-handle fragment。"
+          ]
+        },
+        {
+          "start": "25:23",
+          "end": "28:34",
+          "title": "Radial tears、ghost sign 與撕裂型態總結",
+          "summary": "示範 radial tear 的多平面徵象，並比較水平、垂直及放射狀撕裂的成因與處理差異。",
+          "detail": [
+            "radial tear 橫切 meniscus 三角形結構，可見局部高訊號缺損及超過約 3 mm 的 peripheral extrusion。",
+            "meniscus 在連續切面突然消失後再次出現稱為 ghost sign，是 radial tear 的重要線索。",
+            "posterior root attachment 的 radial tear 容易漏診，但該處具有血管供應，因此可能接受修補。",
+            "水平撕裂通常退化且位於 white zone；垂直撕裂多為創傷性；radial tear 可為退化性或創傷性並常伴隨 extrusion。"
+          ]
+        },
+        {
+          "start": "28:35",
+          "end": "32:20",
+          "title": "Patellar dislocation、Baker's cyst 與判讀總結",
+          "summary": "以髕骨脫位的對吻性挫傷和破裂 Baker's cyst 收尾，並總結利用水腫模式引導膝部 MRI 判讀。",
+          "detail": [
+            "內側 patella 與外側股骨髁非負重面的對吻性挫傷提示 transient lateral patellar dislocation，並可伴隨 medial patellar retinaculum 與 ligament 撕裂。",
+            "平坦的 trochlea、較大的 lateral patellar facet 與 lateralized tibial tuberosity 是病例中提及的髕骨脫位風險因素。",
+            "Baker's cyst 位於 medial gastrocnemius tendon 與 semimembranosus tendon 之間；破裂時可見大量液體向外延伸並造成急性疼痛與水腫。",
+            "PD fat-saturated 影像凸顯液體與水腫，可利用挫傷分布辨識 pivot-shift、hyperextension 或 lateral patellar dislocation 等損傷模式。"
+          ]
+        }
+      ]
     }
   ]
 }

@@ -377,3 +377,12 @@
     box-shadow: 0 0 0 2px var(--borderColor-accent-emphasis);
   }
 }
+
+/* --- Phase1: 長文閱讀欄寬（68–76ch）------------------------------------ */
+#chapters p,
+#chapters li,
+.Landing p,
+.StancePage p,
+.StancePage li {
+  max-width: 76ch;
+}
