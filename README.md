@@ -1,6 +1,6 @@
 # 膝部超音波診斷課程
 
-醫師導向、zh-TW 繁體中文的膝部診斷性肌肉骨骼超音波課程網站。正式網址僅預定為 <https://knee-ultrasound.sportsmedicine.tw>；本次不部署。
+醫師導向、zh-TW 繁體中文的膝部診斷性肌肉骨骼超音波課程網站。正式網址僅預定為 <https://knee-imaging.sportsmedicine.tw>；本次不部署。
 
 目前狀態為 `draft / noindex`。全課 8 個單元均尚未由具資格醫師簽核；完成本課不代表具備獨立執行、判讀或 credentialing 資格。本課不教授穿刺、注射或其他介入操作；收錄影片若含介入片段，會標明起點並框限本課診斷段落。
 

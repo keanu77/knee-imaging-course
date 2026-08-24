@@ -57,7 +57,7 @@
 | `_headers` 含 `X-Robots-Tag: noindex` | ✅（`noindex, nofollow`） |
 | `robots.txt` 為 `Disallow: /` | ✅ |
 | `sitemap.xml` 為空清單 | ✅（空 `<urlset>`） |
-| `course.config.json` 的 `site.url` = `https://knee-ultrasound.sportsmedicine.tw` | ✅ |
+| `course.config.json` 的 `site.url` = `https://knee-imaging.sportsmedicine.tw` | ✅ |
 | `allowIndexing` 維持 false | ✅（未更動） |
 | CI（quality.yml）在該分支 | ✅ 綠（含本輪 commit `9083054` 的最新 run） |
 

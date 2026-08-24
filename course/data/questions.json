@@ -1,0 +1,1364 @@
+{
+  "_doc": [
+    "單元知識檢核題。與 syllabus 平行，以 unit id 關聯；每單元一個題組（3–5 題）。",
+    "題組自帶 review_status（沿用 medical.reviewStatuses）；build.py 只把 approved 題組",
+    "寫進 course.json，未簽核的題目不會出現在線上站——新增題組不影響既有單元簽核。",
+    "每題結構：id（單元內唯一、永久穩定，供深連結與作答紀錄）、type（single|multi）、",
+    "stem、options[]（text/correct/rationale——不論對錯每個選項都要有解析）、",
+    "reference_ids[]（必須存在於 syllabus reference_catalog）、difficulty（core|advanced）。",
+    "內容紅線：題幹與解析只能出自該單元已寫入的教學內容與引用文獻；不得引入單元外知識；",
+    "禁止絕對化療效語句；診斷限定範圍內不出介入操作題。",
+    "簽核用 approve_questions.py（沿用 approve.py（src/build） 模式），寫入 reviewed_by／",
+    "reviewer_role／reviewed_at／reviewed_commit。"
+  ],
+  "units": {
+    "ch0-u1": {
+      "review_status": "approved",
+      "questions": [
+        {
+          "id": "ch0-u1-q1",
+          "type": "single",
+          "stem": "關於本課程的診斷範圍，下列何者正確？",
+          "difficulty": "core",
+          "options": [
+            {
+              "text": "涵蓋診斷掃描、判讀、紀錄與升級決策，不含穿刺與注射",
+              "correct": true,
+              "rationale": "本課為 diagnostic-only：掃描、判讀、紀錄與升級決策在範圍內，任何介入操作不在本階段。"
+            },
+            {
+              "text": "完成課程並通過自我測驗即可獨立執行與判讀",
+              "correct": false,
+              "rationale": "單元明確列為陷阱：觀看影片或通過測驗不等於獨立執行能力，仍需實機訓練與合格督導。"
+            },
+            {
+              "text": "聚焦檢查可以在報告中代表完整膝關節評估",
+              "correct": false,
+              "rationale": "聚焦檢查可回答明確臨床問題，但報告必須明載實際範圍，不能暗示完成全膝評估。"
+            },
+            {
+              "text": "超音波導引注射屬於課程的進階單元",
+              "correct": false,
+              "rationale": "介入操作明確不在診斷階段課程範圍內。"
+            }
+          ],
+          "reference_ids": [
+            "REF-AIUM-MSK-2023"
+          ]
+        },
+        {
+          "id": "ch0-u1-q2",
+          "type": "single",
+          "stem": "急性創傷後懷疑骨折的病人，最合適的首項影像是？",
+          "difficulty": "core",
+          "options": [
+            {
+              "text": "放射線（X 光）",
+              "correct": true,
+              "rationale": "急性創傷疑似骨折通常先做放射線；這是單元的升級決策核心。"
+            },
+            {
+              "text": "膝部超音波完整四區掃描",
+              "correct": false,
+              "rationale": "把超音波當成明顯急性骨傷的唯一首項檢查是單元列出的陷阱。"
+            },
+            {
+              "text": "直接 MRI",
+              "correct": false,
+              "rationale": "MRI 保留給鎖膝、疑十字韌帶、深部軟骨與複雜半月板等情境，不是疑骨折的常規首選。"
+            },
+            {
+              "text": "先觀察一週再決定",
+              "correct": false,
+              "rationale": "紅旗與急性創傷情境不應以等待取代正式影像路徑。"
+            }
+          ],
+          "reference_ids": [
+            "REF-ACR-ACUTE-KNEE-2020"
+          ]
+        },
+        {
+          "id": "ch0-u1-q3",
+          "type": "single",
+          "stem": "後膝局部掃描未見異常，病人臨床仍疑 DVT，正確的做法是？",
+          "difficulty": "core",
+          "options": [
+            {
+              "text": "進入正式 DVT 診斷路徑，不以局部陰性延遲處置",
+              "correct": true,
+              "rationale": "單元紅線：疑 DVT 時不以局部陰性掃描延遲正式處置；局部掃描不是正式靜脈壓縮檢查。"
+            },
+            {
+              "text": "報告「無 DVT」並請病人放心",
+              "correct": false,
+              "rationale": "把後膝局部掃描當成完整靜脈壓縮檢查並宣稱沒有 DVT 是明確列出的陷阱。"
+            },
+            {
+              "text": "改用 Doppler 再掃一次後膝即可排除",
+              "correct": false,
+              "rationale": "無論加何種模式，局部掃描的範圍限制不變，仍不能取代正式路徑。"
+            },
+            {
+              "text": "請病人一週後回診追蹤",
+              "correct": false,
+              "rationale": "疑 DVT 屬需要正式處置的情境，延遲即是風險。"
+            }
+          ],
+          "reference_ids": [
+            "REF-NICE-VTE-NG158"
+          ]
+        }
+      ],
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "復健科專科醫師",
+      "reviewed_at": "2026-08-25",
+      "reviewed_commit": "fabc147d15dabf38185b7527e59ae830c7f7b86f"
+    },
+    "ch1-u1": {
+      "review_status": "approved",
+      "questions": [
+        {
+          "id": "ch1-u1-q1",
+          "type": "single",
+          "stem": "肌腱內出現可疑低回音，下一步最正確的是？",
+          "difficulty": "core",
+          "options": [
+            {
+              "text": "角度修正後確認低回音是否持續，並以第二正交平面與連續掃描驗證",
+              "correct": true,
+              "rationale": "單元核心規則：可疑低回音須在角度修正後持續存在，並經正交平面確認，才有病理意義。"
+            },
+            {
+              "text": "直接記錄為肌腱撕裂",
+              "correct": false,
+              "rationale": "各向異性是最常見的假病灶來源；未角度修正就下診斷是典型錯誤。"
+            },
+            {
+              "text": "加大 Doppler 增益看有無血流",
+              "correct": false,
+              "rationale": "過高增益會產生雜訊假血流；Doppler 不是驗證低回音真偽的第一步。"
+            },
+            {
+              "text": "改用較低頻率探頭",
+              "correct": false,
+              "rationale": "頻率選擇依目標深度；它不能取代角度修正與正交平面驗證。"
+            }
+          ],
+          "reference_ids": [
+            "REF-AIUM-MSK-2023"
+          ]
+        },
+        {
+          "id": "ch1-u1-q2",
+          "type": "single",
+          "stem": "評估滑囊液與低流速血流時的正確技巧是？",
+          "difficulty": "core",
+          "options": [
+            {
+              "text": "足量凝膠＋輕壓",
+              "correct": true,
+              "rationale": "探頭壓力會壓掉滑囊液、淺層積液與低流速訊號；足量凝膠與輕壓是單元的標準做法。"
+            },
+            {
+              "text": "加壓固定探頭以穩定影像",
+              "correct": false,
+              "rationale": "加壓正是把所見壓掉的原因，是列出的陷阱。"
+            },
+            {
+              "text": "提高動態範圍即可補償壓力",
+              "correct": false,
+              "rationale": "參數無法補償物理性壓迫造成的訊號消失。"
+            },
+            {
+              "text": "請病人絀緊肌肉增加對比",
+              "correct": false,
+              "rationale": "單元未載此法；病人動作反而產生 flash artifact。"
+            }
+          ],
+          "reference_ids": [
+            "REF-EFSUMB-MSK-I-2022"
+          ]
+        },
+        {
+          "id": "ch1-u1-q3",
+          "type": "single",
+          "stem": "對側比較要有意義，前提是？",
+          "difficulty": "core",
+          "options": [
+            {
+              "text": "深度、壓力、姿勢與機器設定保持一致",
+              "correct": true,
+              "rationale": "單元陷阱條：改變任何一項都會造成不可解釋的假差異。"
+            },
+            {
+              "text": "兩側都用最大增益",
+              "correct": false,
+              "rationale": "增益一致才是重點，「最大」不是標準。"
+            },
+            {
+              "text": "對側外觀相似即可視為正常",
+              "correct": false,
+              "rationale": "雙側退化或系統性疾病會讓兩側同時異常，相似不等於正常（CH3 亦強調）。"
+            },
+            {
+              "text": "比較只需要單一截面",
+              "correct": false,
+              "rationale": "單點比較無法反映全段結構，連續掃描才可靠。"
+            }
+          ],
+          "reference_ids": [
+            "REF-AIUM-MSK-2023"
+          ]
+        }
+      ],
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "復健科專科醫師",
+      "reviewed_at": "2026-08-25",
+      "reviewed_commit": "fabc147d15dabf38185b7527e59ae830c7f7b86f"
+    },
+    "ch2-u1": {
+      "review_status": "approved",
+      "questions": [
+        {
+          "id": "ch2-u1-q1",
+          "type": "single",
+          "stem": "掃描股四頭肌腱與髕上隱窩的建議姿勢是？",
+          "difficulty": "core",
+          "options": [
+            {
+              "text": "仰臥、屈膝約 20–30 度",
+              "correct": true,
+              "rationale": "20–30 度屈膝放鬆伸膝機轉並改善肌腱與隱窩顯示；這是前側標準聲窗。"
+            },
+            {
+              "text": "完全伸膝",
+              "correct": false,
+              "rationale": "伸膝時肌腱鬆弛皺褶，各向異性更明顯，是誤判腱病的典型情境。"
+            },
+            {
+              "text": "最大屈膝",
+              "correct": false,
+              "rationale": "最大屈膝是滑車軟骨的聲窗，不是肌腱與隱窩的標準姿勢。"
+            },
+            {
+              "text": "俯臥",
+              "correct": false,
+              "rationale": "俯臥是後側（膕窩）的掃描姿勢。"
+            }
+          ],
+          "reference_ids": [
+            "REF-ESSR-KNEE-2010"
+          ]
+        },
+        {
+          "id": "ch2-u1-q2",
+          "type": "single",
+          "stem": "關於滑車軟骨的評估，正確的是？",
+          "difficulty": "core",
+          "options": [
+            {
+              "text": "以最大可耐受屈膝取得橫切面，且不能由此外推全膝軟骨正常",
+              "correct": true,
+              "rationale": "滑車需要大屈曲聲窗；由單一切面外推整體軟骨正常是明確陷阱。"
+            },
+            {
+              "text": "伸膝即可完整顯示滑車軟骨",
+              "correct": false,
+              "rationale": "伸膝時滑車被髕骨遮蔽，需要屈膝開窗。"
+            },
+            {
+              "text": "滑車正常代表關節軟骨無退化",
+              "correct": false,
+              "rationale": "超音波對整體關節軟骨的顯示有限，不能外推。"
+            },
+            {
+              "text": "軟骨評估必須配合 Doppler",
+              "correct": false,
+              "rationale": "單元未以 Doppler 作為軟骨判準。"
+            }
+          ],
+          "reference_ids": [
+            "REF-AIUM-MSK-2023"
+          ]
+        },
+        {
+          "id": "ch2-u1-q3",
+          "type": "single",
+          "stem": "髕腱在伸膝、探頭不垂直時出現局部低回音，最可能是？",
+          "difficulty": "core",
+          "options": [
+            {
+              "text": "各向異性假影",
+              "correct": true,
+              "rationale": "角度與姿勢正是產生各向異性的條件；先角度修正再判斷。"
+            },
+            {
+              "text": "髕腱部分撕裂",
+              "correct": false,
+              "rationale": "未經角度修正即下撕裂診斷是本單元的第一陷阱。"
+            },
+            {
+              "text": "Hoffa 脂肪墊病灶",
+              "correct": false,
+              "rationale": "Hoffa 是相鄰結構，可能被誤認為病灶，但此情境的第一鑑別是技術假影。"
+            },
+            {
+              "text": "前側滑囊炎",
+              "correct": false,
+              "rationale": "滑囊評估另有位置與壓力技巧，與此低回音情境不同。"
+            }
+          ],
+          "reference_ids": [
+            "REF-TAMBORRINI-KNEE-2025"
+          ]
+        }
+      ],
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "復健科專科醫師",
+      "reviewed_at": "2026-08-25",
+      "reviewed_commit": "fabc147d15dabf38185b7527e59ae830c7f7b86f"
+    },
+    "ch3-u1": {
+      "review_status": "approved",
+      "questions": [
+        {
+          "id": "ch3-u1-q1",
+          "type": "single",
+          "stem": "內側掃描的第一步是？",
+          "difficulty": "core",
+          "options": [
+            {
+              "text": "先定位內側關節線與骨性地標，再分層辨認 MCL、半月板周邊與鵝足",
+              "correct": true,
+              "rationale": "單元的標準順序：地標先行，分層在後。"
+            },
+            {
+              "text": "直接找鵝足滑囊",
+              "correct": false,
+              "rationale": "未先建立地標容易把深層 MCL、關節囊與半月板周邊混成一層。"
+            },
+            {
+              "text": "先做外翻應力",
+              "correct": false,
+              "rationale": "動態應力在靜態分層完成後才有解讀基礎。"
+            },
+            {
+              "text": "從最痛點開始掃",
+              "correct": false,
+              "rationale": "最痛點優先會犧牲系統性，也違反全長追蹤原則。"
+            }
+          ],
+          "reference_ids": [
+            "REF-ESSR-KNEE-2010"
+          ]
+        },
+        {
+          "id": "ch3-u1-q2",
+          "type": "single",
+          "stem": "記錄外翻動態應力時，哪些要素必須入檔？",
+          "difficulty": "core",
+          "options": [
+            {
+              "text": "膝屈角度、施力方向、影像平面與症狀",
+              "correct": true,
+              "rationale": "單元規定的可重複性四要素；只存最大張開圖是陷阱。"
+            },
+            {
+              "text": "只需保存關節間隙最大張開的一張圖",
+              "correct": false,
+              "rationale": "這正是列出的錯誤做法，無法重現也無法比較。"
+            },
+            {
+              "text": "兩側各一張靜態圖即可",
+              "correct": false,
+              "rationale": "靜態圖不構成動態應力紀錄。"
+            },
+            {
+              "text": "Doppler 設定",
+              "correct": false,
+              "rationale": "Doppler 是血流評估參數，非外翻應力的紀錄要素。"
+            }
+          ],
+          "reference_ids": [
+            "REF-EULAR-PROCEDURES-2017"
+          ]
+        },
+        {
+          "id": "ch3-u1-q3",
+          "type": "single",
+          "stem": "超音波所見半月板周邊正常，可以下什麼結論？",
+          "difficulty": "core",
+          "options": [
+            {
+              "text": "僅能描述周邊所見正常，不能排除半月板撕裂",
+              "correct": true,
+              "rationale": "超音波只顯示周邊；由此宣稱排除撕裂是明確陷阱，深部病變需 MRI。"
+            },
+            {
+              "text": "可排除內側半月板撕裂",
+              "correct": false,
+              "rationale": "超音波看不到半月板內部與深部結構。"
+            },
+            {
+              "text": "可排除退化性半月板病變",
+              "correct": false,
+              "rationale": "同上，顯示範圍限制不因病因分類而改變。"
+            },
+            {
+              "text": "等同 MRI 陰性",
+              "correct": false,
+              "rationale": "兩種模態的顯示能力不可互相代換。"
+            }
+          ],
+          "reference_ids": [
+            "REF-PANDYA-KNEE-2023"
+          ]
+        }
+      ],
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "復健科專科醫師",
+      "reviewed_at": "2026-08-25",
+      "reviewed_commit": "fabc147d15dabf38185b7527e59ae830c7f7b86f"
+    },
+    "ch4-u1": {
+      "review_status": "approved",
+      "questions": [
+        {
+          "id": "ch4-u1-q1",
+          "type": "single",
+          "stem": "外側掃描的共同導航地標是？",
+          "difficulty": "core",
+          "options": [
+            {
+              "text": "腓骨頭",
+              "correct": true,
+              "rationale": "LCL、股二頭肌腱與腓總神經都以腓骨頭為共同地標，但三者須分開連續追蹤。"
+            },
+            {
+              "text": "內側股骨髁",
+              "correct": false,
+              "rationale": "那是內側（CH3）的地標。"
+            },
+            {
+              "text": "髕骨下極",
+              "correct": false,
+              "rationale": "那是前側髕腱的地標。"
+            },
+            {
+              "text": "脛骨粗隆",
+              "correct": false,
+              "rationale": "是髕腱遠端附著點，非外側後外側的導航中心。"
+            }
+          ],
+          "reference_ids": [
+            "REF-ESSR-KNEE-2010"
+          ]
+        },
+        {
+          "id": "ch4-u1-q2",
+          "type": "single",
+          "stem": "膕肌腱掃描出現低回音，第一個要排除的是？",
+          "difficulty": "core",
+          "options": [
+            {
+              "text": "斜行走向造成的各向異性（需探頭旋轉與 heel-toe 修正）",
+              "correct": true,
+              "rationale": "膕肌腱呈斜行，固定正矢狀面會造成假性低回音，是本區最典型的技術陷阱。"
+            },
+            {
+              "text": "膕肌腱撕裂",
+              "correct": false,
+              "rationale": "未修正角度前不能下撕裂診斷。"
+            },
+            {
+              "text": "後外側角複合損傷",
+              "correct": false,
+              "rationale": "複雜 PLC 損傷常超過超音波聲窗，該情境的正確動作是依臨床疑慮升級 MRI，而非由單一低回音推定。"
+            },
+            {
+              "text": "腓總神經病變",
+              "correct": false,
+              "rationale": "神經評估以全段形態與回音束為主，與此肌腱假影情境不同。"
+            }
+          ],
+          "reference_ids": [
+            "REF-TAMBORRINI-KNEE-2025"
+          ]
+        },
+        {
+          "id": "ch4-u1-q3",
+          "type": "single",
+          "stem": "表淺 LCL 外觀正常時，關於後外側角（PLC）的正確結論是？",
+          "difficulty": "core",
+          "options": [
+            {
+              "text": "不能排除 PLC 損傷；臨床疑慮高時升級 MRI",
+              "correct": true,
+              "rationale": "深層韌帶與複雜 PLC 常超過聲窗；由表淺 LCL 正常外推是明確陷阱。"
+            },
+            {
+              "text": "PLC 完整",
+              "correct": false,
+              "rationale": "超音波顯示範圍不足以支持此結論。"
+            },
+            {
+              "text": "只需補掃股二頭肌腱即可排除",
+              "correct": false,
+              "rationale": "單一結構補掃仍無法涵蓋深層複合體。"
+            },
+            {
+              "text": "以外翻應力測試取代",
+              "correct": false,
+              "rationale": "PLC 的應力方向與外翻不同，且動態不能取代深層顯示限制。"
+            }
+          ],
+          "reference_ids": [
+            "REF-WU-PLC-2024"
+          ]
+        }
+      ],
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "復健科專科醫師",
+      "reviewed_at": "2026-08-25",
+      "reviewed_commit": "fabc147d15dabf38185b7527e59ae830c7f7b86f"
+    },
+    "ch5-u1": {
+      "review_status": "approved",
+      "questions": [
+        {
+          "id": "ch5-u1-q1",
+          "type": "single",
+          "stem": "判定典型 Baker cyst 的關鍵是？",
+          "difficulty": "core",
+          "options": [
+            {
+              "text": "位於半膜肌腱與內側腓腸肌頭之間、具交通頸",
+              "correct": true,
+              "rationale": "解剖位置＋交通頸才是判準；「後膝有液體」不是。"
+            },
+            {
+              "text": "後膝任何無回音積液",
+              "correct": false,
+              "rationale": "膕動脈瘤、靜脈、血腫都可能被誤認，是列出的陷阱。"
+            },
+            {
+              "text": "可被完全壓扁",
+              "correct": false,
+              "rationale": "可壓性是輔助資訊，且壓力本身會改變外觀，非判準。"
+            },
+            {
+              "text": "內部有血流訊號",
+              "correct": false,
+              "rationale": "囊腫應無內部血流；有血流反而要懷疑血管性或實質病灶。"
+            }
+          ],
+          "reference_ids": [
+            "REF-ESSR-KNEE-2010"
+          ]
+        },
+        {
+          "id": "ch5-u1-q2",
+          "type": "single",
+          "stem": "所有後膝腫塊的第一步評估是？",
+          "difficulty": "core",
+          "options": [
+            {
+              "text": "確認是否有血流及與血管的連續性",
+              "correct": true,
+              "rationale": "先排除血管性病灶（動脈瘤等）；非典型病灶不勉強命名。"
+            },
+            {
+              "text": "直接量測囊腫大小",
+              "correct": false,
+              "rationale": "未先確認血管性前，大小量測沒有安全意義。"
+            },
+            {
+              "text": "以探頭壓力測試可壓性",
+              "correct": false,
+              "rationale": "壓力會改變外觀，且對動脈瘤加壓有風險。"
+            },
+            {
+              "text": "依外觀直接命名為 Baker cyst",
+              "correct": false,
+              "rationale": "誤把動脈瘤當囊腫是本區最危險的錯誤。"
+            }
+          ],
+          "reference_ids": [
+            "REF-TAMBORRINI-KNEE-2025"
+          ]
+        },
+        {
+          "id": "ch5-u1-q3",
+          "type": "single",
+          "stem": "MSK 掃描中看見膕靜脈影像，正確的報告寫法是？",
+          "difficulty": "core",
+          "options": [
+            {
+              "text": "說明僅為局部所見，未完成正式近端靜脈超音波，不能排除 DVT",
+              "correct": true,
+              "rationale": "局部看見靜脈不等於正式壓縮檢查；報告不能寫「沒有 DVT」。"
+            },
+            {
+              "text": "報告「膕靜脈通暢、無 DVT」",
+              "correct": false,
+              "rationale": "這是單元紅線級陷阱。"
+            },
+            {
+              "text": "省略不提",
+              "correct": false,
+              "rationale": "所見應如實記錄，但要標明範圍限制。"
+            },
+            {
+              "text": "補做一次膕窩壓縮即可等同正式檢查",
+              "correct": false,
+              "rationale": "正式檢查有完整的範圍與流程要求，單點壓縮不能代替。"
+            }
+          ],
+          "reference_ids": [
+            "REF-NICE-VTE-NG158"
+          ]
+        }
+      ],
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "復健科專科醫師",
+      "reviewed_at": "2026-08-25",
+      "reviewed_commit": "fabc147d15dabf38185b7527e59ae830c7f7b86f"
+    },
+    "ch6-u1": {
+      "review_status": "approved",
+      "questions": [
+        {
+          "id": "ch6-u1-q1",
+          "type": "single",
+          "stem": "超音波診斷肌腱／韌帶撕裂的最低要件是？",
+          "difficulty": "core",
+          "options": [
+            {
+              "text": "角度修正後仍存在的纖維中斷或形態改變，且於第二平面確認",
+              "correct": true,
+              "rationale": "單元的撕裂判準：技術驗證＋雙平面，缺一不可。"
+            },
+            {
+              "text": "局部低回音＋壓痛",
+              "correct": false,
+              "rationale": "單一低回音或壓痛都不能直接等同症狀來源，是明確陷阱。"
+            },
+            {
+              "text": "Doppler 活性增加",
+              "correct": false,
+              "rationale": "Doppler 活性須結合臨床脈絡，不是撕裂判準。"
+            },
+            {
+              "text": "厚度超過對側",
+              "correct": false,
+              "rationale": "厚度差異是非特異性所見。"
+            }
+          ],
+          "reference_ids": [
+            "REF-EFSUMB-MSK-II-2022"
+          ]
+        },
+        {
+          "id": "ch6-u1-q2",
+          "type": "single",
+          "stem": "關節積液與滑膜肥厚的正確解讀是？",
+          "difficulty": "core",
+          "options": [
+            {
+              "text": "非特異性所見，須結合感染、發炎、退化、創傷與術後脈絡",
+              "correct": true,
+              "rationale": "積液本身不指向病因；脈絡整合是本單元核心。"
+            },
+            {
+              "text": "無回音積液即可排除感染",
+              "correct": false,
+              "rationale": "以外觀區分感染與否而略過正式診斷流程是列出的陷阱。"
+            },
+            {
+              "text": "滑膜 Doppler 陽性等於發炎性關節炎",
+              "correct": false,
+              "rationale": "Doppler 活性仍須放回臨床脈絡。"
+            },
+            {
+              "text": "積液多寡與症狀嚴重度成正比",
+              "correct": false,
+              "rationale": "單元未載此對應，症狀相關性需臨床整合。"
+            }
+          ],
+          "reference_ids": [
+            "REF-EULAR-OMERACT-2017"
+          ]
+        },
+        {
+          "id": "ch6-u1-q3",
+          "type": "single",
+          "stem": "下列何者是必須立即升級、不可延遲的情境？",
+          "difficulty": "core",
+          "options": [
+            {
+              "text": "熱紅腫、腫塊、夜間痛、鎖膝、伸膝中斷或神經血管缺損",
+              "correct": true,
+              "rationale": "這是單元列出的升級紅旗清單，延遲即是陷阱。"
+            },
+            {
+              "text": "雙側輕度退化性變化",
+              "correct": false,
+              "rationale": "退化所見依臨床脈絡處理，非紅旗。"
+            },
+            {
+              "text": "無症狀的少量積液",
+              "correct": false,
+              "rationale": "積液為非特異性所見，無紅旗要素時不構成升級指徵。"
+            },
+            {
+              "text": "肌腱厚度輕度增加",
+              "correct": false,
+              "rationale": "同上，屬需脈絡整合的非特異性所見。"
+            }
+          ],
+          "reference_ids": [
+            "REF-ACR-CHRONIC-KNEE-2026"
+          ]
+        }
+      ],
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "復健科專科醫師",
+      "reviewed_at": "2026-08-25",
+      "reviewed_commit": "fabc147d15dabf38185b7527e59ae830c7f7b86f"
+    },
+    "ch7-u1": {
+      "review_status": "approved",
+      "questions": [
+        {
+          "id": "ch7-u1-q1",
+          "type": "single",
+          "stem": "「最低影像集」的正確定義是？",
+          "difficulty": "core",
+          "options": [
+            {
+              "text": "能證明檢查範圍、方向、關鍵正常結構與所有異常的可追溯紀錄",
+              "correct": true,
+              "rationale": "重點是可追溯性，不是僵化張數。"
+            },
+            {
+              "text": "固定 20 張標準截圖",
+              "correct": false,
+              "rationale": "單元明言最低影像集不是僵化張數。"
+            },
+            {
+              "text": "只保存異常影像",
+              "correct": false,
+              "rationale": "關鍵正常結構與範圍證明同樣必須保存。"
+            },
+            {
+              "text": "錄影取代靜態影像即可",
+              "correct": false,
+              "rationale": "單元要求的是可追溯紀錄結構，異常需有正交影像與測量可複核。"
+            }
+          ],
+          "reference_ids": [
+            "REF-AIUM-DOC-2026"
+          ]
+        },
+        {
+          "id": "ch7-u1-q2",
+          "type": "single",
+          "stem": "結構化報告的正確順序是？",
+          "difficulty": "core",
+          "options": [
+            {
+              "text": "臨床問題→範圍與技術→分區所見→整合結論→限制→後續建議",
+              "correct": true,
+              "rationale": "單元規定的六段結構。"
+            },
+            {
+              "text": "分區所見→結論",
+              "correct": false,
+              "rationale": "缺少範圍、限制與建議的報告無法傳達不確定性。"
+            },
+            {
+              "text": "結論→佐證影像清單",
+              "correct": false,
+              "rationale": "結論先行會誘導閱讀者跳過範圍與限制。"
+            },
+            {
+              "text": "自由敘述即可",
+              "correct": false,
+              "rationale": "結構化是本單元的核心要求。"
+            }
+          ],
+          "reference_ids": [
+            "REF-AIUM-DOC-2026"
+          ]
+        },
+        {
+          "id": "ch7-u1-q3",
+          "type": "single",
+          "stem": "報告中處理不確定性的正確方式是？",
+          "difficulty": "core",
+          "options": [
+            {
+              "text": "使用「未完整顯示」「本檢查不能排除」等精確限制語句",
+              "correct": true,
+              "rationale": "不把不確定性藏在結論之外，是報告品質的關鍵。"
+            },
+            {
+              "text": "避免寫限制以免顯得不專業",
+              "correct": false,
+              "rationale": "結論超過已保存影像與實際範圍正是列出的第一陷阱。"
+            },
+            {
+              "text": "只在口頭告知轉介醫師",
+              "correct": false,
+              "rationale": "限制必須留在書面紀錄中可供追溯。"
+            },
+            {
+              "text": "以「大致正常」概括",
+              "correct": false,
+              "rationale": "模糊語句正是精確限制語句要取代的對象。"
+            }
+          ],
+          "reference_ids": [
+            "REF-AIUM-DOC-2026"
+          ]
+        }
+      ],
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "復健科專科醫師",
+      "reviewed_at": "2026-08-25",
+      "reviewed_commit": "fabc147d15dabf38185b7527e59ae830c7f7b86f"
+    },
+    "ch8-u1": {
+      "review_status": "approved",
+      "questions": [
+        {
+          "id": "ch8-u1-q1",
+          "type": "single",
+          "stem": "55 歲病人急性膝傷，可完全負重走四步、可屈膝 90 度、無孤立髕骨或腓骨頭壓痛。依 Ottawa knee rule？",
+          "difficulty": "core",
+          "options": [
+            {
+              "text": "仍需照 X 光（年齡 ≥55 即符合判準）",
+              "correct": true,
+              "rationale": "五項判準任一符合即照；年齡 ≥55 本身就是判準之一。"
+            },
+            {
+              "text": "五項皆陰性，可安全不照",
+              "correct": false,
+              "rationale": "年齡就是第五項判準，本例已符合。"
+            },
+            {
+              "text": "先觀察一週",
+              "correct": false,
+              "rationale": "Ottawa 的目的正是在急診當下決策。"
+            },
+            {
+              "text": "直接 MRI",
+              "correct": false,
+              "rationale": "Ottawa 決定的是 X 光，不是 MRI 的適應症。"
+            }
+          ],
+          "reference_ids": [
+            "REF-OTTAWA-STIELL-1996"
+          ]
+        },
+        {
+          "id": "ch8-u1-q2",
+          "type": "single",
+          "stem": "評估退化性關節間隙狹窄時，X 光的必要條件是？",
+          "difficulty": "core",
+          "options": [
+            {
+              "text": "站立承重像",
+              "correct": true,
+              "rationale": "非承重像會系統性低估間隙狹窄；退化評估一律承重。"
+            },
+            {
+              "text": "仰臥 AP 即可",
+              "correct": false,
+              "rationale": "仰臥 AP 正是「無明顯狹窄」誤判的來源。"
+            },
+            {
+              "text": "斷層合成（tomosynthesis）",
+              "correct": false,
+              "rationale": "單元未載；承重才是關鍵變因。"
+            },
+            {
+              "text": "雙側同時照",
+              "correct": false,
+              "rationale": "雙側對照有幫助，但承重與否才是必要條件。"
+            }
+          ],
+          "reference_ids": [
+            "REF-ACR-CHRONIC-KNEE-2026"
+          ]
+        },
+        {
+          "id": "ch8-u1-q3",
+          "type": "single",
+          "stem": "Rosenberg view 的技術與價值是？",
+          "difficulty": "core",
+          "options": [
+            {
+              "text": "PA、屈膝 45 度、束下傾 10 度；對股骨後髁承重區軟骨磨損比伸直 AP 敏感",
+              "correct": true,
+              "rationale": "這是 Rosenberg view 的定義與存在理由。"
+            },
+            {
+              "text": "AP、伸膝、束水平",
+              "correct": false,
+              "rationale": "那是標準 AP，對中後段軟骨磨損不敏感。"
+            },
+            {
+              "text": "屈膝 45 度、由上往下束",
+              "correct": false,
+              "rationale": "那是 skyline／Merchant，看髕股關節。"
+            },
+            {
+              "text": "俯臥、束上傾 10 度",
+              "correct": false,
+              "rationale": "非任何標準膝部照射位。"
+            }
+          ],
+          "reference_ids": [
+            "REF-ROSENBERG-1988"
+          ]
+        },
+        {
+          "id": "ch8-u1-q4",
+          "type": "single",
+          "stem": "髕股疼痛病人的基本照射位組合應包含？",
+          "difficulty": "core",
+          "options": [
+            {
+              "text": "WB AP＋lateral＋skyline",
+              "correct": true,
+              "rationale": "只照 AP＋lateral 會漏髕股腔室；skyline 是髕股評估的必要視圖。"
+            },
+            {
+              "text": "WB AP＋lateral 即可",
+              "correct": false,
+              "rationale": "這正是漏掉髕股腔室的典型錯誤。"
+            },
+            {
+              "text": "tunnel view 為主",
+              "correct": false,
+              "rationale": "tunnel 看髁間窩游離體與 OCD，不是髕股首選。"
+            },
+            {
+              "text": "斜位（oblique）為主",
+              "correct": false,
+              "rationale": "斜位看脛腓關節與內側腔室輔助，非髕股評估。"
+            }
+          ],
+          "reference_ids": [
+            "REF-ACR-CHRONIC-KNEE-2026"
+          ]
+        }
+      ],
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "復健科專科醫師",
+      "reviewed_at": "2026-08-25",
+      "reviewed_commit": "fabc147d15dabf38185b7527e59ae830c7f7b86f"
+    },
+    "ch9-u1": {
+      "review_status": "approved",
+      "questions": [
+        {
+          "id": "ch9-u1-q1",
+          "type": "single",
+          "stem": "K-L 分級中，grade 2 的門檻徵象是？",
+          "difficulty": "core",
+          "options": [
+            {
+              "text": "明確骨刺",
+              "correct": true,
+              "rationale": "「明確骨刺」是 2 級門檻；3 級的主軸才是關節間隙狹窄。"
+            },
+            {
+              "text": "關節間隙狹窄",
+              "correct": false,
+              "rationale": "狹窄是 3 級主軸。"
+            },
+            {
+              "text": "軟骨下硬化",
+              "correct": false,
+              "rationale": "硬化伴隨較高級數出現，非 2 級門檻。"
+            },
+            {
+              "text": "骨端變形",
+              "correct": false,
+              "rationale": "變形屬 3–4 級表現。"
+            }
+          ],
+          "reference_ids": [
+            "REF-KL-1957"
+          ]
+        },
+        {
+          "id": "ch9-u1-q2",
+          "type": "single",
+          "stem": "X 光見外側脛骨平台邊緣小片撕脫（Segond fracture），下一步是？",
+          "difficulty": "core",
+          "options": [
+            {
+              "text": "啟動 ACL 損傷評估路徑",
+              "correct": true,
+              "rationale": "Segond 與 ACL 撕裂高度相關，看到就要評估韌帶。"
+            },
+            {
+              "text": "視為無意義的小碎片",
+              "correct": false,
+              "rationale": "碎片雖小，臨床意義重大。"
+            },
+            {
+              "text": "診斷為 bipartite patella",
+              "correct": false,
+              "rationale": "位置完全不同（髕骨 vs 脛骨平台外緣）。"
+            },
+            {
+              "text": "直接診斷 LCL 撕裂",
+              "correct": false,
+              "rationale": "相關的是 ACL；Segond 是外側關節囊複合體的撕脫。"
+            }
+          ],
+          "reference_ids": [
+            "REF-ACR-ACUTE-KNEE-2020"
+          ]
+        },
+        {
+          "id": "ch9-u1-q3",
+          "type": "single",
+          "stem": "水平束 lateral 上見脂肪-血液分層（lipohemarthrosis），X 光未見骨折線，正確處置是？",
+          "difficulty": "core",
+          "options": [
+            {
+              "text": "以 CT 追查隱匿性關節內骨折",
+              "correct": true,
+              "rationale": "lipohemarthrosis 指向關節內骨折；X 光初讀陰性不能排除，臨床高度懷疑時升級。"
+            },
+            {
+              "text": "X 光陰性即可排除骨折",
+              "correct": false,
+              "rationale": "隱匿性平台骨折初次 X 光常為陰性，是明確陷阱。"
+            },
+            {
+              "text": "診斷為單純關節積液",
+              "correct": false,
+              "rationale": "分層（脂肪浮於血上）已超出單純積液的意義。"
+            },
+            {
+              "text": "一週後追蹤 X 光",
+              "correct": false,
+              "rationale": "間接徵象已存在，延遲等於錯過。"
+            }
+          ],
+          "reference_ids": [
+            "REF-ACR-ACUTE-KNEE-2020"
+          ]
+        },
+        {
+          "id": "ch9-u1-q4",
+          "type": "single",
+          "stem": "與髕骨骨折鑑別時，支持 bipartite patella 的特徵是？",
+          "difficulty": "core",
+          "options": [
+            {
+              "text": "上外側位置、圓鈍有皮質的邊緣、約半數雙側",
+              "correct": true,
+              "rationale": "三個形態特徵合起來就是鑑別核心；銳利無皮質緣才指向急性骨折。"
+            },
+            {
+              "text": "下極銳利骨折線",
+              "correct": false,
+              "rationale": "銳緣無皮質指向骨折。"
+            },
+            {
+              "text": "單側出現即可排除",
+              "correct": false,
+              "rationale": "約 50% 雙側——對側正常不能排除 bipartite。"
+            },
+            {
+              "text": "伴隨大量關節積液",
+              "correct": false,
+              "rationale": "積液指向急性關節內損傷，不支持無症狀變異。"
+            }
+          ],
+          "reference_ids": [
+            "REF-ACR-ACUTE-KNEE-2020"
+          ]
+        }
+      ],
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "復健科專科醫師",
+      "reviewed_at": "2026-08-25",
+      "reviewed_commit": "fabc147d15dabf38185b7527e59ae830c7f7b86f"
+    },
+    "ch10-u1": {
+      "review_status": "approved",
+      "questions": [
+        {
+          "id": "ch10-u1-q1",
+          "type": "single",
+          "stem": "膝部 MRI 中偵測水腫與液體的主力序列是？",
+          "difficulty": "core",
+          "options": [
+            {
+              "text": "流體敏感序列（PD／T2 fat-sat）",
+              "correct": true,
+              "rationale": "流體敏感序列是病灶偵測主力；T1 負責解剖與骨髓對照，兩者互補。"
+            },
+            {
+              "text": "T1",
+              "correct": false,
+              "rationale": "T1 是解剖與骨髓脂肪對照，水腫在 T1 上不敏感。"
+            },
+            {
+              "text": "GRE",
+              "correct": false,
+              "rationale": "單元未以 GRE 為主力序列。"
+            },
+            {
+              "text": "DWI",
+              "correct": false,
+              "rationale": "非膝部常規判讀的主力序列。"
+            }
+          ],
+          "reference_ids": [
+            "REF-PANDYA-KNEE-2023"
+          ]
+        },
+        {
+          "id": "ch10-u1-q2",
+          "type": "single",
+          "stem": "肌腱在短 TE 序列出現高訊號、與主磁場約 55 度，第一鑑別是？",
+          "difficulty": "core",
+          "options": [
+            {
+              "text": "Magic angle 假影",
+              "correct": true,
+              "rationale": "短 TE＋約 55 度正是 magic angle 的成立條件；先換序列或平面驗證。"
+            },
+            {
+              "text": "腱病",
+              "correct": false,
+              "rationale": "未排除假影前不能下腱病診斷。"
+            },
+            {
+              "text": "部分撕裂",
+              "correct": false,
+              "rationale": "同上；撕裂需在多平面與長 TE 序列驗證。"
+            },
+            {
+              "text": "腱鞘積液",
+              "correct": false,
+              "rationale": "積液有自己的形態與位置特徵，非此情境的第一鑑別。"
+            }
+          ],
+          "reference_ids": [
+            "REF-PANDYA-KNEE-2023"
+          ]
+        },
+        {
+          "id": "ch10-u1-q3",
+          "type": "single",
+          "stem": "單一平面看到結構異常訊號，正確的做法是？",
+          "difficulty": "core",
+          "options": [
+            {
+              "text": "至少在第二個平面確認後才下診斷",
+              "correct": true,
+              "rationale": "每個結構至少兩平面確認；單平面異常可能是部分容積或假影。"
+            },
+            {
+              "text": "直接記錄為病灶",
+              "correct": false,
+              "rationale": "單平面判讀是漏診與誤診的共同來源。"
+            },
+            {
+              "text": "提高影像放大倍率再看一次",
+              "correct": false,
+              "rationale": "放大不能解決部分容積問題，換平面才行。"
+            },
+            {
+              "text": "以 Doppler 驗證",
+              "correct": false,
+              "rationale": "MRI 無 Doppler；驗證靠平面與序列。"
+            }
+          ],
+          "reference_ids": [
+            "REF-PANDYA-KNEE-2023"
+          ]
+        },
+        {
+          "id": "ch10-u1-q4",
+          "type": "single",
+          "stem": "系統性判讀順序的目的為何？",
+          "difficulty": "core",
+          "options": [
+            {
+              "text": "防止 satisfaction of search——找到一個病灶就停下來",
+              "correct": true,
+              "rationale": "固定順序（積液→骨髓→半月板→韌帶→軟骨→伸膝機轉→軟組織）保證不漏掉共存病灶。"
+            },
+            {
+              "text": "縮短判讀時間",
+              "correct": false,
+              "rationale": "順序的目的在完整性，不在速度。"
+            },
+            {
+              "text": "符合保險申報要求",
+              "correct": false,
+              "rationale": "單元未載此目的。"
+            },
+            {
+              "text": "讓報告較長",
+              "correct": false,
+              "rationale": "報告品質在結構與限制語句，不在長度。"
+            }
+          ],
+          "reference_ids": [
+            "REF-ACR-CHRONIC-KNEE-2026"
+          ]
+        }
+      ],
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "復健科專科醫師",
+      "reviewed_at": "2026-08-25",
+      "reviewed_commit": "fabc147d15dabf38185b7527e59ae830c7f7b86f"
+    },
+    "ch11-u1": {
+      "review_status": "approved",
+      "questions": [
+        {
+          "id": "ch11-u1-q1",
+          "type": "single",
+          "stem": "MRI 診斷半月板撕裂的門檻是？",
+          "difficulty": "core",
+          "options": [
+            {
+              "text": "異常訊號明確延伸至關節面",
+              "correct": true,
+              "rationale": "未達關節面的內部訊號在中老年極常見，不構成撕裂診斷。"
+            },
+            {
+              "text": "半月板內任何高訊號",
+              "correct": false,
+              "rationale": "內部退化訊號 ≠ 撕裂，是最常見的 overcall。"
+            },
+            {
+              "text": "半月板形態變小",
+              "correct": false,
+              "rationale": "形態改變需與訊號判準合併解讀，單獨不構成門檻。"
+            },
+            {
+              "text": "關節積液存在",
+              "correct": false,
+              "rationale": "積液是非特異性伴隨所見。"
+            }
+          ],
+          "reference_ids": [
+            "REF-MENISCUS-DELPHI-2026"
+          ]
+        },
+        {
+          "id": "ch11-u1-q2",
+          "type": "single",
+          "stem": "急性膝傷 MRI 見外側股骨髁＋後外側脛骨平台 bone bruise，此 pattern 指向？",
+          "difficulty": "core",
+          "options": [
+            {
+              "text": "Pivot-shift 機轉／ACL 撕裂",
+              "correct": true,
+              "rationale": "此 bone bruise 分佈是 ACL 撕裂的高特異度間接徵象，與 X 光的 Segond 互為印證。"
+            },
+            {
+              "text": "MCL 損傷",
+              "correct": false,
+              "rationale": "MCL 損傷的水腫在內側，分佈不同。"
+            },
+            {
+              "text": "髕骨脫位",
+              "correct": false,
+              "rationale": "髕骨脫位的典型挫傷在髕骨內側面＋外側股骨髁前外側。"
+            },
+            {
+              "text": "半月板 root tear",
+              "correct": false,
+              "rationale": "root tear 無此特徵性挫傷分佈。"
+            }
+          ],
+          "reference_ids": [
+            "REF-ACR-ACUTE-KNEE-2020"
+          ]
+        },
+        {
+          "id": "ch11-u1-q3",
+          "type": "single",
+          "stem": "Englund 2008 對膝 MRI 判讀的核心啟示是？",
+          "difficulty": "core",
+          "options": [
+            {
+              "text": "無膝痛族群也有相當比例的半月板撕裂，且隨年齡上升——影像所見須對照症狀",
+              "correct": true,
+              "rationale": "這是「MRI 陽性 ≠ 症狀來源」的地標證據，判讀必須放回臨床脈絡。"
+            },
+            {
+              "text": "MRI 對半月板撕裂的敏感度不足",
+              "correct": false,
+              "rationale": "該研究講的是無症狀盛行率，不是敏感度問題。"
+            },
+            {
+              "text": "半月板撕裂都需要手術",
+              "correct": false,
+              "rationale": "恰恰相反——退化性撕裂常與症狀無關。"
+            },
+            {
+              "text": "年輕人不會有半月板撕裂",
+              "correct": false,
+              "rationale": "研究顯示的是盛行率隨年齡上升，非年輕人零盛行。"
+            }
+          ],
+          "reference_ids": [
+            "REF-ENGLUND-2008"
+          ]
+        },
+        {
+          "id": "ch11-u1-q4",
+          "type": "single",
+          "stem": "中老年病人 MRI 見退化性半月板撕裂＋OA 變化，報告與臨床溝通的正確態度是？",
+          "difficulty": "core",
+          "options": [
+            {
+              "text": "以標準命名描述所見，並提示退化性撕裂可能與症狀無關、需臨床對應",
+              "correct": true,
+              "rationale": "報告語言用型態＋位置＋範圍（2026 共識），解讀權留給臨床整合。"
+            },
+            {
+              "text": "直接把疼痛歸因於半月板撕裂",
+              "correct": false,
+              "rationale": "忽略 OA 本身與無症狀盛行率，是明確陷阱。"
+            },
+            {
+              "text": "省略撕裂不報以免誤導",
+              "correct": false,
+              "rationale": "所見必須如實描述；處理方式是加上脈絡，不是隱匿。"
+            },
+            {
+              "text": "建議手術會診",
+              "correct": false,
+              "rationale": "治療建議超出診斷課程範圍，且與證據方向相反。"
+            }
+          ],
+          "reference_ids": [
+            "REF-SSR-MENISCUS-2026"
+          ]
+        }
+      ],
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "復健科專科醫師",
+      "reviewed_at": "2026-08-25",
+      "reviewed_commit": "fabc147d15dabf38185b7527e59ae830c7f7b86f"
+    }
+  }
+}

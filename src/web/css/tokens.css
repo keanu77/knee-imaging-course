@@ -142,8 +142,8 @@ body {
   /* 頁尾是 fixed，留出等高的墊底空間，最後一段內容才不會被蓋住 */
   padding-bottom: var(--footer-height);
   font-family: var(--fontStack-sans);
-  font-size: 14px;
-  line-height: 1.5;
+  font-size: 16px;
+  line-height: 1.7;
   color: var(--fgColor-default);
   background-color: var(--bgColor-default);
   -webkit-font-smoothing: antialiased;

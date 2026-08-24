@@ -82,3 +82,28 @@ yt-dlp --skip-download --write-auto-subs --sub-lang en --sub-format vtt \
 逐支核對 canonical 11 字元 ID、精確標題、原始頻道、片長、YouTube 上架日期、原始內容日期、公開狀態、`playable_in_embed`、oEmbed、講者資格、商業揭露、診斷範圍及介入片段。低併發實跑 yt-dlp 2026.07.04；所有正式影片只使用 YouTube 官方播放器與原始來源連結，不下載或重新託管影片／縮圖。
 
 影片只作示範補充；課程標準、病理限制、報告與升級條件仍由既有指引與文獻決定。所有 8 個單元維持 `draft`，`allowIndexing=false`；完成觀看不等於實機能力、醫療審閱或 credentialing。
+
+---
+
+# X 光模組策展（2026-08-25）
+
+- 搜尋方式：兩路平行研究（codex web search／grok 即時搜尋，原始輸出見 `course/research/xray-candidates-{codex,grok}.md`），交叉比對後由主編逐支以 yt-dlp＋YouTube oEmbed 實查（存在、頻道歸屬、片長、上架日、`playable_in_embed`、英文字幕軌）。
+- 兩路獨立收斂：AMSSM 膝部模組（di63ofJq7XU）、Peng K-L（WiZoV8PJ_tQ）、Gaur search pattern（OBypdK9PT_w）。
+- 正式採用 7 支（CH8 3＋CH9 4）：全部 oEmbed 200、embed=true、auto-en 字幕；3 支 classic-exception（Chen 2017 照射位技術、Gaur 2015 search pattern、Ebraheim bipartite 2021-01），理由逐支寫入 drill 的 `classic_exception_reason`。
+- Ebraheim bipartite（PTpG34ccTso）含 3:10–3:50 手術動畫：`contains_intervention=true`、`diagnostic_segment_range=0:00-2:29`，逐段筆記受框限稽核約束。
+
+## 拒絕候選
+
+| 影片 | 拒絕理由 |
+| --- | --- |
+| tveezJXhnjM（OTA 平台骨折 lecture） | 頻道旁白非作者出鏡，且 0:45–5:40 為初始處置（固定、開放性骨折抗生素），非純診斷 |
+| NYhAb_Faews（Ebraheim 平台骨折） | 大量內固定手術動畫貫穿全片，診斷框限後剩餘教學價值不足 |
+| 0C3dxG68hqY（Bone Doctor fabella Shorts） | 26 秒，低於 drill 最短 1:00 稽核門檻；fabella 改由單元文字涵蓋 |
+| MoSGinflp8E（Kiel Ottawa） | 56 秒低於門檻；頻道「Med Education」非本人頻道，原始上傳存疑 |
+| DHse2N0cGWM（Rosen 膝痛 podcast） | 內容本體 2020-10（早於 cutoff）且主題延伸至處置討論，37 分鐘中純判讀密度低；照射位已由 Chen＋AMSSM 覆蓋 |
+| m-ndBVoi_KU（Ebraheim bipartite 2011 版） | 同講者 2021 版（PTpG34ccTso）內容較新，取新捨舊 |
+
+## 已知缺口
+
+- fabella 無通過資格門檻的專講影片，暫由 CH9 單元文字與 key_points 涵蓋；後續有合格候選再補。
+- Ottawa 影片（ytR9BLrdml8）無 X 光實例，僅判準講解；標題「Dr Kathir Stalin」與醫院頁「Kathir Azhagan」為同一人的不同稱謂，已以醫院頁為準核對。

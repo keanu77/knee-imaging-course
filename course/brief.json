@@ -1,7 +1,7 @@
 {
   "project": "knee-ultrasound-course",
   "repository": "keanu77/knee-ultrasound-course",
-  "site_url": "https://knee-ultrasound.sportsmedicine.tw",
+  "site_url": "https://knee-imaging.sportsmedicine.tw",
   "body_region": {
     "zh": "膝部",
     "en": "knee",
