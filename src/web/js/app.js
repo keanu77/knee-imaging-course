@@ -43,6 +43,7 @@ const state = {
   filter: "all",
   learningTier: "all",
   query: "",
+  searchTerms: [],
   muscles: new Set(),
   tab: "course",
   playlist: [],
@@ -536,9 +537,97 @@ function restoreQuizzes() {
 
 /* --- 搜尋與篩選（實作在 filters.js） -------------------------------------- */
 
+function expandedSearchTerms(query, glossary) {
+  const q = query.trim().toLowerCase();
+  if (!q) return [];
+
+  const terms = new Set([q]);
+  for (const entry of glossary || []) {
+    const candidates = [entry.en, entry.zh, ...(entry.aliases || [])]
+      .filter(Boolean)
+      .map((value) => value.toLowerCase());
+    if (candidates.some((value) => value.includes(q))) {
+      if (entry.zh) terms.add(entry.zh.toLowerCase());
+      if (entry.en) terms.add(entry.en.toLowerCase());
+    }
+  }
+  return [...terms];
+}
+
 function applyFilters() {
+  state.searchTerms = expandedSearchTerms(state.query, state.course?.glossary);
   runFilters(state, state.course);
   syncMuscleChips(state.muscles);
+}
+
+/* --- 名詞表 -------------------------------------------------------------- */
+
+const GLOSSARY_CATEGORIES = ["anatomy", "pathology", "technique", "classification", "sign"];
+let glossaryQuery = "";
+let glossaryCategory = "";
+
+function glossaryMatches(entry) {
+  const categoryOk = !glossaryCategory || entry.category === glossaryCategory;
+  if (!categoryOk) return false;
+  const q = glossaryQuery.trim().toLowerCase();
+  if (!q) return true;
+  return [entry.zh, entry.en, entry.definition, ...(entry.aliases || [])]
+    .filter(Boolean)
+    .some((value) => value.toLowerCase().includes(q));
+}
+
+function renderGlossaryList() {
+  const host = $("#glossaryList");
+  if (!host) return;
+  const terms = (state.course?.glossary || []).filter(glossaryMatches);
+  host.innerHTML = terms.length
+    ? terms
+        .map(
+          (entry) => `
+            <button class="GlossaryEntry" type="button" data-glossary-id="${esc(entry.id)}">
+              <span class="GlossaryEntry__names">
+                <strong>${esc(entry.zh)}</strong>
+                <span lang="en">${esc(entry.en)}</span>
+              </span>
+              <span class="GlossaryEntry__definition">${esc(entry.definition)}</span>
+            </button>`,
+        )
+        .join("")
+    : `<p class="GlossaryPanel__empty">找不到符合的名詞</p>`;
+}
+
+function renderGlossaryPanel(course) {
+  const terms = course.glossary;
+  if (!Array.isArray(terms)) return;
+
+  const html = `
+    <section class="GlossaryPanel" id="glossaryPanel">
+      <button class="GlossaryPanel__head" id="glossaryToggle" type="button" aria-expanded="false" aria-controls="glossaryBody">
+        ${icon("book-open", 16)}
+        <span>名詞表</span>
+        <span class="Counter">${terms.length}</span>
+        <span class="GlossaryPanel__chevron">${icon("chevron-right", 14)}</span>
+      </button>
+      <div class="GlossaryPanel__body" id="glossaryBody">
+        <label class="GlossaryPanel__search">
+          ${icon("search", 14)}
+          <span class="visually-hidden">搜尋名詞表</span>
+          <input type="search" id="glossarySearch" placeholder="搜尋名詞…" autocomplete="off" />
+        </label>
+        <div class="GlossaryPanel__categories" role="group" aria-label="名詞分類">
+          ${GLOSSARY_CATEGORIES.map(
+            (category) =>
+              `<button class="GlossaryChip" type="button" data-glossary-category="${category}" aria-pressed="false">${category}</button>`,
+          ).join("")}
+        </div>
+        <div class="GlossaryPanel__list" id="glossaryList"></div>
+      </div>
+    </section>`;
+
+  const musclePanel = $("#musclePanel");
+  if (musclePanel) musclePanel.insertAdjacentHTML("afterend", html);
+  else $(".Layout__sidebar")?.insertAdjacentHTML("beforeend", html);
+  renderGlossaryList();
 }
 
 function syncTierControls() {
@@ -751,6 +840,41 @@ function bindEvents() {
     if (!e.target.closest("#muscleClear")) return;
     state.muscles.clear();
     applyFilters();
+  });
+
+  $("#glossaryToggle")?.addEventListener("click", () => {
+    const panel = $("#glossaryPanel");
+    const open = panel.classList.toggle("is-open");
+    $("#glossaryToggle").setAttribute("aria-expanded", String(open));
+  });
+
+  $("#glossarySearch")?.addEventListener("input", (e) => {
+    glossaryQuery = e.currentTarget.value;
+    renderGlossaryList();
+  });
+
+  $(".GlossaryPanel__categories")?.addEventListener("click", (e) => {
+    const chip = e.target.closest("[data-glossary-category]");
+    if (!chip) return;
+    glossaryCategory = glossaryCategory === chip.dataset.glossaryCategory
+      ? ""
+      : chip.dataset.glossaryCategory;
+    $$("[data-glossary-category]").forEach((button) => {
+      const active = button.dataset.glossaryCategory === glossaryCategory;
+      button.classList.toggle("is-active", active);
+      button.setAttribute("aria-pressed", String(active));
+    });
+    renderGlossaryList();
+  });
+
+  $("#glossaryList")?.addEventListener("click", (e) => {
+    const entryButton = e.target.closest("[data-glossary-id]");
+    if (!entryButton) return;
+    const entry = state.course.glossary.find((term) => term.id === entryButton.dataset.glossaryId);
+    if (!entry) return;
+    searchInput.value = entry.zh;
+    searchInput.dispatchEvent(new Event("input", { bubbles: true }));
+    searchInput.focus();
   });
 
   // 播放清單
@@ -1065,6 +1189,7 @@ async function init() {
   renderStats();
   renderNav();
   renderMusclePanel(data);
+  renderGlossaryPanel(data);
   renderProgress();
   restoreQuizzes();
   bindEvents();

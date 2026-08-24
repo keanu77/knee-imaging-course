@@ -127,6 +127,17 @@ def collect_questions() -> tuple[dict, int]:
     return approved, held
 
 
+def collect_glossary() -> tuple[list, int, bool]:
+    """回傳（可輸出的名詞、名詞總數、是否已簽核）。
+
+    名詞表採整份簽核；只有頂層 review_status == approved 時才可進 course.json。
+    """
+    blob = load_json(DATA / "glossary.json")
+    terms = (blob or {}).get("terms") or []
+    approved = isinstance(blob, dict) and blob.get("review_status") == "approved"
+    return (terms if approved else []), len(terms), approved
+
+
 def collect_drill_evidence() -> dict:
     """合併各 agent 產出的動作類別文獻。"""
     out = {}
@@ -268,6 +279,7 @@ def main() -> int:
     vmeta = load_json(DATA / "video-meta.json") or {}
     segments_by_url, segments_held = collect_segments()
     questions_by_unit, questions_held = collect_questions()
+    glossary, glossary_count, glossary_approved = collect_glossary()
     segment_urls: set[str] = set()
     drill_ev = collect_drill_evidence()
     alt_lessons = collect_alt_lessons()
@@ -483,6 +495,8 @@ def main() -> int:
         },
         "chapters": chapters,
     }
+    if glossary_approved:
+        course["glossary"] = glossary
 
     sync_web()
     OUT.write_text(json.dumps(course, ensure_ascii=False, indent=1))
@@ -524,6 +538,10 @@ def main() -> int:
             f"{sum(len(v) for v in questions_by_unit.values())} 題已簽核並輸出"
             + (f" · {questions_held} 組未簽核未輸出" if questions_held else "")
         )
+    print(
+        f"   名詞表 {glossary_count} 條"
+        + ("已簽核並輸出" if glossary_approved else "未簽核未輸出")
+    )
     if segment_urls or segments_held:
         print(
             f"   逐段筆記 {len(segment_urls)} 支影片 · "
