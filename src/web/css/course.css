@@ -129,14 +129,19 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 20px;
-  height: 20px;
+  gap: var(--base-size-4);
+  min-width: 76px;
+  height: 26px;
+  padding: 0 var(--base-size-8);
   margin-top: 2px;
   flex-shrink: 0;
   border: 1px solid var(--borderColor-default);
   border-radius: var(--borderRadius-full);
   background-color: var(--bgColor-default);
-  color: transparent;
+  color: var(--fgColor-muted);
+  font-size: 11px;
+  font-weight: 650;
+  line-height: 1;
   transition: all 0.12s ease;
 }
 
@@ -148,6 +153,18 @@
   background-color: var(--fgColor-success);
   border-color: var(--fgColor-success);
   color: var(--fgColor-onEmphasis);
+}
+
+.Unit.is-learning .Unit__check {
+  color: var(--fgColor-accent);
+  background-color: var(--bgColor-accent-muted);
+  border-color: var(--borderColor-accent-emphasis);
+}
+
+.Unit.is-review .Unit__check {
+  color: var(--fgColor-danger);
+  background-color: var(--bgColor-danger-muted);
+  border-color: var(--fgColor-danger);
 }
 
 .Unit__main {

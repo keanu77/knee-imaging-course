@@ -19,6 +19,9 @@ const $$ = (sel, root = document) => [...root.querySelectorAll(sel)];
 
 const STORE = {
   done: "knee-ultrasound-course:done",
+  mastery: "knee-ultrasound-course:mastery",
+  masteryRestore: "knee-ultrasound-course:mastery-restore",
+  quiz: "knee-ultrasound-course:quiz",
   theme: "knee-ultrasound-course:theme",
   open: "knee-ultrasound-course:open",
   tab: "knee-ultrasound-course:tab",
@@ -34,6 +37,9 @@ const urlIndex = new Map();
 const state = {
   course: null,
   done: new Set(),
+  mastery: new Map(),
+  masteryRestore: {},
+  quiz: {},
   filter: "all",
   learningTier: "all",
   query: "",
@@ -76,6 +82,108 @@ function save(key, value) {
   } catch {
     /* 隱私模式下寫入會失敗，靜默忽略 */
   }
+}
+
+const MASTERY = {
+  "not-started": { icon: "circle-dot", label: "未開始" },
+  learning: { icon: "book-open", label: "學習中" },
+  done: { icon: "check", label: "已完成" },
+  review: { icon: "triangle-alert", label: "待複習" },
+};
+
+function masteryOf(unitId) {
+  return state.mastery.get(unitId) || "not-started";
+}
+
+function saveMastery() {
+  save(STORE.mastery, Object.fromEntries(state.mastery));
+}
+
+function applyMasteryToUnit(unitId) {
+  const el = $(`[data-unit="${CSS.escape(unitId)}"]`);
+  if (!el) return;
+
+  const status = masteryOf(unitId);
+  const view = MASTERY[status];
+  for (const key of Object.keys(MASTERY)) el.classList.toggle(`is-${key}`, key === status);
+  const control = $(".Unit__check", el);
+  if (!control) return;
+  control.innerHTML = `${icon(view.icon, 13)}<span class="Unit__checkLabel">${view.label}</span>`;
+  control.setAttribute("aria-checked", String(status === "done"));
+  control.setAttribute("aria-label", `掌握度：${view.label}`);
+  control.title = `掌握度：${view.label}`;
+}
+
+function setMastery(unitId, status) {
+  if (!MASTERY[status] || masteryOf(unitId) === status) return;
+  if (status === "not-started") state.mastery.delete(unitId);
+  else state.mastery.set(unitId, status);
+
+  if (status === "done") state.done.add(unitId);
+  else state.done.delete(unitId);
+  saveMastery();
+  applyMasteryToUnit(unitId);
+  renderProgress();
+  renderNav();
+  updateChapterMeta();
+  renderLanding();
+}
+
+function markLearning(unitId) {
+  if (masteryOf(unitId) === "not-started") setMastery(unitId, "learning");
+}
+
+function loadLearningState(data) {
+  const unitIds = new Set(data.chapters.flatMap((chapter) => chapter.units.map((unit) => unit.id)));
+  const storedMastery = load(STORE.mastery, null);
+  const source =
+    storedMastery && typeof storedMastery === "object" && !Array.isArray(storedMastery)
+      ? storedMastery
+      : null;
+
+  state.mastery = new Map();
+  if (source) {
+    for (const [unitId, status] of Object.entries(source)) {
+      if (unitIds.has(unitId) && MASTERY[status] && status !== "not-started") {
+        state.mastery.set(unitId, status);
+      }
+    }
+  } else {
+    // 舊版只有完成 Set；mastery key 一旦寫入，後續啟動就不再讀取舊資料。
+    const legacyDone = load(STORE.done, []);
+    for (const unitId of Array.isArray(legacyDone) ? legacyDone : []) {
+      if (unitIds.has(unitId)) state.mastery.set(unitId, "done");
+    }
+    saveMastery();
+  }
+  state.done = new Set(
+    [...state.mastery].filter(([, status]) => status === "done").map(([unitId]) => unitId),
+  );
+
+  const storedRestore = load(STORE.masteryRestore, {});
+  state.masteryRestore =
+    storedRestore && typeof storedRestore === "object" && !Array.isArray(storedRestore)
+      ? Object.fromEntries(
+          Object.entries(storedRestore).filter(
+            ([unitId, status]) => unitIds.has(unitId) && ["learning", "done"].includes(status),
+          ),
+        )
+      : {};
+
+  const questionIds = new Set(
+    data.chapters.flatMap((chapter) =>
+      chapter.units.flatMap((unit) => (unit.questions || []).map((question) => question.id)),
+    ),
+  );
+  const storedQuiz = load(STORE.quiz, {});
+  state.quiz =
+    storedQuiz && typeof storedQuiz === "object" && !Array.isArray(storedQuiz)
+      ? Object.fromEntries(
+          Object.entries(storedQuiz).filter(
+            ([questionId, record]) => questionIds.has(questionId) && Array.isArray(record?.answered),
+          ),
+        )
+      : {};
 }
 
 /** 把 course.config.json 的文案寫進 header、Hero 與頁尾 */
@@ -260,20 +368,16 @@ function rememberUnit(unitId) {
 }
 
 function toggleDone(unitId) {
-  state.done.has(unitId) ? state.done.delete(unitId) : state.done.add(unitId);
-  save(STORE.done, [...state.done]);
-  rememberUnit(unitId);
-
-  const el = $(`[data-unit="${CSS.escape(unitId)}"]`);
-  if (el) {
-    const done = state.done.has(unitId);
-    el.classList.toggle("is-done", done);
-    $(".Unit__check", el)?.setAttribute("aria-checked", String(done));
+  const current = masteryOf(unitId);
+  if (current === "review") {
+    const el = $(`[data-unit="${CSS.escape(unitId)}"]`);
+    el?.classList.add("is-open");
+    $(".Quiz", el)?.scrollIntoView({ block: "center" });
+    return;
   }
 
-  renderProgress();
-  renderNav();
-  updateChapterMeta();
+  rememberUnit(unitId);
+  setMastery(unitId, current === "done" ? "learning" : "done");
 }
 
 function updateChapterMeta() {
@@ -286,6 +390,147 @@ function updateChapterMeta() {
     const drillTotal = ch.units.reduce((n, u) => n + (u.drills?.length || 0), 0);
     $(".Chapter__meta", el).textContent =
       `${ch.units.length} 個單元${drillTotal ? ` · ${drillTotal} ${DRILL_NOUN}` : ""}${done ? ` · 已完成 ${done}` : ""}`;
+  });
+}
+
+/* --- 知識檢核 ------------------------------------------------------------ */
+
+function questionsForUnit(unitId) {
+  for (const chapter of state.course.chapters) {
+    const unit = chapter.units.find((item) => item.id === unitId);
+    if (unit) return Array.isArray(unit.questions) ? unit.questions : [];
+  }
+  return [];
+}
+
+function answeredIndexes(questionEl) {
+  return $$('input[type="radio"], input[type="checkbox"]', questionEl)
+    .filter((input) => input.checked)
+    .map((input) => Number(input.value))
+    .filter(Number.isInteger)
+    .sort((a, b) => a - b);
+}
+
+function answerIsCorrect(question, answered) {
+  const expected = (question.options || [])
+    .map((option, index) => (option.correct ? index : -1))
+    .filter((index) => index >= 0);
+  return expected.length === answered.length && expected.every((index, i) => index === answered[i]);
+}
+
+function gradeQuiz(form, questions, records) {
+  let score = 0;
+  form.classList.add("is-graded");
+
+  for (const question of questions) {
+    const questionEl = $(`[data-question="${CSS.escape(question.id)}"]`, form);
+    if (!questionEl) continue;
+    const answered = new Set(records[question.id]?.answered || []);
+    const correct = answerIsCorrect(question, [...answered].sort((a, b) => a - b));
+    if (correct) score++;
+    questionEl.classList.toggle("is-correct", correct);
+    questionEl.classList.toggle("is-incorrect", !correct);
+    questionEl.classList.remove("needs-answer");
+
+    $$("input", questionEl).forEach((input) => {
+      const optionIndex = Number(input.value);
+      input.checked = answered.has(optionIndex);
+      input.disabled = true;
+      const optionEl = input.closest(".QuizOption");
+      optionEl?.classList.toggle("is-correct", question.options?.[optionIndex]?.correct === true);
+      optionEl?.classList.toggle(
+        "is-incorrect",
+        answered.has(optionIndex) && question.options?.[optionIndex]?.correct !== true,
+      );
+    });
+  }
+
+  $('[data-action="submit-quiz"]', form).hidden = true;
+  $('[data-action="retry-quiz"]', form).hidden = false;
+  $(".Quiz__result", form).textContent = `答對 ${score}/${questions.length}`;
+  return score;
+}
+
+function resetQuizForm(form) {
+  form.classList.remove("is-graded");
+  $$(".QuizQuestion", form).forEach((questionEl) => {
+    questionEl.classList.remove("is-correct", "is-incorrect", "needs-answer");
+  });
+  $$(".QuizOption", form).forEach((optionEl) => {
+    optionEl.classList.remove("is-correct", "is-incorrect");
+  });
+  $$("input", form).forEach((input) => {
+    input.checked = false;
+    input.disabled = false;
+  });
+  $('[data-action="submit-quiz"]', form).hidden = false;
+  $('[data-action="retry-quiz"]', form).hidden = true;
+  $(".Quiz__result", form).textContent = "";
+}
+
+function submitQuiz(form) {
+  const unitId = form.closest("[data-quiz-unit]")?.dataset.quizUnit;
+  const questions = questionsForUnit(unitId);
+  if (!unitId || !questions.length) return;
+
+  markLearning(unitId);
+  const answers = {};
+  let unanswered = 0;
+  for (const question of questions) {
+    const questionEl = $(`[data-question="${CSS.escape(question.id)}"]`, form);
+    const answered = questionEl ? answeredIndexes(questionEl) : [];
+    answers[question.id] = answered;
+    questionEl?.classList.toggle("needs-answer", !answered.length);
+    if (!answered.length) unanswered++;
+  }
+
+  if (unanswered) {
+    $(".Quiz__result", form).textContent = `尚有 ${unanswered} 題未作答`;
+    $(".QuizQuestion.needs-answer input", form)?.focus();
+    return;
+  }
+
+  const now = Date.now();
+  const records = {};
+  for (const question of questions) {
+    const correct = answerIsCorrect(question, answers[question.id]);
+    records[question.id] = { answered: answers[question.id], correctAt: correct ? now : null };
+    state.quiz[question.id] = records[question.id];
+  }
+  save(STORE.quiz, state.quiz);
+
+  const score = gradeQuiz(form, questions, records);
+  if (score < questions.length) {
+    if (masteryOf(unitId) !== "review") {
+      state.masteryRestore[unitId] = masteryOf(unitId) === "done" ? "done" : "learning";
+      save(STORE.masteryRestore, state.masteryRestore);
+    }
+    setMastery(unitId, "review");
+  } else if (masteryOf(unitId) === "review") {
+    const restored = ["learning", "done"].includes(state.masteryRestore[unitId])
+      ? state.masteryRestore[unitId]
+      : "learning";
+    delete state.masteryRestore[unitId];
+    save(STORE.masteryRestore, state.masteryRestore);
+    setMastery(unitId, restored);
+  }
+}
+
+function retryQuiz(form) {
+  const unitId = form.closest("[data-quiz-unit]")?.dataset.quizUnit;
+  for (const question of questionsForUnit(unitId)) delete state.quiz[question.id];
+  save(STORE.quiz, state.quiz);
+  resetQuizForm(form);
+  $("input", form)?.focus();
+}
+
+function restoreQuizzes() {
+  $$(".Quiz__form").forEach((form) => {
+    const unitId = form.closest("[data-quiz-unit]")?.dataset.quizUnit;
+    const questions = questionsForUnit(unitId);
+    if (questions.length && questions.every((question) => state.quiz[question.id])) {
+      gradeQuiz(form, questions, state.quiz);
+    }
   });
 }
 
@@ -423,6 +668,7 @@ function goToUnit(unitId, updateHash = true) {
   setTab("course");
   el.classList.add("is-open");
   el.closest(".Chapter")?.classList.add("is-open");
+  markLearning(unitId);
   rememberUnit(unitId);
   if (updateHash && location.hash !== `#${unitId}`) location.hash = unitId;
   el.scrollIntoView({ block: "center" });
@@ -598,6 +844,19 @@ function bindEvents() {
     });
   });
 
+  // 知識檢核提交與重作
+  $("#chapters").addEventListener("submit", (e) => {
+    const form = e.target.closest(".Quiz__form");
+    if (!form) return;
+    e.preventDefault();
+    submitQuiz(form);
+  });
+
+  $("#chapters").addEventListener("click", (e) => {
+    const retry = e.target.closest('[data-action="retry-quiz"]');
+    if (retry) retryQuiz(retry.closest(".Quiz__form"));
+  });
+
   // 展開／收合 + 完成標記，統一走事件委派
   $("#chapters").addEventListener("click", (e) => {
     const check = e.target.closest('[data-action="toggle-done"]');
@@ -619,7 +878,10 @@ function bindEvents() {
           : toggle.closest(".Evidence"); // evidence 與 drillev 共用 .Evidence 外框
     const opening = !host.classList.contains("is-open");
     host.classList.toggle("is-open");
-    if (kind === "unit" && opening) rememberUnit(host.dataset.unit);
+    if (kind === "unit" && opening) {
+      markLearning(host.dataset.unit);
+      rememberUnit(host.dataset.unit);
+    }
   });
 
   // 完成標記的鍵盤操作
@@ -669,14 +931,20 @@ function bindEvents() {
 
   // 重設進度
   $("#resetProgress").addEventListener("click", () => {
-    if (!state.done.size) return;
-    if (!confirm(`確定要清除 ${state.done.size} 個單元的完成紀錄嗎？`)) return;
+    const progressCount = state.mastery.size;
+    const quizCount = Object.keys(state.quiz).length;
+    if (!progressCount && !quizCount) return;
+    if (!confirm(`確定要清除 ${progressCount} 個單元的學習進度與知識檢核紀錄嗎？`)) return;
+    const affectedUnits = [...state.mastery.keys()];
+    state.mastery.clear();
     state.done.clear();
-    save(STORE.done, []);
-    $$(".Unit").forEach((u) => {
-      u.classList.remove("is-done");
-      $(".Unit__check", u)?.setAttribute("aria-checked", "false");
-    });
+    state.masteryRestore = {};
+    state.quiz = {};
+    saveMastery();
+    save(STORE.masteryRestore, state.masteryRestore);
+    save(STORE.quiz, state.quiz);
+    affectedUnits.forEach(applyMasteryToUnit);
+    $$(".Quiz__form").forEach(resetQuizForm);
     renderProgress();
     renderNav();
     updateChapterMeta();
@@ -757,7 +1025,7 @@ async function init() {
   }
 
   state.course = data;
-  state.done = new Set(load(STORE.done, []));
+  loadLearningState(data);
   state.lastUnit = load(STORE.lastUnit, null);
 
   setConfig(data.config);
@@ -768,7 +1036,7 @@ async function init() {
   setDrillEvidence(data.drillEvidence);
 
   $("#chapters").innerHTML = data.chapters
-    .map((ch) => renderChapter(ch, state.done))
+    .map((ch) => renderChapter(ch, state.done, state.mastery))
     .join("");
 
   const stanceEl = $("#view-stance");
@@ -798,6 +1066,7 @@ async function init() {
   renderNav();
   renderMusclePanel(data);
   renderProgress();
+  restoreQuizzes();
   bindEvents();
   watchFrame();
   initResizer(load(STORE.listW, 0), (w) => save(STORE.listW, w));
@@ -854,6 +1123,7 @@ async function init() {
     if (target?.classList.contains("Unit")) {
       target.classList.add("is-open");
       target.closest(".Chapter")?.classList.add("is-open");
+      markLearning(target.dataset.unit);
       target.scrollIntoView({ block: "center" });
     } else if (target?.classList.contains("Chapter")) {
       target.classList.add("is-open");

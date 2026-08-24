@@ -1089,47 +1089,47 @@ body {
 }
 
 .Unit__check {
-  position: relative;
-  width: 24px;
-  height: 24px;
-  min-width: 44px;
-  min-height: 44px;
-  color: transparent;
-  background: transparent;
-  border: 0;
+  width: auto;
+  height: 30px;
+  min-width: 82px;
+  min-height: 30px;
+  padding: 0 10px;
+  color: var(--fgColor-muted);
+  background: var(--clinical-panel);
+  border: 1px solid color-mix(in srgb, var(--clinical-teal) 28%, var(--borderColor-default));
+  border-radius: var(--borderRadius-full);
   box-shadow: none;
 }
 
 .Unit__check::before {
-  content: "";
-  position: absolute;
-  inset: 10px;
-  background: var(--clinical-panel);
-  border: 1px solid color-mix(in srgb, var(--clinical-teal) 28%, var(--borderColor-default));
-  border-radius: 50%;
-  transition: border-color 120ms ease, background-color 120ms ease, box-shadow 120ms ease;
+  display: none;
 }
 
 .Unit__check svg {
-  position: relative;
-  z-index: 1;
+  position: static;
 }
 
-.Unit__check:hover::before {
+.Unit__check:hover {
   border-color: var(--clinical-teal);
 }
 
 .Unit.is-done .Unit__check {
   color: #032424;
-  background: transparent;
-  border: 0;
-  box-shadow: none;
-}
-
-.Unit.is-done .Unit__check::before {
   background: var(--clinical-teal-bright);
   border-color: var(--clinical-teal-bright);
   box-shadow: 0 0 14px rgb(53 224 208 / 22%);
+}
+
+.Unit.is-learning .Unit__check {
+  color: var(--fgColor-accent);
+  background: var(--bgColor-accent-muted);
+  border-color: var(--borderColor-accent-emphasis);
+}
+
+.Unit.is-review .Unit__check {
+  color: var(--fgColor-danger);
+  background: var(--bgColor-danger-muted);
+  border-color: var(--fgColor-danger);
 }
 
 .Unit__kicker {
@@ -1997,8 +1997,10 @@ a:hover > .PlayBtn,
   }
 
   .Unit__check {
-    width: 44px;
-    height: 44px;
+    width: auto;
+    height: 34px;
+    min-width: 78px;
+    min-height: 34px;
   }
 
   .Unit__title .Label {
