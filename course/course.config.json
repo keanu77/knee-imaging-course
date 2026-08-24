@@ -160,6 +160,11 @@
       "id": "radiograph-demo",
       "label": "X 光判讀",
       "tone": "success"
+    },
+    {
+      "id": "mri-demo",
+      "label": "MRI 判讀",
+      "tone": "attention"
     }
   ],
   "learningTiers": [
@@ -229,6 +234,13 @@
       "chapters": [
         "CH8",
         "CH9"
+      ]
+    },
+    {
+      "title": "MRI 判讀",
+      "chapters": [
+        "CH10",
+        "CH11"
       ]
     }
   ],
@@ -308,6 +320,22 @@
     {
       "code": "CH9",
       "title": "X 光：常見病理與判讀陷阱",
+      "icon": "microscope",
+      "source": "syllabus",
+      "units": 1,
+      "drills": 4
+    },
+    {
+      "code": "CH10",
+      "title": "MRI：序列邏輯與系統性判讀",
+      "icon": "layers",
+      "source": "syllabus",
+      "units": 1,
+      "drills": 4
+    },
+    {
+      "code": "CH11",
+      "title": "MRI：常見病理與證據邊界",
       "icon": "microscope",
       "source": "syllabus",
       "units": 1,
