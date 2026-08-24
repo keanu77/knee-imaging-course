@@ -17,7 +17,7 @@
     "  note                      字幕訛誤與採用的標準命名",
     "  segments[]                start / end / title / summary / detail[]",
     "",
-    "簽核用 approve_segments.py，會寫入 reviewed_by / reviewer_role /",
+    "簽核用 approve.py（src/build），會寫入 reviewed_by / reviewer_role /",
     "reviewed_at / reviewed_commit 追溯欄位。"
   ],
   "videos": [
@@ -2516,6 +2516,169 @@
             "平坦的 trochlea、較大的 lateral patellar facet 與 lateralized tibial tuberosity 是病例中提及的髕骨脫位風險因素。",
             "Baker's cyst 位於 medial gastrocnemius tendon 與 semimembranosus tendon 之間；破裂時可見大量液體向外延伸並造成急性疼痛與水腫。",
             "PD fat-saturated 影像凸顯液體與水腫，可利用挫傷分布辨識 pivot-shift、hyperextension 或 lateral patellar dislocation 等損傷模式。"
+          ]
+        }
+      ]
+    },
+    {
+      "video_url": "https://www.youtube.com/watch?v=c94RHHuh1pU",
+      "review_status": "draft",
+      "transcript_verified_at": "2026-08-25",
+      "transcript_source": "yt-dlp 自動字幕（en, VTT）2026-08-25 實抓；初稿由協作 agent 依逐字稿產生，主編抽驗段界與臨床內容對照原文",
+      "note": "自動字幕訛誤已於筆記改採標準命名：popital puppeteers tendon→popliteus tendon；cruise ship／crucial ligaments→cruciate ligaments；semi-remonosus→semimembranosus；medial novel patellar retinacula→medial and lateral patellar retinacula；pivot shipped→pivot shift。全片為診斷判讀與病例，無介入內容。",
+      "segments": [
+        {
+          "start": "00:00",
+          "end": "00:22",
+          "title": "講者介紹與膝部MRI課程目標",
+          "summary": "運動影像放射科醫師簡介膝部MRI解讀，將依平面講解基本解剖並帶入案例。",
+          "detail": [
+            "講者為 musculoskeletal radiologist，任職德州達拉斯 UT Southwestern 的 sports imaging 主任",
+            "本課程為膝部 MRI 解讀的簡要入門",
+            "內容包含依平面的基本解剖判讀，以及簡短案例回顧"
+          ]
+        },
+        {
+          "start": "00:23",
+          "end": "01:21",
+          "title": "冠狀面脂肪抑制：前方解剖與money plane",
+          "summary": "冠狀面由前而後先看patella與伸膝裝置，並因可同時評估多條關鍵結構而被稱為money plane。",
+          "detail": [
+            "冠狀面由前向後掃讀，本段為 fat sat 影像",
+            "最前切面可見 patella，可評估 bipartite patella 或 patellar fracture；並可見 quadriceps tendon、patellar tendon 與 medial retinaculum 附著",
+            "稍後可見應呈均勻黑色且連續的 MCL、iliotibial band、內外側 compartment cartilage、ACL 遠端附著、PCL 近端附著，以及應呈均勻黑色、內緣銳利的 meniscus",
+            "因可在此平面同時評估上述關鍵結構，放射科醫師 David Stoller 稱之為 money plane"
+          ]
+        },
+        {
+          "start": "01:22",
+          "end": "02:44",
+          "title": "冠狀面：ACL近端覆蓋、LCL斜走向與後根撕裂",
+          "summary": "外側notch應被ACL起點覆蓋以助近端撕裂判斷；正常後根應潛入脛骨內緣，被積液完全掀開則符合radial tear。",
+          "detail": [
+            "更後方可見 medial meniscus 的 posterior horn 與 root、lateral meniscus body、compartment cartilage、遠端 PCL，以及 ACL 近端附著",
+            "外側 notch 整個外側面應被 ACL origin 覆蓋，有助評估 proximal ACL tear",
+            "LCL 可見近端附著，正常時單一切面通常看不到完整遠端；本例因有 ACL tear，故能在一刀見到 LCL 由前向後的 oblique orientation",
+            "正常兩側 posterior root 應 diving 進入 tibia 內緣，並可見 PCL、LCL 遠端附著與 proximal tibiofibular joint；對照例後內側 meniscus 未潛入、完全被積液覆蓋，符合 complete radial tear"
+          ]
+        },
+        {
+          "start": "02:45",
+          "end": "04:09",
+          "title": "矢狀面內側：半月板、capsular junction與ghost sign",
+          "summary": "由內側評估軟骨與內緣銳利的半月板，並以有無後方積液、speckled外觀與ghost sign區分正常與撕裂。",
+          "detail": [
+            "矢狀面由內向外；內側切面可見 medial compartment cartilage，以及內緣銳利的 medial meniscus 前、後角",
+            "正常 meniscocapsular junction：medial meniscus posterior horn 後方不應有積液或水腫",
+            "anterior root 在 medial tibial plateau 可有正常外觀；posterior root 可有正常 speckled appearance，勿誤認為撕裂；此區亦可見起源處呈黑色且連續的 PCL",
+            "對照：meniscocapsular separation 時後角後方有積液與水腫；posterior root 處半月板缺如稱為 ghost sign，提示 radial root tear"
+          ]
+        },
+        {
+          "start": "04:10",
+          "end": "05:30",
+          "title": "矢狀面：十字韌帶、伸膝裝置與脂肪墊滑囊",
+          "summary": "切至notch評估ACL／PCL的張力與訊號，並檢視patellofemoral關節、肌腱厚度與積液好發位置。",
+          "detail": [
+            "靠近 notch 可見整條 PCL 應連續、均勻深色；正常 ACL 呈 striated、taut 且 dark",
+            "patellar tendon 應連續、深色，厚度約 6–7 mm；quadriceps tendon 因 rectus femoris、vastus intermedius、vastus lateralis 與 vastus medialis 匯合而呈正常 trilaminar 外觀",
+            "quadriceps 後方為 retroquadriceps／suprapatellar fat pad，再後為 prefemoral fat pad，兩者之間的 suprapatellar recess 是 effusion 積聚處",
+            "尚可見 prepatellar bursa、superficial 與 deep infrapatellar bursa，以及 Hoffa's fat pad；後者可在先前 arthroscopy 後出現 scarring，或在 superolateral 出現水腫"
+          ]
+        },
+        {
+          "start": "05:31",
+          "end": "06:36",
+          "title": "矢狀面外側：半月板、後關節囊與LCL",
+          "summary": "外側切面評估lateral meniscus前後根與本體、軟骨、後關節囊，以及biceps femoris與斜走向LCL。",
+          "detail": [
+            "此切面開始可見 lateral meniscus posterior root 與 ACL 外側份",
+            "lateral meniscus anterior root 可因與 ACL 纖維交織而呈 speckled appearance，屬正常、勿誤認為撕裂；後根亦清楚可見",
+            "更外側可見內緣銳利的 lateral meniscus、lateral compartment cartilage、posterior capsule，以及 proximal tibiofibular joint 與 meniscus body",
+            "周邊 body 切面可見 biceps femoris tendon 止點，以及由前向後走的 LCL oblique orientation"
+          ]
+        },
+        {
+          "start": "06:37",
+          "end": "07:15",
+          "title": "非脂肪抑制矢狀面：脛骨平台形態辨側",
+          "summary": "非脂肪抑制上內側平台微凹如谷、外側較凸如槍柄，即使未見腓骨頭也能依關節面形狀判斷外側。",
+          "detail": [
+            "此為 condensed 的 non-fat sat sagittal 影像",
+            "內側 tibial articular surface 呈 mildly concave，被比喻為 valley",
+            "外側 tibial plateau 較 convex，被比喻為 gun handle",
+            "若未見到 fibular head，可依關節面形狀判斷何側為 lateral；同序列亦可見 non-fat sat 上正常 ACL 呈均勻深色"
+          ]
+        },
+        {
+          "start": "07:16",
+          "end": "09:03",
+          "title": "軸狀面：髕股關節、Baker cyst、後關節囊與TT-TG",
+          "summary": "由上而下看trochlear dysplasia、十字韌帶與Baker cyst，並在遠端對照後關節囊扭傷、評估pes anserine bursitis與TT-TG。",
+          "detail": [
+            "軸狀面由上而下可見 quadriceps tendon、伸膝裝置與 popliteal neurovascular bundle；non-fat sat 因脂肪與韌帶對比，能清楚顯示 patellar articulation，評估 trochlear dysplasia、medial／lateral retinacula、軟骨、肌群與後方血管束",
+            "更遠端可見 popliteus tendon、cruciate ligaments 的 origin 與 mid portion（ACL 與 PCL）；Baker's cyst 位於 semimembranosus 與 medial gastrocnemius tendons 之間，posterior capsule 在 non-fat sat 上更好描繪",
+            "posterior capsular sprain 呈現完全 frayed，對照正常 posterior capsule；更遠端 pes anserine tendons 可評估 bursitis",
+            "在 distal patellar tendon 附著處可測量 TT-TG distance，與 patellofemoral maltracking 有關，並可觀察 proximal tibiofibular joint"
+          ]
+        },
+        {
+          "start": "09:04",
+          "end": "09:48",
+          "title": "三平面最佳觀察結構總表",
+          "summary": "冠狀面最適合側副韌帶與後根，矢狀面最適合伸膝裝置與十字韌帶，軸狀面最適合髕股軟骨、retinacula與Baker cyst。",
+          "detail": [
+            "Coronal：最能看 collateral ligaments（MCL、LCL），其次 ACL／PCL、meniscus（尤其 posterior roots）、內外側 cartilage，以及 proximal tibiofibular joint",
+            "Sagittal：最適合 extensor mechanism、Hoffa's fat pad、ACL、PCL、三 compartment cartilage、effusion，以及 biceps femoris 與 LCL insertion",
+            "Axial：最適合 patellofemoral cartilage、retinacula、effusion、Baker cyst、popliteus tendon 與 posterior capsule"
+          ]
+        },
+        {
+          "start": "09:49",
+          "end": "10:41",
+          "title": "案例：脂肪抑制與非脂肪抑制評估ACL撕裂",
+          "summary": "脂肪抑制上ACL失去taut striated外觀且外側notch遠端未被覆蓋；非脂肪抑制因對比更能顯示近半ACL幾乎消失。",
+          "detail": [
+            "Fat sat 矢狀與冠狀：ACL 沒有正常 taut、striated 外觀，至少為 partial tear，近端外觀亦不正常",
+            "冠狀面外側 notch 本應被 ACL 纖維完全覆蓋，本例遠端未被覆蓋",
+            "Non-fat sat 因脂肪與韌帶對比，可見約一半 ACL 幾乎消失，顯示更清楚",
+            "此例強調 non-fat sat 對評估 ligamentous integrity 的重要性"
+          ]
+        },
+        {
+          "start": "10:42",
+          "end": "11:31",
+          "title": "案例：pivot shift造成ACL完全斷裂",
+          "summary": "19歲男性pivot shift後ACL近端完全中斷，並見外側kissing contusion、meniscocapsular separation與後角撕裂。",
+          "detail": [
+            "19 歲男性 pivot shift injury：ACL 自近端完全 disrupted，輪廓 undulating 且水腫",
+            "冠狀面可見 origin 仍 intact，但其稍遠端即缺如",
+            "外側 compartment 的 kissing bone contusions 為這類損傷的典型表現",
+            "併有 meniscocapsular separation、後內側脛骨 bone bruise，以及 posterior horn 的小垂直 undersurface tear"
+          ]
+        },
+        {
+          "start": "11:32",
+          "end": "12:49",
+          "title": "案例：近乎完全ACL撕裂合併MCL與外側半月板損傷",
+          "summary": "47歲男性ACL失去striated外觀、外側notch無纖維覆蓋，關節鏡為near complete tear，並合併近端MCL撕脫與外側半月板周邊縱裂。",
+          "detail": [
+            "ACL 瀰漫水腫、失去正常 striated 外觀；冠狀面外側 notch 應被 ACL 纖維覆蓋處完全缺如，並見 fluid signal，符合 near complete tear",
+            "關節鏡報告為 near complete tear，講者認為可能因外側遠端仍有少許殘餘纖維",
+            "同時有 MCL 的 high-grade tear，近端附著幾乎完全 avulsed 且水腫",
+            "另有 lateral tibial plateau contusion，以及 lateral meniscus posterior horn 的 peripheral longitudinal tear"
+          ]
+        },
+        {
+          "start": "12:50",
+          "end": "14:14",
+          "title": "案例：PCL全層撕裂後癒合與高強度扭傷",
+          "summary": "一例PCL全層撕裂數年後癒合恢復正常外觀；另一例PCL超過6–7 mm並近端纖維不清，為高強度扭傷，並見grade 4髕骨軟骨軟化。",
+          "detail": [
+            "47 歲男性滑冰時 valgus injury：PCL 失去正常外觀，mid portion 全層撕裂、水腫且輪廓 undulating；non-fat sat 可見韌帶纖維中斷；數年後追蹤已癒合、外觀恢復正常",
+            "48 歲男性：PCL 應僅 6–7 mm，現為瀰漫增厚，近端纖維水腫且界限不清，為 high-grade tear／sprain",
+            "同一病人約 10 年前舊 MRI 可作 internal control，當時 PCL 完全黑色且連續",
+            "此病人同時有 grade 4 patellar chondromalacia，伴隨 high-grade fissures 與 subchondral cysts"
           ]
         }
       ]

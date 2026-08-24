@@ -8,7 +8,7 @@
     "reference_ids[]（必須存在於 syllabus reference_catalog）、difficulty（core|advanced）。",
     "內容紅線：題幹與解析只能出自該單元已寫入的教學內容與引用文獻；不得引入單元外知識；",
     "禁止絕對化療效語句；診斷限定範圍內不出介入操作題。",
-    "簽核用 approve_questions.py（沿用 approve_segments.py 模式），寫入 reviewed_by／",
+    "簽核用 approve_questions.py（沿用 approve.py（src/build） 模式），寫入 reviewed_by／",
     "reviewer_role／reviewed_at／reviewed_commit。"
   ],
   "units": {
