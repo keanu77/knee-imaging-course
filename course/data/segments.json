@@ -2682,6 +2682,135 @@
           ]
         }
       ]
+    },
+    {
+      "video_url": "https://www.youtube.com/watch?v=DoyfsqfuLAw",
+      "review_status": "draft",
+      "transcript_verified_at": "2026-08-25",
+      "transcript_source": "yt-dlp 自動字幕（en, VTT）2026-08-25 實抓；初稿由協作 agent 依逐字稿產生，主編抽驗段界與臨床內容對照原文",
+      "note": "自動字幕大致可讀；關鍵判準已對原文核對：撕裂判準（訊號延伸至關節面、兩連續切面）、discoid 中線冠狀面 >14mm、Humphrey／transverse ligament 假撕裂陷阱。全片為診斷判讀，無介入內容。",
+      "segments": [
+        {
+          "start": "00:02",
+          "end": "00:33",
+          "title": "講者介紹與本集學習目標",
+          "summary": "Johns Hopkins 的 MSK radiologist 介紹本集將以 MRI 講解內外側半月板的正常型態、變異與病理光譜。",
+          "detail": [
+            "講者為 Johns Hopkins University 的 MSK radiologist，本集屬如何判讀 MRI 的 Essentials 系列",
+            "主題為 medial meniscus 與 lateral meniscus",
+            "本日先看正常型態與型態變異，再說明 MRI 所見的 meniscal pathology 光譜",
+            "講者提及無關的 disclosures"
+          ]
+        },
+        {
+          "start": "00:34",
+          "end": "01:28",
+          "title": "正常半月板 MRI 訊號與解剖組成",
+          "summary": "年輕受檢者的正常半月板由 fibrocartilage 組成，在所有序列皆呈低訊號，且內側半月板較外側大。",
+          "detail": [
+            "meniscus 由 fibrocartilage 組成，因此在所有序列皆呈 hypointense",
+            "medial meniscus 的 posterior horn 與 anterior horn，在 intermediate weighted 或 fat sensitive sequence 以及 fluid sensitive sequence 皆為低訊號",
+            "body 常在 coronal images 看得較清楚",
+            "medial meniscus 大於 lateral meniscus；兩者皆由 anterior root、horn、body、posterior root 與 posterior horn 組成"
+          ]
+        },
+        {
+          "start": "01:29",
+          "end": "02:29",
+          "title": "半月板走讀、transverse ligament 與 Humphrey ligament",
+          "summary": "依序辨識內側半月板各部，並指出 transverse ligament 與位於 PCL 前方的 Humphrey meniscofemoral ligament 為需認識的正常構造。",
+          "detail": [
+            "內側依序可見 posterior root、posterior horn、body、anterior horn 與 anterior root",
+            "transverse ligament 連接內、外側半月板的 anterior horn，coronal 與 sagittal 皆可見，屬正常構造",
+            "meniscofemoral ligament 由 lateral meniscus 的 posterior horn 連至 femur，可有一或兩條 band",
+            "本例為單一 band，即 ligament of Humphrey；口訣是 H 在 W 之前，故 Humphrey 位於 PCL 前方"
+          ]
+        },
+        {
+          "start": "02:30",
+          "end": "03:32",
+          "title": "3D 序列複習與外側半月板易誤判構造",
+          "summary": "以 3D 序列再次辨識半月板各部，並提醒外側 anterior root 可呈裂隙外觀，以及 popliteomeniscal fascicles 與 popliteal hiatus。",
+          "detail": [
+            "3D sequence 可見內外側的 body、posterior horn、root、anterior horn，以及常見、於 coronal 與 sagittal 皆可見的 transverse ligament",
+            "lateral meniscus 的 anterior root attachment 有時可稍呈 fissured，勿輕易診斷孤立的 anterior tear",
+            "檢視外側 posterior root 與 posterior horn 時，常可見 posterior superior 與 inferior popliteomeniscal fascicles",
+            "辨識地標為 popliteal hiatus，該處可見 popliteal tendon"
+          ]
+        },
+        {
+          "start": "03:33",
+          "end": "05:08",
+          "title": "Fascicle 擬似撕裂、root 變異與 discoid meniscus",
+          "summary": "後下 popliteomeniscal fascicle 可能像撕裂、外側 anterior root 水平分裂屬正常變異，中段 coronal 寬度超過 14 mm 即符合 discoid meniscus。",
+          "detail": [
+            "sagittal 可見 posterior superior 與 inferior popliteomeniscal fascicles；poster inferior fascicle 有時可模擬 tear，但未確實連通 inferior articular surface",
+            "若不確定、或未在連續兩張 slices 連通，診斷準確度會下降",
+            "lateral meniscus anterior root attachment 可呈 horizontal split，屬 normal variant",
+            "內側呈三角形且 body 會變窄；本例外側 body 幾乎不變窄、近 2 cm。mid coronal section 超過 14 mm 即符合 discoid meniscus，較常發生撕裂"
+          ]
+        },
+        {
+          "start": "05:09",
+          "end": "06:00",
+          "title": "撕裂診斷標準與內側水平撕裂",
+          "summary": "撕裂標準為異常訊號延伸至上或下關節面；本例內側 body 與 posterior horn 為臨床常見的 horizontal tear。",
+          "detail": [
+            "meniscal tear 的標準是 abnormal signal 延伸至 inferior 或 superior surface",
+            "本例 medial meniscus 於 sagittal 見異常訊號將半月板分成上、下兩半，coronal 亦見訊號到達表面",
+            "診斷為 medial meniscus body 與 posterior horn 的 horizontal tear，為臨床常見類型",
+            "本例異常訊號確實 surfacing，診斷沒有不確定性"
+          ]
+        },
+        {
+          "start": "06:01",
+          "end": "07:55",
+          "title": "後根完全 radial tear 與繼發徵象",
+          "summary": "對照正常外側半月板後，以 extrusion、shiny corner、ghost sign 等繼發徵象支持內側 posterior root 的完全 radial tear。",
+          "detail": [
+            "對照正常 lateral meniscus：各序列 hypointense、三角形型態，可見 anterior root／horn、body、posterior horn 與 root attachment",
+            "內側超出 tibia 邊緣 3 mm 為 extrusion，屬支持撕裂的 secondary sign；tibial plateau 的 subchondral bone marrow edema（menisco-osteochondral unit dysfunction，有人稱為 shiny corner of the knee）亦為繼發徵象",
+            "往後可見 frank fluid signal，以及穿過 posterior root attachment 的 vertical line",
+            "sagittal 由遠內側掃向 notch：看不見 posterior horn 為 ghost sign，且無完整 root attachment，診斷為 posterior root 的 complete radial tear"
+          ]
+        },
+        {
+          "start": "07:56",
+          "end": "08:40",
+          "title": "不完整水平撕裂與位移 flap 碎片",
+          "summary": "臨床疑內側撕裂的較年長病人，MRI 見未完全的水平撕裂，並有位移碎片落入 meniscotibial recess。",
+          "detail": [
+            "異常訊號延伸至 inferior articular surface，符合 MRI 撕裂標準",
+            "整體為 incomplete、predominantly horizontal tear",
+            "由 body 前方往後捲動：前方較平滑，後方出現 displaced fragment",
+            "診斷為 horizontal flap tear，位移碎片位於 meniscotibial recess"
+          ]
+        },
+        {
+          "start": "08:41",
+          "end": "10:18",
+          "title": "外側 bucket handle tear 與 ramp lesion",
+          "summary": "末例在 ACL tear 背景下，外側半月板呈大型 bucket handle tear，內側 meniscocapsular 積液為具臨床意義的 ramp lesion。",
+          "detail": [
+            "中線影像已見 ACL tear；lateral meniscus 異常訊號達 inferior articular surface，body 失去三角形、過多組織突向中線，疑大片 flap fragment",
+            "sagittal 見 posterior horn 完全缺失、出現兩個 anterior horns，診斷為 lateral meniscus 的大型 bucket handle tear，並可見 femur 與 tibia 的 bone contusions",
+            "ACL 缺損或 ACL tear 時，meniscocapsular attachment 出現 frank fluid signal，屬特殊的 meniscocapsular separation，稱為 ramp lesion",
+            "ramp lesion 具臨床意義；該處不應有積液，判讀時需特別注意"
+          ]
+        },
+        {
+          "start": "10:19",
+          "end": "11:30",
+          "title": "診斷標準回顧、報告要素與結論",
+          "summary": "回顧撕裂診斷需訊號到達表面或型態異常，discoid 以中線 coronal 超過 14 mm 為準，報告應寫明撕裂型態、位置與位移碎片。",
+          "detail": [
+            "診斷標準：abnormal signal 到達單側或雙側表面，或 abnormal morphology；判讀型態異常前須先熟悉正常變異與額外 attachments",
+            "discoid meniscus 最實用的標準是 midline coronal 量到半月板超過 14 mm",
+            "異常訊號須在超過一張 slice 見到，僅用單一切面時準確度會明顯下降",
+            "報告宜寫 tear pattern、位置與受累部位、週邊或各 zone 受累、以及是否有 displaced fragment；MRI 對內外側半月板撕裂偵測很有用且準確"
+          ]
+        }
+      ]
     }
   ]
 }
