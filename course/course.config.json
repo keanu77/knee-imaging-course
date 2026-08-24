@@ -155,6 +155,11 @@
       "id": "classic",
       "label": "經典大師",
       "tone": "attention"
+    },
+    {
+      "id": "radiograph-demo",
+      "label": "X 光判讀",
+      "tone": "success"
     }
   ],
   "learningTiers": [
@@ -217,6 +222,13 @@
       "chapters": [
         "CH6",
         "CH7"
+      ]
+    },
+    {
+      "title": "X 光判讀",
+      "chapters": [
+        "CH8",
+        "CH9"
       ]
     }
   ],
@@ -284,6 +296,22 @@
       "source": "syllabus",
       "units": 1,
       "drills": 1
+    },
+    {
+      "code": "CH8",
+      "title": "X 光：照射位選擇與系統性判讀",
+      "icon": "scan-line",
+      "source": "syllabus",
+      "units": 1,
+      "drills": 3
+    },
+    {
+      "code": "CH9",
+      "title": "X 光：常見病理與判讀陷阱",
+      "icon": "microscope",
+      "source": "syllabus",
+      "units": 1,
+      "drills": 4
     }
   ],
   "audit": {

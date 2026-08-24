@@ -92,13 +92,13 @@
       "last_verified": "2026-08-01"
     },
     "REF-ACR-CHRONIC-KNEE-2026": {
-      "title": "ACR Appropriateness Criteria Chronic Knee Pain: 2026 Update",
+      "title": "ACR Appropriateness Criteria® Chronic Knee Pain: Update 2026",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42340275/",
       "organization": "American College of Radiology",
       "journal": "Journal of the American College of Radiology",
       "year": 2026,
-      "type": "appropriateness guideline",
-      "last_verified": "2026-08-01"
+      "type": "practice guideline",
+      "last_verified": "2026-08-25"
     },
     "REF-ACR-ACUTE-KNEE-2020": {
       "title": "ACR Appropriateness Criteria Acute Trauma to the Knee",
@@ -127,6 +127,33 @@
       "year": 2026,
       "type": "documentation practice parameter",
       "last_verified": "2026-08-01"
+    },
+    "REF-OTTAWA-STIELL-1996": {
+      "title": "Prospective validation of a decision rule for the use of radiography in acute knee injuries",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8594242/",
+      "organization": null,
+      "journal": "JAMA",
+      "year": 1996,
+      "type": "validation study（classic：Ottawa knee rule 原始驗證，沿用至今之判準）",
+      "last_verified": "2026-08-25"
+    },
+    "REF-KL-1957": {
+      "title": "Radiological assessment of osteo-arthrosis",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/13498604/",
+      "organization": null,
+      "journal": "Annals of the Rheumatic Diseases",
+      "year": 1957,
+      "type": "classification（classic：Kellgren–Lawrence 分級原典，現行 OA 影像分級仍以此為準）",
+      "last_verified": "2026-08-25"
+    },
+    "REF-ROSENBERG-1988": {
+      "title": "The forty-five-degree posteroanterior flexion weight-bearing radiograph of the knee",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/3198672/",
+      "organization": null,
+      "journal": "Journal of Bone and Joint Surgery (Am)",
+      "year": 1988,
+      "type": "technique study（classic：Rosenberg view 原典）",
+      "last_verified": "2026-08-25"
     }
   },
   "stance": [
@@ -851,6 +878,300 @@
           "reviewer_role": "復健科專科醫師",
           "reviewed_at": "2026-08-16",
           "reviewed_commit": "43b138ccb6358b75d766657ab020207e64756483"
+        }
+      ]
+    },
+    {
+      "chapter": "CH8",
+      "title": "X 光：照射位選擇與系統性判讀",
+      "units": [
+        {
+          "id": "ch8-u1",
+          "name": "照射位選擇、Ottawa rule 與系統性判讀順序",
+          "type": "protocol",
+          "level": "foundation",
+          "review_status": "draft",
+          "summary": "從臨床問題出發決定要不要照、照哪些位：急性創傷以 Ottawa knee rule 判斷是否需要 X 光；退化性與慢性疼痛以承重像評估關節間隙。建立 weight-bearing AP、lateral、skyline／Merchant、tunnel／Rosenberg 各照射位的技術條件與適應症，並以固定順序（對位→骨質→關節間隙→軟組織）完成系統性判讀。",
+          "objectives": [
+            "以 Ottawa knee rule 五項判準決定急性膝創傷是否需要 X 光，並說明其高敏感度、中低特異度的臨床意涵。",
+            "說明 weight-bearing AP、lateral、skyline／Merchant 與 tunnel／Rosenberg 各照射位的擺位技術、束角與主要適應症。",
+            "解釋承重與非承重像在關節間隙評估上的差異，以及 Rosenberg view 對股骨後髁軟骨磨損的價值。",
+            "以固定的系統性順序完成判讀：對位與力線→骨皮質與骨質→三腔室關節間隙→軟組織與積液。"
+          ],
+          "required_views": [
+            "雙側站立承重 AP：力線、內外側腔室關節間隙、骨刺與軟骨下硬化的對照評估。",
+            "屈膝約 30 度 lateral：髕骨高度（patella alta／baja）、髕上隱窩積液、股骨髁輪廓；水平束時評估脂肪液平（lipohemarthrosis）。",
+            "Skyline／Merchant（屈膝約 45 度、由上往下束）：髕股關節間隙、髕骨傾斜與半脫位。",
+            "PA 45 度屈膝承重（Rosenberg）：股骨後髁承重區的關節間隙狹窄，對中後段軟骨磨損較伸直 AP 敏感。",
+            "Tunnel／notch view（必要時）：髁間窩游離體與 osteochondritis dissecans 好發部位。"
+          ],
+          "key_points": [
+            "Ottawa knee rule（年齡≥55、孤立髕骨壓痛、腓骨頭壓痛、無法屈曲 90 度、傷後與急診皆無法負重走四步）對骨折敏感度接近 99%，陰性可安全不照；特異度約五成，陽性不等於骨折。",
+            "非承重像會系統性低估關節間隙狹窄；評估退化性變化一律以站立承重像為準。",
+            "只照 AP＋lateral 會漏掉髕股腔室與股骨後髁病灶；慢性膝痛的基本組合應含 skyline 與 Rosenberg。",
+            "固定的判讀順序能防止 satisfaction of search——找到一個病灶就停下來是漏診的主要來源。"
+          ],
+          "pitfalls": [
+            "在急性創傷片上只找骨折線，漏掉關節積液與 lipohemarthrosis 這類關節內骨折的間接徵象。",
+            "用仰臥 AP 評估關節間隙後宣稱「無明顯狹窄」。",
+            "髕股疼痛病人未加照 skyline，僅以 lateral 評估髕股關節。",
+            "X 光陰性即排除骨折——隱匿性脛骨平台與應力性骨折在初次 X 光常為陰性，臨床高度懷疑時需 CT 或 MRI 升級。"
+          ],
+          "assessment": "題目：給三個病例（急性扭傷可負重、55 歲以上跌倒後無法負重、慢性內側膝痛），請分別決定是否照 X 光、開立哪些照射位並說明理由；再以系統性順序口述其中一組影像的判讀。合格標準：Ottawa 判準應用正確；照射位選擇含承重像與髕股評估；判讀依固定順序完成且提及積液與間接徵象。",
+          "reference_ids": [
+            "REF-ACR-ACUTE-KNEE-2020",
+            "REF-ACR-CHRONIC-KNEE-2026",
+            "REF-OTTAWA-STIELL-1996",
+            "REF-ROSENBERG-1988"
+          ],
+          "drills": [
+            {
+              "kind": "radiograph-demo",
+              "learning_tier": "core",
+              "curation_status": "provisional",
+              "last_verified_at": "2026-08-25",
+              "contains_intervention": false,
+              "intervention_start_timestamp": null,
+              "diagnostic_segment_range": null,
+              "original_content_date": "2024-04-04",
+              "date_note": "AMSSM 學會官方頻道原始上傳，以上架日 2024-04-04 為內容日期。",
+              "classic_exception": false,
+              "embed_status": "playable_in_embed=true; YouTube oEmbed 200",
+              "playback_status": "public; yt-dlp playback confirmed 2026-08-25",
+              "disclosure": "YouTube 說明未載商業揭露；不據此推定沒有利益關係。",
+              "name": "AMSSM 膝部 X 光判讀模組",
+              "title": "Knee | MSK Radiology: X-Ray Educational Modules for Primary Care Residents",
+              "url": "https://www.youtube.com/watch?v=di63ofJq7XU",
+              "why": "AMSSM 2024 官方教材：承重 AP／lateral／sunrise 照射位、系統性判讀順序（對位→骨皮質→骨質→關節間隙與軟組織）與 OA、Segond 等常見所見，適合作 X 光模組的骨架影片。",
+              "scope_note": "片中 7:13–7:28 與 9:09–9:25 為治療選項的口頭敘述（注射、置換），非操作示範；本課僅取判讀內容，治療決策不在課程範圍。sunrise 未細分 Merchant 技術參數，補充見同單元 Chen 影片。",
+              "presenter": "Kendra McCamey, MD；Steve Albrechta, MD",
+              "presenter_qualification": "皆為 Ohio State Wexner Medical Center 運動醫學醫師；McCamey 為該院 sports medicine fellowship director。",
+              "qualification_evidence_url": "https://wexnermedical.osu.edu/find-a-doctor/kendra-mccamey-100000225",
+              "duration": "11:26",
+              "channel": "The AMSSM",
+              "upload_date": "2024-04-04",
+              "target": "照射位與系統性判讀骨架",
+              "source_authority": "professional-society-original"
+            },
+            {
+              "kind": "radiograph-demo",
+              "learning_tier": "extension",
+              "curation_status": "provisional",
+              "last_verified_at": "2026-08-25",
+              "contains_intervention": false,
+              "intervention_start_timestamp": null,
+              "diagnostic_segment_range": null,
+              "original_content_date": "2017-03-04",
+              "date_note": "2017-03-04 上架，早於 2021-08-01 cutoff。classic 例外理由：2021 後公開 YouTube 未找到同等具名醫師、可核對字幕、專講 Rosenberg／Merchant 技術的替代影片。",
+              "classic_exception": true,
+              "embed_status": "playable_in_embed=true; YouTube oEmbed 200",
+              "playback_status": "public; yt-dlp playback confirmed 2026-08-25",
+              "disclosure": "YouTube 說明未載商業揭露；不據此推定沒有利益關係。",
+              "name": "Merchant 與 Rosenberg view 技術與適應症",
+              "title": "Radiographs of the Knee for the Primary Care Physician",
+              "url": "https://www.youtube.com/watch?v=-AxgSwjn1q0",
+              "why": "候選中唯一由具名骨科醫師把 Merchant（屈膝 45 度、由上往下束）與 PA Rosenberg（屈膝 45 度、束下傾 10 度）的技術條件與臨床適應症講清楚的影片，直接補 AMSSM 模組的照射位缺口。",
+              "scope_note": "全片為照射位技術與適應症說明，無介入內容。",
+              "presenter": "James L. Chen, MD",
+              "presenter_qualification": "骨科與骨科運動醫學雙專科認證；San Francisco Sports Medicine Fellowship director。",
+              "qualification_evidence_url": "https://www.aosportsmed.com/james-l-chen",
+              "duration": "4:17",
+              "channel": "James Chen, MD: Advanced Orthopaedics & Sports Medicine",
+              "upload_date": "2017-03-04",
+              "target": "Merchant／Rosenberg 技術與適應症",
+              "source_authority": "expert-owned-original",
+              "classic_exception_reason": "2017 年影片，早於 2021-08-01 cutoff。2021 後公開 YouTube 未找到同等具名醫師、可核對字幕、專講 Merchant／Rosenberg 技術與適應症的替代影片；此為課程標準照射位的必要缺口。"
+            },
+            {
+              "kind": "radiograph-demo",
+              "learning_tier": "extension",
+              "curation_status": "provisional",
+              "last_verified_at": "2026-08-25",
+              "contains_intervention": false,
+              "intervention_start_timestamp": null,
+              "diagnostic_segment_range": null,
+              "original_content_date": "2023-07-29",
+              "date_note": "講者本人頻道原始上傳，以上架日 2023-07-29 為內容日期。",
+              "classic_exception": false,
+              "embed_status": "playable_in_embed=true; YouTube oEmbed 200",
+              "playback_status": "public; yt-dlp playback confirmed 2026-08-25",
+              "disclosure": "YouTube 說明未載商業揭露；不據此推定沒有利益關係。",
+              "name": "Ottawa knee rule 五項判準",
+              "title": "Ottawa Knee Rule - Dr Kathir Stalin",
+              "url": "https://www.youtube.com/watch?v=ytR9BLrdml8",
+              "why": "具名骨科醫師的 Ottawa knee rule 短講（五項判準與敏感度／特異度），填補「該不該照」的決策模組；與單元文字及 1996 JAMA 驗證研究對讀。",
+              "scope_note": "純判準講解，無 X 光實例與觸診示範；實際判讀訓練以本單元其他影片為準。",
+              "presenter": "Kathir Azhagan S, MBBS, MS(Ortho), DNB(Ortho), MRCS(Edin)",
+              "presenter_qualification": "Chennai 骨科顧問醫師；Stanley Medical College 骨科訓練。",
+              "qualification_evidence_url": "https://vhschennai.org/doctor/dr-kathir-azhagan/",
+              "duration": "1:05",
+              "channel": "Ortho Mechanic - Dr. Kathir Azhagan",
+              "upload_date": "2023-07-29",
+              "target": "急性創傷照射決策",
+              "source_authority": "expert-owned-original"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": "CH9",
+      "title": "X 光：常見病理與判讀陷阱",
+      "units": [
+        {
+          "id": "ch9-u1",
+          "name": "OA 分級、骨折 pattern 與正常變異",
+          "type": "pathology",
+          "level": "foundation",
+          "review_status": "draft",
+          "summary": "以 Kellgren–Lawrence 分級評估三腔室退化性變化並理解其侷限；辨認脛骨平台骨折、Segond 與撕脫性骨折等常見創傷 pattern 及其間接徵象；區分 bipartite patella、fabella 等正常變異與真正病灶。",
+          "objectives": [
+            "以 K-L 0–4 級（骨刺、關節間隙狹窄、軟骨下硬化、變形）為內側、外側與髕股三腔室分別評級。",
+            "說明影像分級與症狀嚴重度不成正比，radiographic OA 不等於疼痛來源。",
+            "在創傷片上辨認脛骨平台骨折的直接與間接徵象（皮質中斷、硬化帶、積液、lipohemarthrosis），並說明 Segond 骨折與 ACL 損傷的高度關聯。",
+            "以形態特徵（位置、邊緣、雙側性）區分 bipartite patella 與髕骨骨折、fabella 與游離體。"
+          ],
+          "required_views": [
+            "站立承重 AP＋Rosenberg：三腔室 K-L 分級與腔室分佈。",
+            "Skyline／Merchant：髕股腔室退化性變化與髕骨傾斜。",
+            "水平束 lateral：關節積液分層與 lipohemarthrosis。",
+            "創傷 AP／lateral：平台關節面塌陷、外側關節囊撕脫（Segond）、腓骨頭與髕骨撕脫性骨折的搜尋位置。"
+          ],
+          "key_points": [
+            "K-L 分級以「明確骨刺」為 2 級門檻、「關節間隙狹窄」為 3 級主軸；分級應逐腔室記錄而非單一總分。",
+            "Segond 骨折（外側脛骨平台邊緣小片撕脫）與 ACL 撕裂高度相關，看到就要啟動韌帶評估路徑。",
+            "Lipohemarthrosis（脂肪-血液分層）指向關節內骨折；X 光初讀陰性但脂血關節積液存在時，以 CT 追查隱匿性平台骨折。",
+            "Bipartite patella 好發上外側極（Saupe III 最常見）、邊緣圓鈍有皮質、約半數雙側；銳利無皮質邊緣才指向急性骨折。",
+            "Fabella 是腓腸肌外側頭籽骨，位於後外側，勿判為關節內游離體。"
+          ],
+          "pitfalls": [
+            "把 bipartite patella 的硬化圓緣判成髕骨骨折，或反過來把垂直型髕骨骨折當 bipartite。",
+            "把 fabella 當後側游離體而啟動不必要的進一步檢查。",
+            "以 X 光「正常」排除半月板、韌帶或軟骨損傷——軟組織病灶是 MRI 的領域（見 MRI 章節）。",
+            "看到明顯 OA 就把所有症狀歸因於退化，漏掉合併的應力性骨折或發炎性關節炎表現。"
+          ],
+          "assessment": "題目：給六張去識別化影像（K-L 2 與 4 級各一、平台骨折含 lipohemarthrosis、Segond、bipartite patella、fabella），請逐張以系統性順序判讀、給出腔室別 K-L 分級或診斷，並說明哪些需要升級檢查。合格標準：分級依據明確；間接徵象（積液、脂血分層）有辨認；正常變異與骨折的形態鑑別點說得出來；升級建議合理。",
+          "reference_ids": [
+            "REF-KL-1957",
+            "REF-ACR-CHRONIC-KNEE-2026",
+            "REF-ACR-ACUTE-KNEE-2020"
+          ],
+          "drills": [
+            {
+              "kind": "radiograph-demo",
+              "learning_tier": "core",
+              "curation_status": "provisional",
+              "last_verified_at": "2026-08-25",
+              "contains_intervention": false,
+              "intervention_start_timestamp": null,
+              "diagnostic_segment_range": null,
+              "original_content_date": "2023-01-16",
+              "date_note": "講者本人頻道原始上傳，以上架日 2023-01-16 為內容日期。",
+              "classic_exception": false,
+              "embed_status": "playable_in_embed=true; YouTube oEmbed 200",
+              "playback_status": "public; yt-dlp playback confirmed 2026-08-25",
+              "disclosure": "YouTube 說明未載商業揭露；不據此推定沒有利益關係。",
+              "name": "K-L 分級逐級實例",
+              "title": "Knee Arthritis X-ray Stages: What You Need To Know",
+              "url": "https://www.youtube.com/watch?v=WiZoV8PJ_tQ",
+              "why": "以真實 X 光逐級對照 Kellgren–Lawrence 0–4 定義、三腔室分開評估，是候選中唯一系統走過 K-L 全級距的影片。",
+              "scope_note": "片尾（約 3:00 起）為治療時機的口頭討論與導流，非操作示範；本課僅取分級判讀段落。口吻偏病人衛教，分級內容仍正確。",
+              "presenter": "Jeffrey Peng, MD",
+              "presenter_qualification": "運動醫學／家庭醫學雙專科認證；Stanford 體系 Clinical Assistant Professor (Affiliated)。",
+              "qualification_evidence_url": "https://stanfordhealthcare.org/doctors/p/jeffrey-peng.html",
+              "duration": "4:43",
+              "channel": "Jeffrey Peng MD",
+              "upload_date": "2023-01-16",
+              "target": "K-L 分級",
+              "source_authority": "expert-owned-original"
+            },
+            {
+              "kind": "radiograph-demo",
+              "learning_tier": "extension",
+              "curation_status": "provisional",
+              "last_verified_at": "2026-08-25",
+              "contains_intervention": false,
+              "intervention_start_timestamp": null,
+              "diagnostic_segment_range": null,
+              "original_content_date": "2025-01-16",
+              "date_note": "AMSSM Fellow Online Lecture Series 官方原始上傳，以上架日 2025-01-16 為內容日期。",
+              "classic_exception": false,
+              "embed_status": "playable_in_embed=true; YouTube oEmbed 200",
+              "playback_status": "public; yt-dlp playback confirmed 2026-08-25",
+              "disclosure": "YouTube 說明未載商業揭露；不據此推定沒有利益關係。",
+              "name": "MSK 放射科的系統性搜尋與隱匿骨折（膝段 33:22 起）",
+              "title": "High-Yield X-Ray Series: Hip and Knee | Fellow Online Lecture Series",
+              "url": "https://www.youtube.com/watch?v=G3hvxA45mTo",
+              "why": "Stanford MSK 放射科教授的 fellow 講座：ABCDE 系統性搜尋順序、積液與隱匿性平台骨折實例，提供放射科視角的判讀深度。",
+              "scope_note": "前段（2:50–33:22）為髖關節，本課指定觀看 33:22 起的膝部段落；純診斷教學，無介入內容。",
+              "presenter": "Robert D. Boutin, MD",
+              "presenter_qualification": "Stanford 臨床放射學教授、MSK imaging fellowship director。",
+              "qualification_evidence_url": "https://med.stanford.edu/profiles/robert-boutin",
+              "duration": "58:59",
+              "channel": "The AMSSM",
+              "upload_date": "2025-01-16",
+              "target": "系統性搜尋與隱匿骨折",
+              "source_authority": "professional-society-original"
+            },
+            {
+              "kind": "radiograph-demo",
+              "learning_tier": "extension",
+              "curation_status": "provisional",
+              "last_verified_at": "2026-08-25",
+              "contains_intervention": false,
+              "intervention_start_timestamp": null,
+              "diagnostic_segment_range": null,
+              "original_content_date": "2015-08-09",
+              "date_note": "2015-08-09 上架，早於 cutoff。classic 例外理由：公開可核對的具名放射科醫師膝部 plain-film search pattern 短片仍少，內容未被 2021 後同等影片取代；上架時講者可能仍在住院醫師階段（ABR 2017 認證），資格以現職為準。",
+              "classic_exception": true,
+              "embed_status": "playable_in_embed=true; YouTube oEmbed 200",
+              "playback_status": "public; yt-dlp playback confirmed 2026-08-25",
+              "disclosure": "YouTube 說明未載商業揭露；不據此推定沒有利益關係。",
+              "name": "創傷片的搜尋 pattern 與 lipohemarthrosis",
+              "title": "How to Read a Knee X-ray",
+              "url": "https://www.youtube.com/watch?v=OBypdK9PT_w",
+              "why": "放射科醫師示範實際的創傷搜尋 pattern（平台關節面→硬化帶→腓骨頭→髕骨），並把積液／lipohemarthrosis 與隱匿平台骨折連結、以 CT 印證，示範「間接徵象驅動升級」的思路。",
+              "scope_note": "含 bipartite patella 勿判骨折的提醒；無介入內容。",
+              "presenter": "Sarel Gaur, MD",
+              "presenter_qualification": "ABR 診斷放射科（2017）與介入放射科認證，OhioHealth 放射科醫師。",
+              "qualification_evidence_url": "https://www.ohiohealth.com/find-a-doctor/profile/1952690349/sarel-gaur-md",
+              "duration": "4:35",
+              "channel": "Sarel Gaur MD",
+              "upload_date": "2015-08-09",
+              "target": "創傷搜尋 pattern",
+              "source_authority": "expert-owned-original",
+              "classic_exception_reason": "2015 年影片，早於 cutoff。公開可核對的具名放射科醫師膝部 plain-film search pattern 短片仍少，內容未被 2021 後同等影片取代；上架時講者可能仍在住院醫師階段（ABR 2017 認證），資格以現職為準。"
+            },
+            {
+              "kind": "radiograph-demo",
+              "learning_tier": "extension",
+              "curation_status": "provisional",
+              "last_verified_at": "2026-08-25",
+              "contains_intervention": true,
+              "intervention_start_timestamp": "3:10",
+              "diagnostic_segment_range": "0:00-2:29",
+              "original_content_date": "2021-01-15",
+              "date_note": "2021-01-15 上架，早於 cutoff 約 7 個月。classic 例外理由：具名骨科醫師專講 bipartite 鑑別且可核對字幕者，2021-08 後無同等替代。",
+              "classic_exception": true,
+              "embed_status": "playable_in_embed=true; YouTube oEmbed 200",
+              "playback_status": "public; yt-dlp playback confirmed 2026-08-25",
+              "disclosure": "YouTube 說明未載商業揭露；不據此推定沒有利益關係。",
+              "name": "Bipartite patella 的鑑別要點",
+              "title": "Bipartite Patella - Everything You Need To Know - Dr. Nabil Ebraheim",
+              "url": "https://www.youtube.com/watch?v=PTpG34ccTso",
+              "why": "具名骨科教授專講最常被誤判為骨折的膝部 X 光陷阱：分型（上外側最常見）、圓鈍皮質緣 vs 骨折銳緣、約半數雙側故照對側、skyline 的角色。",
+              "scope_note": "2:29 起進入治療討論、3:10–3:50 為碎片切除與外側支持帶鬆解的手術動畫；本課診斷框限至 2:29，逐段筆記不得超出。",
+              "presenter": "Nabil A. Ebraheim, MD",
+              "presenter_qualification": "University of Toledo 骨科教授、前科主任，ABOS 認證。",
+              "qualification_evidence_url": "https://news.utoledo.edu/index.php/10_21_2015/ut-health-orthopaedic-surgeon-scores-in-100th-percentile-on-board-recertification",
+              "duration": "4:02",
+              "channel": "nabil ebraheim",
+              "upload_date": "2021-01-15",
+              "target": "bipartite patella 鑑別",
+              "source_authority": "expert-owned-original",
+              "classic_exception_reason": "2021-01-15 上架，早於 cutoff 約 7 個月。具名骨科醫師專講 bipartite patella 鑑別且可核對字幕者，2021-08 後無同等替代。"
+            }
+          ]
         }
       ]
     }
