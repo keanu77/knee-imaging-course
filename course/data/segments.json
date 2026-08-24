@@ -2811,6 +2811,158 @@
           ]
         }
       ]
+    },
+    {
+      "video_url": "https://www.youtube.com/watch?v=hDwxyjJIdHk",
+      "review_status": "draft",
+      "transcript_verified_at": "2026-08-25",
+      "transcript_source": "yt-dlp 自動字幕（en, VTT）2026-08-25 實抓；初稿由協作 agent 依逐字稿產生，主編抽驗段界與臨床內容對照原文",
+      "note": "自動字幕訛誤已於筆記改採標準命名：miniscus／minusc→meniscus；Meniscal flons→meniscal flounce（05:10，無症狀膝可見，已核對）；debrisment→debridement（07:48、10:37 為治療選項口頭敘述，無操作示範）；rump→run；leion→lesion；parameical→parameniscal。兩連續切面 >90% 準確度與單切面降級 probable tear 判準已對原文核對（06:58、07:06）。",
+      "segments": [
+        {
+          "start": "00:00",
+          "end": "01:15",
+          "title": "開場與半月板撕裂診斷的重要性",
+          "summary": "本講介紹半月板解剖與撕裂分類的 MRI，強調正確診斷、間接徵象，以及如何協助臨床評估與手術規劃。",
+          "detail": [
+            "講題為半月板解剖與撕裂分類的 MRI，由 Michigan Medicine Department of Radiology 的 Radiology Vault 提供。",
+            "放射科醫師需熟悉 imaging protocols、正常半月板解剖、周圍構造、正常變異與 pitfalls。",
+            "詳細 MRI 診斷並分類 tear pattern，可協助臨床醫師評估病人與進行 surgical planning。",
+            "撕裂有時不易直接看見；parameniscal cyst、meniscus extrusion 或線性 subchondral bone marrow 變化，應提高對潛在撕裂的懷疑。"
+          ]
+        },
+        {
+          "start": "01:16",
+          "end": "02:21",
+          "title": "半月板組織構造、血供與分區",
+          "summary": "半月板為纖維軟骨，縱向 type I collagen 提供 hoop strength，僅周邊與 root 有血管，並分為前角、體部、後角與 roots。",
+          "detail": [
+            "半月板由 fibrocartilage 組成；縱向排列的 type I collagen bundles 提供 hoop strength，用以抵抗軸向負荷並防止 meniscus extrusion。",
+            "較細的 radial fibers 垂直穿插於上述 bundles 之間，將其綁在一起。",
+            "半月板僅 peripheral 與 root attachment 有血管，inner portion 為 avascular，這會影響愈合與手術處理。",
+            "每個半月板可分為 anterior horn、body、posterior horn 與 roots；前後 roots 附著於 central tibial plateau，作為 anchors 以維持正常位置與生物力學功能。"
+          ]
+        },
+        {
+          "start": "02:22",
+          "end": "03:22",
+          "title": "內外側形態、附著差異與 speckled root",
+          "summary": "內側半月板較大且囊附著緊密，外側較鬆；MRI 形態因切面而異，外側前 root 的 speckled appearance 可模仿撕裂。",
+          "detail": [
+            "內側半月板大於外側；矢狀面周邊呈 bow-tie、中央呈相對三角形，冠狀面呈三角形或楔形。",
+            "內側周緣緊貼 capsule 與 MCL 深層纖維，較易撕裂；外側囊附著較鬆，且無直接連到 LCL。",
+            "popliteomeniscal fascicles 為滑膜被覆的纖維束，附著後角並協助形成 popliteal hiatus。",
+            "外側半月板前 root 可有 speckled appearance（可達 60%），可能來自鄰近 ACL insertion 纖維，此外觀可 mimic tear。"
+          ]
+        },
+        {
+          "start": "03:23",
+          "end": "04:41",
+          "title": "Root 附著與半月板相關韌帶",
+          "summary": "強調勿漏診後 root，並介紹 transverse、meniscofemoral（Humphrey／Wrisberg）與 coronary ligaments。",
+          "detail": [
+            "Root tears 近年較受重視，因其過去在 MRI 與 arthroscopy 常被低估；須在矢狀與冠狀面檢視內、外側 posterior root，冠狀面上附著點鄰近 PCL attachment。",
+            "Transverse meniscal ligament 連接並穩定兩側 anterior horns，矢狀面上可 simulate tear。",
+            "Meniscofemoral ligaments 起自外側半月板後角、止於內側髁外側，協助控制後角在屈曲／伸直時的活動度；Humphrey ligament 走在 PCL 前方，Wrisberg ligament 走在 PCL 後方。",
+            "Meniscotibial ligaments（又稱 coronary ligaments）在多處將半月板連到 tibia。"
+          ]
+        },
+        {
+          "start": "04:42",
+          "end": "06:07",
+          "title": "解剖變異與可模仿撕裂的交界面",
+          "summary": "介紹 discoid meniscus、meniscal flounce、meniscal ossicle，以及韌帶／肌腱與半月板交界面造成的假撕裂。",
+          "detail": [
+            "Discoid meniscus 為增大並向 tibial articular surface 中央延伸的半月板，常為意外發現，外側遠多於內側；complete variant 覆蓋整個 tibial plateau，partial variant 覆蓋小於 80%。",
+            "Meniscal flounce 是游離、無錨定之內緣外觀，較常見於內側半月板，可見於無症狀膝。",
+            "Meniscal ossicle 罕見，為骨化半月板，較常見於內側後角；X 光上可被誤認為 intra-articular loose body。",
+            "韌帶、肌腱與半月板交界面可 mimic tears：transverse ligament 鄰近內側前 root、meniscofemoral ligament 鄰近外側後 root、popliteus tendon 鄰近外側半月板周邊。"
+          ]
+        },
+        {
+          "start": "06:08",
+          "end": "07:19",
+          "title": "撕裂好發部位與 MRI 診斷標準",
+          "summary": "後角（尤其內側）最常見；診斷靠連續兩切面訊號到達關節面（準確度逾 90%），或形態異常如 truncation。",
+          "detail": [
+            "撕裂較常見於後角，尤其內側半月板；外側撕裂較常見於年輕急性受傷；單獨前角撕裂少見。",
+            "急性 ACL tear 時，外側半月板撕裂的偵測敏感度下降；小 radial tear 與 bucket-handle tear 在矢狀面不易辨識，須同時看冠狀面。",
+            "Intrameniscal signal 延伸到上或下 articular surface，且見於連續兩個 sections 時，診斷準確度大於 90%。",
+            "僅見於單一 section 時因準確度下降，可報告為 probable tear；另一診斷依據是 abnormal morphology，例如 truncation。"
+          ]
+        },
+        {
+          "start": "07:20",
+          "end": "08:09",
+          "title": "撕裂形態總覽與水平撕裂",
+          "summary": "常見形態包括 horizontal、longitudinal、radial 與 complex；水平撕裂平行脛骨平台，可形成 flap，治療選項為 debridement。",
+          "detail": [
+            "準確描述 tear morphology 與 pattern 對治療規劃很重要；最常見為 horizontal、longitudinal、radial 與 complex tears。",
+            "Horizontal tear 平行 tibial plateau，可累及其中一個 articular surface 或 central free edge。",
+            "較常見於有 arthritis 的相對年長患者，可合併 parameniscal cyst；治療選項為 debridement。",
+            "Horizontal tear 可形成 flap tear：自上表面移位者為 superior flap，自下表面移位者為 inferior flap。"
+          ]
+        },
+        {
+          "start": "08:10",
+          "end": "09:33",
+          "title": "縱向撕裂、ramp lesion 與 Wrisberg rip",
+          "summary": "縱向撕裂把半月板分成中央與周邊，常伴隨 ACL tear；並介紹內側 ramp lesion 與外側後角的 Wrisberg rip。",
+          "detail": [
+            "Longitudinal tear 垂直於 tibial plateau、平行半月板長軸，將半月板分成 central 與 peripheral 兩半；常見於有外傷史的年輕患者，好發 peripheral third 與後角。",
+            "典型 MRI 為垂直走向、接觸單側或雙側 articular surface 的訊號異常；周邊 longitudinal tear 與內外側 ACL tear 關係密切。",
+            "Ramp lesion 是內側後角 meniscocapsular junction 的周邊囊附著 longitudinal tear，約佔急性 ACL tear 的 12%，容易漏看；因位於 red zone 而有愈合潛力。",
+            "急性 ACL tear 時，外側後角在 PCL 外側連續四個（含）以上 slices 可見，提示 meniscal tear，稱為 Wrisberg rip。"
+          ]
+        },
+        {
+          "start": "09:34",
+          "end": "10:21",
+          "title": "Bucket-handle tear 與縮小半月板的鑑別",
+          "summary": "Bucket-handle 為縱向撕裂的內側碎片向中心移位；半月板變小需鑑別術後改變、翻轉碎片與退化性撕裂。",
+          "detail": [
+            "Bucket-handle tear 是 longitudinal tear 的亞型，inner handle fragment 向中央移位，較常見於內側半月板。",
+            "MRI 應尋找 double PCL sign、半月板變小，以及 intercondylar region 的額外低訊號。",
+            "縮小半月板的鑑別包括先前 partial meniscectomy 等術後改變、帶 flipped fragment 的撕裂，以及慢性退化性撕裂。",
+            "應查詢先前手術史、評估是否有 arthritis，並在相關區域尋找 flipped 或 displaced fragment。"
+          ]
+        },
+        {
+          "start": "10:22",
+          "end": "11:23",
+          "title": "Radial tear 與 root tear",
+          "summary": "Radial tear 破壞 hoop strength 且常因 white zone 而不修補；root tear 屬 radial 型，完全撕裂與 extrusion 高度相關。",
+          "detail": [
+            "相對於 horizontal 與 longitudinal tear，radial tear 會破壞 hoop strength，導致功能明顯喪失並可能出現 meniscus extrusion。",
+            "Radial tear 常因累及 white zone 而不做 repair，治療選項為 debridement。",
+            "許多 MRI 徵象可提示 radial tear，例如 free edge 與剩餘後角之間的 cleft。",
+            "Root tear 屬 radial-type tear；完全 root tear 與 extrusion 高度相關（尤其內側）；冠狀面較易觀察，矢狀面須將後角一路追到 attachment，完整後 root 在冠狀面、鄰近 PCL insertion 較清楚。"
+          ]
+        },
+        {
+          "start": "11:24",
+          "end": "12:40",
+          "title": "複雜撕裂與術後半月板影像",
+          "summary": "Complex tear 為多方向組合，退化性撕裂常呈此型；術後評估需對照舊影像與手術紀錄，必要時做 MR arthrography。",
+          "detail": [
+            "Complex tear 為 radial、horizontal、longitudinal 中任兩種或三種的組合；報告中宜描述不穩定成分，如 radial、flap 或 root。",
+            "合併 osteoarthritis 的退化性半月板撕裂常為 complex tear；MRI 常呈縮小、全域界線不清的訊號，並有 extrusion。",
+            "術後半月板可呈扭曲形態，並有延伸到 articular surface 的訊號增加，判讀困難。",
+            "建議對照先前 MRI、詳細 operative report；確定診斷可依連續兩張以上明確達關節面的 fluid signal，或 displaced meniscal fragment；有時需 MR arthrography。"
+          ]
+        },
+        {
+          "start": "12:41",
+          "end": "12:58",
+          "title": "總結與報告原則",
+          "summary": "掌握解剖、自訂檢查清單、看所有切面，熟悉撕裂形態與 pitfalls，報告要描述清楚並收集臨床回饋。",
+          "detail": [
+            "理解解剖並建立自己的 checking list，所有 planes 都要看。",
+            "熟悉 tear patterns 與 pitfalls。",
+            "報告時要 descriptive，並鼓勵臨床同事給予回饋。"
+          ]
+        }
+      ]
     }
   ]
 }
