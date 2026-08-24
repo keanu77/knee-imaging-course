@@ -917,7 +917,7 @@
           "name": "照射位選擇、Ottawa rule 與系統性判讀順序",
           "type": "protocol",
           "level": "foundation",
-          "review_status": "draft",
+          "review_status": "approved",
           "summary": "從臨床問題出發決定要不要照、照哪些位：急性創傷以 Ottawa knee rule 判斷是否需要 X 光；退化性與慢性疼痛以承重像評估關節間隙。建立 weight-bearing AP、lateral、skyline／Merchant、tunnel／Rosenberg 各照射位的技術條件與適應症，並以固定順序（對位→骨質→關節間隙→軟組織）完成系統性判讀。",
           "objectives": [
             "以 Ottawa knee rule 五項判準決定急性膝創傷是否需要 X 光，並說明其高敏感度、中低特異度的臨床意涵。",
@@ -1037,7 +1037,11 @@
               "target": "急性創傷照射決策",
               "source_authority": "expert-owned-original"
             }
-          ]
+          ],
+          "reviewed_by": "吳易澄",
+          "reviewer_role": "復健科專科醫師",
+          "reviewed_at": "2026-08-25",
+          "reviewed_commit": "fabc147d15dabf38185b7527e59ae830c7f7b86f"
         }
       ]
     },
@@ -1050,7 +1054,7 @@
           "name": "OA 分級、骨折 pattern 與正常變異",
           "type": "pathology",
           "level": "foundation",
-          "review_status": "draft",
+          "review_status": "approved",
           "summary": "以 Kellgren–Lawrence 分級評估三腔室退化性變化並理解其侷限；辨認脛骨平台骨折、Segond 與撕脫性骨折等常見創傷 pattern 及其間接徵象；區分 bipartite patella、fabella 等正常變異與真正病灶。",
           "objectives": [
             "以 K-L 0–4 級（骨刺、關節間隙狹窄、軟骨下硬化、變形）為內側、外側與髕股三腔室分別評級。",
@@ -1198,7 +1202,11 @@
               "source_authority": "expert-owned-original",
               "classic_exception_reason": "2021-01-15 上架，早於 cutoff 約 7 個月。具名骨科醫師專講 bipartite patella 鑑別且可核對字幕者，2021-08 後無同等替代。"
             }
-          ]
+          ],
+          "reviewed_by": "吳易澄",
+          "reviewer_role": "復健科專科醫師",
+          "reviewed_at": "2026-08-25",
+          "reviewed_commit": "fabc147d15dabf38185b7527e59ae830c7f7b86f"
         }
       ]
     },
@@ -1211,7 +1219,7 @@
           "name": "序列邏輯、三平面與系統性判讀順序",
           "type": "protocol",
           "level": "foundation",
-          "review_status": "draft",
+          "review_status": "approved",
           "summary": "建立膝部 MRI 的判讀基礎：理解 PD 脂肪抑制、T1 與 T2 各序列看什麼、為什麼；以矢狀、冠狀、軸位三平面對應各解剖結構的最佳顯示面；並以固定檢核順序完成系統性判讀，避免只追臨床問題而漏掉其他病灶。",
           "objectives": [
             "說明膝部 MRI 常用序列的分工：流體敏感序列（PD／T2 fat-sat）偵測水腫與液體，T1 評估骨髓與解剖輪廓。",
@@ -1357,7 +1365,11 @@
               "upload_date": "2023-11-29",
               "target": "搜尋順序的病例應用"
             }
-          ]
+          ],
+          "reviewed_by": "吳易澄",
+          "reviewer_role": "復健科專科醫師",
+          "reviewed_at": "2026-08-25",
+          "reviewed_commit": "fabc147d15dabf38185b7527e59ae830c7f7b86f"
         }
       ]
     },
@@ -1370,7 +1382,7 @@
           "name": "半月板、韌帶、軟骨病理與證據邊界",
           "type": "pathology",
           "level": "foundation",
-          "review_status": "draft",
+          "review_status": "approved",
           "summary": "以標準判準診斷半月板撕裂並描述型態；辨認 ACL 撕裂的直接與間接徵象（含 pivot-shift 型 bone bruise）；評估軟骨病灶與骨髓水腫；並以族群證據理解 MRI 偶然所見的高盛行率——影像異常不等於症狀來源。",
           "objectives": [
             "應用半月板撕裂判準（訊號延伸至關節面）並以標準命名描述型態：縱向、水平、放射狀、複雜、bucket-handle、root tear。",
@@ -1516,7 +1528,11 @@
               "upload_date": "2025-05-07",
               "target": "證據邊界"
             }
-          ]
+          ],
+          "reviewed_by": "吳易澄",
+          "reviewer_role": "復健科專科醫師",
+          "reviewed_at": "2026-08-25",
+          "reviewed_commit": "fabc147d15dabf38185b7527e59ae830c7f7b86f"
         }
       ]
     }

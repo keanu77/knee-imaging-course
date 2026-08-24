@@ -1555,7 +1555,7 @@
     },
     {
       "video_url": "https://www.youtube.com/watch?v=ytR9BLrdml8",
-      "review_status": "draft",
+      "review_status": "approved",
       "transcript_verified_at": "2026-08-25",
       "transcript_source": "yt-dlp 自動字幕（en, VTT）2026-08-25 實抓，逐段對照時間戳核對",
       "note": "自動字幕訛誤已於筆記改採標準命名：otavani／otawani rule→Ottawa knee rule；petala→patella；Dr cutter Stalin→Dr Kathir Stalin（講者藝名，本名 Kathir Azhagan，已以醫院頁核對）；aged to 55→aged 55。",
@@ -1581,11 +1581,15 @@
             "敏感度接近 99%——五項全陰性可安全不照；特異度 49%——陽性不等於骨折，只是需要影像。"
           ]
         }
-      ]
+      ],
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "復健科專科醫師",
+      "reviewed_at": "2026-08-25",
+      "reviewed_commit": "fabc147d15dabf38185b7527e59ae830c7f7b86f"
     },
     {
       "video_url": "https://www.youtube.com/watch?v=PTpG34ccTso",
-      "review_status": "draft",
+      "review_status": "approved",
       "transcript_verified_at": "2026-08-25",
       "transcript_source": "yt-dlp 自動字幕（en, VTT）2026-08-25 實抓，逐段對照時間戳核對",
       "note": "自動字幕訛誤已於筆記改採標準命名：acidification centers→ossification centers（骨化中心）；subrolateal／subaru lateral／supralateral pole（混用）→superolateral pole（上外側極，標準命名）；infused→unfused（未融合）；retinoculum→retinaculum。診斷框限 0:00–2:29：2:22 起講者進入治療討論、3:10 起為手術動畫，逐段筆記止於 2:21。",
@@ -1622,11 +1626,15 @@
             "症狀可以模仿骨折——回到形態鑑別與雙側對照，避免把變異當急性傷。"
           ]
         }
-      ]
+      ],
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "復健科專科醫師",
+      "reviewed_at": "2026-08-25",
+      "reviewed_commit": "fabc147d15dabf38185b7527e59ae830c7f7b86f"
     },
     {
       "video_url": "https://www.youtube.com/watch?v=di63ofJq7XU",
-      "review_status": "draft",
+      "review_status": "approved",
       "transcript_verified_at": "2026-08-25",
       "transcript_source": "yt-dlp 自動字幕（en, VTT）2026-08-25 實抓；初稿由協作 agent 依逐字稿產生，主編逐段對照原文核對",
       "note": "自動字幕訛誤已於筆記改採標準命名：Kendra mam→McCamey；Steve albera→Albrechta；KNE／NE→knee；seone／Sone fracture→Segond fracture（**專名等級錯誤，最需複查**）；lockman→Lachman；evulsion→avulsion；bleed→bow-legged（弓形腿，講者以此解釋 varus）；vus deviation→valgus deviation；patellar Toe→patellar tilt；Moder diffusion→moderate effusion；affusion／infusion→effusion；minuscal→meniscal；muscular skeletal→musculoskeletal；CTIC→cystic；pation→palpation；Bala／pelop femoral→patella／patellofemoral；condil／cond→condyle；SE tear→ACL tear（10:29 處，經 qwen 本地掃描交叉比對確認）。7:09–7:24 與 9:05–9:19 為治療選項口頭列舉（無操作示範），照實記錄於段落。",
@@ -1738,11 +1746,15 @@
             "Segond fracture 是 ACL tear 的特徵性影像表現。"
           ]
         }
-      ]
+      ],
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "復健科專科醫師",
+      "reviewed_at": "2026-08-25",
+      "reviewed_commit": "fabc147d15dabf38185b7527e59ae830c7f7b86f"
     },
     {
       "video_url": "https://www.youtube.com/watch?v=G3hvxA45mTo",
-      "review_status": "draft",
+      "review_status": "approved",
       "transcript_verified_at": "2026-08-25",
       "transcript_source": "yt-dlp 自動字幕（en, VTT）2026-08-25 實抓；初稿由協作 agent 依逐字稿產生，主編逐段對照原文核對",
       "note": "自動字幕訛誤已於筆記改採標準命名：e Fusion／infusion／ifusion／affusion→effusion；lioh orthosis→lipohemarthrosis；crossable lateral→cross-table lateral；radaph／rating grass／radi graphs→radiographs；subtronic→subtrochanteric；tiia→tibia；Blen sat's／Bloom and SATs→Blumensaat's line（經 qwen 本地掃描交叉比對確認）。本片 2:50–33:12 為髖關節內容、46:05–55:20 為髖 bonus case 與 Q&A（皆不在本課範圍，未做段落）；僅收 33:22 起的膝部段落與 55:21 起與膝相關的 Q&A。",
@@ -1853,11 +1865,15 @@
             "medial tibial plateau 壓力性骨折可在 X 光上呈現水平走向的硬化帶。"
           ]
         }
-      ]
+      ],
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "復健科專科醫師",
+      "reviewed_at": "2026-08-25",
+      "reviewed_commit": "fabc147d15dabf38185b7527e59ae830c7f7b86f"
     },
     {
       "video_url": "https://www.youtube.com/watch?v=-AxgSwjn1q0",
-      "review_status": "draft",
+      "review_status": "approved",
       "transcript_verified_at": "2026-08-25",
       "transcript_source": "yt-dlp 自動字幕（en, VTT）2026-08-25 實抓；初稿由協作 agent 依逐字稿產生，主編逐段對照原文核對",
       "note": "自動字幕訛誤已於筆記改採標準命名：rated gasps→radiographs；answered posterior→anteroposterior；murk of view→Merchant view；PA rows in Greenfield→PA Rosenberg view；thermal tubular joint→femorotibial joint；visual head→fibular head；off the earth right／all shows rights→osteoarthritis；way brains view／weak bank→weight-bearing view；profitable→proximal tibia（依上下文推定）；patellofemoral truth lies→patellofemoral arthritis（依前文 Merchant 段列舉推定，**待確認**）。",
@@ -1944,11 +1960,15 @@
             "看 patellofemoral joint（patellar dislocation、patellofemoral arthritis、patellofemoral syndrome）需 Merchant view；看 condyle 的 cartilage lesion 需 PA Rosenberg view"
           ]
         }
-      ]
+      ],
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "復健科專科醫師",
+      "reviewed_at": "2026-08-25",
+      "reviewed_commit": "fabc147d15dabf38185b7527e59ae830c7f7b86f"
     },
     {
       "video_url": "https://www.youtube.com/watch?v=WiZoV8PJ_tQ",
-      "review_status": "draft",
+      "review_status": "approved",
       "transcript_verified_at": "2026-08-25",
       "transcript_source": "yt-dlp 自動字幕（en, VTT）2026-08-25 實抓，逐段對照時間戳核對",
       "note": "自動字幕訛誤已於筆記改採標準命名：kelgrin and Lauren system→Kellgren–Lawrence system；Dr Jeff Pang→Dr Jeff Peng。2:48–3:00 與 4:16 起為治療選項概述與下一支治療影片導流（無操作示範），4:16 後未做段落。",
@@ -2015,11 +2035,15 @@
             "此觀點與課程單元「影像所見不等於疼痛來源」的證據邊界一致。"
           ]
         }
-      ]
+      ],
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "復健科專科醫師",
+      "reviewed_at": "2026-08-25",
+      "reviewed_commit": "fabc147d15dabf38185b7527e59ae830c7f7b86f"
     },
     {
       "video_url": "https://www.youtube.com/watch?v=OBypdK9PT_w",
-      "review_status": "draft",
+      "review_status": "approved",
       "transcript_verified_at": "2026-08-25",
       "transcript_source": "yt-dlp 自動字幕（en, VTT）2026-08-25 實抓；初稿由協作 agent 依逐字稿產生，主編逐段對照原文核對",
       "note": "自動字幕訛誤已於筆記改採標準命名：evulsion→avulsion；joint of fusion／infusion→joint effusion；lipo hemo arthrosis→lipohemarthrosis；bipar type patella→bipartite patella；femal condil→femoral condyle；infr patellar→infrapatellar；tabula→trabeculae；cronal／chronal→coronal；idiology→etiology；片尾自稱 strog rmd→Sarel Gaur MD（依頻道核對）。全片為診斷判讀與 CT 印證，無介入內容。",
@@ -2083,11 +2107,15 @@
             "診斷為 subtle lateral tibial plateau fracture，患者得以接受 appropriate treatment；這類 subtle 膝傷正是放射科醫師要找的。"
           ]
         }
-      ]
+      ],
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "復健科專科醫師",
+      "reviewed_at": "2026-08-25",
+      "reviewed_commit": "fabc147d15dabf38185b7527e59ae830c7f7b86f"
     },
     {
       "video_url": "https://www.youtube.com/watch?v=Wdi9WVbjI5Q",
-      "review_status": "draft",
+      "review_status": "approved",
       "transcript_verified_at": "2026-08-25",
       "transcript_source": "yt-dlp 自動字幕（en, VTT）2026-08-25 實抓，逐段對照時間戳核對",
       "note": "自動字幕訛誤已於筆記改採標準命名：mle／medle→medial；miniscus→meniscus；bone meadema／Bona／bone merema→bone marrow edema；fees→physis（生長板）；medat ligament→medial collateral ligament；Pine tendons→pes anserinus tendons（依內側脈絡推定）；tacular infractions→trabecular infractions；ctil／Cottage／cotage→cartilage；public tendon→popliteus tendon；col ligament→collateral ligament；proximal T joint→proximal tibiofibular joint；cortical tesmo→cortical desmoid（distal femoral cortical irregularity 的同義病名）；Patel of emerald→patellofemoral；joint diffusion→joint effusion；tend nois→tendinosis；H of fet pet→Hoffa fat pad；cial lining→synovial lining；squl→sequelae；zoval Pica／M zoval PCL fold→PCL 旁滑膜皺襞（自動字幕嚴重失真，**名稱待確認**，教學重點「突入關節但非病態」不受影響）。",
@@ -2156,11 +2184,15 @@
             "全片示範：系統性順序＋報告取捨＋臨床脈絡三者缺一不可。"
           ]
         }
-      ]
+      ],
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "復健科專科醫師",
+      "reviewed_at": "2026-08-25",
+      "reviewed_commit": "fabc147d15dabf38185b7527e59ae830c7f7b86f"
     },
     {
       "video_url": "https://www.youtube.com/watch?v=Juo8rEYhlP0",
-      "review_status": "draft",
+      "review_status": "approved",
       "transcript_verified_at": "2026-08-25",
       "transcript_source": "yt-dlp 自動字幕（en, VTT）2026-08-25 實抓，逐段對照時間戳核對",
       "note": "自動字幕大致乾淨：Dr. Jeff Ping→Dr. Jeff Peng。重要範圍註記：影片量化數據為脊椎椎間盤（37%→96%、膨出 30%→84%）與 rotator cuff 例，非膝部特定；膝部無症狀盛行率證據由單元文字與 Englund 2008 補。04:56 起為下一支營養影片導流，不做段落。",
@@ -2225,11 +2257,15 @@
             "與本課立場一致：報告所見、對照臨床、決定意義。"
           ]
         }
-      ]
+      ],
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "復健科專科醫師",
+      "reviewed_at": "2026-08-25",
+      "reviewed_commit": "fabc147d15dabf38185b7527e59ae830c7f7b86f"
     },
     {
       "video_url": "https://www.youtube.com/watch?v=70qKrMMsC5M",
-      "review_status": "draft",
+      "review_status": "approved",
       "transcript_verified_at": "2026-08-25",
       "transcript_source": "yt-dlp 自動字幕（en, VTT）2026-08-25 實抓；初稿由協作 agent 依逐字稿產生，主編抽驗段界與臨床內容對照原文",
       "note": "自動字幕訛誤已於筆記改採標準命名：crucet→cruciate；condile→condyle；feur→femur；premal／prehemeral fat pad→prefemoral fat pad；hoffers→Hoffa；infraatella→infrapatellar；supra patatella→suprapatellar；gastro nemis popus→gastrocnemius／popliteus；antilateral→anterolateral。01:02–02:17 為付費課程宣傳，未做段落。",
@@ -2389,11 +2425,15 @@
             "皮下脂肪內還應檢查 lipoma、其他腫瘤、充滿液體的 bursae，以及可能形成症狀性靜脈曲張的擴張血管。"
           ]
         }
-      ]
+      ],
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "復健科專科醫師",
+      "reviewed_at": "2026-08-25",
+      "reviewed_commit": "fabc147d15dabf38185b7527e59ae830c7f7b86f"
     },
     {
       "video_url": "https://www.youtube.com/watch?v=p3pI_TJ5PSo",
-      "review_status": "draft",
+      "review_status": "approved",
       "transcript_verified_at": "2026-08-25",
       "transcript_source": "yt-dlp 自動字幕（en, VTT）2026-08-25 實抓；初稿由協作 agent 依逐字稿產生，主編抽驗段界與臨床內容對照原文",
       "note": "自動字幕訛誤已於筆記改採標準命名：parameiscal→parameniscal；miniscal／miniscus→meniscal／meniscus；subcondrial→subchondral；tibmoral→tibiofemoral。全片為診斷判讀，無介入內容。",
@@ -2518,11 +2558,15 @@
             "PD fat-saturated 影像凸顯液體與水腫，可利用挫傷分布辨識 pivot-shift、hyperextension 或 lateral patellar dislocation 等損傷模式。"
           ]
         }
-      ]
+      ],
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "復健科專科醫師",
+      "reviewed_at": "2026-08-25",
+      "reviewed_commit": "fabc147d15dabf38185b7527e59ae830c7f7b86f"
     },
     {
       "video_url": "https://www.youtube.com/watch?v=c94RHHuh1pU",
-      "review_status": "draft",
+      "review_status": "approved",
       "transcript_verified_at": "2026-08-25",
       "transcript_source": "yt-dlp 自動字幕（en, VTT）2026-08-25 實抓；初稿由協作 agent 依逐字稿產生，主編抽驗段界與臨床內容對照原文",
       "note": "自動字幕訛誤已於筆記改採標準命名：popital puppeteers tendon→popliteus tendon；cruise ship／crucial ligaments→cruciate ligaments；semi-remonosus→semimembranosus；medial novel patellar retinacula→medial and lateral patellar retinacula；pivot shipped→pivot shift。全片為診斷判讀與病例，無介入內容。",
@@ -2681,11 +2725,15 @@
             "此病人同時有 grade 4 patellar chondromalacia，伴隨 high-grade fissures 與 subchondral cysts"
           ]
         }
-      ]
+      ],
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "復健科專科醫師",
+      "reviewed_at": "2026-08-25",
+      "reviewed_commit": "fabc147d15dabf38185b7527e59ae830c7f7b86f"
     },
     {
       "video_url": "https://www.youtube.com/watch?v=DoyfsqfuLAw",
-      "review_status": "draft",
+      "review_status": "approved",
       "transcript_verified_at": "2026-08-25",
       "transcript_source": "yt-dlp 自動字幕（en, VTT）2026-08-25 實抓；初稿由協作 agent 依逐字稿產生，主編抽驗段界與臨床內容對照原文",
       "note": "自動字幕大致可讀；關鍵判準已對原文核對：撕裂判準（訊號延伸至關節面、兩連續切面）、discoid 中線冠狀面 >14mm、Humphrey／transverse ligament 假撕裂陷阱。全片為診斷判讀，無介入內容。",
@@ -2810,11 +2858,15 @@
             "報告宜寫 tear pattern、位置與受累部位、週邊或各 zone 受累、以及是否有 displaced fragment；MRI 對內外側半月板撕裂偵測很有用且準確"
           ]
         }
-      ]
+      ],
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "復健科專科醫師",
+      "reviewed_at": "2026-08-25",
+      "reviewed_commit": "fabc147d15dabf38185b7527e59ae830c7f7b86f"
     },
     {
       "video_url": "https://www.youtube.com/watch?v=hDwxyjJIdHk",
-      "review_status": "draft",
+      "review_status": "approved",
       "transcript_verified_at": "2026-08-25",
       "transcript_source": "yt-dlp 自動字幕（en, VTT）2026-08-25 實抓；初稿由協作 agent 依逐字稿產生，主編抽驗段界與臨床內容對照原文",
       "note": "自動字幕訛誤已於筆記改採標準命名：miniscus／minusc→meniscus；Meniscal flons→meniscal flounce（05:10，無症狀膝可見，已核對）；debrisment→debridement（07:48、10:37 為治療選項口頭敘述，無操作示範）；rump→run；leion→lesion；parameical→parameniscal。兩連續切面 >90% 準確度與單切面降級 probable tear 判準已對原文核對（06:58、07:06）。",
@@ -2962,11 +3014,15 @@
             "報告時要 descriptive，並鼓勵臨床同事給予回饋。"
           ]
         }
-      ]
+      ],
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "復健科專科醫師",
+      "reviewed_at": "2026-08-25",
+      "reviewed_commit": "fabc147d15dabf38185b7527e59ae830c7f7b86f"
     },
     {
       "video_url": "https://www.youtube.com/watch?v=RiHjA9Z-7Kw",
-      "review_status": "draft",
+      "review_status": "approved",
       "transcript_verified_at": "2026-08-25",
       "transcript_source": "yt-dlp 自動字幕（en, VTT）2026-08-25 實抓；初稿由協作 agent 依逐字稿產生，主編抽驗段界與臨床內容對照原文",
       "note": "自動字幕訛誤已於筆記改採標準命名：vulgar stress／vial distress／various stress→valgus stress（03:34–04:03 一帶，多處）。核心教學點已逐字核對：撕裂三類型（interstitial／partial／full-thickness）、high/low grade 以 50% 纖維為界、臨床 grade 1–3 = 外翻應力內側間隙張開 <5／5–10／>10 mm、MRI 為臥位無應力不可直接套用臨床分級（04:03–04:12）。全片為診斷判讀與病例，無介入內容。",
@@ -3114,7 +3170,11 @@
             "講者以此結束 MCL 複合體回顧並致謝。"
           ]
         }
-      ]
+      ],
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "復健科專科醫師",
+      "reviewed_at": "2026-08-25",
+      "reviewed_commit": "fabc147d15dabf38185b7527e59ae830c7f7b86f"
     }
   ]
 }

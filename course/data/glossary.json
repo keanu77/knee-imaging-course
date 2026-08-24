@@ -4,7 +4,7 @@
     "review_status 治理與 segments/questions 相同：approved 才進 course.json 與搜尋索引。",
     "definition 只能出自課程文本敘述範圍；aliases 供搜尋同義詞比對。"
   ],
-  "review_status": "draft",
+  "review_status": "approved",
   "terms": [
     {
       "id": "quadriceps-tendon",
@@ -1850,5 +1850,9 @@
         "ch11-u1"
       ]
     }
-  ]
+  ],
+  "reviewed_by": "吳易澄",
+  "reviewer_role": "復健科專科醫師",
+  "reviewed_at": "2026-08-25",
+  "reviewed_commit": "fabc147d15dabf38185b7527e59ae830c7f7b86f"
 }

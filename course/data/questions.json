@@ -13,7 +13,7 @@
   ],
   "units": {
     "ch0-u1": {
-      "review_status": "draft",
+      "review_status": "approved",
       "questions": [
         {
           "id": "ch0-u1-q1",
@@ -108,10 +108,14 @@
             "REF-NICE-VTE-NG158"
           ]
         }
-      ]
+      ],
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "復健科專科醫師",
+      "reviewed_at": "2026-08-25",
+      "reviewed_commit": "fabc147d15dabf38185b7527e59ae830c7f7b86f"
     },
     "ch1-u1": {
-      "review_status": "draft",
+      "review_status": "approved",
       "questions": [
         {
           "id": "ch1-u1-q1",
@@ -206,10 +210,14 @@
             "REF-AIUM-MSK-2023"
           ]
         }
-      ]
+      ],
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "復健科專科醫師",
+      "reviewed_at": "2026-08-25",
+      "reviewed_commit": "fabc147d15dabf38185b7527e59ae830c7f7b86f"
     },
     "ch2-u1": {
-      "review_status": "draft",
+      "review_status": "approved",
       "questions": [
         {
           "id": "ch2-u1-q1",
@@ -304,10 +312,14 @@
             "REF-TAMBORRINI-KNEE-2025"
           ]
         }
-      ]
+      ],
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "復健科專科醫師",
+      "reviewed_at": "2026-08-25",
+      "reviewed_commit": "fabc147d15dabf38185b7527e59ae830c7f7b86f"
     },
     "ch3-u1": {
-      "review_status": "draft",
+      "review_status": "approved",
       "questions": [
         {
           "id": "ch3-u1-q1",
@@ -402,10 +414,14 @@
             "REF-PANDYA-KNEE-2023"
           ]
         }
-      ]
+      ],
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "復健科專科醫師",
+      "reviewed_at": "2026-08-25",
+      "reviewed_commit": "fabc147d15dabf38185b7527e59ae830c7f7b86f"
     },
     "ch4-u1": {
-      "review_status": "draft",
+      "review_status": "approved",
       "questions": [
         {
           "id": "ch4-u1-q1",
@@ -500,10 +516,14 @@
             "REF-WU-PLC-2024"
           ]
         }
-      ]
+      ],
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "復健科專科醫師",
+      "reviewed_at": "2026-08-25",
+      "reviewed_commit": "fabc147d15dabf38185b7527e59ae830c7f7b86f"
     },
     "ch5-u1": {
-      "review_status": "draft",
+      "review_status": "approved",
       "questions": [
         {
           "id": "ch5-u1-q1",
@@ -598,10 +618,14 @@
             "REF-NICE-VTE-NG158"
           ]
         }
-      ]
+      ],
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "復健科專科醫師",
+      "reviewed_at": "2026-08-25",
+      "reviewed_commit": "fabc147d15dabf38185b7527e59ae830c7f7b86f"
     },
     "ch6-u1": {
-      "review_status": "draft",
+      "review_status": "approved",
       "questions": [
         {
           "id": "ch6-u1-q1",
@@ -696,10 +720,14 @@
             "REF-ACR-CHRONIC-KNEE-2026"
           ]
         }
-      ]
+      ],
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "復健科專科醫師",
+      "reviewed_at": "2026-08-25",
+      "reviewed_commit": "fabc147d15dabf38185b7527e59ae830c7f7b86f"
     },
     "ch7-u1": {
-      "review_status": "draft",
+      "review_status": "approved",
       "questions": [
         {
           "id": "ch7-u1-q1",
@@ -794,10 +822,14 @@
             "REF-AIUM-DOC-2026"
           ]
         }
-      ]
+      ],
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "復健科專科醫師",
+      "reviewed_at": "2026-08-25",
+      "reviewed_commit": "fabc147d15dabf38185b7527e59ae830c7f7b86f"
     },
     "ch8-u1": {
-      "review_status": "draft",
+      "review_status": "approved",
       "questions": [
         {
           "id": "ch8-u1-q1",
@@ -923,10 +955,14 @@
             "REF-ACR-CHRONIC-KNEE-2026"
           ]
         }
-      ]
+      ],
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "復健科專科醫師",
+      "reviewed_at": "2026-08-25",
+      "reviewed_commit": "fabc147d15dabf38185b7527e59ae830c7f7b86f"
     },
     "ch9-u1": {
-      "review_status": "draft",
+      "review_status": "approved",
       "questions": [
         {
           "id": "ch9-u1-q1",
@@ -1052,10 +1088,14 @@
             "REF-ACR-ACUTE-KNEE-2020"
           ]
         }
-      ]
+      ],
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "復健科專科醫師",
+      "reviewed_at": "2026-08-25",
+      "reviewed_commit": "fabc147d15dabf38185b7527e59ae830c7f7b86f"
     },
     "ch10-u1": {
-      "review_status": "draft",
+      "review_status": "approved",
       "questions": [
         {
           "id": "ch10-u1-q1",
@@ -1181,10 +1221,14 @@
             "REF-ACR-CHRONIC-KNEE-2026"
           ]
         }
-      ]
+      ],
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "復健科專科醫師",
+      "reviewed_at": "2026-08-25",
+      "reviewed_commit": "fabc147d15dabf38185b7527e59ae830c7f7b86f"
     },
     "ch11-u1": {
-      "review_status": "draft",
+      "review_status": "approved",
       "questions": [
         {
           "id": "ch11-u1-q1",
@@ -1310,7 +1354,11 @@
             "REF-SSR-MENISCUS-2026"
           ]
         }
-      ]
+      ],
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "復健科專科醫師",
+      "reviewed_at": "2026-08-25",
+      "reviewed_commit": "fabc147d15dabf38185b7527e59ae830c7f7b86f"
     }
   }
 }
