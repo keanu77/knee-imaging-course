@@ -9,6 +9,7 @@ import {
   initResizer, setLanguages,
 } from "./player.js";
 import { bindKeys, listen as ytListen } from "./keys.js";
+import { mountPictograms } from "./pictograms.js";
 import * as discuss from "./discuss.js";
 
 let LESSON_NOUN = "堂主課";
@@ -1131,6 +1132,7 @@ function syncThemeIcon() {
 
 async function init() {
   mountIcons();
+  mountPictograms();
   syncThemeIcon();
 
   let data;
