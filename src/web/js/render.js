@@ -219,7 +219,9 @@ const langLabel = (l) => (CFG.languages || {})[l] || l || "其他";
 /** 主課可能有多個語言版本，用小分頁切換 */
 function lessonBox(u) {
   const lessons = (u.lessons || (u.lesson ? [u.lesson] : [])).filter(Boolean);
-  if (!lessons.length) return videoCard(null);
+  // 本課的教學影片全部走 drills（精選影片），單元沒有「主課影片」這個角色。
+  // 沒有主課影片時整塊不渲染，不要留「尚未找到合格影片」的空佔位卡。
+  if (!lessons.length) return "";
   if (lessons.length === 1) return videoCard(lessons[0]);
 
   return `
