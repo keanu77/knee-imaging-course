@@ -580,68 +580,6 @@ function renderUnit(u, mastery) {
 
 /* --- 立場聲明 ------------------------------------------------------------ */
 
-export function renderStance(stance) {
-  if (!stance?.length) return "";
-
-  const card = (s, i) => {
-    const g = gradeOf(s.evidence_grade);
-    const findings = (s.key_findings || []).length
-      ? `<details>
-           <summary>看完整實證（${s.key_findings.length} 項發現）</summary>
-           <ul class="StanceCard__findings">
-             ${s.key_findings.map((f) => `<li>${esc(f)}</li>`).join("")}
-           </ul>
-           ${s.caveats ? `<ul class="StanceCard__findings"><li>${esc(s.caveats)}</li></ul>` : ""}
-         </details>`
-      : "";
-
-    const cites = (s.citations || []).length
-      ? `<div class="StanceCard__cites">
-           ${s.citations
-             .map(
-               (c) =>
-                 `<a href="${esc(c.url)}" target="_blank" rel="noopener" title="${esc(c.title)}">${esc(c.journal || c.title)}${c.year ? ` ${esc(c.year)}` : ""}</a>`,
-             )
-             .join("")}
-         </div>`
-      : "";
-
-    return `
-      <article class="StanceCard">
-        <header class="StanceCard__head">
-          <span class="StanceCard__n">${i + 1}</span>
-          <span class="StanceCard__name">${esc(s.name)}</span>
-          <span class="Label ${toneCls(g)}">${g.label}</span>
-        </header>
-        <div class="StanceCard__body">
-          <p class="StanceCard__verdict">${esc((CFG.stance?.verdicts || {})[s.unit] || "")}</p>
-          <p class="StanceCard__summary">${esc(s.summary)}</p>
-          ${findings}
-        </div>
-        <footer class="StanceCard__foot">
-          ${cites}
-          ${
-            s.url
-              ? `<div class="StanceCard__cites" style="margin-top:6px">
-                   <a href="${esc(s.url)}" target="_blank" rel="noopener">在 OpenEvidence 讀完整回答 ${icon("external-link", 10)}</a>
-                 </div>`
-              : ""
-          }
-        </footer>
-      </article>`;
-  };
-
-  return `
-    <div class="StancePage__intro">
-      <h2>${icon("microscope", 22)} ${esc(CFG.stance?.title || "")}</h2>
-      <p>${esc(CFG.stance?.intro || "")}</p>
-    </div>
-    <div class="StancePage__grid">${stance.map(card).join("")}</div>
-    <div class="StancePage__outro">
-      <strong>${esc(CFG.stance?.outroTitle || "")}</strong>
-      ${CFG.stance?.outro || ""}
-    </div>`;
-}
 
 /* --- 章節 ---------------------------------------------------------------- */
 
@@ -773,9 +711,6 @@ export function renderHome(course, { doneSet = new Set(), lastUnit = null } = {}
 ${esc(L.stanceLede || "")}
       </p>
       <div class="Landing__stance">${stanceCards}</div>
-      <button class="btn" type="button" data-tab-link="stance">
-        ${esc(CFG.ui?.tabs?.stance || "立場")} ${icon("chevron-right", 14)}
-      </button>
     </section>
 
     <section class="Landing__section">

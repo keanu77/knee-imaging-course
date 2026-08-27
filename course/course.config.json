@@ -56,8 +56,7 @@
     "searchPlaceholder": "搜尋結構、病灶、視圖、序列或專家…",
     "tabs": {
       "course": "課程內容",
-      "player": "影片學習",
-      "stance": "課程標準"
+      "player": "影片學習"
     },
     "progressLabel": "學習進度",
     "facetLabel": "依解剖區域篩選",

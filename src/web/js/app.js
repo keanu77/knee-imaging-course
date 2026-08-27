@@ -1,7 +1,7 @@
 // app.js — 載入課程資料、渲染、互動與進度追蹤
 import { mountIcons, icon } from "./icons.js";
 import {
-  renderChapter, renderStance, renderHome, setDrillEvidence, setConfig, esc,
+  renderChapter, renderHome, setDrillEvidence, setConfig, esc,
 } from "./render.js";
 import { renderMusclePanel, syncMuscleChips, applyFilters as runFilters } from "./filters.js";
 import {
@@ -664,7 +664,6 @@ function setTab(tab) {
 
   $("#view-home").hidden = tab !== "home";
   $("#main").hidden = tab !== "course";
-  $("#view-stance").hidden = tab !== "stance";
   $("#view-player").hidden = tab !== "player";
   scrollTo({ top: 0 });
 
@@ -1167,14 +1166,6 @@ async function init() {
     .map((ch) => renderChapter(ch, state.done, state.mastery))
     .join("");
 
-  const stanceEl = $("#view-stance");
-  if (data.stance?.length) {
-    stanceEl.innerHTML = renderStance(data.stance);
-    $("#tabStanceCount").textContent = data.stance.length;
-  } else {
-    stanceEl.remove();
-    $('.TabNav__item[data-tab="stance"]')?.remove();
-  }
 
   $("#tabCourseCount").textContent = data.meta.units;
 

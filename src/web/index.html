@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/course.css" />
     <link rel="stylesheet" href="css/evidence.css" />
-    <link rel="stylesheet" href="css/stance.css" />
     <link rel="stylesheet" href="css/tabs.css" />
     <link rel="stylesheet" href="css/player.css" />
     <link rel="stylesheet" href="css/landing.css" />
@@ -55,11 +54,6 @@
           <button class="TabNav__item" data-tab="player" type="button" aria-label="{{ui.tabs.player}}">
             <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-play" /></svg>
             <span class="TabNav__label">{{ui.tabs.player}}</span>
-          </button>
-          <button class="TabNav__item" data-tab="stance" type="button" aria-label="{{ui.tabs.stance}}">
-            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-microscope" /></svg>
-            <span class="TabNav__label">{{ui.tabs.stance}}</span>
-            <span class="Counter" id="tabStanceCount">0</span>
           </button>
         </div>
       </nav>
@@ -177,8 +171,6 @@
         <div class="Player__items" id="playlist"></div>
       </aside>
     </section>
-
-    <section class="StancePage" id="view-stance" hidden></section>
 
     <main class="Layout" id="main" data-view="course">
       <aside class="Layout__sidebar">
