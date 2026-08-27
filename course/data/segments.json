@@ -3462,6 +3462,355 @@
           ]
         }
       ]
+    },
+    {
+      "video_url": "https://www.youtube.com/watch?v=sVahQdwJY6A",
+      "review_status": "draft",
+      "transcript_verified_at": "2026-08-27",
+      "transcript_source": "yt-dlp 自動字幕（en, VTT）2026-08-27 實抓；初稿由協作 agent 依逐字稿產生，主編抽驗段界與術語還原",
+      "note": "ISMRM 學會影片，自動字幕大致可讀；全片為伸膝機轉的診斷解剖與損傷判讀，無介入操作示範。",
+      "segments": [
+        {
+          "start": "00:03",
+          "end": "01:17",
+          "title": "開場：伸膝機制課程目標與五項組成",
+          "summary": "講者介紹自己與本課目標，並列出膝伸膝機制（extensor mechanism）的五項組成及其功能。",
+          "detail": [
+            "講者為 Mass General Brigham 的肌肉骨骼放射科醫師，主題為膝部 extensor mechanism。",
+            "今日目標：回顧正常解剖與 MR 表現並討論 pitfalls，再以病例討論 tendinopathy、partial tear 與 full thickness tear，最後提醒評估時還要想到其他病理。",
+            "伸膝機制五項：quadriceps tendon、patellar tendon、patella、tibial tuberosity，以及 medial and lateral retinaculum。",
+            "功能是協助膝伸直並穩定 patella；本課重點放在伸直。"
+          ]
+        },
+        {
+          "start": "01:25",
+          "end": "03:15",
+          "title": "正常解剖：quadriceps tendon 分層與過度判讀陷阱",
+          "summary": "以 proton density 影像說明股四頭肌肌腱由淺至深的三層構造，並提醒勿把正常分層誤認為肌腱病變。",
+          "detail": [
+            "畫面為膝矢狀影像（含 patella 放大）、冠狀與軸位；左上 proton density sequence 適合看解剖。",
+            "quadriceps tendon 由淺至深：最表淺細 hypointense line 為 rectus femoris；其後方較厚層為 vastus medialis 與 vastus lateralis 匯合；最深層細 hypointense line 為 vastus intermedius。",
+            "肌腱呈現幾層、各層厚度都有正常變異。",
+            "Pitfall：看到訊號異常時先問自己，這會不會其實是正常 layered appearance，勿過度判讀為 tendinopathy 或 partial tear。"
+          ]
+        },
+        {
+          "start": "03:17",
+          "end": "05:11",
+          "title": "Patella、prepatellar quadriceps continuation 與 patellar tendon",
+          "summary": "說明 patella 為籽骨並被股四頭肌肌腱包覆，以及髕腱正常訊號、附著位置與脛骨結節骨化中心。",
+          "detail": [
+            "patella 是籽骨，前方被 quadriceps tendon 包覆；rectus femoris 薄層沿前方包覆 patella，稱為 prepatellar quadriceps continuation，並延續到 patellar tendon。",
+            "patella 深面襯 hyaline cartilage，呈 intermediate signal。",
+            "正常 patellar tendon 為 hypointense，附著於 tibial tuberosity；tibial tuberosity 有獨立 ossification center，骨骼未成熟病人要想到相關病理。",
+            "patellar tendon 也可有類似分層外觀（較少被討論）；通常附著於 patella 前方尾側約三分之二，有時較深纖維附著於較下方與後方。"
+          ]
+        },
+        {
+          "start": "05:13",
+          "end": "06:18",
+          "title": "判讀陷阱：全伸直皺褶、脂肪抑制不全與肌腱分層",
+          "summary": "回顧伸膝機制肌腱判讀的三大陷阱，避免把偽影或正常變異當成 tendinopathy。",
+          "detail": [
+            "膝全伸直時 patellar tendon 可顯得 redundant，肌腱內可出現偽影性訊號異常，勿過度判讀為 tendinopathy。",
+            "前方軟組織 hyperintense signal 在本例為 incomplete fat saturation；軸位可確認這不是 edema。",
+            "需記住的主要 pitfalls：incomplete fat saturation、全伸直時 patellar tendon buckling，以及肌腱（尤其 quadriceps）的 layered appearance。"
+          ]
+        },
+        {
+          "start": "06:25",
+          "end": "07:20",
+          "title": "評估架構：增厚、訊號、周圍軟組織與骨頭",
+          "summary": "講者提出評估伸膝機制肌腱的提問流程，並依此組織報告描述。",
+          "detail": [
+            "先看肌腱是否增厚、內部是否有異常訊號。",
+            "若有異常訊號，再區分是 fluid signal（撕裂）還是僅較高訊號（degeneration／tendinopathy）。",
+            "接著看肌腱周圍軟組織與鄰近骨頭在做什麼，並用這個結構來寫報告。"
+          ]
+        },
+        {
+          "start": "07:24",
+          "end": "08:30",
+          "title": "病例：年輕病人近端 patellar tendinopathy",
+          "summary": "二十多歲病人髕腱增厚且近端訊號增高，但非液體訊號、無缺口，診斷為 tendinopathy。",
+          "detail": [
+            "二十多歲病人 patellar tendon 明顯增厚；fluid-sensitive sequences 見近端肌腱內訊號增高，並有 peritendinous edema。",
+            "骨頭沒有訊號異常，patella 尾側看起來正常。",
+            "訊號雖高但不是 fluid signal，也沒有 gap，故不是撕裂。",
+            "增厚加上訊號增高可確立 tendinopathy；單靠外觀不夠，因為肌腱正常變異很多。"
+          ]
+        },
+        {
+          "start": "08:38",
+          "end": "10:16",
+          "title": "病例：籃球員近端 patellar tendon 局部部分撕裂",
+          "summary": "19 歲籃球員前膝痛，近端髕腱局部液體訊號合併 Hoffa 脂肪墊與下極骨髓水腫，屬 jumper's knee 光譜。",
+          "detail": [
+            "19 歲男性籃球員，主訴 anterior knee pain；近端 patellar tendon 軸位見局部高訊號，與關節內薄層液體同為 fluid signal。",
+            "Hoffa's fat pad 有 edema；inferior patellar pole 有少量 bone marrow edema。",
+            "向臨床傳達：proximal patellar tendinopathy with focal partial tear（可給測量），並有下極反應性骨髓水腫與 Hoffa's fat pad 鄰近軟組織水腫。",
+            "此類表現即 jumper's knee；骨骼未成熟病人要想到 Sinding-Larsen-Johansson syndrome（下極牽引），同屬此光譜。"
+          ]
+        },
+        {
+          "start": "10:24",
+          "end": "12:43",
+          "title": "病例：遠端 quadriceps tendon 部分撕裂",
+          "summary": "61 歲男性膝前直接撞擊後遠端股四頭肌部分撕裂，需描述受累層次、範圍及軟組織與骨頭。",
+          "detail": [
+            "61 歲男性膝前 direct trauma／contusion；遠端 quadriceps 雖可見正常分層，但遠端附著處有高訊號，中央纖維未連到 patella，內外側纖維仍連續，故為範圍較小的 distal quadriceps partial tear。",
+            "對外科有幫助的描述：表淺 rectus femoris 肯定受累，中層 vastus medialis 與 vastus lateralis 也受累，深層 vastus intermedius 仍 intact。",
+            "軟組織要描述 edema：quadriceps fat pad 水腫，以及 prepatellar 與前方軟組織水腫。",
+            "需問骨頭是否中斷；可回到 radiograph 找 MRI 較不易看見的小 avulsion fractures。"
+          ]
+        },
+        {
+          "start": "12:48",
+          "end": "14:42",
+          "title": "病例：遠端 quadriceps 完全斷裂與報告重點",
+          "summary": "遠端股四頭肌完全斷裂可見纖維無法追到髕骨、髕骨位置異常與關節出血外漏，報告需描述回縮並避免把全伸直皺褶過度判讀。",
+          "detail": [
+            "完全斷裂通常來自 forced flexion 或 quadriceps 直接打擊；本例無法將低訊號纖維追到 patella，patella 位置偏下。",
+            "關節內容物漏至 prepatellar 軟組織，軸位清楚；本例為低訊號 hemorrhage，有時也可是高訊號關節液經缺損外漏。",
+            "報告應描述肌腱回縮程度、肌腱外觀與軟組織異常；若有 radiograph，較易判斷是否有 osteophyte 撕脫。",
+            "本張 MRI 膝為全伸直，patellar tendon 顯得很 redundant，屬先前討論的 pitfall，勿過度判讀。"
+          ]
+        },
+        {
+          "start": "14:51",
+          "end": "17:13",
+          "title": "其他病理：quadriceps tendon 的 tophaceous gout",
+          "summary": "浸潤性前方軟組織病灶伸入股四頭肌肌腱，實為痛風 tophus，提醒勿一律當成 tendinopathy。",
+          "detail": [
+            "伸膝機制不只急性傷害或過度使用；本例 patella 前方異常軟組織位於 quadriceps 前方並伸入肌腱，軸位顯示浸潤性過程，quadriceps fat pad 也有軟組織延伸。",
+            "不應稱為 tendinopathy，因病變不應一路影響到 patella 前方；本例為侵犯 quadriceps tendon 的 tophaceous gout。",
+            "還要想到 neoplasm、發炎性病理（如 gout）與 infection；gouty tophi 與 tendinopathy 常不易分辨，需看是否 expansile、infiltrative。",
+            "若朝 gout 思考：找骨頭 erosion、膝內其他痛風位置；gout 好發於 extensor mechanism，也要看 cruciates 與 popliteus tendon；radiograph 常可看到 mineralization。"
+          ]
+        },
+        {
+          "start": "17:21",
+          "end": "19:02",
+          "title": "總結：解剖、陷阱、病例光譜與急慢性判斷",
+          "summary": "複習伸膝機制組成、三大判讀陷阱、從 tendinopathy 到完全撕裂與痛風病例，並提醒區分急性、慢性或急性加慢性。",
+          "detail": [
+            "伸膝機制含 quadriceps tendon、patellar tendon、patella、tibial tuberosity 與 medial and lateral patellar retinaculum；對伸直必要，也穩定 patella（後者本日未深談）。",
+            "主要 pitfalls：此區常見 incomplete fat saturation，訊號增高先問是真發現還是 artifact；quadriceps 分層為 rectus femoris，其後 vastus medialis 與 lateralis，再後 vastus intermedius；層數與厚度皆為 variant anatomy。",
+            "病例回顧：tendinopathy、patellar 與 quadriceps 的 partial tears、quadriceps 全層撕裂，以及侵犯 quadriceps tendon 的 tophaceous gout。",
+            "審視這些病理時，永遠問自己是急性、慢性，或 acute on chronic 的組合。"
+          ]
+        }
+      ]
+    },
+    {
+      "video_url": "https://www.youtube.com/watch?v=fAD4ET3aP1Q",
+      "review_status": "draft",
+      "transcript_verified_at": "2026-08-27",
+      "transcript_source": "yt-dlp 自動字幕（en, VTT）2026-08-27 實抓；初稿由協作 agent 依逐字稿產生，主編抽驗段界與臨床要點對照原文",
+      "note": "自動字幕大致可讀；核心概念已對原文核對：graft 成熟四階段（壞死→再血管化→細胞增生→重塑）、術後第一年高訊號常屬正常過程、不同移植物來源（BPTB／hamstring／quadriceps／allograft）的訊號時程差異、各研究對成熟時程結論不一。全片為術後影像判讀，無手術或介入操作示範；頻道含付費課程行銷。",
+      "segments": [
+        {
+          "start": "00:00",
+          "end": "01:59",
+          "title": "ACL重建術後MRI的判讀目的",
+          "summary": "介紹常見ACL移植物類型、術後MRI適應情境，以及本片聚焦的移植物訊號強度。",
+          "detail": [
+            "常見移植物包括gracilis或semitendinosus hamstring tendon、bone–patellar tendon–bone graft與quadriceps tendon graft，亦可能使用allograft。",
+            "不同移植物在MRI上具有不同的成熟過程與表現。",
+            "ACL重建術後MRI可用於評估移植物與骨隧道位置、併發症，以及再受傷後移植物是否完整。",
+            "本片集中討論初次ACL重建術後移植物的MRI訊號強度。"
+          ]
+        },
+        {
+          "start": "02:00",
+          "end": "03:40",
+          "title": "移植物成熟的四個階段",
+          "summary": "ACL移植物的訊號會隨時間變化，其癒合與成熟過程可能持續超過兩年。",
+          "detail": [
+            "移植物成熟依序經歷avascular necrosis、revascularization、cellular proliferation與remodeling四個階段。",
+            "移植物離開原本位置後沒有血管與身體相連，因此首先發生avascular necrosis。",
+            "壞死組織產生並釋放cytokines，進而誘導growth factors進入移植物。",
+            "Growth factors促進移植物成熟與癒合，並帶來血管內生長及revascularization。"
+          ]
+        },
+        {
+          "start": "03:41",
+          "end": "05:19",
+          "title": "細胞增生、重塑與正常高訊號",
+          "summary": "再血管化後的細胞增生會提高移植物訊號，而最終重塑後訊號可逐漸接近正常ACL。",
+          "detail": [
+            "Cellular proliferation階段的移植物細胞數高於平常，可能伴隨較高的MRI訊號強度。",
+            "Remodeling階段會逐漸恢復正常，單就訊號而言可接近正常ACL或未受傷PCL。",
+            "動物模型中最高訊號出現在術後6至12週，高訊號亦與較低強度相關。",
+            "移植物高訊號對應hypervascular及hypercellular修復期，在第一年內可屬正常，但遠端三分之二高訊號也可能來自graft impingement。"
+          ]
+        },
+        {
+          "start": "05:20",
+          "end": "06:29",
+          "title": "Bone–patellar tendon–bone graft的訊號變化",
+          "summary": "Bone–patellar tendon–bone graft術後初期維持低訊號，之後升高並可能至約18個月才接近原生ACL。",
+          "detail": [
+            "此移植物包含inferior patellar pole的骨塊、patellar tendon中段及tibial tuberosity附近的骨塊。",
+            "兩端骨塊置入骨隧道，中間的patellar tendon形成ACL移植物。",
+            "術後最初數天、數週至約第一個月仍呈低訊號，類似原本的patellar tendon。",
+            "之後訊號強度升高；研究顯示可能需約18個月才與原生ACL訊號相近。"
+          ]
+        },
+        {
+          "start": "06:30",
+          "end": "08:24",
+          "title": "Hamstring、quadriceps與allograft的差異",
+          "summary": "不同移植物具有各自的正常訊號型態與恢復時程，判讀前必須知道使用的重建技術。",
+          "detail": [
+            "Hamstring autograft由一至兩條肌腱折疊或交織而成，關節液可從術後早期進入各股之間。",
+            "沿折疊肌腱走向平行排列的線狀液體高訊號可屬hamstring autograft正常表現，但出現在bone–patellar tendon–bone graft則屬異常。",
+            "Quadriceps tendon graft可在術後4至8個月呈中等訊號，之後逐漸下降，約12個月恢復正常。",
+            "Allograft的訊號變化方向相似，但通常較慢，可能需兩年才接近正常，且講者指出較長的成熟時間伴隨較高失敗風險。"
+          ]
+        },
+        {
+          "start": "08:25",
+          "end": "09:52",
+          "title": "正常ACL移植物的訊號時間軸",
+          "summary": "正常移植物術後初期為低訊號，約六個月達高峰，再逐步下降並通常於約十二個月接近正常。",
+          "detail": [
+            "剛完成手術時，移植物尚未發生明顯壞死，因此通常呈低訊號。",
+            "訊號在術後第一年升高，約4至8個月最明顯，並在六個月左右達高峰；此正常過程稱為ligamentization。",
+            "約12個月後，移植物訊號通常應接近原生ACL。",
+            "判讀時必須知道手術日期與移植物技術；第一個術後月若出現高訊號可能提示早期再受傷。"
+          ]
+        },
+        {
+          "start": "09:53",
+          "end": "11:12",
+          "title": "成熟時程的研究差異與限制",
+          "summary": "研究對移植物訊號恢復時間的結論差異很大，而且MRI訊號未能預測臨床或功能結果。",
+          "detail": [
+            "部分研究認為訊號需兩年恢復正常，另有研究指出四年後仍可見小範圍高訊號，甚至可能永遠無法完全恢復。",
+            "納入34項研究的系統性回顧指出，各研究使用的重建技術與MRI序列高度異質，難以直接比較。",
+            "PD與注射gadolinium後的T1序列中，高訊號約於六個月達高峰；gradient echo序列則可能持續升高12個月、維持低訊號或完全不變。",
+            "僅七項研究將MRI與實際臨床結果對照，而T2訊號無法預測ACL重建後早期或長期的臨床及功能結果。"
+          ]
+        },
+        {
+          "start": "11:13",
+          "end": "12:46",
+          "title": "臨床判讀的實用原則",
+          "summary": "移植物訊號只能在手術時間、重建技術與纖維連續性的背景下判讀，不宜單獨作為決策依據。",
+          "detail": [
+            "現有研究缺乏一致性，講者認為未來需要T2*、fingerprinting或其他更客觀的biomarker，並提及人工智慧可能有所幫助。",
+            "僅依移植物訊號本身難以做出良好判斷，即使文獻通常描述訊號先升高再下降。",
+            "判讀時應先確認手術日期與重建技術；第一年內若訊號偏高但移植物仍具連續性，可視為正常表現。",
+            "12個月後仍有高訊號會使講者提高警覺，但因其與臨床結果缺乏良好相關性，不確定應賦予多少權重。"
+          ]
+        },
+        {
+          "start": "12:47",
+          "end": "14:26",
+          "title": "延伸學習與課程資源",
+          "summary": "影片結尾介紹頻道會員、Patreon與virtual MSK radiology fellowship等延伸學習方式。",
+          "detail": [
+            "頻道會員可依加入層級取得圖示、福利、專屬影片及MSK school討論空間。",
+            "觀眾可透過Patreon支持教學內容創作者。",
+            "Virtual MSK radiology fellowship是一對一、以病例為基礎的教學計畫。",
+            "該計畫旨在協助radiologists提升MSK報告的速度與信心。"
+          ]
+        }
+      ]
+    },
+    {
+      "video_url": "https://www.youtube.com/watch?v=MSyPvjYA_J8",
+      "review_status": "draft",
+      "transcript_verified_at": "2026-08-27",
+      "transcript_source": "yt-dlp 自動字幕（en, VTT）2026-08-27 實抓；初稿由協作 agent 依逐字稿產生，主編抽驗段界與臨床要點對照原文",
+      "note": "自動字幕大致可讀；核心概念已對原文核對：graft 撕裂主要徵象（纖維中斷）、次要徵象與臨床相關性、MRI 外觀近似完整仍可能為手術證實撕裂（偽陰性）、部分撕裂判讀的序列限制。全片為術後影像判讀，無手術或介入操作示範；頻道含付費課程行銷。",
+      "segments": [
+        {
+          "start": "00:00",
+          "end": "01:13",
+          "title": "ACL 重建術後 MRI：移植物完整性",
+          "summary": "本片聚焦 ACL 重建術後移植物完整性的 MRI 判讀，並搭配實際影像案例說明。",
+          "detail": [
+            "主題為 ACL reconstruction 後的 MRI 評估。",
+            "本段重點聚焦於 graft integrity。",
+            "移植物訊號強度已於前一部影片討論。",
+            "本片除理論外，也會展示實際 MRI 案例。"
+          ]
+        },
+        {
+          "start": "01:14",
+          "end": "02:22",
+          "title": "ACL 移植物撕裂的主要 MRI 徵象",
+          "summary": "ACL graft 撕裂可表現為纖維中斷、變薄、訊號升高、波浪狀外觀或水平走向。",
+          "detail": [
+            "明顯的 graft 纖維不連續是直接徵象。",
+            "移植物厚度較原本變薄，表示部分纖維可能已撕裂且不可見。",
+            "T2 訊號升高需謹慎判讀，尤其術後第一年內並非可靠的單獨指標。",
+            "纖維呈波浪狀或部分、全部轉為水平走向，也可提示 ACL graft 撕裂或再撕裂。"
+          ]
+        },
+        {
+          "start": "02:23",
+          "end": "03:53",
+          "title": "次要徵象與臨床相關的重要性",
+          "summary": "Anterior tibial translation 的診斷能力有限，ACL graft 撕裂的判定必須結合新外傷病史與臨床檢查。",
+          "detail": [
+            "Anterior tibial translation 可作為次要徵象，但撕裂時可能不存在，移植物完整時也可能出現。",
+            "除非撕裂非常明顯，單靠 MRI 難以有把握地診斷 ACL graft 撕裂。",
+            "一項納入 50 位接受 revision surgery 且確認 graft 撕裂患者的研究中，24% 的 MRI 外觀正常。",
+            "MRI 只是外科醫師評估重建 ACL 的附加資訊，不能作為唯一工具。"
+          ]
+        },
+        {
+          "start": "03:54",
+          "end": "05:40",
+          "title": "案例一：脛骨隧道內的 ACL graft 中斷",
+          "summary": "案例中的 graft 中段外觀近似正常，但沿影像追蹤後可見脛骨隧道內缺乏移植物材料，確認為撕裂。",
+          "detail": [
+            "冠狀面所見的 graft 中段訊號與厚度看似正常，纖維也可被追蹤。",
+            "撕裂不只發生於移植物中段，也可能位於骨隧道內。",
+            "脛骨隧道入口以下未見應有的 graft material，並伴隨可能的 ganglion cyst、隧道變寬及少量骨髓水腫。",
+            "軸狀面追蹤同樣顯示隧道內沒有 graft material，僅見螺釘突出，因此判定 ACL graft 撕裂。"
+          ]
+        },
+        {
+          "start": "05:41",
+          "end": "07:14",
+          "title": "案例二：MRI 外觀近似完整的手術證實撕裂",
+          "summary": "此 revision ACL 案例在 MRI 上仍可見多數移植物纖維，但後續手術證實 graft 已撕裂。",
+          "detail": [
+            "患者為年輕女性，曾接受 ACL 手術，可能已是 revision surgery，且先前有輕微外傷。",
+            "MRI 可見 graft 進入脛骨與股骨隧道，顯示至少部分纖維仍然完整。",
+            "部分區域有較高訊號、線狀訊號及略呈波浪或鬆弛的外觀。",
+            "影像未見明顯 anterior tibial translation，但數週後手術仍證實 ACL graft 撕裂。"
+          ]
+        },
+        {
+          "start": "07:15",
+          "end": "09:07",
+          "title": "部分撕裂判讀與 MRI 序列限制",
+          "summary": "細微的波浪狀與高訊號變化可能提示部分撕裂，但難以僅憑 MRI 判定為全層撕裂。",
+          "detail": [
+            "此案例可考慮 graft impingement 或 partial tear，但講者不會僅憑影像判定 complete tear。",
+            "即使觀察到細微異常，影像上仍可能呈現完整纖維多於受損纖維。",
+            "T1 序列中的結構外觀模糊，對 graft 判讀幫助不大。",
+            "講者亦不建議過度依賴 3D gradient 序列或其矢狀面重組影像，尤其已有其他序列可供判讀時。"
+          ]
+        },
+        {
+          "start": "09:08",
+          "end": "09:59",
+          "title": "整合判讀與報告措辭",
+          "summary": "ACL graft 的訊號與完整性無法提供完整答案，報告應保留判斷並結合症狀、病史及臨床資料。",
+          "detail": [
+            "Graft signal 與 integrity 兩項標準本身不足以呈現完整狀況。",
+            "MRI 應視為 ACL 評估的附加資訊，並與臨床症狀及病史相關聯。",
+            "報告中可描述「MRI 上訊號與完整性看似正常」，不宜過度肯定 graft 完全完整。",
+            "ACL 重建術後 MRI 判讀並非單純的二分答案。"
+          ]
+        }
+      ]
     }
   ]
 }
