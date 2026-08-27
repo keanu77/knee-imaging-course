@@ -3,13 +3,13 @@
   "repository": "keanu77/knee-ultrasound-course",
   "site_url": "https://knee-imaging.sportsmedicine.tw",
   "body_region": {
-    "zh": "膝部",
+    "zh": "膝蓋",
     "en": "knee",
     "joint_zh": "膝關節"
   },
   "audience": "physicians",
   "locale": "zh-Hant-TW",
-  "prerequisite_knowledge": "具醫師資格並熟悉膝部臨床解剖與基本理學檢查；建議具備基礎超音波物理、探頭方向與儀器操作概念。線上課程不取代實機訓練、合格督導或機構 credentialing。",
+  "prerequisite_knowledge": "具醫師資格並熟悉膝蓋臨床解剖與基本理學檢查；建議具備基礎超音波物理、探頭方向與儀器操作概念。線上課程不取代實機訓練、合格督導或機構 credentialing。",
   "scope": "diagnostic-only",
   "recent_content_cutoff": "2021-08-01",
   "classic_teacher_leads": [],
@@ -29,7 +29,7 @@
   "medical_reviewer": {
     "name": "吳易澄",
     "qualification": "復健科專科醫師",
-    "scope": "膝部診斷性肌肉骨骼超音波課程內容逐單元審查；本次僅登錄審查責任，不代表已簽核或 approved。"
+    "scope": "膝蓋診斷性肌肉骨骼超音波課程內容逐單元審查；本次僅登錄審查責任，不代表已簽核或 approved。"
   },
   "notes": "Course brief 已凍結。依現行專業指引建立課程骨架，再驗證 2021-08-01 之後的近期影片與經典候選。正式網域與 Cloudflare zone 僅記錄；本次不建立 Pages、不修改 DNS、不 merge、不開放 indexing。"
 }

@@ -224,7 +224,7 @@
       "unit": "concept-scope",
       "name": "診斷範圍與能力邊界",
       "evidence_grade": "guideline",
-      "summary": "本課只建立膝部診斷掃描、判讀、紀錄與升級決策；線上完成不等於可獨立執行、出具正式報告或取得 credentialing。",
+      "summary": "本課只建立膝蓋診斷掃描、判讀、紀錄與升級決策；線上完成不等於可獨立執行、出具正式報告或取得 credentialing。",
       "key_findings": [
         "完整四區檢查與臨床問題導向的聚焦檢查都可使用，但報告必須忠實描述實際範圍。",
         "急性明顯創傷、深部關節內問題或骨髓病變不能由陰性局部超音波排除。",
@@ -282,7 +282,7 @@
         "疑骨折、感染、腫瘤、鎖膝、伸膝機轉中斷或神經血管缺損時應按情境升級。",
         "後膝或小腿腫痛疑似 DVT 時，局部 MSK 掃描不能取代正式 VTE 臨床路徑與靜脈超音波。"
       ],
-      "caveats": "陰性聚焦檢查只能回答已實際顯示的結構；不能寫成整個膝部或靜脈系統正常。",
+      "caveats": "陰性聚焦檢查只能回答已實際顯示的結構；不能寫成整個膝蓋或靜脈系統正常。",
       "citations": [
         {
           "title": "Evaluation of the knee joint with ultrasound and MRI",
@@ -358,7 +358,7 @@
               "embed_status": "playable_in_embed=true; YouTube oEmbed 200",
               "playback_status": "public; yt-dlp playback confirmed 2026-08-25",
               "disclosure": "YouTube 說明未載商業揭露；不據此推定沒有利益關係。",
-              "name": "AMSSM 膝部 X 光判讀模組",
+              "name": "AMSSM 膝蓋 X 光判讀模組",
               "title": "Knee | MSK Radiology: X-Ray Educational Modules for Primary Care Residents",
               "url": "https://www.youtube.com/watch?v=di63ofJq7XU",
               "why": "AMSSM 2024 官方教材：承重 AP／lateral／sunrise 照射位、系統性判讀順序（對位→骨皮質→骨質→關節間隙與軟組織）與 OA、Segond 等常見所見，適合作 X 光模組的骨架影片。",
@@ -526,7 +526,7 @@
               "title": "High-Yield X-Ray Series: Hip and Knee | Fellow Online Lecture Series",
               "url": "https://www.youtube.com/watch?v=G3hvxA45mTo",
               "why": "Stanford MSK 放射科教授的 fellow 講座：ABCDE 系統性搜尋順序、積液與隱匿性平台骨折實例，提供放射科視角的判讀深度。",
-              "scope_note": "前段（2:50–33:22）為髖關節，本課指定觀看 33:22 起的膝部段落；純診斷教學，無介入內容。",
+              "scope_note": "前段（2:50–33:22）為髖關節，本課指定觀看 33:22 起的膝蓋段落；純診斷教學，無介入內容。",
               "presenter": "Robert D. Boutin, MD",
               "presenter_qualification": "Stanford 臨床放射學教授、MSK imaging fellowship director。",
               "qualification_evidence_url": "https://med.stanford.edu/profiles/robert-boutin",
@@ -545,7 +545,7 @@
               "intervention_start_timestamp": null,
               "diagnostic_segment_range": null,
               "original_content_date": "2015-08-09",
-              "date_note": "2015-08-09 上架，早於 cutoff。classic 例外理由：公開可核對的具名放射科醫師膝部 plain-film search pattern 短片仍少，內容未被 2021 後同等影片取代；上架時講者可能仍在住院醫師階段（ABR 2017 認證），資格以現職為準。",
+              "date_note": "2015-08-09 上架，早於 cutoff。classic 例外理由：公開可核對的具名放射科醫師膝蓋 plain-film search pattern 短片仍少，內容未被 2021 後同等影片取代；上架時講者可能仍在住院醫師階段（ABR 2017 認證），資格以現職為準。",
               "classic_exception": true,
               "embed_status": "playable_in_embed=true; YouTube oEmbed 200",
               "playback_status": "public; yt-dlp playback confirmed 2026-08-25",
@@ -563,7 +563,7 @@
               "upload_date": "2015-08-09",
               "target": "創傷搜尋 pattern",
               "source_authority": "expert-owned-original",
-              "classic_exception_reason": "2015 年影片，早於 cutoff。公開可核對的具名放射科醫師膝部 plain-film search pattern 短片仍少，內容未被 2021 後同等影片取代；上架時講者可能仍在住院醫師階段（ABR 2017 認證），資格以現職為準。"
+              "classic_exception_reason": "2015 年影片，早於 cutoff。公開可核對的具名放射科醫師膝蓋 plain-film search pattern 短片仍少，內容未被 2021 後同等影片取代；上架時講者可能仍在住院醫師階段（ABR 2017 認證），資格以現職為準。"
             },
             {
               "kind": "radiograph-demo",
@@ -582,7 +582,7 @@
               "name": "Bipartite patella 的鑑別要點",
               "title": "Bipartite Patella - Everything You Need To Know - Dr. Nabil Ebraheim",
               "url": "https://www.youtube.com/watch?v=PTpG34ccTso",
-              "why": "具名骨科教授專講最常被誤判為骨折的膝部 X 光陷阱：分型（上外側最常見）、圓鈍皮質緣 vs 骨折銳緣、約半數雙側故照對側、skyline 的角色。",
+              "why": "具名骨科教授專講最常被誤判為骨折的膝蓋 X 光陷阱：分型（上外側最常見）、圓鈍皮質緣 vs 骨折銳緣、約半數雙側故照對側、skyline 的角色。",
               "scope_note": "2:29 起進入治療討論、3:10–3:50 為碎片切除與外側支持帶鬆解的手術動畫；本課診斷框限至 2:29，逐段筆記不得超出。",
               "presenter": "Nabil A. Ebraheim, MD",
               "presenter_qualification": "University of Toledo 骨科教授、前科主任，ABOS 認證。",
@@ -612,7 +612,7 @@
           "type": "orientation",
           "level": "foundation",
           "review_status": "approved",
-          "summary": "界定膝部診斷性超音波的適用範圍、完整與聚焦檢查差異，以及急慢性膝痛、紅旗與深部關節內問題需要其他影像或正式轉介的情境。",
+          "summary": "界定膝蓋診斷性超音波的適用範圍、完整與聚焦檢查差異，以及急慢性膝痛、紅旗與深部關節內問題需要其他影像或正式轉介的情境。",
           "objectives": [
             "區分完整四區掃描、臨床問題導向聚焦掃描與本課排除的介入操作。",
             "依創傷機轉、紅旗、既有影像與臨床問題選擇超音波、放射線、MRI 或其他正式檢查路徑。",
@@ -631,7 +631,7 @@
             "把後膝局部掃描當成完整靜脈壓縮檢查並宣稱沒有 DVT。",
             "把觀看影片或通過自我測驗誤當成可獨立執行與判讀的能力證明。"
           ],
-          "assessment": "題目：一名扭傷後無法負重且膝部明顯腫脹的病人，與一名無創傷、局部髕腱疼痛的病人，影像策略有何不同？參考答案：前者先依急性膝部創傷規則與臨床檢查安排放射線，疑深部內部紊亂再升級 MRI；超音波可補充表淺結構但不能作全面排除。後者可在明確臨床問題下聚焦掃描髕腱及相鄰結構，仍須明載範圍、限制與必要的後續評估。",
+          "assessment": "題目：一名扭傷後無法負重且膝蓋明顯腫脹的病人，與一名無創傷、局部髕腱疼痛的病人，影像策略有何不同？參考答案：前者先依急性膝蓋創傷規則與臨床檢查安排放射線，疑深部內部紊亂再升級 MRI；超音波可補充表淺結構但不能作全面排除。後者可在明確臨床問題下聚焦掃描髕腱及相鄰結構，仍須明載範圍、限制與必要的後續評估。",
           "reference_ids": [
             "REF-AIUM-MSK-2023",
             "REF-ACR-ACUTE-KNEE-2020",
@@ -736,7 +736,7 @@
           ],
           "drills": [
             {
-              "name": "ESSR 膝部掃描 Part 1：前、內、外側",
+              "name": "ESSR 膝蓋掃描 Part 1：前、內、外側",
               "title": "„How to scan the Joints“ - Lower Limb: Knee Part 1, Saulius Rutkauskas",
               "url": "https://www.youtube.com/watch?v=dJwz_McEelo",
               "kind": "scan-demo",
@@ -861,7 +861,7 @@
             "把對側相似直接當作正常，忽略雙側退化或系統性疾病。",
             "由周邊半月板外觀正常宣稱已排除半月板撕裂。"
           ],
-          "assessment": "題目：完成內側膝部掃描並保存 MCL 全長、鵝足、半月板周邊與外翻應力循環。合格標準：能指出淺深 MCL 和三條鵝足肌腱，固定屈膝角度與探頭位置，保存完整施力與放鬆循環；報告若提及間隙或突出，須同時寫明姿勢、測量位置及不能排除深部半月板病變的限制。",
+          "assessment": "題目：完成內側膝蓋掃描並保存 MCL 全長、鵝足、半月板周邊與外翻應力循環。合格標準：能指出淺深 MCL 和三條鵝足肌腱，固定屈膝角度與探頭位置，保存完整施力與放鬆循環；報告若提及間隙或突出，須同時寫明姿勢、測量位置及不能排除深部半月板病變的限制。",
           "reference_ids": [
             "REF-AIUM-MSK-2023",
             "REF-ESSR-KNEE-2010",
@@ -1058,7 +1058,7 @@
           ],
           "drills": [
             {
-              "name": "ESSR 膝部掃描 Part 2：後側與膕窩",
+              "name": "ESSR 膝蓋掃描 Part 2：後側與膕窩",
               "title": "„How to scan the Joints“ - Lower Limb: Knee Part 2, Saulius Rutkauskas,",
               "url": "https://www.youtube.com/watch?v=_vOOjwdWNEY",
               "kind": "scan-demo",
@@ -1206,7 +1206,7 @@
             "未記錄疼痛限制、未顯示結構、聚焦範圍或需要其他影像的原因。",
             "把對側比較、技術成功或自動 gate 通過寫成醫療內容已核准。"
           ],
-          "assessment": "整合考核：在限定時間內完成一側膝部前、內、外、後四區掃描，提交最低影像集與結構化報告。合格標準：影像有側別、方向及骨性地標；所有異常具正交平面與必要測量／動態；報告與影像一致，明載未完成範圍、不確定性及升級條件。合格督導另以漏掃、假影控制、病人安全與溝通逐項回饋；本項通過仍不等於獨立 credentialing。",
+          "assessment": "整合考核：在限定時間內完成一側膝蓋前、內、外、後四區掃描，提交最低影像集與結構化報告。合格標準：影像有側別、方向及骨性地標；所有異常具正交平面與必要測量／動態；報告與影像一致，明載未完成範圍、不確定性及升級條件。合格督導另以漏掃、假影控制、病人安全與溝通逐項回饋；本項通過仍不等於獨立 credentialing。",
           "reference_ids": [
             "REF-AIUM-MSK-2023",
             "REF-AIUM-DOC-2026",
@@ -1260,9 +1260,9 @@
           "type": "protocol",
           "level": "foundation",
           "review_status": "approved",
-          "summary": "建立膝部 MRI 的判讀基礎：理解 PD 脂肪抑制、T1 與 T2 各序列看什麼、為什麼；以矢狀、冠狀、軸位三平面對應各解剖結構的最佳顯示面；並以固定檢核順序完成系統性判讀，避免只追臨床問題而漏掉其他病灶。",
+          "summary": "建立膝蓋 MRI 的判讀基礎：理解 PD 脂肪抑制、T1 與 T2 各序列看什麼、為什麼；以矢狀、冠狀、軸位三平面對應各解剖結構的最佳顯示面；並以固定檢核順序完成系統性判讀，避免只追臨床問題而漏掉其他病灶。",
           "objectives": [
-            "說明膝部 MRI 常用序列的分工：流體敏感序列（PD／T2 fat-sat）偵測水腫與液體，T1 評估骨髓與解剖輪廓。",
+            "說明膝蓋 MRI 常用序列的分工：流體敏感序列（PD／T2 fat-sat）偵測水腫與液體，T1 評估骨髓與解剖輪廓。",
             "對應三平面與結構：矢狀位看交叉韌帶與伸膝機轉、冠狀位看側副韌帶與半月板體部、軸位看髕股關節與支持帶。",
             "以固定順序完成系統性判讀：積液與滑膜→骨髓→半月板→交叉韌帶→側副韌帶→軟骨→伸膝機轉→周邊軟組織。",
             "辨認常見假影與正常變異（magic angle、truncation artifact、橫韌帶與膕肌腱造成的假撕裂）。"
@@ -1286,7 +1286,7 @@
             "只用一個平面就下撕裂診斷。",
             "追著臨床問題直奔目標結構，漏掉共存的骨髓水腫或軟骨病灶。"
           ],
-          "assessment": "題目：給一組正常膝部 MRI（三平面、含流體敏感與 T1 序列），請口述你的系統性判讀順序，指出每個結構的最佳顯示平面與序列，並示範辨認至少兩種正常變異或假影。合格標準：順序固定且完整；平面—結構對應正確；假影辨認有依據。",
+          "assessment": "題目：給一組正常膝蓋 MRI（三平面、含流體敏感與 T1 序列），請口述你的系統性判讀順序，指出每個結構的最佳顯示平面與序列，並示範辨認至少兩種正常變異或假影。合格標準：順序固定且完整；平面—結構對應正確；假影辨認有依據。",
           "reference_ids": [
             "REF-ACR-CHRONIC-KNEE-2026",
             "REF-ACR-ACUTE-KNEE-2020",
@@ -1313,10 +1313,10 @@
               "name": "掃描技術與序列協定",
               "title": "ISMRM MR Academy: How to Read Knee MRI: Technique & MRI Protocol",
               "url": "https://www.youtube.com/watch?v=kVHYycqkN3s",
-              "why": "ISMRM 系列的技術開場：膝部 MRI 的擺位、線圈、平面設定與序列協定組成，補足本單元「序列邏輯」在取像端的前置知識——判讀前先知道影像是怎麼來的。",
+              "why": "ISMRM 系列的技術開場：膝蓋 MRI 的擺位、線圈、平面設定與序列協定組成，補足本單元「序列邏輯」在取像端的前置知識——判讀前先知道影像是怎麼來的。",
               "scope_note": "聚焦取像技術與協定設計，不含病理判讀；病理見同章與 MR2 影片。",
               "presenter": "Young Han Lee, MD, PhD",
-              "presenter_qualification": "Yonsei University College of Medicine 放射科；膝部 MRI 序列研究發表（Yonsei Med J 2017, PMID 29047243）。",
+              "presenter_qualification": "Yonsei University College of Medicine 放射科；膝蓋 MRI 序列研究發表（Yonsei Med J 2017, PMID 29047243）。",
               "qualification_evidence_url": "https://pubmed.ncbi.nlm.nih.gov/29047243/",
               "duration": "10:30",
               "target": "取像技術與序列協定"
@@ -1333,11 +1333,11 @@
               "embed_status": "playable_in_embed=true; YouTube oEmbed 200",
               "playback_status": "public; yt-dlp playback confirmed 2026-08-25",
               "disclosure": "YouTube 說明未載商業揭露；不據此推定沒有利益關係。",
-              "name": "膝部 MRI 序列邏輯總論",
+              "name": "膝蓋 MRI 序列邏輯總論",
               "title": "Introduction to knee MRI - Andrew Dixon (Featured Video)",
               "url": "https://www.youtube.com/watch?v=p3pI_TJ5PSo",
               "why": "Radiopaedia 官方入門總論：把「為何 PD 與 PD fat-sat 就能分辨解剖與水腫、為何不需要複雜序列組合」講清楚，並帶急性損傷取向的半月板與交叉韌帶辨識，是序列邏輯單元的骨架。",
-              "scope_note": "深度止於入門；後外側角與軟骨分級由同單元其他影片補。講者主專長為神經放射，膝部為其教學主題。",
+              "scope_note": "深度止於入門；後外側角與軟骨分級由同單元其他影片補。講者主專長為神經放射，膝蓋為其教學主題。",
               "source_authority": "education-organization-original",
               "original_content_date": "2023-07-21",
               "date_note": "Radiopaedia 官方頻道原始上傳，以上架日 2023-07-21 為內容日期。",
@@ -1584,7 +1584,7 @@
               "title": "What Your MRI Won’t Tell You About Pain (and what to do instead!)",
               "url": "https://www.youtube.com/watch?v=Juo8rEYhlP0",
               "why": "以 asymptomatic pathology 概念說明影像所見與症狀的落差：具名運動醫學醫師講解無症狀者影像異常的高盛行率、疼痛的多因子本質與「MRI 不反映功能」，直接支撐本單元的證據邊界教學目標。",
-              "scope_note": "影片中的量化數據以脊椎（椎間盤退化 37%→96%）與 rotator cuff 為例，膝部特定盛行率由單元文字與 Englund 2008 引用補；結尾為營養主題影片導流（無操作示範）。課堂聚焦概念段落。",
+              "scope_note": "影片中的量化數據以脊椎（椎間盤退化 37%→96%）與 rotator cuff 為例，膝蓋特定盛行率由單元文字與 Englund 2008 引用補；結尾為營養主題影片導流（無操作示範）。課堂聚焦概念段落。",
               "source_authority": "expert-owned-original",
               "original_content_date": "2025-05-07",
               "date_note": "講者本人頻道原始上傳，以上架日 2025-05-07 為內容日期（策展研究原引官網文章日期 2026-03，經 yt-dlp 實查更正）。",

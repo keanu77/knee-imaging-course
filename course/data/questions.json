@@ -58,7 +58,7 @@
               "rationale": "急性創傷疑似骨折通常先做放射線；這是單元的升級決策核心。"
             },
             {
-              "text": "膝部超音波完整四區掃描",
+              "text": "膝蓋超音波完整四區掃描",
               "correct": false,
               "rationale": "把超音波當成明顯急性骨傷的唯一首項檢查是單元列出的陷阱。"
             },
@@ -917,7 +917,7 @@
             {
               "text": "俯臥、束上傾 10 度",
               "correct": false,
-              "rationale": "非任何標準膝部照射位。"
+              "rationale": "非任何標準膝蓋照射位。"
             }
           ],
           "reference_ids": [
@@ -1100,7 +1100,7 @@
         {
           "id": "ch10-u1-q1",
           "type": "single",
-          "stem": "膝部 MRI 中偵測水腫與液體的主力序列是？",
+          "stem": "膝蓋 MRI 中偵測水腫與液體的主力序列是？",
           "difficulty": "core",
           "options": [
             {
@@ -1121,7 +1121,7 @@
             {
               "text": "DWI",
               "correct": false,
-              "rationale": "非膝部常規判讀的主力序列。"
+              "rationale": "非膝蓋常規判讀的主力序列。"
             }
           ],
           "reference_ids": [

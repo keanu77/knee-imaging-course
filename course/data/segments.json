@@ -32,10 +32,10 @@
           "start": "00:00",
           "end": "00:59",
           "title": "課程定位、涵蓋範圍與標準檢查順序",
-          "summary": "講者說明本片只涵蓋膝部前側、內側與外側的臨床超音波解剖，後側留到第二部；並以 2D 示意圖帶出標準路徑的評估結構。",
+          "summary": "講者說明本片只涵蓋膝蓋前側、內側與外側的臨床超音波解剖，後側留到第二部；並以 2D 示意圖帶出標準路徑的評估結構。",
           "detail": [
             "明確劃界：後側（膕窩）解剖不在本片，屬第二部內容。",
-            "常規膝部超音波由前側開始，接內側，再接外側——順序本身就是防漏掃的機制。",
+            "常規膝蓋超音波由前側開始，接內側，再接外側——順序本身就是防漏掃的機制。",
             "先給結構清單再進入個別解剖，等於先建立 mental map 再掃描。"
           ]
         },
@@ -632,7 +632,7 @@
           "start": "02:29",
           "end": "03:24",
           "title": "病史與理學檢查：跳箱深蹲惡化的外側膝痛",
-          "summary": "41 歲女性、無膝部病史，年初增量訓練後左外側膝痛漸進惡化，跳箱與深蹲落地時最明顯，無腫脹；理學檢查有外側關節線壓痛與陽性半月板誘發測試。",
+          "summary": "41 歲女性、無膝蓋病史，年初增量訓練後左外側膝痛漸進惡化，跳箱與深蹲落地時最明顯，無腫脹；理學檢查有外側關節線壓痛與陽性半月板誘發測試。",
           "detail": [
             "病史的關鍵是負荷變化而非外傷：新年開始跟教練訓練、參加多種團體課程後才出現隱襲性疼痛。",
             "誘發動作集中在跳箱與深蹲、尤其落地時——高衝擊軸向負荷指向關節內結構而非單純肌腱。",
@@ -1265,9 +1265,9 @@
           "start": "03:34",
           "end": "04:23",
           "title": "探頭選擇：線性為主，何時該換凸陣",
-          "summary": "膝部診斷用線性探頭即可（本片用 L15-4），只有在病人體型較大且要看後膝構造時才可能需要凸陣探頭。",
+          "summary": "膝蓋診斷用線性探頭即可（本片用 L15-4），只有在病人體型較大且要看後膝構造時才可能需要凸陣探頭。",
           "detail": [
-            "本片使用 L15-4 線性探頭；絕大多數膝部構造用線性探頭就足以做診斷性評估。",
+            "本片使用 L15-4 線性探頭；絕大多數膝蓋構造用線性探頭就足以做診斷性評估。",
             "換凸陣探頭的時機很窄：病人體型與體格造成深度不足，且評估的是後膝構造時。",
             "講者的態度是不要輕易換探頭——多數情況線性探頭看得到所有需要看的東西。"
           ]
@@ -1564,7 +1564,7 @@
           "start": "00:00",
           "end": "00:17",
           "title": "工具定位：為什麼需要 Ottawa knee rule",
-          "summary": "講者說明 Ottawa knee rule 是實證的臨床決策工具，目的是簡化照護流程、減少急診不必要的膝部 X 光。",
+          "summary": "講者說明 Ottawa knee rule 是實證的臨床決策工具，目的是簡化照護流程、減少急診不必要的膝蓋 X 光。",
           "detail": [
             "定位為 evidence-based clinical decision-making tool，不是診斷工具。",
             "目標場景是急診的急性膝傷，處理的是「要不要照」而非「怎麼讀」。"
@@ -1577,7 +1577,7 @@
           "summary": "急性膝傷只有符合以下任一判準才照 X 光：受傷當下與急診皆無法負重走四步（跛行不拘）、無法屈膝至 90 度、孤立髕骨壓痛、腓骨頭壓痛、年齡 55 歲以上；敏感度略低於 99%，特異度 49%。",
           "detail": [
             "負重判準要求「受傷當下」與「急診評估時」兩個時點都無法走四步，跛著走完仍算可負重。",
-            "壓痛判準限「孤立」的髕骨或腓骨頭壓痛，合併其他膝部骨性壓痛時不適用此條。",
+            "壓痛判準限「孤立」的髕骨或腓骨頭壓痛，合併其他膝蓋骨性壓痛時不適用此條。",
             "敏感度接近 99%——五項全陰性可安全不照；特異度 49%——陽性不等於骨折，只是需要影像。"
           ]
         }
@@ -1642,10 +1642,10 @@
         {
           "start": "00:02",
           "end": "01:06",
-          "title": "課程目標與膝部 X 光基本投照",
-          "summary": "介紹系統性判讀膝部 X 光的課程目標，並說明負重影像及三種常用投照的重要性。",
+          "title": "課程目標與膝蓋 X 光基本投照",
+          "summary": "介紹系統性判讀膝蓋 X 光的課程目標，並說明負重影像及三種常用投照的重要性。",
           "detail": [
-            "課程將複習膝部肌肉骨骼 X 光的系統性判讀方法、三種成人常見發現及其臨床關聯。",
+            "課程將複習膝蓋肌肉骨骼 X 光的系統性判讀方法、三種成人常見發現及其臨床關聯。",
             "患者能負重時應指定拍攝負重影像，以評估自然解剖位置、排列與關節間隙變窄。",
             "常用影像包括雙側負重 AP view、負重 lateral view 與 sunrise view。"
           ]
@@ -1656,7 +1656,7 @@
           "title": "負重 AP view 的系統性判讀",
           "summary": "依序從整體排列、骨性輪廓、關節間隙到軟組織判讀負重 AP view。",
           "detail": [
-            "先評估膝部整體排列，再沿 femur、tibia、fibula 與 patella 的骨皮質輪廓尋找不規則處。",
+            "先評估膝蓋整體排列，再沿 femur、tibia、fibula 與 patella 的骨皮質輪廓尋找不規則處。",
             "骨皮質異常可能包括骨折或退化性關節病變中的 osteophytes，並應記錄骨內部的異常。",
             "評估 patella 是否位於 femur 中央，以及是否偏向外側或內側。",
             "檢查內外側關節間隙有無變窄、sclerosis 或 cystic changes，最後查看軟組織；示例顯示雙側輕度內側關節間隙變窄與 sclerosis。"
@@ -1677,7 +1677,7 @@
         {
           "start": "03:31",
           "end": "04:24",
-          "title": "Sunrise view 與成人常見膝部病況",
+          "title": "Sunrise view 與成人常見膝蓋病況",
           "summary": "介紹 sunrise view 對 patellofemoral joint 的判讀順序，並列出後續案例涵蓋的三種常見病況。",
           "detail": [
             "先評估 patella 相對於 femoral condyles 的排列，再檢查 patella 與 femur 的骨皮質及骨內部。",
@@ -1719,7 +1719,7 @@
             "42 歲女性前膝痛在上下樓梯、久坐及由坐姿起身時加劇，恢復健身活動後症狀惡化。",
             "檢查顯示 lateral patellar facet 壓痛、活動時 crepitus、patellar inhibition 陽性、J sign 陽性及單腳深蹲時 valgus deviation。",
             "Lateral view 顯示 patella 排列正常、上極有少量 osteophytes 且 patellofemoral joint space 變窄；sunrise view 顯示雙側 lateral patellar tilt 與輕度外側關節間隙變窄。",
-            "X 光與 MRI 經常正常；治療包括物理治療、膝部護具、活動調整、口服與外用藥物、關節內注射，以及可能使用矯具或調整鞋款。"
+            "X 光與 MRI 經常正常；治療包括物理治療、膝蓋護具、活動調整、口服與外用藥物、關節內注射，以及可能使用矯具或調整鞋款。"
           ]
         },
         {
@@ -1737,12 +1737,12 @@
         {
           "start": "10:47",
           "end": "11:25",
-          "title": "膝部 X 光判讀總結",
+          "title": "膝蓋 X 光判讀總結",
           "summary": "總結負重投照的重要性，以及 osteoarthritis、patellofemoral pain syndrome 與 ACL tear 的關鍵影像線索。",
           "detail": [
             "患者情況允許時應取得負重影像，以真實評估解剖排列與關節間隙變窄。",
             "Osteoarthritis 常見關節間隙變窄、sclerosis、osteophytes，有時伴隨骨性 cystic changes。",
-            "Patellofemoral pain syndrome 的膝部 X 光常為正常，但也可能看到 patellofemoral joint 退化性變化與 patellar malalignment。",
+            "Patellofemoral pain syndrome 的膝蓋 X 光常為正常，但也可能看到 patellofemoral joint 退化性變化與 patellar malalignment。",
             "Segond fracture 是 ACL tear 的特徵性影像表現。"
           ]
         }
@@ -1757,13 +1757,13 @@
       "review_status": "approved",
       "transcript_verified_at": "2026-08-25",
       "transcript_source": "yt-dlp 自動字幕（en, VTT）2026-08-25 實抓；初稿由協作 agent 依逐字稿產生，主編逐段對照原文核對",
-      "note": "自動字幕訛誤已於筆記改採標準命名：e Fusion／infusion／ifusion／affusion→effusion；lioh orthosis→lipohemarthrosis；crossable lateral→cross-table lateral；radaph／rating grass／radi graphs→radiographs；subtronic→subtrochanteric；tiia→tibia；Blen sat's／Bloom and SATs→Blumensaat's line（經 qwen 本地掃描交叉比對確認）。本片 2:50–33:12 為髖關節內容、46:05–55:20 為髖 bonus case 與 Q&A（皆不在本課範圍，未做段落）；僅收 33:22 起的膝部段落與 55:21 起與膝相關的 Q&A。",
+      "note": "自動字幕訛誤已於筆記改採標準命名：e Fusion／infusion／ifusion／affusion→effusion；lioh orthosis→lipohemarthrosis；crossable lateral→cross-table lateral；radaph／rating grass／radi graphs→radiographs；subtronic→subtrochanteric；tiia→tibia；Blen sat's／Bloom and SATs→Blumensaat's line（經 qwen 本地掃描交叉比對確認）。本片 2:50–33:12 為髖關節內容、46:05–55:20 為髖 bonus case 與 Q&A（皆不在本課範圍，未做段落）；僅收 33:22 起的膝蓋段落與 55:21 起與膝相關的 Q&A。",
       "segments": [
         {
           "start": "33:22",
           "end": "34:58",
           "title": "膝關節積液與脂肪血液關節積液",
-          "summary": "側位膝部 X 光可藉由 suprapatellar recess 膨隆及脂肪液面辨識關節積液與 lipohemarthrosis。",
+          "summary": "側位膝蓋 X 光可藉由 suprapatellar recess 膨隆及脂肪液面辨識關節積液與 lipohemarthrosis。",
           "detail": [
             "suprapatellar recess 內軟組織密度厚度超過 1 公分表示關節積液，5 至 10 mm 則可能有積液。",
             "在 cross-table lateral view 上，脂肪會浮在血性關節積液之上，形成可見的脂肪液面。",
@@ -1881,21 +1881,21 @@
         {
           "start": "00:00",
           "end": "00:25",
-          "title": "課程目標與六種常見膝部 X 光",
-          "summary": "本短講面向基層醫師，複習可開立的六種常見膝部 X 光 view。",
+          "title": "課程目標與六種常見膝蓋 X 光",
+          "summary": "本短講面向基層醫師，複習可開立的六種常見膝蓋 X 光 view。",
           "detail": [
-            "對象為 primary care physician，主題是如何開立膝部 radiographs",
-            "目標是複習基層醫師可開立的六種膝部 X 光",
+            "對象為 primary care physician，主題是如何開立膝蓋 radiographs",
+            "目標是複習基層醫師可開立的六種膝蓋 X 光",
             "六種常見 view：AP（anteroposterior）、weight-bearing AP、lateral、oblique、PA Rosenberg view、Merchant view"
           ]
         },
         {
           "start": "00:26",
           "end": "00:53",
-          "title": "AP view：最基本的膝部 X 光",
-          "summary": "AP view 是最基本的膝部 X 光，光束由前向後，可顯示股骨遠端、脛骨近端與腓骨近端等結構。",
+          "title": "AP view：最基本的膝蓋 X 光",
+          "summary": "AP view 是最基本的膝蓋 X 光，光束由前向後，可顯示股骨遠端、脛骨近端與腓骨近端等結構。",
           "detail": [
-            "AP 是最基本的膝部 X 光 view，beam 由前向後（front to back）",
+            "AP 是最基本的膝蓋 X 光 view，beam 由前向後（front to back）",
             "可見 distal femur、proximal tibia、proximal fibula，以及位於 femur 前方或後方的 patella",
             "可觀察 tibiofemoral joint space、fibular head 與 proximal tibia",
             "可用來辨識 fractures 與 arthritis"
@@ -1921,7 +1921,7 @@
           "detail": [
             "Lateral view 可看 patellofemoral joint、distal femur、proximal tibia，並辨識 fractures",
             "Lateral 亦可見各 condyle 輪廓，以及 tibia 與 patella",
-            "Oblique views 被認為可能是最不實用的 view，於膝部 medial 或 lateral rotation 時拍攝",
+            "Oblique views 被認為可能是最不實用的 view，於膝蓋 medial 或 lateral rotation 時拍攝",
             "Medial rotation 可清楚看 proximal tibiofibular joint；lateral rotation 可清楚看 medial compartment"
           ]
         },
@@ -2051,8 +2051,8 @@
         {
           "start": "00:08",
           "end": "00:55",
-          "title": "膝部 X 光基本搜尋策略：放大與 tibial plateau",
-          "summary": "看膝部 X 光時先放大以看清解剖，重點搜尋他人容易漏掉的 subtle tibial plateau fracture。",
+          "title": "膝蓋 X 光基本搜尋策略：放大與 tibial plateau",
+          "summary": "看膝蓋 X 光時先放大以看清解剖，重點搜尋他人容易漏掉的 subtle tibial plateau fracture。",
           "detail": [
             "第一步一定 zoom in，以獲得較好的空間解析度並真正理解解剖。",
             "目標不是顯而易見的大骨折，而是他人不易看出的 subtle fractures。",
@@ -2075,10 +2075,10 @@
           "start": "01:32",
           "end": "02:41",
           "title": "Oblique 與 lateral view：effusion、平台範圍與伸膝機制",
-          "summary": "Oblique 可補足 frontal 漏看的異常；lateral 是膝部 plain film 極重要的投照，用來找 joint effusion、檢視 tibial plateau 前後範圍與伸膝肌腱。",
+          "summary": "Oblique 可補足 frontal 漏看的異常；lateral 是膝蓋 plain film 極重要的投照，用來找 joint effusion、檢視 tibial plateau 前後範圍與伸膝肌腱。",
           "detail": [
             "Oblique 提供略不同角度，frontal 未見的異常可能在 oblique 顯現，同樣要仔細檢視；patella 也會較明顯旋轉出來。",
-            "Lateral view 對膝部 plain films 非常重要：先找 joint effusion；若有 effusion，病因可為退化，也可表示 subtle tibial plateau fracture 使 marrow fat 與 hemorrhage 漏入 joint space。",
+            "Lateral view 對膝蓋 plain films 非常重要：先找 joint effusion；若有 effusion，病因可為退化，也可表示 subtle tibial plateau fracture 使 marrow fat 與 hemorrhage 漏入 joint space。",
             "Lateral 可看 tibial plateau 的 AP 範圍、fibular head、joint 的 posterior aspect，以及 femoral condyles。",
             "即使在 plain film 也可評估 extensor mechanism：quadriceps tendon 與 infrapatellar tendon。"
           ]
@@ -2087,7 +2087,7 @@
           "start": "02:42",
           "end": "03:33",
           "title": "案例：suprapatellar joint effusion 與 lipohemarthrosis",
-          "summary": "以搜尋策略檢視案例膝部時，lateral 見明顯增大的 suprapatellar joint effusion 與 fluid-fluid level，高度懷疑 radiographically occult 的 tibial plateau fracture。",
+          "summary": "以搜尋策略檢視案例膝蓋時，lateral 見明顯增大的 suprapatellar joint effusion 與 fluid-fluid level，高度懷疑 radiographically occult 的 tibial plateau fracture。",
           "detail": [
             "先仔細檢視 tibial plateau 區域，尋找 subtle fractures。",
             "Lateral 見很大的 suprapatellar joint effusion：正常約 5 mm，此例為 2 cm。",
@@ -2099,9 +2099,9 @@
           "start": "03:34",
           "end": "04:28",
           "title": "CT 證實 subtle lateral tibial plateau fracture",
-          "summary": "因懷疑 tibial plateau fracture 安排膝部 CT，coronal 與 sagittal 證實 subtle lateral tibial plateau fracture，患者得以接受適當治療。",
+          "summary": "因懷疑 tibial plateau fracture 安排膝蓋 CT，coronal 與 sagittal 證實 subtle lateral tibial plateau fracture，患者得以接受適當治療。",
           "detail": [
-            "因懷疑 tibial plateau fracture 而做膝部 CT，含 coronal 與 sagittal。",
+            "因懷疑 tibial plateau fracture 而做膝蓋 CT，含 coronal 與 sagittal。",
             "Coronal 可見 central tibial plateau 的 crack，以及 trabeculae compression（很 subtle 的骨折徵象）。",
             "Sagittal 較容易看出 step-off：cortex 連續後出現 subtle break，為確定骨折證據。",
             "診斷為 subtle lateral tibial plateau fracture，患者得以接受 appropriate treatment；這類 subtle 膝傷正是放射科醫師要找的。"
@@ -2195,7 +2195,7 @@
       "review_status": "approved",
       "transcript_verified_at": "2026-08-25",
       "transcript_source": "yt-dlp 自動字幕（en, VTT）2026-08-25 實抓，逐段對照時間戳核對",
-      "note": "自動字幕大致乾淨：Dr. Jeff Ping→Dr. Jeff Peng。重要範圍註記：影片量化數據為脊椎椎間盤（37%→96%、膨出 30%→84%）與 rotator cuff 例，非膝部特定；膝部無症狀盛行率證據由單元文字與 Englund 2008 補。04:56 起為下一支營養影片導流，不做段落。",
+      "note": "自動字幕大致乾淨：Dr. Jeff Ping→Dr. Jeff Peng。重要範圍註記：影片量化數據為脊椎椎間盤（37%→96%、膨出 30%→84%）與 rotator cuff 例，非膝蓋特定；膝蓋無症狀盛行率證據由單元文字與 Englund 2008 補。04:56 起為下一支營養影片導流，不做段落。",
       "segments": [
         {
           "start": "00:00",
@@ -2224,7 +2224,7 @@
           "summary": "以脊椎為例：無症狀者椎間盤退化盛行率從 20 歲 37% 升至 80 歲 96%、椎間盤膨出從 30% 升至 84%——多數年齡相關結構變化屬 age-appropriate wear and tear。",
           "detail": [
             "盛行率隨年齡近乎線性上升，說明「影像老化」是常態不是病。",
-            "此邏輯同樣適用於膝部（課程以 Englund 2008 的半月板數據對應）。"
+            "此邏輯同樣適用於膝蓋（課程以 Englund 2008 的半月板數據對應）。"
           ]
         },
         {
@@ -2273,8 +2273,8 @@
         {
           "start": "00:00",
           "end": "01:01",
-          "title": "膝部 MRI 判讀導論",
-          "summary": "本片將以結構化流程介紹膝部 MRI 的常規序列、正常解剖與各結構的判讀重點。",
+          "title": "膝蓋 MRI 判讀導論",
+          "summary": "本片將以結構化流程介紹膝蓋 MRI 的常規序列、正常解剖與各結構的判讀重點。",
           "detail": [
             "初學者常將正常表現誤判為異常，或遺漏常見病變。",
             "menisci、韌帶與 posterolateral corner 的解剖具有細微差異。",
@@ -2297,7 +2297,7 @@
           "start": "06:53",
           "end": "09:36",
           "title": "系統化流程與 meniscus 基礎",
-          "summary": "建立由內而外的膝部 MRI 檢查順序，並辨識 meniscus 的正常形態、訊號及撕裂判準。",
+          "summary": "建立由內而外的膝蓋 MRI 檢查順序，並辨識 meniscus 的正常形態、訊號及撕裂判準。",
           "detail": [
             "判讀順序依次為 menisci、韌帶、extensor mechanism、骨與軟骨、關節液與 synovium，以及其餘軟組織。",
             "medial meniscus 較大且呈開放 C 形，posterior horn 大於 anterior horn；lateral meniscus 較接近不完整環形，前後角大小相近。",
@@ -2417,7 +2417,7 @@
           "start": "44:27",
           "end": "46:18",
           "title": "Fat pads 與皮下軟組織",
-          "summary": "完成三個膝部 fat pads 及皮下脂肪、滑囊與血管的末段檢查。",
+          "summary": "完成三個膝蓋 fat pads 及皮下脂肪、滑囊與血管的末段檢查。",
           "detail": [
             "三個主要 fat pads 為 quadriceps fat pad、prefemoral fat pad 與 Hoffa's fat pad，後者也稱 infrapatellar fat pad。",
             "fat pad 病變可表現為水腫、膨大或內部腫塊。",
@@ -2441,8 +2441,8 @@
         {
           "start": "00:00",
           "end": "02:37",
-          "title": "膝部 MRI 序列與骨髓水腫判讀",
-          "summary": "介紹以 PD 與 PD fat-saturated 影像辨識膝部解剖、液體及急性損傷模式的方法。",
+          "title": "膝蓋 MRI 序列與骨髓水腫判讀",
+          "summary": "介紹以 PD 與 PD fat-saturated 影像辨識膝蓋解剖、液體及急性損傷模式的方法。",
           "detail": [
             "PD 影像可清楚區分骨、hyaline cartilage、液體、韌帶、肌腱與低訊號的 fibrocartilaginous meniscus。",
             "PD fat-saturated 影像可凸顯水腫與液體，協助定位活動性病變。",
@@ -2550,7 +2550,7 @@
           "start": "28:35",
           "end": "32:20",
           "title": "Patellar dislocation、Baker's cyst 與判讀總結",
-          "summary": "以髕骨脫位的對吻性挫傷和破裂 Baker's cyst 收尾，並總結利用水腫模式引導膝部 MRI 判讀。",
+          "summary": "以髕骨脫位的對吻性挫傷和破裂 Baker's cyst 收尾，並總結利用水腫模式引導膝蓋 MRI 判讀。",
           "detail": [
             "內側 patella 與外側股骨髁非負重面的對吻性挫傷提示 transient lateral patellar dislocation，並可伴隨 medial patellar retinaculum 與 ligament 撕裂。",
             "平坦的 trochlea、較大的 lateral patellar facet 與 lateralized tibial tuberosity 是病例中提及的髕骨脫位風險因素。",
@@ -2574,11 +2574,11 @@
         {
           "start": "00:00",
           "end": "00:22",
-          "title": "講者介紹與膝部MRI課程目標",
-          "summary": "運動影像放射科醫師簡介膝部MRI解讀，將依平面講解基本解剖並帶入案例。",
+          "title": "講者介紹與膝蓋MRI課程目標",
+          "summary": "運動影像放射科醫師簡介膝蓋MRI解讀，將依平面講解基本解剖並帶入案例。",
           "detail": [
             "講者為 musculoskeletal radiologist，任職德州達拉斯 UT Southwestern 的 sports imaging 主任",
-            "本課程為膝部 MRI 解讀的簡要入門",
+            "本課程為膝蓋 MRI 解讀的簡要入門",
             "內容包含依平面的基本解剖判讀，以及簡短案例回顧"
           ]
         },
@@ -3309,7 +3309,7 @@
           "title": "冠狀位的外側軟組織損傷",
           "summary": "冠狀位影像顯示外側關節囊、biceps femoris 與 popliteofibular ligament 的損傷。",
           "detail": [
-            "外側膝部可見軟組織腫脹，並可辨認 iliotibial band 向下附著於 Gerdy's tubercle。",
+            "外側膝蓋可見軟組織腫脹，並可辨認 iliotibial band 向下附著於 Gerdy's tubercle。",
             "lateral meniscus 附近的 meniscotibial portion of the lateral capsule 發生中斷，此處亦稱 mid-third lateral capsular ligament 或 anterolateral ligament 的前外側附著區。",
             "biceps femoris 從 fibular head 剝離，其肌腱與附著處之間可見異常訊號。",
             "popliteofibular ligament 從 fibular styloid 後內側走向 popliteus 的 musculotendinous junction，影像可見訊號改變與中斷。"
@@ -3367,8 +3367,8 @@
         {
           "start": "00:06",
           "end": "00:55",
-          "title": "開場：膝部 MRI 技術與 protocol 及免責聲明",
-          "summary": "講者介紹本講為膝部 MRI 技術與 protocol，目的在協助適當判讀，並聲明技術參數並非執業或法律標準。",
+          "title": "開場：膝蓋 MRI 技術與 protocol 及免責聲明",
+          "summary": "講者介紹本講為膝蓋 MRI 技術與 protocol，目的在協助適當判讀，並聲明技術參數並非執業或法律標準。",
           "detail": [
             "本講主題為 MRI technique 與 MRI protocol，講者為來自 Severance Hospital 的肌肉骨骼放射科醫師。",
             "簡報目的是讓放射科醫師能提供適當的 radiology interpretation。",
@@ -3389,12 +3389,12 @@
         {
           "start": "01:41",
           "end": "03:00",
-          "title": "病人擺位、制動與膝部專用線圈",
+          "title": "病人擺位、制動與膝蓋專用線圈",
           "summary": "病人多採仰卧、腳先進，患膝伸直置於 dedicated knee coil，並以局部與多通道線圈提高 SNR、支援 parallel imaging。",
           "detail": [
             "典型擺位為 supine、feet first；患膝完全或幾乎完全伸直放進 dedicated knee coil，下肢 mild external rotation 較舒適。",
             "輕柔固定肢體並注意全身舒適，有助減少不自主運動造成的 artifact。",
-            "不論磁鐵設計，局部線圈為必要，以最大化 signal-to-noise ratio（SNR）；此類線圈常稱為 extremity 或 knee coil，通常環繞膝部。",
+            "不論磁鐵設計，局部線圈為必要，以最大化 signal-to-noise ratio（SNR）；此類線圈常稱為 extremity 或 knee coil，通常環繞膝蓋。",
             "較新的 multi-channel coil 或具 8-channel 元件的 flexible surface coil 可進一步提高 SNR，並為 parallel imaging 所需；parallel imaging 可用來提高 spatial resolution 並縮短 scan time。"
           ]
         },
@@ -3402,9 +3402,9 @@
           "start": "03:01",
           "end": "03:54",
           "title": "掃描參數與 axial、coronal、sagittal 切面規劃",
-          "summary": "膝部需小 FOV、矩陣至少 256、slice gap 宜小於 10%，並依關節線與 femoral condyles 規劃三個切面。",
+          "summary": "膝蓋需小 FOV、矩陣至少 256、slice gap 宜小於 10%，並依關節線與 femoral condyles 規劃三個切面。",
           "detail": [
-            "膝部通常需要 small FOV；typical matrix 至少 256；建議 slice gap 小於 10%。",
+            "膝蓋通常需要 small FOV；typical matrix 至少 256；建議 slice gap 小於 10%。",
             "Axial plane 平行於關節線（line of the joint），涵蓋 patella 與 fibular head。",
             "下一平面平行於 femoral condyles 後緣，涵蓋 patella 至 femoral condyle 後方約 2 cm。",
             "Sagittal plane 依講者所述平行於 coronal plane（字幕：corona plates）。"
@@ -3414,7 +3414,7 @@
           "start": "03:55",
           "end": "05:38",
           "title": "主要序列、標準 protocol 與靜脈 gadolinium",
-          "summary": "膝部內障礙以 PD、T2（可加 fat sat）與 T1 為主；標準含三切面中間加權影像，必要時以靜脈對比劑定性病灶。",
+          "summary": "膝蓋內障礙以 PD、T2（可加 fat sat）與 T1 為主；標準含三切面中間加權影像，必要時以靜脈對比劑定性病灶。",
           "detail": [
             "評估 knee internal derangement 的主要序列為 proton density (PD) weighted、T2 weighted（可加或不加 fat suppression）以及 T1 weighted。",
             "PD 可作有／無 fat sat；T2 fat-suppressed 常在單一平面（多為 coronal）取代 fat-sat PD。T1 通常只收一個平面，用來評估 intraosseous 類型的 bone marrow lesion。",
@@ -3460,10 +3460,10 @@
         {
           "start": "09:24",
           "end": "10:22",
-          "title": "膝部 MRI protocol 總結與再次聲明",
+          "title": "膝蓋 MRI protocol 總結與再次聲明",
           "summary": "總結三切面、專用線圈、小 FOV、3–4 mm 切片與 PD／T2／T1 序列組合，並再次強調此非法律或執業剛性標準。",
           "detail": [
-            "切面包括 axial、coronal、sagittal；膝部成像需要 dedicated knee coil。",
+            "切面包括 axial、coronal、sagittal；膝蓋成像需要 dedicated knee coil。",
             "Typical small FOV 小於 16 至 18 cm；slice thickness 通常 3 或 4 mm；slice gap 小於 10%；病人通常為 supine。",
             "序列組合為 PD weighted 與 T2 weighted（可加或不加 fat sat）、一個 T1，以及 2D 與 3D isotropic。",
             "再次聲明：此非僵固執業規則，亦非用來建立 legal standard of care。"
@@ -3488,7 +3488,7 @@
           "title": "開場：伸膝機制課程目標與五項組成",
           "summary": "講者介紹自己與本課目標，並列出膝伸膝機制（extensor mechanism）的五項組成及其功能。",
           "detail": [
-            "講者為 Mass General Brigham 的肌肉骨骼放射科醫師，主題為膝部 extensor mechanism。",
+            "講者為 Mass General Brigham 的肌肉骨骼放射科醫師，主題為膝蓋 extensor mechanism。",
             "今日目標：回顧正常解剖與 MR 表現並討論 pitfalls，再以病例討論 tendinopathy、partial tear 與 full thickness tear，最後提醒評估時還要想到其他病理。",
             "伸膝機制五項：quadriceps tendon、patellar tendon、patella、tibial tuberosity，以及 medial and lateral retinaculum。",
             "功能是協助膝伸直並穩定 patella；本課重點放在伸直。"
@@ -4060,7 +4060,7 @@
           "title": "講者實務：何時才寫進報告",
           "summary": "除非被點名或懷疑脫位，否則不常報告 Insall-Salvati／Caton-Deschamps 與 TT-TG；溝深僅在目測不確定時當輔助。",
           "detail": [
-            "除非特別被要求，否則不花時間做 Caton-Deschamps 或 Insall-Salvati；熟悉膝部的轉診醫師／外科醫師通常會自己量",
+            "除非特別被要求，否則不花時間做 Caton-Deschamps 或 Insall-Salvati；熟悉膝蓋的轉診醫師／外科醫師通常會自己量",
             "trochlear 深度：目測無法確定是否為淺溝時才當輔助標準，不一定把數值寫進報告",
             "TT-TG：僅在被要求、或 patellar dislocation 情境才給測量，其餘不常量",
             "建議參考描述欄 patellar instability 文章，內有各種測量說明"
@@ -4116,7 +4116,7 @@
         {
           "start": "03:58",
           "end": "04:51",
-          "title": "膝部超音波掃查體位",
+          "title": "膝蓋超音波掃查體位",
           "summary": "依掃查區域選擇仰卧微屈、患側在下的側躺或俯卧垂足，以利前側、內側或後側膝結構與動態檢查。",
           "detail": [
             "評估 anterior knee：患者仰卧、膝微屈，膝下可墊枕頭或捲毛巾。",

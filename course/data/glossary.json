@@ -775,7 +775,7 @@
         "MSK ultrasound"
       ],
       "category": "technique",
-      "definition": "本課用於膝部表淺結構、液體、動態與血流評估的影像方法。",
+      "definition": "本課用於膝蓋表淺結構、液體、動態與血流評估的影像方法。",
       "unit_ids": [
         "ch0-u1",
         "ch1-u1",
@@ -849,7 +849,7 @@
         "linear-array transducer"
       ],
       "category": "technique",
-      "definition": "課程用於大多數膝部表淺結構掃描的高頻探頭。",
+      "definition": "課程用於大多數膝蓋表淺結構掃描的高頻探頭。",
       "unit_ids": [
         "ch1-u1",
         "ch2-u1",
@@ -1133,7 +1133,7 @@
         "PD"
       ],
       "category": "technique",
-      "definition": "膝部 MRI 常用序列，可顯示解剖並在脂肪抑制後凸顯液體與水腫。",
+      "definition": "膝蓋 MRI 常用序列，可顯示解剖並在脂肪抑制後凸顯液體與水腫。",
       "unit_ids": [
         "ch10-u1",
         "ch11-u1"
@@ -1220,7 +1220,7 @@
         "Gibbs artifact"
       ],
       "category": "technique",
-      "definition": "課程列為膝部 MRI 判讀時需辨認、避免誤判病灶的常見假影。",
+      "definition": "課程列為膝蓋 MRI 判讀時需辨認、避免誤判病灶的常見假影。",
       "unit_ids": [
         "ch10-u1"
       ]
@@ -1261,7 +1261,7 @@
         "Kellgren-Lawrence grading"
       ],
       "category": "classification",
-      "definition": "依骨刺、關節間隙狹窄、軟骨下硬化與變形將膝部退化分為零至四級。",
+      "definition": "依骨刺、關節間隙狹窄、軟骨下硬化與變形將膝蓋退化分為零至四級。",
       "unit_ids": [
         "ch9-u1"
       ]
