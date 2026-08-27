@@ -281,11 +281,13 @@ body {
 }
 
 .Hero h1 {
-  max-width: 13ch;
-  font-size: clamp(38px, 4.5vw, 66px);
+  /* CJK 排版：13ch 會把 17 字標題逼成三行；1.08 行高與負字距是拉丁字體習慣，
+     用在漢字上會擠壓字面。改成兩行內、行高留呼吸、字距回正。 */
+  max-width: 20ch;
+  font-size: clamp(30px, 3.4vw, 50px);
   font-weight: 760;
-  line-height: 1.08;
-  letter-spacing: -0.045em;
+  line-height: 1.38;
+  letter-spacing: 0;
   color: #f7ffff;
   text-wrap: balance;
   text-shadow: 0 14px 42px rgb(0 0 0 / 22%);
@@ -1729,14 +1731,9 @@ a:hover > .PlayBtn,
   }
 
   .Hero h1 {
-    max-width: 16ch;
+    max-width: 22ch;
   }
 
-  .HeroScan {
-    width: min(100%, 560px);
-    margin: 0 auto;
-    transform: none;
-  }
 
   .ConsoleHeader {
     grid-template-columns: minmax(0, 1fr) 190px;
@@ -1836,7 +1833,8 @@ a:hover > .PlayBtn,
   }
 
   .Hero h1 {
-    font-size: clamp(34px, 11vw, 48px);
+    font-size: clamp(26px, 7.6vw, 36px);
+    max-width: 100%;
   }
 
   .Hero__stats {
@@ -1848,9 +1846,6 @@ a:hover > .PlayBtn,
     min-width: 0;
   }
 
-  .HeroScan {
-    display: none;
-  }
 
   .Layout {
     padding: 12px;
