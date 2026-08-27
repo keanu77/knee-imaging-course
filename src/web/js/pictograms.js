@@ -87,6 +87,6 @@ export function mountPictograms() {
 /** 章節代碼 → 預設線稿（config 的 chapters[].pictogram 可覆寫） */
 export const CHAPTER_PICTOGRAM = {
   XR1: 'xr-ap-wb', XR2: 'xr-rosenberg',
-  US2: 'us-ant-long', US3: 'us-med-long', US4: 'us-lat-long', US5: 'us-post-trans',
+  US2: 'us-ant-long', US3: 'us-lat-long', US4: 'us-post-trans',
   MR1: 'mri-sag', MR2: 'mri-cor',
 };

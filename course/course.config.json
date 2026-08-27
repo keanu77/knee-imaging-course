@@ -214,26 +214,12 @@
       ]
     },
     {
-      "title": "超音波・定位與技術",
+      "title": "超音波",
       "chapters": [
-        "US0",
-        "US1"
-      ]
-    },
-    {
-      "title": "超音波・四區掃描",
-      "chapters": [
+        "US1",
         "US2",
         "US3",
-        "US4",
-        "US5"
-      ]
-    },
-    {
-      "title": "超音波・判讀與品質",
-      "chapters": [
-        "US6",
-        "US7"
+        "US4"
       ]
     },
     {
@@ -262,67 +248,35 @@
       "drills": 4
     },
     {
-      "code": "US0",
-      "title": "超音波：課程定位、臨床問題與安全",
+      "code": "US1",
+      "title": "超音波基礎：診斷範圍、安全與影像最佳化",
       "icon": "shield-check",
       "source": "syllabus",
-      "units": 1,
-      "drills": 0
-    },
-    {
-      "code": "US1",
-      "title": "超音波：探頭、最佳化與方向標示",
-      "icon": "activity",
-      "source": "syllabus",
-      "units": 1,
+      "units": 2,
       "drills": 0
     },
     {
       "code": "US2",
-      "title": "超音波前側：伸膝機轉與前隱窩",
+      "title": "超音波四區（上）：前側與內側",
       "icon": "scan-line",
       "source": "syllabus",
-      "units": 1,
-      "drills": 3
+      "units": 2,
+      "drills": 4
     },
     {
       "code": "US3",
-      "title": "超音波內側：MCL、鵝足與半月板周邊",
-      "icon": "target",
+      "title": "超音波四區（下）：外側、後外側與後側",
+      "icon": "layers",
       "source": "syllabus",
-      "units": 1,
-      "drills": 1
+      "units": 2,
+      "drills": 3
     },
     {
       "code": "US4",
-      "title": "超音波外側與後外側：韌帶、肌腱與腓總神經",
-      "icon": "layers",
-      "source": "syllabus",
-      "units": 1,
-      "drills": 1
-    },
-    {
-      "code": "US5",
-      "title": "超音波後側：囊腫與動態安全",
-      "icon": "move-diagonal",
-      "source": "syllabus",
-      "units": 1,
-      "drills": 2
-    },
-    {
-      "code": "US6",
-      "title": "超音波：常見病理與證據邊界",
-      "icon": "microscope",
-      "source": "syllabus",
-      "units": 1,
-      "drills": 0
-    },
-    {
-      "code": "US7",
-      "title": "超音波：完整掃描、報告與品質回饋",
+      "title": "超音波判讀、報告與品質",
       "icon": "clipboard-list",
       "source": "syllabus",
-      "units": 1,
+      "units": 2,
       "drills": 1
     },
     {

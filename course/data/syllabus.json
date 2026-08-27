@@ -567,8 +567,8 @@
       ]
     },
     {
-      "chapter": "US0",
-      "title": "超音波：課程定位、臨床問題與安全",
+      "chapter": "US1",
+      "title": "超音波基礎：診斷範圍、安全與影像最佳化",
       "units": [
         {
           "id": "ch0-u1",
@@ -607,13 +607,7 @@
           "reviewer_role": "復健科專科醫師",
           "reviewed_at": "2026-08-16",
           "reviewed_commit": "43b138ccb6358b75d766657ab020207e64756483"
-        }
-      ]
-    },
-    {
-      "chapter": "US1",
-      "title": "超音波：探頭、最佳化與方向標示",
-      "units": [
+        },
         {
           "id": "ch1-u1",
           "name": "高解析探頭、假影控制與影像最佳化",
@@ -662,7 +656,7 @@
     },
     {
       "chapter": "US2",
-      "title": "超音波前側：伸膝機轉與前隱窩",
+      "title": "超音波四區（上）：前側與內側",
       "units": [
         {
           "id": "ch2-u1",
@@ -797,13 +791,7 @@
           "reviewer_role": "復健科專科醫師",
           "reviewed_at": "2026-08-16",
           "reviewed_commit": "43b138ccb6358b75d766657ab020207e64756483"
-        }
-      ]
-    },
-    {
-      "chapter": "US3",
-      "title": "超音波內側：MCL、鵝足與半月板周邊",
-      "units": [
+        },
         {
           "id": "ch3-u1",
           "name": "內側支持帶、MCL、鵝足與標準化外翻應力",
@@ -884,8 +872,8 @@
       ]
     },
     {
-      "chapter": "US4",
-      "title": "超音波外側與後外側：韌帶、肌腱與腓總神經",
+      "chapter": "US3",
+      "title": "超音波四區（下）：外側、後外側與後側",
       "units": [
         {
           "id": "ch4-u1",
@@ -962,13 +950,7 @@
           "reviewer_role": "復健科專科醫師",
           "reviewed_at": "2026-08-16",
           "reviewed_commit": "43b138ccb6358b75d766657ab020207e64756483"
-        }
-      ]
-    },
-    {
-      "chapter": "US5",
-      "title": "超音波後側：囊腫與動態安全",
-      "units": [
+        },
         {
           "id": "ch5-u1",
           "name": "Baker cyst 聲窗、膕窩神經血管與後側限制",
@@ -1077,8 +1059,8 @@
       ]
     },
     {
-      "chapter": "US6",
-      "title": "超音波：常見病理與證據邊界",
+      "chapter": "US4",
+      "title": "超音波判讀、報告與品質",
       "units": [
         {
           "id": "ch6-u1",
@@ -1127,13 +1109,7 @@
           "reviewer_role": "復健科專科醫師",
           "reviewed_at": "2026-08-16",
           "reviewed_commit": "43b138ccb6358b75d766657ab020207e64756483"
-        }
-      ]
-    },
-    {
-      "chapter": "US7",
-      "title": "超音波：完整掃描、報告與品質回饋",
-      "units": [
+        },
         {
           "id": "ch7-u1",
           "name": "四區整合、最低影像集與結構化報告",
