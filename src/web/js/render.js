@@ -1,5 +1,6 @@
 // render.js — 把 course.json 的資料轉成 DOM 字串
 import { icon } from "./icons.js";
+import { CHAPTER_PICTOGRAM } from "./pictograms.js";
 
 /** HTML 逸出，資料雖為自產仍一律過濾 */
 export const esc = (s) =>
@@ -650,7 +651,7 @@ export function renderChapter(ch, doneSet, masteryMap = new Map()) {
   return `
     <section class="Chapter" id="${esc(ch.code)}" data-chapter="${esc(ch.code)}">
       <button class="Chapter__header" type="button" data-toggle="chapter">
-        <span class="Chapter__num">${icon(ch.icon || "circle-dot", 18)}</span>
+        <span class="Chapter__num">${CHAPTER_PICTOGRAM[ch.code] ? `<svg class="Pictogram" width="30" height="30" aria-hidden="true"><use href="#p-${CHAPTER_PICTOGRAM[ch.code]}" /></svg>` : icon(ch.icon || "circle-dot", 18)}</span>
         <span class="Chapter__titles">
           <span class="Chapter__title">
             <span class="Chapter__code">${esc(ch.code)}</span>

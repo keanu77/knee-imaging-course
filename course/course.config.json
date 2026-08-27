@@ -50,7 +50,7 @@
   "hero": {
     "eyebrow": "醫師專業自學課程・診斷階段",
     "heading": "把膝部影像判讀變成可重複的臨床流程",
-    "lede": "全課規劃 {units} 個單元，涵蓋超音波、X 光與 MRI 三種影像模態：從影像最佳化、標準視圖與動態檢查，到照射位與序列判讀、常見病理與報告品質。每個單元都列出<strong>必備視圖、操作重點、常見陷阱、文獻依據與內容審閱狀態</strong>。超音波單元已完成醫師簽核；X 光與 MRI 單元將依相同審閱流程陸續加入。"
+    "lede": "全課規劃 {units} 個單元，依 <strong>X 光 → 超音波 → MRI</strong> 三大影像主軸編排：從照射位與系統性判讀，到超音波標準掃描與動態檢查，再到 MRI 序列邏輯與深部結構判讀。每個單元都列出必備視圖、操作重點、常見陷阱、文獻依據與內容審閱狀態。"
   },
   "ui": {
     "searchPlaceholder": "搜尋結構、病灶、視圖、序列或專家…",
@@ -207,110 +207,33 @@
   },
   "nav": [
     {
-      "title": "超音波・定位與技術",
-      "chapters": [
-        "CH0",
-        "CH1"
-      ]
-    },
-    {
-      "title": "超音波・四區掃描",
-      "chapters": [
-        "CH2",
-        "CH3",
-        "CH4",
-        "CH5"
-      ]
-    },
-    {
-      "title": "超音波・判讀與品質",
-      "chapters": [
-        "CH6",
-        "CH7"
-      ]
-    },
-    {
       "title": "X 光判讀",
       "chapters": [
-        "CH8",
-        "CH9"
+        "XR1",
+        "XR2"
+      ]
+    },
+    {
+      "title": "超音波",
+      "chapters": [
+        "US1",
+        "US2",
+        "US3",
+        "US4"
       ]
     },
     {
       "title": "MRI 判讀",
       "chapters": [
-        "CH10",
-        "CH11"
+        "MR1",
+        "MR2",
+        "MR3"
       ]
     }
   ],
   "chapters": [
     {
-      "code": "CH0",
-      "title": "課程定位、臨床問題與安全",
-      "icon": "shield-check",
-      "source": "syllabus",
-      "units": 1,
-      "drills": 0
-    },
-    {
-      "code": "CH1",
-      "title": "探頭、最佳化與方向標示",
-      "icon": "activity",
-      "source": "syllabus",
-      "units": 1,
-      "drills": 0
-    },
-    {
-      "code": "CH2",
-      "title": "前側：伸膝機轉與前隱窩",
-      "icon": "scan-line",
-      "source": "syllabus",
-      "units": 1,
-      "drills": 3
-    },
-    {
-      "code": "CH3",
-      "title": "內側：MCL、鵝足與半月板周邊",
-      "icon": "target",
-      "source": "syllabus",
-      "units": 1,
-      "drills": 1
-    },
-    {
-      "code": "CH4",
-      "title": "外側與後外側：韌帶、肌腱與腓總神經",
-      "icon": "layers",
-      "source": "syllabus",
-      "units": 1,
-      "drills": 1
-    },
-    {
-      "code": "CH5",
-      "title": "後側、囊腫與動態安全",
-      "icon": "move-diagonal",
-      "source": "syllabus",
-      "units": 1,
-      "drills": 2
-    },
-    {
-      "code": "CH6",
-      "title": "常見病理與證據邊界",
-      "icon": "microscope",
-      "source": "syllabus",
-      "units": 1,
-      "drills": 0
-    },
-    {
-      "code": "CH7",
-      "title": "完整掃描、報告與品質回饋",
-      "icon": "clipboard-list",
-      "source": "syllabus",
-      "units": 1,
-      "drills": 1
-    },
-    {
-      "code": "CH8",
+      "code": "XR1",
       "title": "X 光：照射位選擇與系統性判讀",
       "icon": "scan-line",
       "source": "syllabus",
@@ -318,7 +241,7 @@
       "drills": 3
     },
     {
-      "code": "CH9",
+      "code": "XR2",
       "title": "X 光：常見病理與判讀陷阱",
       "icon": "microscope",
       "source": "syllabus",
@@ -326,20 +249,60 @@
       "drills": 4
     },
     {
-      "code": "CH10",
+      "code": "US1",
+      "title": "超音波基礎：診斷範圍、安全與影像最佳化",
+      "icon": "shield-check",
+      "source": "syllabus",
+      "units": 2,
+      "drills": 0
+    },
+    {
+      "code": "US2",
+      "title": "超音波四區（上）：前側與內側",
+      "icon": "scan-line",
+      "source": "syllabus",
+      "units": 2,
+      "drills": 5
+    },
+    {
+      "code": "US3",
+      "title": "超音波四區（下）：外側、後外側與後側",
+      "icon": "layers",
+      "source": "syllabus",
+      "units": 2,
+      "drills": 3
+    },
+    {
+      "code": "US4",
+      "title": "超音波判讀、報告與品質",
+      "icon": "clipboard-list",
+      "source": "syllabus",
+      "units": 2,
+      "drills": 1
+    },
+    {
+      "code": "MR1",
       "title": "MRI：序列邏輯與系統性判讀",
       "icon": "layers",
       "source": "syllabus",
       "units": 1,
-      "drills": 4
+      "drills": 5
     },
     {
-      "code": "CH11",
+      "code": "MR2",
       "title": "MRI：常見病理與證據邊界",
       "icon": "microscope",
       "source": "syllabus",
       "units": 1,
       "drills": 4
+    },
+    {
+      "code": "MR3",
+      "title": "MRI：後外側角、髕股、軟骨與術後評估",
+      "icon": "layers",
+      "source": "syllabus",
+      "units": 2,
+      "drills": 7
     }
   ],
   "audit": {
@@ -358,7 +321,7 @@
     "metaCoverage": 1.0,
     "drillsPerUnit": {
       "min": 1,
-      "max": 4
+      "max": 12
     },
     "maxSharedVideos": 2,
     "requireAssessment": [
@@ -403,13 +366,14 @@
     ],
     "stanceTitle": "開始前先知道",
     "stanceLede": "這是一門醫師專業教育課程，不是認證、credentialing 或個別病人的醫療建議。",
-    "chaptersTitle": "從標準化到臨床整合的章節地圖",
+    "chaptersTitle": "X 光、超音波、MRI 三主軸的章節地圖",
     "ctaTitle": "從課程定位開始",
     "ctaLede": "目前共有 {units} 個草稿單元與 {videos} 個已建檔影片；完成來源查核與醫療審閱前維持 noindex。"
   },
   "footer": {
     "disclaimer": "<strong>專業教育聲明。</strong>本課程以醫師為主要學員，僅供教育用途，不取代實體 hands-on training、合格督導、機構 credentialing、完整病史理學檢查或正式影像判讀報告。診斷階段不提供注射、穿刺或其他影像導引介入操作指引。",
-    "credits": "第三方影片的著作權屬原頻道，本站僅使用 YouTube 官方播放器嵌入並提供策展、課程脈絡與來源連結。"
+    "credits": "第三方影片的著作權屬原頻道，本站僅使用 YouTube 官方播放器嵌入並提供策展、課程脈絡與來源連結。",
+    "author": "製作者：<a href=\"https://sportsmedicine.tw\" target=\"_blank\" rel=\"noopener\">運動醫學科 吳易澄醫師</a>"
   },
   "llms": {
     "summary": "醫師導向的膝部影像診斷課程，涵蓋超音波、X 光與 MRI，共 {units} 個單元，包含標準掃描視圖與照射位、序列判讀、正常解剖、動態檢查、常見病理、報告與品質控管。",

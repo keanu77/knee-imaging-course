@@ -1359,6 +1359,272 @@
       "reviewer_role": "復健科專科醫師",
       "reviewed_at": "2026-08-25",
       "reviewed_commit": "fabc147d15dabf38185b7527e59ae830c7f7b86f"
+    },
+    "mr3-u1": {
+      "review_status": "approved",
+      "questions": [
+        {
+          "id": "mr3-u1-q1",
+          "type": "single",
+          "stem": "在 MRI 上追蹤後外側角（PLC）時，正確的做法是？",
+          "difficulty": "core",
+          "options": [
+            {
+              "text": "逐段追蹤三主結構：LCL/FCL 由外上髁至腓骨頭、股二頭肌腱至腓骨頭、膕肌腱經膕肌裂孔接肌腹",
+              "correct": true,
+              "rationale": "單切面掃視會漏掉斜行結構；逐段追蹤是本單元的核心方法。"
+            },
+            {
+              "text": "只在冠狀位尋找即可",
+              "correct": false,
+              "rationale": "這正是單元列出的第一陷阱——斜行走向的結構在單一平面常顯示不良。"
+            },
+            {
+              "text": "弓狀韌帶未顯示即可報為撕裂",
+              "correct": false,
+              "rationale": "弓狀與 fabellofibular 韌帶可能細小或天生缺如，未顯示不等於撕裂。"
+            },
+            {
+              "text": "以軸位為唯一評估平面",
+              "correct": false,
+              "rationale": "各結構有各自的最佳平面，需多平面交叉確認。"
+            }
+          ],
+          "reference_ids": [
+            "REF-PLC-IMAGING-2024"
+          ]
+        },
+        {
+          "id": "mr3-u1-q2",
+          "type": "single",
+          "stem": "關於 TT-TG 距離的判讀，下列何者正確？",
+          "difficulty": "core",
+          "options": [
+            {
+              "text": "MRI 數值通常較 CT 低，不能把 CT 的 20 mm 切點直接套用於 MRI",
+              "correct": true,
+              "rationale": "兩種模態量得的數值不可互換；MRI 常見研究切點約 13–15 mm，且受序列與族群影響。"
+            },
+            {
+              "text": "CT 與 MRI 的 20 mm 切點通用",
+              "correct": false,
+              "rationale": "直接套用是常見錯誤，會系統性高估異常比例。"
+            },
+            {
+              "text": "TT-TG 大於 20 mm 於 MRI 即可診斷髕股不穩",
+              "correct": false,
+              "rationale": "單一數值不構成診斷；需結合病史、脫位事件與其他形態因子。"
+            },
+            {
+              "text": "TT-TG 不受切面選擇影響",
+              "correct": false,
+              "rationale": "切面與序列都會影響量測結果，報告應載明方法。"
+            }
+          ],
+          "reference_ids": [
+            "REF-PATELLAR-INSTABILITY-2026"
+          ]
+        },
+        {
+          "id": "mr3-u1-q3",
+          "type": "single",
+          "stem": "見髕骨內側面與外側股骨髁骨挫傷，正確的解讀是？",
+          "difficulty": "core",
+          "options": [
+            {
+              "text": "提示曾發生外側髕骨脫位，但須對照脫位病史、支持帶損傷與共存病灶才能連結當前症狀",
+              "correct": true,
+              "rationale": "這是特徵性挫傷分布；但影像所見不等於當前症狀來源，是本單元明列的陷阱。"
+            },
+            {
+              "text": "可直接歸因為病人現在的疼痛來源",
+              "correct": false,
+              "rationale": "單元陷阱條明確反對這種直接歸因。"
+            },
+            {
+              "text": "代表 ACL 撕裂",
+              "correct": false,
+              "rationale": "ACL 撕裂的特徵分布是外側股骨髁＋後外側脛骨平台（pivot-shift 型）。"
+            },
+            {
+              "text": "屬正常變異",
+              "correct": false,
+              "rationale": "骨挫傷是急性創傷的訊號，不是變異。"
+            }
+          ],
+          "reference_ids": [
+            "REF-PANDYA-KNEE-2023"
+          ]
+        },
+        {
+          "id": "mr3-u1-q4",
+          "type": "single",
+          "stem": "股四頭肌腱附著點附近出現高訊號，下一步應該？",
+          "difficulty": "core",
+          "options": [
+            {
+              "text": "結合纖維中斷、腱增厚與髕骨極骨髓水腫綜合判讀，並排除 magic angle 與部分容積",
+              "correct": true,
+              "rationale": "正常分層、magic angle 與部分容積都會造成假性高訊號，必須綜合判讀。"
+            },
+            {
+              "text": "直接診斷部分撕裂",
+              "correct": false,
+              "rationale": "把正常分層或假影判成部分撕裂是明列陷阱。"
+            },
+            {
+              "text": "僅以單一平面確認即可",
+              "correct": false,
+              "rationale": "任何結構異常都需第二平面確認。"
+            },
+            {
+              "text": "高訊號一律代表腱病",
+              "correct": false,
+              "rationale": "腱病診斷需形態學支持，不能只靠訊號。"
+            }
+          ],
+          "reference_ids": [
+            "REF-PANDYA-KNEE-2023"
+          ]
+        }
+      ],
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "復健科專科醫師",
+      "reviewed_at": "2026-08-28",
+      "reviewed_commit": "c2cd89d40627bb7fd01cdf154b6ee7bee031a998"
+    },
+    "mr3-u2": {
+      "review_status": "approved",
+      "questions": [
+        {
+          "id": "mr3-u2-q1",
+          "type": "single",
+          "stem": "軟骨病灶的深度分級標準是？",
+          "difficulty": "core",
+          "options": [
+            {
+              "text": "淺層 <50%、深層 >50%、全層達軟骨下骨板；骨髓水腫與囊性變化另行描述",
+              "correct": true,
+              "rationale": "深度是報告的必寫欄位，與位置、面積並列。"
+            },
+            {
+              "text": "任何軟骨內高訊號即為全層缺損",
+              "correct": false,
+              "rationale": "未確認是否延伸至軟骨下骨板就升級為全層，是明列陷阱。"
+            },
+            {
+              "text": "以病灶長度而非深度分級",
+              "correct": false,
+              "rationale": "面積要報，但分級軸是深度。"
+            },
+            {
+              "text": "依骨髓水腫範圍分級",
+              "correct": false,
+              "rationale": "骨髓水腫是伴隨所見，不是軟骨分級依據。"
+            }
+          ],
+          "reference_ids": [
+            "REF-ACR-CHRONIC-KNEE-2026"
+          ]
+        },
+        {
+          "id": "mr3-u2-q2",
+          "type": "single",
+          "stem": "外傷型與退化型軟骨病灶的形態差異是？",
+          "difficulty": "core",
+          "options": [
+            {
+              "text": "外傷型多為局灶、邊界較清楚的 flap 或沿軟骨—骨交界的 delamination；退化型多為多發不規則 fissure 與漸進性變薄",
+              "correct": true,
+              "rationale": "形態學特徵是區分兩者的主要依據。"
+            },
+            {
+              "text": "兩者影像上無法區分",
+              "correct": false,
+              "rationale": "單元明確列出可辨識的形態差異。"
+            },
+            {
+              "text": "退化型一定伴隨骨髓水腫",
+              "correct": false,
+              "rationale": "骨髓水腫可有可無，不是分型依據。"
+            },
+            {
+              "text": "外傷型必為全層",
+              "correct": false,
+              "rationale": "深度與成因是兩個獨立的描述軸。"
+            }
+          ],
+          "reference_ids": [
+            "REF-MENISCUS-DELPHI-2026"
+          ]
+        },
+        {
+          "id": "mr3-u2-q3",
+          "type": "single",
+          "stem": "ACL 重建術後第一年，graft 呈中度高訊號，正確判讀是？",
+          "difficulty": "core",
+          "options": [
+            {
+              "text": "多屬 ligamentization 過程的正常成熟變化，不能僅憑訊號診斷失敗",
+              "correct": true,
+              "rationale": "壞死→再血管化→細胞增生→重塑各期可重疊；第一年高訊號常為正常。"
+            },
+            {
+              "text": "即可診斷 graft 撕裂",
+              "correct": false,
+              "rationale": "只看訊號就診斷撕裂是明列陷阱，需評估纖維連續性、走向、時間點與 graft 類型。"
+            },
+            {
+              "text": "代表感染",
+              "correct": false,
+              "rationale": "單元未支持此推論。"
+            },
+            {
+              "text": "必須立刻安排 revision",
+              "correct": false,
+              "rationale": "治療決策超出診斷課程範圍，且與證據方向相反。"
+            }
+          ],
+          "reference_ids": [
+            "REF-ACL-GRAFT-REMODEL-2026"
+          ]
+        },
+        {
+          "id": "mr3-u2-q4",
+          "type": "single",
+          "stem": "關於術後 MRI 與臨床狀態的關係，正確的是？",
+          "difficulty": "core",
+          "options": [
+            {
+              "text": "術後 MRI 所見與臨床失敗的相關性有限，必須臨床對照",
+              "correct": true,
+              "rationale": "這是本單元的證據邊界核心，與課程一貫立場一致。"
+            },
+            {
+              "text": "MRI 顯示 graft 完整即可排除臨床失敗",
+              "correct": false,
+              "rationale": "曾有 MRI 外觀近乎完整卻經手術證實撕裂的情形。"
+            },
+            {
+              "text": "修補處持續表面相通訊號即代表半月板修補失敗",
+              "correct": false,
+              "rationale": "瘢痕與修復組織可長期高訊號，需與術前影像與臨床穩定性對照。"
+            },
+            {
+              "text": "術後影像可取代臨床穩定度檢查",
+              "correct": false,
+              "rationale": "影像與功能評估互補，不能互相取代。"
+            }
+          ],
+          "reference_ids": [
+            "REF-ACL-GRAFT-CLINICAL-2026"
+          ]
+        }
+      ],
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "復健科專科醫師",
+      "reviewed_at": "2026-08-28",
+      "reviewed_commit": "c2cd89d40627bb7fd01cdf154b6ee7bee031a998"
     }
   }
 }
