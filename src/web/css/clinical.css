@@ -1629,7 +1629,8 @@ a:hover > .PlayBtn,
     --sidebar-width: 270px;
   }
 
-  .AppHeader__edition {
+  .AppHeader__edition,
+  .AppHeader__author {
     display: none;
   }
 
@@ -2052,11 +2053,28 @@ a:hover > .PlayBtn,
 .Hero__content { max-width: 68ch; }
 
 /* --- 頁尾製作者署名 ------------------------------------------------------ */
-.AppFooter__author {
-  /* 常駐於頁尾第一列（不在收合區內），字級與免責聲明一致 */
-  margin: 0 0 4px;
-  font-size: 12px;
+.AppHeader__author {
+  /* 右上角製作者署名：header 是深色列，用高對比亮色，不套 muted */
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  margin-right: 4px;
+  font-size: 13px;
   font-weight: 500;
-  color: var(--fgColor-muted);
+  white-space: nowrap;
+  color: rgb(247 255 255 / 92%);
+  background: rgb(255 255 255 / 8%);
+  border: 1px solid rgb(255 255 255 / 16%);
+  border-radius: var(--borderRadius-full);
 }
-.AppFooter__author a { color: var(--fgColor-accent); }
+
+.AppHeader__author a {
+  color: var(--clinical-teal-bright);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.AppHeader__author a:hover {
+  text-decoration: underline;
+}
+
