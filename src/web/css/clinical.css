@@ -2050,3 +2050,11 @@ a:hover > .PlayBtn,
 /* --- Hero 無視覺欄：單欄版型（燈箱示範已依審查移除） -------------------- */
 .Hero__grid { grid-template-columns: 1fr; }
 .Hero__content { max-width: 68ch; }
+
+/* --- 頁尾製作者署名 ------------------------------------------------------ */
+.AppFooter__author {
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: var(--fgColor-default);
+}
+.AppFooter__author a { color: var(--fgColor-accent); }

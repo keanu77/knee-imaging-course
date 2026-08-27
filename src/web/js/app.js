@@ -239,6 +239,8 @@ function applyChrome(data) {
       .replace("{problems}", data.meta.problem_units),
   );
   set(".AppFooter__disclaimer", c.footer?.disclaimer || "");
+  // author 含使用者自訂連結，與 disclaimer 同樣以原樣注入（來源是自家設定檔）
+  set(".AppFooter__author", c.footer?.author || "");
   set(".AppFooter__credits", esc(c.footer?.credits || ""));
   set("#railChapterCount", `${data.chapters?.length || 0} CHAPTERS · ${data.meta?.units || 0} UNITS`);
   set("#consoleUnitCount", `${data.meta?.units || 0} UNITS`);
