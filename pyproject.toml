@@ -1,7 +1,7 @@
 [project]
 name = "knee-ultrasound-course"
 version = "1.0.0"
-description = "醫師版膝部超音波診斷掃描課程，含影片來源驗證與醫療內容審閱閘門"
+description = "醫師導向的膝蓋影像診斷課程（X 光／超音波／MRI），含影片來源驗證與醫療內容審閱閘門"
 readme = "README.md"
 requires-python = ">=3.11"
 license = { text = "MIT" }
