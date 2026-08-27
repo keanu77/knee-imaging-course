@@ -91,3 +91,7 @@ make serve     # 本機預覽
 ## 貢獻
 
 歡迎 issue 與 PR，但**醫療內容的變更有額外規則**，請先讀 [CONTRIBUTING.md](CONTRIBUTING.md)。
+
+---
+
+Repo：<https://github.com/keanu77/knee-imaging-course>
