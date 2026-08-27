@@ -3175,6 +3175,293 @@
       "reviewer_role": "復健科專科醫師",
       "reviewed_at": "2026-08-25",
       "reviewed_commit": "fabc147d15dabf38185b7527e59ae830c7f7b86f"
+    },
+    {
+      "video_url": "https://www.youtube.com/watch?v=P3Qoj2nyw78",
+      "review_status": "draft",
+      "transcript_verified_at": "2026-08-27",
+      "transcript_source": "yt-dlp 自動字幕（en, VTT）2026-08-27 實抓；初稿由協作 agent 依逐字稿產生，主編抽驗段界與術語還原對照原文",
+      "note": "自動字幕訛誤已於筆記改採標準命名：popliteal fibula ligament／popliteal feebler→popliteofibular ligament；orchid ligament／orchid like mint→arcuate ligament；meniscus popliteal fascicles→meniscopopliteal fascicles；lateral inferior curricular vessels→lateral inferior genicular vessels；popliteal he toes→popliteal hiatus。全片為解剖搜尋路徑教學，無介入內容；頻道含付費 MSK fellowship 課程行銷。",
+      "segments": [
+        {
+          "start": "00:00",
+          "end": "01:28",
+          "title": "後外側角的重要結構與辨識策略",
+          "summary": "講者說明後外側角解剖的複雜性，並提出優先檢查三個主要結構的實用策略。",
+          "detail": [
+            "arcuate ligament 的定義在不同文獻間不一致，且周圍細小結構密集，容易造成辨識困難。",
+            "評估時最重要的三個結構為 lateral collateral ligament、popliteus tendon 與 biceps femoris tendon。",
+            "影片也將介紹 popliteofibular ligament、fabellofibular ligament、meniscopopliteal fascicles，以及目前被視為 arcuate ligament 的結構。"
+          ]
+        },
+        {
+          "start": "01:29",
+          "end": "02:37",
+          "title": "LCL 與 popliteus tendon",
+          "summary": "本段示範 lateral collateral ligament 與 popliteus tendon 在冠狀面及軸位影像上的走向。",
+          "detail": [
+            "lateral collateral ligament 是由 femoral condyle 向下延伸至 fibular head 外側的粗厚低訊號韌帶。",
+            "在軸位影像上，可追蹤 lateral collateral ligament 向下附著於 fibular head 外側。",
+            "lateral collateral ligament 有時會與 biceps femoris tendon 會合後共同附著。",
+            "popliteus tendon 自其起點沿 popliteal hiatus 向下走行，之後進入肌肉並形成 musculotendinous junction。"
+          ]
+        },
+        {
+          "start": "02:38",
+          "end": "04:07",
+          "title": "Popliteofibular ligament 的追蹤方法",
+          "summary": "本段說明如何以 popliteus tendon 為基準尋找 popliteofibular ligament，並解釋其並非總能清楚顯示。",
+          "detail": [
+            "先辨識 popliteus tendon，再尋找由該肌腱延伸至 fibular head 的韌帶狀結構。",
+            "popliteofibular ligament 在部分病例中相當粗厚且容易辨識，但並非每次都可見。",
+            "冠狀面規劃、結構跨越不同切面或 partial volume artifact，都可能影響其顯示。",
+            "在軸位影像上可利用交叉定位，確認 popliteus tendon 旁的帶狀結構是否對應 popliteofibular ligament。"
+          ]
+        },
+        {
+          "start": "04:08",
+          "end": "05:47",
+          "title": "Biceps femoris tendon 與 meniscopopliteal fascicles",
+          "summary": "本段介紹 biceps femoris tendon 的附著關係，以及兩條主要 meniscopopliteal fascicles 的位置。",
+          "detail": [
+            "biceps femoris tendon 向下附著於 fibular head 外側，並鄰近 lateral collateral ligament。",
+            "biceps femoris tendon 有時與 lateral collateral ligament 會合，共同形成一個附著結構。",
+            "兩條主要 fascicles 為 anteroinferior meniscopopliteal fascicle 與 posterosuperior meniscopopliteal fascicle。",
+            "兩條 fascicles 形成讓 popliteus tendon 通過的 hiatus；其損傷有時伴隨 lateral meniscus posterior horn 病灶。"
+          ]
+        },
+        {
+          "start": "05:48",
+          "end": "07:22",
+          "title": "Arcuate ligament 的影像定位與爭議",
+          "summary": "講者依據文獻以 lateral inferior genicular vessels 定位 arcuate ligament，並指出它可能只是增厚的關節囊。",
+          "detail": [
+            "文獻使用 lateral inferior genicular vessels 作為辨識 arcuate ligament 的定位標誌。",
+            "被稱為 arcuate ligament 的結構位於這些血管的正前方，並與 posterior joint capsule 延續。",
+            "在軸位影像上，文獻箭頭所指的是關節囊中可能稍為增厚的部分。",
+            "講者指出其是否為真正韌帶仍有爭議，且臨床重要性可能有限。"
+          ]
+        },
+        {
+          "start": "07:23",
+          "end": "09:11",
+          "title": "不同病例中的 arcuate ligament 辨識困難",
+          "summary": "透過多個病例示範 arcuate ligament、fabellofibular ligament 與後方關節囊在 MRI 上容易混淆。",
+          "detail": [
+            "第一個病例可見 fabella，以及由 fabella 向 fibula 延伸的結構，但其與血管的位置關係使命名並不明確。",
+            "fabellofibular ligament 依文獻應走行於 lateral inferior genicular vessels 後方。",
+            "另一病例在血管前方未見明確向下延伸的結構，但因其他後外側軟組織無異常，講者認為最可能仍是完整。",
+            "不同病例中的 meniscopopliteal fascicles 可能十分細小，所謂 arcuate ligament 也可能僅呈現為 posterior joint capsule 的一部分。"
+          ]
+        },
+        {
+          "start": "09:12",
+          "end": "10:12",
+          "title": "PLC 損傷的關聯與臨床重要性",
+          "summary": "本段說明後外側角損傷常與十字韌帶撕裂併存，MRI 可協助提高對不穩定的懷疑。",
+          "detail": [
+            "posterolateral corner 損傷常伴隨 anterior cruciate ligament 或 posterior cruciate ligament 撕裂，單獨發生較少見。",
+            "判斷 posterolateral instability 的標準仍是臨床檢查，但疼痛與腫脹可能使檢查困難。",
+            "MRI 可用來提高對 posterolateral corner 損傷的懷疑。",
+            "顯著損傷若未治療，可能導致不良結果、ACL graft failure 與慢性不穩定。"
+          ]
+        },
+        {
+          "start": "10:13",
+          "end": "11:14",
+          "title": "預測不穩定的 MRI 重點與實用結論",
+          "summary": "研究結果顯示完整撕裂或撕脫的 lateral collateral ligament 最能預測後外側不穩定，實務上應優先檢查三大結構。",
+          "detail": [
+            "lateral collateral ligament 的完整撕裂或撕脫，是 posterolateral instability 最顯著的 MRI 預測因子。",
+            "對其中一位判讀者而言，biceps femoris tendon 撕裂也是良好的預測因子。",
+            "popliteofibular ligament、fabellofibular ligament 與 meniscopopliteal fascicles 等較小結構，未提升 MRI 預測不穩定的診斷表現。",
+            "實務評估應優先檢查 lateral collateral ligament、popliteus tendon 與 biceps femoris tendon。"
+          ]
+        }
+      ]
+    },
+    {
+      "video_url": "https://www.youtube.com/watch?v=3tQZa_6rEW0",
+      "review_status": "draft",
+      "transcript_verified_at": "2026-08-27",
+      "transcript_source": "yt-dlp 自動字幕（en, VTT）2026-08-27 實抓；初稿由協作 agent 依逐字稿產生，主編抽驗段界與術語還原對照原文",
+      "note": "自動字幕大致可讀。全片為 PLC 損傷病例的 MRI 判讀（冠狀/矢狀/軸位交叉確認、次發性骨挫傷），無介入操作示範。講者本人頻道連結為個人診療網站。",
+      "segments": [
+        {
+          "start": "00:15",
+          "end": "01:29",
+          "title": "PLC 主要穩定結構與次發性骨挫傷",
+          "summary": "介紹膝關節後外側角（PLC）的三個主要靜態穩定結構，以及冠狀位影像常見的內側骨挫傷表現。",
+          "detail": [
+            "PLC 的主要靜態穩定結構包括 fibular collateral ligament、popliteus tendon 與 popliteofibular ligament。",
+            "評估從右膝脂肪抑制冠狀位影像開始。",
+            "內側股骨髁與內側脛骨平台前方可見骨髓水腫。",
+            "外側結構受傷後膝關節外側張開、內側受到擠壓，可形成此骨挫傷型態。"
+          ]
+        },
+        {
+          "start": "01:30",
+          "end": "02:43",
+          "title": "冠狀位的外側軟組織損傷",
+          "summary": "冠狀位影像顯示外側關節囊、biceps femoris 與 popliteofibular ligament 的損傷。",
+          "detail": [
+            "外側膝部可見軟組織腫脹，並可辨認 iliotibial band 向下附著於 Gerdy's tubercle。",
+            "lateral meniscus 附近的 meniscotibial portion of the lateral capsule 發生中斷，此處亦稱 mid-third lateral capsular ligament 或 anterolateral ligament 的前外側附著區。",
+            "biceps femoris 從 fibular head 剝離，其肌腱與附著處之間可見異常訊號。",
+            "popliteofibular ligament 從 fibular styloid 後內側走向 popliteus 的 musculotendinous junction，影像可見訊號改變與中斷。"
+          ]
+        },
+        {
+          "start": "02:44",
+          "end": "03:47",
+          "title": "PLC 三大結構撕裂與伴隨損傷",
+          "summary": "冠狀位進一步確認 popliteus tendon、fibular collateral ligament 與 popliteofibular ligament 的破裂，並指出其他伴隨病灶。",
+          "detail": [
+            "popliteus tendon 在股骨附著處中斷，附著處之間出現訊號，顯示肌腱撕裂並被撕脫。",
+            "fibular collateral ligament 呈波浪狀外觀，符合完全撕裂，且已從 fibula 附著處撕脫。",
+            "同時可見 biceps femoris 撕脫、popliteofibular ligament 撕裂及 popliteus musculature 內部撕裂。",
+            "另可見 lateral meniscus posterior horn 損傷及 intercondylar notch 內訊號增高。"
+          ]
+        },
+        {
+          "start": "03:48",
+          "end": "05:21",
+          "title": "矢狀位的骨挫傷與十字韌帶損傷",
+          "summary": "矢狀位影像呈現典型骨挫傷、ACL 與 PCL 完全中斷，以及後方關節囊和 popliteus muscle 損傷。",
+          "detail": [
+            "由膝關節內側向外檢視，可再次看到內側股骨髁與內側脛骨平台前方的骨挫傷。",
+            "內側可辨認 semimembranosus 的 direct arm 與 medial meniscus，接近中線時骨挫傷逐漸消退。",
+            "ACL 完全中斷，PCL 也幾乎沒有殘留結構，並從股骨附著處完全斷裂。",
+            "外側可見 posterior capsule 損傷、popliteus muscle 訊號增高，以及 tibia 相對 femur 向前半脫位。"
+          ]
+        },
+        {
+          "start": "05:22",
+          "end": "06:15",
+          "title": "外側附著撕脫與軸位整體評估",
+          "summary": "影像最後確認 biceps femoris 與 fibular collateral ligament 的腓骨端撕脫，並以軸位觀察廣泛水腫及主要結構中斷。",
+          "detail": [
+            "fibular head 上看不到 biceps femoris 的正常附著，局部異常訊號顯示其已被撕脫。",
+            "fibular collateral ligament 亦從 fibular head 外側附著處撕脫，呈現較波浪狀的外觀。",
+            "軸位影像存在大量水腫，因此主要用於觀察整體結構與骨挫傷型態。",
+            "軸位可見 popliteus 從股骨廣泛中斷，以及 fibular collateral ligament 損傷。"
+          ]
+        }
+      ]
+    },
+    {
+      "video_url": "https://www.youtube.com/watch?v=kVHYycqkN3s",
+      "review_status": "draft",
+      "transcript_verified_at": "2026-08-27",
+      "transcript_source": "yt-dlp 自動字幕（en, VTT）2026-08-27 實抓；初稿由協作 agent 依逐字稿產生，主編抽驗段界與術語還原對照原文",
+      "note": "自動字幕大致可讀；本片為取像技術與序列協定，無病理判讀與介入內容。",
+      "segments": [
+        {
+          "start": "00:06",
+          "end": "00:55",
+          "title": "開場：膝部 MRI 技術與 protocol 及免責聲明",
+          "summary": "講者介紹本講為膝部 MRI 技術與 protocol，目的在協助適當判讀，並聲明技術參數並非執業或法律標準。",
+          "detail": [
+            "本講主題為 MRI technique 與 MRI protocol，講者為來自 Severance Hospital 的肌肉骨骼放射科醫師。",
+            "簡報目的是讓放射科醫師能提供適當的 radiology interpretation。",
+            "Parameters 與 technical standards 不是僵固的執業規則，也不是為建立法律上的放射影像標準而設計。"
+          ]
+        },
+        {
+          "start": "00:56",
+          "end": "01:40",
+          "title": "MRI protocol 的定義、設計因素與三大目的",
+          "summary": "Protocol 是用來評估骨骼、韌帶與軟骨損傷的 MRI 序列組合，細節隨設備、醫師偏好與病人因素而異，實施有三大目的。",
+          "detail": [
+            "MRI protocol 是一組 MRI sequences，用來例行評估 bony、ligament 與 cartilage injury。",
+            "Protocol 細節取決於 MRI 技術與軟體、放射科醫師與轉診醫師偏好、病人考量，以及時間限制。",
+            "實施 protocol 的三大目的：diagnostic quality、scan quality consistency，以及有效率的放射服務提供。"
+          ]
+        },
+        {
+          "start": "01:41",
+          "end": "03:00",
+          "title": "病人擺位、制動與膝部專用線圈",
+          "summary": "病人多採仰卧、腳先進，患膝伸直置於 dedicated knee coil，並以局部與多通道線圈提高 SNR、支援 parallel imaging。",
+          "detail": [
+            "典型擺位為 supine、feet first；患膝完全或幾乎完全伸直放進 dedicated knee coil，下肢 mild external rotation 較舒適。",
+            "輕柔固定肢體並注意全身舒適，有助減少不自主運動造成的 artifact。",
+            "不論磁鐵設計，局部線圈為必要，以最大化 signal-to-noise ratio（SNR）；此類線圈常稱為 extremity 或 knee coil，通常環繞膝部。",
+            "較新的 multi-channel coil 或具 8-channel 元件的 flexible surface coil 可進一步提高 SNR，並為 parallel imaging 所需；parallel imaging 可用來提高 spatial resolution 並縮短 scan time。"
+          ]
+        },
+        {
+          "start": "03:01",
+          "end": "03:54",
+          "title": "掃描參數與 axial、coronal、sagittal 切面規劃",
+          "summary": "膝部需小 FOV、矩陣至少 256、slice gap 宜小於 10%，並依關節線與 femoral condyles 規劃三個切面。",
+          "detail": [
+            "膝部通常需要 small FOV；typical matrix 至少 256；建議 slice gap 小於 10%。",
+            "Axial plane 平行於關節線（line of the joint），涵蓋 patella 與 fibular head。",
+            "下一平面平行於 femoral condyles 後緣，涵蓋 patella 至 femoral condyle 後方約 2 cm。",
+            "Sagittal plane 依講者所述平行於 coronal plane（字幕：corona plates）。"
+          ]
+        },
+        {
+          "start": "03:55",
+          "end": "05:38",
+          "title": "主要序列、標準 protocol 與靜脈 gadolinium",
+          "summary": "膝部內障礙以 PD、T2（可加 fat sat）與 T1 為主；標準含三切面中間加權影像，必要時以靜脈對比劑定性病灶。",
+          "detail": [
+            "評估 knee internal derangement 的主要序列為 proton density (PD) weighted、T2 weighted（可加或不加 fat suppression）以及 T1 weighted。",
+            "PD 可作有／無 fat sat；T2 fat-suppressed 常在單一平面（多為 coronal）取代 fat-sat PD。T1 通常只收一個平面，用來評估 intraosseous 類型的 bone marrow lesion。",
+            "標準 protocol 通常包含 axial、coronal、sagittal 的 intermediate／PD 或 T2 weighted（可加或不加 fat suppression）。",
+            "有指徵時可用靜脈 gadolinium 進一步定性 neoplastic、infectious 與 inflammatory process；注射後收取 axial 的 T1 fat-suppressed 及至少一個 extra orthogonal plane，精確評估 enhancement 建議使用 fat-suppressed T1。"
+          ]
+        },
+        {
+          "start": "05:39",
+          "end": "07:12",
+          "title": "PD 與 fat-suppressed T2：解剖對比與半月板／液體偵測",
+          "summary": "PD 用來描繪細微解剖與組織對比；fat-suppressed T2 則凸顯液體與 T2 高訊號病灶，並常用於半月板撕裂偵測。",
+          "detail": [
+            "PD weighted 用來描繪詳細解剖；fat 有助勾勒細小結構之間的界線。",
+            "組織對比：fluid 為高訊號、hyaline cartilage 為 intermediate、ligament／tendon／meniscus 為低訊號。",
+            "PD 用於偵測 meniscus tear；亦可顯示 bone marrow edema、joint effusion、bursa 與 parameniscal 等液體相關發現。除 sagittal 外，axial 與 coronal 的 fat-suppressed 影像有助描繪 T2-hyperintense lesion。",
+            "T2 fat-suppressed 常在單一平面（多為 coronal）取代 fat-sat PD；講者指 fat-suppressed T2 是偵測 meniscal tear 很好的 coronal 序列，fat sat 亦可凸顯 bone marrow edema、joint effusion 與 meniscal cyst。"
+          ]
+        },
+        {
+          "start": "07:13",
+          "end": "07:56",
+          "title": "Intermediate-weighted 與 T1 weighted 的角色",
+          "summary": "Intermediate TE 介於 PD 與 T2 之間，兼顧解剖與液體敏感；T1 則用來定性骨髓或軟組織病灶的 T1 訊號。",
+          "detail": [
+            "Intermediate-weighted 使用 long TR，TE 介於 proton density 與 T2 之間。",
+            "Intermediate TE 夠短以維持解剖可視化所需訊號，又夠長而較為 fluid-sensitive。",
+            "T1 weighted 通常只收一個平面，用來評估 intraosseous bone marrow 或 soft tissue 區域，並定性病灶的 T1 signal。"
+          ]
+        },
+        {
+          "start": "07:57",
+          "end": "09:23",
+          "title": "Isotropic 3D 成像：多平面重建與減少 partial volume",
+          "summary": "3D isotropic voxel 可事後重建多平面以觀察 ACL／PCL 等斜向結構，並以連續薄切減少 slice gap 與 partial volume artifact。",
+          "detail": [
+            "3D isotropic 技術取得 isotropic voxel，相對 2D 常見的 anisotropic voxel；可回顧性 reformat 成多個平面，有助觀察 ACL、PCL 等 oblique structures。",
+            "以重建影像取代 2D 分別採集多個主要切面，可明顯縮短 scan time。",
+            "2D 切片較厚且有 interslice gap，易造成 partial volume artifact。",
+            "Isotropic 以薄而連續切片消除 slice gap、減少 partial volume artifact；於 1.5 與 3 Tesla 可執行，3T 的 SNR 優勢使 reformatted images 更清楚。"
+          ]
+        },
+        {
+          "start": "09:24",
+          "end": "10:22",
+          "title": "膝部 MRI protocol 總結與再次聲明",
+          "summary": "總結三切面、專用線圈、小 FOV、3–4 mm 切片與 PD／T2／T1 序列組合，並再次強調此非法律或執業剛性標準。",
+          "detail": [
+            "切面包括 axial、coronal、sagittal；膝部成像需要 dedicated knee coil。",
+            "Typical small FOV 小於 16 至 18 cm；slice thickness 通常 3 或 4 mm；slice gap 小於 10%；病人通常為 supine。",
+            "序列組合為 PD weighted 與 T2 weighted（可加或不加 fat sat）、一個 T1，以及 2D 與 3D isotropic。",
+            "再次聲明：此非僵固執業規則，亦非用來建立 legal standard of care。"
+          ]
+        }
+      ]
     }
   ]
 }

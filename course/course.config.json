@@ -226,7 +226,8 @@
       "title": "MRI 判讀",
       "chapters": [
         "MR1",
-        "MR2"
+        "MR2",
+        "MR3"
       ]
     }
   ],
@@ -261,7 +262,7 @@
       "icon": "scan-line",
       "source": "syllabus",
       "units": 2,
-      "drills": 4
+      "drills": 5
     },
     {
       "code": "US3",
@@ -293,7 +294,15 @@
       "icon": "microscope",
       "source": "syllabus",
       "units": 1,
-      "drills": 5
+      "drills": 4
+    },
+    {
+      "code": "MR3",
+      "title": "MRI：後外側角、髕股、軟骨與術後評估",
+      "icon": "layers",
+      "source": "syllabus",
+      "units": 2,
+      "drills": 7
     }
   ],
   "audit": {
@@ -312,7 +321,7 @@
     "metaCoverage": 1.0,
     "drillsPerUnit": {
       "min": 1,
-      "max": 4
+      "max": 12
     },
     "maxSharedVideos": 2,
     "requireAssessment": [
