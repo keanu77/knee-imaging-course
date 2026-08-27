@@ -6,7 +6,7 @@
 
 1. **暖白閱讀層＋中性黑影像層，是正確的認知分工。**
 
-   現況把網格鋪滿全站，又在 header、hero、章節列反覆使用 navy–teal 漸層與光暈，所有內容都被包裝成監視器介面，見 [clinical.css](/Users/ethanstudio/Projects/knee-ultrasound-course/src/web/css/clinical.css:84)。這會讓真正的超音波、X 光與 MRI 失去視覺特權。
+   現況把網格鋪滿全站，又在 header、hero、章節列反覆使用 navy–teal 漸層與光暈，所有內容都被包裝成監視器介面，見 [clinical.css](src/web/css/clinical.css:84)。這會讓真正的超音波、X 光與 MRI 失去視覺特權。
 
    IMAIOS 的啟示不是「醫學網站要黑」，而是黑色集中服務影像瀏覽、切面、標籤、pan/zoom、cross-reference 等任務；周邊資訊仍維持一般閱讀介面。[IMAIOS e-Anatomy 使用指南](https://files.imaios.com/Userguides/userguide_eanatomy_en.pdf)
 
@@ -20,11 +20,11 @@
 
 3. **訂製 pictogram 是最有潛力形成品牌資產的一項。**
 
-   目前 Lucide 的 layers、microscope、activity、scan-line 只是「醫療類 icon」，無法教人怎麼擺探頭或辨識切面，見 [index.html](/Users/ethanstudio/Projects/knee-ultrasound-course/src/web/index.html:35)。若 pictogram 能準確表達探頭方向、病人姿勢、左右側與 longitudinal/transverse plane，它就不只是裝飾，而是課程內容本身。
+   目前 Lucide 的 layers、microscope、activity、scan-line 只是「醫療類 icon」，無法教人怎麼擺探頭或辨識切面，見 [index.html](src/web/index.html:35)。若 pictogram 能準確表達探頭方向、病人姿勢、左右側與 longitudinal/transverse plane，它就不只是裝飾，而是課程內容本身。
 
 4. **動效只留診斷語意，完全正確。**
 
-   現在 hero 的掃描線、假超音波 sector、波形與 ROI 動畫在演「像醫療設備」，見 [clinical.css](/Users/ethanstudio/Projects/knee-ultrasound-course/src/web/css/clinical.css:260)。醫師不會因此更信任內容。動效應只發生在切面對照、cine loop、探頭移動與標註揭示。
+   現在 hero 的掃描線、假超音波 sector、波形與 ROI 動畫在演「像醫療設備」，見 [clinical.css](src/web/css/clinical.css:260)。醫師不會因此更信任內容。動效應只發生在切面對照、cine loop、探頭移動與標註揭示。
 
 ### 哪裡是平庸的安全牌
 
@@ -41,7 +41,7 @@
 
 3. **跨 modality 的標註規則容易失控。**超音波需要探頭與方向標記，X 光需要投照方向和 detector，MRI 需要切面、序列與 laterality。不能硬用一套 icon 文法處理三者；應共用骨架，保留 modality-specific 部件。
 
-4. **目前其實沒有可靠地載入 Noto Sans TC。**字型堆疊先選系統 UI 與 PingFang，且 HTML 沒有 webfont 宣告，見 [tokens.css](/Users/ethanstudio/Projects/knee-ultrasound-course/src/web/css/tokens.css:48) 與 [index.html](/Users/ethanstudio/Projects/knee-ultrasound-course/src/web/index.html:12)。導入 Serif 前應先處理自託管、字重、CJK subset 與 fallback，否則不同平台會像不同品牌。
+4. **目前其實沒有可靠地載入 Noto Sans TC。**字型堆疊先選系統 UI 與 PingFang，且 HTML 沒有 webfont 宣告，見 [tokens.css](src/web/css/tokens.css:48) 與 [index.html](src/web/index.html:12)。導入 Serif 前應先處理自託管、字重、CJK subset 與 fallback，否則不同平台會像不同品牌。
 
 5. **兩種材質若按 section 交替，會像兩個網站拼接。**正確關係應是「病例紙承載黑色 viewer」，不是 landing 一套、課程內頁另一套。
 
