@@ -1613,7 +1613,7 @@
           "name": "後外側角、髕股與伸膝機轉",
           "type": "anatomy",
           "level": "foundation",
-          "review_status": "draft",
+          "review_status": "approved",
           "summary": "建立後外側角、伸膝機轉與髕股穩定結構的系統性 MRI 搜尋路徑；以標準量測描述髕骨高度、滑車形態與 TT–TG 距離，並辨認外側髕骨脫位的特徵性骨挫傷分布。",
           "objectives": [
             "沿冠狀、軸位與矢狀位追蹤 PLC 第一線結構：腓側副韌帶（LCL／FCL）、股二頭肌腱與膕肌腱，並搜尋 popliteofibular、弓狀與 fabellofibular 韌帶。",
@@ -1763,14 +1763,18 @@
               "date_note": null,
               "target": "髕股不穩量測"
             }
-          ]
+          ],
+          "reviewed_by": "吳易澄",
+          "reviewer_role": "復健科專科醫師",
+          "reviewed_at": "2026-08-28",
+          "reviewed_commit": "c2cd89d40627bb7fd01cdf154b6ee7bee031a998"
         },
         {
           "id": "mr3-u2",
           "name": "軟骨病灶、骨髓水腫與術後評估",
           "type": "case",
           "level": "foundation",
-          "review_status": "draft",
+          "review_status": "approved",
           "summary": "以病灶深度、形態與軟骨下骨反應描述軟骨損傷，並區分挫傷、應力性骨折與軟骨下不全骨折。術後判讀聚焦 ACL graft 的正常成熟與撕裂徵象、半月板修補後限制，以及影像與臨床失敗之間不完全一致的證據邊界。",
           "objectives": [
             "依軟骨厚度將病灶描述為淺層小於50%、深層大於50%或全層缺損，並標示關節面、範圍與軟骨下骨反應。",
@@ -1892,7 +1896,11 @@
               "date_note": null,
               "target": "術後 graft 完整性"
             }
-          ]
+          ],
+          "reviewed_by": "吳易澄",
+          "reviewer_role": "復健科專科醫師",
+          "reviewed_at": "2026-08-28",
+          "reviewed_commit": "c2cd89d40627bb7fd01cdf154b6ee7bee031a998"
         }
       ]
     }

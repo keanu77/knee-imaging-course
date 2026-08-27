@@ -3178,7 +3178,7 @@
     },
     {
       "video_url": "https://www.youtube.com/watch?v=P3Qoj2nyw78",
-      "review_status": "draft",
+      "review_status": "approved",
       "transcript_verified_at": "2026-08-27",
       "transcript_source": "yt-dlp 自動字幕（en, VTT）2026-08-27 實抓；初稿由協作 agent 依逐字稿產生，主編抽驗段界與術語還原對照原文",
       "note": "自動字幕訛誤已於筆記改採標準命名：popliteal fibula ligament／popliteal feebler→popliteofibular ligament；orchid ligament／orchid like mint→arcuate ligament；meniscus popliteal fascicles→meniscopopliteal fascicles；lateral inferior curricular vessels→lateral inferior genicular vessels；popliteal he toes→popliteal hiatus。全片為解剖搜尋路徑教學，無介入內容；頻道含付費 MSK fellowship 課程行銷。",
@@ -3278,11 +3278,15 @@
             "實務評估應優先檢查 lateral collateral ligament、popliteus tendon 與 biceps femoris tendon。"
           ]
         }
-      ]
+      ],
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "復健科專科醫師",
+      "reviewed_at": "2026-08-28",
+      "reviewed_commit": "c2cd89d40627bb7fd01cdf154b6ee7bee031a998"
     },
     {
       "video_url": "https://www.youtube.com/watch?v=3tQZa_6rEW0",
-      "review_status": "draft",
+      "review_status": "approved",
       "transcript_verified_at": "2026-08-27",
       "transcript_source": "yt-dlp 自動字幕（en, VTT）2026-08-27 實抓；初稿由協作 agent 依逐字稿產生，主編抽驗段界與術語還原對照原文",
       "note": "自動字幕大致可讀。全片為 PLC 損傷病例的 MRI 判讀（冠狀/矢狀/軸位交叉確認、次發性骨挫傷），無介入操作示範。講者本人頻道連結為個人診療網站。",
@@ -3347,11 +3351,15 @@
             "軸位可見 popliteus 從股骨廣泛中斷，以及 fibular collateral ligament 損傷。"
           ]
         }
-      ]
+      ],
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "復健科專科醫師",
+      "reviewed_at": "2026-08-28",
+      "reviewed_commit": "c2cd89d40627bb7fd01cdf154b6ee7bee031a998"
     },
     {
       "video_url": "https://www.youtube.com/watch?v=kVHYycqkN3s",
-      "review_status": "draft",
+      "review_status": "approved",
       "transcript_verified_at": "2026-08-27",
       "transcript_source": "yt-dlp 自動字幕（en, VTT）2026-08-27 實抓；初稿由協作 agent 依逐字稿產生，主編抽驗段界與術語還原對照原文",
       "note": "自動字幕大致可讀；本片為取像技術與序列協定，無病理判讀與介入內容。",
@@ -3461,11 +3469,15 @@
             "再次聲明：此非僵固執業規則，亦非用來建立 legal standard of care。"
           ]
         }
-      ]
+      ],
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "復健科專科醫師",
+      "reviewed_at": "2026-08-28",
+      "reviewed_commit": "c2cd89d40627bb7fd01cdf154b6ee7bee031a998"
     },
     {
       "video_url": "https://www.youtube.com/watch?v=sVahQdwJY6A",
-      "review_status": "draft",
+      "review_status": "approved",
       "transcript_verified_at": "2026-08-27",
       "transcript_source": "yt-dlp 自動字幕（en, VTT）2026-08-27 實抓；初稿由協作 agent 依逐字稿產生，主編抽驗段界與術語還原",
       "note": "ISMRM 學會影片，自動字幕大致可讀；全片為伸膝機轉的診斷解剖與損傷判讀，無介入操作示範。",
@@ -3600,11 +3612,15 @@
             "審視這些病理時，永遠問自己是急性、慢性，或 acute on chronic 的組合。"
           ]
         }
-      ]
+      ],
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "復健科專科醫師",
+      "reviewed_at": "2026-08-28",
+      "reviewed_commit": "c2cd89d40627bb7fd01cdf154b6ee7bee031a998"
     },
     {
       "video_url": "https://www.youtube.com/watch?v=fAD4ET3aP1Q",
-      "review_status": "draft",
+      "review_status": "approved",
       "transcript_verified_at": "2026-08-27",
       "transcript_source": "yt-dlp 自動字幕（en, VTT）2026-08-27 實抓；初稿由協作 agent 依逐字稿產生，主編抽驗段界與臨床要點對照原文",
       "note": "自動字幕大致可讀；核心概念已對原文核對：graft 成熟四階段（壞死→再血管化→細胞增生→重塑）、術後第一年高訊號常屬正常過程、不同移植物來源（BPTB／hamstring／quadriceps／allograft）的訊號時程差異、各研究對成熟時程結論不一。全片為術後影像判讀，無手術或介入操作示範；頻道含付費課程行銷。",
@@ -3717,11 +3733,15 @@
             "該計畫旨在協助radiologists提升MSK報告的速度與信心。"
           ]
         }
-      ]
+      ],
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "復健科專科醫師",
+      "reviewed_at": "2026-08-28",
+      "reviewed_commit": "c2cd89d40627bb7fd01cdf154b6ee7bee031a998"
     },
     {
       "video_url": "https://www.youtube.com/watch?v=MSyPvjYA_J8",
-      "review_status": "draft",
+      "review_status": "approved",
       "transcript_verified_at": "2026-08-27",
       "transcript_source": "yt-dlp 自動字幕（en, VTT）2026-08-27 實抓；初稿由協作 agent 依逐字稿產生，主編抽驗段界與臨床要點對照原文",
       "note": "自動字幕大致可讀；核心概念已對原文核對：graft 撕裂主要徵象（纖維中斷）、次要徵象與臨床相關性、MRI 外觀近似完整仍可能為手術證實撕裂（偽陰性）、部分撕裂判讀的序列限制。全片為術後影像判讀，無手術或介入操作示範；頻道含付費課程行銷。",
@@ -3810,11 +3830,15 @@
             "ACL 重建術後 MRI 判讀並非單純的二分答案。"
           ]
         }
-      ]
+      ],
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "復健科專科醫師",
+      "reviewed_at": "2026-08-28",
+      "reviewed_commit": "c2cd89d40627bb7fd01cdf154b6ee7bee031a998"
     },
     {
       "video_url": "https://www.youtube.com/watch?v=6aT_28hVQWo",
-      "review_status": "draft",
+      "review_status": "approved",
       "transcript_verified_at": "2026-08-27",
       "transcript_source": "yt-dlp 自動字幕（en, VTT）2026-08-27 實抓；初稿由協作 agent 依逐字稿產生，主編抽驗段界與量測數值對照原文",
       "note": "ISMRM 學會影片，自動字幕大致可讀。核心教學點已對原文核對：軟骨病灶深度分級與報告必寫欄位（深度／位置／分區）、創傷型 flap 與 delamination 對比退化型 fissure、伴隨骨髓水腫與不全骨折鑑別。原始輸出末兩段時間重疊，整合時已依規則調整段界。全片為診斷判讀，無介入內容。",
@@ -3935,11 +3959,15 @@
             "講者以此作為最後案例，總結如何在 MRI 報告中描述 cartilage lesions"
           ]
         }
-      ]
+      ],
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "復健科專科醫師",
+      "reviewed_at": "2026-08-28",
+      "reviewed_commit": "c2cd89d40627bb7fd01cdf154b6ee7bee031a998"
     },
     {
       "video_url": "https://www.youtube.com/watch?v=V0iKzPMr4dU",
-      "review_status": "draft",
+      "review_status": "approved",
       "transcript_verified_at": "2026-08-27",
       "transcript_source": "yt-dlp 自動字幕（en, VTT）2026-08-27 實抓；初稿由協作 agent 依逐字稿產生，主編抽驗段界與量測數值對照原文",
       "note": "自動字幕大致可讀。核心量測已對原文核對：Insall-Salvati 與 Caton-Deschamps 髕骨高度、滑車溝深度（軟骨面上方 3 cm 處、3 mm 門檻）、TT-TG 橫切量法，以及同一病人 CT 與 MRI 量得的 TT-TG 不可互換。全片為量測方法與報告判斷，無介入內容；頻道含付費課程行銷。",
@@ -4038,11 +4066,15 @@
             "建議參考描述欄 patellar instability 文章，內有各種測量說明"
           ]
         }
-      ]
+      ],
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "復健科專科醫師",
+      "reviewed_at": "2026-08-28",
+      "reviewed_commit": "c2cd89d40627bb7fd01cdf154b6ee7bee031a998"
     },
     {
       "video_url": "https://www.youtube.com/watch?v=HD4KGcpu7C8",
-      "review_status": "draft",
+      "review_status": "approved",
       "transcript_verified_at": "2026-08-27",
       "transcript_source": "yt-dlp 自動字幕（en, VTT）2026-08-27 實抓，逐字稿先依診斷框限（00:00–25:20）裁切後才產生初稿；主編核對段界與框限合規",
       "note": "自動字幕大致可讀。**逐段筆記嚴格止於 25:20**：25:30 起為抽吸與類固醇注射的處置討論，不在診斷階段課程範圍；04:47 有一句處置選項的口頭提及，非操作示範。內容涵蓋 AMSSM 內側膝 protocol、髕上隱窩、內側關節與半月板、MCL 長短軸與動態外翻、鵝足、內側支持帶與 MPFL、隱神經選掃、Baker cyst、Morel-Lavallée 病灶與診斷報告。",
@@ -4247,7 +4279,11 @@
             "對照 MRI：左側 coronal PD fat-suppressed 顯示病灶長度範圍，並出示 axial reformat（字幕於此截止）。"
           ]
         }
-      ]
+      ],
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "復健科專科醫師",
+      "reviewed_at": "2026-08-28",
+      "reviewed_commit": "c2cd89d40627bb7fd01cdf154b6ee7bee031a998"
     }
   ]
 }

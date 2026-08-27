@@ -1361,7 +1361,7 @@
       "reviewed_commit": "fabc147d15dabf38185b7527e59ae830c7f7b86f"
     },
     "mr3-u1": {
-      "review_status": "draft",
+      "review_status": "approved",
       "questions": [
         {
           "id": "mr3-u1-q1",
@@ -1487,10 +1487,14 @@
             "REF-PANDYA-KNEE-2023"
           ]
         }
-      ]
+      ],
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "復健科專科醫師",
+      "reviewed_at": "2026-08-28",
+      "reviewed_commit": "c2cd89d40627bb7fd01cdf154b6ee7bee031a998"
     },
     "mr3-u2": {
-      "review_status": "draft",
+      "review_status": "approved",
       "questions": [
         {
           "id": "mr3-u2-q1",
@@ -1616,7 +1620,11 @@
             "REF-ACL-GRAFT-CLINICAL-2026"
           ]
         }
-      ]
+      ],
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "復健科專科醫師",
+      "reviewed_at": "2026-08-28",
+      "reviewed_commit": "c2cd89d40627bb7fd01cdf154b6ee7bee031a998"
     }
   }
 }
