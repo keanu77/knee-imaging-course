@@ -2053,8 +2053,10 @@ a:hover > .PlayBtn,
 
 /* --- 頁尾製作者署名 ------------------------------------------------------ */
 .AppFooter__author {
-  margin-bottom: 6px;
+  /* 常駐於頁尾第一列（不在收合區內），字級與免責聲明一致 */
+  margin: 0 0 4px;
+  font-size: 12px;
   font-weight: 500;
-  color: var(--fgColor-default);
+  color: var(--fgColor-muted);
 }
 .AppFooter__author a { color: var(--fgColor-accent); }
