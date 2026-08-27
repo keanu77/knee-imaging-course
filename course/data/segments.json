@@ -4039,6 +4039,215 @@
           ]
         }
       ]
+    },
+    {
+      "video_url": "https://www.youtube.com/watch?v=HD4KGcpu7C8",
+      "review_status": "draft",
+      "transcript_verified_at": "2026-08-27",
+      "transcript_source": "yt-dlp 自動字幕（en, VTT）2026-08-27 實抓，逐字稿先依診斷框限（00:00–25:20）裁切後才產生初稿；主編核對段界與框限合規",
+      "note": "自動字幕大致可讀。**逐段筆記嚴格止於 25:20**：25:30 起為抽吸與類固醇注射的處置討論，不在診斷階段課程範圍；04:47 有一句處置選項的口頭提及，非操作示範。內容涵蓋 AMSSM 內側膝 protocol、髕上隱窩、內側關節與半月板、MCL 長短軸與動態外翻、鵝足、內側支持帶與 MPFL、隱神經選掃、Baker cyst、Morel-Lavallée 病灶與診斷報告。",
+      "segments": [
+        {
+          "start": "00:00",
+          "end": "00:57",
+          "title": "AMSSM 運動超音波病理資料庫",
+          "summary": "主持人介紹 AMSSM 網站上的運動超音波病理資料庫，鼓勵主治醫師與受訓學員投稿病例。",
+          "detail": [
+            "AMSSM Library of Sports Ultrasound Pathology 收錄於 AMSSM 網站，主治醫師或 trainee 皆可以高品質影像投稿常見或罕見病理。",
+            "刊登於網站的病例可列入 publications 與 CV，特別適合作為 trainee 的發表機會。",
+            "投稿方式：email 畫面上方兩位 attending，或掃描 QR code 連到資料庫連結。"
+          ]
+        },
+        {
+          "start": "00:58",
+          "end": "02:06",
+          "title": "講者介紹與課程大綱",
+          "summary": "介紹 UW Madison 運動醫學 fellow Matt Waldrip，並說明本場內側膝病灶超音波病例的講授流程。",
+          "detail": [
+            "講者 Matt Waldrip 為 University of Wisconsin-Madison 的 primary care sports medicine fellow，家醫住院訓練於 Wake Forest University，並協助 case library。",
+            "本場主題為 medial knee lesion 超音波病例，講者無利益揭露（no disclosures）。",
+            "預定流程：病例呈現、掃查注意事項與內側膝 ultrasound protocol，接著影像與超音波報告，最後再談 outcome、take home points 與提問。"
+          ]
+        },
+        {
+          "start": "02:07",
+          "end": "03:57",
+          "title": "病例病史、理學檢查與鑑別診斷",
+          "summary": "31 歲女子橄欖球員遭內側膝直接撞擊後出現急性右膝痛與波動感，韌帶試驗陰性，初始鑑別診斷範圍廣泛。",
+          "detail": [
+            "31-year-old 女子 rugby player，被 tackle 時 medial knee 直接撞擊後 4 天急性右膝痛，伴隨腫脹及僅限患部的局部麻木與刺痛。",
+            "病史：左膝 ACL tear 重建超過 5 年；5 年前左膝 Morel-Lavallée lesion（rugby 傷）曾以保守治療緩解。",
+            "檢查：身高 5 ft 2 in、體重 137 lb、BMI 25.5；內側膝明顯瘀青與大範圍 fluctuance（疑 fluid pocket），無發熱或紅斑；壓痛在 medial femoral condyle 與 medial patellar facet；主動／被動 ROM 與屈伸阻力肌力無缺損；anterior／posterior drawer、Lachman、McMurray、patellar compression 皆陰性；0° 與 30° 屈曲 valgus／varus 穩定且無痛。",
+            "初始鑑別包括 MCL injury、medial femoral condyle fracture、MPFL injury、medial meniscus injury、large hamstring tear、saphenous，以及 Morel-Lavallée lesion。"
+          ]
+        },
+        {
+          "start": "03:58",
+          "end": "04:51",
+          "title": "膝部超音波掃查體位",
+          "summary": "依掃查區域選擇仰卧微屈、患側在下的側躺或俯卧垂足，以利前側、內側或後側膝結構與動態檢查。",
+          "detail": [
+            "評估 anterior knee：患者仰卧、膝微屈，膝下可墊枕頭或捲毛巾。",
+            "評估 medial knee：患側在下採 lateral decubitus，底側膝略比上側膝更靠前。",
+            "評估 posterior knee（含 Baker's cyst 抽吸或注射）：俯卧，足端懸出檢查床。"
+          ]
+        },
+        {
+          "start": "04:52",
+          "end": "06:12",
+          "title": "AMSSM 內側膝超音波 protocol",
+          "summary": "內側膝多用中頻線性探頭，protocol 含必掃與選掃結構，並可視鑑別診斷加掃髕上隱窩與後側膝。",
+          "detail": [
+            "多數患者評估 medial knee 使用 mid-frequency linear array transducer。",
+            "必掃：MCL 的 superficial 與 deep portions（必要時 cine clip 加 dynamic valgus force 看 gapping）、medial tibiofemoral joint space 與 medial meniscus 的 anterior／posterior horns、pes anserine tendons and bursa、medial patellar retinaculum、MPFL，以及 medial patellofemoral joint。",
+            "選掃：saphenous nerve、semimembranosus tendon insertion。",
+            "非內側膝 protocol、但可依鑑別加做：suprapatellar recess 評估 knee joint effusion、後側膝評估 Baker's cyst；並出示內側膝相關解剖供事後對照。"
+          ]
+        },
+        {
+          "start": "06:13",
+          "end": "07:28",
+          "title": "髕上隱窩長軸與短軸",
+          "summary": "於 patella 近端前方取 suprapatellar recess 長軸與短軸，本例僅見可屬生理的微量積液。",
+          "detail": [
+            "長軸取像：於膝前方 patella 近端做 long axis；評估 effusion 時探頭需向內或外側平移，以免積液藏在側隱窩。",
+            "畫面上方為 quadriceps tendon，遠端止於 patella 上極；其下為 suprapatellar fat pad 與 suprapatellar recess，最深處為 femur 前方。",
+            "探頭旋轉 90°、置於 patella 上方取短軸，同樣可見 quadriceps tendon、suprapatellar fat pad、微量積液與深處 femur。",
+            "本例 suprapatellar recess 僅 trace 積液，屬可出現的 physiologic fluid。"
+          ]
+        },
+        {
+          "start": "07:29",
+          "end": "09:30",
+          "title": "內側 tibiofemoral 關節與 medial meniscus",
+          "summary": "側躺長軸評估內側關節與半月板最表淺部分，超音波對完整半月板與積液的評估有限，本例此區正常。",
+          "detail": [
+            "體位採患側在下的 lateral decubitus、底側膝略前移，探頭沿內側膝縱向放置。長軸左為 femur、右為 tibia；上方畫面較能見 anterior horn 最外緣，下方 posterior horn 最外緣較不清楚。",
+            "超音波只能看到半月板最表淺部分，有時可見 parameniscal cyst 或 meniscal extrusion 提示撕裂，但診斷 meniscal tear 以 MRI 為優；退化膝有時可見骨輪廓不規則，但 x-ray 或 MRI 較能辨識。",
+            "關節積液通常不沿內外側 joint line 顯現，應看前方 suprapatellar recess 或後方 Baker's cyst。",
+            "旋轉 90° 的短軸可見 femur 與 tibia 間半月板最外緣，獲益有限；本例此部分檢查正常。"
+          ]
+        },
+        {
+          "start": "09:31",
+          "end": "11:27",
+          "title": "MCL 長軸、短軸與血流評估",
+          "summary": "由內側關節線向上找 MCL 起點再向下追到脛骨止點，本例深淺層纖維與 power Doppler 皆正常。",
+          "detail": [
+            "內側關節長軸後探頭上移找 MCL origin，再向遠端追到 tibia insertion；MCL 止點在脛骨內側相當遠端，不一定靠近 joint line。",
+            "Deep fibers 僅位於 tibiofemoral joint 近端並附著部分 medial meniscus；superficial fibers 跨過關節遠端止於脛骨內側。遠端長軸畫面可當後續找 pes anserine 的 home base。",
+            "可評估 MCL 周圍 hyperemia 或 neovascularization 作為損傷線索；本例不明顯。",
+            "旋轉 90° 短軸由 femur origin 追到 tibia insertion 較不易看，但本例 MCL 正常，power Doppler 無明顯 hyperemia。"
+          ]
+        },
+        {
+          "start": "11:28",
+          "end": "12:04",
+          "title": "MCL 動態 valgus stress 測試",
+          "summary": "長軸下對膝施 valgus force，觀察 MCL 與內側關節是否出現 gapping，本例動態檢查正常。",
+          "detail": [
+            "動態測試：長軸觀察 MCL 與 medial joint line，同時施 valgus force，評估是否出現 gapping。",
+            "臨床高度懷疑時，應在多個平面的 long axis 評估整段 MCL。",
+            "本例 MCL 靜態與動態檢查皆正常。"
+          ]
+        },
+        {
+          "start": "12:05",
+          "end": "14:06",
+          "title": "Pes anserine 肌腱與滑囊",
+          "summary": "以 MCL 長軸為地標找表淺的 pes anserine，注意 anisotropy 與輕壓，本例滑囊無積液、止點改變非 tendinopathy。",
+          "detail": [
+            "MCL 長軸上可見剛位於 MCL 表淺的 hypoechoic 結構即 pes anserine tendons and bursa；因切面 oblique 常呈 anisotropic。近端探頭略外側、結構置中可改善短軸顯示。",
+            "旋轉 90° 長軸追到 tibia insertion，較能評估 pes bursa；本例 bursa 內無積液。",
+            "掃查時探頭極輕壓，甚至大量 gel 讓探頭 float，以免少許壓力把滑囊積液擠散而漏看。",
+            "止點最遠端有 anisotropy，rocking probe 後可變亮，不判定為 tendinopathic changes；本例 pes 檢查正常。"
+          ]
+        },
+        {
+          "start": "14:07",
+          "end": "15:54",
+          "title": "內側髕骨支持帶（MPR）",
+          "summary": "於 patella 內側以橫向探頭長軸與短軸評估寬闊的 medial patellar retinaculum，本例正常，細小撕裂不易偵測。",
+          "detail": [
+            "探頭橫向於腿長、沿 patella 內側向遠端移動，長軸評估 medial patellar retinaculum（MPR）；此為寬闊纖維結締組織，MPFL 只是其中一小部分，來自 quadriceps tendon、femur、meniscus 等連到 patella 內側。",
+            "長軸近端在上、遠端在下；右為 patella、左為 femur，MPR 止於 patella 內側並在 femur 表淺向內側走行。",
+            "結構寬闊，細小撕裂不易偵測，高度懷疑損傷時 power Doppler 有幫助。",
+            "旋轉 90° 短軸更可見其寬度，patella 內側最表淺纖維隱約可見；本例正常。"
+          ]
+        },
+        {
+          "start": "15:55",
+          "end": "17:17",
+          "title": "內側髕股韌帶（MPFL）",
+          "summary": "MPFL 是 MPR 的一部分，連接 patella 內側至 adductor tubercle 與 medial femoral epicondyle 之間，本例長短軸皆正常。",
+          "detail": [
+            "MPFL 連接 patella 內側至 medial femur，位於 adductor tubercle 與 medial femoral epicondyle 之間。",
+            "找法：回到 MPR 長軸，以 patella 內側為標記上下平移，找較細的 band-like 結構向內側延伸，可一路追到 femur 內側；夠近端時可見附近的 adductor magnus tendon（兩者止點接近）。",
+            "懷疑損傷時可用 power Doppler；短軸易埋在寬闊 MPR 中，應在 MPFL 長軸將結構置中再轉 90°，並向內側追到止點。",
+            "本例 MPFL 長軸與短軸皆正常。"
+          ]
+        },
+        {
+          "start": "17:18",
+          "end": "18:59",
+          "title": "隱神經（saphenous nerve）選掃",
+          "summary": "內側膝選掃結構，由近端短軸快速平移辨識神經，本例短軸與長軸皆正常。",
+          "detail": [
+            "最易由大腿內側近端短軸開始向遠端平移；較快速的近遠端平移有助神經從 fascial plane 中浮現。此水平 saphenous nerve 常與 femoral artery 與 vein 伴行，可當 home base。",
+            "畫面左到右再向下對應探頭由近到遠：sartorius 在神經後方、vastus medialis 在前方，遠端沿兩者間筋膜平面追蹤；必要時可看 suprapatellar 與 infrapatellar branches，或追到 medial femoral condyle 更遠。",
+            "短軸找到後轉 90° 看長軸，有助評估壓迫處、量測直徑並與對側比較。",
+            "本例 saphenous nerve 短軸與長軸皆正常。"
+          ]
+        },
+        {
+          "start": "19:00",
+          "end": "20:40",
+          "title": "後側膝 Baker's cyst 評估",
+          "summary": "雖非內側膝 protocol，腫脹個案宜俯卧短軸確認 cyst neck 位於 medial gastrocnemius 與 semimembranosus 之間；本例正常。",
+          "detail": [
+            "非 medial knee protocol，但對膝腫脹（如本例）有幫助；患者俯卧、足懸出床尾，後側膝關節短軸為起點。",
+            "關鍵地標：medial head of gastrocnemius 與 semimembranosus tendon。真正 Baker's cyst 的 pathognomonic 所見是 neck 從 tibiofemoral joint 向後延伸、穿過這兩者之間；穿刺前必須看到此 neck，以排除動脈瘤或腫塊。此切面亦可見 semitendinosus tendon 在 semimembranosus 表淺，轉 90° 可長軸評估。",
+            "另示非本患者的 Baker's cyst 範例，短軸可見 neck 伸入 medial gastrocnemius 與 semimembranosus 之間。",
+            "本例此區正常。"
+          ]
+        },
+        {
+          "start": "20:41",
+          "end": "22:20",
+          "title": "Semimembranosus 止點選掃",
+          "summary": "以 Baker's cyst 切面為地標短軸追蹤 semimembranosus 至內側脛骨髁後方止點，本例正常，暗區為 anisotropy 而非積液。",
+          "detail": [
+            "AMSSM 內側膝 protocol 選掃結構，止於 medial tibial condyle 後方；講者修正較易在俯卧（非仰卧）觀察，因肌腱略向內側走行，短軸常需探頭略轉幾度。",
+            "Baker's cyst 切面是方便的 home base：semimembranosus 在 semitendinosus 深層，向遠端追時 semitendinosus 會因加入 pes anserinus 而更向前、從畫面消失。",
+            "短軸經 popliteal fossa 追到 medial tibial condyle 後方止點；右下影像 anisotropy 較多，toggle 探頭後肌腱仍正常，只是影像沒拍好。",
+            "轉 90° 長軸看到 tibia 止點；本例正常，暗區為 anisotropy，不代表真正積液。"
+          ]
+        },
+        {
+          "start": "22:21",
+          "end": "24:08",
+          "title": "Morel-Lavallée lesion 病灶影像",
+          "summary": "用延伸視野量測病灶，定位於皮膚與淺層脂肪以及筋膜與深層脂肪之間，無血流，大小約 10.5 × 14.7 cm。",
+          "detail": [
+            "使用 extended view 沿病灶全程掃查，分別量測縱向與橫向距離；短軸由病灶最後端向前掃完整病灶。",
+            "病灶位於 skin 與 superficial fat 以及 fascia 與 deep fat 之間；延伸視野前方可見 patellar tendon 與脛骨內側。短軸 AP 直徑約 10.5 cm。",
+            "轉 90° 取病灶近端到遠端最長處，同樣延伸視野，近遠端直徑約 14.7 cm，層次相同。",
+            "長軸 power Doppler 無血流；另以 cine／video 短軸由近端平移到遠端顯示整段 Morel-Lavallée lesion。"
+          ]
+        },
+        {
+          "start": "24:09",
+          "end": "25:20",
+          "title": "診斷超音波報告與 MRI 對照",
+          "summary": "報告記載右內側膝其餘結構正常，僅見筋膜表淺的無分隔低回音積液，印象為大型 Morel-Lavallée lesion，並以 MRI 對照長度。",
+          "detail": [
+            "適應症為右內側膝腫脹與疼痛；檢查體位含仰卧、右 lateral decubitus 與俯卧，探頭為 4–12 MHz linear array。",
+            "直至 other 欄才出現異常：皮下組織深層、但在 muscle fascia、deep fatty tissue 與膝關節表淺的大型 hypoechoic fluid collection；無 septations、均勻低回音，約 AP 10.5 cm、近遠端 14.7 cm。",
+            "Impression：右內側膝表淺大型 Morel-Lavallée lesion，約 10.5 cm（anterior to posterior）× 14.7 cm（proximal to distal）。",
+            "對照 MRI：左側 coronal PD fat-suppressed 顯示病灶長度範圍，並出示 axial reformat（字幕於此截止）。"
+          ]
+        }
+      ]
     }
   ]
 }
