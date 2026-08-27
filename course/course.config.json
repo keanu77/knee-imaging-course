@@ -285,7 +285,7 @@
       "icon": "layers",
       "source": "syllabus",
       "units": 1,
-      "drills": 4
+      "drills": 5
     },
     {
       "code": "MR2",
@@ -293,7 +293,7 @@
       "icon": "microscope",
       "source": "syllabus",
       "units": 1,
-      "drills": 4
+      "drills": 5
     }
   ],
   "audit": {
