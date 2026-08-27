@@ -3811,6 +3811,234 @@
           ]
         }
       ]
+    },
+    {
+      "video_url": "https://www.youtube.com/watch?v=6aT_28hVQWo",
+      "review_status": "draft",
+      "transcript_verified_at": "2026-08-27",
+      "transcript_source": "yt-dlp 自動字幕（en, VTT）2026-08-27 實抓；初稿由協作 agent 依逐字稿產生，主編抽驗段界與量測數值對照原文",
+      "note": "ISMRM 學會影片，自動字幕大致可讀。核心教學點已對原文核對：軟骨病灶深度分級與報告必寫欄位（深度／位置／分區）、創傷型 flap 與 delamination 對比退化型 fissure、伴隨骨髓水腫與不全骨折鑑別。原始輸出末兩段時間重疊，整合時已依規則調整段界。全片為診斷判讀，無介入內容。",
+      "segments": [
+        {
+          "start": "00:05",
+          "end": "01:33",
+          "title": "創傷性與退化性軟骨病灶的 MRI 外觀",
+          "summary": "講者先說明本講分報告原則與案例兩部分，並依創傷性或退化性起源區分軟骨病灶的 MRI 外觀。",
+          "detail": [
+            "創傷性軟骨病灶包括 cartilage flap tear、cartilage delamination，以及邊緣呈垂直走向或銳角的局部全層軟骨缺損（focal full thickness cartilage defect）。",
+            "退化性的 basal cartilage degeneration：淺層關節面仍完整，底層 transitional 與 deep zones 變性，T2 weighted 影像上呈局部高訊號。",
+            "其他退化性型態包括關節面不規則的 cartilage fibrillation、cartilage fissuring，以及邊緣呈鈍角的局部軟骨缺損。"
+          ]
+        },
+        {
+          "start": "01:34",
+          "end": "02:41",
+          "title": "報告必寫深度：Noyes 分類與位置原則",
+          "summary": "口述報告應精確寫出軟骨病灶深度；講者用 Noyes 分類，並主張以簡化 cartilage map 標位置。",
+          "detail": [
+            "Superficial partial thickness：深度小於軟骨總厚度的 50%。",
+            "Deep partial thickness：深度大於軟骨總厚度的 50%；full thickness 則為總厚度的 100%。",
+            "International Cartilage Repair Society 的 cartilage map 分區過細，講者認為不適日常臨床，改用自行簡化的分區來描述各關節面位置。"
+          ]
+        },
+        {
+          "start": "02:42",
+          "end": "04:18",
+          "title": "各關節面簡化分區與伴隨發現",
+          "summary": "示範 patella、trochlea、femoral condyle、tibial plateau 的簡化分區，並要求一併描述伴隨發現。",
+          "detail": [
+            "Patella 分為 median ridge、medial facet、lateral facet，各再分 superior 與 inferior；trochlea 分為 medial 與 lateral，各再分 superior 與 inferior。",
+            "Femoral condyle 分為 weight-bearing（介於 meniscus 前角前緣與後角後緣之間）與 posterior（位於後角後緣之後），weight-bearing 再分 anterior 與 posterior。",
+            "Tibial plateau 分為 anterior、central、posterior。",
+            "除型態、深度、位置外，報告還應描述 bone marrow edema lesions、osteophytes、synovitis 與 intra-articular bodies。"
+          ]
+        },
+        {
+          "start": "04:19",
+          "end": "05:22",
+          "title": "案例：lateral patellar facet 的 cartilage flap tear",
+          "summary": "以淺層部分厚度 flap tear 說明其走形特徵，以及不穩定游離緣為何要寫進報告。",
+          "detail": [
+            "本例報告寫成 lateral patellar facet 的 superficial partial thickness cartilage flap tear。",
+            "Flap tear 是充滿液體的軟骨缺損：先垂直穿過淺層，再斜向或切線方向穿過 transitional 與 deep layers。",
+            "淺層有不穩定 flap 與 free edge，活動時可能撞擊對側關節面而引起症狀，故應在口述報告中描述。"
+          ]
+        },
+        {
+          "start": "05:23",
+          "end": "06:30",
+          "title": "案例：創傷性 cartilage delamination 與暫時性髕骨脫位",
+          "summary": "Delamination 在 MRI 呈軟骨–軟骨下骨交界的薄層液體訊號，本例由暫時性髕骨脫位造成。",
+          "detail": [
+            "MRI 表現為軟骨與 subchondral bone 交界的薄層、充滿液體的線性區域。",
+            "組織學上發生於 calcified cartilage 與鄰近 subchondral bone 交界，是 cartilage-bone unit 最脆弱、創傷時最易受損處，典型由 shear injury 造成。",
+            "本例因 transient patellar dislocation，可見 patella alta、dysplastic trochlea、patella 向外側半脫位，並有 intra-articular cartilage fragment 位於 lateral suprapatellar pouch。"
+          ]
+        },
+        {
+          "start": "06:31",
+          "end": "08:53",
+          "title": "案例：退化性 cartilage fissure 及其 T2 訊號",
+          "summary": "兩例 fissure 對比 flap：缺損較窄且無不穩定游離緣；多數臨床 fissure 因間隙窄與膠原變性而呈低 T2 訊號。",
+          "detail": [
+            "第一例報告為 lateral patellar facet 的 full thickness、斜向、充滿液體的 cartilage fissure；與 flap 相比，fissure 缺損較窄，且沒有不穩定、鬆動的 free edge。",
+            "第二例為 medial tibial plateau 中央承重面的 full thickness cartilage fissure，伴 underlying bone marrow edema lesion，呈低 T2 訊號（與前例高 T2 不同）。",
+            "多數臨床所見 fissure 為貫穿軟骨的低訊號線性區，因間隙不夠寬，游離水無法足夠進入缺損而在 T2 呈亮訊號。",
+            "周圍退化軟骨有 collagen denaturation，增加膠原巨分子基質的水結合位，bound water 增加、bulk water 減少，T2 relaxation time 下降，故 T2 呈低訊號。"
+          ]
+        },
+        {
+          "start": "08:54",
+          "end": "10:09",
+          "title": "案例：局部軟骨缺損與 intermediate weighted 深度評估",
+          "summary": "示範 focal cartilage defect 的報告寫法，並說明評估深度應優先用 intermediate weighted fast spin echo。",
+          "detail": [
+            "本例報告：medial femoral condyle 中央承重面的 focal full thickness cartilage defect，以及 medial tibial plateau 中央承重面的 deep partial thickness cartilage defect。",
+            "評估精確深度時，fat-suppressed 與 non-fat-suppressed 的 intermediate weighted fast spin echo 比 T2 weighted 更有用。",
+            "T2 weighted 的 echo time 過長，深層軟骨幾乎無訊號，無法與鄰近 subchondral bone 分辨。",
+            "Intermediate weighted 的 echo time 較短，深層軟骨訊號較多，較能與 subchondral bone 區分，厚度估計更準。"
+          ]
+        },
+        {
+          "start": "10:10",
+          "end": "11:34",
+          "title": "廣泛軟骨流失與 coronal 對稱性評估",
+          "summary": "進階退化時多發局部缺損會融合成大片流失；應以 coronal 比較內外側軟骨厚度對稱性。",
+          "detail": [
+            "Diffuse cartilage loss 是進階軟骨退化的常見表現，通常伴隨影像學 osteoarthritis；多發局部缺損會融合成大片流失。",
+            "本例寫成 medial femoral condyle 承重面廣泛 deep partial thickness 與 full thickness 軟骨流失，並伴隨 medial tibial plateau 承重面淺層廣泛軟骨流失。",
+            "評估廣泛流失時應看 coronal images，比較 medial 與 lateral compartment 的軟骨厚度對稱性。",
+            "軟骨厚度個體差異大，只看單一 compartment 的 sagittal 不易判斷是否變薄，coronal 的對稱性較能顯示 medial 與 lateral femoral condyle 的厚度差異。"
+          ]
+        },
+        {
+          "start": "11:35",
+          "end": "12:35",
+          "title": "骨髓水腫的意義與不全骨折鑑別",
+          "summary": "廣泛軟骨流失下方的 BME 需寫進報告，並仔細找骨折線以區分退化性水腫與不全骨折。",
+          "detail": [
+            "本例 medial femoral condyle 廣泛軟骨流失下方有 extensive bone marrow edema lesion，應予描述。",
+            "Bone marrow edema lesions 與膝痛及軟骨退化進展相關。",
+            "軟骨病灶下方若有大量骨髓水腫，需仔細尋找 fracture line，以區分退化性 subchondral bone marrow edema 與 subchondral insufficiency fracture；後者常見於軟骨流失，尤其合併 meniscal extrusion。",
+            "本例未見到骨折線；講者以此作為最後一個案例，總結如何在 MRI 口述報告中描述軟骨病灶。"
+          ]
+        },
+        {
+          "start": "12:36",
+          "end": "12:37",
+          "title": "Bone marrow edema 與不全骨折鑑別及結語",
+          "summary": "廣泛軟骨流失下方的 BME 必須描述，並仔細尋找骨折線以區分不全骨折。",
+          "detail": [
+            "此例 medial femoral condyle 廣泛軟骨流失下方有 extensive bone marrow edema lesion，必須在報告中描述",
+            "Bone marrow edema lesions 與膝痛以及 cartilage degeneration 進展有關",
+            "軟骨病灶下方若有大量 BME，須仔細尋找 fracture line，以區分 degenerative subchondral bone marrow edema 與 subchondral insufficiency fracture（常見於軟骨流失，尤其合併 meniscal extrusion）；此例未偵測到骨折線",
+            "講者以此作為最後案例，總結如何在 MRI 報告中描述 cartilage lesions"
+          ]
+        }
+      ]
+    },
+    {
+      "video_url": "https://www.youtube.com/watch?v=V0iKzPMr4dU",
+      "review_status": "draft",
+      "transcript_verified_at": "2026-08-27",
+      "transcript_source": "yt-dlp 自動字幕（en, VTT）2026-08-27 實抓；初稿由協作 agent 依逐字稿產生，主編抽驗段界與量測數值對照原文",
+      "note": "自動字幕大致可讀。核心量測已對原文核對：Insall-Salvati 與 Caton-Deschamps 髕骨高度、滑車溝深度（軟骨面上方 3 cm 處、3 mm 門檻）、TT-TG 橫切量法，以及同一病人 CT 與 MRI 量得的 TT-TG 不可互換。全片為量測方法與報告判斷，無介入內容；頻道含付費課程行銷。",
+      "segments": [
+        {
+          "start": "00:00",
+          "end": "01:18",
+          "title": "提問與大綱：髕股發育不良該量什麼",
+          "summary": "回應聽眾關於 patellofemoral dysplasia／不穩定測量的提問，並預告 patella alta、trochlear dysplasia 與 TT-TG 三個重點。",
+          "detail": [
+            "聽眾以 Insall-Salvati index 評估 patella alta，dysplasia 多靠目測，有時會看 facet 角度與 tibial tuberosity–trochlear groove（TT-TG）index",
+            "核心問題：除了 Insall-Salvati 以外，講者是否還用其他測量",
+            "本集順序：patella alta 測量 → trochlear groove 深度／trochlear dysplasia → TT-TG，片尾再給實務意見"
+          ]
+        },
+        {
+          "start": "01:19",
+          "end": "03:23",
+          "title": "髕股生物力學：溝槽引導與兩大危險因子",
+          "summary": "以 femoral trochlea 作為 patella 軌道，說明伸直尚未入槽、屈曲後才被穩定，並帶出 dysplasia 與 patella alta 為何增加脫位風險。",
+          "detail": [
+            "femoral trochlea／groove 是 patella 的關鍵穩定構造，屈曲時像軌道一樣引導 patella",
+            "接近伸直時 patella 尚未坐入 groove，部分 articular surface 未與軟骨接觸（prefemoral fat pad 一帶）",
+            "約 20–30 度屈曲時 patella 開始深入 sulcus／trochlear groove 並被穩定",
+            "溝槽淺小（trochlear dysplasia）缺少 tracking；patella alta 則需更多屈曲才能入槽，早期屈曲較不穩定、較易 lateral dislocation"
+          ]
+        },
+        {
+          "start": "03:24",
+          "end": "05:10",
+          "title": "Patella alta：Insall-Salvati 與 Caton-Deschamps",
+          "summary": "最常用兩種指數的差異與限制，並提醒原始研究多在約 30 度屈曲測量，同一套標準也可套到 MRI。",
+          "detail": [
+            "最常用 Insall-Salvati index 與 Caton-Deschamps index；講者認為選哪一種不重要，重點是與外科醫師用同一套",
+            "Insall-Salvati 需測到 tibial tuberosity：Osgood-Schlatter 或該處手術後不易定位；patella 下極很大時也會影響數值",
+            "Caton-Deschamps 不依賴 tibial tuberosity 形態，但 articular surface 末端有時不易辨認",
+            "原始研究多在膝約 30 度輕微屈曲測量，完全伸直數值可能不同；同一套線段與標準也可套用到 MRI"
+          ]
+        },
+        {
+          "start": "05:11",
+          "end": "06:03",
+          "title": "MRI 上測 patella alta 的困難與 cutoff",
+          "summary": "MRI 為 3D 體積、切面選擇與退化都會影響指數，文獻建議較 X 光略為提高 cutoff。",
+          "detail": [
+            "捲動 MRI 時不易決定測量位置，因為是 3D volume；articular surface 最低點會隨切面改變",
+            "年長膝若有 osteoarthritis 也會影響測量",
+            "有研究指出，尤其 Insall-Salvati 用在 MRI 時，診斷 patella alta 的 cutoff 需高於傳統 X 光",
+            "文獻提到約增加 0.01 到 0.13，屬小幅上調"
+          ]
+        },
+        {
+          "start": "06:04",
+          "end": "07:23",
+          "title": "Trochlear groove 深度：3 cm 高度與 3 mm 門檻",
+          "summary": "在關節線上 3 cm 的橫切面測 sulcus 深度，並以嚴重外側 facet 發育不良示範幾乎無溝可測。",
+          "detail": [
+            "方法：coronal 取關節線上方 3 cm，對到相對應 transverse 影像，測量 sulcus／groove 深度",
+            "深度低於 3 mm 視為淺溝，甚至可能為凸面；大於 3 mm 通常可認為無 trochlear dysplasia",
+            "示範正常個案後，再看嚴重案例：外側 facet 嚴重發育不良／缺如，該高度幾乎無溝可測",
+            "再往下才隱約見到一點溝，整體屬嚴重 patellofemoral dysplasia"
+          ]
+        },
+        {
+          "start": "07:24",
+          "end": "08:06",
+          "title": "TT-TG 的定義與橫切面量法",
+          "summary": "TT-TG 是 trochlear groove 中心到 patellar tendon 止點中點的毫米距離，並以 5 mm 示範正常值。",
+          "detail": [
+            "TT-TG（tibial tuberosity–trochlear groove）是 trochlear groove 中心到 patella 止點（patellar tendon insertion）中點的距離",
+            "在 transverse：對 femoral condyle 作通過 groove 的垂直線，往下捲到 patellar tendon 止點取中點，再量兩者距離",
+            "單位是毫米；此例為 5 mm，屬正常"
+          ]
+        },
+        {
+          "start": "08:07",
+          "end": "10:13",
+          "title": "同一病人 CT 與 MRI 的 TT-TG 為何不同",
+          "summary": "完全伸直的 CT 因脛骨外旋鎖定使 TT-TG 偏大，輕微屈曲的 MRI 數值較低，cutoff 應隨之調降。",
+          "detail": [
+            "同一病人、未手術：CT 約 20 mm（偏高），MRI 約 11 mm、再往下也僅約 13 mm",
+            "CT 多為完全伸直；終末期伸直有 locking mechanism，tibia 輕微外旋，TT-TG 會略增",
+            "MRI 多在輕微屈曲（膝下墊物讓病人較舒服），故較難量到 20–21 mm，除非膝完全伸直",
+            "MRI 上 TT-TG 的 cutoff 應較低，講者有時用 16 mm；完全伸直則仍用 20、21 或 22 mm（視各機構）"
+          ]
+        },
+        {
+          "start": "10:14",
+          "end": "11:34",
+          "title": "講者實務：何時才寫進報告",
+          "summary": "除非被點名或懷疑脫位，否則不常報告 Insall-Salvati／Caton-Deschamps 與 TT-TG；溝深僅在目測不確定時當輔助。",
+          "detail": [
+            "除非特別被要求，否則不花時間做 Caton-Deschamps 或 Insall-Salvati；熟悉膝部的轉診醫師／外科醫師通常會自己量",
+            "trochlear 深度：目測無法確定是否為淺溝時才當輔助標準，不一定把數值寫進報告",
+            "TT-TG：僅在被要求、或 patellar dislocation 情境才給測量，其餘不常量",
+            "建議參考描述欄 patellar instability 文章，內有各種測量說明"
+          ]
+        }
+      ]
     }
   ]
 }
