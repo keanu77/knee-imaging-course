@@ -24,7 +24,7 @@
     "pages_project_name": "knee-ultrasound-course"
   },
   "status": "draft",
-  "indexing": false,
+  "indexing": true,
   "content_owner": "吳易澄",
   "medical_reviewer": {
     "name": "吳易澄",
