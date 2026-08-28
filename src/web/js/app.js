@@ -7,6 +7,7 @@ import { renderMusclePanel, syncMuscleChips, applyFilters as runFilters } from "
 import {
   buildPlaylist, renderPlaylist, playlistItemMatches, play, stop, fitFrame, watchFrame,
   initResizer, setLanguages,
+  refreshSegments,
 } from "./player.js";
 import { bindKeys, listen as ytListen } from "./keys.js";
 import { mountPictograms } from "./pictograms.js";
@@ -731,7 +732,7 @@ function playAt(i) {
   if (i < 0 || i >= state.playlist.length) return;
   state.playing = i;
   savePlaying();
-  play(state.playlist[i], { total: state.playlist.length });
+  play(state.playlist[i], { total: state.playlist.length, query: state.playlistQuery });
   setTimeout(ytListen, 900); // iframe 載入後才收得到 infoDelivery
   if (load(STORE.wide, false)) {
     $(".Player").classList.add("is-wide");
@@ -885,6 +886,12 @@ function bindEvents() {
     if (item) playAt(+item.dataset.play);
   });
 
+  // 「只看命中的 N 段」：checkbox 每次搜尋都會被重繪，所以用委派而非直接綁定
+  $("#playerInfo").addEventListener("change", (e) => {
+    if (e.target.id !== "segmentOnlyHits") return;
+    e.target.closest(".Segments")?.classList.toggle("is-onlyHits", e.target.checked);
+  });
+
   $("#playerInfo").addEventListener("click", (e) => {
     const step = e.target.closest("[data-step]");
     if (step) return stepPlaylist(+step.dataset.step);
@@ -927,7 +934,11 @@ function bindEvents() {
   $("#playlistSearch").addEventListener("input", (e) => {
     state.playlistQuery = e.target.value;
     clearTimeout(plDebounce);
-    plDebounce = setTimeout(refreshPlaylist, 120);
+    plDebounce = setTimeout(() => {
+      refreshPlaylist();
+      // 逐段筆記要跟著標亮；不能重跑 play()，否則影片會從頭播
+      refreshSegments(state.playlist[state.playing], state.playlistQuery);
+    }, 120);
   });
 
   $("#playlistOnlyTodo").addEventListener("click", (e) => {
@@ -1216,7 +1227,7 @@ async function init() {
   setTab(
     hashPlayIndex >= 0
       ? "player"
-      : ["home", "course", "player", "stance"].includes(wanted)
+      : ["home", "course", "player"].includes(wanted)
       ? wanted
       : load(STORE.tab, "home"),
   );
@@ -1232,9 +1243,9 @@ async function init() {
     playAt(state.playing);
   }
 
-  // 首次造訪展開觀念篇第一章，讓畫面不是一片收合
+  // 首次造訪展開第一章，讓畫面不是一片收合（不要硬編章節代碼，重編後會失效）
   if (load(STORE.open, null) === null) {
-    $('[data-chapter="CH0"]')?.classList.add("is-open");
+    $(".Chapter[data-chapter]")?.classList.add("is-open");
   }
 
   // 深連結：#ch5-u1 直接展開該單元
