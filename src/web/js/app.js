@@ -1227,7 +1227,7 @@ async function init() {
   setTab(
     hashPlayIndex >= 0
       ? "player"
-      : ["home", "course", "player", "stance"].includes(wanted)
+      : ["home", "course", "player"].includes(wanted)
       ? wanted
       : load(STORE.tab, "home"),
   );
@@ -1243,9 +1243,9 @@ async function init() {
     playAt(state.playing);
   }
 
-  // 首次造訪展開觀念篇第一章，讓畫面不是一片收合
+  // 首次造訪展開第一章，讓畫面不是一片收合（不要硬編章節代碼，重編後會失效）
   if (load(STORE.open, null) === null) {
-    $('[data-chapter="CH0"]')?.classList.add("is-open");
+    $(".Chapter[data-chapter]")?.classList.add("is-open");
   }
 
   // 深連結：#ch5-u1 直接展開該單元
