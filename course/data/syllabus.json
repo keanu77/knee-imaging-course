@@ -431,9 +431,10 @@
             }
           ],
           "reviewed_by": "吳易澄",
-          "reviewer_role": "復健科專科醫師",
+          "reviewer_role": "課程策展人",
           "reviewed_at": "2026-08-25",
-          "reviewed_commit": "fabc147d15dabf38185b7527e59ae830c7f7b86f"
+          "reviewed_commit": "fabc147d15dabf38185b7527e59ae830c7f7b86f",
+          "review_note": "策展審閱：確認範圍框限、來源與講者資格、文獻對應與課程編排。不構成對第三方影片內容的醫療背書。"
         }
       ]
     },
@@ -596,9 +597,10 @@
             }
           ],
           "reviewed_by": "吳易澄",
-          "reviewer_role": "復健科專科醫師",
+          "reviewer_role": "課程策展人",
           "reviewed_at": "2026-08-25",
-          "reviewed_commit": "fabc147d15dabf38185b7527e59ae830c7f7b86f"
+          "reviewed_commit": "fabc147d15dabf38185b7527e59ae830c7f7b86f",
+          "review_note": "策展審閱：確認範圍框限、來源與講者資格、文獻對應與課程編排。不構成對第三方影片內容的醫療背書。"
         }
       ]
     },
@@ -640,9 +642,10 @@
           ],
           "drills": [],
           "reviewed_by": "吳易澄",
-          "reviewer_role": "復健科專科醫師",
+          "reviewer_role": "課程策展人",
           "reviewed_at": "2026-08-16",
-          "reviewed_commit": "43b138ccb6358b75d766657ab020207e64756483"
+          "reviewed_commit": "43b138ccb6358b75d766657ab020207e64756483",
+          "review_note": "策展審閱：確認範圍框限、來源與講者資格、文獻對應與課程編排。不構成對第三方影片內容的醫療背書。"
         },
         {
           "id": "ch1-u1",
@@ -684,9 +687,10 @@
           ],
           "drills": [],
           "reviewed_by": "吳易澄",
-          "reviewer_role": "復健科專科醫師",
+          "reviewer_role": "課程策展人",
           "reviewed_at": "2026-08-16",
-          "reviewed_commit": "43b138ccb6358b75d766657ab020207e64756483"
+          "reviewed_commit": "43b138ccb6358b75d766657ab020207e64756483",
+          "review_note": "策展審閱：確認範圍框限、來源與講者資格、文獻對應與課程編排。不構成對第三方影片內容的醫療背書。"
         }
       ]
     },
@@ -824,9 +828,10 @@
             }
           ],
           "reviewed_by": "吳易澄",
-          "reviewer_role": "復健科專科醫師",
+          "reviewer_role": "課程策展人",
           "reviewed_at": "2026-08-16",
-          "reviewed_commit": "43b138ccb6358b75d766657ab020207e64756483"
+          "reviewed_commit": "43b138ccb6358b75d766657ab020207e64756483",
+          "review_note": "策展審閱：確認範圍框限、來源與講者資格、文獻對應與課程編排。不構成對第三方影片內容的醫療背書。"
         },
         {
           "id": "ch3-u1",
@@ -929,9 +934,10 @@
             }
           ],
           "reviewed_by": "吳易澄",
-          "reviewer_role": "復健科專科醫師",
+          "reviewer_role": "課程策展人",
           "reviewed_at": "2026-08-16",
-          "reviewed_commit": "43b138ccb6358b75d766657ab020207e64756483"
+          "reviewed_commit": "43b138ccb6358b75d766657ab020207e64756483",
+          "review_note": "策展審閱：確認範圍框限、來源與講者資格、文獻對應與課程編排。不構成對第三方影片內容的醫療背書。"
         }
       ]
     },
@@ -1011,9 +1017,10 @@
             }
           ],
           "reviewed_by": "吳易澄",
-          "reviewer_role": "復健科專科醫師",
+          "reviewer_role": "課程策展人",
           "reviewed_at": "2026-08-16",
-          "reviewed_commit": "43b138ccb6358b75d766657ab020207e64756483"
+          "reviewed_commit": "43b138ccb6358b75d766657ab020207e64756483",
+          "review_note": "策展審閱：確認範圍框限、來源與講者資格、文獻對應與課程編排。不構成對第三方影片內容的醫療背書。"
         },
         {
           "id": "ch5-u1",
@@ -1116,9 +1123,10 @@
             }
           ],
           "reviewed_by": "吳易澄",
-          "reviewer_role": "復健科專科醫師",
+          "reviewer_role": "課程策展人",
           "reviewed_at": "2026-08-16",
-          "reviewed_commit": "43b138ccb6358b75d766657ab020207e64756483"
+          "reviewed_commit": "43b138ccb6358b75d766657ab020207e64756483",
+          "review_note": "策展審閱：確認範圍框限、來源與講者資格、文獻對應與課程編排。不構成對第三方影片內容的醫療背書。"
         }
       ]
     },
@@ -1170,9 +1178,10 @@
           ],
           "drills": [],
           "reviewed_by": "吳易澄",
-          "reviewer_role": "復健科專科醫師",
+          "reviewer_role": "課程策展人",
           "reviewed_at": "2026-08-16",
-          "reviewed_commit": "43b138ccb6358b75d766657ab020207e64756483"
+          "reviewed_commit": "43b138ccb6358b75d766657ab020207e64756483",
+          "review_note": "策展審閱：確認範圍框限、來源與講者資格、文獻對應與課程編排。不構成對第三方影片內容的醫療背書。"
         },
         {
           "id": "ch7-u1",
@@ -1198,7 +1207,7 @@
             "最低影像集不是僵化張數，而是能證明檢查範圍、方向、關鍵正常結構與所有異常的可追溯紀錄。",
             "報告依序寫臨床問題、範圍與技術、分區所見、整合結論、限制及後續建議。",
             "使用『未完整顯示』或『本檢查不能排除』等精確限制語句，不把不確定性隱藏在結論之外。",
-            "CI、課程完成或網站上線都不是醫療核准；單元維持 draft 直到具資格醫師逐項簽核。"
+            "CI、課程完成或網站上線都不是醫療核准；單元維持 draft 直到通過策展審閱。策展審閱確認的是範圍框限、來源與講者資格、文獻對應與課程編排，不構成對第三方影片臨床內容的醫療背書。"
           ],
           "pitfalls": [
             "報告結論超過已保存影像、實際掃描範圍或超音波能力。",
@@ -1244,9 +1253,10 @@
             }
           ],
           "reviewed_by": "吳易澄",
-          "reviewer_role": "復健科專科醫師",
+          "reviewer_role": "課程策展人",
           "reviewed_at": "2026-08-16",
-          "reviewed_commit": "43b138ccb6358b75d766657ab020207e64756483"
+          "reviewed_commit": "43b138ccb6358b75d766657ab020207e64756483",
+          "review_note": "策展審閱：確認範圍框限、來源與講者資格、文獻對應與課程編排。不構成對第三方影片內容的醫療背書。"
         }
       ]
     },
@@ -1435,9 +1445,10 @@
             }
           ],
           "reviewed_by": "吳易澄",
-          "reviewer_role": "復健科專科醫師",
+          "reviewer_role": "課程策展人",
           "reviewed_at": "2026-08-25",
-          "reviewed_commit": "fabc147d15dabf38185b7527e59ae830c7f7b86f"
+          "reviewed_commit": "fabc147d15dabf38185b7527e59ae830c7f7b86f",
+          "review_note": "策展審閱：確認範圍框限、來源與講者資格、文獻對應與課程編排。不構成對第三方影片內容的醫療背書。"
         }
       ]
     },
@@ -1598,9 +1609,10 @@
             }
           ],
           "reviewed_by": "吳易澄",
-          "reviewer_role": "復健科專科醫師",
+          "reviewer_role": "課程策展人",
           "reviewed_at": "2026-08-25",
-          "reviewed_commit": "fabc147d15dabf38185b7527e59ae830c7f7b86f"
+          "reviewed_commit": "fabc147d15dabf38185b7527e59ae830c7f7b86f",
+          "review_note": "策展審閱：確認範圍框限、來源與講者資格、文獻對應與課程編排。不構成對第三方影片內容的醫療背書。"
         }
       ]
     },
@@ -1765,9 +1777,10 @@
             }
           ],
           "reviewed_by": "吳易澄",
-          "reviewer_role": "復健科專科醫師",
+          "reviewer_role": "課程策展人",
           "reviewed_at": "2026-08-28",
-          "reviewed_commit": "c2cd89d40627bb7fd01cdf154b6ee7bee031a998"
+          "reviewed_commit": "c2cd89d40627bb7fd01cdf154b6ee7bee031a998",
+          "review_note": "策展審閱：確認範圍框限、來源與講者資格、文獻對應與課程編排。不構成對第三方影片內容的醫療背書。"
         },
         {
           "id": "mr3-u2",
@@ -1898,9 +1911,10 @@
             }
           ],
           "reviewed_by": "吳易澄",
-          "reviewer_role": "復健科專科醫師",
+          "reviewer_role": "課程策展人",
           "reviewed_at": "2026-08-28",
-          "reviewed_commit": "c2cd89d40627bb7fd01cdf154b6ee7bee031a998"
+          "reviewed_commit": "c2cd89d40627bb7fd01cdf154b6ee7bee031a998",
+          "review_note": "策展審閱：確認範圍框限、來源與講者資格、文獻對應與課程編排。不構成對第三方影片內容的醫療背書。"
         }
       ]
     }

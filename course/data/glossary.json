@@ -1852,7 +1852,8 @@
     }
   ],
   "reviewed_by": "吳易澄",
-  "reviewer_role": "復健科專科醫師",
+  "reviewer_role": "課程策展人",
   "reviewed_at": "2026-08-25",
-  "reviewed_commit": "fabc147d15dabf38185b7527e59ae830c7f7b86f"
+  "reviewed_commit": "fabc147d15dabf38185b7527e59ae830c7f7b86f",
+  "review_note": "策展審閱：確認範圍框限、來源與講者資格、文獻對應與課程編排。不構成對第三方影片內容的醫療背書。"
 }
