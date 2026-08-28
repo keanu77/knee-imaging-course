@@ -133,7 +133,7 @@ def check_segments(video: dict, entry: dict, allowed_status: set[str]) -> list[s
         return errors
 
     duration = parse_clock(video.get("duration"))
-    # 膝部的 parser 要求呼叫端先正規化（main() 同樣寫法）；模板那份是自己吞 None 的版本。
+    # 膝蓋的 parser 要求呼叫端先正規化（main() 同樣寫法）；模板那份是自己吞 None 的版本。
     range_text = str(video.get("diagnostic_segment_range") or "").strip()
     diagnostic_ranges = parse_segment_ranges(range_text) if range_text else None
     if video.get("contains_intervention") is True and diagnostic_ranges is None:
