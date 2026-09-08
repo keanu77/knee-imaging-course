@@ -1,74 +1,27 @@
 <!doctype html>
 <html lang="zh-Hant-TW">
-  <head>
-    <meta charset="utf-8" />
-    <title>膝蓋影像診斷課程</title>
-    <style>
-      * { box-sizing: border-box; margin: 0; padding: 0; }
-      html, body { width: 1200px; height: 630px; }
-      body {
-        position: relative;
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding: 62px 72px;
-        font-family: "PingFang TC", "Noto Sans TC", -apple-system, sans-serif;
-        color: #f2f8f8;
-        background: #0b1e2d;
-      }
-      body::before {
-        content: "";
-        position: absolute;
-        inset: -20%;
-        background:
-          radial-gradient(circle at 18% 14%, #1d9a9a55, transparent 30%),
-          radial-gradient(circle at 88% 82%, #2a647a66, transparent 32%);
-      }
-      body::after {
-        content: "";
-        position: absolute;
-        width: 420px;
-        height: 420px;
-        right: 86px;
-        top: 78px;
-        border: 1px solid #8ad4d444;
-        border-radius: 50%;
-        box-shadow: inset 0 0 0 54px #8ad4d408, inset 0 0 0 108px #8ad4d408;
-      }
-      .brand, .main, .foot { position: relative; z-index: 1; }
-      .brand { display: flex; gap: 12px; align-items: center; color: #a8c8ce; font-size: 22px; }
-      .mark {
-        width: 34px; height: 34px; display: grid; place-items: center;
-        border: 1px solid #62c8c8; border-radius: 9px; color: #7ed9d9;
-      }
-      .eyebrow { color: #7ed9d9; font-size: 19px; font-weight: 650; letter-spacing: .08em; }
-      h1 { margin-top: 17px; width: 780px; font-size: 65px; line-height: 1.17; letter-spacing: -.035em; }
-      .lede { margin-top: 22px; width: 740px; color: #aac3ca; font-size: 25px; line-height: 1.5; }
-      .stats { display: flex; gap: 18px; }
-      .chip { padding: 10px 16px; color: #cce2e5; background: #ffffff0d; border: 1px solid #8ab9c244; border-radius: 999px; font-size: 18px; }
-      .chip strong { color: #ffffff; }
-      .foot { display: flex; align-items: center; justify-content: space-between; padding-top: 24px; border-top: 1px solid #9bc1c333; }
-      .scope { color: #a8c8ce; font-size: 18px; }
-      .scope b { color: #7ed9d9; }
-      .url { color: #a8c8ce; font-size: 20px; font-weight: 600; }
-    </style>
-  </head>
-  <body>
-    <div class="brand"><span class="mark">IMG</span>knee-imaging.sportsmedicine.tw 專業教育</div>
-    <main class="main">
-      <div class="eyebrow">PHYSICIAN LEARNING PATH · DIAGNOSTIC PHASE</div>
-      <h1>膝蓋影像診斷<br />超音波・X 光・MRI</h1>
-      <p class="lede">從影像最佳化、標準切面與動態檢查，到常見病理判讀；每個單元都留下可審閱的臨床依據。</p>
-    </main>
-    <div class="stats">
-      <span class="chip"><strong>STANDARD</strong> 掃描視圖</span>
-      <span class="chip"><strong>CORE</strong> 學習路徑</span>
-      <span class="chip"><strong>REVIEW</strong> 醫療審閱</span>
-    </div>
-    <footer class="foot">
-      <span class="scope"><b>第一階段：</b>診斷掃描為主，介入注射延後</span>
-      <span class="url">knee-imaging.sportsmedicine.tw</span>
-    </footer>
-  </body>
+<head>
+<meta charset="utf-8" />
+<title>膝蓋影像診斷課程</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&amp;display=swap" />
+<style>
+* { box-sizing: border-box; margin: 0; }
+html, body { width: 1200px; height: 630px; }
+body { padding: 48px 64px; color: #1a2330; background: #faf8f2; font-family: "Noto Sans TC", "PingFang TC", sans-serif; }
+header { display: flex; justify-content: space-between; padding-bottom: 22px; border-bottom: 1px solid #d8d2c4; font-size: 17px; color: #1b6b73; }
+main { display: flex; align-items: center; height: 402px; }
+h1 { font: 600 58px/1.45 "Noto Sans TC", "PingFang TC", sans-serif; letter-spacing: .02em; }
+.lede { margin-top: 24px; font-size: 20px; line-height: 1.85; color: #5c6670; }
+footer { display: flex; justify-content: space-between; border-top: 1px solid #d8d2c4; padding-top: 24px; font-size: 17px; color: #5c6670; }
+footer strong { color: #1b6b73; font-weight: 500; }
+</style>
+</head>
+<body>
+<header><span>膝關節影像 · 醫師專業自學</span><span>X 光 / 超音波 / MRI</span></header>
+<main>
+<div><h1>膝蓋影像判讀的<br />系統化路徑</h1><p class="lede">從標準視圖到臨床判讀。<br />精選影片、逐段筆記與知識檢核。</p></div>
+</main>
+<footer><strong>診斷影像 · 專業教育</strong><span>knee-imaging.sportsmedicine.tw</span></footer>
+
+</body>
 </html>

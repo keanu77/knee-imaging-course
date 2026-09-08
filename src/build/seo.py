@@ -13,8 +13,10 @@ import json
 import os
 import re
 import sys
-from datetime import date
+from html import escape
 from pathlib import Path
+
+from unit_pages import approved_units, write_unit_pages
 
 ROOT = Path(__file__).resolve().parents[2]
 COURSE = Path(os.environ.get("COURSE") or ROOT / "course").resolve()
@@ -243,7 +245,7 @@ def write_indexing_header() -> None:
     print("   _headers  X-Robots-Tag=noindex（medical-review gate）")
 
 
-def write_sitemap() -> None:
+def write_sitemap(unit_urls: list[str] | None = None) -> None:
     if not ALLOW_INDEXING:
         (PUB / "sitemap.xml").write_text(
             '<?xml version="1.0" encoding="UTF-8"?>\n'
@@ -256,16 +258,16 @@ def write_sitemap() -> None:
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n'
         '        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n'
         "  <url>\n"
-        f"    <loc>{SITE}/</loc>\n"
-        f"    <lastmod>{date.today().isoformat()}</lastmod>\n"
+        f"    <loc>{escape(SITE)}/</loc>\n"
         "    <changefreq>monthly</changefreq>\n"
         "    <priority>1.0</priority>\n"
         "    <image:image>\n"
-        f"      <image:loc>{SITE}/og.png</image:loc>\n"
-        f"      <image:title>{NAME}</image:title>\n"
+        f"      <image:loc>{escape(SITE)}/og.png</image:loc>\n"
+        f"      <image:title>{escape(NAME)}</image:title>\n"
         "    </image:image>\n"
         "  </url>\n"
-        "</urlset>\n"
+        + "".join(f"  <url><loc>{escape(url)}</loc></url>\n" for url in (unit_urls or []))
+        + "</urlset>\n"
     )
     print("   sitemap.xml")
 
@@ -331,6 +333,30 @@ def write_llms(course: dict) -> None:
     print("   llms.txt")
 
 
+def inject_reading_fallback(course: dict) -> None:
+    """Expose the approved reading routes even when the app cannot run JavaScript."""
+    links = "".join(
+        f'<li><a href="/units/{escape(unit["id"], quote=True)}/">'
+        f"{escape(chapter['code'])} · {escape(unit['name'])}</a></li>"
+        for chapter, unit in approved_units(course)
+    )
+    fallback = (
+        '<noscript><section class="container" aria-label="單元閱讀版">'
+        "<h2>單元閱讀版</h2><p>目前未啟用 JavaScript。以下教材可直接閱讀；"
+        "互動播放、測驗及學習進度需啟用 JavaScript。</p>"
+        f"<ul>{links}</ul></section></noscript>"
+    )
+    path = PUB / "index.html"
+    html = path.read_text()
+    html = re.sub(
+        r"<!-- reading-fallback:start -->.*?<!-- reading-fallback:end -->",
+        lambda _: f"<!-- reading-fallback:start -->{fallback}<!-- reading-fallback:end -->",
+        html,
+        flags=re.S,
+    )
+    path.write_text(html)
+
+
 def main() -> int:
     course_path = PUB / "course.json"
     if not course_path.exists():
@@ -342,7 +368,10 @@ def main() -> int:
     render_template(course["meta"])
     inject_meta(course)
     inject_schema(build_schema(course))
-    write_sitemap()
+    unit_urls = write_unit_pages(course, CFG, PUB)
+    inject_reading_fallback(course)
+    print(f"   units/  {len(unit_urls)} 個已審閱單元閱讀頁")
+    write_sitemap(unit_urls)
     write_robots()
     write_llms(course)
     write_indexing_header()

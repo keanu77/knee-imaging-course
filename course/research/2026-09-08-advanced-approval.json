@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "decision": "approved-for-course-inclusion",
+  "user_statement": "同意收錄",
+  "decision_context": "同意具體審閱版的 7 進階單元、7 新影片、21 診斷片段、21 題、14 練習、11 文獻、4 經典影片例外及 TT–TG 解析修正。",
+  "recorded_at_utc": "2026-09-08T15:54:28.239974+00:00",
+  "reviewed_by": "吳易澄",
+  "reviewer_role": "課程策展人",
+  "reviewed_payloads": [
+    {
+      "path": "course/research/2026-09-08-advanced-candidates.json",
+      "sha256": "b8f596455cef059760fef11b7cb56442182ee472ca9e577a6a117135c4e83da7"
+    },
+    {
+      "path": "course/research/2026-09-08-advanced-cases.json",
+      "sha256": "d4630b5fb362b7d5f7b13986f733af96c28ea0b07727e31d9e618544d543765d"
+    }
+  ],
+  "base_commit_at_decision": "75cfd6ce4dec8eb8c9e82de095f1c000975ba198",
+  "reviewed_commit_semantics": "既有基底 commit；不宣稱已包含新增內容。裁決以兩份不可變審閱稿的 SHA-256 綁定。",
+  "limitations": [
+    "策展同意不等於完整逐影格聲畫驗收或醫療背書。",
+    "7 支影片 metadata 可嵌入且字幕實查；實際串流尚未取得解碼影格。",
+    "未授權 Git push 或正式部署。"
+  ],
+  "module_ids": [
+    "mr-adv-meniscus",
+    "mr-adv-postop",
+    "mr-adv-plc",
+    "mr-adv-cartilage",
+    "mr-adv-subchondral",
+    "us-adv-nerve",
+    "us-adv-dynamic"
+  ],
+  "video_ids": [
+    "_iCPhaLtJCI",
+    "CVGEdU2M2KY",
+    "IWbyH5oW2yQ",
+    "tx7MI889hCg",
+    "Ehw_vGnDEBg",
+    "wnw3GqKR370",
+    "zRm8SOwtjXA"
+  ],
+  "classic_exceptions": [
+    "CVGEdU2M2KY",
+    "Ehw_vGnDEBg",
+    "wnw3GqKR370",
+    "zRm8SOwtjXA"
+  ],
+  "authorized_correction": {
+    "unit_id": "mr3-u1",
+    "question_id": "mr3-u1-q2",
+    "field": "options[1].rationale",
+    "before": "直接套用是常見錯誤，會系統性高估異常比例。",
+    "after": "CT 與 MRI 的量測值及切點不可直接互換，應採用與影像方法及族群相符的判準。",
+    "reason": "原文高估/低估方向錯誤；改成不預設族群效應的精確敘述。",
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/25575535/",
+    "review_status": "draft"
+  },
+  "previous_question_group_review": {
+    "review_status": "approved",
+    "reviewed_by": "吳易澄",
+    "reviewer_role": "課程策展人",
+    "reviewed_at": "2026-08-28",
+    "reviewed_commit": "c2cd89d40627bb7fd01cdf154b6ee7bee031a998",
+    "review_note": "策展審閱：確認範圍框限、來源與講者資格、文獻對應與課程編排。不構成對第三方影片內容的醫療背書。"
+  },
+  "schema_adaptations": [
+    "秒数轉為 MM:SS；原題目與各選項解析、選段摘要完整保留。",
+    "術後單元引用原有影片，不重算為新增影片。",
+    "共用影片在兩單元各有入口，unique 數量去重。",
+    "移除草稿工作流狀態，保留原查核限制；新增正式病例資料與入口。"
+  ],
+  "expected_totals": {
+    "units": 25,
+    "unique_videos": 43,
+    "video_slots": 46,
+    "unique_video_segments": 375,
+    "questions": 81,
+    "reference_catalog_records": 42,
+    "exercises": 14
+  },
+  "integrated_data_sha256": {
+    "syllabus": "632d2780ecae2fc2eb41729c95cd2de3724cf35ece6e9996a77d673e48f9bea8",
+    "questions": "ed52bb44b368ca5d3be4e55eae5a29d2837dc670246bd46f7b679c96daa310fe",
+    "segments": "49b30ecce6a8302f55747fe2d7dfcb9c1292f953ea9418771ba4ce06b547700a",
+    "video-meta": "c61f31f675519a27dad311607e48ca5fb9607874ff845172aed0ed00f003a888",
+    "cases": "6e6fc79c1b2a51aafe814ad6adeeb0d1e84535840445b20a0a91e826bae8a50c"
+  },
+  "post_approval_verification": {
+    "path": "docs/audits/2026-09-08-advanced-playback.json",
+    "sha256": "9fe98303fcfa6a12f40f0f7315b78fee81b5a86b83663a2d7e5de42bcbdd8b6a",
+    "result": "7/7 actual target-video stream spot checks passed; earlier review-page CSP blocked embedding; not full audiovisual signoff"
+  }
+}

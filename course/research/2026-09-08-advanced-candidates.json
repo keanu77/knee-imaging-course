@@ -1,0 +1,1852 @@
+{
+  "schema_version": 1,
+  "title": "進階膝關節影像：病例與報告訓練",
+  "review_status": "draft",
+  "prepared_at_utc": "2026-09-08T15:34:19.516379+00:00",
+  "purpose": "使用者要求不足即增加；本批新增教材已完成草稿，待對具體內容、經典例外與診斷範圍集中裁決，未冒用醫師簽核。",
+  "openevidence_article_id": "11a10029-e823-4b1b-94eb-cc1bfab737c7",
+  "module_drafts": [
+    {
+      "id": "mr-adv-meniscus",
+      "name": "半月板根部、ramp 與移位裂隙：盲點追蹤",
+      "chapter": "MR2",
+      "type": "case",
+      "level": "advanced",
+      "review_status": "draft",
+      "summary": "把「看到裂隙」提升為部位、形態、周邊附著與伴隨損傷的完整報告。",
+      "objectives": [
+        "跨平面追蹤 radial 與移位碎片。",
+        "區分正常隱窩與後內側周邊附著異常。",
+        "將根部和 ramp 的不確定性寫入報告。"
+      ],
+      "required_views": [
+        "矢狀/冠狀 PD 或 T2 脂肪抑制連續切面，加軸位追蹤自由緣、後角與根部。",
+        "核對 ACL、半月板外擠、軟骨及軟骨下骨，記錄測量平面。"
+      ],
+      "key_points": [
+        "Radial tear 不必然位於根部；報告需描述與根部附著的關係。",
+        "軸位可補充複合裂隙與移位 flap，需與其他平面確認。",
+        "ACL 異常時主動檢查後內側周邊附著；正常隱窩本身不是撕裂。",
+        "依 2026 SSR 共識以形態、位置及所見描述，避免僅憑 MRI 宣告可修補、穩定或受傷年代。"
+      ],
+      "pitfalls": [
+        "只背 ghost sign 卻沒追蹤根部全程。",
+        "把單張正常影像或陰性 MRI 當成排除隱匿 ramp 的保證。",
+        "把分級或手術適應症當成影像可直接決定的結論。"
+      ],
+      "reference_ids": [
+        "REF-ADV-SSR-MENISCUS-2026",
+        "REF-ADV-ROOT-RAMP-2023"
+      ],
+      "content_boundary": "影片有 radial、flap 與周邊附著病例；未提供可自由操作的完整 DICOM 或關節鏡盲測。",
+      "prerequisites": [
+        "ch10-u1",
+        "ch11-u1"
+      ],
+      "assessment": "完成對應兩項進階判讀練習：先寫所見、鑑別、限制及報告，再開啟對照；依項目自評並交由督導針對實際影像回饋。此為課程自訂練習規準，不設臨床合格或認證門檻。",
+      "source_cases": [
+        {
+          "title": "Spotting Radial Meniscus Tears on MRI (MSK Quick Tip)",
+          "url": "https://www.youtube.com/watch?v=_iCPhaLtJCI",
+          "note": "軸位補看 radial、複合移位 flap 與後角近根部病例；不以單一切面作診斷。"
+        },
+        {
+          "title": "Ramp lesions on knee MRI",
+          "url": "https://www.youtube.com/watch?v=CVGEdU2M2KY",
+          "note": "正常隱窩、meniscotibial 與 meniscocapsular 附著對照；只取 MRI 病例，不教關節鏡操作。"
+        }
+      ],
+      "questions": [
+        {
+          "id": "mr-adv-meniscus-q1",
+          "type": "single",
+          "difficulty": "advanced",
+          "stem": "軸位看到後角附近放射狀裂隙，報告下一步最適合做什麼？",
+          "options": [
+            {
+              "text": "直接寫 posterior root tear",
+              "correct": false,
+              "rationale": "未確認附著位置不能僅憑形態命名。"
+            },
+            {
+              "text": "根部正常，因此不用看其他平面",
+              "correct": false,
+              "rationale": "單一切面不足以確認完整性。"
+            },
+            {
+              "text": "跨平面追蹤到根部附著，描述裂隙、位置及移位",
+              "correct": true,
+              "rationale": "Radial 形態不等於根部撕裂；需確認實際位置和連續性。"
+            }
+          ],
+          "reference_ids": [
+            "REF-ADV-SSR-MENISCUS-2026",
+            "REF-ADV-ROOT-RAMP-2023"
+          ],
+          "source_links": [
+            {
+              "title": "Spotting Radial Meniscus Tears on MRI (MSK Quick Tip)",
+              "url": "https://www.youtube.com/watch?v=_iCPhaLtJCI"
+            },
+            {
+              "title": "Ramp lesions on knee MRI",
+              "url": "https://www.youtube.com/watch?v=CVGEdU2M2KY"
+            }
+          ]
+        },
+        {
+          "id": "mr-adv-meniscus-q2",
+          "type": "single",
+          "difficulty": "advanced",
+          "stem": "ACL 損傷病例的後內側隱窩有液體，但附著仍可見，最合宜的結論？",
+          "options": [
+            {
+              "text": "MRI 未見中斷即可保證沒有 ramp",
+              "correct": false,
+              "rationale": "隱匿病灶可能漏見，陰性 MRI 不能作保證。"
+            },
+            {
+              "text": "辨認正常隱窩，記錄附著所見及無法確認的部分",
+              "correct": true,
+              "rationale": "正常隱窩可能有液體，需追蹤附著而非只看液體。"
+            },
+            {
+              "text": "液體就是完整 ramp tear",
+              "correct": false,
+              "rationale": "液體本身不是周邊附著中斷的證據。"
+            }
+          ],
+          "reference_ids": [
+            "REF-ADV-SSR-MENISCUS-2026",
+            "REF-ADV-ROOT-RAMP-2023"
+          ],
+          "source_links": [
+            {
+              "title": "Spotting Radial Meniscus Tears on MRI (MSK Quick Tip)",
+              "url": "https://www.youtube.com/watch?v=_iCPhaLtJCI"
+            },
+            {
+              "title": "Ramp lesions on knee MRI",
+              "url": "https://www.youtube.com/watch?v=CVGEdU2M2KY"
+            }
+          ]
+        },
+        {
+          "id": "mr-adv-meniscus-q3",
+          "type": "single",
+          "difficulty": "advanced",
+          "stem": "哪一種半月板報告較符合本單元引用的 2026 SSR 用詞方向？",
+          "options": [
+            {
+              "text": "描述部位、形態、移位與測量平面，另列限制",
+              "correct": true,
+              "rationale": "可見形態和位置比未證實的病因/穩定性標籤更清楚。"
+            },
+            {
+              "text": "只寫可修補且穩定的退化撕裂",
+              "correct": false,
+              "rationale": "MRI 單獨不足以確定這些臨床屬性。"
+            },
+            {
+              "text": "只列分類號，不寫位置",
+              "correct": false,
+              "rationale": "分類號不能取代可供溝通的具體所見。"
+            }
+          ],
+          "reference_ids": [
+            "REF-ADV-SSR-MENISCUS-2026",
+            "REF-ADV-ROOT-RAMP-2023"
+          ],
+          "source_links": [
+            {
+              "title": "Spotting Radial Meniscus Tears on MRI (MSK Quick Tip)",
+              "url": "https://www.youtube.com/watch?v=_iCPhaLtJCI"
+            },
+            {
+              "title": "Ramp lesions on knee MRI",
+              "url": "https://www.youtube.com/watch?v=CVGEdU2M2KY"
+            }
+          ]
+        }
+      ],
+      "practice_case_ids": [
+        "advanced-case-01",
+        "advanced-case-02"
+      ]
+    },
+    {
+      "id": "mr-adv-postop",
+      "name": "術後半月板與 ACL：預期變化、再損傷與資料不足",
+      "chapter": "MR3",
+      "type": "case",
+      "level": "advanced",
+      "review_status": "draft",
+      "summary": "從手術紀錄與時間點開始，練習判斷哪些影像線索足夠、哪些必須保留。",
+      "objectives": [
+        "先列術式、範圍、日期與既往影像。",
+        "區分術後高訊號與更可信的結構異常。",
+        "用分層結論說明下一步需補的資訊。"
+      ],
+      "required_views": [
+        "術前及術後多平面流體敏感 MRI，取得原手術紀錄。",
+        "ACL graft 沿全長跨平面比對；半月板辨認殘留形態與表面相通液體樣訊號。"
+      ],
+      "key_points": [
+        "未手術半月板的判準不能直接套在術後。",
+        "修補處高訊號可持續；需比較新出現的形態改變、液體樣裂隙與移位組織。",
+        "ACL graft 的訊號需結合成熟時間、連續性與走向；影像外觀不能單獨決定功能性不穩。",
+        "若常規 MRI 結論不明，需先補足術式、症狀與既往影像；MR arthrography 的選用由臨床/影像團隊個別討論，本課不教注射。"
+      ],
+      "pitfalls": [
+        "把任何術後表面相通訊號都當新裂隙。",
+        "省略手術日期，卻用固定月份斷言成敗。",
+        "影像無明確斷裂就保證可返回運動。"
+      ],
+      "reference_ids": [
+        "REF-ADV-POSTOP-MENISCUS-2022",
+        "REF-ADV-SSR-MENISCUS-2026"
+      ],
+      "content_boundary": "以新術後文獻與現有 ACL 影片重組練習；本次沒有把講者身分未完成核對的術後新片算入新增數。",
+      "prerequisites": [
+        "mr3-u2"
+      ],
+      "assessment": "完成對應兩項進階判讀練習：先寫所見、鑑別、限制及報告，再開啟對照；依項目自評並交由督導針對實際影像回饋。此為課程自訂練習規準，不設臨床合格或認證門檻。",
+      "source_cases": [
+        {
+          "title": "既有 ACL graft 訊號與成熟教學",
+          "url": "https://www.youtube.com/watch?v=fAD4ET3aP1Q",
+          "note": "既有已策展影片，重用不算新增；半月板術後以文獻報告辨錯補充。"
+        },
+        {
+          "title": "既有 ACL graft 失敗徵象教學",
+          "url": "https://www.youtube.com/watch?v=MSyPvjYA_J8",
+          "note": "既有已策展影片，重用不算新增。"
+        }
+      ],
+      "questions": [
+        {
+          "id": "mr-adv-postop-q1",
+          "type": "single",
+          "difficulty": "advanced",
+          "stem": "半月板修補後持續表面相通高訊號，缺少舊影像，應如何判讀？",
+          "options": [
+            {
+              "text": "直接診斷新撕裂",
+              "correct": false,
+              "rationale": "未手術判準不能直接移用術後。"
+            },
+            {
+              "text": "直接認定修補成功",
+              "correct": false,
+              "rationale": "資料不足也不能保證成功。"
+            },
+            {
+              "text": "先補術式、時間與舊片，評估新形態及液體樣裂隙",
+              "correct": true,
+              "rationale": "術後變化可長期存在，應避免單一徵象下結論。"
+            }
+          ],
+          "reference_ids": [
+            "REF-ADV-POSTOP-MENISCUS-2022",
+            "REF-ADV-SSR-MENISCUS-2026"
+          ],
+          "source_links": [
+            {
+              "title": "既有 ACL graft 訊號與成熟教學",
+              "url": "https://www.youtube.com/watch?v=fAD4ET3aP1Q"
+            },
+            {
+              "title": "既有 ACL graft 失敗徵象教學",
+              "url": "https://www.youtube.com/watch?v=MSyPvjYA_J8"
+            }
+          ]
+        },
+        {
+          "id": "mr-adv-postop-q2",
+          "type": "single",
+          "difficulty": "advanced",
+          "stem": "ACL graft 高訊號而纖維仍連續時，哪項資訊最能改善判讀？",
+          "options": [
+            {
+              "text": "病人看完課程的次數",
+              "correct": false,
+              "rationale": "學習紀錄不是病人的臨床證據。"
+            },
+            {
+              "text": "重建時間、graft 走向及既往變化",
+              "correct": true,
+              "rationale": "成熟與結構完整性需要綜合評估。"
+            },
+            {
+              "text": "只看訊號亮度最大值",
+              "correct": false,
+              "rationale": "亮度不能單獨代表結構失敗。"
+            }
+          ],
+          "reference_ids": [
+            "REF-ADV-POSTOP-MENISCUS-2022",
+            "REF-ADV-SSR-MENISCUS-2026"
+          ],
+          "source_links": [
+            {
+              "title": "既有 ACL graft 訊號與成熟教學",
+              "url": "https://www.youtube.com/watch?v=fAD4ET3aP1Q"
+            },
+            {
+              "title": "既有 ACL graft 失敗徵象教學",
+              "url": "https://www.youtube.com/watch?v=MSyPvjYA_J8"
+            }
+          ]
+        },
+        {
+          "id": "mr-adv-postop-q3",
+          "type": "single",
+          "difficulty": "advanced",
+          "stem": "常規術後 MRI 結論仍不明時，本單元支持哪一種處理？",
+          "options": [
+            {
+              "text": "列明不確定性與缺少資料，由團隊討論進一步評估",
+              "correct": true,
+              "rationale": "必要時可討論其他影像，並保留介入操作界線。"
+            },
+            {
+              "text": "一律自行安排關節內注射以確認",
+              "correct": false,
+              "rationale": "本課不提供注射指令，檢查選擇需個別評估。"
+            },
+            {
+              "text": "報告省略疑問以免影響信心",
+              "correct": false,
+              "rationale": "省略不確定性會妨礙後續判讀與溝通。"
+            }
+          ],
+          "reference_ids": [
+            "REF-ADV-POSTOP-MENISCUS-2022",
+            "REF-ADV-SSR-MENISCUS-2026"
+          ],
+          "source_links": [
+            {
+              "title": "既有 ACL graft 訊號與成熟教學",
+              "url": "https://www.youtube.com/watch?v=fAD4ET3aP1Q"
+            },
+            {
+              "title": "既有 ACL graft 失敗徵象教學",
+              "url": "https://www.youtube.com/watch?v=MSyPvjYA_J8"
+            }
+          ]
+        }
+      ],
+      "practice_case_ids": [
+        "advanced-case-03",
+        "advanced-case-04"
+      ]
+    },
+    {
+      "id": "mr-adv-plc",
+      "name": "ACL 之外的後外側角：結構、變異與報告溝通",
+      "chapter": "MR3",
+      "type": "case",
+      "level": "advanced",
+      "review_status": "draft",
+      "summary": "不在看到 ACL 撕裂後停止搜尋，也不把難以看清的結構硬套進單一名詞。",
+      "objectives": [
+        "追蹤 FCL、膕肌腱及腓骨附著區。",
+        "描述後外側關節囊和股二頭肌腱伴隨所見。",
+        "區分解剖命名爭議與臨床穩定性判斷。"
+      ],
+      "required_views": [
+        "冠狀、矢狀與軸位的膕肌腱/FCL/PFL 區連續切面。",
+        "腓骨頭附著、股二頭肌腱及後外側關節囊；與外傷分布交叉核對。"
+      ],
+      "key_points": [
+        "報告先指出可辨認結構及連續性，不能以區域水腫代替某條韌帶完全撕裂。",
+        "PFL/arcuate 的文獻命名並不一致；用附著位置與形態消除溝通歧義。",
+        "2022 解剖研究主張不同的結構用詞，與影片訪談慣用詞有差異，不能把任一方當成已終結的共識。",
+        "未清楚顯示微小結構時記錄限制；影像所見與理學檢查/臨床不穩須分開說明。"
+      ],
+      "pitfalls": [
+        "在搜尋到 ACL 病灶後停止。",
+        "只寫「arcuate injury」而未指出觀察到的結構。",
+        "從單一解剖研究推論 MRI 診斷效能或需要手術。"
+      ],
+      "reference_ids": [
+        "REF-ADV-PLC-ANATOMY-2022",
+        "REF-ADV-ROOT-RAMP-2023"
+      ],
+      "content_boundary": "新片以專家訪談與用詞討論為主；結合既有 PLC 正常與病理影片，沒有新增術前術後盲測資料集。",
+      "prerequisites": [
+        "mr3-u1",
+        "ch11-u1"
+      ],
+      "assessment": "完成對應兩項進階判讀練習：先寫所見、鑑別、限制及報告，再開啟對照；依項目自評並交由督導針對實際影像回饋。此為課程自訂練習規準，不設臨床合格或認證門檻。",
+      "source_cases": [
+        {
+          "title": "The Most Misunderstood Ligament in Radiology",
+          "url": "https://www.youtube.com/watch?v=IWbyH5oW2yQ",
+          "note": "PLC 結構定位與報告溝通。專家對 arcuate/PFL 用詞的主張與 2022 解剖研究並非完全相同；不將爭議寫成唯一解剖定論。"
+        }
+      ],
+      "questions": [
+        {
+          "id": "mr-adv-plc-q1",
+          "type": "single",
+          "difficulty": "advanced",
+          "stem": "後外側角有水腫，但小韌帶無法清楚追蹤，最適合寫什麼？",
+          "options": [
+            {
+              "text": "arcuate ligament 完全斷裂",
+              "correct": false,
+              "rationale": "區域水腫不足以證實特定結構完全撕裂。"
+            },
+            {
+              "text": "全部正常",
+              "correct": false,
+              "rationale": "顯示限制也不支持全面排除。"
+            },
+            {
+              "text": "描述區域所見、可追蹤結構及顯示限制",
+              "correct": true,
+              "rationale": "未顯示不等於中斷；應描述證據層級。"
+            }
+          ],
+          "reference_ids": [
+            "REF-ADV-PLC-ANATOMY-2022",
+            "REF-ADV-ROOT-RAMP-2023"
+          ],
+          "source_links": [
+            {
+              "title": "The Most Misunderstood Ligament in Radiology",
+              "url": "https://www.youtube.com/watch?v=IWbyH5oW2yQ"
+            }
+          ]
+        },
+        {
+          "id": "mr-adv-plc-q2",
+          "type": "single",
+          "difficulty": "advanced",
+          "stem": "影片與 2022 解剖研究使用不同命名，應如何整合？",
+          "options": [
+            {
+              "text": "直接將屍體研究當 MRI 診斷效能",
+              "correct": false,
+              "rationale": "解剖研究不測量臨床 MRI 診斷效能。"
+            },
+            {
+              "text": "保留爭議，使用附著位置與形態描述",
+              "correct": true,
+              "rationale": "解剖/臨床慣用詞不一致時需讓報告可理解。"
+            },
+            {
+              "text": "直接將影片當唯一命名標準",
+              "correct": false,
+              "rationale": "專家訪談不能自行終結學術爭議。"
+            }
+          ],
+          "reference_ids": [
+            "REF-ADV-PLC-ANATOMY-2022",
+            "REF-ADV-ROOT-RAMP-2023"
+          ],
+          "source_links": [
+            {
+              "title": "The Most Misunderstood Ligament in Radiology",
+              "url": "https://www.youtube.com/watch?v=IWbyH5oW2yQ"
+            }
+          ]
+        },
+        {
+          "id": "mr-adv-plc-q3",
+          "type": "single",
+          "difficulty": "advanced",
+          "stem": "看到 ACL 撕裂後，下一個合理的搜尋步驟？",
+          "options": [
+            {
+              "text": "檢查周邊半月板與 PLC 等伴隨結構",
+              "correct": true,
+              "rationale": "主要病灶不應終止系統性搜尋。"
+            },
+            {
+              "text": "停止，因已找到疼痛原因",
+              "correct": false,
+              "rationale": "找到一處病灶不代表其他結構完整或因果已確定。"
+            },
+            {
+              "text": "只補一個分類號",
+              "correct": false,
+              "rationale": "分類不會補足尚未評估的結構。"
+            }
+          ],
+          "reference_ids": [
+            "REF-ADV-PLC-ANATOMY-2022",
+            "REF-ADV-ROOT-RAMP-2023"
+          ],
+          "source_links": [
+            {
+              "title": "The Most Misunderstood Ligament in Radiology",
+              "url": "https://www.youtube.com/watch?v=IWbyH5oW2yQ"
+            }
+          ]
+        }
+      ],
+      "practice_case_ids": [
+        "advanced-case-05",
+        "advanced-case-06"
+      ]
+    },
+    {
+      "id": "mr-adv-cartilage",
+      "name": "軟骨修復後 MRI：縱向比較與形態學報告",
+      "chapter": "MR3",
+      "type": "case",
+      "level": "advanced",
+      "review_status": "draft",
+      "summary": "用同一病例不同時間点，辨別修復組織演變與值得注意的新變化。",
+      "objectives": [
+        "記錄術式、時間、填補與邊缘整合。",
+        "分開評估軟骨表面和軟骨下骨板。",
+        "比較新發或加劇的變化，避免單一訊號決定臨床失敗。"
+      ],
+      "required_views": [
+        "同部位矢狀/冠狀高解析流體敏感序列；相同平面既往影像。",
+        "修復區、相鄰原生軟骨、供區與軟骨下骨；必要時對照 X 光/CT 已有資料。"
+      ],
+      "key_points": [
+        "填補程度、整合、表面、訊號與軟骨下骨是可重複描述的項目。",
+        "部分填補及水腫樣訊號的意義需納入術式、時間與變化趨勢。",
+        "新發液體界面、分層、明顯缺損、骨性增生或塌陷需具體描述並與臨床整合。",
+        "X 光所見骨板高低差不等於軟骨表面不平；MRI 可補充軟骨層觀察。",
+        "MOCART 是形態學評分工具；學習項目有助報告，不把分數當作症狀、復原或返回運動的保證。"
+      ],
+      "pitfalls": [
+        "把六個月或一年當所有術式固定成熟截止日。",
+        "把研究評分直接寫成病人臨床成功認證。",
+        "只看水腫，漏看表面、界面、供區與骨板。"
+      ],
+      "reference_ids": [
+        "REF-ADV-MOCART-2021"
+      ],
+      "content_boundary": "主要教學證據為 SSR 2025 Alaia 原始病例講座；課程只摘影像段。手術方式僅為判讀所需背景，不提供操作與選術指令。",
+      "prerequisites": [
+        "mr3-u2"
+      ],
+      "assessment": "完成對應兩項進階判讀練習：先寫所見、鑑別、限制及報告，再開啟對照；依項目自評並交由督導針對實際影像回饋。此為課程自訂練習規準，不設臨床合格或認證門檻。",
+      "source_cases": [
+        {
+          "title": "SSR Resident Education Club - Knee Chondral Resurfacing",
+          "url": "https://www.youtube.com/watch?v=tx7MI889hCg",
+          "note": "只取軟骨修復後 MRI 比較與形態學描述；排除手術步驟、術式選擇、成本比較與治療建議。"
+        },
+        {
+          "title": "MOCART 2.0 原始圖譜",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8725373/",
+          "note": "連結原圖譜，未重製圖片或完整評分表。"
+        }
+      ],
+      "questions": [
+        {
+          "id": "mr-adv-cartilage-q1",
+          "type": "single",
+          "difficulty": "advanced",
+          "stem": "同一修復區八個月外觀良好，一年出現新的水腫樣訊號，應如何描述？",
+          "options": [
+            {
+              "text": "術後水腫一律正常",
+              "correct": false,
+              "rationale": "不能忽略新出現或明顯增加的變化。"
+            },
+            {
+              "text": "單憑水腫保證臨床失敗",
+              "correct": false,
+              "rationale": "影像仍需結合其他結構與臨床資料。"
+            },
+            {
+              "text": "記錄新變化並檢查表面、界面與軟骨下骨",
+              "correct": true,
+              "rationale": "縱向改變比固定時間門檻更能提示需重新評估的所見。"
+            }
+          ],
+          "reference_ids": [
+            "REF-ADV-MOCART-2021"
+          ],
+          "source_links": [
+            {
+              "title": "SSR Resident Education Club - Knee Chondral Resurfacing",
+              "url": "https://www.youtube.com/watch?v=tx7MI889hCg"
+            },
+            {
+              "title": "MOCART 2.0 原始圖譜",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8725373/"
+            }
+          ]
+        },
+        {
+          "id": "mr-adv-cartilage-q2",
+          "type": "single",
+          "difficulty": "advanced",
+          "stem": "X 光顯示移植物骨板高低差，MRI 顯示軟骨表面平順，最合宜的推理？",
+          "options": [
+            {
+              "text": "MRI 平順就不需任何臨床資料",
+              "correct": false,
+              "rationale": "影像所見仍需放在術式、時間和症狀脈絡。"
+            },
+            {
+              "text": "確認軟骨厚度與供受區幾何差異，不直接等同突出失敗",
+              "correct": true,
+              "rationale": "原講座示範骨板差異與軟骨表面可不一致。"
+            },
+            {
+              "text": "X 光一張就可確定移植物退出",
+              "correct": false,
+              "rationale": "需要評估實際關節面及其他影像。"
+            }
+          ],
+          "reference_ids": [
+            "REF-ADV-MOCART-2021"
+          ],
+          "source_links": [
+            {
+              "title": "SSR Resident Education Club - Knee Chondral Resurfacing",
+              "url": "https://www.youtube.com/watch?v=tx7MI889hCg"
+            },
+            {
+              "title": "MOCART 2.0 原始圖譜",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8725373/"
+            }
+          ]
+        },
+        {
+          "id": "mr-adv-cartilage-q3",
+          "type": "single",
+          "difficulty": "advanced",
+          "stem": "MOCART 形態學評分最適合如何用於本課？",
+          "options": [
+            {
+              "text": "練習逐項描述修復組織，另行評估症狀與功能",
+              "correct": true,
+              "rationale": "形態學評分與臨床結果不是同一件事。"
+            },
+            {
+              "text": "高分即可授予返回運動許可",
+              "correct": false,
+              "rationale": "此分數不是回場認證。"
+            },
+            {
+              "text": "分數低就直接指定手術",
+              "correct": false,
+              "rationale": "單一評分不構成個別治療決策。"
+            }
+          ],
+          "reference_ids": [
+            "REF-ADV-MOCART-2021"
+          ],
+          "source_links": [
+            {
+              "title": "SSR Resident Education Club - Knee Chondral Resurfacing",
+              "url": "https://www.youtube.com/watch?v=tx7MI889hCg"
+            },
+            {
+              "title": "MOCART 2.0 原始圖譜",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8725373/"
+            }
+          ]
+        }
+      ],
+      "practice_case_ids": [
+        "advanced-case-07",
+        "advanced-case-08"
+      ]
+    },
+    {
+      "id": "mr-adv-subchondral",
+      "name": "骨髓水腫樣訊號：SIF、SIF-ON 與其他鑑別",
+      "chapter": "MR3",
+      "type": "case",
+      "level": "advanced",
+      "review_status": "draft",
+      "summary": "由非特異性訊號出發，尋找骨折線、軟骨下區域和關節面變化。",
+      "objectives": [
+        "區分徵象名稱與病因診斷。",
+        "比較軟骨下低訊號帶、骨板與塌陷。",
+        "把根部/外擠等伴隨所見整合至報告。"
+      ],
+      "required_views": [
+        "T1 與流體敏感序列，至少兩平面確認承重區、軟骨下骨板及病灶邊界。",
+        "X 光與可得舊 MRI；對照病史、外傷機轉及負荷情境。"
+      ],
+      "key_points": [
+        "BME-like signal 是徵象，可見於多種病變，不能一律叫挫傷或骨壞死。",
+        "SIF 與合併骨壞死的 SIF-ON 需結合軟骨下區訊號、形態與關節面完整性判斷。",
+        "軟骨下低流體敏感訊號的範圍可提供預後線索；不要直接拿文獻尺寸作個別治療指令。",
+        "同時描述半月板根部、外擠、軟骨與骨板；區分已見、可疑與無法確認的發現。",
+        "系統性骨壞死、OCD、負荷/創傷相關病灶需以分布、邊界、年齡與病史鑑別，單靠水腫大小不足。"
+      ],
+      "pitfalls": [
+        "X 光無異常就排除早期軟骨下病變。",
+        "沿用 SONK 舊稱卻沒指出實際所見。",
+        "把共同發現說成已證實的疼痛因果。"
+      ],
+      "reference_ids": [
+        "REF-ADV-SIF-2023"
+      ],
+      "content_boundary": "新片只演示一個 SIF 相關病例；鑑別圖譜連結到 2023 原文，尚無完整連續 DICOM 測驗。",
+      "prerequisites": [
+        "mr3-u2",
+        "ch9-u1"
+      ],
+      "assessment": "完成對應兩項進階判讀練習：先寫所見、鑑別、限制及報告，再開啟對照；依項目自評並交由督導針對實際影像回饋。此為課程自訂練習規準，不設臨床合格或認證門檻。",
+      "source_cases": [
+        {
+          "title": "Knee MRI - Meniscocapsular Separation and Subchondral Insufficiency Fracture (SIF)",
+          "url": "https://www.youtube.com/watch?v=Ehw_vGnDEBg",
+          "note": "僅取軟骨/軟骨下骨和伴隨根部異常的影像片段。排除早段不當玩笑、未量測估算、治療指令與過度概括；舊 subcortical 名詞以文獻的 subchondral 更新。"
+        }
+      ],
+      "questions": [
+        {
+          "id": "mr-adv-subchondral-q1",
+          "type": "single",
+          "difficulty": "advanced",
+          "stem": "承重區有廣泛 BME-like signal，第一步最有價值的是？",
+          "options": [
+            {
+              "text": "一律稱為骨挫傷",
+              "correct": false,
+              "rationale": "SIF 等病變也可有類似訊號。"
+            },
+            {
+              "text": "一律稱為骨壞死",
+              "correct": false,
+              "rationale": "水腫本身不證實骨壞死。"
+            },
+            {
+              "text": "跨序列/平面找軟骨下低訊號、骨板與塌陷",
+              "correct": true,
+              "rationale": "水腫樣訊號非特異，需進一步尋找結構線索。"
+            }
+          ],
+          "reference_ids": [
+            "REF-ADV-SIF-2023"
+          ],
+          "source_links": [
+            {
+              "title": "Knee MRI - Meniscocapsular Separation and Subchondral Insufficiency Fracture (SIF)",
+              "url": "https://www.youtube.com/watch?v=Ehw_vGnDEBg"
+            }
+          ]
+        },
+        {
+          "id": "mr-adv-subchondral-q2",
+          "type": "single",
+          "difficulty": "advanced",
+          "stem": "關於 SIF 與 SIF-ON，哪項陳述較合宜？",
+          "options": [
+            {
+              "text": "單一文獻尺寸可直接決定每位病人的手術",
+              "correct": false,
+              "rationale": "預後線索不可直接當個別治療指令。"
+            },
+            {
+              "text": "比較軟骨下區訊號、範圍及關節面完整性",
+              "correct": true,
+              "rationale": "需綜合多項影像所見與時間演變。"
+            },
+            {
+              "text": "兩者都只要看水腫面積",
+              "correct": false,
+              "rationale": "水腫面積不足以分辨。"
+            }
+          ],
+          "reference_ids": [
+            "REF-ADV-SIF-2023"
+          ],
+          "source_links": [
+            {
+              "title": "Knee MRI - Meniscocapsular Separation and Subchondral Insufficiency Fracture (SIF)",
+              "url": "https://www.youtube.com/watch?v=Ehw_vGnDEBg"
+            }
+          ]
+        },
+        {
+          "id": "mr-adv-subchondral-q3",
+          "type": "single",
+          "difficulty": "advanced",
+          "stem": "根部異常、外擠與軟骨下變化同時出現，報告應如何處理？",
+          "options": [
+            {
+              "text": "逐項描述並結合病史，避免把共存當已證實因果",
+              "correct": true,
+              "rationale": "相關發現有助整合但不直接證明個別疼痛機制。"
+            },
+            {
+              "text": "只報根部，忽略骨板",
+              "correct": false,
+              "rationale": "可能漏掉影響判讀的伴隨病變。"
+            },
+            {
+              "text": "三者共存即可證明唯一疼痛來源",
+              "correct": false,
+              "rationale": "共存本身無法證明唯一因果。"
+            }
+          ],
+          "reference_ids": [
+            "REF-ADV-SIF-2023"
+          ],
+          "source_links": [
+            {
+              "title": "Knee MRI - Meniscocapsular Separation and Subchondral Insufficiency Fracture (SIF)",
+              "url": "https://www.youtube.com/watch?v=Ehw_vGnDEBg"
+            }
+          ]
+        }
+      ],
+      "practice_case_ids": [
+        "advanced-case-09",
+        "advanced-case-10"
+      ]
+    },
+    {
+      "id": "us-adv-nerve",
+      "name": "足下垂與後外側痛：腓總神經、囊腫與腫塊",
+      "chapter": "US3",
+      "type": "case",
+      "level": "advanced",
+      "review_status": "draft",
+      "summary": "結合正常神經連續追蹤、病理病例和 US/MRI 對照，處理影像與症狀不一致。",
+      "objectives": [
+        "沿神經全程定位增粗、囊性或實質性變化。",
+        "說明近端脛腓關節與神經關節支的可能連通。",
+        "區分診斷定位、病理確認與預後推論。"
+      ],
+      "required_views": [
+        "短軸連續追蹤坐骨神經分支、腓骨頭/頸及腓骨長肌下方；長軸核對。",
+        "記錄神經束形態、局部增粗、鄰近腫塊及關節支；必要時用高解析 MRI 補充。"
+      ],
+      "key_points": [
+        "正常追蹤片提供地圖；病理需獨立比對束狀結構、壓迫點及腫塊。",
+        "神經內囊腫可能很小，高解析 US/MRI 個案可展示關節支與關節連通。",
+        "神經連續的低回音腫塊不等於囊腫；神經鞘腫瘤等鑑別需進一步評估，不能以回音定組織型態。",
+        "2024 研究中的神經 CSA 與訊號未能預測恢復，不能用尺寸承諾預後。",
+        "影像定位需與感覺、肌力、電生理及近端病因評估整合；單一正常影像不能涵蓋足下垂所有原因。"
+      ],
+      "pitfalls": [
+        "只掃疼痛點或腓骨頸一張圖。",
+        "把所有後膝腫塊標成 Baker cyst。",
+        "將機器/位置特定 CSA 門檻套在每個人。"
+      ],
+      "reference_ids": [
+        "REF-ADV-NERVE-2024",
+        "REF-ADV-GANGLION-2022"
+      ],
+      "content_boundary": "Iriarte 是正常地圖；Boggess 是神經鞘腫塊病例；神經內囊腫由 2022 原始 US/MRI 病例補充，不宣稱影片已演示該囊腫。",
+      "prerequisites": [
+        "ch4-u1",
+        "ch5-u1"
+      ],
+      "assessment": "完成對應兩項進階判讀練習：先寫所見、鑑別、限制及報告，再開啟對照；依項目自評並交由督導針對實際影像回饋。此為課程自訂練習規準，不設臨床合格或認證門檻。",
+      "source_cases": [
+        {
+          "title": "LOWER LIMB NERVES ULTRASOUND (PART II) | Common Peroneal Nerve to Foot – Anatomy & Scan",
+          "url": "https://www.youtube.com/watch?v=wnw3GqKR370",
+          "note": "膝後至腓骨頸的正常神經追蹤，供病理病例比較；本片不是神經內囊腫病例。排除足踝段及介入定位。"
+        },
+        {
+          "title": "Posterior Knee with Dr. Blake Boggess | AMSSM Sports Ultrasound Case Presentation",
+          "url": "https://www.youtube.com/watch?v=zRm8SOwtjXA",
+          "note": "後膝腫塊的替代診斷：鈣化血管、神經鞘腫瘤與人工膝關節後神經彈響。排除抽吸/注射/水分離/收費內容；專家病例不等於一般族群效能。"
+        }
+      ],
+      "questions": [
+        {
+          "id": "us-adv-nerve-q1",
+          "type": "single",
+          "difficulty": "advanced",
+          "stem": "腓總神經連續追蹤時發現局部低回音腫塊，應如何整理報告？",
+          "options": [
+            {
+              "text": "直接寫 Baker cyst",
+              "correct": false,
+              "rationale": "位置及神經連續性不支持一概而論。"
+            },
+            {
+              "text": "直接寫良性神經鞘瘤",
+              "correct": false,
+              "rationale": "影像不能單獨確定病理型態與良惡性。"
+            },
+            {
+              "text": "描述束狀結構、神經連續性與腫塊，保留囊腫/實質性鑑別",
+              "correct": true,
+              "rationale": "單憑回音無法決定組織學型態。"
+            }
+          ],
+          "reference_ids": [
+            "REF-ADV-NERVE-2024",
+            "REF-ADV-GANGLION-2022"
+          ],
+          "source_links": [
+            {
+              "title": "LOWER LIMB NERVES ULTRASOUND (PART II) | Common Peroneal Nerve to Foot – Anatomy & Scan",
+              "url": "https://www.youtube.com/watch?v=wnw3GqKR370"
+            },
+            {
+              "title": "Posterior Knee with Dr. Blake Boggess | AMSSM Sports Ultrasound Case Presentation",
+              "url": "https://www.youtube.com/watch?v=zRm8SOwtjXA"
+            }
+          ]
+        },
+        {
+          "id": "us-adv-nerve-q2",
+          "type": "single",
+          "difficulty": "advanced",
+          "stem": "一次檢查未見神經內囊腫，但症狀與定位疑慮仍在，應如何描述？",
+          "options": [
+            {
+              "text": "自動判定症狀為心理因素",
+              "correct": false,
+              "rationale": "影像陰性不構成此推論。"
+            },
+            {
+              "text": "記錄解析度/追蹤範圍限制，考慮進一步高解析評估",
+              "correct": true,
+              "rationale": "原病例顯示小囊腫及關節支可不易辨認。"
+            },
+            {
+              "text": "保證排除任何囊腫",
+              "correct": false,
+              "rationale": "一次陰性結果不能涵蓋所有微小病變。"
+            }
+          ],
+          "reference_ids": [
+            "REF-ADV-NERVE-2024",
+            "REF-ADV-GANGLION-2022"
+          ],
+          "source_links": [
+            {
+              "title": "LOWER LIMB NERVES ULTRASOUND (PART II) | Common Peroneal Nerve to Foot – Anatomy & Scan",
+              "url": "https://www.youtube.com/watch?v=wnw3GqKR370"
+            },
+            {
+              "title": "Posterior Knee with Dr. Blake Boggess | AMSSM Sports Ultrasound Case Presentation",
+              "url": "https://www.youtube.com/watch?v=zRm8SOwtjXA"
+            }
+          ]
+        },
+        {
+          "id": "us-adv-nerve-q3",
+          "type": "single",
+          "difficulty": "advanced",
+          "stem": "2024 神經影像研究可支持哪一種結論？",
+          "options": [
+            {
+              "text": "影像可協助定位，但 CSA/訊號不能單獨預測恢復",
+              "correct": true,
+              "rationale": "該研究的影像參數未能預測恢復。"
+            },
+            {
+              "text": "神經越粗就必定越晚回場",
+              "correct": false,
+              "rationale": "研究不能提供此個人預測。"
+            },
+            {
+              "text": "正常 MRI 即可排除所有足下垂病因",
+              "correct": false,
+              "rationale": "足下垂鑑別需臨床、電生理及適當影像整合。"
+            }
+          ],
+          "reference_ids": [
+            "REF-ADV-NERVE-2024",
+            "REF-ADV-GANGLION-2022"
+          ],
+          "source_links": [
+            {
+              "title": "LOWER LIMB NERVES ULTRASOUND (PART II) | Common Peroneal Nerve to Foot – Anatomy & Scan",
+              "url": "https://www.youtube.com/watch?v=wnw3GqKR370"
+            },
+            {
+              "title": "Posterior Knee with Dr. Blake Boggess | AMSSM Sports Ultrasound Case Presentation",
+              "url": "https://www.youtube.com/watch?v=zRm8SOwtjXA"
+            }
+          ]
+        }
+      ],
+      "practice_case_ids": [
+        "advanced-case-11",
+        "advanced-case-12"
+      ]
+    },
+    {
+      "id": "us-adv-dynamic",
+      "name": "動態彈響與假陰性：從動作同步到可重複紀錄",
+      "chapter": "US3",
+      "type": "case",
+      "level": "advanced",
+      "review_status": "draft",
+      "summary": "用正常/異常 cine 對照，練習區分可見位移、症狀同步與尚未證實的因果。",
+      "objectives": [
+        "比較患側與正常側的相同動作。",
+        "記錄角度、姿勢、施力、探頭壓力與症狀同步。",
+        "說明陰性動態掃描及 Doppler 的限制。"
+      ],
+      "required_views": [
+        "短軸定位後連續記錄屈伸，保留動作與症狀時間關係；長軸核對組織。",
+        "以相同設定比較側別，避免探頭壓力阻止彈響；資料不足就列待督導。"
+      ],
+      "key_points": [
+        "2017 原始病例的鵝足肌腱彈響及對側正常 cine 可直接比較，不以靜態圖替代動態。",
+        "Boggess 的神經彈響來自人工關節後個案，不能推成所有運動員外側痛的常見機轉。",
+        "PTFJ 小型研究需保留髖膝角度與施力條件，研究閾值不是普遍診斷標準。",
+        "未重現症狀可能與姿勢/施力/探頭壓迫有關；報告記錄實際測試範圍。",
+        "Doppler 無訊號可能受儀器與慢速流敏感度影響；不能單憑陰性 Doppler 宣告無血流或安全穿刺。"
+      ],
+      "pitfalls": [
+        "看到組織移動就認定是疼痛原因。",
+        "只有靜態掃描卻寫排除動態問題。",
+        "把神經彈響、鵝足、ITB 和 PTFJ 的病例混為同一病因。"
+      ],
+      "reference_ids": [
+        "REF-ADV-SNAPPING-2017",
+        "REF-ADV-PTFJ-2021",
+        "REF-ADV-DOPPLER-2013"
+      ],
+      "content_boundary": "新增真實神經彈響與源站鵝足 cine；仍缺已核對的跑者 ITB/股二頭肌腱完整動態病例及現場操作驗收。",
+      "prerequisites": [
+        "us-sport-snapping",
+        "ch1-u1"
+      ],
+      "assessment": "完成對應兩項進階判讀練習：先寫所見、鑑別、限制及報告，再開啟對照；依項目自評並交由督導針對實際影像回饋。此為課程自訂練習規準，不設臨床合格或認證門檻。",
+      "source_cases": [
+        {
+          "title": "Posterior Knee with Dr. Blake Boggess | AMSSM Sports Ultrasound Case Presentation",
+          "url": "https://www.youtube.com/watch?v=zRm8SOwtjXA",
+          "note": "後膝腫塊的替代診斷：鈣化血管、神經鞘腫瘤與人工膝關節後神經彈響。排除抽吸/注射/水分離/收費內容；專家病例不等於一般族群效能。"
+        },
+        {
+          "title": "Snapping pes：原期刊的異常與正常側 cine",
+          "url": "https://clinicalimagingscience.org/snapping-pes-anserinus-and-the-diagnostic-utility-of-dynamic-ultrasound/",
+          "note": "觀看 Supplemental Video 1/2；原文含治療病例經過，本課只用診斷影像。"
+        }
+      ],
+      "questions": [
+        {
+          "id": "us-adv-dynamic-q1",
+          "type": "single",
+          "difficulty": "advanced",
+          "stem": "看到肌腱滑動時，要將它連結到症狀，還缺什麼？",
+          "options": [
+            {
+              "text": "只需截一張圖",
+              "correct": false,
+              "rationale": "靜態圖無法證明動作時序。"
+            },
+            {
+              "text": "只需放大影片",
+              "correct": false,
+              "rationale": "放大不會補足臨床對照。"
+            },
+            {
+              "text": "相同動作下的症狀同步、重現性與對照",
+              "correct": true,
+              "rationale": "生理性滑移與症狀性彈響需要區分。"
+            }
+          ],
+          "reference_ids": [
+            "REF-ADV-SNAPPING-2017",
+            "REF-ADV-PTFJ-2021",
+            "REF-ADV-DOPPLER-2013"
+          ],
+          "source_links": [
+            {
+              "title": "Posterior Knee with Dr. Blake Boggess | AMSSM Sports Ultrasound Case Presentation",
+              "url": "https://www.youtube.com/watch?v=zRm8SOwtjXA"
+            },
+            {
+              "title": "Snapping pes：原期刊的異常與正常側 cine",
+              "url": "https://clinicalimagingscience.org/snapping-pes-anserinus-and-the-diagnostic-utility-of-dynamic-ultrasound/"
+            }
+          ]
+        },
+        {
+          "id": "us-adv-dynamic-q2",
+          "type": "single",
+          "difficulty": "advanced",
+          "stem": "PTFJ 研究中的距離變化閾值應如何使用？",
+          "options": [
+            {
+              "text": "讓學員自行用力扭膝驗證",
+              "correct": false,
+              "rationale": "本課不是個人自我壓力測試指引。"
+            },
+            {
+              "text": "保留施力、姿勢與研究族群限制",
+              "correct": true,
+              "rationale": "這是條件特定的小型研究結果。"
+            },
+            {
+              "text": "套在任意角度和所有病人",
+              "correct": false,
+              "rationale": "掃描條件與族群不同會影響可比性。"
+            }
+          ],
+          "reference_ids": [
+            "REF-ADV-SNAPPING-2017",
+            "REF-ADV-PTFJ-2021",
+            "REF-ADV-DOPPLER-2013"
+          ],
+          "source_links": [
+            {
+              "title": "Posterior Knee with Dr. Blake Boggess | AMSSM Sports Ultrasound Case Presentation",
+              "url": "https://www.youtube.com/watch?v=zRm8SOwtjXA"
+            },
+            {
+              "title": "Snapping pes：原期刊的異常與正常側 cine",
+              "url": "https://clinicalimagingscience.org/snapping-pes-anserinus-and-the-diagnostic-utility-of-dynamic-ultrasound/"
+            }
+          ]
+        },
+        {
+          "id": "us-adv-dynamic-q3",
+          "type": "single",
+          "difficulty": "advanced",
+          "stem": "腫塊 Doppler 沒有訊號，最合理的描述？",
+          "options": [
+            {
+              "text": "在記錄設定與技術限制下描述未偵測到訊號",
+              "correct": true,
+              "rationale": "儀器對慢速流敏感度有限，未偵測不等於不存在。"
+            },
+            {
+              "text": "可保證無血流",
+              "correct": false,
+              "rationale": "陰性 Doppler 不能作這種保證。"
+            },
+            {
+              "text": "因此可直接穿刺",
+              "correct": false,
+              "rationale": "不能以單一 Doppler 結果作介入安全判斷。"
+            }
+          ],
+          "reference_ids": [
+            "REF-ADV-SNAPPING-2017",
+            "REF-ADV-PTFJ-2021",
+            "REF-ADV-DOPPLER-2013"
+          ],
+          "source_links": [
+            {
+              "title": "Posterior Knee with Dr. Blake Boggess | AMSSM Sports Ultrasound Case Presentation",
+              "url": "https://www.youtube.com/watch?v=zRm8SOwtjXA"
+            },
+            {
+              "title": "Snapping pes：原期刊的異常與正常側 cine",
+              "url": "https://clinicalimagingscience.org/snapping-pes-anserinus-and-the-diagnostic-utility-of-dynamic-ultrasound/"
+            }
+          ]
+        }
+      ],
+      "practice_case_ids": [
+        "advanced-case-13",
+        "advanced-case-14"
+      ]
+    }
+  ],
+  "selected_videos": [
+    {
+      "video_id": "_iCPhaLtJCI",
+      "url": "https://www.youtube.com/watch?v=_iCPhaLtJCI",
+      "title": "Spotting Radial Meniscus Tears on MRI (MSK Quick Tip)",
+      "presenter": "PD Dr. med. Christoph Agten",
+      "channel": "Dr Christoph Agten",
+      "upload_date": "20211205",
+      "duration_seconds": 189,
+      "availability": "public",
+      "playable_in_embed": true,
+      "module_ids": [
+        "mr-adv-meniscus"
+      ],
+      "review_status": "draft",
+      "caption_kind": "英文自動字幕，2026-09-08 實際取得並核對選段；專有名詞採標準拼寫",
+      "qualification_evidence_url": "https://www.agten.org/about",
+      "qualification_scope": "官方醫師或本人專業履歷；頻道/影片描述及開場對照講者身分",
+      "source_originality": "原始學會或具名專業講者頻道，yt-dlp metadata 實查",
+      "review_method": "主代理讀取選段英文字幕、核對主題與前後邊界；未完成全片逐影格視聽與串流播放驗收。維持草稿。",
+      "classic_reason": "2021-08-01 之後上傳",
+      "scope_note": "軸位補看 radial、複合移位 flap 與後角近根部病例；不以單一切面作診斷。",
+      "contains_intervention": false,
+      "intervention_scan_status": "只開放下列診斷片段；原片其他內容不屬本課練習",
+      "diagnostic_ranges": [
+        [
+          16,
+          91
+        ],
+        [
+          93,
+          124
+        ],
+        [
+          126,
+          161
+        ]
+      ],
+      "segments": [
+        {
+          "start": 16,
+          "end": 91,
+          "title": "Radial tear 與部分容積對照",
+          "summary": "先辨認正常自由緣的部分容積變化，再尋找局灶中斷。",
+          "detail": [
+            "先辨認正常自由緣的部分容積變化，再尋找局灶中斷。"
+          ]
+        },
+        {
+          "start": 93,
+          "end": 124,
+          "title": "複合裂隙與移位 flap",
+          "summary": "用軸位補充放射狀及縱向成分、向內折疊的碎片。",
+          "detail": [
+            "用軸位補充放射狀及縱向成分、向內折疊的碎片。"
+          ]
+        },
+        {
+          "start": 126,
+          "end": 161,
+          "title": "後角近根部中斷",
+          "summary": "追蹤後角到根部過渡區，與其他平面相互核對。",
+          "detail": [
+            "追蹤後角到根部過渡區，與其他平面相互核對。"
+          ]
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-09-08",
+        "metadata_sha256": "1c61253a5cd6df0866364ce3a81700709498e3796eb09ad76d7723b2abb00a85",
+        "caption_sha256": "4123b44d7a7264809ab689b55b739cc1300dfab1d3442be20394ccef82b2ae5b",
+        "caption_kind": "en-orig automatic",
+        "actual_stream_playback": "2026-09-08 headless Chrome: no decoded frame obtained; embed timeout. Availability not disproved; real playback unverified.",
+        "browser_result": {
+          "id": "_iCPhaLtJCI",
+          "error": "frame.waitForFunction: Timeout 20000ms exceeded."
+        }
+      },
+      "purpose": "軸位補看 radial、複合移位 flap 與後角近根部病例；不以單一切面作診斷。"
+    },
+    {
+      "video_id": "CVGEdU2M2KY",
+      "url": "https://www.youtube.com/watch?v=CVGEdU2M2KY",
+      "title": "Ramp lesions on knee MRI",
+      "presenter": "PD Dr. med. Christoph Agten",
+      "channel": "Dr Christoph Agten",
+      "upload_date": "20200422",
+      "duration_seconds": 642,
+      "availability": "public",
+      "playable_in_embed": true,
+      "module_ids": [
+        "mr-adv-meniscus"
+      ],
+      "review_status": "draft",
+      "caption_kind": "英文自動字幕，2026-09-08 實際取得並核對選段；專有名詞採標準拼寫",
+      "qualification_evidence_url": "https://www.agten.org/about",
+      "qualification_scope": "官方醫師或本人專業履歷；頻道/影片描述及開場對照講者身分",
+      "source_originality": "原始學會或具名專業講者頻道，yt-dlp metadata 實查",
+      "review_method": "主代理讀取選段英文字幕、核對主題與前後邊界；未完成全片逐影格視聽與串流播放驗收。維持草稿。",
+      "classic_reason": "2020 多病例含正常對照與隱匿損傷；搭配 2023 綜述與 2026 SSR 描述式用詞更新。",
+      "scope_note": "正常隱窩、meniscotibial 與 meniscocapsular 附著對照；只取 MRI 病例，不教關節鏡操作。",
+      "contains_intervention": false,
+      "intervention_scan_status": "只開放下列診斷片段；原片其他內容不屬本課練習",
+      "diagnostic_ranges": [
+        [
+          76,
+          104
+        ],
+        [
+          282,
+          334
+        ],
+        [
+          340,
+          422
+        ],
+        [
+          470,
+          537
+        ]
+      ],
+      "segments": [
+        {
+          "start": 76,
+          "end": 104,
+          "title": "正常隱窩對照",
+          "summary": "ACL 損傷病例仍可見保留的周邊附著，不能把正常隱窩視為撕裂。",
+          "detail": [
+            "ACL 損傷病例仍可見保留的周邊附著，不能把正常隱窩視為撕裂。"
+          ]
+        },
+        {
+          "start": 282,
+          "end": 334,
+          "title": "積液下的附著解剖",
+          "summary": "比較關節囊、meniscocapsular 與 meniscotibial 結構。",
+          "detail": [
+            "比較關節囊、meniscocapsular 與 meniscotibial 結構。"
+          ]
+        },
+        {
+          "start": 340,
+          "end": 422,
+          "title": "周邊附著中斷病例",
+          "summary": "依連續切面追蹤骨片、韌帶與半月板碎片，寫清楚可見和無法確認的部分。",
+          "detail": [
+            "依連續切面追蹤骨片、韌帶與半月板碎片，寫清楚可見和無法確認的部分。"
+          ]
+        },
+        {
+          "start": 470,
+          "end": 537,
+          "title": "軸位追蹤周邊裂隙",
+          "summary": "將矢狀位的周邊異常與軸位範圍對照，不只填分類號。",
+          "detail": [
+            "將矢狀位的周邊異常與軸位範圍對照，不只填分類號。"
+          ]
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-09-08",
+        "metadata_sha256": "f0d491e14c1b08bc8f4e259995c95671d72a18358f3538dad8243956f26421d4",
+        "caption_sha256": "207e90cb68af0f9b02c0cc14375e5b8c1c55eac89648b20c8586e95bf4ffd99e",
+        "caption_kind": "en-orig automatic",
+        "actual_stream_playback": "2026-09-08 headless Chrome: no decoded frame obtained; embed timeout. Availability not disproved; real playback unverified.",
+        "browser_result": {
+          "id": "CVGEdU2M2KY",
+          "error": "frame.waitForFunction: Timeout 20000ms exceeded."
+        }
+      },
+      "purpose": "正常隱窩、meniscotibial 與 meniscocapsular 附著對照；只取 MRI 病例，不教關節鏡操作。"
+    },
+    {
+      "video_id": "IWbyH5oW2yQ",
+      "url": "https://www.youtube.com/watch?v=IWbyH5oW2yQ",
+      "title": "The Most Misunderstood Ligament in Radiology",
+      "presenter": "PD Dr. med. Christoph Agten；Robert F. LaPrade, MD, PhD",
+      "channel": "Dr Christoph Agten",
+      "upload_date": "20250228",
+      "duration_seconds": 840,
+      "availability": "public",
+      "playable_in_embed": true,
+      "module_ids": [
+        "mr-adv-plc"
+      ],
+      "review_status": "draft",
+      "caption_kind": "英文自動字幕，2026-09-08 實際取得並核對選段；專有名詞採標準拼寫",
+      "qualification_evidence_url": "https://www.agten.org/about",
+      "qualification_scope": "官方醫師或本人專業履歷；頻道/影片描述及開場對照講者身分",
+      "source_originality": "原始學會或具名專業講者頻道，yt-dlp metadata 實查",
+      "review_method": "主代理讀取選段英文字幕、核對主題與前後邊界；未完成全片逐影格視聽與串流播放驗收。維持草稿。",
+      "classic_reason": "2021-08-01 之後上傳",
+      "scope_note": "PLC 結構定位與報告溝通。專家對 arcuate/PFL 用詞的主張與 2022 解剖研究並非完全相同；不將爭議寫成唯一解剖定論。",
+      "contains_intervention": false,
+      "intervention_scan_status": "只開放下列診斷片段；原片其他內容不屬本課練習",
+      "diagnostic_ranges": [
+        [
+          503,
+          722
+        ]
+      ],
+      "segments": [
+        {
+          "start": 503,
+          "end": 722,
+          "title": "PLC 的結構描述與溝通",
+          "summary": "專家訪談：追蹤 FCL、膕肌腱、PFL 區、股二頭肌腱及外側關節囊，描述具體結構和連續性。",
+          "detail": [
+            "專家訪談：追蹤 FCL、膕肌腱、PFL 區、股二頭肌腱及外側關節囊，描述具體結構和連續性。"
+          ]
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-09-08",
+        "metadata_sha256": "dc708504c6623b53f4e4f55da2ecd480745a4127f25b1fbaa8abdf49256e3875",
+        "caption_sha256": "241749472090368ec5f24066c546d919fc568a92bf99c4e1c5cc9562de708643",
+        "caption_kind": "en-orig automatic",
+        "actual_stream_playback": "2026-09-08 headless Chrome: no decoded frame obtained; embed timeout. Availability not disproved; real playback unverified.",
+        "browser_result": {
+          "id": "IWbyH5oW2yQ",
+          "error": "frame.waitForFunction: Timeout 20000ms exceeded."
+        }
+      },
+      "purpose": "PLC 結構定位與報告溝通。專家對 arcuate/PFL 用詞的主張與 2022 解剖研究並非完全相同；不將爭議寫成唯一解剖定論。",
+      "additional_qualification_evidence_url": "https://drrobertlaprademd.com/dr-laprade-gives-expert-opinion-regarding-the-arcuate-ligament-in-the-knee-is-it-misnamed/"
+    },
+    {
+      "video_id": "tx7MI889hCg",
+      "url": "https://www.youtube.com/watch?v=tx7MI889hCg",
+      "title": "SSR Resident Education Club - Knee Chondral Resurfacing",
+      "presenter": "Erin F. Alaia, MD",
+      "channel": "Society of Skeletal Radiology",
+      "upload_date": "20250120",
+      "duration_seconds": 3225,
+      "availability": "public",
+      "playable_in_embed": true,
+      "module_ids": [
+        "mr-adv-cartilage"
+      ],
+      "review_status": "draft",
+      "caption_kind": "英文自動字幕，2026-09-08 實際取得並核對選段；專有名詞採標準拼寫",
+      "qualification_evidence_url": "https://nyulangone.org/doctors/1285950865/erin-f-alaia",
+      "qualification_scope": "官方醫師或本人專業履歷；頻道/影片描述及開場對照講者身分",
+      "source_originality": "原始學會或具名專業講者頻道，yt-dlp metadata 實查",
+      "review_method": "主代理讀取選段英文字幕、核對主題與前後邊界；未完成全片逐影格視聽與串流播放驗收。維持草稿。",
+      "classic_reason": "2021-08-01 之後上傳",
+      "scope_note": "只取軟骨修復後 MRI 比較與形態學描述；排除手術步驟、術式選擇、成本比較與治療建議。",
+      "contains_intervention": true,
+      "intervention_scan_status": "只開放下列診斷片段；原片其他內容不屬本課練習",
+      "diagnostic_ranges": [
+        [
+          1199,
+          1232
+        ],
+        [
+          1325,
+          1382
+        ],
+        [
+          1804,
+          1853
+        ],
+        [
+          1888,
+          2022
+        ],
+        [
+          2062,
+          2429
+        ]
+      ],
+      "segments": [
+        {
+          "start": 1199,
+          "end": 1232,
+          "title": "MACI 六個月的病例",
+          "summary": "以原講者病例觀察部分填補與相鄰軟骨訊號；時間點是判讀背景，不是所有病人的固定成熟期限。",
+          "detail": [
+            "以原講者病例觀察部分填補與相鄰軟骨訊號；時間點是判讀背景，不是所有病人的固定成熟期限。"
+          ]
+        },
+        {
+          "start": 1325,
+          "end": 1382,
+          "title": "縱向追蹤的新變化",
+          "summary": "比較八個月、一年與兩年影像中的新發水腫樣訊號和骨性增生。",
+          "detail": [
+            "比較八個月、一年與兩年影像中的新發水腫樣訊號和骨性增生。"
+          ]
+        },
+        {
+          "start": 1804,
+          "end": 1853,
+          "title": "骨軟骨移植物的連續追蹤",
+          "summary": "比較六個月、一年與一年半的表面、整合與軟骨下骨訊號。",
+          "detail": [
+            "比較六個月、一年與一年半的表面、整合與軟骨下骨訊號。"
+          ]
+        },
+        {
+          "start": 1888,
+          "end": 2022,
+          "title": "併發症與 X 光假象",
+          "summary": "比較可疑骨壞死/塌陷病例，以及 X 光骨板高低差但 MRI 軟骨表面平順的病例。",
+          "detail": [
+            "比較可疑骨壞死/塌陷病例，以及 X 光骨板高低差但 MRI 軟骨表面平順的病例。"
+          ]
+        },
+        {
+          "start": 2062,
+          "end": 2429,
+          "title": "形態學報告清單",
+          "summary": "依填補、邊緣整合、表面、結構訊號與軟骨下骨逐項描述；研究評分與臨床症狀分開。",
+          "detail": [
+            "依填補、邊緣整合、表面、結構訊號與軟骨下骨逐項描述；研究評分與臨床症狀分開。"
+          ]
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-09-08",
+        "metadata_sha256": "925014ce53a2530722dbd9b91e24670fa3b7157b53444db281574d6471e5f823",
+        "caption_sha256": "639d16825c879c8702648b4b8e9b87ca5e67db7b673ba6da7b236f1af403cc75",
+        "caption_kind": "en-orig automatic",
+        "actual_stream_playback": "2026-09-08 headless Chrome: no decoded frame obtained; embed timeout. Availability not disproved; real playback unverified.",
+        "browser_result": {
+          "id": "tx7MI889hCg",
+          "error": "frame.waitForFunction: Timeout 20000ms exceeded."
+        }
+      },
+      "purpose": "只取軟骨修復後 MRI 比較與形態學描述；排除手術步驟、術式選擇、成本比較與治療建議。"
+    },
+    {
+      "video_id": "Ehw_vGnDEBg",
+      "url": "https://www.youtube.com/watch?v=Ehw_vGnDEBg",
+      "title": "Knee MRI - Meniscocapsular Separation and Subchondral Insufficiency Fracture (SIF)",
+      "presenter": "Stephen J. Pomeranz, MD",
+      "channel": "Medality (formerly MRI Online)",
+      "upload_date": "20200324",
+      "duration_seconds": 631,
+      "availability": "public",
+      "playable_in_embed": true,
+      "module_ids": [
+        "mr-adv-subchondral"
+      ],
+      "review_status": "draft",
+      "caption_kind": "英文自動字幕，2026-09-08 實際取得並核對選段；專有名詞採標準拼寫",
+      "qualification_evidence_url": "https://ccmsonline.org/doctors/stephen-pomeranz/",
+      "qualification_scope": "官方醫師或本人專業履歷；頻道/影片描述及開場對照講者身分",
+      "source_originality": "原始學會或具名專業講者頻道，yt-dlp metadata 實查",
+      "review_method": "主代理讀取選段英文字幕、核對主題與前後邊界；未完成全片逐影格視聽與串流播放驗收。維持草稿。",
+      "classic_reason": "2020 具體多平面病例，用 2023 SIF/SIF-ON 綜述校正舊稱；只作一個病灶對照。",
+      "scope_note": "僅取軟骨/軟骨下骨和伴隨根部異常的影像片段。排除早段不當玩笑、未量測估算、治療指令與過度概括；舊 subcortical 名詞以文獻的 subchondral 更新。",
+      "contains_intervention": false,
+      "intervention_scan_status": "只開放下列診斷片段；原片其他內容不屬本課練習",
+      "diagnostic_ranges": [
+        [
+          365,
+          408
+        ],
+        [
+          482,
+          534
+        ]
+      ],
+      "segments": [
+        {
+          "start": 365,
+          "end": 408,
+          "title": "軟骨下低訊號與骨髓反應",
+          "summary": "影像中追蹤軟骨變化、軟骨下低訊號及周邊水腫樣訊號。",
+          "detail": [
+            "影像中追蹤軟骨變化、軟骨下低訊號及周邊水腫樣訊號。"
+          ]
+        },
+        {
+          "start": 482,
+          "end": 534,
+          "title": "根部與伴隨所見",
+          "summary": "辨識根部周邊異常、外擠和軟骨下骨變化；共同出現不等同證明個別因果。",
+          "detail": [
+            "辨識根部周邊異常、外擠和軟骨下骨變化；共同出現不等同證明個別因果。"
+          ]
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-09-08",
+        "metadata_sha256": "bb0ab357ddd15f82e281f6f55b54068bdc7c96264fec2101c80ea6f5822c2e22",
+        "caption_sha256": "ca976dd1427718d8a5c580cae252f309dd59c43b45c9e7d228b2c9a562f38d66",
+        "caption_kind": "en-orig automatic",
+        "actual_stream_playback": "2026-09-08 headless Chrome: no decoded frame obtained; embed timeout. Availability not disproved; real playback unverified.",
+        "browser_result": {
+          "id": "Ehw_vGnDEBg",
+          "error": "frame.waitForFunction: Timeout 20000ms exceeded."
+        }
+      },
+      "purpose": "僅取軟骨/軟骨下骨和伴隨根部異常的影像片段。排除早段不當玩笑、未量測估算、治療指令與過度概括；舊 subcortical 名詞以文獻的 subchondral 更新。"
+    },
+    {
+      "video_id": "wnw3GqKR370",
+      "url": "https://www.youtube.com/watch?v=wnw3GqKR370",
+      "title": "LOWER LIMB NERVES ULTRASOUND (PART II) | Common Peroneal Nerve to Foot – Anatomy & Scan",
+      "presenter": "Iñigo Iriarte, MD",
+      "channel": "MSK Ultrasound Tutorials – Dr. Iriarte",
+      "upload_date": "20200928",
+      "duration_seconds": 1013,
+      "availability": "public",
+      "playable_in_embed": true,
+      "module_ids": [
+        "us-adv-nerve"
+      ],
+      "review_status": "draft",
+      "caption_kind": "英文自動字幕，2026-09-08 實際取得並核對選段；專有名詞採標準拼寫",
+      "qualification_evidence_url": "https://www.clinicasarsmedica.com/dr-iriarte.html",
+      "qualification_scope": "官方醫師或本人專業履歷；頻道/影片描述及開場對照講者身分",
+      "source_originality": "原始學會或具名專業講者頻道，yt-dlp metadata 實查",
+      "review_method": "主代理讀取選段英文字幕、核對主題與前後邊界；未完成全片逐影格視聽與串流播放驗收。維持草稿。",
+      "classic_reason": "2020 連續追蹤清楚，用 2022/2024 原始病例與診斷研究補病理與效能限制。",
+      "scope_note": "膝後至腓骨頸的正常神經追蹤，供病理病例比較；本片不是神經內囊腫病例。排除足踝段及介入定位。",
+      "contains_intervention": true,
+      "intervention_scan_status": "只開放下列診斷片段；原片其他內容不屬本課練習",
+      "diagnostic_ranges": [
+        [
+          33,
+          237
+        ],
+        [
+          239,
+          285
+        ],
+        [
+          737,
+          835
+        ]
+      ],
+      "segments": [
+        {
+          "start": 33,
+          "end": 237,
+          "title": "腓總神經的近端追蹤",
+          "summary": "從坐骨神經分支追至股二頭肌腱附近、腓骨頭與表淺易受壓區。",
+          "detail": [
+            "從坐骨神經分支追至股二頭肌腱附近、腓骨頭與表淺易受壓區。"
+          ]
+        },
+        {
+          "start": 239,
+          "end": 285,
+          "title": "腓骨頸的神經分支",
+          "summary": "辨認神經進入腓骨長肌下方後的分支位置。",
+          "detail": [
+            "辨認神經進入腓骨長肌下方後的分支位置。"
+          ]
+        },
+        {
+          "start": 737,
+          "end": 835,
+          "title": "連續掃描對照",
+          "summary": "用原講者 cine 複習膝後到腓骨頸追蹤，保留不易看清時的限制。",
+          "detail": [
+            "用原講者 cine 複習膝後到腓骨頸追蹤，保留不易看清時的限制。"
+          ]
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-09-08",
+        "metadata_sha256": "929c6bf74705018fd5ce8529965cde103699647b0ad20b2ae4182bc302224b2f",
+        "caption_sha256": "86fe28a5fd28b6ccaf912d3ed0c1f258bd490878262a47c8b8231e59fb3e492a",
+        "caption_kind": "en-orig automatic",
+        "actual_stream_playback": "2026-09-08 headless Chrome: no decoded frame obtained; embed timeout. Availability not disproved; real playback unverified.",
+        "browser_result": {
+          "id": "wnw3GqKR370",
+          "error": "frame.waitForFunction: Timeout 20000ms exceeded."
+        }
+      },
+      "purpose": "膝後至腓骨頸的正常神經追蹤，供病理病例比較；本片不是神經內囊腫病例。排除足踝段及介入定位。"
+    },
+    {
+      "video_id": "zRm8SOwtjXA",
+      "url": "https://www.youtube.com/watch?v=zRm8SOwtjXA",
+      "title": "Posterior Knee with Dr. Blake Boggess | AMSSM Sports Ultrasound Case Presentation",
+      "presenter": "Blake R. Boggess, DO",
+      "channel": "The AMSSM",
+      "upload_date": "20200922",
+      "duration_seconds": 2256,
+      "availability": "public",
+      "playable_in_embed": true,
+      "module_ids": [
+        "us-adv-nerve",
+        "us-adv-dynamic"
+      ],
+      "review_status": "draft",
+      "caption_kind": "英文自動字幕，2026-09-08 實際取得並核對選段；專有名詞採標準拼寫",
+      "qualification_evidence_url": "https://www.dukehealth.org/find-doctors-physicians/blake-r-boggess-do",
+      "qualification_scope": "官方醫師或本人專業履歷；頻道/影片描述及開場對照講者身分",
+      "source_originality": "原始學會或具名專業講者頻道，yt-dlp metadata 實查",
+      "review_method": "主代理讀取選段英文字幕、核對主題與前後邊界；未完成全片逐影格視聽與串流播放驗收。維持草稿。",
+      "classic_reason": "2020 具體神經腫塊與真正神經彈響 cine，補現有缺口；以近期神經研究與實作限制配套。",
+      "scope_note": "後膝腫塊的替代診斷：鈣化血管、神經鞘腫瘤與人工膝關節後神經彈響。排除抽吸/注射/水分離/收費內容；專家病例不等於一般族群效能。",
+      "contains_intervention": true,
+      "intervention_scan_status": "只開放下列診斷片段；原片其他內容不屬本課練習",
+      "diagnostic_ranges": [
+        [
+          1494,
+          1553
+        ],
+        [
+          1565,
+          1629
+        ],
+        [
+          1634,
+          1664
+        ]
+      ],
+      "segments": [
+        {
+          "start": 1494,
+          "end": 1553,
+          "title": "血管鈣化與間歇性跛行病例",
+          "summary": "後膝症狀不是一律 Baker cyst；對照鈣化血管的超音波聲影與 X 光。",
+          "detail": [
+            "後膝症狀不是一律 Baker cyst；對照鈣化血管的超音波聲影與 X 光。"
+          ]
+        },
+        {
+          "start": 1565,
+          "end": 1629,
+          "title": "外側神經鞘腫瘤病例",
+          "summary": "症狀沿腓神經分布，追蹤神經連續性及局部增粗；MRI 作進一步評估。",
+          "detail": [
+            "症狀沿腓神經分布，追蹤神經連續性及局部增粗；MRI 作進一步評估。"
+          ]
+        },
+        {
+          "start": 1634,
+          "end": 1664,
+          "title": "人工膝關節後神經彈響",
+          "summary": "原講者示範神經與人工關節附近的動態滑移；不能外推為一般跑者 ITB 病因。",
+          "detail": [
+            "原講者示範神經與人工關節附近的動態滑移；不能外推為一般跑者 ITB 病因。"
+          ]
+        }
+      ],
+      "verification": {
+        "checked_at": "2026-09-08",
+        "metadata_sha256": "0f03ba2c3a88fc830928d35072b0b4c512d6a2ec29907ba7883f3342006cc794",
+        "caption_sha256": "8288652e3e253241eae82805ab2730e15fc9bb54acdc765278debc139ce36505",
+        "caption_kind": "en-orig automatic",
+        "actual_stream_playback": "2026-09-08 headless Chrome: no decoded frame obtained; embed timeout. Availability not disproved; real playback unverified.",
+        "browser_result": {
+          "id": "zRm8SOwtjXA",
+          "error": "frame.waitForFunction: Timeout 20000ms exceeded."
+        }
+      },
+      "purpose": "後膝腫塊的替代診斷：鈣化血管、神經鞘腫瘤與人工膝關節後神經彈響。排除抽吸/注射/水分離/收費內容；專家病例不等於一般族群效能。"
+    }
+  ],
+  "reference_candidates": [
+    {
+      "id": "REF-ADV-SSR-MENISCUS-2026",
+      "pmid": "42283751",
+      "title": "Standardized MRI nomenclature for knee meniscal lesions: SSR consensus panel report.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42283751/",
+      "doi": "10.1007/s00256-026-05281-5",
+      "year": 2026,
+      "authors": "Nguyen JC, Gorbachova T, Flores DV, Casagranda BU, Chalian M, Kani KK, Mills MK, Nwawka OK, Shea KG, Spindler KP, Stevens KJ, Weaver JS, Zoga AC, Boutin RD.",
+      "evidence_type": "學會共識；描述用詞，不是療效試驗",
+      "metadata_status": "2026-09-08 Europe PMC core metadata 與摘要實查",
+      "fulltext_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13424353/"
+    },
+    {
+      "id": "REF-ADV-ROOT-RAMP-2023",
+      "pmid": "37384542",
+      "title": "Knee MRI: Meniscus Roots, Ramps, Repairs, and Repercussions.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37384542/",
+      "doi": "10.1148/rg.220208",
+      "year": 2023,
+      "authors": "Tomsan H, Gorbachova T, Fritz RC, Abrams GD, Sherman SL, Shea KG, Boutin RD.",
+      "evidence_type": "教育性綜述；解剖、變異與漏診陷阱",
+      "metadata_status": "2026-09-08 Europe PMC core metadata 與摘要實查",
+      "fulltext_url": null
+    },
+    {
+      "id": "REF-ADV-POSTOP-MENISCUS-2022",
+      "pmid": "35512895",
+      "title": "MR Imaging of the Postoperative Meniscus.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35512895/",
+      "doi": "10.1016/j.mric.2021.11.012",
+      "year": 2022,
+      "authors": "Fierstra S, White LM.",
+      "evidence_type": "術後影像綜述；不是所有術式都共用同一判準",
+      "metadata_status": "2026-09-08 Europe PMC core metadata 與摘要實查",
+      "fulltext_url": null
+    },
+    {
+      "id": "REF-ADV-SIF-2023",
+      "pmid": "37782395",
+      "title": "Subchondral insufficiency fractures, subchondral insufficiency fractures with osteonecrosis, and other apparently spontaneous subchondral bone lesions of the knee-pathogenesis and diagnosis at imaging.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37782395/",
+      "doi": "10.1186/s13244-023-01495-6",
+      "year": 2023,
+      "authors": "Malghem J, Lecouvet F, Vande Berg B, Kirchgesner T, Omoumi P.",
+      "evidence_type": "影像綜述；預後線索不能當成個別治療指令",
+      "metadata_status": "2026-09-08 Europe PMC core metadata 與摘要實查",
+      "fulltext_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10545656/"
+    },
+    {
+      "id": "REF-ADV-PLC-ANATOMY-2022",
+      "pmid": "35396715",
+      "title": "Are the popliteofibular ligament, the arcuate ligament, and the fibular insertion of the popliteus muscle the same structure? An anatomic and terminological study.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35396715/",
+      "doi": "10.1111/joa.13663",
+      "year": 2022,
+      "authors": "Vieira ELC, Vieira EÁ, Aguiar RA, Lopes CS, Steffen AM, Cohen M.",
+      "evidence_type": "屍體解剖研究；命名結論與影片專家用詞不完全相同，保留爭議",
+      "metadata_status": "2026-09-08 Europe PMC core metadata 與摘要實查",
+      "fulltext_url": null
+    },
+    {
+      "id": "REF-ADV-NERVE-2024",
+      "pmid": "38934723",
+      "title": "Diagnostic accuracy of ultrasound and MR imaging in peroneal neuropathy: A prospective, single-center study.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38934723/",
+      "doi": "10.1002/mus.28187",
+      "year": 2024,
+      "authors": "Oosterbos C, Weerdt O, Lembrechts M, Radwan A, Brys P, Brusselmans M, Bogaerts K, Peeters R, Van Hoylandt A, Hoornaert S, Lemmens R, Theys T.",
+      "evidence_type": "前瞻單中心研究；22 位病人、38 位對照，影像不能單獨預測恢復",
+      "metadata_status": "2026-09-08 Europe PMC core metadata 與摘要實查",
+      "fulltext_url": null
+    },
+    {
+      "id": "REF-ADV-GANGLION-2022",
+      "pmid": "36193032",
+      "title": "The value of high-resolution imaging in an occult peroneal intraneural ganglion cyst: illustrative case.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36193032/",
+      "doi": "10.3171/case22327",
+      "year": 2022,
+      "authors": "Lenartowicz KA, Amrami KK, Strakowski JA, Howe BM, Spinner RJ.",
+      "evidence_type": "單一病例；高解析 US/MRI 示範，不代表普遍診斷效能",
+      "metadata_status": "2026-09-08 Europe PMC core metadata 與摘要實查",
+      "fulltext_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9552557/"
+    },
+    {
+      "id": "REF-ADV-SNAPPING-2017",
+      "pmid": "29142781",
+      "title": "Snapping Pes Anserinus and the Diagnostic Utility of Dynamic Ultrasound.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29142781/",
+      "doi": "10.4103/jcis.jcis_45_17",
+      "year": 2017,
+      "authors": "Shapiro SA, Hernandez LO, Montero DP.",
+      "evidence_type": "兩例病例報告；經典例外：有真實動態影片與正常側對照",
+      "metadata_status": "2026-09-08 Europe PMC core metadata 與摘要實查",
+      "fulltext_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5672657/"
+    },
+    {
+      "id": "REF-ADV-PTFJ-2021",
+      "pmid": "34749127",
+      "title": "Ultrasound examination of tibiofibular widening of forceful knee flexion is recommended for patients with proximal tibiofibular joint instability.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34749127/",
+      "doi": "10.1016/j.knee.2021.10.021",
+      "year": 2021,
+      "authors": "Chen Y, Lin CL, Chen SC, Chen YC, Hwang IS.",
+      "evidence_type": "20 人研究；操作條件與族群特定，不使用 2.95 mm 作普遍診斷門檻",
+      "metadata_status": "2026-09-08 Europe PMC core metadata 與摘要實查",
+      "fulltext_url": null
+    },
+    {
+      "id": "REF-ADV-DOPPLER-2013",
+      "pmid": "24286540",
+      "title": "Very different performance of the power Doppler modalities of several ultrasound machines ascertained by a microvessel flow phantom.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24286540/",
+      "doi": "10.1186/ar4345",
+      "year": 2013,
+      "authors": "Ten Cate DF, Luime JJ, van der Ven M, Hazes JM, Kooiman K, de Jong N, Bosch JG.",
+      "evidence_type": "流體仿體研究；經典物理限制證據，不代表現今每台儀器的效能",
+      "metadata_status": "2026-09-08 Europe PMC core metadata 與摘要實查",
+      "fulltext_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3978434/"
+    },
+    {
+      "id": "REF-ADV-MOCART-2021",
+      "pmid": "31422674",
+      "title": "The MOCART (Magnetic Resonance Observation of Cartilage Repair Tissue) 2.0 Knee Score and Atlas.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31422674/",
+      "doi": "10.1177/1947603519865308",
+      "year": 2021,
+      "evidence_type": "評分工具與讀者信度研究；2019 online、2021 print。研究型形態學評分，不是返回運動認證。",
+      "metadata_status": "2026-09-08 Europe PMC core metadata 與摘要實查"
+    }
+  ],
+  "existing_references": [],
+  "proposed_corrections": [
+    {
+      "unit_id": "mr3-u1",
+      "question_id": "mr3-u1-q2",
+      "field": "options[1].rationale",
+      "before": "直接套用是常見錯誤，會系統性高估異常比例。",
+      "after": "CT 與 MRI 的量測值及切點不可直接互換，應採用與影像方法及族群相符的判準。",
+      "reason": "原文高估/低估方向錯誤；改成不預設族群效應的精確敘述。",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/25575535/",
+      "review_status": "draft"
+    }
+  ]
+}

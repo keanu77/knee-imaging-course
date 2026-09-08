@@ -356,18 +356,12 @@
 
 /* --- Footer ------------------------------------------------------------- */
 
-/* 固定貼在視窗底部，不隨頁面捲動；收合時一行，點開才展全文 */
+/* 文流頁尾：不覆蓋最後一段筆記或影片控制列。 */
 .AppFooter {
-  position: fixed;
-  inset-inline: 0;
-  bottom: 0;
-  z-index: 60;
-  max-height: 60vh;
-  overflow-y: auto;
-  overscroll-behavior: contain;
+  position: relative;
+  padding: 20px max(16px, calc((100vw - 1320px) / 2));
   border-top: 1px solid var(--borderColor-default);
-  background-color: color-mix(in srgb, var(--bgColor-muted) 92%, transparent);
-  backdrop-filter: saturate(180%) blur(8px);
+  background-color: var(--bgColor-muted);
   font-size: 12px;
   color: var(--fgColor-muted);
 }
@@ -376,7 +370,7 @@
   display: flex;
   align-items: center;
   gap: var(--base-size-8);
-  min-height: calc(var(--footer-height) - 1px);
+  min-height: 44px;
   padding: 0 var(--base-size-16);
   cursor: pointer;
   list-style: none;
@@ -407,7 +401,7 @@
   line-height: 1.6;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
+  white-space: normal;
 }
 
 .AppFooter__details[open] .AppFooter__summary {
@@ -483,12 +477,6 @@
 
   .ProgressPanel__reset {
     min-height: 44px;
-  }
-
-  /* 收合頁尾高度參與 body padding 與側欄高度計算，
-     加高觸控列時必須同步改變數，內容才不會被固定頁尾遮住 */
-  :root {
-    --footer-height: 45px;
   }
 
   .AppFooter__summary {

@@ -1,8 +1,10 @@
 // player.js — 上課模式：把整門課攤平成播放清單，左側嵌入播放
 import { icon } from "./icons.js";
+import { parseClock, playbackPolicy, allowedPosition, rangeAt, isTrustedPlayerMessage } from "./playback-policy.js";
+export { parseClock } from "./playback-policy.js";
 import { esc, interventionNoticeText, KIND, TIER, UI } from "./render.js";
 import { button as discussButton, panel as discussPanel } from "./discuss.js";
-import { highlight, segmentHaystack, segmentHitCount, segmentMatches } from "./segment-search.js";
+import { highlight, queryTerms, segmentHaystack, segmentHitCount, segmentMatches } from "./segment-search.js";
 
 const $ = (s, r = document) => r.querySelector(s);
 
@@ -93,15 +95,38 @@ function dur(s) {
 const EMBED_ORIGIN = "https://www.youtube-nocookie.com";
 let frameReady = false;
 let currentItem = null;
+let currentPosition = 0;
+let currentRange = null;
+let readyTimer = null;
+let listeningTimer = null;
+let lastSaved = -1;
+let telemetryInRange = false;
+let reportedPlayerState = -1;
+const POSITION_PREFIX = "knee-imaging:video-position:";
+const positionKey = item => POSITION_PREFIX + (item.unitId ? `${item.unitId}:` : "") + item.vid;
 
-/** MM:SS / HH:MM:SS -> 秒。格式不對回 null，呼叫端據此不產生跳播鈕。 */
-export function parseClock(text) {
-  const parts = String(text ?? "").split(":");
-  if (parts.length < 2 || parts.length > 3 || !parts.every((p) => /^\d+$/.test(p))) return null;
-  const n = parts.map(Number);
-  if (n[n.length - 1] >= 60) return null;
-  if (n.length === 3 && n[1] >= 60) return null;
-  return n.reduce((acc, part) => acc * 60 + part, 0);
+export function getPosition(item = currentItem) {
+  if (!item?.vid) return null;
+  if (currentItem?.vid === item.vid && currentItem?.unitId === item.unitId) return currentPosition;
+  try {
+    const raw = localStorage.getItem(positionKey(item)) ?? localStorage.getItem(POSITION_PREFIX + item.vid);
+    if (raw === null) return null;
+    const n = Number(raw);
+    return Number.isFinite(n) && n >= 0 ? n : null;
+  } catch { return null; }
+}
+
+function savePosition(force = false) {
+  if (!currentItem?.vid || (!force && Math.abs(currentPosition - lastSaved) < 5)) return;
+  try {
+    localStorage.setItem(positionKey(currentItem), String(Math.floor(currentPosition)));
+    lastSaved = currentPosition;
+  } catch { /* Private mode or full storage must not prevent learning. */ }
+}
+
+function status(text) {
+  const el = $("#playerStatus");
+  if (el) el.textContent = text;
 }
 
 function post(command, args = []) {
@@ -112,45 +137,114 @@ function post(command, args = []) {
   return true;
 }
 
-/** 播放器就緒才用 postMessage 跳播；否則直接以 start= 重載，不讓點擊靜默失效。 */
-export function seekTo(seconds) {
-  if (frameReady && post("seekTo", [seconds, true])) {
-    post("playVideo");
-    return;
+/** Every site-owned seek uses the same diagnostic boundaries. */
+export function seekTo(seconds, { autoplay = true } = {}) {
+  if (!currentItem?.vid) return false;
+  const policy = playbackPolicy(currentItem);
+  const target = allowedPosition(policy, seconds);
+  if (target === null) return false;
+  const range = rangeAt(policy, target);
+  const sameRange = range?.start === currentRange?.start;
+  currentPosition = target;
+  savePosition(true);
+  if (frameReady && sameRange && post("seekTo", [target, true])) {
+    post(autoplay ? "playVideo" : "pauseVideo");
+  } else {
+    // A new diagnostic range needs its own end parameter as well as its start.
+    currentRange = range;
+    $("#playerFrame").innerHTML = frameHtml(currentItem, target, autoplay);
+    listenToFrame();
   }
-  if (!currentItem?.vid) return;
-  $("#playerFrame").innerHTML = frameHtml(currentItem, seconds);
-  listenToFrame();
+  return true;
 }
 
-/** iframe 的 JS API 要先送出 listening 才會回話；收到任何回話就視為可下指令。 */
+function clearFrameTimers() {
+  clearTimeout(readyTimer);
+  clearInterval(listeningTimer);
+}
+
 function listenToFrame() {
+  clearFrameTimers();
   frameReady = false;
+  telemetryInRange = false;
+  reportedPlayerState = -1;
   const frame = $("#ytFrame");
   if (!frame) return;
-  frame.addEventListener("load", () => {
-    frame.contentWindow?.postMessage(JSON.stringify({ event: "listening" }), EMBED_ORIGIN);
-  });
+  status("正在載入影片…若無法播放，可使用下方原始來源連結。");
+  const subscribe = () => {
+    if (frame !== $("#ytFrame")) return;
+    frame.contentWindow?.postMessage(JSON.stringify({ event: "listening", id: "ytFrame", channel: "widget" }), EMBED_ORIGIN);
+  };
+  frame.addEventListener("load", subscribe);
+  frame.addEventListener("error", () => status("影片載入失敗，請使用原始來源連結。"));
+  listeningTimer = setInterval(subscribe, 750);
+  readyTimer = setTimeout(() => {
+    clearInterval(listeningTimer);
+    if (!frameReady) status("播放器尚未回應。請確認網路或使用原始來源連結；原站可能包含本課範圍以外的內容。");
+  }, 12000);
 }
 
-addEventListener("message", (e) => {
-  if (e.origin === EMBED_ORIGIN) frameReady = true;
+addEventListener("message", (event) => {
+  if (!isTrustedPlayerMessage(event, $("#ytFrame")?.contentWindow)) return;
+  let data;
+  try { data = typeof event.data === "string" ? JSON.parse(event.data) : event.data; } catch { return; }
+  if (!data || !["onReady", "infoDelivery", "initialDelivery", "onError"].includes(data.event)) return;
+  if (data.event === "onError") {
+    clearFrameTimers();
+    status("這支影片目前無法嵌入或播放，請使用原始來源連結。");
+    return;
+  }
+  if (!frameReady) {
+    frameReady = true;
+    clearFrameTimers();
+    post("addEventListener", ["onError"]);
+    status("播放器已就緒。學習位置會儲存在這個瀏覽器。");
+  }
+  if (typeof data.info?.playerState === "number") reportedPlayerState = data.info.playerState;
+  const time = data.info?.currentTime;
+  if (typeof time !== "number" || !Number.isFinite(time) || time < 0 || !currentItem) return;
+  if (currentRange && (time < currentRange.start || time >= currentRange.end)) {
+    // Startup telemetry can report 0 before the requested start has been cued.
+    // Enforce immediately once playing, or once an in-range time was observed.
+    if (!telemetryInRange && reportedPlayerState !== 1) return;
+    // Cross-origin native controls are not isolatable. On trustworthy telemetry,
+    // pause and return to the selected range; never claim this is a sandbox.
+    post("pauseVideo");
+    post("seekTo", [currentRange.start, true]);
+    currentPosition = currentRange.start;
+    savePosition(true);
+    status("已到達或離開本段診斷範圍，影片已暫停。可按下方時間碼選擇其他診斷段落。");
+    return;
+  }
+  telemetryInRange = true;
+  currentPosition = time;
+  savePosition();
 });
+addEventListener("pagehide", () => savePosition(true));
 
-function frameHtml(item, startSeconds = null) {
-  const start = startSeconds == null ? "" : `&start=${startSeconds}`;
-  return `<iframe id="ytFrame" src="${EMBED}${esc(item.vid)}?rel=0&modestbranding=1&autoplay=1&enablejsapi=1${start}&origin=${encodeURIComponent(location.origin)}"
+function frameHtml(item, startSeconds, autoplay) {
+  const policy = playbackPolicy(item);
+  const target = allowedPosition(policy, startSeconds ?? 0);
+  if (target === null) return `<p role="alert">診斷時間範圍資料不完整，暫不載入播放器。</p>`;
+  const range = rangeAt(policy, target);
+  const params = new URLSearchParams({ rel: "0", autoplay: autoplay ? "1" : "0", enablejsapi: "1", start: String(Math.floor(target)), origin: location.origin });
+  if (range) params.set("end", String(range.end));
+  return `<iframe id="ytFrame" src="${EMBED}${esc(item.vid)}?${esc(params.toString())}"
             title="${esc(item.title || item.name)}"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen></iframe>`;
 }
 
+export function resume(item, options = {}) {
+  return play(item, { ...options, autoplay: false, startSeconds: getPosition(item) });
+}
+
 /** 逐段筆記軌。course.json 只會帶入已簽核的段落，未簽核的在建置階段就被擋掉。 */
 function segmentRail(item, query = "") {
   const segments = (item.segments || [])
     .map((s) => ({ ...s, seconds: parseClock(s.start) }))
-    .filter((s) => s.seconds !== null);
+    .filter((s) => s.seconds !== null && allowedPosition(playbackPolicy(item), s.seconds) === s.seconds);
   if (!segments.length) return "";
 
   const hits = segmentHitCount(segments, query);
@@ -200,14 +294,15 @@ export function playlistItemMatches(it, { doneSet, query, onlyTodo, learningTier
   if (onlyTodo && doneSet.has(it.unitId)) return false;
   if (learningTier && learningTier !== "all" && it.learning_tier !== learningTier) return false;
 
-  const q = (query || "").trim().toLowerCase();
-  if (!q) return true;
+  const terms = queryTerms(query);
+  if (!terms.length) return true;
 
   const tierLabel = TIER[it.learning_tier]?.label || it.learning_tier || "";
   // 逐段筆記也要能被搜到：學員記得的往往是段落裡的字，不是影片標題
   const segmentText = (it.segments || []).map(segmentHaystack).join(" ");
   const hay = `${it.name} ${it.title || ""} ${it.channel || ""} ${it.unitName} ${it.chTitle} ${(it.facets || []).join(" ")} ${it.target || ""} ${tierLabel} ${it.presenter || ""} ${it.presenter_note || ""} ${it.scope_note || ""} ${it.disclosure || ""} ${it.diagnostic_segment_range || ""} ${it.original_content_date || ""} ${it.upload_date || ""} ${segmentText}`;
-  return hay.toLowerCase().includes(q);
+  const normalized = hay.toLowerCase();
+  return terms.some(term => normalized.includes(term));
 }
 
 /* --- 播放清單渲染 -------------------------------------------------------- */
@@ -235,7 +330,7 @@ export function renderPlaylist(items, { doneSet, currentIndex, query, onlyTodo, 
     const tier = TIER[it.learning_tier];
     html.push(`
       <button class="PlaylistItem${it.i === currentIndex ? " is-playing" : ""}${doneSet.has(it.unitId) ? " is-done" : ""}"
-              type="button" data-play="${it.i}">
+              type="button" data-play="${it.i}"${it.i === currentIndex ? ' aria-current="true"' : ""}>
         <span class="PlaylistItem__dot" style="background:var(--fgColor-${esc(it.kind === "lesson" ? "accent" : (KIND[it.kind] || {}).tone || "accent")})"></span>
         <span class="PlaylistItem__main">
           <span class="PlaylistItem__name">${esc(it.kind === "lesson" ? `${UI.lessonLabel || ""} · ${it.name}` : it.name)}</span>
@@ -249,20 +344,25 @@ export function renderPlaylist(items, { doneSet, currentIndex, query, onlyTodo, 
 
   $("#playlist").innerHTML =
     html.join("") ||
-    `<div class="Blankslate">${icon("inbox", 28)}<p class="Blankslate__heading">沒有符合的影片</p></div>`;
+    `<div class="Blankslate">${icon("inbox", 28)}<p class="Blankslate__heading">沒有符合的影片</p><button class="btn" type="button" data-reset-playlist>清除播放清單篩選</button></div>`;
   $("#playlistCount").textContent =
-    shown === items.length ? `${items.length} 支影片` : `${shown} / ${items.length} 支`;
+    shown === items.length ? `${new Set(items.map(item => item.vid)).size} 支影片 · ${items.length} 個項目` : `${shown} / ${items.length} 個項目`;
   return shown;
 }
 
 /* --- 播放 ---------------------------------------------------------------- */
 
-export function play(item, { total, query = "" }) {
+export function play(item, { total, query = "", autoplay = true, startSeconds = null } = {}) {
   if (!item?.vid) return;
 
+  const saved = startSeconds ?? getPosition(item);
+  savePosition(true);
   currentItem = item;
-  $("#playerFrame").innerHTML = frameHtml(item);
-  listenToFrame();
+  const policy = playbackPolicy(item);
+  currentPosition = allowedPosition(policy, saved ?? 0) ?? 0;
+  currentRange = rangeAt(policy, currentPosition);
+  lastSaved = -1;
+  $("#playerFrame").innerHTML = frameHtml(item, currentPosition, autoplay);
 
   const k = item.kind === "lesson" ? null : KIND[item.kind];
   const badge = k
@@ -284,6 +384,12 @@ export function play(item, { total, query = "" }) {
   const interventionNotice = interventionNoticeText(item);
 
   $("#playerInfo").innerHTML = `
+    <div class="Player__playbackStatus">
+      <p id="playerStatus" role="status" aria-live="polite">${policy.blocked ? "診斷時間範圍資料不完整，暫不載入播放器。" : "正在載入影片…"}</p>
+      <a href="${esc(item.url)}" target="_blank" rel="noopener">在 YouTube 開啟原始來源（新分頁）</a>
+      ${policy.ranges?.length ? `<p>本課從所選診斷段落開始，結束時暫停。YouTube 原生操作與原始來源仍可能播放範圍外內容。</p>
+      <nav aria-label="選擇診斷段落">${policy.ranges.map((r, i) => `<button class="btn" type="button" data-seek="${r.start}">診斷段落 ${i + 1} · ${Math.floor(r.start / 60)}:${String(r.start % 60).padStart(2, "0")}–${Math.floor(r.end / 60)}:${String(r.end % 60).padStart(2, "0")}</button>`).join(" ")}</nav>` : ""}
+    </div>
     <div class="Player__bar">
       <div class="Player__barMain">
         <h2 class="Player__title">${esc(item.name)}</h2>
@@ -303,8 +409,8 @@ export function play(item, { total, query = "" }) {
         </div>
       </div>
       <div class="Player__actions">
-        <button class="btn" data-step="-1" type="button">${icon("chevron-left", 14)} <span class="Player__btnText">${esc(UI.prevLabel || "")}</span></button>
-        <button class="btn" data-step="1" type="button"><span class="Player__btnText">${esc(UI.nextLabel || "")}</span> ${icon("chevron-right", 14)}</button>
+        <button class="btn" data-step="-1" type="button" aria-label="上一部影片">${icon("chevron-left", 14)} <span class="Player__btnText">${esc(UI.prevLabel || "")}</span></button>
+        <button class="btn" data-step="1" type="button" aria-label="下一部影片"><span class="Player__btnText">${esc(UI.nextLabel || "")}</span> ${icon("chevron-right", 14)}</button>
         <button class="btn" data-mark-unit="${esc(item.unitId)}" type="button">${icon("check", 14)} ${esc(UI.doneLabel || "")}</button>
         <button class="btn btn-icon" data-toggle-list type="button" title="收起／顯示清單">${icon("layers", 16)}<span class="visually-hidden" data-list-label>收起清單</span></button>
         ${discussButton()}
@@ -335,6 +441,7 @@ export function play(item, { total, query = "" }) {
     ${segmentRail(item, query)}
     ${discussPanel()}`;
 
+  listenToFrame();
   fitFrame();
 }
 
@@ -360,6 +467,10 @@ export function fitFrame() {
   const frame = $(".Player__frame");
   const info = $("#playerInfo");
   if (!stage || !frame) return;
+  if (matchMedia("(max-width: 1012px)").matches) {
+    frame.style.removeProperty("--frame-w");
+    return;
+  }
 
   // 資訊區想要多高就給多高，但最多只讓它吃掉 45%——逐段筆記可以很長，
   // 全額讓步會把影片壓到只剩幾百像素寬。超出的部分由 .Player__info 自己捲。
@@ -383,6 +494,8 @@ export function watchFrame() {
 }
 
 export function stop() {
+  savePosition(true);
+  clearFrameTimers();
   const f = $("#playerFrame iframe");
   if (f) f.remove();
   frameReady = false;
@@ -399,7 +512,10 @@ export function initResizer(initial, onChange) {
   const grip = $("#playerResizer");
   if (!player || !grip) return;
 
-  const clamp = (w) => Math.max(MIN_W, Math.min(w, Math.round(player.clientWidth * 0.6)));
+  const clamp = (w) => {
+    const width = player.clientWidth;
+    return width > 0 ? Math.max(MIN_W, Math.min(w, Math.round(width * 0.6))) : Math.max(MIN_W, w);
+  };
   const apply = (w) => {
     player.style.setProperty("--playlist-w", `${clamp(w)}px`);
     fitFrame();
@@ -413,17 +529,29 @@ export function initResizer(initial, onChange) {
     grip.classList.add("is-dragging");
     document.body.classList.add("is-resizing");
 
-    const move = (ev) => apply(player.getBoundingClientRect().right - ev.clientX - 16);
+    let pendingFrame = null;
+    let nextWidth = null;
+    const move = (ev) => {
+      nextWidth = player.getBoundingClientRect().right - ev.clientX - 16;
+      if (pendingFrame === null) pendingFrame = requestAnimationFrame(() => {
+        apply(nextWidth);
+        pendingFrame = null;
+      });
+    };
     const up = () => {
+      if (pendingFrame !== null) cancelAnimationFrame(pendingFrame);
+      if (nextWidth !== null) apply(nextWidth);
       grip.classList.remove("is-dragging");
       document.body.classList.remove("is-resizing");
       grip.removeEventListener("pointermove", move);
       grip.removeEventListener("pointerup", up);
+      grip.removeEventListener("pointercancel", up);
       const w = parseInt(player.style.getPropertyValue("--playlist-w"), 10);
       if (w) onChange?.(w);
     };
     grip.addEventListener("pointermove", move);
     grip.addEventListener("pointerup", up);
+    grip.addEventListener("pointercancel", up);
   });
 
   // 鍵盤也能調，方向鍵每次 24px
@@ -431,6 +559,7 @@ export function initResizer(initial, onChange) {
     const step = e.key === "ArrowLeft" ? 24 : e.key === "ArrowRight" ? -24 : 0;
     if (!step) return;
     e.preventDefault();
+    e.stopPropagation();
     const cur = parseInt(getComputedStyle(player).getPropertyValue("--playlist-w"), 10) || 380;
     apply(cur + step);
     onChange?.(clamp(cur + step));

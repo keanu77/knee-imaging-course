@@ -12,6 +12,7 @@ import shutil
 import sys
 from collections import Counter, defaultdict
 from pathlib import Path
+from urllib.parse import parse_qs, urlsplit
 
 ROOT = Path(__file__).resolve().parents[2]
 COURSE = Path(os.environ.get("COURSE") or ROOT / "course").resolve()
@@ -39,9 +40,7 @@ def _load_taxonomy(key: str):
 facets = _load_taxonomy("facets")
 categories = _load_taxonomy("categories")
 
-YT = re.compile(
-    r"^https://(?:www\.)?youtube\.com/watch\?v=[\w-]{11}(?:&\S*)?$|^https://youtu\.be/[\w-]{11}"
-)
+YOUTUBE_ID = re.compile(r"[A-Za-z0-9_-]{11}\Z")
 
 
 def parse_duration(s: str | None) -> int:
@@ -64,9 +63,29 @@ def fmt_clock(total: int) -> str:
     return f"{h}:{m:02}:{s:02}" if h else f"{m}:{s:02}"
 
 
-def video_id(url: str) -> str | None:
-    m = re.search(r"(?:v=|youtu\.be/)([\w-]{11})", url or "")
-    return m.group(1) if m else None
+def video_id(url: object) -> str | None:
+    """以 YouTube ID 比對 watch／短網址，忽略合法的時間與分享參數。"""
+    if not isinstance(url, str) or any(c.isspace() or ord(c) < 32 for c in url):
+        return None
+    try:
+        parsed = urlsplit(url)
+        if (
+            parsed.scheme != "https"
+            or parsed.username
+            or parsed.password
+            or parsed.port is not None
+        ):
+            return None
+        if parsed.hostname in {"youtube.com", "www.youtube.com"} and parsed.path == "/watch":
+            values = parse_qs(parsed.query, keep_blank_values=True).get("v", [])
+            candidate = values[0] if len(values) == 1 else ""
+        elif parsed.hostname == "youtu.be":
+            candidate = parsed.path.removeprefix("/")
+        else:
+            return None
+    except ValueError:
+        return None
+    return candidate if YOUTUBE_ID.fullmatch(candidate) else None
 
 
 HAN = re.compile(r"[一-鿿]")
@@ -82,29 +101,38 @@ def collect_alt_lessons() -> dict:
     for path in sorted(DATA.glob("alt-lessons-*.json")):
         blob = load_json(path)
         for les in (blob or {}).get("lessons", []):
-            if isinstance(les, dict) and les.get("unit") and les.get("url"):
+            if isinstance(les, dict) and les.get("unit"):
                 out[les["unit"]].append(les)
     return out
 
 
 def collect_segments() -> tuple[dict, int]:
-    """url -> 已簽核的逐段筆記；回傳（對照表、被擋下的未簽核影片數）。
+    """YouTube ID -> 已審閱的逐段筆記；回傳（對照表、未審閱影片數）。
 
-    只有 review_status == approved 的影片會進 course.json。逐段筆記是新的教學內容，
-    未通過策展審閱就不該出現在上線站，開放搜尋索引之後更是如此。
+    只有 review_status == approved 的影片會進 course.json。相同 ID 可有多種
+    URL 寫法，但若已審閱來源的筆記不同，停止建置，不能以後者默默覆寫。
     """
     blob = load_json(DATA / "segments.json")
     if not blob:
         return {}, 0
-    approved, held = {}, 0
-    for entry in blob.get("videos", []):
-        url = entry.get("url") or entry.get("video_url")
-        if not url or not entry.get("segments"):
+    approved, held, sources = {}, 0, {}
+    for index, entry in enumerate(blob.get("videos", []), 1):
+        if not entry.get("segments"):
             continue
-        if entry.get("review_status") == "approved":
-            approved[url] = entry["segments"]
-        else:
+        if entry.get("review_status") != "approved":
             held += 1
+            continue
+        url = entry.get("url") or entry.get("video_url")
+        vid = video_id(url)
+        if not vid:
+            raise ValueError(f"segments.json 第 {index} 筆已審閱筆記的影片 URL 無效：{url!r}")
+        if vid in approved and approved[vid] != entry["segments"]:
+            raise ValueError(
+                f"segments.json 同一 YouTube ID {vid} 的已審閱筆記衝突："
+                f"第 {sources[vid][0]} 筆 {sources[vid][1]} 與第 {index} 筆 {url}"
+            )
+        approved[vid] = entry["segments"]
+        sources.setdefault(vid, (index, url))
     return approved, held
 
 
@@ -269,18 +297,24 @@ def version_web_assets() -> str:
 def main() -> int:
     evidence = collect_evidence()
     chapters, problems = [], []
+    unapproved_units = []
     unit_total = drill_total = 0
     seconds = 0
+    unique_seconds = {}
     kinds = Counter()
     learning_tiers = Counter()
     missing_urls, bad_urls, seen_urls = [], [], Counter()
     within_unit = Counter()  # (unit_id, url) -> 次數，同單元重複才是真問題
 
     vmeta = load_json(DATA / "video-meta.json") or {}
-    segments_by_url, segments_held = collect_segments()
+    try:
+        segments_by_id, segments_held = collect_segments()
+    except ValueError as error:
+        print(f"✗ 建置中止：{error}", file=sys.stderr)
+        return 1
     questions_by_unit, questions_held = collect_questions()
     glossary, glossary_count, glossary_approved = collect_glossary()
-    segment_urls: set[str] = set()
+    segment_ids: set[str] = set()
     drill_ev = collect_drill_evidence()
     alt_lessons = collect_alt_lessons()
     multilang = [0]
@@ -331,6 +365,16 @@ def main() -> int:
         if got_drills != want_drills:
             problems.append(f"{code}: 精選影片 {got_drills} 支，應為 {want_drills}")
 
+        blocked = [
+            f"{code} / {u.get('id') or f'{code.lower()}-u{i}'} "
+            f"(review_status={u.get('review_status', '缺少狀態')!r})"
+            for i, u in enumerate(units, 1)
+            if u.get("review_status") != "approved"
+        ]
+        if blocked:
+            unapproved_units.extend(blocked)
+            continue
+
         for u in units:
             u.setdefault("id", f"{code.lower()}-u{units.index(u) + 1}")
             ref_ids = u.get("reference_ids") or []
@@ -360,7 +404,7 @@ def main() -> int:
             primary = {id(x) for x in [u.get("lesson"), *(u.get("drills") or [])] if x}
             vids = list(u.get("lessons") or [u.get("lesson")]) + list(u.get("drills") or [])
             for v in vids:
-                if not v:
+                if v is None:
                     continue
                 counts_toward_total = id(v) in primary
                 url = v.get("url")
@@ -369,14 +413,16 @@ def main() -> int:
                         f"{u['id']} / {v.get('name') or v.get('title') or '主課影片'}"
                     )
                     continue
-                if not YT.match(url):
-                    bad_urls.append(f"{u['id']}: {url}")
+                vid = video_id(url)
+                if not vid:
+                    bad_urls.append(f"{u['id']}: {url!r}")
+                    continue
                 seen_urls[url] += 1
                 within_unit[(u["id"], url)] += 1
 
-                if url in segments_by_url:
-                    v["segments"] = segments_by_url[url]
-                    segment_urls.add(url)
+                if vid in segments_by_id:
+                    v["segments"] = segments_by_id[vid]
+                    segment_ids.add(vid)
 
                 # 時長與頻道以 YouTube 實際 metadata 為準，策展資料僅作後備
                 info = vmeta.get(video_id(url) or "")
@@ -390,6 +436,7 @@ def main() -> int:
                     secs = parse_duration(v.get("duration"))
                     meta_miss.append(url)
                 seconds_all[0] += secs
+                unique_seconds.setdefault(vid, secs)
                 if counts_toward_total:
                     seconds += secs
                 else:
@@ -418,6 +465,12 @@ def main() -> int:
         unit_total += len(units)
         drill_total += got_drills
         chapters.append({"code": code, "title": title, "icon": ic, "units": units})
+
+    if unapproved_units:
+        print("✗ 配置章節含未核准單元，建置中止；未寫入產物：", file=sys.stderr)
+        for unit in unapproved_units:
+            print(f"   · {unit}", file=sys.stderr)
+        return 1
 
     dupes = {u: n for u, n in seen_urls.items() if n > 1}
 
@@ -472,7 +525,9 @@ def main() -> int:
             # 影片：有連結的主課 + 輔助影片 + 多語言替代版本
             "alt_lessons": alt_count[0],
             "video_slots": lesson_video_count + drill_total + alt_count[0],
-            "video_unique": len(seen_urls),
+            "video_unique": len(unique_seconds),
+            "duration_unique": fmt_duration(sum(unique_seconds.values())),
+            "duration_unique_seconds": sum(unique_seconds.values()),
             # 時長分兩個：跑完課程一輪 vs 把每個語言版本都看過
             "duration": fmt_duration(seconds),
             "duration_seconds": seconds,
@@ -486,8 +541,8 @@ def main() -> int:
             ),
             "evidence_checked": len(evidence),
             # 逐段筆記：只計已簽核的；未簽核的不進產物，但數量要看得見
-            "segment_videos": len(segment_urls),
-            "segment_count": sum(len(segments_by_url[u]) for u in segment_urls),
+            "segment_videos": len(segment_ids),
+            "segment_count": sum(len(segments_by_id[u]) for u in segment_ids),
             "segment_videos_held": segments_held,
             "question_units": len(questions_by_unit),
             "question_count": sum(len(v) for v in questions_by_unit.values()),
@@ -498,11 +553,42 @@ def main() -> int:
     if glossary_approved:
         course["glossary"] = glossary
 
+    from case_pages import approved_cases, write_case_pages
+
+    cases_path = DATA / "cases.json"
+    cases_payload = json.loads(cases_path.read_text()) if cases_path.exists() else {
+        "review_status": "approved", "title": "進階判讀練習", "cases": []
+    }
+    cases = approved_cases(cases_payload, course)
+    course["meta"]["practice_case_count"] = len(cases)
+    for chapter in course["chapters"]:
+        for unit in chapter["units"]:
+            unit["practice_cases"] = [
+                {"id": case["id"], "title": case["title"]}
+                for case in cases if case["unit_id"] == unit["id"]
+            ]
+
+    if missing_urls:
+        print(f"\n✗ 缺影片連結 {len(missing_urls)} 支：")
+        for m in missing_urls[:15]:
+            print(f"   · {m}")
+        if len(missing_urls) > 15:
+            print(f"   … 另有 {len(missing_urls) - 15} 支")
+    if bad_urls:
+        print(f"\n✗ URL 格式不正確 {len(bad_urls)} 支：")
+        for b in bad_urls[:10]:
+            print(f"   · {b}")
+    if missing_urls or bad_urls:
+        print("\n✗ 影片連結驗證失敗，建置中止；未寫入產物。", file=sys.stderr)
+        return 1
+
     sync_web()
+    write_case_pages(cases_payload, course, DIST)
     OUT.write_text(json.dumps(course, ensure_ascii=False, indent=1))
     version_web_assets()
 
     import checklist as _checklist
+
     _checklist.generate(DIST)
 
     try:
@@ -539,13 +625,12 @@ def main() -> int:
             + (f" · {questions_held} 組未簽核未輸出" if questions_held else "")
         )
     print(
-        f"   名詞表 {glossary_count} 條"
-        + ("已簽核並輸出" if glossary_approved else "未簽核未輸出")
+        f"   名詞表 {glossary_count} 條" + ("已簽核並輸出" if glossary_approved else "未簽核未輸出")
     )
-    if segment_urls or segments_held:
+    if segment_ids or segments_held:
         print(
-            f"   逐段筆記 {len(segment_urls)} 支影片 · "
-            f"{sum(len(segments_by_url[u]) for u in segment_urls)} 段已簽核並輸出"
+            f"   逐段筆記 {len(segment_ids)} 支影片 · "
+            f"{sum(len(segments_by_id[u]) for u in segment_ids)} 段已簽核並輸出"
             + (f" · {segments_held} 支未簽核未輸出" if segments_held else "")
         )
     if uncategorised:
@@ -553,16 +638,6 @@ def main() -> int:
             f"   ⚠ 未分類動作 {len(uncategorised)}：{'、'.join(x for x in uncategorised[:5] if x)}"
         )
 
-    if missing_urls:
-        print(f"\n⚠ 缺影片連結 {len(missing_urls)} 支：")
-        for m in missing_urls[:15]:
-            print(f"   · {m}")
-        if len(missing_urls) > 15:
-            print(f"   … 另有 {len(missing_urls) - 15} 支")
-    if bad_urls:
-        print(f"\n✗ URL 格式不正確 {len(bad_urls)} 支：")
-        for b in bad_urls[:10]:
-            print(f"   · {b}")
     same_unit_dupes = {k: n for k, n in within_unit.items() if n > 1}
     if same_unit_dupes:
         print(f"\n✗ 同一單元內重複的影片 {len(same_unit_dupes)} 筆：")

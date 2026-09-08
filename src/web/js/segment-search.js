@@ -1,9 +1,21 @@
 // segment-search.js — 逐段筆記的全文比對與命中標示。
-// 刻意不 import 任何東西：這些是純函式，要能直接用 node 測。
+// 與課程搜尋共用名詞展開；不依賴 DOM，可直接用 node 驗證。
+import { expandTerms } from "./search-index.js";
+
+let searchGlossary = [];
+export function setSearchGlossary(glossary) {
+  searchGlossary = Array.isArray(glossary) ? glossary : [];
+}
+
+/** 保留原查詢的字串契約；展開僅用於比對與標示。 */
+export function queryTerms(query) {
+  return [...new Set(expandTerms(normalizeQuery(query), searchGlossary)
+    .map(normalizeQuery).filter(Boolean))];
+}
 
 const HTML = { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" };
 
-/** 與 render.js 的 esc 同語意，這裡自帶一份以維持本模組零相依。 */
+/** 與 render.js 的 esc 同語意，不需要載入任何 DOM 渲染模組。 */
 export function escapeHtml(value) {
   return String(value ?? "").replace(/[&<>"']/g, (c) => HTML[c]);
 }
@@ -22,9 +34,10 @@ export function normalizeQuery(query) {
 
 /** 這一段筆記是否命中查詢。空查詢一律不算命中（避免整頁都被標亮）。 */
 export function segmentMatches(segment, query) {
-  const q = normalizeQuery(query);
-  if (!q) return false;
-  return segmentHaystack(segment).toLowerCase().includes(q);
+  const terms = queryTerms(query);
+  if (!terms.length) return false;
+  const haystack = segmentHaystack(segment).toLowerCase();
+  return terms.some(term => haystack.includes(term));
 }
 
 /** 一支影片有幾段筆記命中——播放清單用它顯示「筆記 N 段」。 */
@@ -40,18 +53,27 @@ export function segmentHitCount(segments, query) {
  */
 export function highlight(text, query) {
   const raw = String(text ?? "");
-  const q = normalizeQuery(query);
-  if (!q) return escapeHtml(raw);
+  const terms = queryTerms(query);
+  if (!terms.length) return escapeHtml(raw);
 
   const lower = raw.toLowerCase();
   let out = "";
   let from = 0;
   for (;;) {
-    const at = lower.indexOf(q, from);
+    // 同義詞可能重疊：每次選最左、同位置最長的一筆，避免巢狀標記。
+    let at = -1;
+    let length = 0;
+    for (const term of terms) {
+      const next = lower.indexOf(term, from);
+      if (next >= 0 && (at < 0 || next < at || (next === at && term.length > length))) {
+        at = next;
+        length = term.length;
+      }
+    }
     if (at < 0) break;
     out += escapeHtml(raw.slice(from, at));
-    out += `<mark class="Hit">${escapeHtml(raw.slice(at, at + q.length))}</mark>`;
-    from = at + q.length;
+    out += `<mark class="Hit">${escapeHtml(raw.slice(at, at + length))}</mark>`;
+    from = at + length;
   }
   return out + escapeHtml(raw.slice(from));
 }

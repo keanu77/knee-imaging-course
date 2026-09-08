@@ -61,22 +61,23 @@ def generate(dist: Path) -> int:
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
 <title>{esc(site.get('name'))}｜判讀檢核表</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&amp;display=swap">
 <style>
   :root {{ color-scheme: light; }}
   * {{ box-sizing: border-box; }}
-  body {{ font-family: -apple-system, "Noto Sans TC", "PingFang TC", sans-serif;
-         margin: 0 auto; max-width: 960px; padding: 24px; font-size: 14px;
-         line-height: 1.6; color: #1f2328; background: #fff; }}
-  header h1 {{ font-size: 22px; margin: 0 0 4px; }}
-  header p {{ margin: 2px 0; color: #59636e; font-size: 12px; max-width: 76ch; }}
+  body {{ font-family: "Noto Sans TC", "PingFang TC", sans-serif;
+         margin: 0 auto; max-width: 1200px; padding: clamp(16px, 4vw, 48px); font-size: 15px;
+         line-height: 1.85; color: #1a2330; background: #faf8f2; }}
+  header h1 {{ font-family: "Noto Sans TC", "PingFang TC", sans-serif; font-size: clamp(24px, 3vw, 36px); font-weight: 600; line-height: 1.6; margin: 24px 0 16px; }}
+  header p {{ margin: 6px 0; color: #5c6670; font-size: 13px; max-width: 76ch; overflow-wrap: anywhere; }}
   .group > h2 {{ font-size: 17px; border-bottom: 2px solid #1f2328; padding-bottom: 4px;
                  margin: 28px 0 8px; page-break-after: avoid; }}
-  .unit {{ border: 1px solid #d1d9e0; border-radius: 8px; padding: 12px 16px;
-           margin: 10px 0; page-break-inside: avoid; }}
-  .unit h3 {{ font-size: 14px; margin: 0 0 8px; }}
+  .unit {{ border: 1px solid #d8d2c4; border-radius: 4px; padding: 20px;
+           margin: 16px 0; page-break-inside: avoid; }}
+  .unit h3 {{ font-size: 16px; margin: 0 0 16px; }}
   .cols {{ display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 16px; }}
-  @media (max-width: 720px) {{ .cols {{ grid-template-columns: 1fr; }} }}
-  h4 {{ font-size: 12px; margin: 0 0 6px; color: #59636e; text-transform: none; }}
+  @media (max-width: 1000px) {{ .cols {{ grid-template-columns: 1fr; }} }}
+  h4 {{ font-size: 13px; margin: 0 0 10px; color: #1b6b73; text-transform: none; }}
   ul {{ margin: 0; padding-left: 18px; }}
   ul.check {{ list-style: none; padding-left: 0; }}
   ul.check li {{ display: flex; gap: 8px; margin: 4px 0; }}
@@ -84,14 +85,19 @@ def generate(dist: Path) -> int:
           border: 1.5px solid #1f2328; border-radius: 3px; }}
   li {{ margin: 3px 0; }}
   .warn h4 {{ color: #9a6700; }}
-  .print-btn {{ position: fixed; right: 16px; top: 16px; padding: 8px 14px;
-                border: 1px solid #d1d9e0; border-radius: 6px; background: #f6f8fa;
+  .toolbar {{ display: flex; justify-content: space-between; align-items: center; gap: 16px; border-bottom: 1px solid #d8d2c4; padding-bottom: 20px; }}
+  .toolbar a {{ color: #1b6b73; text-underline-offset: 4px; }}
+  .toolbar :focus-visible {{ outline: 3px solid #1b6b73; outline-offset: 3px; }}
+  .print-btn {{ min-height: 44px; padding: 8px 14px;
+                border: 1px solid #d8d2c4; border-radius: 4px; color: #1a2330; background: #f2efe6;
                 font: inherit; cursor: pointer; }}
   footer {{ margin-top: 24px; padding-top: 12px; border-top: 1px solid #d1d9e0;
             font-size: 11px; color: #59636e; max-width: 76ch; }}
-  @media print {{ .print-btn {{ display: none; }} body {{ padding: 0; font-size: 12px; }} }}
+  @media print {{ .toolbar {{ display: none; }} body {{ padding: 0; font-size: 12px; background: #fff; }}
+    header h1 {{ font-size: 22px; margin-top: 0; }} .unit {{ padding: 12px 16px; }}
+    .unit h3 {{ font-size: 14px; }} .cols {{ grid-template-columns: 1.2fr 1fr 1fr; }} }}
 </style></head><body>
-<button class="print-btn" onclick="print()">列印／存成 PDF</button>
+<nav class="toolbar" aria-label="檢核表工具"><a href="./">回到課程</a><button class="print-btn" onclick="print()">列印／存成 PDF</button></nav>
 <header>
   <h1>{esc(site.get('name'))}｜判讀檢核表</h1>
   <p>由已通過策展審閱（approved）的單元自動彙整（{n_units} 個單元）・產生日期 {today}・{esc(site.get('url'))}</p>

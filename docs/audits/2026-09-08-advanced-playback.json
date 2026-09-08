@@ -1,0 +1,203 @@
+{
+  "checked_at": "2026-09-08T15:54:45.675Z",
+  "method": "Real Chrome headless, live YouTube nocookie iframe from isolated localhost:8899 test document, strict-origin-when-cross-origin referrer, no YouTube interception; muted autoplay",
+  "historical_failure_explanation": "Earlier script injected frames into review page with default-src none CSP; no video element timeout did not establish source unavailability.",
+  "limitations": "Short decoded-frame spot checks only, not full audiovisual review or guarantee of future availability. No persistent user browser profile.",
+  "results": [
+    {
+      "id": "_iCPhaLtJCI",
+      "requested_start": 16,
+      "initial": {
+        "readyState": 4,
+        "time": 16.002261,
+        "paused": false,
+        "decodedFrames": 20,
+        "playerState": 3,
+        "videoId": "_iCPhaLtJCI",
+        "adShowing": false,
+        "error": null
+      },
+      "final": {
+        "readyState": 4,
+        "time": 17.185641,
+        "paused": false,
+        "decodedFrames": 50,
+        "playerState": 1,
+        "videoId": "_iCPhaLtJCI",
+        "adShowing": false,
+        "error": null
+      },
+      "decoded_target_frames": true,
+      "csp_errors": []
+    },
+    {
+      "id": "CVGEdU2M2KY",
+      "requested_start": 340,
+      "initial": {
+        "readyState": 4,
+        "time": 340.007418,
+        "paused": false,
+        "decodedFrames": 80,
+        "playerState": 3,
+        "videoId": "CVGEdU2M2KY",
+        "adShowing": false,
+        "error": null
+      },
+      "final": {
+        "readyState": 4,
+        "time": 341.189162,
+        "paused": false,
+        "decodedFrames": 117,
+        "playerState": 1,
+        "videoId": "CVGEdU2M2KY",
+        "adShowing": false,
+        "error": null
+      },
+      "decoded_target_frames": true,
+      "csp_errors": []
+    },
+    {
+      "id": "IWbyH5oW2yQ",
+      "requested_start": 503,
+      "initial": {
+        "readyState": 4,
+        "time": 503.002357,
+        "paused": false,
+        "decodedFrames": 129,
+        "playerState": 3,
+        "videoId": "IWbyH5oW2yQ",
+        "adShowing": false,
+        "error": null
+      },
+      "final": {
+        "readyState": 4,
+        "time": 504.183132,
+        "paused": false,
+        "decodedFrames": 159,
+        "playerState": 1,
+        "videoId": "IWbyH5oW2yQ",
+        "adShowing": false,
+        "error": null
+      },
+      "decoded_target_frames": true,
+      "csp_errors": []
+    },
+    {
+      "id": "tx7MI889hCg",
+      "requested_start": 1325,
+      "initial": {
+        "readyState": 4,
+        "time": 1325.008538,
+        "paused": false,
+        "decodedFrames": 55,
+        "playerState": 3,
+        "videoId": "tx7MI889hCg",
+        "adShowing": false,
+        "error": null
+      },
+      "final": {
+        "readyState": 4,
+        "time": 1326.192998,
+        "paused": false,
+        "decodedFrames": 85,
+        "playerState": 1,
+        "videoId": "tx7MI889hCg",
+        "adShowing": false,
+        "error": null
+      },
+      "decoded_target_frames": true,
+      "csp_errors": []
+    },
+    {
+      "id": "Ehw_vGnDEBg",
+      "requested_start": 365,
+      "initial": {
+        "readyState": 4,
+        "time": 365.002158,
+        "paused": false,
+        "decodedFrames": 63,
+        "playerState": 3,
+        "videoId": "Ehw_vGnDEBg",
+        "adShowing": false,
+        "error": null
+      },
+      "final": {
+        "readyState": 4,
+        "time": 366.186894,
+        "paused": false,
+        "decodedFrames": 99,
+        "playerState": 1,
+        "videoId": "Ehw_vGnDEBg",
+        "adShowing": false,
+        "error": null
+      },
+      "decoded_target_frames": true,
+      "csp_errors": []
+    },
+    {
+      "id": "wnw3GqKR370",
+      "requested_start": 737,
+      "initial": {
+        "readyState": 4,
+        "time": 737.009027,
+        "paused": false,
+        "decodedFrames": 10,
+        "playerState": 3,
+        "videoId": "wnw3GqKR370",
+        "adShowing": false,
+        "error": null
+      },
+      "final": {
+        "readyState": 4,
+        "time": 738.191467,
+        "paused": false,
+        "decodedFrames": 39,
+        "playerState": 1,
+        "videoId": "wnw3GqKR370",
+        "adShowing": false,
+        "error": null
+      },
+      "decoded_target_frames": true,
+      "csp_errors": []
+    },
+    {
+      "id": "zRm8SOwtjXA",
+      "requested_start": 1634,
+      "initial": {
+        "readyState": 4,
+        "time": 1634.008792,
+        "paused": false,
+        "decodedFrames": 64,
+        "playerState": 3,
+        "videoId": "zRm8SOwtjXA",
+        "adShowing": false,
+        "error": null
+      },
+      "final": {
+        "readyState": 4,
+        "time": 1635.190391,
+        "paused": false,
+        "decodedFrames": 101,
+        "playerState": 1,
+        "videoId": "zRm8SOwtjXA",
+        "adShowing": false,
+        "error": null
+      },
+      "decoded_target_frames": true,
+      "csp_errors": []
+    }
+  ],
+  "historical_review_page": {
+    "url": "http://127.0.0.1:8902/cases/",
+    "verified_meta_csp": "default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; base-uri 'none'; form-action 'none'",
+    "conclusion": "Dynamic iframe injection into this document is blocked by frame-src fallback to default-src none. Historical no-frame failures do not establish YouTube unavailability."
+  },
+  "summary": {
+    "attempted": 7,
+    "decoded_target_frames": 7,
+    "screenshots_visually_spot_checked": [
+      "_iCPhaLtJCI",
+      "zRm8SOwtjXA"
+    ]
+  }
+}

@@ -1,7 +1,19 @@
 // keys.js — 站內鍵盤快捷鍵。iframe 跨域，所以透過 YouTube IFrame API 的 postMessage 控制。
 import { icon } from "./icons.js";
+import { seekTo, getPosition } from "./player.js";
+import { isTrustedPlayerMessage } from "./playback-policy.js";
 
 const $ = (s, r = document) => r.querySelector(s);
+const SHORTCUTS_KEY = "knee-imaging:single-key-shortcuts";
+let shortcutsEnabled = true;
+try { shortcutsEnabled = localStorage.getItem(SHORTCUTS_KEY) !== "false"; } catch { /* Storage may be unavailable. */ }
+
+export function setShortcutsEnabled(enabled) {
+  shortcutsEnabled = enabled === true;
+  try { localStorage.setItem(SHORTCUTS_KEY, String(shortcutsEnabled)); } catch { /* Keep the in-memory preference. */ }
+  const checkbox = $("#singleKeyShortcuts");
+  if (checkbox) checkbox.checked = shortcutsEnabled;
+}
 
 // 由 infoDelivery 事件持續更新，供 seek/volume 這類需要現值的指令使用
 const st = { time: 0, duration: 0, rate: 1, volume: 100, muted: false, playing: false };
@@ -24,6 +36,7 @@ function send(func, args = []) {
 export function listen() {
   const f = frame();
   if (!f?.contentWindow) return;
+  Object.assign(st, { time: getPosition() ?? 0, duration: 0, rate: 1, volume: 100, muted: false, playing: false });
   f.contentWindow.postMessage(
     JSON.stringify({ event: "listening", id: "ytFrame", channel: "widget" }),
     "https://www.youtube-nocookie.com",
@@ -31,7 +44,7 @@ export function listen() {
 }
 
 addEventListener("message", (e) => {
-  if (!e.origin.includes("youtube")) return;
+  if (!isTrustedPlayerMessage(e, frame()?.contentWindow)) return;
   let d;
   try {
     d = typeof e.data === "string" ? JSON.parse(e.data) : e.data;
@@ -39,16 +52,16 @@ addEventListener("message", (e) => {
     return;
   }
   const info = d?.info;
-  if (!info) return;
-  if (typeof info.currentTime === "number") st.time = info.currentTime;
-  if (typeof info.duration === "number") st.duration = info.duration;
-  if (typeof info.playbackRate === "number") st.rate = info.playbackRate;
-  if (typeof info.volume === "number") st.volume = info.volume;
+  if (!["infoDelivery", "initialDelivery"].includes(d?.event) || !info) return;
+  if (Number.isFinite(info.currentTime) && info.currentTime >= 0) st.time = info.currentTime;
+  if (Number.isFinite(info.duration) && info.duration >= 0) st.duration = info.duration;
+  if (Number.isFinite(info.playbackRate) && info.playbackRate > 0 && info.playbackRate <= 16) st.rate = info.playbackRate;
+  if (Number.isFinite(info.volume) && info.volume >= 0 && info.volume <= 100) st.volume = info.volume;
   if (typeof info.muted === "boolean") st.muted = info.muted;
   if (typeof info.playerState === "number") st.playing = info.playerState === 1;
 });
 
-const seek = (delta) => send("seekTo", [Math.max(0, st.time + delta), true]);
+const seek = (delta) => seekTo(Math.max(0, (getPosition() ?? 0) + delta), { autoplay: st.playing });
 const setRate = (dir) => {
   const steps = [0.25, 0.5, 0.75, 1, 1.25, 1.5, 1.75, 2];
   const i = steps.indexOf(st.rate);
@@ -80,18 +93,26 @@ const SHEET = [
   ["課程導覽", [["N / P", "下一／上一章"], ["Shift + N / P", "下一／上一部影片"], ["/", "搜尋"], ["T", "切換主題"], ["?", "顯示這張表"]]],
 ];
 
+let sheetOpener = null;
 function toggleSheet(force) {
   let el = $("#keySheet");
+  if (!el && force === false) return;
   if (!el) {
-    el = document.createElement("div");
+    el = document.createElement("dialog");
     el.id = "keySheet";
+    el.setAttribute("aria-label", "鍵盤快捷鍵");
+    Object.assign(el.style, { width: "100vw", height: "100dvh", maxWidth: "none", maxHeight: "none", margin: "0", border: "0", boxSizing: "border-box" });
     el.className = "KeySheet";
     el.innerHTML = `
-      <div class="KeySheet__box" role="dialog" aria-label="鍵盤快捷鍵">
+      <div class="KeySheet__box">
         <div class="KeySheet__head">
           ${icon("info", 16)}<strong>鍵盤快捷鍵</strong>
-          <button class="btn btn-invisible btn-icon" data-close type="button">${icon("x", 16)}</button>
+          <button class="btn btn-invisible btn-icon" data-close type="button" aria-label="關閉快捷鍵說明" autofocus>${icon("x", 16)}</button>
         </div>
+        <p class="KeySheet__foot">
+          <label><input id="singleKeyShortcuts" type="checkbox"${shortcutsEnabled ? " checked" : ""} /> 啟用單鍵快捷鍵</label>
+          <br />取消勾選可停用下列播放、搜尋與導覽快捷鍵；「?」說明與 Esc 關閉仍可使用。設定只保存在這個瀏覽器。
+        </p>
         <div class="KeySheet__cols">
           ${SHEET.map(
             ([group, rows]) => `
@@ -101,14 +122,29 @@ function toggleSheet(force) {
             </div>`,
           ).join("")}
         </div>
-        <p class="KeySheet__foot">播放控制透過 YouTube 播放器 API 送出；點進影片後也可直接用 YouTube 原生快捷鍵。</p>
+        <p class="KeySheet__foot">站內跳播以本課診斷段落為範圍。YouTube 原生操作與原始來源仍可能播放範圍外內容。</p>
       </div>`;
     el.addEventListener("click", (e) => {
-      if (e.target === el || e.target.closest("[data-close]")) el.classList.remove("is-on");
+      if (e.target === el || e.target.closest("[data-close]")) toggleSheet(false);
+    });
+    el.addEventListener("change", (e) => {
+      if (e.target.id === "singleKeyShortcuts") setShortcutsEnabled(e.target.checked);
+    });
+    el.addEventListener("close", () => {
+      el.classList.remove("is-on");
+      if (sheetOpener?.isConnected) sheetOpener.focus();
     });
     document.body.append(el);
   }
-  el.classList.toggle("is-on", force ?? !el.classList.contains("is-on"));
+  const open = force ?? !el.open;
+  if (open && !el.open) {
+    sheetOpener = document.activeElement;
+    el.classList.add("is-on");
+    el.showModal();
+    $("[data-close]", el)?.focus();
+  } else if (!open && el.open) {
+    el.close();
+  }
 }
 
 /* --- 綁定 ---------------------------------------------------------------- */
@@ -116,6 +152,13 @@ function toggleSheet(force) {
 export function bindKeys({ next, prev, nextChapter, prevChapter, isPlayerTab }) {
   addEventListener("keydown", (e) => {
     const focused = document.activeElement;
+    if (e.defaultPrevented || e.isComposing || e.target?.closest?.('[role="separator"]')) return;
+    if ($("#keySheet")?.open) {
+      if (e.key === "?") { e.preventDefault(); toggleSheet(false); }
+      return;
+    }
+    // Preserve native button activation, slider movement, and details controls.
+    if ((e.key === " " || e.key.startsWith("Arrow")) && focused?.closest?.('button, a, summary, [role="button"], [role="slider"]')) return;
     if (/^(INPUT|TEXTAREA|SELECT)$/.test(focused?.tagName) || focused?.isContentEditable) return;
     if (e.metaKey || e.ctrlKey || e.altKey) return;
 
@@ -124,10 +167,11 @@ export function bindKeys({ next, prev, nextChapter, prevChapter, isPlayerTab }) 
       return toggleSheet();
     }
     if (e.key === "Escape") return toggleSheet(false);
+    if (!shortcutsEnabled) return;
 
     if (e.key === "/") {
       e.preventDefault();
-      return $("#search")?.focus();
+      return $(isPlayerTab() ? "#playlistSearch" : "#search")?.focus();
     }
 
     // 換片不限分頁，其餘播放控制只在上課模式生效
@@ -169,7 +213,7 @@ export function bindKeys({ next, prev, nextChapter, prevChapter, isPlayerTab }) 
     else if (e.shiftKey && (k === "<" || k === ",")) { e.preventDefault(); setRate(-1); }
     else if (/^[0-9]$/.test(k) && st.duration) {
       e.preventDefault();
-      send("seekTo", [st.duration * (+k / 10), true]);
+      seekTo(st.duration * (+k / 10), { autoplay: st.playing });
       toast(`${+k * 10}%`);
     }
   });

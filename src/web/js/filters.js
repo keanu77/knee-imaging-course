@@ -45,11 +45,13 @@ export function renderMusclePanel(course) {
 
 /** 同步所有肌群按鈕（側欄 chip + 動作內的標籤）的選取狀態 */
 export function syncMuscleChips(selected) {
-  $$("[data-muscle]").forEach((el) =>
-    el.classList.toggle("is-active", selected.has(el.dataset.muscle)),
-  );
+  $$("[data-muscle]").forEach((el) => {
+    const active = selected.has(el.dataset.muscle);
+    el.classList.toggle("is-active", active);
+    el.setAttribute("aria-pressed", String(active));
+  });
   const panel = $("#musclePanel");
-  if (panel && selected.size) panel.classList.add("is-open");
+  if (panel && selected.size) { panel.classList.add("is-open"); document.querySelector("#muscleToggle")?.setAttribute("aria-expanded", "true"); }
 }
 
 /* --- 主篩選 -------------------------------------------------------------- */
@@ -62,6 +64,8 @@ export function applyFilters(state, course) {
   const q = state.query.trim().toLowerCase();
   const searchTerms = state.searchTerms?.length ? state.searchTerms : q ? [q] : [];
   const sel = state.muscles;
+  const hits = state.searchHits || [];
+  const matchingUnits = new Set(hits.map(hit => hit.unitId));
   let visibleUnits = 0;
   let visibleDrills = 0;
 
@@ -71,15 +75,13 @@ export function applyFilters(state, course) {
     $$(".Unit", chEl).forEach((unitEl) => {
       const unitMuscles = (unitEl.dataset.facets || "").split("|").filter(Boolean);
       const muscleOk = !sel.size || unitMuscles.some((m) => sel.has(m));
-      const unitText = unitEl.textContent.toLowerCase();
-      const textOk = !searchTerms.length || searchTerms.some((term) => unitText.includes(term));
+      const textOk = !searchTerms.length || matchingUnits.has(unitEl.dataset.unit);
       const match = muscleOk && textOk;
 
       unitEl.hidden = !match;
       if (!match) return;
 
-      chapterHasMatch = true;
-      visibleUnits++;
+      let unitVisibleDrills = 0;
 
       // 動作層級：類型 + 肌群兩個維度
       $$(".Drill", unitEl).forEach((d) => {
@@ -89,9 +91,15 @@ export function applyFilters(state, course) {
         const dm = (d.dataset.facets || "").split("|").filter(Boolean);
         const mOk = !sel.size || dm.some((m) => sel.has(m));
         d.hidden = !(kindOk && tierOk && mOk);
-        if (kindOk && tierOk && mOk) visibleDrills++;
+        if (kindOk && tierOk && mOk) { visibleDrills++; unitVisibleDrills++; }
       });
 
+      if (!unitVisibleDrills && (state.filter !== "all" || state.learningTier !== "all")) {
+        unitEl.hidden = true;
+        return;
+      }
+      chapterHasMatch = true;
+      visibleUnits++;
       // 整組動作都被篩掉就把標題也收起來
       $$(".DrillGroup", unitEl).forEach((g) => {
         const anyVisible = $$(".Drill", g).some((d) => !d.hidden);
@@ -109,9 +117,10 @@ export function applyFilters(state, course) {
   if (sel.size) parts.push(`${UI.facetPrefix || ""}：${[...sel].join("、")}`);
   if (state.learningTier === "core") parts.push(UI.coreCountLabel || "核心必看");
 
+  $("#filterCount").setAttribute("role", "status");
   $("#filterCount").textContent = parts.length
-    ? `${visibleUnits} 個單元 · ${visibleDrills} 支影片符合 ${parts.join(" + ")}`
-    : `顯示 ${visibleDrills} / ${totalDrills} 支精選影片`;
+    ? `${visibleUnits} 個相關單元 · ${visibleDrills} 個影片項目${q ? "；精確命中見上方搜尋結果" : ` · ${parts.join(" + ")}`}`
+    : `顯示 ${visibleDrills} / ${totalDrills} 個影片項目`;
 
   toggleBlankslate(visibleUnits);
   return { visibleUnits, visibleDrills };
@@ -127,6 +136,7 @@ function toggleBlankslate(visibleUnits) {
          ${icon("inbox", 32)}
          <p class="Blankslate__heading">${esc(UI.emptyTitle || "")}</p>
          <p>${esc(UI.emptyHint || "")}</p>
+         <button class="btn" type="button" data-clear-filters>清除篩選，查看全部課程</button>
        </div>`,
     );
   } else if (visibleUnits > 0 && existing) {

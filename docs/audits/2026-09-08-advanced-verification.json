@@ -1,0 +1,53 @@
+{
+  "checked_at": "2026-09-08T15:43:35.334576+00:00",
+  "review_status": "draft",
+  "candidate_sha256": "b8f596455cef059760fef11b7cb56442182ee472ca9e577a6a117135c4e83da7",
+  "cases_sha256": "d4630b5fb362b7d5f7b13986f733af96c28ea0b07727e31d9e618544d543765d",
+  "existing_build": {
+    "units": 18,
+    "unique_videos": 36,
+    "questions": 60
+  },
+  "draft_additions": {
+    "units": 7,
+    "unique_new_videos": 7,
+    "segments": 21,
+    "diagnostic_seconds": 1825,
+    "questions": 21,
+    "exercises": 14,
+    "references": 11,
+    "classic_video_exceptions": 4
+  },
+  "video_metadata_captions": "7/7 public and playable_in_embed true; en-orig VTT retrieved; selected captions reviewed",
+  "actual_streaming": "0/7 successful in headless embedding; actual media not signed off; CUA no browser available",
+  "browser_review_ui": [
+    {
+      "width": 390,
+      "modules": 7,
+      "cases": 14,
+      "checks": "pass"
+    },
+    {
+      "width": 1440,
+      "modules": 7,
+      "cases": 14,
+      "checks": "pass"
+    }
+  ],
+  "model_audit": {
+    "codex": "gpt-5.5; initial configured gpt-6-astra unsupported by installed CLI",
+    "grok": "CLI read-only isolated copy",
+    "antigravity": "inline-material fallback after tool permission auto-denied; settings unchanged",
+    "qwen": "qwen3.8:27b-mlx local; 70374 prompt tokens; complete response",
+    "pass2": "29 original findings all checked and split; report in advanced-multi-llm-validation.md"
+  },
+  "tests": [
+    "make jscheck test build audit PY=.venv/bin/python",
+    "ruff check .",
+    "git diff --check",
+    "case renderer 7 tests",
+    "review renderer 8 tests",
+    "real draft UI 390/1440 px"
+  ],
+  "deployment": "not committed/pushed/deployed"
+}

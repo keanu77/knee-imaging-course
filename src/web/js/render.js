@@ -35,6 +35,14 @@ const toneCls = (o) => `Label--${o?.tone || "neutral"}`;
 const gradeOf = (id) => GRADE[id] || Object.values(GRADE)[0] || { label: id, tone: "neutral" };
 const tierOf = (id) => TIER[id] || { label: id || "未分級", tone: "neutral" };
 
+function sourceLink(source) {
+  try {
+    const url = new URL(source.url);
+    if (!["https:", "http:"].includes(url.protocol) || url.username || url.password) return esc(source.title);
+    return `<a href="${esc(url.href)}" target="_blank" rel="noopener noreferrer">${esc(source.title)}</a>`;
+  } catch { return esc(source.title); }
+}
+
 function dateMeta(v) {
   const original = v?.original_content_date;
   const upload = v?.upload_date;
@@ -118,8 +126,8 @@ function videoCard(v) {
 
 const REVIEW = {
   draft: { label: "內容草稿", tone: "attention" },
-  "medical-review": { label: "醫療審閱中", tone: "accent" },
-  approved: { label: "已核准", tone: "success" },
+  "medical-review": { label: "策展審閱中", tone: "accent" },
+  approved: { label: "通過策展審閱", tone: "success" },
 };
 
 function clinicalBrief(u) {
@@ -158,18 +166,19 @@ function clinicalBrief(u) {
   const objectiveBlock = objectives.length
     ? `<section class="ClinicalBrief__objective">
          <span class="ClinicalBrief__objectiveIcon">${icon("target", 17)}</span>
-         <span class="ClinicalBrief__objectiveLabel">LEARNING TARGET</span>
+         <span class="ClinicalBrief__objectiveLabel">學習目標</span>
          <ul>${objectives.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>
        </section>`
     : "";
 
-  const refs = (u.references || []).length
+  const sources = [...(u.references || []), ...(u.source_cases || [])];
+  const refs = sources.length
     ? `<section class="ClinicalBrief__refs">
          <h4>${icon("book-open", 14)} 依據與延伸閱讀</h4>
          <ul>
-           ${u.references
+           ${sources
              .map(
-               (r) => `<li><a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.title)}</a>` +
+               (r) => `<li>${sourceLink(r)}` +
                  `${r.year ? ` <span class="Label Label--neutral">${esc(r.year)}</span>` : ""}</li>`,
              )
              .join("")}
@@ -183,19 +192,20 @@ function clinicalBrief(u) {
 
   return `<div class="ClinicalBrief">
     ${objectiveBlock}
+    ${u.content_boundary ? `<section class="ClinicalBrief__boundary"><h4>影片涵蓋範圍</h4><p>${esc(u.content_boundary)}</p></section>` : ""}
     <div class="ClinicalBrief__grid" aria-label="臨床掃描檢核表">
       ${section({
         title: "必備視圖／產出",
-        code: "VIEW SET",
+        code: "先確認影像",
         iconName: "scan-line",
         list: u.required_views,
         cls: "ClinicalBrief__section--views",
         fallback: viewFallback,
-        emptyLabel: u.type === "orientation" ? "N/A" : "待補",
+        emptyLabel: u.type === "orientation" ? "不適用" : "待補",
       })}
       ${section({
         title: "操作與判讀重點",
-        code: "SCAN KEYS",
+        code: "再核對重點",
         iconName: "shield-check",
         list: u.key_points,
         cls: "ClinicalBrief__section--points",
@@ -203,13 +213,18 @@ function clinicalBrief(u) {
       })}
       ${section({
         title: "常見陷阱",
-        code: "PITFALLS",
+        code: "避免誤判",
         iconName: "triangle-alert",
         list: u.pitfalls,
         cls: "ClinicalBrief__section--pitfalls",
         fallback: "常見陷阱待醫療審閱。",
       })}
     </div>
+    ${u.practice_cases?.length ? `<section class="ClinicalBrief__refs">
+      <h4>${icon("clipboard-list", 14)} 進階判讀練習</h4>
+      <p>先記錄所見、鑑別與限制，再開啟解析對照。</p>
+      <ul>${u.practice_cases.map((c) => `<li><a href="practice/#case-${encodeURIComponent(c.id)}">${esc(c.title)}</a></li>`).join("")}</ul>
+    </section>` : ""}
     ${refs}
   </div>`;
 }
@@ -472,6 +487,7 @@ function quiz(u) {
           <span class="QuizQuestion__stem">${esc(q.stem)}</span>
         </legend>
         <div class="QuizQuestion__options">${options}</div>
+        ${q.source_links?.length ? `<div class="QuizQuestion__sources"><strong>題目來源</strong><ul>${q.source_links.map(s => `<li>${sourceLink(s)}</li>`).join("")}</ul></div>` : ""}
       </fieldset>`;
   }).join("");
 
@@ -504,7 +520,7 @@ const MASTERY_VIEW = {
   review: { icon: "triangle-alert", label: "待複習" },
 };
 
-function renderUnit(u, mastery) {
+function renderUnit(u, mastery, chapterCode, number, nextUnit) {
   const total = (u.drills || []).length;
   const review = REVIEW[u.review_status] || REVIEW.draft;
   const masteryView = MASTERY_VIEW[mastery] || MASTERY_VIEW["not-started"];
@@ -514,7 +530,7 @@ function renderUnit(u, mastery) {
     typeLabel
       ? `<span class="Label Label--${u.type === "foundation" ? "accent" : "neutral"}">${esc(typeLabel)}</span>`
       : "",
-    u.level ? `<span class="Label Label--neutral">${esc(u.level)}</span>` : "",
+    u.level && u.level !== u.type ? `<span class="Label Label--neutral">${esc(({ foundation: "基礎", intermediate: "進階", advanced: "深入" })[u.level] || u.level)}</span>` : "",
     `<span class="Label Label--${review.tone}">${esc(review.label)}</span>`,
     total ? `<span class="Label Label--neutral">${icon("layers", 11)} ${total}</span>` : "",
     // 實證強度直接標在標題列。contested 的單元不該要展開才看得到
@@ -544,21 +560,26 @@ function renderUnit(u, mastery) {
   return `
     <article class="Unit is-${esc(mastery)}" id="${esc(u.id)}" data-unit="${esc(u.id)}"
              data-facets="${esc(allFacets.join("|"))}">
-      <button class="Unit__header" type="button" data-toggle="unit">
-        <span class="Unit__check" data-action="toggle-done" role="checkbox"
-              aria-checked="${mastery === "done"}" aria-label="掌握度：${masteryView.label}"
-              tabindex="0" title="掌握度：${masteryView.label}">
+      <div class="Unit__heading">
+        <button class="Unit__check" data-action="toggle-done" type="button"
+              aria-pressed="${mastery === "done"}" aria-label="${esc(u.name)}：${masteryView.label}"
+              title="${masteryView.label}">
           ${icon(masteryView.icon, 13)}<span class="Unit__checkLabel">${masteryView.label}</span>
-        </span>
-        <span class="Unit__main">
-          <span class="Unit__kicker"><span>${esc(u.id.toUpperCase().replace("-", " / "))}</span> CLINICAL MODULE</span>
-          <span class="Unit__title">${esc(u.name)} ${badges}</span>
-          ${u.summary ? `<span class="Unit__summary">${esc(u.summary)}</span>` : ""}
-        </span>
-        <span class="Unit__chevron">${icon("chevron-right", 16)}</span>
-      </button>
+        </button>
+        <h3 class="Unit__headingTitle">
+          <button class="Unit__header" type="button" data-toggle="unit" aria-expanded="false" aria-controls="body-${esc(u.id)}">
+            <span class="Unit__main">
+              <span class="Unit__kicker">${esc(chapterCode)} · 單元 ${number}</span>
+              <span class="Unit__title">${esc(u.name)}</span>
+              <span class="Unit__badges">${badges}</span>
+              ${u.summary ? `<span class="Unit__summary">${esc(u.summary)}</span>` : ""}
+            </span>
+            <span class="Unit__chevron">${icon("chevron-right", 16)}</span>
+          </button>
+        </h3>
+      </div>
 
-      <div class="Unit__body">
+      <div class="Unit__body" id="body-${esc(u.id)}">
         ${clinicalBrief(u)}
         ${lessonBox(u)}
         ${
@@ -569,11 +590,16 @@ function renderUnit(u, mastery) {
                </div>`
             : ""
         }
-        ${quiz(u)}
         ${muscles(u.tight, u.weak)}
         ${evidence(u.evidence, u.id)}
         ${groups}
+        ${quiz(u)}
         ${drillEvidence(u)}
+        <div class="Unit__next">
+          <a class="btn Unit__readingLink" href="/units/${esc(encodeURIComponent(u.id))}/">${icon("book-open", 14)} 開啟單元閱讀版</a>
+          <a class="btn" href="?tab=course#${esc(u.id)}" data-copy-unit="${esc(u.id)}">${icon("link", 14)} 分享本單元</a>
+          ${nextUnit ? `<button class="btn btn-primary" data-continue-unit="${esc(nextUnit.id)}" type="button">下一單元：${esc(nextUnit.name)} ${icon("chevron-right", 14)}</button>` : '<a class="btn" href="?tab=home" data-tab-link="home">回學習總覽</a>'}
+        </div>
       </div>
     </article>`;
 }
@@ -583,14 +609,14 @@ function renderUnit(u, mastery) {
 
 /* --- 章節 ---------------------------------------------------------------- */
 
-export function renderChapter(ch, doneSet, masteryMap = new Map()) {
+export function renderChapter(ch, doneSet, masteryMap = new Map(), nextChapterUnit = null) {
   const doneCount = ch.units.filter((u) => doneSet.has(u.id)).length;
   const pct = ch.units.length ? Math.round((doneCount / ch.units.length) * 100) : 0;
   const drillTotal = ch.units.reduce((n, u) => n + (u.drills?.length || 0), 0);
 
   return `
     <section class="Chapter" id="${esc(ch.code)}" data-chapter="${esc(ch.code)}">
-      <button class="Chapter__header" type="button" data-toggle="chapter">
+      <h2 class="Chapter__heading"><button class="Chapter__header" type="button" data-toggle="chapter" aria-expanded="false" aria-controls="chapter-body-${esc(ch.code)}">
         <span class="Chapter__num">${CHAPTER_PICTOGRAM[ch.code] ? `<svg class="Pictogram" width="30" height="30" aria-hidden="true"><use href="#p-${CHAPTER_PICTOGRAM[ch.code]}" /></svg>` : icon(ch.icon || "circle-dot", 18)}</span>
         <span class="Chapter__titles">
           <span class="Chapter__title">
@@ -608,13 +634,14 @@ export function renderChapter(ch, doneSet, masteryMap = new Map()) {
           </span>
         </span>
         <span class="Chapter__chevron">${icon("chevron-right", 16)}</span>
-      </button>
-      <div class="Chapter__body">
+      </button></h2>
+      <div class="Chapter__body" id="chapter-body-${esc(ch.code)}">
         ${ch.units
-          .map((u) =>
+          .map((u, i) =>
             renderUnit(
               u,
               masteryMap.get(u.id) || (doneSet.has(u.id) ? "done" : "not-started"),
+              ch.code, i + 1, ch.units[i + 1] || nextChapterUnit,
             ),
           )
           .join("")}
@@ -624,7 +651,7 @@ export function renderChapter(ch, doneSet, masteryMap = new Map()) {
 
 /* --- 首頁 ---------------------------------------------------------------- */
 
-export function renderHome(course, { doneSet = new Set(), lastUnit = null } = {}) {
+export function renderHome(course, { doneSet = new Set(), lastUnit = null, mastery = new Map() } = {}) {
   const { meta, chapters, stance } = course;
 
   const units = chapters.flatMap((chapter) =>
@@ -632,7 +659,9 @@ export function renderHome(course, { doneSet = new Set(), lastUnit = null } = {}
   );
   const last = units.find(({ unit }) => unit.id === lastUnit?.id);
   const first = units[0];
-  const resume = last || first;
+  const next = units.find(({ unit }) => !doneSet.has(unit.id));
+  const resume = last && !doneSet.has(last.unit.id) ? last : next || first;
+  const reviewUnits = units.filter(({ unit }) => mastery.get(unit.id) === "review");
   const total = units.length;
   const done = units.filter(({ unit }) => doneSet.has(unit.id)).length;
   const progress = total ? Math.round((done / total) * 100) : 0;
@@ -657,30 +686,34 @@ export function renderHome(course, { doneSet = new Set(), lastUnit = null } = {}
           <span class="Label ${toneCls(g)}">${g.label}</span>
           <strong>${esc(s.name)}</strong>
         </div>
-        <p>${esc((CFG.stance?.verdicts || {})[s.unit] || "")}</p>
+        <p>${esc((CFG.stance?.verdicts || {})[s.unit] || s.summary || "")}</p>
       </div>`;
   }).join("");
 
-  const chapterCards = chapters.map((ch) => {
-    const drills = ch.units.reduce((n, u) => n + (u.drills?.length || 0), 0);
-    return `
-      <button class="ChapterCard" type="button" data-goto-chapter="${esc(ch.code)}">
-        <span class="ChapterCard__icon">${icon(ch.icon || "circle-dot", 18)}</span>
-        <span class="ChapterCard__main">
-          <span class="ChapterCard__title"><span class="Chapter__code">${esc(ch.code)}</span> ${esc(ch.title)}</span>
-          <span class="ChapterCard__meta">${ch.units.length} 單元${drills ? ` · ${drills} ${UI.drillNoun || "支精選影片"}` : ""}</span>
-          <span class="ChapterCard__units">${ch.units.map((u) => esc(u.name)).join("、")}</span>
-        </span>
-      </button>`;
-  }).join("");
+  const chapterCards = (CFG.nav || []).map((group, groupIndex) => `
+    <section class="ChapterGroup">
+      <h3 class="ChapterGroup__title"><span>0${groupIndex + 1}</span>${esc(group.title)}</h3>
+      ${chapters.filter(ch => group.chapters.includes(ch.code)).map(ch => {
+        const drills = ch.units.reduce((n, u) => n + (u.drills?.length || 0), 0);
+        return `<button class="ChapterCard" type="button" data-goto-chapter="${esc(ch.code)}" aria-label="前往 ${esc(ch.code)} ${esc(ch.title)}">
+          <span class="ChapterCard__code">${esc(ch.code)}</span>
+          <span class="ChapterCard__main">
+            <span class="ChapterCard__title">${esc(ch.title)}</span>
+            <span class="ChapterCard__meta">${ch.units.length} 個單元 · ${drills} 個影片項目</span>
+            <span class="ChapterCard__units">${ch.units.map(u => esc(u.name)).join("、")}</span>
+          </span>
+          ${icon("chevron-right", 16)}
+        </button>`;
+      }).join("")}
+    </section>`).join("");
 
   return `
     <section class="ContinueCard" aria-labelledby="continueTitle">
       <div class="ContinueCard__main">
-        <span class="ContinueCard__eyebrow">${icon("book-open", 14)} LEARNING PROGRESS</span>
+        <span class="ContinueCard__eyebrow">${icon("book-open", 14)} 我的學習</span>
         <h2 class="ContinueCard__title" id="continueTitle">
           ${last
-            ? `上次學到：${esc(last.chapter.title)}／${esc(last.unit.name)}`
+            ? `繼續學習：${esc(resume.unit.name)}`
             : "從第一章開始"}
         </h2>
         <div class="ContinueCard__progressHead">
@@ -699,19 +732,36 @@ export function renderHome(course, { doneSet = new Set(), lastUnit = null } = {}
            </button>`
         : ""}
     </section>
-
+    <p class="ProgressPrivacy">進度與答題紀錄保存在這個瀏覽器；更換裝置或清除瀏覽資料後不會自動同步。</p>
+    ${reviewUnits.length ? `<section class="ReviewQueue" aria-label="待複習單元"><h2>待複習 · ${reviewUnits.length}</h2>${reviewUnits.map(({unit}) => `<button class="btn" data-review-unit="${esc(unit.id)}" type="button">${esc(unit.name)} ${icon("chevron-right",14)}</button>`).join("")}</section>` : ""}
+    <section class="Landing__section" aria-labelledby="pathwaysTitle">
+      <h2 class="Landing__h2" id="pathwaysTitle">選擇今天的學習主軸</h2>
+      ${meta.practice_case_count ? `<p class="Landing__lede">已熟悉基本判讀？進入 <a href="practice/">${meta.practice_case_count} 項進階判讀練習</a>，練習所見、鑑別、報告與證據限制。</p>` : ""}
+      <div class="Pathways">${(CFG.nav || []).map((group, i) => {
+        const selected = chapters.filter(ch => group.chapters.includes(ch.code));
+        const videos = selected.flatMap(ch => ch.units.flatMap(u => u.drills || []));
+        const core = videos.filter(v => v.learning_tier === "core");
+        const seconds = core.reduce((sum, v) => sum + String(v.duration || "0:00").split(":").reduce((n, x) => n * 60 + Number(x), 0), 0);
+        return `<button class="Pathway Pathway--${i}" type="button" data-goto-chapter="${esc(selected[0]?.code || "")}"><span class="Pathway__number">0${i + 1} / 學習路徑</span><span class="Pathway__title">${esc(group.title)}</span><span class="Pathway__description">${esc((L.pathwayDescriptions || [])[i] || "依章節逐步學習與複習")}</span><span>${selected.reduce((n,ch)=>n+ch.units.length,0)} 個單元 · ${core.length} 支核心影片${seconds ? ` · 約 ${Math.ceil(seconds / 60)} 分` : ""}</span><span class="Pathway__action">進入章節 ${icon("chevron-right",18)}</span></button>`;
+      }).join("")}</div>
+    </section>
+    <section class="Landing__section">
+      <h2 class="Landing__h2">${icon("layers", 20)} ${esc(L.chaptersTitle || "")}</h2>
+      <p class="Landing__lede">依影像類型瀏覽，進入章節後可查看完整單元與影片。</p>
+      <div class="ChapterGrid">${chapterCards}</div>
+    </section>
     <section class="Landing__section">
       <h2 class="Landing__h2">${icon("book-open", 20)} ${esc(L.howTitle || "")}</h2>
       <div class="Steps">${steps}</div>
     </section>
 
-    <section class="Landing__section">
+    ${stanceCards ? `<section class="Landing__section">
       <h2 class="Landing__h2">${icon("microscope", 20)} ${esc(L.stanceTitle || "")}</h2>
       <p class="Landing__lede">
 ${esc(L.stanceLede || "")}
       </p>
       <div class="Landing__stance">${stanceCards}</div>
-    </section>
+    </section>` : ""}
 
     ${(L.notices || []).length
       ? `<section class="Landing__section">
@@ -731,19 +781,17 @@ ${esc(L.stanceLede || "")}
          </section>`
       : ""}
 
-    <section class="Landing__section">
-      <h2 class="Landing__h2">${icon("layers", 20)} ${esc(L.chaptersTitle || "")}</h2>
-      <div class="ChapterGrid">${chapterCards}</div>
-    </section>
+
 
     <section class="Landing__cta">
       <div>
         <h2 class="Landing__h2">${esc(L.ctaTitle || "")}</h2>
         <p class="Landing__lede">
-${esc((L.ctaLede || "").replace("{units}", meta.units).replace("{videos}", meta.video_slots))}
+${esc((L.ctaLede || "").replace("{units}", meta.units).replace("{videos}", meta.video_unique))}
         </p>
       </div>
       <div class="Landing__ctaBtns">
+        ${meta.practice_case_count ? `<a class="btn" href="practice/">${icon("clipboard-list", 14)} 進階判讀練習 · ${meta.practice_case_count} 題</a>` : ""}
         <button class="btn btn-primary" type="button" data-tab-link="player">
           ${icon("play", 14)} ${esc(CFG.ui?.tabs?.player || "")}
         </button>

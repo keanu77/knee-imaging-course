@@ -1,37 +1,32 @@
-# GitHub 與未授權發布 handoff
+# 發布與驗證
 
-## 本次 GitHub 範圍
+2026-09-09 實查：本專案由 Cloudflare Pages 的 GitHub integration 發布。
 
-1. 建立 private repo `keanu77/knee-ultrasound-course`，預設分支 `main`。
-2. 以 `feat/knee-course-v1` 提交完整課程內容並推送。
-3. 建立 draft PR，確認 GitHub Actions 的 `make check` 通過。
-4. PR 明載醫療狀態為 `draft`、`allowIndexing=false`，以及 OG 與真實瀏覽器 QA 待 MacBook Air 執行。
+- GitHub：`keanu77/knee-imaging-course`，repository ID `1318617772`。
+- Cloudflare Pages：`knee-ultrasound-course`，production branch `main`。
+- 平台 build command：`python3 src/build/build.py`；root 為 repository 根目錄，output 為 `dist`。
+- 正式網址：https://knee-imaging.sportsmedicine.tw/
+- Cloudflare source config 仍顯示更名前的 `knee-ultrasound-course`，repository ID 與目前 GitHub 相同；勿另建專案或重設網域。
 
-本次不 merge；`main` 不因 draft PR 自動取得課程內容。
+使用者本次 `ship` 已授權提交與推送前輪完成的 UI、運動傷害與進階教材。兩份教材批准分別見 `course/research/2026-09-08-sports-ultrasound-approval.json` 與 `2026-09-08-advanced-approval.json`；受審原稿不可改寫。
 
-## Cloudflare 設定僅供未來記錄
-
-- GitHub repo：`keanu77/knee-ultrasound-course`
-- 預定 Pages 專案名：`knee-ultrasound-course`
-- 預定 production branch：`main`
-- root directory：repo 根目錄
-- build command：`uv run python src/build/build.py`
-- build output：`dist`
-- 正式網域：`https://knee-imaging.sportsmedicine.tw`
-- Cloudflare zone：`sportsmedicine.tw`
-
-這些值只是 frozen brief。此次不建立 Cloudflare Pages、不連接 GitHub、不建立 preview、不修改 DNS、不加入 custom domain，也不執行 production smoke。
-
-## 本次 gate 與 Air 端 handoff
-
-Codex 本機必須通過：
+## 推送前
 
 ```bash
-make build
 make check
 make verify
+PLAYWRIGHT_MODULE=/path/to/playwright BASE_URL=http://127.0.0.1:8899/ node tests/browser_smoke.cjs
 ```
 
-`make og` 不在 Codex sandbox 執行。MacBook Air 端需在 sandbox 外產生 `og.png`，確認尺寸 1200×630、文字未截斷且對比可讀；並以真實瀏覽器完成 320／390／desktop 的水平溢位、鍵盤、console、network、YouTube fallback 及 44px 觸控目標檢查。
+GitHub Actions 執行 `uv sync --locked` 與 `make check`。本專案為 Python 標準庫建置及原生 JavaScript，語法檢查採 `make jscheck`，沒有 TypeScript 編譯步驟。
 
-在任何未來 preview 或 production 發布前，仍須確認 HTML robots meta 與 `_headers` 的 `X-Robots-Tag` 均為 `noindex`，且 AI crawler 封鎖存在。醫療審閱未完成前不得把 `allowIndexing` 改為 `true`。
+本機 uv cache 受限時可使用 `UV_CACHE_DIR=/tmp/knee-ship-uv-cache make check PY=.venv/bin/python`。不要放寬內容審閱、診斷範圍或測試閘門。
+
+## 推送後
+
+1. 確認 GitHub main 的 SHA 與本機 HEAD 相同，並查看 quality workflow。
+2. `wrangler pages deployment list --project-name knee-ultrasound-course --environment production --json` 確認新 SHA 的正式部署成功。
+3. 比對正式站與本機 `dist/course.json`、主要 JS/CSS、`practice/index.html` 及單元閱讀頁的內容 SHA-256；HTTP 200 不足以證明新版本上線。
+4. 驗證正式站課程導覽與練習入口、作答後解析、手機版面。
+
+不使用 `make deploy`／Direct Upload。保留既有 indexing 設定與策展紀錄；課程收錄不等於臨床能力認證。

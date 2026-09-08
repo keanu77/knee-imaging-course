@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "decision": "approved-for-course-inclusion",
+  "user_statement": "可以收錄",
+  "decision_context": "使用者同意先前具體審閱版所列 4 單元、4 支影片、22 診斷片段、12 題與 7 篇新增文獻，含 3 支 2020 年經典例外。",
+  "recorded_at_utc": "2026-09-07T23:05:15Z",
+  "reviewed_by": "吳易澄",
+  "reviewer_role": "課程策展人",
+  "reviewed_payload_path": "course/research/2026-09-08-sports-ultrasound-candidates.json",
+  "reviewed_payload_sha256": "f15403cc757ba3bfc4e683736c5850a5b0ed9aa071e74b3a4adca91410476a41",
+  "base_commit_at_decision": "75cfd6ce4dec8eb8c9e82de095f1c000975ba198",
+  "reviewed_commit_semantics": "新紀錄 reviewed_commit 是裁決時的既有基底 commit，不宣稱該 commit 已包含新增內容；裁決內容以 reviewed_payload_sha256 精確綁定。",
+  "limitations": [
+    "策展同意不等於完整逐影格、聲畫邊界或第三方臨床內容的醫師背書。",
+    "metadata、字幕與來源證據已查核；實際串流僅對 Rao 與 Pedret 的選定時間點抽查。",
+    "不構成正式網站部署或 Git push 的授權。"
+  ],
+  "module_ids": [
+    "us-sport-extensor",
+    "us-sport-collateral",
+    "us-sport-snapping",
+    "us-sport-hamstring-calf"
+  ],
+  "video_ids": [
+    "akAXPzQV_8w",
+    "IwgmKSVgADQ",
+    "3YIzZFSsCTc",
+    "iwjYAxUS4oM"
+  ],
+  "classic_exceptions": [
+    "akAXPzQV_8w",
+    "IwgmKSVgADQ",
+    "iwjYAxUS4oM"
+  ],
+  "schema_adaptations": {
+    "adjacent_segment_endpoints": [
+      {
+        "video_id": "akAXPzQV_8w",
+        "segment_title": "病人姿勢與正交掃描",
+        "reviewed_end_seconds": 815,
+        "integrated_end_seconds": 814
+      },
+      {
+        "video_id": "akAXPzQV_8w",
+        "segment_title": "髕腱各向異性與兩平面確認",
+        "reviewed_end_seconds": 930,
+        "integrated_end_seconds": 929
+      },
+      {
+        "video_id": "akAXPzQV_8w",
+        "segment_title": "髕腱病例：纖維結構與血流",
+        "reviewed_end_seconds": 2158,
+        "integrated_end_seconds": 2157
+      },
+      {
+        "video_id": "IwgmKSVgADQ",
+        "segment_title": "內側膝聲窗與掃描順序",
+        "reviewed_end_seconds": 300,
+        "integrated_end_seconds": 299
+      },
+      {
+        "video_id": "IwgmKSVgADQ",
+        "segment_title": "鵝足與 MPFL 地標",
+        "reviewed_end_seconds": 665,
+        "integrated_end_seconds": 664
+      },
+      {
+        "video_id": "3YIzZFSsCTc",
+        "segment_title": "外側膝地標與 Z 字掃描路徑",
+        "reviewed_end_seconds": 455,
+        "integrated_end_seconds": 454
+      },
+      {
+        "video_id": "3YIzZFSsCTc",
+        "segment_title": "探頭操作與正常影像定位",
+        "reviewed_end_seconds": 592,
+        "integrated_end_seconds": 591
+      },
+      {
+        "video_id": "3YIzZFSsCTc",
+        "segment_title": "LCL 連續性與內翻應力",
+        "reviewed_end_seconds": 729,
+        "integrated_end_seconds": 728
+      },
+      {
+        "video_id": "3YIzZFSsCTc",
+        "segment_title": "股二頭肌、近端脛腓關節與周圍結構",
+        "reviewed_end_seconds": 952,
+        "integrated_end_seconds": 951
+      },
+      {
+        "video_id": "iwjYAxUS4oM",
+        "segment_title": "沿整個小腿追蹤肌肉與腱膜",
+        "reviewed_end_seconds": 837,
+        "integrated_end_seconds": 836
+      },
+      {
+        "video_id": "iwjYAxUS4oM",
+        "segment_title": "Tennis leg 與動態正常對照",
+        "reviewed_end_seconds": 1010,
+        "integrated_end_seconds": 1009
+      },
+      {
+        "video_id": "iwjYAxUS4oM",
+        "segment_title": "肌肉纖維受損但腱膜保留",
+        "reviewed_end_seconds": 1137,
+        "integrated_end_seconds": 1136
+      },
+      {
+        "video_id": "iwjYAxUS4oM",
+        "segment_title": "腱膜缺損與動態變化",
+        "reviewed_end_seconds": 1482,
+        "integrated_end_seconds": 1481
+      },
+      {
+        "video_id": "iwjYAxUS4oM",
+        "segment_title": "自由腱膜傷害與向遠端延伸",
+        "reviewed_end_seconds": 1701,
+        "integrated_end_seconds": 1700
+      }
+    ],
+    "questions": "保留題目、選項、答案索引、引用與 source_links；將已審閱總解析及同單元重點拆為各選項解析，未增加臨床結論。",
+    "segment_detail": "原審閱摘要同時作為 detail；未新增段落內容。",
+    "workflow_copy": "移除已解決的草稿／等待收錄字句，保留診斷框限、影片涵蓋範圍及證據限制。",
+    "verification_dates": "影片查核日期沿用原資料的台北日期；reviewed_at 為裁決記錄當日 UTC 日期。"
+  },
+  "expected_totals": {
+    "units": 18,
+    "unique_videos": 36,
+    "video_slots": 38,
+    "unique_video_segments": 354,
+    "questions": 60,
+    "reference_catalog_records": 31
+  },
+  "integrated_data_sha256": {
+    "syllabus": "1e1eba9229a07157a6a0cf46443bae18b54a8dc7aa9088e2ce539490ee00cf7b",
+    "segments": "5d0da967e7e5e4792a6f63c0b2ed6dc4be76ea3aac43b8cf69f5226cae878a19",
+    "questions": "19e8413405a33f87fc18f741068c35787ca154865e8577d94a22982f221c7583",
+    "video-meta": "89bbf341fc67c250456471fddefb7a87e67bcd937679e6af96bb14f66988216d"
+  }
+}

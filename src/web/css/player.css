@@ -281,7 +281,7 @@ body.is-resizing iframe {
 
 .PlaylistItem__meta {
   display: block;
-  font-size: 11px;
+  font-size: 12px;
   color: var(--fgColor-muted);
   overflow: hidden;
   text-overflow: ellipsis;
@@ -290,7 +290,7 @@ body.is-resizing iframe {
 
 .PlaylistItem__dur {
   flex-shrink: 0;
-  font-size: 11px;
+  font-size: 12px;
   font-variant-numeric: tabular-nums;
   color: var(--fgColor-muted);
 }
@@ -425,7 +425,7 @@ body[data-tab="player"] {
 
 .Player__more > summary::after {
   content: " ▸";
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .Player__more[open] > summary::after {
@@ -550,7 +550,7 @@ body[data-tab="player"] {
   min-width: 92px;
   padding: 2px 7px;
   font-family: var(--fontStack-mono);
-  font-size: 11px;
+  font-size: 12px;
   text-align: center;
   color: var(--fgColor-default);
   background-color: var(--bgColor-muted);
@@ -712,7 +712,7 @@ body[data-tab="player"] {
 
 .Segment__detail > summary::after {
   content: " ▸";
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .Segment__detail[open] > summary::after {
@@ -795,6 +795,6 @@ body[data-tab="player"] {
   gap: 3px;
   margin-top: 2px;
   color: var(--fgColor-accent);
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 600;
 }

@@ -55,9 +55,10 @@
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   --fontStack-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas,
     "Liberation Mono", monospace;
+  --fontStack-display: var(--fontStack-sans);
 
   --header-height: 56px;
-  --footer-height: 36px; /* 固定貼底的頁尾（收合狀態）高度 */
+  --footer-height: 0px; /* 頁尾置於一般文流，不預留固定遮罩 */
   --tabnav-height: 0px; /* 分頁已併入 header，不再佔額外一列 */
   --stick-top: calc(var(--header-height) + var(--tabnav-height));
   --sidebar-width: 300px;
@@ -144,8 +145,7 @@ html {
 
 body {
   margin: 0;
-  /* 頁尾是 fixed，留出等高的墊底空間，最後一段內容才不會被蓋住 */
-  padding-bottom: var(--footer-height);
+  padding-bottom: 0;
   font-family: var(--fontStack-sans);
   font-size: 16px;
   line-height: 1.7;
@@ -193,7 +193,7 @@ svg {
 
 :focus-visible {
   outline: 2px solid var(--fgColor-accent);
-  outline-offset: -1px;
+  outline-offset: 3px;
   border-radius: var(--borderRadius-small);
 }
 

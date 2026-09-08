@@ -1,0 +1,71 @@
+{
+  "checked_at": "2026-09-08T15:57:48.793233+00:00",
+  "review_status": "approved-and-integrated-locally",
+  "approval_ledger": "course/research/2026-09-08-advanced-approval.json",
+  "reviewed_payloads": [
+    {
+      "path": "course/research/2026-09-08-advanced-candidates.json",
+      "sha256": "b8f596455cef059760fef11b7cb56442182ee472ca9e577a6a117135c4e83da7"
+    },
+    {
+      "path": "course/research/2026-09-08-advanced-cases.json",
+      "sha256": "d4630b5fb362b7d5f7b13986f733af96c28ea0b07727e31d9e618544d543765d"
+    }
+  ],
+  "totals": {
+    "units": 25,
+    "unique_videos": 43,
+    "video_slots": 46,
+    "unique_video_segments": 375,
+    "questions": 81,
+    "reference_catalog_records": 42,
+    "exercises": 14
+  },
+  "unique_original_video_seconds": 54613,
+  "new_diagnostic_seconds": 1825,
+  "browser_practice": [
+    {
+      "width": 320,
+      "cases": 14,
+      "submitResetEach": true,
+      "homeUnitStaticLinks": true,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 390,
+      "cases": 14,
+      "submitResetEach": true,
+      "homeUnitStaticLinks": true,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "cases": 14,
+      "submitResetEach": true,
+      "homeUnitStaticLinks": true,
+      "overflow": false,
+      "errors": []
+    }
+  ],
+  "stream_spot_checks": {
+    "passed": 7,
+    "total": 7,
+    "evidence": "docs/audits/2026-09-08-advanced-playback.json",
+    "scope": "local correctly referred embed; not full audiovisual review or deployed domain"
+  },
+  "checks": [
+    "make jscheck test build audit PY=.venv/bin/python: passed",
+    "ruff check .: passed",
+    "git diff --check: passed",
+    "14 browser_smoke scenarios passed (inert video fixture)",
+    "Independent agent source-fidelity audit passed: immutable proposals, all new records, original records except authorized TT-TG correction"
+  ],
+  "retained_warnings": [
+    "Three videos shared between relevant units; unique count deduplicated.",
+    "Existing Pedret original runtime 83:32 exceeds suggested 70 minutes; diagnostic excerpt 21:28."
+  ],
+  "approval_is": "curation inclusion; not clinical certification or full audiovisual endorsement",
+  "deployment": "not committed, pushed, or deployed"
+}

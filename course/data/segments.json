@@ -4316,6 +4316,576 @@
       "reviewed_at": "2026-08-28",
       "reviewed_commit": "c2cd89d40627bb7fd01cdf154b6ee7bee031a998",
       "review_note": "策展審閱：確認範圍框限、來源與講者資格、文獻對應與課程編排。不構成對第三方影片內容的醫療背書。"
+    },
+    {
+      "video_url": "https://www.youtube.com/watch?v=akAXPzQV_8w",
+      "review_status": "approved",
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "課程策展人",
+      "reviewed_at": "2026-09-07",
+      "reviewed_commit": "75cfd6ce4dec8eb8c9e82de095f1c000975ba198",
+      "review_note": "策展審閱：確認範圍框限、來源與講者資格、文獻對應與課程編排。不構成對第三方影片內容的醫療背書。",
+      "reviewed_payload_sha256": "f15403cc757ba3bfc4e683736c5850a5b0ed9aa071e74b3a4adca91410476a41",
+      "transcript_verified_at": "2026-09-08",
+      "transcript_source": "英文自動字幕（VTT）與 metadata／oEmbed 核對；時間戳及摘要見收錄審閱資料。",
+      "transcript_sha256": "3038465d3d4eb3f87d9eda8a67347783270b339d95ce34fcd3f90ed222b19629",
+      "note": "僅收錄已選診斷範圍；自動字幕可能有辨識誤差。策展同意不代表完整逐影格或第三方醫療背書。",
+      "segments": [
+        {
+          "start": "11:40",
+          "end": "13:34",
+          "title": "病人姿勢與正交掃描",
+          "summary": "比較長短軸，先建立可重複的病人與探頭位置。",
+          "detail": [
+            "比較長短軸，先建立可重複的病人與探頭位置。"
+          ]
+        },
+        {
+          "start": "13:35",
+          "end": "15:29",
+          "title": "髕腱各向異性與兩平面確認",
+          "summary": "低回音先修正探頭角度，再追蹤全寬；單一長軸可能漏掉偏側病灶。",
+          "detail": [
+            "低回音先修正探頭角度，再追蹤全寬；單一長軸可能漏掉偏側病灶。"
+          ]
+        },
+        {
+          "start": "15:30",
+          "end": "18:20",
+          "title": "股四頭肌與伸膝肌腱的分層",
+          "summary": "用髕骨定位肌腱與周圍結構，向近端追蹤肌肉；本段不延伸至後續神經處置。",
+          "detail": [
+            "用髕骨定位肌腱與周圍結構，向近端追蹤肌肉；本段不延伸至後續神經處置。"
+          ]
+        },
+        {
+          "start": "33:08",
+          "end": "35:57",
+          "title": "髕腱病例：纖維結構與血流",
+          "summary": "比較纖維排列、局部增厚和 Doppler；血流不是撕裂的單一證明，仍需結合症狀與臨床背景。",
+          "detail": [
+            "比較纖維排列、局部增厚和 Doppler；血流不是撕裂的單一證明，仍需結合症狀與臨床背景。"
+          ]
+        },
+        {
+          "start": "35:58",
+          "end": "37:49",
+          "title": "前膝掃描回顧與鈣化示例",
+          "summary": "複習由近端至遠端的掃描順序，觀察股四頭肌腱鈣化。片段止於後續處置討論之前。",
+          "detail": [
+            "複習由近端至遠端的掃描順序，觀察股四頭肌腱鈣化。片段止於後續處置討論之前。"
+          ]
+        }
+      ]
+    },
+    {
+      "video_url": "https://www.youtube.com/watch?v=IwgmKSVgADQ",
+      "review_status": "approved",
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "課程策展人",
+      "reviewed_at": "2026-09-07",
+      "reviewed_commit": "75cfd6ce4dec8eb8c9e82de095f1c000975ba198",
+      "review_note": "策展審閱：確認範圍框限、來源與講者資格、文獻對應與課程編排。不構成對第三方影片內容的醫療背書。",
+      "reviewed_payload_sha256": "f15403cc757ba3bfc4e683736c5850a5b0ed9aa071e74b3a4adca91410476a41",
+      "transcript_verified_at": "2026-09-08",
+      "transcript_source": "英文自動字幕（VTT）與 metadata／oEmbed 核對；時間戳及摘要見收錄審閱資料。",
+      "transcript_sha256": "f3d97cab5f1074e4ad16af35cec54dea98248f02571aac4287081e342bb2f887",
+      "note": "僅收錄已選診斷範圍；自動字幕可能有辨識誤差。策展同意不代表完整逐影格或第三方醫療背書。",
+      "segments": [
+        {
+          "start": "04:11",
+          "end": "04:59",
+          "title": "內側膝聲窗與掃描順序",
+          "summary": "從股骨內側地標沿 MCL 向遠端追蹤，掌握內側膝的結構層次。",
+          "detail": [
+            "從股骨內側地標沿 MCL 向遠端追蹤，掌握內側膝的結構層次。"
+          ]
+        },
+        {
+          "start": "05:00",
+          "end": "06:59",
+          "title": "MCL 表深層與附著",
+          "summary": "辨識表淺與深部成分及骨附著；病理判讀需另以完整正交影像及臨床檢查確認。",
+          "detail": [
+            "辨識表淺與深部成分及骨附著；病理判讀需另以完整正交影像及臨床檢查確認。"
+          ]
+        },
+        {
+          "start": "09:32",
+          "end": "11:04",
+          "title": "鵝足與 MPFL 地標",
+          "summary": "用肌腱走向及骨性地標區分相鄰結構，避免將鵝足誤認成側副韌帶。",
+          "detail": [
+            "用肌腱走向及骨性地標區分相鄰結構，避免將鵝足誤認成側副韌帶。"
+          ]
+        },
+        {
+          "start": "11:05",
+          "end": "13:10",
+          "title": "半膜肌遠端與內側痛鑑別",
+          "summary": "在既有掃描未能解釋疼痛時追蹤半膜肌遠端附著，對照兩側並保持影像與症狀的區別。",
+          "detail": [
+            "在既有掃描未能解釋疼痛時追蹤半膜肌遠端附著，對照兩側並保持影像與症狀的區別。"
+          ]
+        }
+      ]
+    },
+    {
+      "video_url": "https://www.youtube.com/watch?v=3YIzZFSsCTc",
+      "review_status": "approved",
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "課程策展人",
+      "reviewed_at": "2026-09-07",
+      "reviewed_commit": "75cfd6ce4dec8eb8c9e82de095f1c000975ba198",
+      "review_note": "策展審閱：確認範圍框限、來源與講者資格、文獻對應與課程編排。不構成對第三方影片內容的醫療背書。",
+      "reviewed_payload_sha256": "f15403cc757ba3bfc4e683736c5850a5b0ed9aa071e74b3a4adca91410476a41",
+      "transcript_verified_at": "2026-09-08",
+      "transcript_source": "英文自動字幕（VTT）與 metadata／oEmbed 核對；時間戳及摘要見收錄審閱資料。",
+      "transcript_sha256": "2479c84aad8dc5af47f59922591eac1c2e8e090ac020916b5dae0891aa29c21a",
+      "note": "僅收錄已選診斷範圍；自動字幕可能有辨識誤差。策展同意不代表完整逐影格或第三方醫療背書。",
+      "segments": [
+        {
+          "start": "03:44",
+          "end": "07:34",
+          "title": "外側膝地標與 Z 字掃描路徑",
+          "summary": "依 ITB、LCL 與股二頭肌腱的骨附著轉向；這條路徑需補短軸，不能只有長軸。",
+          "detail": [
+            "依 ITB、LCL 與股二頭肌腱的骨附著轉向；這條路徑需補短軸，不能只有長軸。"
+          ]
+        },
+        {
+          "start": "07:35",
+          "end": "09:51",
+          "title": "探頭操作與正常影像定位",
+          "summary": "用掃描示範連結表面探頭方向與正常肌腱影像。此處為正常示範者，並非受傷病例。",
+          "detail": [
+            "用掃描示範連結表面探頭方向與正常肌腱影像。此處為正常示範者，並非受傷病例。"
+          ]
+        },
+        {
+          "start": "09:52",
+          "end": "12:08",
+          "title": "LCL 連續性與內翻應力",
+          "summary": "沿韌帶全長保持纖維入平面；動態施力需記錄姿勢與方向。",
+          "detail": [
+            "沿韌帶全長保持纖維入平面；動態施力需記錄姿勢與方向。"
+          ]
+        },
+        {
+          "start": "12:09",
+          "end": "15:51",
+          "title": "股二頭肌、近端脛腓關節與周圍結構",
+          "summary": "區分腓骨頭附近肌腱、韌帶與神經，避免將外側痛全部歸為 ITB。",
+          "detail": [
+            "區分腓骨頭附近肌腱、韌帶與神經，避免將外側痛全部歸為 ITB。"
+          ]
+        },
+        {
+          "start": "15:52",
+          "end": "20:26",
+          "title": "ITB 正常對照與跑者病例",
+          "summary": "比較 ITB 及深層組織，觀察積液、增厚與低壓血流；講者描述症狀同步，未提供該病例動態 cine。",
+          "detail": [
+            "比較 ITB 及深層組織，觀察積液、增厚與低壓血流；講者描述症狀同步，未提供該病例動態 cine。"
+          ]
+        },
+        {
+          "start": "21:19",
+          "end": "22:10",
+          "title": "ITB 病例：增厚並非必要條件",
+          "summary": "觀察局部形態與血流並結合症狀；沒有增厚並不能單獨排除。略過後續未核實的無症狀比例數字。",
+          "detail": [
+            "觀察局部形態與血流並結合症狀；沒有增厚並不能單獨排除。略過後續未核實的無症狀比例數字。"
+          ]
+        },
+        {
+          "start": "22:30",
+          "end": "23:06",
+          "title": "區分外側關節隱窩與 ITB 深層液體",
+          "summary": "留意膝關節積液延伸至外側隱窩，避免將 ITB 深面的液體一律命名為滑囊病變。",
+          "detail": [
+            "留意膝關節積液延伸至外側隱窩，避免將 ITB 深面的液體一律命名為滑囊病變。"
+          ]
+        }
+      ]
+    },
+    {
+      "video_url": "https://www.youtube.com/watch?v=iwjYAxUS4oM",
+      "review_status": "approved",
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "課程策展人",
+      "reviewed_at": "2026-09-07",
+      "reviewed_commit": "75cfd6ce4dec8eb8c9e82de095f1c000975ba198",
+      "review_note": "策展審閱：確認範圍框限、來源與講者資格、文獻對應與課程編排。不構成對第三方影片內容的醫療背書。",
+      "reviewed_payload_sha256": "f15403cc757ba3bfc4e683736c5850a5b0ed9aa071e74b3a4adca91410476a41",
+      "transcript_verified_at": "2026-09-08",
+      "transcript_source": "英文自動字幕（VTT）與 metadata／oEmbed 核對；時間戳及摘要見收錄審閱資料。",
+      "transcript_sha256": "e0c033dfd823476b2914809984751a956fc806a6fd9f9023b95fff778db5d641",
+      "note": "僅收錄已選診斷範圍；自動字幕可能有辨識誤差。策展同意不代表完整逐影格或第三方醫療背書。",
+      "segments": [
+        {
+          "start": "09:44",
+          "end": "13:56",
+          "title": "沿整個小腿追蹤肌肉與腱膜",
+          "summary": "病灶可能延伸超過疼痛點；從膝後向遠端追蹤腓腸肌、比目魚肌與自由腱膜。",
+          "detail": [
+            "病灶可能延伸超過疼痛點；從膝後向遠端追蹤腓腸肌、比目魚肌與自由腱膜。"
+          ]
+        },
+        {
+          "start": "13:57",
+          "end": "16:49",
+          "title": "Tennis leg 與動態正常對照",
+          "summary": "Tennis leg 是一組臨床表現；觀察踝動作時肌肉相對運動，不能只憑肌間液體命名損傷。",
+          "detail": [
+            "Tennis leg 是一組臨床表現；觀察踝動作時肌肉相對運動，不能只憑肌間液體命名損傷。"
+          ]
+        },
+        {
+          "start": "16:50",
+          "end": "18:56",
+          "title": "肌肉纖維受損但腱膜保留",
+          "summary": "先用解剖描述確認受傷結構；分類名稱不能取代完整病灶紀錄。",
+          "detail": [
+            "先用解剖描述確認受傷結構；分類名稱不能取代完整病灶紀錄。"
+          ]
+        },
+        {
+          "start": "18:57",
+          "end": "24:41",
+          "title": "腱膜缺損與動態變化",
+          "summary": "短軸追蹤缺損範圍，搭配長軸及相對運動。講者的比例分類來自特定研究，並非通用臨床決策閾值。",
+          "detail": [
+            "短軸追蹤缺損範圍，搭配長軸及相對運動。講者的比例分類來自特定研究，並非通用臨床決策閾值。"
+          ]
+        },
+        {
+          "start": "24:42",
+          "end": "28:20",
+          "title": "自由腱膜傷害與向遠端延伸",
+          "summary": "表面看似輕微時仍需追蹤自由腱膜，避免只看局部肌肉影像就低估範圍。",
+          "detail": [
+            "表面看似輕微時仍需追蹤自由腱膜，避免只看局部肌肉影像就低估範圍。"
+          ]
+        },
+        {
+          "start": "28:21",
+          "end": "31:12",
+          "title": "混合傷害與結構化紀錄",
+          "summary": "整合腱膜、肌間液體及動態所見。影像分類不能獨立決定個人回場日期。",
+          "detail": [
+            "整合腱膜、肌間液體及動態所見。影像分類不能獨立決定個人回場日期。"
+          ]
+        }
+      ]
+    },
+    {
+      "video_url": "https://www.youtube.com/watch?v=_iCPhaLtJCI",
+      "review_status": "approved",
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "課程策展人",
+      "reviewed_at": "2026-09-08",
+      "reviewed_commit": "75cfd6ce4dec8eb8c9e82de095f1c000975ba198",
+      "review_note": "使用者「同意收錄」核准本批具體進階教材與經典例外；為課程策展同意，不構成第三方影片的完整影音驗收、醫療背書或臨床能力認證。",
+      "reviewed_payload_sha256": "b8f596455cef059760fef11b7cb56442182ee472ca9e577a6a117135c4e83da7",
+      "reviewed_cases_payload_sha256": "d4630b5fb362b7d5f7b13986f733af96c28ea0b07727e31d9e618544d543765d",
+      "transcript_verified_at": "2026-09-08",
+      "transcript_source": "yt-dlp en-orig 自動字幕；實際取得並核對選定診斷片段，非全片影音驗收。",
+      "transcript_sha256": "4123b44d7a7264809ab689b55b739cc1300dfab1d3442be20394ccef82b2ae5b",
+      "note": "軸位補看 radial、複合移位 flap 與後角近根部病例；不以單一切面作診斷。",
+      "segments": [
+        {
+          "start": "00:16",
+          "end": "01:31",
+          "title": "Radial tear 與部分容積對照",
+          "summary": "先辨認正常自由緣的部分容積變化，再尋找局灶中斷。",
+          "detail": [
+            "先辨認正常自由緣的部分容積變化，再尋找局灶中斷。"
+          ]
+        },
+        {
+          "start": "01:33",
+          "end": "02:04",
+          "title": "複合裂隙與移位 flap",
+          "summary": "用軸位補充放射狀及縱向成分、向內折疊的碎片。",
+          "detail": [
+            "用軸位補充放射狀及縱向成分、向內折疊的碎片。"
+          ]
+        },
+        {
+          "start": "02:06",
+          "end": "02:41",
+          "title": "後角近根部中斷",
+          "summary": "追蹤後角到根部過渡區，與其他平面相互核對。",
+          "detail": [
+            "追蹤後角到根部過渡區，與其他平面相互核對。"
+          ]
+        }
+      ]
+    },
+    {
+      "video_url": "https://www.youtube.com/watch?v=CVGEdU2M2KY",
+      "review_status": "approved",
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "課程策展人",
+      "reviewed_at": "2026-09-08",
+      "reviewed_commit": "75cfd6ce4dec8eb8c9e82de095f1c000975ba198",
+      "review_note": "使用者「同意收錄」核准本批具體進階教材與經典例外；為課程策展同意，不構成第三方影片的完整影音驗收、醫療背書或臨床能力認證。",
+      "reviewed_payload_sha256": "b8f596455cef059760fef11b7cb56442182ee472ca9e577a6a117135c4e83da7",
+      "reviewed_cases_payload_sha256": "d4630b5fb362b7d5f7b13986f733af96c28ea0b07727e31d9e618544d543765d",
+      "transcript_verified_at": "2026-09-08",
+      "transcript_source": "yt-dlp en-orig 自動字幕；實際取得並核對選定診斷片段，非全片影音驗收。",
+      "transcript_sha256": "207e90cb68af0f9b02c0cc14375e5b8c1c55eac89648b20c8586e95bf4ffd99e",
+      "note": "正常隱窩、meniscotibial 與 meniscocapsular 附著對照；只取 MRI 病例，不教關節鏡操作。",
+      "segments": [
+        {
+          "start": "01:16",
+          "end": "01:44",
+          "title": "正常隱窩對照",
+          "summary": "ACL 損傷病例仍可見保留的周邊附著，不能把正常隱窩視為撕裂。",
+          "detail": [
+            "ACL 損傷病例仍可見保留的周邊附著，不能把正常隱窩視為撕裂。"
+          ]
+        },
+        {
+          "start": "04:42",
+          "end": "05:34",
+          "title": "積液下的附著解剖",
+          "summary": "比較關節囊、meniscocapsular 與 meniscotibial 結構。",
+          "detail": [
+            "比較關節囊、meniscocapsular 與 meniscotibial 結構。"
+          ]
+        },
+        {
+          "start": "05:40",
+          "end": "07:02",
+          "title": "周邊附著中斷病例",
+          "summary": "依連續切面追蹤骨片、韌帶與半月板碎片，寫清楚可見和無法確認的部分。",
+          "detail": [
+            "依連續切面追蹤骨片、韌帶與半月板碎片，寫清楚可見和無法確認的部分。"
+          ]
+        },
+        {
+          "start": "07:50",
+          "end": "08:57",
+          "title": "軸位追蹤周邊裂隙",
+          "summary": "將矢狀位的周邊異常與軸位範圍對照，不只填分類號。",
+          "detail": [
+            "將矢狀位的周邊異常與軸位範圍對照，不只填分類號。"
+          ]
+        }
+      ]
+    },
+    {
+      "video_url": "https://www.youtube.com/watch?v=IWbyH5oW2yQ",
+      "review_status": "approved",
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "課程策展人",
+      "reviewed_at": "2026-09-08",
+      "reviewed_commit": "75cfd6ce4dec8eb8c9e82de095f1c000975ba198",
+      "review_note": "使用者「同意收錄」核准本批具體進階教材與經典例外；為課程策展同意，不構成第三方影片的完整影音驗收、醫療背書或臨床能力認證。",
+      "reviewed_payload_sha256": "b8f596455cef059760fef11b7cb56442182ee472ca9e577a6a117135c4e83da7",
+      "reviewed_cases_payload_sha256": "d4630b5fb362b7d5f7b13986f733af96c28ea0b07727e31d9e618544d543765d",
+      "transcript_verified_at": "2026-09-08",
+      "transcript_source": "yt-dlp en-orig 自動字幕；實際取得並核對選定診斷片段，非全片影音驗收。",
+      "transcript_sha256": "241749472090368ec5f24066c546d919fc568a92bf99c4e1c5cc9562de708643",
+      "note": "PLC 結構定位與報告溝通。專家對 arcuate/PFL 用詞的主張與 2022 解剖研究並非完全相同；不將爭議寫成唯一解剖定論。",
+      "segments": [
+        {
+          "start": "08:23",
+          "end": "12:02",
+          "title": "PLC 的結構描述與溝通",
+          "summary": "專家訪談：追蹤 FCL、膕肌腱、PFL 區、股二頭肌腱及外側關節囊，描述具體結構和連續性。",
+          "detail": [
+            "專家訪談：追蹤 FCL、膕肌腱、PFL 區、股二頭肌腱及外側關節囊，描述具體結構和連續性。"
+          ]
+        }
+      ]
+    },
+    {
+      "video_url": "https://www.youtube.com/watch?v=tx7MI889hCg",
+      "review_status": "approved",
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "課程策展人",
+      "reviewed_at": "2026-09-08",
+      "reviewed_commit": "75cfd6ce4dec8eb8c9e82de095f1c000975ba198",
+      "review_note": "使用者「同意收錄」核准本批具體進階教材與經典例外；為課程策展同意，不構成第三方影片的完整影音驗收、醫療背書或臨床能力認證。",
+      "reviewed_payload_sha256": "b8f596455cef059760fef11b7cb56442182ee472ca9e577a6a117135c4e83da7",
+      "reviewed_cases_payload_sha256": "d4630b5fb362b7d5f7b13986f733af96c28ea0b07727e31d9e618544d543765d",
+      "transcript_verified_at": "2026-09-08",
+      "transcript_source": "yt-dlp en-orig 自動字幕；實際取得並核對選定診斷片段，非全片影音驗收。",
+      "transcript_sha256": "639d16825c879c8702648b4b8e9b87ca5e67db7b673ba6da7b236f1af403cc75",
+      "note": "只取軟骨修復後 MRI 比較與形態學描述；排除手術步驟、術式選擇、成本比較與治療建議。",
+      "segments": [
+        {
+          "start": "19:59",
+          "end": "20:32",
+          "title": "MACI 六個月的病例",
+          "summary": "以原講者病例觀察部分填補與相鄰軟骨訊號；時間點是判讀背景，不是所有病人的固定成熟期限。",
+          "detail": [
+            "以原講者病例觀察部分填補與相鄰軟骨訊號；時間點是判讀背景，不是所有病人的固定成熟期限。"
+          ]
+        },
+        {
+          "start": "22:05",
+          "end": "23:02",
+          "title": "縱向追蹤的新變化",
+          "summary": "比較八個月、一年與兩年影像中的新發水腫樣訊號和骨性增生。",
+          "detail": [
+            "比較八個月、一年與兩年影像中的新發水腫樣訊號和骨性增生。"
+          ]
+        },
+        {
+          "start": "30:04",
+          "end": "30:53",
+          "title": "骨軟骨移植物的連續追蹤",
+          "summary": "比較六個月、一年與一年半的表面、整合與軟骨下骨訊號。",
+          "detail": [
+            "比較六個月、一年與一年半的表面、整合與軟骨下骨訊號。"
+          ]
+        },
+        {
+          "start": "31:28",
+          "end": "33:42",
+          "title": "併發症與 X 光假象",
+          "summary": "比較可疑骨壞死/塌陷病例，以及 X 光骨板高低差但 MRI 軟骨表面平順的病例。",
+          "detail": [
+            "比較可疑骨壞死/塌陷病例，以及 X 光骨板高低差但 MRI 軟骨表面平順的病例。"
+          ]
+        },
+        {
+          "start": "34:22",
+          "end": "40:29",
+          "title": "形態學報告清單",
+          "summary": "依填補、邊緣整合、表面、結構訊號與軟骨下骨逐項描述；研究評分與臨床症狀分開。",
+          "detail": [
+            "依填補、邊緣整合、表面、結構訊號與軟骨下骨逐項描述；研究評分與臨床症狀分開。"
+          ]
+        }
+      ]
+    },
+    {
+      "video_url": "https://www.youtube.com/watch?v=Ehw_vGnDEBg",
+      "review_status": "approved",
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "課程策展人",
+      "reviewed_at": "2026-09-08",
+      "reviewed_commit": "75cfd6ce4dec8eb8c9e82de095f1c000975ba198",
+      "review_note": "使用者「同意收錄」核准本批具體進階教材與經典例外；為課程策展同意，不構成第三方影片的完整影音驗收、醫療背書或臨床能力認證。",
+      "reviewed_payload_sha256": "b8f596455cef059760fef11b7cb56442182ee472ca9e577a6a117135c4e83da7",
+      "reviewed_cases_payload_sha256": "d4630b5fb362b7d5f7b13986f733af96c28ea0b07727e31d9e618544d543765d",
+      "transcript_verified_at": "2026-09-08",
+      "transcript_source": "yt-dlp en-orig 自動字幕；實際取得並核對選定診斷片段，非全片影音驗收。",
+      "transcript_sha256": "ca976dd1427718d8a5c580cae252f309dd59c43b45c9e7d228b2c9a562f38d66",
+      "note": "僅取軟骨/軟骨下骨和伴隨根部異常的影像片段。排除早段不當玩笑、未量測估算、治療指令與過度概括；舊 subcortical 名詞以文獻的 subchondral 更新。",
+      "segments": [
+        {
+          "start": "06:05",
+          "end": "06:48",
+          "title": "軟骨下低訊號與骨髓反應",
+          "summary": "影像中追蹤軟骨變化、軟骨下低訊號及周邊水腫樣訊號。",
+          "detail": [
+            "影像中追蹤軟骨變化、軟骨下低訊號及周邊水腫樣訊號。"
+          ]
+        },
+        {
+          "start": "08:02",
+          "end": "08:54",
+          "title": "根部與伴隨所見",
+          "summary": "辨識根部周邊異常、外擠和軟骨下骨變化；共同出現不等同證明個別因果。",
+          "detail": [
+            "辨識根部周邊異常、外擠和軟骨下骨變化；共同出現不等同證明個別因果。"
+          ]
+        }
+      ]
+    },
+    {
+      "video_url": "https://www.youtube.com/watch?v=wnw3GqKR370",
+      "review_status": "approved",
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "課程策展人",
+      "reviewed_at": "2026-09-08",
+      "reviewed_commit": "75cfd6ce4dec8eb8c9e82de095f1c000975ba198",
+      "review_note": "使用者「同意收錄」核准本批具體進階教材與經典例外；為課程策展同意，不構成第三方影片的完整影音驗收、醫療背書或臨床能力認證。",
+      "reviewed_payload_sha256": "b8f596455cef059760fef11b7cb56442182ee472ca9e577a6a117135c4e83da7",
+      "reviewed_cases_payload_sha256": "d4630b5fb362b7d5f7b13986f733af96c28ea0b07727e31d9e618544d543765d",
+      "transcript_verified_at": "2026-09-08",
+      "transcript_source": "yt-dlp en-orig 自動字幕；實際取得並核對選定診斷片段，非全片影音驗收。",
+      "transcript_sha256": "86fe28a5fd28b6ccaf912d3ed0c1f258bd490878262a47c8b8231e59fb3e492a",
+      "note": "膝後至腓骨頸的正常神經追蹤，供病理病例比較；本片不是神經內囊腫病例。排除足踝段及介入定位。",
+      "segments": [
+        {
+          "start": "00:33",
+          "end": "03:57",
+          "title": "腓總神經的近端追蹤",
+          "summary": "從坐骨神經分支追至股二頭肌腱附近、腓骨頭與表淺易受壓區。",
+          "detail": [
+            "從坐骨神經分支追至股二頭肌腱附近、腓骨頭與表淺易受壓區。"
+          ]
+        },
+        {
+          "start": "03:59",
+          "end": "04:45",
+          "title": "腓骨頸的神經分支",
+          "summary": "辨認神經進入腓骨長肌下方後的分支位置。",
+          "detail": [
+            "辨認神經進入腓骨長肌下方後的分支位置。"
+          ]
+        },
+        {
+          "start": "12:17",
+          "end": "13:55",
+          "title": "連續掃描對照",
+          "summary": "用原講者 cine 複習膝後到腓骨頸追蹤，保留不易看清時的限制。",
+          "detail": [
+            "用原講者 cine 複習膝後到腓骨頸追蹤，保留不易看清時的限制。"
+          ]
+        }
+      ]
+    },
+    {
+      "video_url": "https://www.youtube.com/watch?v=zRm8SOwtjXA",
+      "review_status": "approved",
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "課程策展人",
+      "reviewed_at": "2026-09-08",
+      "reviewed_commit": "75cfd6ce4dec8eb8c9e82de095f1c000975ba198",
+      "review_note": "使用者「同意收錄」核准本批具體進階教材與經典例外；為課程策展同意，不構成第三方影片的完整影音驗收、醫療背書或臨床能力認證。",
+      "reviewed_payload_sha256": "b8f596455cef059760fef11b7cb56442182ee472ca9e577a6a117135c4e83da7",
+      "reviewed_cases_payload_sha256": "d4630b5fb362b7d5f7b13986f733af96c28ea0b07727e31d9e618544d543765d",
+      "transcript_verified_at": "2026-09-08",
+      "transcript_source": "yt-dlp en-orig 自動字幕；實際取得並核對選定診斷片段，非全片影音驗收。",
+      "transcript_sha256": "8288652e3e253241eae82805ab2730e15fc9bb54acdc765278debc139ce36505",
+      "note": "後膝腫塊的替代診斷：鈣化血管、神經鞘腫瘤與人工膝關節後神經彈響。排除抽吸/注射/水分離/收費內容；專家病例不等於一般族群效能。",
+      "segments": [
+        {
+          "start": "24:54",
+          "end": "25:53",
+          "title": "血管鈣化與間歇性跛行病例",
+          "summary": "後膝症狀不是一律 Baker cyst；對照鈣化血管的超音波聲影與 X 光。",
+          "detail": [
+            "後膝症狀不是一律 Baker cyst；對照鈣化血管的超音波聲影與 X 光。"
+          ]
+        },
+        {
+          "start": "26:05",
+          "end": "27:09",
+          "title": "外側神經鞘腫瘤病例",
+          "summary": "症狀沿腓神經分布，追蹤神經連續性及局部增粗；MRI 作進一步評估。",
+          "detail": [
+            "症狀沿腓神經分布，追蹤神經連續性及局部增粗；MRI 作進一步評估。"
+          ]
+        },
+        {
+          "start": "27:14",
+          "end": "27:44",
+          "title": "人工膝關節後神經彈響",
+          "summary": "原講者示範神經與人工關節附近的動態滑移；不能外推為一般跑者 ITB 病因。",
+          "detail": [
+            "原講者示範神經與人工關節附近的動態滑移；不能外推為一般跑者 ITB 病因。"
+          ]
+        }
+      ]
     }
   ]
 }

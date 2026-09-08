@@ -1,0 +1,52 @@
+{
+  "date": "2026-09-08",
+  "site_preview": "http://127.0.0.1:8899/",
+  "content_review_preview": "http://127.0.0.1:8901/",
+  "source_head": "75cfd6ce4dec8eb8c9e82de095f1c000975ba198",
+  "build_jscheck_tests_audit": "passed",
+  "ruff": "passed",
+  "diff_check": "passed",
+  "browser_scenarios": 14,
+  "browser_result": "passed; inert YouTube fixture",
+  "review_viewports": [
+    390,
+    1440
+  ],
+  "review_range_buttons": 22,
+  "review_questions": 12,
+  "review_result": "passed; inert YouTube fixture",
+  "actual_stream_spot_checks": [
+    "iwjYAxUS4oM",
+    "akAXPzQV_8w"
+  ],
+  "actual_stream_limit": "Two visual spot checks only; user approved course inclusion, not full audiovisual or third-party clinical endorsement",
+  "content_payload_sha256": "f15403cc757ba3bfc4e683736c5850a5b0ed9aa071e74b3a4adca91410476a41",
+  "production_published": false,
+  "content_review_status": "approved-for-course-inclusion",
+  "shared_video_context": "passed: share URL, saved identity, per-unit position and aria-current",
+  "approval_ledger": "course/research/2026-09-08-sports-ultrasound-approval.json",
+  "ui_ux_report": "docs/audits/2026-09-08-ui-ux.md",
+  "content_counts": {
+    "units": 18,
+    "unique_videos": 36,
+    "video_items": 38,
+    "segments": 354,
+    "questions": 60,
+    "references": 31
+  },
+  "advisory": "Pedret source 83:32 exceeds suggested 70m; selected diagnostic range21:28",
+  "mobile_first_chapter_y_before": 1047,
+  "mobile_first_chapter_y_after": 608,
+  "art_direction_report": "docs/audits/2026-09-08-art-direction.md",
+  "visual_widths": [
+    320,
+    390,
+    768,
+    1150,
+    1440
+  ],
+  "visual_result": "passed: no overflow, valid SVG references, 6 notices, typography fallback",
+  "og_sha256": "ad7aabe3c2b961f0ec062d134255c5ce41bef20009e1c8e1e8cbb563197f58c3",
+  "typography": "User requested sans-serif throughout; heading and body font-family equal in 8 desktop/mobile checks",
+  "homepage_decoration": "AtlasCover removed; single-column hero"
+}
