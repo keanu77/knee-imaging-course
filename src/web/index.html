@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="css/landing.css" />
     <link rel="stylesheet" href="css/quiz.css" />
     <link rel="stylesheet" href="css/clinical.css" />
+    <link rel="stylesheet" href="css/sports-medicine.css" />
     <script>
       // 在繪製前套用主題，避免深色使用者看到白色閃屏
       (function () {
@@ -52,12 +53,12 @@
         <div class="TabNav__inner">
           <button class="TabNav__item" data-tab="course" type="button" aria-label="{{ui.tabs.course}}">
             <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-layers" /></svg>
-            <span class="TabNav__label">{{ui.tabs.course}}</span>
+            <span class="TabNav__label">課程</span>
             <span class="Counter" id="tabCourseCount">0</span>
           </button>
           <button class="TabNav__item" data-tab="player" type="button" aria-label="{{ui.tabs.player}}">
             <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-play" /></svg>
-            <span class="TabNav__label">{{ui.tabs.player}}</span>
+            <span class="TabNav__label">影片</span>
           </button>
         </div>
       </nav>
@@ -100,7 +101,7 @@
 
 
 
-    <div id="view-home">
+    <div id="view-home" role="main" aria-label="課程首頁">
     <section class="Hero" id="top">
       <div class="container">
         <div class="Hero__grid">
@@ -128,11 +129,15 @@
               </a>
             </div>
 
-            <div class="Hero__stats" id="heroStats"></div>
-            <p class="Hero__note" id="heroNote"></p>
+
           </div>
 
 
+          <div class="Hero__meta">
+            <div class="Hero__stats" id="heroStats"></div>
+            <p class="Hero__note" id="heroNote"></p>
+            <a class="BrandSignature" href="https://sportsmedicine.tw/" target="_blank" rel="noopener">吳易澄醫師 · 運動醫學</a>
+          </div>
         </div>
       </div>
     </section>
@@ -140,7 +145,7 @@
       <!-- reading-fallback:start --><!-- reading-fallback:end -->
     </div>
 
-    <section class="Player" id="view-player" hidden>
+    <section class="Player" id="view-player" role="main" aria-label="影片學習" hidden>
       <nav class="Player__jumpNav" aria-label="影片學習快速導覽">
         <button type="button" data-player-jump="playerFrame">影片</button>
         <button type="button" data-player-jump="playerInfo">筆記與說明</button>

@@ -247,6 +247,7 @@ def render_unit(chapter: dict, unit: dict, config: dict) -> str:
 <link rel="stylesheet" href="../../css/tokens.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&amp;display=swap">
 <style>{STYLE}</style>
+<link rel="stylesheet" href="../../css/sports-medicine.css">
 </head>
 <body>
 <a class="skip" href="#reading">跳至單元內容</a>
