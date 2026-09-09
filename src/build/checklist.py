@@ -57,10 +57,11 @@ def generate(dist: Path) -> int:
                 f'<section class="group"><h2>{esc(group.get("title"))}</h2>{"".join(group_units)}</section>')
 
     doc = f"""<!doctype html>
-<html lang="zh-Hant-TW"><head><meta charset="utf-8">
+<html lang="zh-Hant-TW" data-theme="dark"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
 <title>{esc(site.get('name'))}｜判讀檢核表</title>
+<script src="js/theme.js"></script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&amp;display=swap">
 <style>
   :root {{ color-scheme: light; }}
@@ -96,7 +97,24 @@ def generate(dist: Path) -> int:
   @media print {{ .toolbar {{ display: none; }} body {{ padding: 0; font-size: 12px; background: #fff; }}
     header h1 {{ font-size: 22px; margin-top: 0; }} .unit {{ padding: 12px 16px; }}
     .unit h3 {{ font-size: 14px; }} .cols {{ grid-template-columns: 1.2fr 1fr 1fr; }} }}
+
+  @media screen {{
+    :root[data-theme="dark"] {{ color-scheme: dark; background: #101e2a; }}
+    :root[data-theme="dark"] body {{ color: #e7f2f9; background: #101e2a; }}
+    :root[data-theme="dark"] :is(header p, h4, footer) {{ color: #b2c8d8; }}
+    :root[data-theme="dark"] :is(.unit, .group > h2, .box, .toolbar, footer) {{ border-color: #39566b; }}
+    :root[data-theme="dark"] :is(a, .toolbar a) {{ color: #86cfee; }}
+    :root[data-theme="dark"] .warn h4 {{ color: #f0c774; }}
+    :root[data-theme="dark"] .print-btn {{ color: #e7f2f9; background: #172a3a; border-color: #39566b; }}
+  }}
+
+.HubReturn{{display:flex;align-items:center;gap:8px;width:max-content;max-width:calc(100% - 32px);min-height:44px;margin:0 16px;padding:6px 0;box-sizing:border-box;font:500 13px/1.5 "Noto Sans TC","PingFang TC",sans-serif;color:#126b96;text-decoration:none;text-underline-offset:4px}}
+:root[data-theme="dark"] .HubReturn{{color:#86cfee}}
+.HubReturn:hover{{text-decoration:underline}}
+.HubReturn:focus-visible{{outline:2px solid currentColor;outline-offset:3px}}
+@media print{{.HubReturn{{display:none!important}}}}
 </style></head><body>
+<a class="HubReturn" href="https://imaging-course-hub.pages.dev/" aria-label="返回運動醫學影像學習站首頁"><span aria-hidden="true">←</span> 學習站首頁</a>
 <nav class="toolbar" aria-label="檢核表工具"><a href="./">回到課程</a><button class="print-btn" onclick="print()">列印／存成 PDF</button></nav>
 <header>
   <h1>{esc(site.get('name'))}｜判讀檢核表</h1>

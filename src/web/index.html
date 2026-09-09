@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="zh-Hant-TW">
+<html lang="zh-Hant-TW" data-theme="dark">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -22,24 +22,12 @@
     <link rel="stylesheet" href="css/quiz.css" />
     <link rel="stylesheet" href="css/clinical.css" />
     <link rel="stylesheet" href="css/sports-medicine.css" />
-    <script>
-      // 在繪製前套用主題，避免深色使用者看到白色閃屏
-      (function () {
-        try {
-          var t = localStorage.getItem("knee-ultrasound-course:theme");
-          // 新版以 JSON 字串儲存，兼容舊版直接寫入的 light / dark。
-          try { t = JSON.parse(t); } catch (e) {}
-          if (t === "light" || t === "dark") {
-            document.documentElement.dataset.theme = t;
-          }
-          // 缺值或無效值不套用屬性，由 CSS 跟隨系統偏好。
-        } catch (e) {}
-      })();
-    </script>
+    <script src="js/theme.js"></script>
   </head>
   <body data-tab="home">
     <a href="#view-home" class="visually-hidden SkipLink">跳到主要內容</a>
 
+    <a class="HubReturn" href="https://imaging-course-hub.pages.dev/" aria-label="返回運動醫學影像學習站首頁"><span aria-hidden="true">←</span> 學習站首頁</a>
     <header class="AppHeader">
       <a class="AppHeader__brand" href="#" data-tab-link="home" aria-label="{{site.name}}首頁">
         <span class="AppHeader__brandMark">
