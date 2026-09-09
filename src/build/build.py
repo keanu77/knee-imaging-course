@@ -657,7 +657,12 @@ def main() -> int:
     # 結構化資料的數字必須跟著課程走，所以綁在建置流程裡
     import seo
 
-    return seo.main()
+    result = seo.main()
+    if result == 0:
+        from contribution_links import add_contribution_links
+
+        add_contribution_links(DIST, "https://knee-imaging.sportsmedicine.tw/")
+    return result
 
 
 if __name__ == "__main__":

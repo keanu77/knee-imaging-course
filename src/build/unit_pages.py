@@ -251,7 +251,7 @@ def render_unit(chapter: dict, unit: dict, config: dict) -> str:
 </head>
 <body>
 <a class="skip" href="#reading">跳至單元內容</a>
-<a class="HubReturn" href="https://imaging-course-hub.pages.dev/" target="_blank" rel="noopener noreferrer" aria-label="返回運動醫學影像學習站首頁（新分頁）"><span aria-hidden="true">←</span> 學習站首頁</a>
+<a class="HubReturn" href="https://imaging-course-hub.sportsmedicine.tw/" target="_blank" rel="noopener noreferrer" aria-label="返回運動醫學影像學習站首頁（新分頁）"><span aria-hidden="true">←</span> 學習站首頁</a>
 <header class="masthead"><a href="../../">{text(name)}</a><a href="{interactive}">回到互動課程</a></header>
 <main id="reading" tabindex="-1">
 <div class="layout">

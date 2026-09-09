@@ -9,6 +9,13 @@ from urllib.parse import urlsplit
 IDENTIFIER = re.compile(r"[A-Za-z0-9][A-Za-z0-9_-]*\Z")
 DRAFT_NOTICE = "進階判讀練習草稿，未發布；課程自訂練習，不是認證評量"
 CSS = """
+.ContributionNav{display:flex;flex-wrap:wrap;align-items:center;gap:0 24px;margin:0 16px;padding:0}
+.ContributionNav .HubReturn{margin:0;max-width:100%}
+.ContributionLink{display:inline-flex;align-items:center;min-height:44px;font:500 13px/1.5 "Noto Sans TC","PingFang TC",sans-serif;color:inherit;text-decoration:none;text-underline-offset:4px}
+.ContributionLink:hover{text-decoration:underline}
+.ContributionLink:focus-visible{outline:2px solid currentColor;outline-offset:3px}
+@media print{.ContributionNav{display:none!important}}
+
 :root{color-scheme:light;--paper:#f7fbfd;--panel:#fff;--ink:#142c41;--muted:#4b6478;--line:#c7dce7;--accent:#126b96}
 *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.8 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang TC",sans-serif}header,main,footer{max-width:960px;margin:auto;padding:2rem clamp(1rem,4vw,3rem)}header,footer{border-block:1px solid var(--line)}h1{font-size:clamp(1.8rem,4vw,2.6rem);line-height:1.4}h2{font-size:1.5rem;line-height:1.5}h3{font-size:1.1rem}p,li{overflow-wrap:anywhere}a{color:var(--accent);overflow-wrap:anywhere;text-underline-offset:.2em}button,textarea,input{font:inherit}button,a,textarea,input{touch-action:manipulation}button{min-height:44px;padding:.65rem 1rem;border:1px solid var(--accent);border-radius:6px;background:var(--panel);color:var(--accent);cursor:pointer}button[type=submit]{background:var(--accent);color:white}button:disabled{opacity:.6;cursor:default}:focus-visible{outline:3px solid var(--accent);outline-offset:4px}[hidden]{display:none!important}.skip{position:absolute;top:-6rem;padding:1rem;background:var(--panel);z-index:2}.skip:focus{top:0}.notice{padding:1rem;border-left:4px solid var(--accent);background:#eaf5fa}.muted{color:var(--muted);font-size:.95rem}nav ul{display:flex;flex-wrap:wrap;gap:.5rem 2rem;padding-left:1.25rem}nav a{display:inline-block;min-height:44px;padding:.4rem 0}.case{margin:2rem 0;padding:1.5rem;border:1px solid var(--line);border-radius:8px;background:var(--panel);scroll-margin-top:1rem}.case>h2{margin-top:0}.prompt,.answer-text{white-space:pre-line}label.answer-label{display:block;font-weight:700;margin-bottom:.6rem}textarea{display:block;width:100%;min-height:15rem;padding:1rem;border:1px solid var(--muted);border-radius:6px;background:var(--panel);color:var(--ink);resize:vertical}.actions{display:flex;flex-wrap:wrap;gap:.75rem;margin:1rem 0}.comparison{margin-top:1.5rem;padding-top:1rem;border-top:2px solid var(--accent)}fieldset{min-width:0;margin:1rem 0;padding:1rem;border:1px solid var(--line);border-radius:6px}legend{font-weight:700;padding-inline:.35rem}.choices{display:flex;flex-wrap:wrap;gap:.5rem}.choices label{display:flex;align-items:center;gap:.5rem;padding:.5rem .7rem;min-height:44px;border:1px solid var(--line);border-radius:5px;cursor:pointer}.choices input{width:1.1rem;height:1.1rem;flex-shrink:0}.reflections{background:var(--paper);padding:1rem}.print-answer{display:none}.print-action{margin-top:1rem}footer{font-size:.9rem}.status:empty{display:none}
 @media(max-width:600px){header,main,footer{padding:1.25rem}.case{padding:1rem;margin:1.5rem 0}.actions button{width:100%}.choices{display:grid}.choices label{width:100%}}
@@ -224,7 +231,7 @@ def render_document(payload: dict, *, draft: bool, unit_links: dict[str, str] | 
     unit_links = unit_links or {}
     notice = DRAFT_NOTICE if draft else "課程自訂進階判讀練習，不是認證評量"
     suffix = " · 草稿審閱" if draft else ""
-    hub_return = "" if draft else '<a class="HubReturn" href="https://imaging-course-hub.pages.dev/" rel="noopener noreferrer" aria-label="返回運動醫學影像學習站首頁"><span aria-hidden="true">←</span> 學習站首頁</a>'
+    hub_return = "" if draft else '<a class="HubReturn" href="https://imaging-course-hub.sportsmedicine.tw/" rel="noopener noreferrer" aria-label="返回運動醫學影像學習站首頁"><span aria-hidden="true">←</span> 學習站首頁</a>'
     theme = "" if draft else """// Restore an explicit preference; first visits and unavailable storage stay dark.
 (function () {
   document.documentElement.dataset.theme = "dark";
