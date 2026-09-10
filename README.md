@@ -1,115 +1,89 @@
-# 膝蓋影像診斷課程
+# 膝關節影像診斷課程
 
-醫師導向、繁體中文的膝蓋影像判讀自學課程網站，涵蓋 **X 光、超音波、MRI** 三種影像模態。
+以醫師為主要學員的膝蓋影像自學課程，涵蓋肌肉骨骼超音波、X 光與 MRI 三種模態，依最新專業指引建立標準掃描與照射位、序列判讀、常見病理與報告品質的學習路徑。
 
-🔗 **正式站**：<https://knee-imaging.sportsmedicine.tw>
+[開始學習](https://knee-imaging.sportsmedicine.tw/) · [七站總覽](https://imaging-course-hub.sportsmedicine.tw/) · [吳易澄醫師](https://sportsmedicine.tw/)
 
-製作者：運動醫學科 吳易澄醫師（<https://sportsmedicine.tw>）
+**原始碼狀態：公開。歡迎參考、回報問題與提出技術 PR。** 網站可瀏覽與 repo 是否公開是兩個獨立設定。
 
-> **專業教育聲明**：本課程以醫師為主要學員，僅供教育用途，**不取代**實體 hands-on training、
-> 合格督導、機構 credentialing、完整病史理學檢查或正式影像判讀報告。完成本課程不代表具備
-> 獨立執行或出具影像診斷的資格。本課程為 **diagnostic-only**，不教授注射、穿刺或其他影像
-> 導引介入操作；收錄影片若含介入片段，會標明起點並把課程內容框限在診斷段落內。
+![膝關節影像診斷課程桌機畫面](docs/images/desktop.png)
 
-## 課程規模
+[手機畫面](docs/images/mobile.png) · 畫面與資料快照：2026-09-10。
 
-以下為目前原始碼與建置內容；正式發布版本以 GitHub main 及網站部署驗證為準。
+## 可以參考什麼
+
+- 資料驅動的課程與影片來源整理，維持可追溯的單元、來源及版本資訊。
+- 繁體中文、手機版面與預設深色設計；使用者可切換並保存主題偏好。
+- 各課程左上方可返回學習站，並透過「推薦影片／文獻」提供連結或回報修正。
+- 教材與研究包分開管理；策展審閱、技術驗證與臨床能力認證不混用。
+
+## 現有資料
+
+以下依 2026-09-10 本機正式建置統計；資料量與影片時數不能證明臨床能力。
 
 | 項目 | 數量 |
 | --- | --- |
-| 章節 | 9（X 光 2・超音波 4・MRI 3） |
-| 教學單元 | 25（通過策展審閱） |
-| 精選影片 | 43 支不重複影片，分布於 46 個課程項目；原片總長 15 小時 10 分 |
-| 逐段筆記 | 375 段（可一鍵跳播） |
-| 知識檢核題 | 81 題（每個選項附解析） |
-| 進階判讀練習 | 14 項公開影像、報告與證據練習；作答後開啟解析與自評 |
-| 雙語名詞表 | 120 條 |
+| 章節 | 9 |
+| 主課程單元 | 25 |
+| 不重複影片 | 43 |
+| 已輸出逐段筆記 | 375 |
+| 主課程知識檢核題 | 81 |
+| 進階判讀練習 | 14 |
 
-## 學習與閱讀功能
-
-- **三種學習路徑**：從 X 光、超音波或 MRI 進入章節，查看核心影片與預估時間。
-- **繼續學習與待複習清單**：保留單元進度、答題紀錄與影片位置，方便接續學習。
-  紀錄存在目前瀏覽器，更換裝置或清除瀏覽資料後不會自動同步。
-- **搜尋到具體段落**：搜尋結構、病灶與關鍵字，可看到命中摘要並前往單元或影片段落。
-- **單元閱讀版**：每個單元另有 `/units/<單元 ID>/` 網址，提供教材、來源與影片段落摘要；
-  不需執行 JavaScript 即可閱讀，也適合分享與列印。互動播放器和測驗保留在課程介面。
-- **手機與深色模式**：章節導覽可展開，教材首屏可達；播放器提供影片、筆記與選片快速入口，筆記隨頁面捲動。主題可手動切換，未設定時跟隨系統偏好。
-
-介面中的「通過策展審閱」表示內容已完成本站的收錄與版本審閱流程，
-**不等同於醫師逐項簽核、醫師背書、外部認證或臨床能力認證**。學習進度與測驗結果也不是資格證明。
-
-## 內容範圍
-
-- **X 光**：照射位選擇（承重 AP、lateral、skyline／Merchant、Rosenberg）、Ottawa knee rule、
-  系統性判讀順序、K-L 分級、骨折 pattern 與正常變異（bipartite patella、fabella）
-- **超音波**：探頭設定與各向異性控制、前／內／外／後四區掃描路徑、動態檢查、
-  常見病理的多平面判讀、結構化報告與最低影像集；另含運動傷害的伸膝肌腱、側副韌帶、外側痛／彈響、遠端腿後肌與腓腸肌單元
-- **MRI**：序列邏輯與三平面判讀順序、半月板／交叉韌帶／側副韌帶、後外側角、
-  伸膝機轉與髕股不穩量測、軟骨病灶分級與骨髓水腫鑑別、ACL 重建術後評估
-
-## 這個 repo 有什麼值得參考
-
-這是一個 **config-driven 的課程站框架**：`src/build/` 與 `src/web/` 不認識任何醫學主題，
-內容與版面設定全部在 `course/`，換一份設定就能做另一個部位或主題的課程站。
-
-如果你要做的是**有醫療責任的教學網站**，以下幾個內容治理機制可供參考：
-
-- **策展審閱閘門**：單元、逐段筆記、題目、名詞表都有 `review_status`，只有 `approved`
-  會進入 `course.json`。新增草稿放在研究審閱包；配置章節只要含有未核准單元
-  （`draft`、`medical-review` 或缺少狀態），建置就會中止，不會略過草稿後偷偷改變配額。
-  逐段筆記、題目及名詞表仍依各自審閱狀態控制輸出。
-- **審閱追溯**：`src/build/approve.py` 會寫入 `reviewed_by` / `reviewer_role` /
-  `reviewed_at` / `reviewed_commit`，保留審閱者角色、時間與版本；紀錄的意義以實際角色與審閱範圍為準。
-- **介入內容框限**：含介入操作的影片以 `diagnostic_segment_range` 限制範圍，
-  `audit_medical.py` 與 `tests/` 強制逐段筆記不得越界——避免學員一鍵跳進注射示範。
-- **來源證據鏈**：每支影片存約 24 個 provenance 欄位（原始頻道、講者資格與證據 URL、
-  可嵌入狀態、內容日期與 cutoff 例外理由、揭露聲明），缺欄位會被稽核擋下。
-- **文獻真偽驗證**：`make verify` 打真實 PubMed API 驗證每一筆引用的 PMID 與連結存活。
+完整範圍與限制見 [DATA_AND_REVIEW](docs/DATA_AND_REVIEW.md)。零筆代表目前未提供該類資料，不表示建置失敗。
 
 ## 本機建置
 
+需要 Python 3.11+、uv；`make check` 的 JavaScript 語法檢查另需 Node.js。
+
 ```bash
 uv sync --locked
-make build     # 合併課程資料 → dist/course.json、單元閱讀頁、SEO 產出、可列印檢核表
-make audit     # 離線稽核：設定檔、配額、影片欄位、內容深度
-make test      # 安全性測試：介入框限與逐段筆記規則
-make verify    # 打真實 API 驗證影片連結與 PubMed 引用（會跑一陣子）
-make serve     # 本機預覽
+make check
+make serve PORT=8899
 ```
 
-`make meta`（用 yt-dlp 補影片中繼資料）與 `make og`（headless Chrome 產社群預覽圖）
-需要本機環境支援，不在 CI 執行。部署到 Cloudflare Pages 的設定見 `docs/DEPLOYMENT.md`。
+開啟 http://127.0.0.1:8899/ 。只建置靜態網站時可直接執行 `python3 src/build/build.py`，不需要 Cloudflare 帳號或憑證。
 
-## 主要檔案
+瀏覽器測試、資料更新及不需正式服務的驗證方式見 [開發說明](docs/DEVELOPMENT.md)。部署設定見 [DEPLOYMENT](docs/DEPLOYMENT.md)。
 
-- `course/course.config.json`：站台文案、章節結構、醫療設定與稽核規則
-- `course/data/syllabus.json`：單元教材、影片清單與參考文獻目錄
-- `course/data/segments.json`：逐段筆記（含每支影片的字幕訛誤更正紀錄）
-- `course/data/questions.json`：知識檢核題庫
-- `course/data/glossary.json`：雙語名詞表
-- `docs/VIDEO_CURATION.md`：影片資格查核、採用與**拒絕理由**紀錄
-- `docs/VIDEO_INDEX.md`：影片依模態／部位／結構的多維分類索引
-- `docs/DESIGN_UPGRADE.md`：對標頂尖醫學教育站的設計藍圖與藝術方向定案
-- `docs/MEDICAL_REVIEW.md`：醫療審閱責任與狀態規則
+## 檔案入口
 
-## 授權
+| 路徑 | 用途 |
+| --- | --- |
+| `course/course.config.json` | 網站、課程與稽核設定 |
+| `course/data/` | 課綱、影片中繼資料、筆記、題目與名詞表 |
+| `course/research/` | 候選與審閱包；草稿不等於已發布教材 |
+| `src/web/` | 原生 HTML、CSS、JavaScript |
+| `src/build/` | 建置、來源及範圍稽核 |
+| `tests/` | 結構與互動回歸檢查 |
 
-- **程式碼**（`src/`、`tests/`、建置腳本）：MIT，見 `LICENSE`
-- **課程內容**（教材文字、逐段筆記、題目、名詞表）：
-  [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hant)
-  ——可自由學習與改作，須署名、不得商業使用、改作需採相同授權
-- **第三方影片**：著作權屬原頻道。本站僅以 YouTube 官方播放器嵌入並提供策展脈絡與來源連結，
-  不重製、不轉載、不代管影片
-- **Lucide 圖示** ISC 授權；**Primer 設計語彙**以 CSS 變數自行實作
+## 提供影片、文獻或修正
 
-想 fork 做自己的課程站：請一併更換 `course/` 下的全部內容與 `LICENSE` 的著作權聲明，
-並**移除本課程原有的審閱紀錄**（`reviewed_by` 等欄位），以自己的內容與審閱流程重新建立；
-既有紀錄只適用於原內容版本，不隨程式碼轉移。
+從網站「推薦影片／文獻」進入表單，會自動附上課程與單元網址。可提供公開影片、DOI／PubMed／學會文獻連結或資料修正；投稿須先查核，不會自動上線。請不要提供病人個資或未獲授權的影像。
 
-## 貢獻
+程式與介面 PR 請讀 [CONTRIBUTING](CONTRIBUTING.md)；安全問題請依 [SECURITY](SECURITY.md) 私下回報。Fork 與改作請讀 [FORKING](docs/FORKING.md)，重新設定作者、網域與投稿目的地。
 
-歡迎 issue 與 PR，但**醫療內容的變更有額外規則**，請先讀 [CONTRIBUTING.md](CONTRIBUTING.md)。
+## 授權與引用
 
----
+程式碼維持 MIT；原創教材沿用 CC BY-NC-SA 4.0。 詳見 [LICENSE](LICENSE)、[教材授權範圍](LICENSE-CONTENT.md) 與 [第三方及品牌聲明](NOTICE.md)。第三方影片、文獻與素材維持原權利人的條件，本站不代為授權。
 
-Repo：<https://github.com/keanu77/knee-imaging-course>
+引用專案可使用 [CITATION.cff](CITATION.cff)，並註明實際使用的 commit 或版本。引用臨床結論時，請直接引用原始文獻；專案引用不取代文獻引用。
+
+## 使用範圍
+
+供醫療專業人員教育使用。策展審閱確認收錄範圍、來源及課程編排，不代表對第三方影片內容的醫療背書；模型檢查或測試通過也不等於醫師逐項審閱、專業認證或獨立執業資格。使用時仍需實作訓練、合格督導與臨床判斷。
+
+## 系列網站
+
+| 課程 | 學習網站 | 原始碼 |
+| --- | --- | --- |
+| 髖關節 | [進入網站](https://hip-imaging-course.pages.dev/) | 私有，未開放 |
+| 踝與足 | [進入網站](https://ankle-foot-imaging-course.pages.dev/) | 私有，未開放 |
+| 肩部 | [進入網站](https://shoulder-imaging.sportsmedicine.tw/) | [GitHub](https://github.com/keanu77/shoulder-imaging-course) |
+| 頸椎 | [進入網站](https://cervical-imaging-course.pages.dev/) | 私有，未開放 |
+| 腰椎 | [進入網站](https://lumbar-imaging-course.pages.dev/) | 私有，未開放 |
+| 腕與手 | [進入網站](https://wrist-hand-imaging-course.pages.dev/) | 私有，未開放 |
+| 膝關節 | [進入網站](https://knee-imaging.sportsmedicine.tw/) | [GitHub](https://github.com/keanu77/knee-imaging-course) |
+| 課程總覽 | [進入網站](https://imaging-course-hub.sportsmedicine.tw/) | 私有，未開放 |
+
+[文件索引](docs/README.md) · [先前課程說明](docs/COURSE_GUIDE.md)
