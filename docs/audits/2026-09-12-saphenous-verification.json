@@ -1,0 +1,151 @@
+{
+  "checked_at": "2026-09-11T17:32:35.657470+00:00",
+  "scope": "Local integration: 1 unit, 2 journal diagnostic clips, 3 references, 3 questions",
+  "base_commit": "2b4ce85d669b9e1215d1b72ae96905973b6f8a64",
+  "payload_sha256": "f2e9f5fa8a014ffd1c149ef96d3eae8fd449d35329da8ddeb0774903de662b2e",
+  "authorization": {
+    "inclusion": true,
+    "production_publication": false,
+    "clinical_endorsement": false,
+    "full_audiovisual_review": false
+  },
+  "checks": {
+    "make_check": "passed; 43 Python tests plus repository JS/quality/build checks",
+    "cloudflare_python_build": "passed using TZ=UTC and isolated DIST",
+    "make_verify": {
+      "youtube_oembed": 43,
+      "reference_links": 45,
+      "failed": 0
+    },
+    "browser_regressions": {
+      "passed": 14,
+      "youtube_mode": "inert fixtures; not streaming verification"
+    },
+    "journal_browser": {
+      "base": "http://127.0.0.1:61993/",
+      "checkedAt": "2026-09-11T17:31:09.080Z",
+      "fixtures": false,
+      "streams": [
+        {
+          "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/9b4e/12558126/3e085aeb4e9f/cureus-0017-00000093051-i01-pmcvs_normal.mp4",
+          "duration": 5.119002,
+          "time": 1.006704,
+          "readyState": 4,
+          "frames": 34
+        },
+        {
+          "url": "https://www.e-jyms.org/upload/media/jyms-2025-42-74-Supplementary-Video-1.mp4",
+          "duration": 23.3233,
+          "time": 1.015663,
+          "readyState": 4,
+          "frames": 36
+        }
+      ],
+      "layouts": [
+        {
+          "type": "interactive",
+          "width": 320,
+          "scroll": 320
+        },
+        {
+          "type": "reading",
+          "width": 320,
+          "scroll": 320
+        },
+        {
+          "type": "interactive",
+          "width": 390,
+          "scroll": 390
+        },
+        {
+          "type": "reading",
+          "width": 390,
+          "scroll": 390
+        },
+        {
+          "type": "interactive",
+          "width": 1440,
+          "scroll": 1440
+        },
+        {
+          "type": "reading",
+          "width": 1440,
+          "scroll": 1440
+        }
+      ],
+      "lifecycle": "pause on another clip, unit collapse, and tab change passed",
+      "searchAndQuiz": "passed",
+      "success": true
+    },
+    "git_diff_check": "passed"
+  },
+  "unchanged_baseline": {
+    "units": 25,
+    "references": 42,
+    "question_groups": 25
+  },
+  "counts": {
+    "units": 26,
+    "lesson_units": 26,
+    "drill_units": 46,
+    "drill_tier_counts": {
+      "core": 8,
+      "extension": 38
+    },
+    "alt_lessons": 0,
+    "video_slots": 48,
+    "video_unique": 45,
+    "journal_clip_count": 2,
+    "duration_unique": "15 小時 10 分",
+    "duration_unique_seconds": 54641,
+    "duration": "16 小時 57 分",
+    "duration_seconds": 61030,
+    "duration_all": "16 小時 57 分",
+    "duration_all_seconds": 61030,
+    "problem_units": 6,
+    "evidence_checked": 0,
+    "segment_videos": 43,
+    "segment_count": 375,
+    "segment_videos_held": 0,
+    "question_units": 26,
+    "question_count": 84,
+    "question_units_held": 0,
+    "practice_case_count": 14,
+    "references": 45
+  },
+  "media": [
+    {
+      "id": "sartorius-tracking",
+      "bytes": 4872914,
+      "sha256": "65ba70fce460fb91b418b4cf0d16b8cc69a74a863dc3e15b087f7fa86eccf6cd",
+      "duration_seconds": 5.119002,
+      "dimensions": [
+        640,
+        360
+      ],
+      "inspection": "ffprobe, decode, per-second extracted frames, actual browser playback sample"
+    },
+    {
+      "id": "patellar-fragment-dynamic",
+      "bytes": 4505236,
+      "sha256": "88deca5f8a53d046eef64c16c767d125c035644ed7a14183812606de59d09402",
+      "duration_seconds": 23.3233,
+      "dimensions": [
+        720,
+        480
+      ],
+      "inspection": "ffprobe, decode, per-second extracted frames, actual browser playback sample"
+    }
+  ],
+  "output_sha256": {
+    "dist/course.json": "e3db767ae5f47a7b9a97f5886c4df527d48f13513d2898f8e7b66957aed071f8",
+    "dist/units/us-saphenous-postop/index.html": "2b02c84759a3ea114f8229f6cf5a529c8dda6159eea2729eee0d886f5eea7aec"
+  },
+  "limitations": [
+    "Local verification only; no commit, push, CI or production deployment performed.",
+    "Media is loaded from original sources, not rehosted. Availability may change.",
+    "No full audiovisual review or independent confirmation of authors nerve localization.",
+    "Two existing audit warnings retained: shared videos and Pedret duration."
+  ],
+  "temporary_evidence": ".tmp/saphenous-sources/"
+}

@@ -14,6 +14,8 @@ import sys
 from datetime import date
 from pathlib import Path
 
+from journal_clips import approved_clips
+
 ROOT = Path(__file__).resolve().parents[2]
 COURSE = Path(os.environ.get("COURSE") or ROOT / "course").resolve()
 
@@ -345,6 +347,10 @@ def main() -> int:
             for reference_id in unit.get("reference_ids", []):
                 if reference_id not in references:
                     err(where, f"找不到 reference_id {reference_id}")
+            try:
+                approved_clips(unit, references)
+            except ValueError as exc:
+                err(where, str(exc))
             if unit.get("type") != "orientation" and not unit.get("reference_ids"):
                 err(where, "非導論單元至少需要一筆 reference_id")
 
@@ -524,7 +530,8 @@ def main() -> int:
         errors.append("設定檔：仍有未 approved 單元時不得啟用搜尋引擎索引")
 
     print("\n醫療內容閘門")
-    print(f"  {'✓' if not errors else '✗'} {len(unit_ids)} 個單元 · {len(video_ids)} 支影片")
+    journal_count = sum(len(u.get("journal_clips", [])) for ch in chapters for u in ch.get("units", []))
+    print(f"  {'✓' if not errors else '✗'} {len(unit_ids)} 個單元 · {len(video_ids)} 支 YouTube 影片 · {journal_count} 段期刊附片")
     print(f"  ✓ {len(references)} 筆參考來源 · {classic_count} 支經典例外")
     print(
         "  ✓ 審閱狀態："

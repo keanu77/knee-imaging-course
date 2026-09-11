@@ -261,6 +261,35 @@ function lessonBox(u) {
     </div>`;
 }
 
+function journalClips(u) {
+  const clips = (u.journal_clips || []).filter(c => c.review_status === "approved");
+  if (!clips.length) return "";
+  return `<section class="JournalClips" aria-label="期刊動態影像"><h4>期刊動態影像</h4>
+    ${clips.map(c => {
+      let url;
+      try {
+        url = new URL(c.url);
+        if (url.protocol !== "https:" || url.username || url.password || url.port || url.search || url.hash ||
+          !["cdn.ncbi.nlm.nih.gov", "www.e-jyms.org"].includes(url.hostname) || !url.pathname.endsWith(".mp4")) return "";
+      } catch { return ""; }
+      const id = `clip-${u.id}-${c.id}`;
+      return `<article class="JournalClip" id="${esc(id)}">
+        <h5>${esc(c.title)}</h5>
+        <p class="JournalClip__meta">${esc(c.authors)} · ${esc(c.journal)} · ${esc(c.published_at)} · ${esc(c.duration_seconds)} 秒</p>
+        <p><strong>病例背景：</strong>${esc(c.case_context)}</p>
+        <video controls playsinline preload="none" aria-label="${esc(c.title)}" aria-describedby="${esc(id)}-notes">
+          <source src="${esc(url.href)}" type="video/mp4">瀏覽器無法播放時，請開啟下方原始影片連結。
+        </video>
+        <div id="${esc(id)}-notes"><p class="JournalClip__scope">${esc(c.scope_note)}</p>
+          <ul>${(c.observations || []).map(note => `<li>${esc(note)}</li>`).join("")}</ul>
+          <p class="JournalClip__meta">${esc(c.caption_note)}</p></div>
+        <p class="JournalClip__links">${sourceLink({ title: "論文與圖說", url: c.source_url })}
+          ${sourceLink({ title: "開啟原始影片", url: c.url })}</p>
+        <p class="JournalClip__meta">${esc(c.license)}</p>
+      </article>`;
+    }).join("")}</section>`;
+}
+
 /* --- 動作清單 ------------------------------------------------------------ */
 
 function muscleTags(list) {
@@ -533,6 +562,7 @@ function renderUnit(u, mastery, chapterCode, number, nextUnit) {
     u.level && u.level !== u.type ? `<span class="Label Label--neutral">${esc(({ foundation: "基礎", intermediate: "進階", advanced: "深入" })[u.level] || u.level)}</span>` : "",
     `<span class="Label Label--${review.tone}">${esc(review.label)}</span>`,
     total ? `<span class="Label Label--neutral">${icon("layers", 11)} ${total}</span>` : "",
+    u.journal_clips?.length ? `<span class="Label Label--neutral">期刊附片 ${u.journal_clips.length}</span>` : "",
     // 實證強度直接標在標題列。contested 的單元不該要展開才看得到
     u.evidence?.evidence_grade
       ? `<span class="Label ${toneCls(gradeOf(u.evidence.evidence_grade))}"
@@ -582,6 +612,7 @@ function renderUnit(u, mastery, chapterCode, number, nextUnit) {
       <div class="Unit__body" id="body-${esc(u.id)}">
         ${clinicalBrief(u)}
         ${lessonBox(u)}
+        ${journalClips(u)}
         ${
           u.assessment
             ? `<div class="Assessment">

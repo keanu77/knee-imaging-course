@@ -504,6 +504,37 @@
       "metadata_status": "2026-09-08 Europe PMC core metadata 與摘要實查",
       "last_verified": "2026-09-08",
       "type": "評分工具與讀者信度研究；2019 online、2021 print。研究型形態學評分，不是返回運動認證。"
+    },
+    "REF-SAPHENOUS-ACLR-2024": {
+      "title": "Injury to the Main Branch of the Saphenous Nerve following Hamstring Tendon Graft Harvesting: A Report of 3 Cases",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39564412/",
+      "doi": "10.1177/15563316241230285",
+      "organization": "Flaherty et al.; Hospital for Special Surgery",
+      "journal": "HSS Journal",
+      "year": 2024,
+      "type": "3-case report; postoperative main saphenous nerve injury",
+      "last_verified": "2026-09-12",
+      "note": "病例 2 的 EMG 側別與手術側別文字不一致，不據此教學側別。作者之一揭露 Axogen 顧問關係。"
+    },
+    "REF-SAPHENOUS-TRACKING-2025": {
+      "title": "Ultrasound-Guided Manual Therapy for the Infrapatellar Branch of the Saphenous Nerve Entrapment Presenting as Anterior Knee Pain: A Case Report",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41158913/",
+      "doi": "10.7759/cureus.93051",
+      "organization": "Miyata et al.; Sagamihara Kyodo Hospital / Kitasato University",
+      "journal": "Cureus",
+      "year": 2025,
+      "type": "single case report; nonsurgical entrapment; Video 1 only",
+      "last_verified": "2026-09-12"
+    },
+    "REF-SAPHENOUS-DYNAMIC-2025": {
+      "title": "Dynamic ultrasound examination for postoperative intermittent irritation of the infrapatellar branch of the saphenous nerve",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41243744/",
+      "doi": "10.12701/jyms.2025.42.74",
+      "organization": "Wu, Chang and Özçakar; NTUH / Hacettepe University",
+      "journal": "Journal of Yeungnam Medical Science",
+      "year": 2025,
+      "type": "single case image vignette; patellar fracture fixation, not ACLR",
+      "last_verified": "2026-09-12"
     }
   },
   "stance": [
@@ -1422,6 +1453,126 @@
               "reviewed_payload_sha256": "f15403cc757ba3bfc4e683736c5850a5b0ed9aa071e74b3a4adca91410476a41"
             }
           ]
+        },
+        {
+          "id": "us-saphenous-postop",
+          "name": "ACLR 後隱神經症狀：主幹損傷、髕下分支與動態檢查",
+          "type": "case",
+          "level": "advanced",
+          "review_status": "approved",
+          "summary": "從前十字韌帶重建後的內側麻痛出發，區分隱神經主幹與髕下分支，結合病例影像、連續追蹤及屈伸膝動態觀察。",
+          "prerequisites": [
+            "ch1-u1",
+            "ch3-u1"
+          ],
+          "objectives": [
+            "區分 ACLR 後隱神經主幹損傷與髕下分支的局部症狀，描述實際檢查範圍。",
+            "追蹤神經與縫匠肌的關係，比較膝伸直與彎曲時神經和鄰近骨片的位置。",
+            "將影像所見、症狀分布與病史分開記錄，辨認病例報告能回答與不能回答的問題。"
+          ],
+          "required_views": [
+            "先記錄手術類型、取腱部位、症狀起始與分布；隱神經症狀若延伸到小腿內側或內踝，檢查不能只停在髕下皮膚。",
+            "高解析短軸連續追蹤內收肌管遠端、縫匠肌周邊及可辨認的神經分支，再以長軸確認局部增粗、束狀結構與連續性；無法顯示的部分如實記錄。",
+            "在可耐受且符合個案術後活動限制的範圍內，比較伸膝與屈膝影像。若可見骨片，保存神經與骨片的相對位置及症狀是否同步；未見接觸亦如實記錄，必要時對照既有 X 光、MRI。"
+          ],
+          "key_points": [
+            "先分清資料：Flaherty 等人（2024）報告 ACLR 腿後肌取腱後的隱神經主幹損傷；本單元兩段影片分別來自非手術性髕下分支夾擠，以及髕骨骨折固定術後，皆不能標示為 ACLR 術後損傷影片。",
+            "主幹與髕下分支：隱神經是感覺神經。髕下分支與前內側膝部感覺相關；術後麻痛沿小腿內側延伸至內踝時，應把主幹或向遠端延續的分支納入評估，而非只用切口周圍麻木解釋。症狀分布不能單獨確診。",
+            "第一篇病例 1：ACLR 使用半腱肌與股薄肌自體移植物後，出現膝內側至踝部的持續感覺症狀。高解析超音波在隱神經離開內收肌管處顯示約 4 × 3 × 2 mm 神經瘤及近端節段性增粗；瘢痕使遠端斷端無法清楚顯示。Figure 2 為靜態影像，該尺寸不是通用診斷門檻。",
+            "第一篇病例 2：超音波見神經離開內收肌管後周圍瘢痕，以及約 4.3 cm 範圍束狀結構顯示不佳；MRI 另描述局部神經增粗。兩種影像描述的長度不能直接當成同一量測。原文神經傳導檢查的側別與手術側別不一致，本站不採該句判定側別。",
+            "第一篇病例 3：初始超音波見內收肌管附近節段性增粗；後續處置後仍有症狀，超音波辨認出兩條不同分支，提醒追蹤需留意解剖變異。三例的治療後走向不同，其中一例長期仍有症狀，不能據此推定任何處置必然有效。",
+            "第一篇的證據限制：三例為病例報告，不能推估一般 ACLR 的發生率或比較治療效果。作者依損傷位置推測與取腱器向近端前進有關；這是機轉推論，不能直接判定個案責任，也無法由這三例排除所有其他周術期因素。作者之一揭露與神經移植物廠商 Axogen 的顧問關係。",
+            "神經追蹤影片：Miyata 等人（2025）的 Video 1 顯示髕下分支穿過縫匠肌的關係。這是該病例的走行，不代表所有人都相同；影片本身不建立疼痛因果，原文亦未以診斷性神經阻斷確認。",
+            "動態影片：Wu 等人（2025）的病例在髕骨骨折固定術後出現電擊樣疼痛；伸膝時神經與骨片分離，屈膝時接觸並受壓。靜態檢查可能漏掉間歇性接觸；應把動態關係與症狀同步記錄，不能由一例推論所有前膝痛都來自神經。"
+          ],
+          "pitfalls": [
+            "把主幹損傷、髕下分支夾擠與一般切口麻木視為同一種情況，或將髕骨骨折術後影片誤標為 ACLR 病例。",
+            "只保存一張靜態影像，就排除間歇性機械壓迫；或把看見神經與骨片相鄰直接寫成已證實疼痛來源。",
+            "把病例中的神經瘤尺寸、短暫症狀改善或單次動態觀察，當成已驗證的診斷切點與療效證據。"
+          ],
+          "assessment": "看完兩段附片後，分別寫出病例背景、可見結構、動態變化及仍無法確認的問題。再對照第一篇 Figure 2，練習寫出病灶位置、局部增粗、束狀結構與遠端顯示限制。報告須區分影像所見和症狀關聯；本練習不要求提出介入或手術操作方案。",
+          "content_boundary": "第一篇補充 ACLR 後隱神經主幹損傷的文獻所見；兩段期刊附片僅示範神經追蹤與動態關係，並非 ACLR 術後影像。只收 Miyata 論文 Video 1，不收徒手治療或注射操作。短附片不代表完整檢查，也不取代實機掃描與督導。",
+          "reference_ids": [
+            "REF-SAPHENOUS-ACLR-2024",
+            "REF-SAPHENOUS-TRACKING-2025",
+            "REF-SAPHENOUS-DYNAMIC-2025"
+          ],
+          "source_cases": [
+            {
+              "title": "ACLR 後隱神經主幹損傷：全文及 Figure 2",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11572331/#fig2-15563316241230285"
+            }
+          ],
+          "drills": [],
+          "journal_clips": [
+            {
+              "id": "sartorius-tracking",
+              "title": "神經追蹤：髕下分支穿過縫匠肌（Video 1）",
+              "review_status": "approved",
+              "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/9b4e/12558126/3e085aeb4e9f/cureus-0017-00000093051-i01-pmcvs_normal.mp4",
+              "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12558126/",
+              "reference_id": "REF-SAPHENOUS-TRACKING-2025",
+              "authors": "Toru Miyata, Masashi Kawabata, Daiki Watanabe, Kazuma Miyatake",
+              "journal": "Cureus",
+              "published_at": "2025-09-23",
+              "duration_seconds": 5.119,
+              "contains_intervention": false,
+              "case_context": "非手術病例；反覆籃球跳躍後出現前膝痛，作者懷疑髕下分支在縫匠肌穿出處夾擠。",
+              "scope_note": "本片用於辨認走行與可能夾擠位置，不是 ACLR 術後神經損傷或已證實神經瘤的影片。",
+              "observations": [
+                "以縫匠肌短軸切面往遠端連續掃描，觀察穿過肌肉的高回音線狀結構；神經標認依原文 Video 1 與 Figure 2。",
+                "這段短片未展示完整近遠端追蹤或診斷性神經阻斷；不可只憑此片判定疼痛原因。"
+              ],
+              "caption_note": "附片未提供可取得的逐字字幕；以上為依論文圖說整理的中文觀察提示，並非語音逐字翻譯。",
+              "license": "© 2025 Miyata et al.，CC BY 4.0；影片由 PMC 原來源載入，保留原片。",
+              "last_verified_at": "2026-09-12",
+              "verification_note": "已核對論文身分、MP4 格式、5.119 秒片長及每秒抽幀；本站實際串流另記驗證報告。",
+              "media_sha256": "65ba70fce460fb91b418b4cf0d16b8cc69a74a863dc3e15b087f7fa86eccf6cd",
+              "reviewed_by": "吳易澄",
+              "reviewer_role": "課程策展人",
+              "reviewed_at": "2026-09-12",
+              "reviewed_commit": "2b4ce85d669b9e1215d1b72ae96905973b6f8a64",
+              "reviewed_payload_sha256": "f2e9f5fa8a014ffd1c149ef96d3eae8fd449d35329da8ddeb0774903de662b2e",
+              "review_note": "依使用者本次明確指示收錄兩篇期刊診斷附片並補充 ACLR 三病例。收錄範圍由使用者指定；新增文字由 Codex 依原文編寫與獨立三鏡頭核對，非使用者逐字醫療審閱、第三方內容醫療背書或完整聲畫驗收。reviewed_commit 為本次基底，內容以 payload SHA-256 追溯。"
+            },
+            {
+              "id": "patellar-fragment-dynamic",
+              "title": "動態檢查：屈伸膝時骨片與髕下分支的關係",
+              "review_status": "approved",
+              "url": "https://www.e-jyms.org/upload/media/jyms-2025-42-74-Supplementary-Video-1.mp4",
+              "source_url": "https://www.e-jyms.org/journal/view.php?doi=10.12701/jyms.2025.42.74",
+              "reference_id": "REF-SAPHENOUS-DYNAMIC-2025",
+              "authors": "Wei-Ting Wu, Ke-Vin Chang, Levent Özçakar",
+              "journal": "Journal of Yeungnam Medical Science",
+              "published_at": "2025-11-15",
+              "duration_seconds": 23.323,
+              "contains_intervention": false,
+              "case_context": "髕骨下極骨折固定術後的病例；上下樓時出現間歇性電擊樣前膝痛，並非 ACLR 術後。",
+              "scope_note": "只用於觀察伸膝與屈膝時的接觸關係，以及靜態檢查可能漏掉的間歇性壓迫。",
+              "observations": [
+                "先依原片標示辨認髕腱、脛骨、骨片與隱神經髕下分支，再比較兩者的相對位置。",
+                "依原文，伸膝時神經與骨片分離、屈膝時接觸受壓；保存動態過程比單一截圖更能描述這個病例。",
+                "短片無法代替床邊症狀誘發與完整神經檢查；也不能據此推論其他術式或所有前膝疼痛。"
+              ],
+              "caption_note": "原片含英文結構及姿勢標示；中文提示依論文圖說整理，不宣稱已有完整逐字字幕。",
+              "license": "© 2025 Yeungnam University College of Medicine / Yeungnam University Institute of Medical Science，CC BY-NC 4.0；由期刊原來源載入。",
+              "last_verified_at": "2026-09-12",
+              "verification_note": "已核對論文身分、MP4 格式、23.323 秒片長及抽幀；本站實際串流另記驗證報告。",
+              "media_sha256": "88deca5f8a53d046eef64c16c767d125c035644ed7a14183812606de59d09402",
+              "reviewed_by": "吳易澄",
+              "reviewer_role": "課程策展人",
+              "reviewed_at": "2026-09-12",
+              "reviewed_commit": "2b4ce85d669b9e1215d1b72ae96905973b6f8a64",
+              "reviewed_payload_sha256": "f2e9f5fa8a014ffd1c149ef96d3eae8fd449d35329da8ddeb0774903de662b2e",
+              "review_note": "依使用者本次明確指示收錄兩篇期刊診斷附片並補充 ACLR 三病例。收錄範圍由使用者指定；新增文字由 Codex 依原文編寫與獨立三鏡頭核對，非使用者逐字醫療審閱、第三方內容醫療背書或完整聲畫驗收。reviewed_commit 為本次基底，內容以 payload SHA-256 追溯。"
+            }
+          ],
+          "reviewed_by": "吳易澄",
+          "reviewer_role": "課程策展人",
+          "reviewed_at": "2026-09-12",
+          "reviewed_commit": "2b4ce85d669b9e1215d1b72ae96905973b6f8a64",
+          "reviewed_payload_sha256": "f2e9f5fa8a014ffd1c149ef96d3eae8fd449d35329da8ddeb0774903de662b2e",
+          "review_note": "依使用者本次明確指示收錄兩篇期刊診斷附片並補充 ACLR 三病例。收錄範圍由使用者指定；新增文字由 Codex 依原文編寫與獨立三鏡頭核對，非使用者逐字醫療審閱、第三方內容醫療背書或完整聲畫驗收。reviewed_commit 為本次基底，內容以 payload SHA-256 追溯。"
         }
       ]
     },

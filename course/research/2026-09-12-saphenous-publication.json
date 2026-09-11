@@ -1,0 +1,15 @@
+{
+  "decision_type": "production-publication",
+  "user_quote": "ship",
+  "recorded_at": "2026-09-11T18:03:53.971311+00:00",
+  "payload": "course/research/2026-09-12-saphenous-candidate.json",
+  "payload_sha256": "f2e9f5fa8a014ffd1c149ef96d3eae8fd449d35329da8ddeb0774903de662b2e",
+  "inclusion_record": "course/research/2026-09-12-saphenous-inclusion.json",
+  "repository": "keanu77/knee-imaging-course",
+  "branch": "main",
+  "cloudflare_project": "knee-ultrasound-course",
+  "site": "https://knee-imaging.sportsmedicine.tw/",
+  "integration_base": "578863012aefe2ee0ac5d812cbc0f512ed9ae661",
+  "publication_authorized": true,
+  "meaning": "User explicitly authorized publishing the reviewed saphenous unit and clips. Integration preserves newer origin/main changes; clinical endorsement and full audiovisual review are not claimed."
+}

@@ -1,0 +1,30 @@
+{
+  "decision_type": "user-requested-source-inclusion",
+  "user_quote": "後兩篇的神經追增與動態檢查影片可以加進去膝蓋影像的網站嗎？再補充說明第一篇的內容",
+  "recorded_at": "2026-09-11T17:25:49Z",
+  "timezone": "Asia/Taipei",
+  "payload": "course/research/2026-09-12-saphenous-candidate.json",
+  "payload_sha256": "f2e9f5fa8a014ffd1c149ef96d3eae8fd449d35329da8ddeb0774903de662b2e",
+  "base_commit": "2b4ce85d669b9e1215d1b72ae96905973b6f8a64",
+  "scope": {
+    "unit": "us-saphenous-postop",
+    "clips": [
+      "sartorius-tracking",
+      "patellar-fragment-dynamic"
+    ],
+    "references": [
+      "REF-SAPHENOUS-ACLR-2024",
+      "REF-SAPHENOUS-TRACKING-2025",
+      "REF-SAPHENOUS-DYNAMIC-2025"
+    ],
+    "questions": 3
+  },
+  "source_exceptions": [
+    "User explicitly selected the Wu et al. Taiwan-authored journal supplement.",
+    "Journal supplements are verified against the article and actual MP4; no YouTube metadata or English transcript is claimed."
+  ],
+  "meaning": "依使用者本次明確指示收錄兩篇期刊診斷附片並補充 ACLR 三病例。收錄範圍由使用者指定；新增文字由 Codex 依原文編寫與獨立三鏡頭核對，非使用者逐字醫療審閱、第三方內容醫療背書或完整聲畫驗收。reviewed_commit 為本次基底，內容以 payload SHA-256 追溯。",
+  "publication_authorized": false,
+  "medical_endorsement": false,
+  "full_audiovisual_review": false
+}

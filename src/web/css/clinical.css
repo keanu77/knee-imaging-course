@@ -830,3 +830,16 @@ a:hover > .PlayBtn, .PlayBtn:hover { color: var(--fgColor-accent); background: v
   .Stat:nth-child(3) .Stat__value { font-size: 18px; white-space: nowrap; }
 }
 @media print { .Player__jumpNav { display: none; } }
+/* Journal supplements retain their own case context beside native playback. */
+.JournalClips { margin-block: 1.5rem; }
+.JournalClips > h4 { font-size: 1.1rem; margin-bottom: 1rem; }
+.JournalClip { padding: clamp(1rem, 2vw, 1.5rem); margin-block: 1rem;
+  border: 1px solid var(--borderColor-default); border-radius: .5rem;
+  background: var(--bgColor-muted); overflow-wrap: anywhere; }
+.JournalClip h5 { font-size: 1.1rem; line-height: 1.6; margin: 0 0 .6rem; }
+.JournalClip p, .JournalClip li { line-height: 1.8; }
+.JournalClip__meta { font-size: .85rem; color: var(--fgColor-muted); }
+.JournalClip video { display: block; width: 100%; max-height: 32rem; margin-block: 1rem; background: #080b0e; }
+.JournalClip__scope { border-left: 3px solid var(--fgColor-accent); padding-left: .8rem; }
+.JournalClip__links { display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; }
+.JournalClip__links a { display: inline-flex; align-items: center; min-height: 44px; }

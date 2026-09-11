@@ -311,6 +311,7 @@ const address = relative => new URL(relative, baseURL).href;
       await page.goto(address('units/us-sport-snapping/'));
       assert((await page.locator('#scope').innerText()).includes('彈響 cine'));
       const uniqueVideos = new Map(videos.map(video => [videoId(video.url), video]));
+      for (const clip of units.flatMap(unit => unit.journal_clips || [])) uniqueVideos.set(clip.url, clip);
       assert.equal(course.meta.video_unique, uniqueVideos.size);
       assert(course.meta.duration_unique_seconds < course.meta.duration_seconds, 'Shared video durations are not counted twice on the homepage');
     });

@@ -7,6 +7,8 @@ from html import escape
 from pathlib import Path
 from urllib.parse import quote, urlsplit
 
+from journal_clips import media_url
+
 UNIT_ID = re.compile(r"[A-Za-z0-9][A-Za-z0-9_-]*\Z")
 SECTIONS = (
     ("objectives", "學習目標"),
@@ -44,6 +46,7 @@ ul, ol { padding-left: 1.5rem; }
   background: var(--bgColor-muted); border-radius: .25rem; overflow-wrap: anywhere; }
 #scope { padding: 1.25rem; background: var(--bgColor-accent-muted); border: 0; border-left: 3px solid var(--fgColor-accent); }
 .video .segments { padding-left: 1.25rem; }
+.journal-video { display: block; width: 100%; max-height: 32rem; background: #080b0e; margin: 1rem 0; }
 .assessment { white-space: pre-line; }
 .action { display: inline-block; padding: .65rem 1rem; border: 1px solid var(--borderColor-accent-emphasis);
   border-radius: .4rem; font-weight: 650; }
@@ -164,6 +167,31 @@ def render_videos(unit: dict) -> str:
     )
 
 
+def render_journal_clips(unit: dict) -> str:
+    cards = []
+    for clip in unit.get("journal_clips", []):
+        if clip.get("review_status") != "approved" or not media_url(clip.get("url")):
+            continue
+        ident = f"clip-{unit['id']}-{clip['id']}"
+        notes = "".join(f"<li>{text(note)}</li>" for note in clip.get("observations", []))
+        cards.append(
+            f'<article class="video" id="{text(ident)}"><h3>{text(clip["title"])}</h3>'
+            f'<p class="meta">{text(clip["authors"])} · {text(clip["journal"])} · '
+            f'{text(clip["published_at"])} · {text(clip["duration_seconds"])} 秒</p>'
+            f'<p><strong>病例背景：</strong>{text(clip["case_context"])}</p>'
+            f'<video class="journal-video" controls playsinline preload="none" '
+            f'aria-label="{text(clip["title"])}" aria-describedby="{text(ident)}-notes">'
+            f'<source src="{text(clip["url"])}" type="video/mp4">'
+            '瀏覽器無法播放時，請開啟下方原始影片連結。</video>'
+            f'<div id="{text(ident)}-notes"><p>{text(clip["scope_note"])}</p>'
+            f'<ul>{notes}</ul><p class="meta">{text(clip["caption_note"])}</p></div>'
+            f'<p>{external_link("論文與圖說", clip["source_url"])} · '
+            f'{external_link("開啟原始影片", clip["url"])}</p>'
+            f'<p class="meta">{text(clip["license"])}</p></article>'
+        )
+    return '<section id="journal-clips"><h2>期刊動態影像</h2>' + "".join(cards) + "</section>" if cards else ""
+
+
 def render_unit(chapter: dict, unit: dict, config: dict) -> str:
     site = config["site"]
     name = site["name"]
@@ -210,6 +238,10 @@ def render_unit(chapter: dict, unit: dict, config: dict) -> str:
     if videos:
         sections.append(videos)
         navigation.append(("videos", "教學影片"))
+    clips = render_journal_clips(unit)
+    if clips:
+        sections.append(clips)
+        navigation.append(("journal-clips", "期刊動態影像"))
     references = [*(unit.get("references") or []), *(unit.get("source_cases") or [])]
     if references:
         items = []

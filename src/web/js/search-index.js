@@ -17,7 +17,8 @@ export function buildSearchIndex(course) {
   return course.chapters.flatMap(ch => ch.units.flatMap(u => {
     const base = { unitId: u.id, unitName: u.name, chapter: ch.code };
     const unit = { ...base, kind: "unit", title: u.name,
-      text: words([u.summary, u.objectives, u.required_views, u.key_points, u.pitfalls, u.assessment, u.tight, u.weak]) };
+      text: words([u.summary, u.objectives, u.required_views, u.key_points, u.pitfalls, u.assessment, u.tight, u.weak,
+        (u.journal_clips || []).filter(c => c.review_status === "approved").map(c => [c.title, c.case_context, c.observations])]) };
     const videos = [...(u.lessons || (u.lesson ? [u.lesson] : [])), ...(u.drills || [])];
     return [unit, ...videos.flatMap(v => {
       const videoId = /(?:v=|youtu\.be\/)([\w-]{11})/.exec(v.url || "")?.[1];

@@ -14,6 +14,8 @@ from collections import Counter, defaultdict
 from pathlib import Path
 from urllib.parse import parse_qs, urlsplit
 
+from journal_clips import approved_clips
+
 ROOT = Path(__file__).resolve().parents[2]
 COURSE = Path(os.environ.get("COURSE") or ROOT / "course").resolve()
 DATA = COURSE / "data"
@@ -327,6 +329,8 @@ def main() -> int:
     reference_catalog: dict[str, dict] = {}
     source_stance: list[dict] = []
     lesson_video_count = 0
+    journal_urls = set()
+    journal_slots = 0
 
     # 各章 JSON 可能一檔含多章（ch0-3），先把所有來源讀進來
     sources = {}
@@ -377,6 +381,15 @@ def main() -> int:
 
         for u in units:
             u.setdefault("id", f"{code.lower()}-u{units.index(u) + 1}")
+            if "journal_clips" in u:
+                u["journal_clips"] = approved_clips(u, reference_catalog)
+                for clip in u["journal_clips"]:
+                    clip_seconds = round(clip["duration_seconds"])
+                    journal_urls.add(clip["url"])
+                    journal_slots += 1
+                    unique_seconds.setdefault(clip["url"], clip_seconds)
+                    seconds += clip_seconds
+                    seconds_all[0] += clip_seconds
             ref_ids = u.get("reference_ids") or []
             u["references"] = [reference_catalog[r] for r in ref_ids if r in reference_catalog]
             if u["id"] in questions_by_unit:
@@ -524,8 +537,9 @@ def main() -> int:
             },
             # 影片：有連結的主課 + 輔助影片 + 多語言替代版本
             "alt_lessons": alt_count[0],
-            "video_slots": lesson_video_count + drill_total + alt_count[0],
+            "video_slots": lesson_video_count + drill_total + alt_count[0] + journal_slots,
             "video_unique": len(unique_seconds),
+            "journal_clip_count": len(journal_urls),
             "duration_unique": fmt_duration(sum(unique_seconds.values())),
             "duration_unique_seconds": sum(unique_seconds.values()),
             # 時長分兩個：跑完課程一輪 vs 把每個語言版本都看過

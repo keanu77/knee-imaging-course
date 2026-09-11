@@ -550,6 +550,7 @@ function restoreQuizzes() {
 /* --- 搜尋與篩選（實作在 filters.js） -------------------------------------- */
 
 function applyFilters() {
+  $$(".JournalClip video").forEach(video => video.pause());
   state.searchTerms = expandTerms(state.query, state.course?.glossary);
   const hits = searchRecords(state.searchIndex, state.searchTerms, state);
   state.searchHits = hits;
@@ -683,6 +684,7 @@ function syncRoute(tab, hash = "", replace = false) {
 function setTab(tab, { updateRoute = true, restore = true, focus = true } = {}) {
   if (!["home", "course", "player"].includes(tab)) tab = "home";
   const changed = state.tab !== tab;
+  if (tab !== "course") $$(".JournalClip video").forEach(video => video.pause());
   state.tab = tab;
   save(STORE.tab, tab);
   document.body.dataset.tab = tab;
@@ -913,6 +915,13 @@ function jumpPlayer(id) {
 }
 
 function bindEvents() {
+  document.addEventListener("play", event => {
+    if (!event.target.matches?.(".JournalClip video")) return;
+    $$(".JournalClip video").forEach(video => { if (video !== event.target) video.pause(); });
+  }, true);
+  document.addEventListener("visibilitychange", () => {
+    if (document.hidden) $$(".JournalClip video").forEach(video => video.pause());
+  });
   const compact = matchMedia("(max-width: 1012px)");
   const syncCourseNav = () => { $("#courseNav").open = !compact.matches; };
   syncCourseNav();
@@ -1188,6 +1197,7 @@ function bindEvents() {
           : toggle.closest(".Evidence"); // evidence 與 drillev 共用 .Evidence 外框
     const opening = !host.classList.contains("is-open");
     host.classList.toggle("is-open");
+    if (!opening) host.querySelectorAll(".JournalClip video").forEach(video => video.pause());
     syncDisclosureStates();
     if (kind === "unit" && opening) {
       markLearning(host.dataset.unit);
@@ -1239,6 +1249,7 @@ function bindEvents() {
   // 全部展開／收合
   $("#expandAll").addEventListener("click", () => {
     const anyClosed = $$(".Chapter").some((c) => !c.classList.contains("is-open"));
+    if (!anyClosed) $$(".JournalClip video").forEach(video => video.pause());
     $$(".Chapter").forEach((c) => c.classList.toggle("is-open", anyClosed));
     save(STORE.open, anyClosed);
     syncDisclosureStates();

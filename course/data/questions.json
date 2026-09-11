@@ -2844,6 +2844,97 @@
           ]
         }
       ]
+    },
+    "us-saphenous-postop": {
+      "review_status": "approved",
+      "questions": [
+        {
+          "id": "us-saphenous-postop-q1",
+          "type": "single",
+          "difficulty": "advanced",
+          "stem": "哪個描述正確區分本單元的資料？",
+          "options": [
+            {
+              "text": "兩段影片都是 ACLR 腿後肌取腱後的病例",
+              "correct": false,
+              "rationale": "兩片分別為非手術性夾擠及髕骨骨折固定術後；ACLR 證據來自第一篇病例報告。"
+            },
+            {
+              "text": "ACLR 文獻有靜態神經瘤影像；兩段附片補充追蹤與動態關係",
+              "correct": true,
+              "rationale": "病例背景與影像用途應分開，不能把替代教學素材誤標為 ACLR 術後。"
+            },
+            {
+              "text": "神經穿過縫匠肌即可證明它是疼痛來源",
+              "correct": false,
+              "rationale": "走行本身不證明因果；仍需病史、症狀分布與臨床評估。"
+            }
+          ],
+          "reference_ids": [
+            "REF-SAPHENOUS-ACLR-2024",
+            "REF-SAPHENOUS-TRACKING-2025",
+            "REF-SAPHENOUS-DYNAMIC-2025"
+          ]
+        },
+        {
+          "id": "us-saphenous-postop-q2",
+          "type": "single",
+          "difficulty": "advanced",
+          "stem": "靜態超音波未見明顯壓迫，但病人屈膝時有症狀，下一個影像觀察重點是什麼？",
+          "options": [
+            {
+              "text": "比較可耐受活動範圍內的屈伸膝，記錄接觸關係與症狀是否同步",
+              "correct": true,
+              "rationale": "間歇性接觸可能只在特定動作發生；動態紀錄補充靜態影像，但不單獨確診。"
+            },
+            {
+              "text": "由靜態正常直接排除神經問題",
+              "correct": false,
+              "rationale": "期刊病例示範了靜態檢查可能漏掉的間歇性壓迫。"
+            },
+            {
+              "text": "只要兩者相鄰，就寫成已確定疼痛來源",
+              "correct": false,
+              "rationale": "相鄰不等於致痛，須描述動態關係與臨床一致性及限制。"
+            }
+          ],
+          "reference_ids": [
+            "REF-SAPHENOUS-DYNAMIC-2025"
+          ]
+        },
+        {
+          "id": "us-saphenous-postop-q3",
+          "type": "single",
+          "difficulty": "advanced",
+          "stem": "第一篇三病例報告能支持哪個教學重點？",
+          "options": [
+            {
+              "text": "4 × 3 × 2 mm 是診斷隱神經瘤的通用門檻",
+              "correct": false,
+              "rationale": "這是單一病例的尺寸，未被驗證為通用切點。"
+            },
+            {
+              "text": "這三例可精確估算所有 ACLR 病人的發生率",
+              "correct": false,
+              "rationale": "病例報告不能推估一般族群發生率，亦無法比較治療效果。"
+            },
+            {
+              "text": "術後症狀延伸至小腿內側時，要考慮主幹及分支並記錄顯示限制",
+              "correct": true,
+              "rationale": "三例凸顯主幹損傷、瘢痕與分支變異的評估價值；仍需整合臨床，不能只由分布確診。"
+            }
+          ],
+          "reference_ids": [
+            "REF-SAPHENOUS-ACLR-2024"
+          ]
+        }
+      ],
+      "reviewed_by": "吳易澄",
+      "reviewer_role": "課程策展人",
+      "reviewed_at": "2026-09-12",
+      "reviewed_commit": "2b4ce85d669b9e1215d1b72ae96905973b6f8a64",
+      "reviewed_payload_sha256": "f2e9f5fa8a014ffd1c149ef96d3eae8fd449d35329da8ddeb0774903de662b2e",
+      "review_note": "依使用者本次明確指示收錄兩篇期刊診斷附片並補充 ACLR 三病例。收錄範圍由使用者指定；新增文字由 Codex 依原文編寫與獨立三鏡頭核對，非使用者逐字醫療審閱、第三方內容醫療背書或完整聲畫驗收。reviewed_commit 為本次基底，內容以 payload SHA-256 追溯。"
     }
   }
 }
